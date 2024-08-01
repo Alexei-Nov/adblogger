@@ -1,0 +1,108 @@
+.header {
+	padding: 18px 0;
+	position: relative;
+	z-index: 10;
+	&__logo {
+		display: flex;
+		width: 265px;
+		height: 44px;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: center;
+		}
+	}
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		gap: 48px;
+	}
+	&__btn {
+		margin-left: auto;
+	}
+	& .nav {
+		&__list {
+			display: flex;
+			align-items: center;
+			gap: 32px;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.header {
+		&__wrapper {
+			gap: 16px;
+		}
+		&__menu-btn {
+			display: flex;
+			width: 36px;
+			height: 36px;
+			cursor: pointer;
+			position: relative;
+			order: -1;
+			& span {
+				height: 2px;
+				width: 100%;
+				background-color: var(--white);
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				transition: all ease 0.5s;
+			}
+			&::before {
+				display: block;
+				content: "";
+				height: 2px;
+				width: 100%;
+				background-color: var(--white);
+				position: absolute;
+				top: calc(50% - 8px);
+				left: 0;
+				transform: translateY(-50%);
+				transition: all ease 0.5s;
+			}
+			&::after {
+				display: block;
+				content: "";
+				height: 2px;
+				width: 60%;
+				background-color: var(--white);
+				position: absolute;
+				top: calc(50% + 8px);
+				left: 0;
+				transform: translateY(-50%);
+				transition: all ease 0.5s;
+			}
+		}
+		& .nav {
+			position: fixed;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			padding: 24px;
+			padding-top: 80px;
+			background-color: var(--black);
+
+			font-size: 32px;
+			line-height: 110%;
+			transition: all ease 0.5s;
+			transform: translateY(-100%);
+			&__list {
+				flex-direction: column;
+				justify-content: center;
+				height: 100%;
+				gap: 56px;
+			}
+		}
+		&_show-menu {
+			& .nav {
+				transform: none;
+			}
+		}
+	}
+}

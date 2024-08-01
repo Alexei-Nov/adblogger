@@ -1,0 +1,141 @@
+@font-face {
+	font-family: "VK Sans Display";
+	src: url("../fonts/VK Sans Display/VK\ Sans\ Display\ Light.ttf");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "VK Sans Display";
+	src: url("../fonts/VK Sans Display/VK\ Sans\ Display\ Light\ Italic.ttf");
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "VK Sans Display";
+	src: url("../fonts/VK Sans Display/VK\ Sans\ Display\ Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "VK Sans Display";
+	src: url("../fonts/VK Sans Display/VK\ Sans\ Display\ Italic.ttf");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "VK Sans Display";
+	src: url("../fonts/VK Sans Display/VK\ Sans\ Display\ Medium.ttf");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "VK Sans Display";
+	src: url("../fonts/VK Sans Display/VK\ Sans\ Display\ Medium\ Italic.ttf");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "VK Sans Display";
+	src: url("../fonts/VK Sans Display/VK\ Sans\ Display\ DemiBold.ttf");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "VK Sans Display";
+	src: url("../fonts/VK Sans Display/VK\ Sans\ Display\ DemiBold\ Italic.ttf");
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "VK Sans Display";
+	src: url("../fonts/VK Sans Display/VK\ Sans\ Display\ Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "VK Sans Display";
+	src: url("../fonts/VK Sans Display/VK\ Sans\ Display\ Bold\ Italic.ttf");
+	font-weight: 700;
+	font-style: italic;
+}
+
+
+
+@font-face {
+	font-family: "VK Sans Display Expanded";
+	src: url("../fonts/VK Sans Display Expanded/VK\ Sans\ Display\ Expanded\ Light.ttf");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "VK Sans Display Expanded";
+	src: url("../fonts/VK Sans Display Expanded/VK\ Sans\ Display\ Expanded\ Light\ Italic.ttf");
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "VK Sans Display Expanded";
+	src: url("../fonts/VK Sans Display Expanded/VK\ Sans\ Display\ Expanded\ Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "VK Sans Display Expanded";
+	src: url("../fonts/VK Sans Display Expanded/VK\ Sans\ Display\ Expanded\ Italic.ttf");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "VK Sans Display Expanded";
+	src: url("../fonts/VK Sans Display Expanded/VK\ Sans\ Display\ Expanded\ Medium.ttf");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "VK Sans Display Expanded";
+	src: url("../fonts/VK Sans Display Expanded/VK\ Sans\ Display\ Expanded\ Medium\ Italic.ttf");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "VK Sans Display Expanded";
+	src: url("../fonts/VK Sans Display Expanded/VK\ Sans\ Display\ Expanded\ DemiBold.ttf");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "VK Sans Display Expanded";
+	src: url("../fonts/VK Sans Display Expanded/VK\ Sans\ Display\ Expanded\ DemiBold\ Italic.ttf");
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "VK Sans Display Expanded";
+	src: url("../fonts/VK Sans Display Expanded/VK\ Sans\ Display\ Expanded\ Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "VK Sans Display Expanded";
+	src: url("../fonts/VK Sans Display Expanded/VK\ Sans\ Display\ Expanded\ Bold\ Italic.ttf");
+	font-weight: 700;
+	font-style: italic;
+}
