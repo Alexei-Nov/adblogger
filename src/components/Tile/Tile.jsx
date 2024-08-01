@@ -1,23 +1,61 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import 'swiper/css';
 import './tile.css'
+import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { gsap } from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Tile() {
+
+	let wrapper = useRef()
+	useEffect(() => {
+		if (window.innerWidth > 1200) {
+			let tl = gsap.timeline({
+				scrollTrigger: {
+					trigger: wrapper.current,
+					start: "top 95%",
+					end: "bottom 80%",
+					scrub: false,
+					markers: false,
+					pin: false,
+				}
+			});
+
+			tl.fromTo(wrapper.current, {
+				y: '152px'
+			}, {
+				y: 0,
+				duration: 1.5,
+				ease: "elastic.out(0.8,0.4)",
+			});
+		}
+	})
+
+
 	return (
-		<section className='section tile'>
+		<section className='section tile' ref={wrapper}>
 			<div className="container">
 				<Swiper className='tile__slider'
+					modules={[Pagination]}
 					spaceBetween={0}
 					slidesPerView={1}
+					speed={800}
+					pagination={{
+						el: '.tile__pagination',
+						clickable: true
+					}}
 					breakpoints={{
 						0: {
 							spaceBetween: 24,
 							slidesPerView: 1,
+							allowTouchMove: true
 						},
-						571: {
+						700: {
 							spaceBetween: 0,
-							slidesPerView: 1
+							slidesPerView: 1,
+							allowTouchMove: false
 						},
 					}}
 				>
@@ -77,7 +115,7 @@ export default function Tile() {
 							</div>
 						</div>
 					</SwiperSlide>
-
+					<div className="tile__pagination slider-pagination"></div>
 				</Swiper>
 				<a href='/' className="tile__btn btn">Подключить сообщество</a>
 			</div>

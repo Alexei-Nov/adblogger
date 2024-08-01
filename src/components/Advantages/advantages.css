@@ -1,0 +1,101 @@
+.advantages__title {
+  margin-bottom: 72px;
+}
+
+.advantages__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 265px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+  padding: 24px 32px;
+  background-color: var(--black-2);
+}
+
+.advantages__desc {
+  margin-top: auto;
+}
+
+.advantages__desc a {
+  text-decoration: underline;
+}
+
+.advantages__num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+}
+
+.advantages__num-count {
+  position: relative;
+  overflow: hidden;
+}
+
+.advantages__num-count::after {
+  display: block;
+  content: attr(data-num);
+  position: absolute;
+  top: 100%;
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+.advantages__num-count::before {
+  display: block;
+  content: attr(data-num);
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+.advantages_active .advantages__num-count::before, .advantages_active .advantages__num-count::after {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+@media screen and (max-width: 1200px) {
+  .advantages__wrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .advantages__item {
+    min-height: 0;
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .advantages__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .advantages__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}

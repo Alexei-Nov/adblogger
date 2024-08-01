@@ -5,12 +5,10 @@
 	}
 	&__slide {
 		display: grid;
-		grid-template-columns: 628fr 424fr;
+		grid-template-columns: 1fr 1fr;
 		gap: 24px;
-		min-height: 320px;
 		width: 100%;
 		&:nth-child(even) {
-			grid-template-columns: 424fr 628fr;
 			& .tile {
 				&__body {
 					order: -1;
@@ -114,6 +112,8 @@
 		transition: all ease 0.5s;
 		overflow: hidden;
 		position: relative;
+		min-height: 320px;
+
 		& img {
 			position: absolute;
 			transition: all ease 0.5s;
@@ -121,7 +121,8 @@
 	}
 }
 
-@media screen and (min-width: 570px) {
+// min
+@media screen and (min-width: 700px) {
 	.tile {
 		&__slider {
 			max-width: 1096px;
@@ -131,6 +132,119 @@
 			display: flex;
 			flex-direction: column;
 			gap: 24px;
+			transform: none !important;
+		}
+		& .swiper-pagination {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.tile {
+		&__slide {
+			grid-template-columns: 628fr 424fr;
+			&:nth-child(even) {
+				grid-template-columns: 424fr 628fr;
+			}
+		}
+	}
+}
+
+// max
+@media screen and (max-width: 1024px) {
+	.tile {
+		&__img {
+			& img {
+				transform: none !important;
+			}
+		}
+		&__slide {
+			&:nth-child(1) {
+				& .tile {
+					&__img {
+						& img {
+							&:nth-child(1) {
+								width: 175px;
+								bottom: 0;
+							}
+							&:nth-child(2) {
+								width: 133px;
+								bottom: 0;
+							}
+						}
+					}
+				}
+			}
+			&:nth-child(2) {
+				& .tile {
+					&__img {
+						& img {
+							left: 0;
+						}
+					}
+				}
+			}
+			&:nth-child(3) {
+				& .tile {
+					&__img {
+						& img {
+							&:nth-child(1) {
+								width: 440px;
+								left: -25px;
+								top: 30px;
+							}
+							&:nth-child(2) {
+								width: 100px;
+								left: 34px;
+								bottom: 0;
+							}
+							&:nth-child(3) {
+								width: 100px;
+								left: 65px;
+								top: 14px;
+								right: unset;
+							}
+						}
+					}
+				}
+			}
+			&:nth-child(4) {
+				& .tile {
+					&__img {
+						& img {
+							&:nth-child(1) {
+								left: -40px;
+							}
+							&:nth-child(2) {
+								bottom: 15px;
+								left: 25px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.tile {
+		&__slide {
+			grid-template-columns: auto;
+			grid-template-rows: 1fr 1fr;
+		}
+		&__body {
+			border-radius: 28px;
+		}
+		&__img {
+			border-radius: 28px;
+			& img {
+				transform: none !important;
+			}
+		}
+		&__btn {
+			margin-top: 48px;
 		}
 	}
 }

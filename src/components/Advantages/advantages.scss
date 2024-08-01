@@ -1,4 +1,4 @@
-.adventages {
+.advantages {
 	&__title {
 		margin-bottom: 72px;
 	}
@@ -23,26 +23,52 @@
 		}
 	}
 	&__num {
-		& span {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+	&__num-count {
+		position: relative;
+		overflow: hidden;
+		&::after {
 			display: block;
-			margin-top: 4px;
+			content: attr(data-num);
+			position: absolute;
+			top: 100%;
+			transition: all ease 0.8s;
+		}
+		&::before {
+			display: block;
+			content: attr(data-num);
+			transition: all ease 0.8s;
+		}
+	}
+	&_active {
+		& .advantages {
+			&__num-count {
+				&::before,
+				&::after {
+					transform: translateY(-100%);
+				}
+			}
 		}
 	}
 }
 
 @media screen and (max-width: 1200px) {
-	.adventages {
+	.advantages {
 		&__wrapper {
 			grid-template-columns: 1fr 1fr;
 		}
 		&__item {
 			min-height: 0;
+			transform: none !important;
 		}
 	}
 }
 
 @media screen and (max-width: 570px) {
-	.adventages {
+	.advantages {
 		&__wrapper {
 			display: flex;
 			flex-direction: column;

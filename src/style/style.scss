@@ -3,6 +3,7 @@
 	--black-2: #202020;
 	--white: #fff;
 	--blue-1: #00d3e6;
+	--grey-1: #7c8a9a;
 }
 
 body {
@@ -13,6 +14,11 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 130%;
+}
+
+.body-wrapper {
+	position: relative;
+	overflow: hidden;
 }
 
 .container {
@@ -99,19 +105,61 @@ body {
 	margin-bottom: 96px;
 }
 
-@media screen and (max-width: 1024px) {
-	.container {
-		padding: 0 24px;
+.slider-pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 14px;
+	margin-top: 48px;
+
+	& .swiper-pagination-bullet {
+		display: flex;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: var(--white);
+		opacity: 0.25;
+		cursor: pointer;
+	}
+	& .swiper-pagination-bullet-active {
+		opacity: 1;
 	}
 }
 
+.slider-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	pointer-events: none;
+}
+
+.slider-prev,
+.slider-next {
+	display: flex;
+	width: 48px;
+	height: 48px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: var(--black-2);
+	pointer-events: all;
+}
+
 @media screen and (max-width: 768px) {
+	.section {
+		padding: 48px 0;
+	}
 	.title {
 		margin-bottom: 72px;
 	}
 }
 
 @media screen and (max-width: 570px) {
+	.container {
+		padding: 0 24px;
+	}
 	.title {
 		margin-bottom: 48px;
 		font-size: 24px;

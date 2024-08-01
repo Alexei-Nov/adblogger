@@ -1,4 +1,6 @@
-import Adventages from "./components/Adventages/Adventages";
+import Advantages from "./components/Advantages/Advantages";
+import Channels from "./components/Channels/Channels";
+import Entrance from "./components/Entrance/Entrance";
 import Header from "./components/Header/Header";
 import Tile from "./components/Tile/Tile";
 
@@ -7,8 +9,10 @@ function App() {
 		<>
 			<div className="body-wrapper">
 				<Header />
-				<Adventages />
+				<Entrance />
+				<Advantages />
 				<Tile />
+				<Channels />
 			</div>
 		</>
 	);
