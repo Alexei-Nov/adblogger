@@ -99,7 +99,28 @@
 				gap: 56px;
 			}
 		}
-		&_show-menu {
+	}
+
+	.show-menu {
+		overflow: hidden;
+		& .header {
+			&__menu-btn {
+				& span {
+					width: 0;
+					opacity: 0;
+				}
+				&::before {
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%) rotate(45deg);
+				}
+				&::after {
+					width: 100%;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%) rotate(-45deg);
+				}
+			}
 			& .nav {
 				transform: none;
 			}

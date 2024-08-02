@@ -90,6 +90,9 @@ body {
 
 .btn {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	width: fit-content;
 	padding: 14px 24px;
 	color: var(--black);
@@ -99,6 +102,11 @@ body {
 
 	&_small {
 		padding: 10px 20px;
+	}
+	&_border {
+		color: var(--white);
+		background-color: var(--black);
+		border: 1px solid var(--white);
 	}
 	&:hover {
 		border-radius: 50px;
@@ -150,6 +158,81 @@ body {
 	cursor: pointer;
 	background-color: var(--black-2);
 	pointer-events: all;
+}
+
+.accordion {
+	&__item {
+		padding: 38px 0;
+		cursor: pointer;
+
+		&:not(:first-child) {
+			border-top: 1px solid var(--grey-1);
+		}
+		&:not(:last-child) {
+			border-bottom: 1px solid var(--grey-1);
+		}
+
+		&_open {
+			& .accordion {
+				&__caret {
+					&::after {
+						transform: translate(-50%, -50%);
+					}
+				}
+			}
+		}
+	}
+	&__body {
+		margin-left: 36px;
+		position: relative;
+		max-width: 700px;
+		overflow: hidden;
+		transition: all ease 0.5s;
+		cursor: auto;
+		&::before {
+			display: block;
+			content: "";
+			height: 24px;
+			width: 100%;
+		}
+	}
+	&__btn {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		user-select: none;
+	}
+	&__caret {
+		display: flex;
+		min-width: 24px;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		background-color: var(--black-2);
+		position: relative;
+		justify-content: center;
+		align-items: center;
+
+		&::before {
+			display: block;
+			content: "";
+			width: 12px;
+			height: 1px;
+			background-color: #7c8a9a;
+		}
+		&::after {
+			display: block;
+			content: "";
+			width: 12px;
+			height: 1px;
+			background-color: #7c8a9a;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) rotate(90deg);
+			transition: all ease 0.5s;
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {

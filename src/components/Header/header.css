@@ -129,7 +129,27 @@
     height: 100%;
     gap: 56px;
   }
-  .header_show-menu .nav {
+  .show-menu {
+    overflow: hidden;
+  }
+  .show-menu .header__menu-btn span {
+    width: 0;
+    opacity: 0;
+  }
+  .show-menu .header__menu-btn::before {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .show-menu .header__menu-btn::after {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+            transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .show-menu .header .nav {
     -webkit-transform: none;
             transform: none;
   }

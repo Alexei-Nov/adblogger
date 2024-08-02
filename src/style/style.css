@@ -92,6 +92,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -105,6 +112,12 @@ body {
 
 .btn_small {
   padding: 10px 20px;
+}
+
+.btn_border {
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--white);
 }
 
 .btn:hover {
@@ -177,6 +190,96 @@ body {
   cursor: pointer;
   background-color: var(--black-2);
   pointer-events: all;
+}
+
+.accordion__item {
+  padding: 38px 0;
+  cursor: pointer;
+}
+
+.accordion__item:not(:first-child) {
+  border-top: 1px solid var(--grey-1);
+}
+
+.accordion__item:not(:last-child) {
+  border-bottom: 1px solid var(--grey-1);
+}
+
+.accordion__item_open .accordion__caret::after {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.accordion__body {
+  margin-left: 36px;
+  position: relative;
+  max-width: 700px;
+  overflow: hidden;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  cursor: auto;
+}
+
+.accordion__body::before {
+  display: block;
+  content: "";
+  height: 24px;
+  width: 100%;
+}
+
+.accordion__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.accordion__caret {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--black-2);
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accordion__caret::before {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 1px;
+  background-color: #7c8a9a;
+}
+
+.accordion__caret::after {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 1px;
+  background-color: #7c8a9a;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 @media screen and (max-width: 768px) {

@@ -112,7 +112,7 @@
   .channels__title {
     margin-bottom: 24px;
   }
-  .channels .swiper-pagination {
+  .channels__pagination {
     margin-top: 24px;
   }
 }

@@ -1,13 +1,14 @@
 import React from 'react'
-import { useState } from "react";
 import './header.css'
 
 export default function Header() {
 
-	let [menuState, setMenuState] = useState(false)
+	function toggleMenuClass() {
+		document.body.classList.toggle('show-menu')
+	}
 
 	return (
-		<header className={'header' + (menuState ? ' header_show-menu' : '')}>
+		<header className='header'>
 			<div className="container">
 				<div className="header__wrapper">
 					<a href='/' className="header__logo">
@@ -29,7 +30,7 @@ export default function Header() {
 					<a href='/' className="header__btn btn btn_small text-18 fw-500">
 						Подключить сообщество
 					</a>
-					<div className="header__menu-btn" onClick={(e) => { setMenuState(!menuState) }}>
+					<div className="header__menu-btn" onClick={toggleMenuClass}>
 						<span></span>
 					</div>
 				</div>
