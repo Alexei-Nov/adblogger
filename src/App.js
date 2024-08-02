@@ -14,15 +14,17 @@ function App() {
 		<>
 			<div className="body-wrapper">
 				<Header />
-				<Entrance />
-				<Advantages />
-				<Tile />
-				<Channels />
-				<Partners />
-				<Steps />
-				<Case />
-				<Money />
-				<Faq />
+				<main className="main">
+					<Entrance />
+					<Advantages />
+					<Tile />
+					<Channels />
+					<Partners />
+					<Steps />
+					<Case />
+					<Money />
+					<Faq />
+				</main>
 			</div>
 		</>
 	);
