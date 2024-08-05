@@ -1,7 +1,9 @@
 :root {
   --black: #000;
   --black-2: #202020;
+  --black-3: #0f0f0f;
   --white: #fff;
+  --white-2: #dce6f0;
   --blue-1: #00d3e6;
   --grey-1: #7c8a9a;
 }
@@ -30,6 +32,13 @@ body {
 
 .section {
   padding: 60px 0;
+}
+
+.h1 {
+  font-family: "VK Sans Display Expanded";
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 110%;
 }
 
 .h2 {
@@ -74,6 +83,13 @@ body {
 .text-16 {
   font-size: 16px;
   line-height: 140%;
+}
+
+@media screen and (max-width: 768px) {
+  .h1 {
+    font-size: 30px;
+    line-height: 110%;
+  }
 }
 
 .fw-500 {

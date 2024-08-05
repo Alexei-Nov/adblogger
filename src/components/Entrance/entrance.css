@@ -8,7 +8,7 @@
   max-width: 1392px;
   margin: 0 auto;
   border-radius: 28px;
-  background-color: var(--blue-1);
+  background-color: var(--black-3);
   padding-top: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,6 +21,7 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  border: 1px solid var(--black-2);
 }
 
 .entrance__btn {
@@ -31,7 +32,7 @@
 
 .entrance__title {
   text-align: center;
-  max-width: 555px;
+  max-width: 900px;
   margin: 0 30px;
 }
 
@@ -65,9 +66,5 @@
 @media screen and (max-width: 570px) {
   .entrance {
     padding: 0 8px 48px;
-  }
-  .entrance__title {
-    font-size: 28px;
-    line-height: 120%;
   }
 }

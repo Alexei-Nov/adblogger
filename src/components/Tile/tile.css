@@ -105,7 +105,7 @@
 }
 
 .tile__img {
-  background-color: var(--blue-1);
+  background-color: var(--black-2);
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   overflow: hidden;
@@ -136,7 +136,7 @@
     -webkit-transform: none !important;
             transform: none !important;
   }
-  .tile .swiper-pagination {
+  .tile__pagination {
     display: none;
   }
 }

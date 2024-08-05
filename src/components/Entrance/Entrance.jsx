@@ -5,8 +5,8 @@ export default function Entrance() {
 	return (
 		<section className='section entrance'>
 			<div className="entrance__wrapper">
-				<div className="entrance__title h2">
-					зарабатывайте на&nbsp;своём контенте
+				<div className="entrance__title h1">
+					зарабатывайте <br /> <span className='blue-text'>на&nbsp;своём контенте</span>
 				</div>
 				<div className="entrance__img">
 					<img src="/img/entrance/img-1.png" alt="img" />
