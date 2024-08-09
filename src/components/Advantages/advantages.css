@@ -47,27 +47,36 @@
 .advantages__num-count {
   position: relative;
   overflow: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.advantages__num-count::after {
+.advantages__num-current {
   display: block;
-  content: attr(data-num);
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  min-width: 40px;
+}
+
+.advantages__num-prev {
   position: absolute;
-  top: 100%;
-  -webkit-transition: all ease 0.8s;
-  transition: all ease 0.8s;
-}
-
-.advantages__num-count::before {
+  bottom: 100%;
   display: block;
-  content: attr(data-num);
   -webkit-transition: all ease 0.8s;
   transition: all ease 0.8s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
-.advantages_active .advantages__num-count::before, .advantages_active .advantages__num-count::after {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+.advantages_active .advantages__num-prev, .advantages_active .advantages__num-current {
+  -webkit-transform: none;
+          transform: none;
 }
 
 @media screen and (max-width: 1200px) {

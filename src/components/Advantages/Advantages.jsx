@@ -44,7 +44,10 @@ export default function Advantages() {
 				<div className="advantages__wrapper" >
 					<div className="advantages__item" style={{ transform: 'translateY(-16px)' }}>
 						<div className="advantages__num ">
-							<div className="advantages__num-count h2" data-num="7"></div>
+							<div className="advantages__num-count h2" >
+								<div className="advantages__num-prev">6</div>
+								<div className="advantages__num-current">7</div>
+							</div>
 							<div className='advantages__num-label h3'>тыс.</div>
 						</div>
 						<div className="advantages__desc text-21">
@@ -53,7 +56,11 @@ export default function Advantages() {
 					</div>
 					<div className="advantages__item" style={{ transform: 'translateY(152px)' }}>
 						<div className="advantages__num">
-							<div className="advantages__num-count h2" data-num="100+"></div>
+							<div className="advantages__num-count h2" >
+								<div className="advantages__num-prev">99</div>
+								<div className="advantages__num-current">100</div>
+								+
+							</div>
 						</div>
 						<div className="advantages__desc text-21">
 							рекламодателей
@@ -62,7 +69,11 @@ export default function Advantages() {
 					</div>
 					<div className="advantages__item" style={{ transform: 'translateY(44px)' }}>
 						<div className="advantages__num">
-							<div className="advantages__num-count h2" data-num="300+"></div>
+							<div className="advantages__num-count h2">
+								<div className="advantages__num-prev">299</div>
+								<div className="advantages__num-current">300</div>
+								+
+							</div>
 						</div>
 						<div className="advantages__desc text-21">
 							активных заявок
@@ -71,7 +82,10 @@ export default function Advantages() {
 					</div>
 					<div className="advantages__item" style={{ transform: 'translateY(152px)' }}>
 						<div className="advantages__num ">
-							<div className="advantages__num-count h2" data-num="5,5"></div>
+							<div className="advantages__num-count h2">
+								<div className="advantages__num-prev">5,4</div>
+								<div className="advantages__num-current">5,5</div>
+							</div>
 							<div className='advantages__num-label h3'>млрд ₽</div>
 						</div>
 						<div className="advantages__desc text-21">

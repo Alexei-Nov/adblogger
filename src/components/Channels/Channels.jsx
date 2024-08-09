@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import 'swiper/css';
 import './channels.css'
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Mousewheel } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -36,9 +36,13 @@ export default function Channels() {
 				<div className="channels__title title h2">уже подключились к VK AdBlogger</div>
 				<Swiper className='channels__slider'
 					ref={swiper}
-					modules={[Navigation, Pagination]}
+					modules={[Navigation, Pagination, Mousewheel]}
 					spaceBetween={24}
 					speed={800}
+					mousewheel={{
+						enabled: true,
+						forceToAxis: true
+					}}
 					navigation={{
 						prevEl: '.channels__prev',
 						nextEl: '.channels__next',

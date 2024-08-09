@@ -30,26 +30,28 @@
 	&__num-count {
 		position: relative;
 		overflow: hidden;
-		&::after {
-			display: block;
-			content: attr(data-num);
-			position: absolute;
-			top: 100%;
-			transition: all ease 0.8s;
-		}
-		&::before {
-			display: block;
-			content: attr(data-num);
-			transition: all ease 0.8s;
-		}
+		width: fit-content;
+		display: flex;
 	}
+	&__num-current {
+		display: block;
+		transition: all ease 0.8s;
+		transform: translateY(100%);
+		min-width: 40px;
+	}
+	&__num-prev {
+		position: absolute;
+		bottom: 100%;
+		display: block;
+		transition: all ease 0.8s;
+		transform: translateY(100%);
+	}
+
 	&_active {
 		& .advantages {
-			&__num-count {
-				&::before,
-				&::after {
-					transform: translateY(-100%);
-				}
+			&__num-prev,
+			&__num-current {
+				transform: none;
 			}
 		}
 	}
