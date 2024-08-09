@@ -243,8 +243,8 @@ export default function CasesCatalog() {
 	const [currentPage, setCurrentPage] = useState(1)
 
 	const cardsOnPage = 8;
-	let resultCardsArr = cardsArr.filter((card) => card.tag == caseTag).slice(0, cardsOnPage * currentPage)
-	let remainderCardsArr = cardsArr.filter((card) => card.tag == caseTag).slice(cardsOnPage * currentPage)
+	let resultCardsArr = cardsArr.filter((card) => card.tag === caseTag).slice(0, cardsOnPage * currentPage)
+	let remainderCardsArr = cardsArr.filter((card) => card.tag === caseTag).slice(cardsOnPage * currentPage)
 
 	function setFilter(tag) {
 		setCaseTag(tag)
@@ -257,7 +257,7 @@ export default function CasesCatalog() {
 				<div className="cases-catalog__heading text-20 fw-500">
 					{tagsArr.map((tag, i) => {
 						return (
-							<div className={"cases-catalog__btn btn btn_rounded btn_transparent" + (caseTag == tag ? ' cases-catalog__btn_active' : '')} key={i} onClick={() => { setFilter(tag) }}>
+							<div className={"cases-catalog__btn btn btn_rounded btn_transparent" + (caseTag === tag ? ' cases-catalog__btn_active' : '')} key={i} onClick={() => { setFilter(tag) }}>
 								{tag}
 							</div>
 						)
