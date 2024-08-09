@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
 import './header.css'
 
 export default function Header() {
@@ -6,24 +7,40 @@ export default function Header() {
 	function toggleMenuClass() {
 		document.body.classList.toggle('show-menu')
 	}
+	function removeMenuClass() {
+		document.body.classList.remove('show-menu')
+	}
 
 	return (
 		<header className='header'>
 			<div className="container">
 				<div className="header__wrapper">
-					<a href='/' className="header__logo">
+					<NavLink to='/' className="header__logo" onClick={removeMenuClass}>
 						<img src='/img/logo.svg' alt="logo" />
-					</a>
+					</NavLink>
+
 					<nav className="header__nav nav fw-500 text-18">
 						<ul className='nav__list'>
 							<li className='nav__item'>
-								<a href="/" className='nav__link'>Авторам</a>
+								<NavLink
+									to='for-author'
+									className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
+									onClick={removeMenuClass}
+								>Авторам</NavLink>
 							</li>
 							<li className='nav__item'>
-								<a href="/" className='nav__link'>Рекламодателям</a>
+								<NavLink
+									to='for-advertiser'
+									className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
+									onClick={removeMenuClass}
+								>Рекламодателям</NavLink>
 							</li>
 							<li className='nav__item'>
-								<a href="/" className='nav__link'>Топ-кейсы</a>
+								<NavLink
+									to='top-cases'
+									className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
+									onClick={removeMenuClass}
+								>Топ-кейсы</NavLink>
 							</li>
 						</ul>
 					</nav>

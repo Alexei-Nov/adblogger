@@ -58,8 +58,8 @@
 }
 
 .partners__row_animate {
-  -webkit-animation: marquee 10s infinite linear;
-          animation: marquee 10s infinite linear;
+  -webkit-animation: marquee 20s infinite linear;
+          animation: marquee 20s infinite linear;
 }
 
 .partners__row_animate:nth-of-type(2) {
@@ -67,7 +67,7 @@
 }
 
 .partners__row_animate-reverse {
-  animation: marquee 10s infinite reverse linear;
+  animation: marquee 20s infinite reverse linear;
 }
 
 .partners__row_cloned {

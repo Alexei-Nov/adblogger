@@ -134,6 +134,24 @@
   margin: 0;
 }
 
+.case__navigation {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
+  width: 100%;
+  z-index: 3;
+}
+
+.case__prev {
+  display: none;
+}
+
+.case__next {
+  margin-left: auto;
+}
+
 @media screen and (min-width: 1440px) {
   .case__slider {
     width: calc(100% + (100vw - 1320px) / 2);
@@ -196,6 +214,9 @@
   }
   .case__pagination {
     position: static;
+  }
+  .case__navigation {
+    display: none;
   }
 }
 

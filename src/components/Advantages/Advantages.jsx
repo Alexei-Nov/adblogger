@@ -8,7 +8,7 @@ export default function Advantages() {
 
 	let wrapper = useRef()
 	useEffect(() => {
-		if (window.innerWidth > 1200) {
+		if (window.innerWidth > 1200 && wrapper.current) {
 			let tl = gsap.timeline({
 				scrollTrigger: {
 					trigger: wrapper.current,
@@ -17,7 +17,11 @@ export default function Advantages() {
 					scrub: false,
 					markers: false,
 					pin: false,
-					onEnter: () => wrapper.current.classList.add('advantages_active')
+					onEnter: () => {
+						if (wrapper.current) {
+							wrapper.current.classList.add('advantages_active')
+						}
+					}
 				}
 			});
 

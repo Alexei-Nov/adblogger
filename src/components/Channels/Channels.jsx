@@ -25,7 +25,7 @@ export default function Channels() {
 			xPercent: 50,
 		}, {
 			xPercent: 0,
-			duration: 1.5,
+			duration: 2.5,
 			ease: "elastic.out(0.8,0.4)",
 		});
 	})

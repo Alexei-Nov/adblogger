@@ -33,6 +33,8 @@
 		display: flex;
 		overflow: hidden;
 		margin-top: 12px;
+		position: relative;
+		z-index: -1;
 		& img {
 			width: 100%;
 			height: 100%;
@@ -42,6 +44,10 @@
 	}
 	&__pagination {
 		display: none;
+	}
+	&__btn {
+		opacity: 0;
+		margin-bottom: -60px;
 	}
 }
 

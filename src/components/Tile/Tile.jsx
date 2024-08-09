@@ -11,7 +11,7 @@ export default function Tile() {
 
 	let wrapper = useRef()
 	useEffect(() => {
-		if (window.innerWidth > 1200) {
+		if (window.innerWidth > 1200 && wrapper.current) {
 			let tl = gsap.timeline({
 				scrollTrigger: {
 					trigger: wrapper.current,
@@ -61,8 +61,8 @@ export default function Tile() {
 				>
 					<SwiperSlide className='tile__slide'>
 						<div className="tile__img">
-							<img src="/img/tile/img1-1.png" alt="img" />
-							<img src="/img/tile/img1-2.png" alt="img" />
+							<img src="/img/tile/img1-1.png" alt="img" width={'224px'} />
+							<img src="/img/tile/img1-2.png" alt="img" width={'170px'} />
 						</div>
 						<div className="tile__body ">
 							<div className="tile__subtitle text-32 fw-500">
@@ -75,7 +75,7 @@ export default function Tile() {
 					</SwiperSlide>
 					<SwiperSlide className='tile__slide'>
 						<div className="tile__img">
-							<img src="/img/tile/img2-1.png" alt="img" />
+							<img src="/img/tile/img2-1.png" alt="img" width={'539px'} />
 						</div>
 						<div className="tile__body ">
 							<div className="tile__subtitle text-32 fw-500">
@@ -88,9 +88,9 @@ export default function Tile() {
 					</SwiperSlide>
 					<SwiperSlide className='tile__slide'>
 						<div className="tile__img">
-							<img src="/img/tile/img3-1.png" alt="img" />
-							<img src="/img/tile/img3-2.png" alt="img" />
-							<img src="/img/tile/img3-3.png" alt="img" />
+							<img src="/img/tile/img3-1.png" alt="img" width={'648px'} />
+							<img src="/img/tile/img3-2.png" alt="img" width={'126px'} />
+							<img src="/img/tile/img3-3.png" alt="img" width={'126px'} />
 						</div>
 						<div className="tile__body ">
 							<div className="tile__subtitle text-32 fw-500">
@@ -103,8 +103,8 @@ export default function Tile() {
 					</SwiperSlide>
 					<SwiperSlide className='tile__slide'>
 						<div className="tile__img">
-							<img src="/img/tile/img4-1.png" alt="img" />
-							<img src="/img/tile/img4-2.png" alt="img" />
+							<img src="/img/tile/img4-1.png" alt="img" width={'648px'} />
+							<img src="/img/tile/img4-2.png" alt="img" width={'328px'} />
 						</div>
 						<div className="tile__body ">
 							<div className="tile__subtitle text-32 fw-500">
@@ -117,7 +117,7 @@ export default function Tile() {
 					</SwiperSlide>
 					<div className="tile__pagination slider-pagination"></div>
 				</Swiper>
-				<a href='/' className="tile__btn btn">Подключить сообщество</a>
+				<a href='/' className="tile__btn btn fw-500">Подключить сообщество</a>
 			</div>
 		</section>
 	)

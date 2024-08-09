@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react'
 import './money.css'
 
 export default function Money() {
-
 	let imgWrapper = useRef()
 
 	useEffect(() => {
@@ -11,9 +10,11 @@ export default function Money() {
 				let x = e.clientX / window.innerWidth - 0.5;
 				let y = e.clientY / window.innerHeight - 0.5;
 
-				imgWrapper.current.querySelectorAll('.money__img img').forEach((img, index) => {
-					img.style.transform = 'translate(calc(-50% + ' + x * 30 * (index + 1) + 'px), calc(-50% + ' + y * 30 * (index + 1) + 'px))';
-				});
+				if (imgWrapper.current) {
+					imgWrapper.current.querySelectorAll('.money__img img').forEach((img, index) => {
+						img.style.transform = 'translate(calc(-50% + ' + x * 30 * (index + 1) + 'px), calc(-50% + ' + y * 30 * (index + 1) + 'px))';
+					});
+				}
 			});
 		}
 	})

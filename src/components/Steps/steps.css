@@ -52,6 +52,8 @@
   display: flex;
   overflow: hidden;
   margin-top: 12px;
+  position: relative;
+  z-index: -1;
 }
 
 .steps__img img {
@@ -65,6 +67,11 @@
 
 .steps__pagination {
   display: none;
+}
+
+.steps__btn {
+  opacity: 0;
+  margin-bottom: -60px;
 }
 
 @media screen and (max-width: 1200px) {

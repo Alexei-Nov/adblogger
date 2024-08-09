@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import 'swiper/css';
 import './case.css'
-import { Pagination } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -46,16 +46,21 @@ export default function Case() {
 					</div>
 
 					<Swiper className='case__slider'
-						modules={[Pagination]}
+						modules={[Navigation, Pagination]}
 						spaceBetween={24}
 						speed={800}
 						loop={true}
 						loopAdditionalSlides={2}
-
 						slidesPerView={'auto'}
+
 						pagination={{
 							el: '.case__pagination',
 							clickable: true
+						}}
+
+						navigation={{
+							prevEl: '.case__prev',
+							nextEl: '.case__next',
 						}}
 
 						breakpoints={{
@@ -216,6 +221,19 @@ export default function Case() {
 								<img src="/img/case/img-3.png" alt="img" />
 							</div>
 						</SwiperSlide>
+
+						<div className="case__navigation slider-navigation">
+							<div className="case__prev slider-prev">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path fillRule="evenodd" clipRule="evenodd" d="M14.7365 17.7364C15.088 17.3849 15.088 16.8151 14.7365 16.4636L10.2729 12L14.7365 7.53639C15.088 7.18492 15.088 6.61507 14.7365 6.2636C14.385 5.91213 13.8152 5.91213 13.4637 6.26361L8.3637 11.3636C8.01223 11.7151 8.01223 12.285 8.3637 12.6364L13.4637 17.7364C13.8152 18.0879 14.385 18.0879 14.7365 17.7364Z" fill="#7C8A9A" />
+								</svg>
+							</div>
+							<div className="case__next slider-next">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path fillRule="evenodd" clipRule="evenodd" d="M9.2635 6.26361C8.91203 6.61508 8.91203 7.18493 9.26351 7.5364L13.7271 12L9.2635 16.4636C8.91203 16.8151 8.91203 17.3849 9.26351 17.7364C9.61498 18.0879 10.1848 18.0879 10.5363 17.7364L15.6363 12.6364C15.9878 12.2849 15.9878 11.715 15.6363 11.3636L10.5363 6.2636C10.1848 5.91213 9.61498 5.91213 9.2635 6.26361Z" fill="#7C8A9A" />
+								</svg>
+							</div>
+						</div>
 					</Swiper>
 
 					<div className="case__pagination slider-pagination"></div>

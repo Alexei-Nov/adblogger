@@ -43,7 +43,9 @@ export default function Steps() {
 				}
 			});
 
-			gsap.utils.selector(wrapper)('.steps__slide').forEach((card, index) => {
+			let slidesArr = gsap.utils.selector(wrapper)('.steps__slide')
+
+			slidesArr.forEach((card, index) => {
 				tlCard.fromTo(card, {
 					y: 300 * (index + 1),
 					opacity: index > 0 ? 0.2 : 1
@@ -52,18 +54,31 @@ export default function Steps() {
 					opacity: 1,
 					duration: 2,
 					ease: "elastic.out(0.4,0.6)",
-				}, 0).to(card.querySelector('.steps__num'), {
+				}, index).to(card.querySelector('.steps__num'), {
 					color: '#00D3E6',
 					borderColor: '#00D3E6',
 					duration: 2,
-				}, 0).to(card.querySelector('.steps__body'), {
+				}, index).to(card.querySelector('.steps__body'), {
 					borderRadius: 28,
 					duration: 2,
-				}, 0).to(card.querySelector('.steps__img'), {
+				}, index).to(card.querySelector('.steps__img'), {
 					borderRadius: 28,
 					duration: 2,
-				}, 0);
+				}, index);
 			})
+
+			tlCard.to(gsap.utils.selector(wrapper)('.steps__img'), {
+				marginTop: '-80%'
+			}, slidesArr.length + 1).to(gsap.utils.selector(wrapper)('.steps__num'), {
+				color: '#fff',
+				borderColor: '#fff',
+			}, slidesArr.length + 1).to(gsap.utils.selector(wrapper)('.steps__desc'), {
+				marginTop: 0
+			}, slidesArr.length + 1).to(gsap.utils.selector(wrapper)('.steps__btn'), {
+				marginBottom: 0,
+				opacity: 1
+			}, slidesArr.length + 1)
+
 		}
 	})
 
@@ -131,6 +146,7 @@ export default function Steps() {
 								Получайте деньги за рекламу
 								и выводите их на свой счёт
 							</div>
+							<a href='/' className="steps__btn btn btn_border btn_wide">Регистрация</a>
 						</div>
 						<div className="steps__img">
 							<img src="/img/steps/img-3.png" alt="img" />

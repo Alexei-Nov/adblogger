@@ -45,6 +45,24 @@
   gap: 32px;
 }
 
+.header .nav__link_active {
+  position: relative;
+}
+
+.header .nav__link_active::after {
+  display: block;
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: #00d3e6;
+}
+
 @media screen and (max-width: 1200px) {
   .header__wrapper {
     gap: 16px;

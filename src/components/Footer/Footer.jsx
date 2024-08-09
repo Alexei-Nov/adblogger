@@ -5,7 +5,7 @@ export default function Footer() {
 	let nav = useRef();
 
 	useEffect(() => {
-		if (window.innerWidth < 768) {
+		if (window.innerWidth < 768 && nav.current) {
 			let linkLvl1Arr = nav.current.querySelectorAll('.nav__link_lvl1')
 			linkLvl1Arr.forEach(link => {
 				let item = link.closest('.nav__item_lvl1')

@@ -41,6 +41,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 1190px;
+  min-height: 700px;
 }
 
 .entrance__img img {
@@ -60,6 +61,7 @@
   }
   .entrance__img {
     width: 150%;
+    min-height: 300px;
   }
 }
 
