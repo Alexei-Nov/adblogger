@@ -124,6 +124,18 @@ body {
   color: var(--blue-1);
 }
 
+.grey-text {
+  color: #7c8a9a;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.content p:not(:last-child) {
+  margin-bottom: 1.2em;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;

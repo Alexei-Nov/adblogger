@@ -26,6 +26,7 @@ export default function Header() {
 									to='top-cases'
 									className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
 									onClick={removeMenuClass}
+									end
 								>Топ-кейсы</NavLink>
 							</li>
 						</ul>
