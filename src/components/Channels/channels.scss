@@ -57,6 +57,31 @@
 		transform: translate(-50%, -50%);
 		z-index: 3;
 	}
+	&__tags {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 12px;
+	}
+	&__tag {
+		border: 1.5px solid transparent;
+		transition: all ease 0.5s;
+		&_active {
+			border-color: var(--white);
+		}
+	}
+
+	&__heading {
+		&_has-tags {
+			margin-bottom: 72px;
+			& .channels {
+				&__title {
+					margin-bottom: 56px;
+				}
+			}
+		}
+	}
 
 	& .swiper-wrapper {
 		padding: 50px 0;
@@ -108,6 +133,16 @@
 
 		&__pagination {
 			margin-top: 24px;
+		}
+		&__heading {
+			&_has-tags {
+				margin-bottom: 0px;
+				& .channels {
+					&__title {
+						margin-bottom: 36px;
+					}
+				}
+			}
 		}
 	}
 }

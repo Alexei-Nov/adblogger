@@ -7,7 +7,7 @@ export default function DetailCase() {
 	const { slug } = useParams();
 
 	const articleState = {
-		title: '10 самых обсуждаемых платьев звезд',
+		title: '10 самых обсуждаемых платьев звезд ' + slug,
 		previewImgPath: '/img/detailCase/preview.png',
 		content: [
 			{
@@ -47,10 +47,15 @@ export default function DetailCase() {
 		]
 	}
 
+	const moneyState = {
+		title: 'Зарабатывайте </br> на&nbsp;своём контенте',
+		btnText: 'Подключить сообщество'
+	}
+
 	return (
 		<>
 			<Article article={articleState} />
-			<Money />
+			<Money moneyState={moneyState} />
 		</>
 	)
 }

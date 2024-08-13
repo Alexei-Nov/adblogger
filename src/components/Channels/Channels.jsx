@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import 'swiper/css';
+import "swiper/css/pagination";
 import './channels.css'
 import { Navigation, Pagination, Mousewheel } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,7 +8,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Channels() {
+export default function Channels({ channelsState }) {
 	let swiper = useRef();
 	useEffect(() => {
 		let tl = gsap.timeline({
@@ -30,10 +31,48 @@ export default function Channels() {
 		});
 	})
 
+	const [chanellsTag, setChanellsTag] = useState()
+
+	function filterChannels(tag) {
+		if (chanellsTag === tag) {
+			setChanellsTag()
+		} else {
+			setChanellsTag(tag)
+		}
+		swiper.current.swiper.update()
+		swiper.current.swiper.slideTo(0)
+	}
+
+	let resultChannelsArr = channelsState.channels.filter((channel) => channel.tags.includes(chanellsTag))
+
+	if (!chanellsTag) {
+		resultChannelsArr = channelsState.channels
+	}
+
 	return (
 		<section className='section channels'>
 			<div className="container">
-				<div className="channels__title title h2">уже подключились к VK AdBlogger</div>
+				<div className={"channels__heading" + (channelsState.tags.length > 1 ? ' channels__heading_has-tags' : '')}>
+					{
+						channelsState.title &&
+						<div className="channels__title title h2">{channelsState.title}</div>
+					}
+					{
+						channelsState.tags.length > 1 &&
+						<div className="channels__tags">
+							{channelsState.tags.map((tag, i) => {
+								return (
+									<div
+										key={i}
+										className={"channels__tag text-20 fw-500 btn btn_rounded btn_transparent" + (chanellsTag === tag ? ' channels__tag_active' : '')}
+										onClick={() => { filterChannels(tag) }}
+									>{tag}</div>
+								)
+							})}
+						</div>
+					}
+				</div>
+
 				<Swiper className='channels__slider'
 					ref={swiper}
 					modules={[Navigation, Pagination, Mousewheel]}
@@ -50,7 +89,8 @@ export default function Channels() {
 					slidesPerView='auto'
 					pagination={{
 						el: '.channels__pagination',
-						clickable: true
+						clickable: true,
+						dynamicBullets: true,
 					}}
 					centeredSlides={true}
 					loop={true}
@@ -64,195 +104,30 @@ export default function Channels() {
 						},
 					}}
 				>
-					<SwiperSlide className='channels__slide'>
-						<div className="channels__card">
-							<div className="channels__img">
-								<img src="/img/channels/img-1.png" alt="img" />
-								<div className="channels__icon">
-									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-										<path d="M4.33609 13.8392L5.07712 13.1677L4.33609 13.8392C4.41679 13.9282 4.4623 14.061 4.44491 14.2008L3.93836 18.2738C3.71257 20.0893 5.54097 21.6302 7.30487 20.7566L10.8611 18.9953C10.9502 18.9512 11.0498 18.9512 11.1389 18.9953L14.6951 20.7566C16.459 21.6303 18.2874 20.0893 18.0616 18.2738L17.5551 14.2008L16.5627 14.3242L17.5551 14.2008C17.5377 14.061 17.5832 13.9282 17.6639 13.8392L20.3683 10.8547C21.5954 9.50044 20.9532 7.19977 19.0817 6.83411L15.2125 6.07811C15.1203 6.06011 15.024 5.99623 14.964 5.88156L13.0792 2.27573C12.1901 0.574753 9.80986 0.57476 8.92075 2.27573L7.03596 5.88156C6.97602 5.99622 6.87967 6.06011 6.78755 6.07811L2.91826 6.83411C1.04676 7.19977 0.404559 9.50044 1.63167 10.8547L4.33609 13.8392ZM14.8298 9.76088L14.8296 9.76111L14.8298 9.76088Z"
-											fill="white" stroke="black" strokeWidth="2" />
-									</svg>
-								</div>
-							</div>
-							<div className="channels__name h3">
-								Катя Дима
-							</div>
-							<div className="channels__desc">Семья блогеров <br /> и их лайфстайл</div>
-							<div className="channels__bottom">334K подписчиков</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide className='channels__slide'>
-						<div className="channels__card">
-							<div className="channels__img">
-								<img src="/img/channels/img-2.png" alt="img" />
-								<div className="channels__icon">
-									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-										<path d="M4.33609 13.8392L5.07712 13.1677L4.33609 13.8392C4.41679 13.9282 4.4623 14.061 4.44491 14.2008L3.93836 18.2738C3.71257 20.0893 5.54097 21.6302 7.30487 20.7566L10.8611 18.9953C10.9502 18.9512 11.0498 18.9512 11.1389 18.9953L14.6951 20.7566C16.459 21.6303 18.2874 20.0893 18.0616 18.2738L17.5551 14.2008L16.5627 14.3242L17.5551 14.2008C17.5377 14.061 17.5832 13.9282 17.6639 13.8392L20.3683 10.8547C21.5954 9.50044 20.9532 7.19977 19.0817 6.83411L15.2125 6.07811C15.1203 6.06011 15.024 5.99623 14.964 5.88156L13.0792 2.27573C12.1901 0.574753 9.80986 0.57476 8.92075 2.27573L7.03596 5.88156C6.97602 5.99622 6.87967 6.06011 6.78755 6.07811L2.91826 6.83411C1.04676 7.19977 0.404559 9.50044 1.63167 10.8547L4.33609 13.8392ZM14.8298 9.76088L14.8296 9.76111L14.8298 9.76088Z"
-											fill="white" stroke="black" strokeWidth="2" />
-									</svg>
-								</div>
-							</div>
-							<div className="channels__name h3">
-								i_am_puma
-							</div>
-							<div className="channels__desc">Самая дикая кошка ВКонтакте</div>
-							<div className="channels__bottom">205K подписчиков</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide className='channels__slide'>
-						<div className="channels__card">
-							<div className="channels__img">
-								<img src="/img/channels/img-3.png" alt="img" />
-								<div className="channels__icon">
-									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-										<path d="M4.33609 13.8392L5.07712 13.1677L4.33609 13.8392C4.41679 13.9282 4.4623 14.061 4.44491 14.2008L3.93836 18.2738C3.71257 20.0893 5.54097 21.6302 7.30487 20.7566L10.8611 18.9953C10.9502 18.9512 11.0498 18.9512 11.1389 18.9953L14.6951 20.7566C16.459 21.6303 18.2874 20.0893 18.0616 18.2738L17.5551 14.2008L16.5627 14.3242L17.5551 14.2008C17.5377 14.061 17.5832 13.9282 17.6639 13.8392L20.3683 10.8547C21.5954 9.50044 20.9532 7.19977 19.0817 6.83411L15.2125 6.07811C15.1203 6.06011 15.024 5.99623 14.964 5.88156L13.0792 2.27573C12.1901 0.574753 9.80986 0.57476 8.92075 2.27573L7.03596 5.88156C6.97602 5.99622 6.87967 6.06011 6.78755 6.07811L2.91826 6.83411C1.04676 7.19977 0.404559 9.50044 1.63167 10.8547L4.33609 13.8392ZM14.8298 9.76088L14.8296 9.76111L14.8298 9.76088Z"
-											fill="white" stroke="black" strokeWidth="2" />
-									</svg>
-								</div>
-							</div>
-							<div className="channels__name h3">
-								Всё <br />
-								о Minecraft
-							</div>
-							<div className="channels__desc">Одно из первых сообществ о Майнкрафт</div>
-							<div className="channels__bottom">1M подписчиков</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide className='channels__slide'>
-						<div className="channels__card">
-							<div className="channels__img">
-								<img src="/img/channels/img-4.png" alt="img" />
-								<div className="channels__icon">
-									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-										<path d="M4.33609 13.8392L5.07712 13.1677L4.33609 13.8392C4.41679 13.9282 4.4623 14.061 4.44491 14.2008L3.93836 18.2738C3.71257 20.0893 5.54097 21.6302 7.30487 20.7566L10.8611 18.9953C10.9502 18.9512 11.0498 18.9512 11.1389 18.9953L14.6951 20.7566C16.459 21.6303 18.2874 20.0893 18.0616 18.2738L17.5551 14.2008L16.5627 14.3242L17.5551 14.2008C17.5377 14.061 17.5832 13.9282 17.6639 13.8392L20.3683 10.8547C21.5954 9.50044 20.9532 7.19977 19.0817 6.83411L15.2125 6.07811C15.1203 6.06011 15.024 5.99623 14.964 5.88156L13.0792 2.27573C12.1901 0.574753 9.80986 0.57476 8.92075 2.27573L7.03596 5.88156C6.97602 5.99622 6.87967 6.06011 6.78755 6.07811L2.91826 6.83411C1.04676 7.19977 0.404559 9.50044 1.63167 10.8547L4.33609 13.8392ZM14.8298 9.76088L14.8296 9.76111L14.8298 9.76088Z"
-											fill="white" stroke="black" strokeWidth="2" />
-									</svg>
-								</div>
-							</div>
-							<div className="channels__name h3">
-								Лера <br />
-								Изумруд
-							</div>
-							<div className="channels__desc">Блогер со вкусом к жизни</div>
-							<div className="channels__bottom">151К подписчиков</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide className='channels__slide'>
-						<div className="channels__card">
-							<div className="channels__img">
-								<img src="/img/channels/img-5.png" alt="img" />
-								<div className="channels__icon">
-									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-										<path d="M4.33609 13.8392L5.07712 13.1677L4.33609 13.8392C4.41679 13.9282 4.4623 14.061 4.44491 14.2008L3.93836 18.2738C3.71257 20.0893 5.54097 21.6302 7.30487 20.7566L10.8611 18.9953C10.9502 18.9512 11.0498 18.9512 11.1389 18.9953L14.6951 20.7566C16.459 21.6303 18.2874 20.0893 18.0616 18.2738L17.5551 14.2008L16.5627 14.3242L17.5551 14.2008C17.5377 14.061 17.5832 13.9282 17.6639 13.8392L20.3683 10.8547C21.5954 9.50044 20.9532 7.19977 19.0817 6.83411L15.2125 6.07811C15.1203 6.06011 15.024 5.99623 14.964 5.88156L13.0792 2.27573C12.1901 0.574753 9.80986 0.57476 8.92075 2.27573L7.03596 5.88156C6.97602 5.99622 6.87967 6.06011 6.78755 6.07811L2.91826 6.83411C1.04676 7.19977 0.404559 9.50044 1.63167 10.8547L4.33609 13.8392ZM14.8298 9.76088L14.8296 9.76111L14.8298 9.76088Z"
-											fill="white" stroke="black" strokeWidth="2" />
-									</svg>
-								</div>
-							</div>
-							<div className="channels__name h3">
-								Мари <br />
-								Добро
-							</div>
-							<div className="channels__desc">Та самая с классными клипами</div>
-							<div className="channels__bottom">470K подписчиков</div>
-						</div>
-					</SwiperSlide>
 
-					<SwiperSlide className='channels__slide'>
-						<div className="channels__card">
-							<div className="channels__img">
-								<img src="/img/channels/img-1.png" alt="img" />
-								<div className="channels__icon">
-									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-										<path d="M4.33609 13.8392L5.07712 13.1677L4.33609 13.8392C4.41679 13.9282 4.4623 14.061 4.44491 14.2008L3.93836 18.2738C3.71257 20.0893 5.54097 21.6302 7.30487 20.7566L10.8611 18.9953C10.9502 18.9512 11.0498 18.9512 11.1389 18.9953L14.6951 20.7566C16.459 21.6303 18.2874 20.0893 18.0616 18.2738L17.5551 14.2008L16.5627 14.3242L17.5551 14.2008C17.5377 14.061 17.5832 13.9282 17.6639 13.8392L20.3683 10.8547C21.5954 9.50044 20.9532 7.19977 19.0817 6.83411L15.2125 6.07811C15.1203 6.06011 15.024 5.99623 14.964 5.88156L13.0792 2.27573C12.1901 0.574753 9.80986 0.57476 8.92075 2.27573L7.03596 5.88156C6.97602 5.99622 6.87967 6.06011 6.78755 6.07811L2.91826 6.83411C1.04676 7.19977 0.404559 9.50044 1.63167 10.8547L4.33609 13.8392ZM14.8298 9.76088L14.8296 9.76111L14.8298 9.76088Z"
-											fill="white" stroke="black" strokeWidth="2" />
-									</svg>
+					{[...Array(10)].map((row, i) => resultChannelsArr.map((channel, i) => {
+						return (
+							<SwiperSlide key={i} className='channels__slide'>
+								<div className="channels__card">
+									<div className="channels__img">
+										<img src={channel.photoPath} alt="img" />
+										<div className="channels__icon">
+											<svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+												<path d="M4.33609 13.8392L5.07712 13.1677L4.33609 13.8392C4.41679 13.9282 4.4623 14.061 4.44491 14.2008L3.93836 18.2738C3.71257 20.0893 5.54097 21.6302 7.30487 20.7566L10.8611 18.9953C10.9502 18.9512 11.0498 18.9512 11.1389 18.9953L14.6951 20.7566C16.459 21.6303 18.2874 20.0893 18.0616 18.2738L17.5551 14.2008L16.5627 14.3242L17.5551 14.2008C17.5377 14.061 17.5832 13.9282 17.6639 13.8392L20.3683 10.8547C21.5954 9.50044 20.9532 7.19977 19.0817 6.83411L15.2125 6.07811C15.1203 6.06011 15.024 5.99623 14.964 5.88156L13.0792 2.27573C12.1901 0.574753 9.80986 0.57476 8.92075 2.27573L7.03596 5.88156C6.97602 5.99622 6.87967 6.06011 6.78755 6.07811L2.91826 6.83411C1.04676 7.19977 0.404559 9.50044 1.63167 10.8547L4.33609 13.8392ZM14.8298 9.76088L14.8296 9.76111L14.8298 9.76088Z"
+													fill="white" stroke="black" strokeWidth="2" />
+											</svg>
+										</div>
+									</div>
+									<div className="channels__name h3" dangerouslySetInnerHTML={{ __html: channel.name }}></div>
+									<div className="channels__desc" dangerouslySetInnerHTML={{ __html: channel.desc }}></div>
+									<div className="channels__bottom">{channel.subscribers}</div>
 								</div>
-							</div>
-							<div className="channels__name h3">
-								Катя Дима
-							</div>
-							<div className="channels__desc">Семья блогеров <br /> и их лайфстайл</div>
-							<div className="channels__bottom">334K подписчиков</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide className='channels__slide'>
-						<div className="channels__card">
-							<div className="channels__img">
-								<img src="/img/channels/img-2.png" alt="img" />
-								<div className="channels__icon">
-									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-										<path d="M4.33609 13.8392L5.07712 13.1677L4.33609 13.8392C4.41679 13.9282 4.4623 14.061 4.44491 14.2008L3.93836 18.2738C3.71257 20.0893 5.54097 21.6302 7.30487 20.7566L10.8611 18.9953C10.9502 18.9512 11.0498 18.9512 11.1389 18.9953L14.6951 20.7566C16.459 21.6303 18.2874 20.0893 18.0616 18.2738L17.5551 14.2008L16.5627 14.3242L17.5551 14.2008C17.5377 14.061 17.5832 13.9282 17.6639 13.8392L20.3683 10.8547C21.5954 9.50044 20.9532 7.19977 19.0817 6.83411L15.2125 6.07811C15.1203 6.06011 15.024 5.99623 14.964 5.88156L13.0792 2.27573C12.1901 0.574753 9.80986 0.57476 8.92075 2.27573L7.03596 5.88156C6.97602 5.99622 6.87967 6.06011 6.78755 6.07811L2.91826 6.83411C1.04676 7.19977 0.404559 9.50044 1.63167 10.8547L4.33609 13.8392ZM14.8298 9.76088L14.8296 9.76111L14.8298 9.76088Z"
-											fill="white" stroke="black" strokeWidth="2" />
-									</svg>
-								</div>
-							</div>
-							<div className="channels__name h3">
-								i_am_puma
-							</div>
-							<div className="channels__desc">Самая дикая кошка ВКонтакте</div>
-							<div className="channels__bottom">205K подписчиков</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide className='channels__slide'>
-						<div className="channels__card">
-							<div className="channels__img">
-								<img src="/img/channels/img-3.png" alt="img" />
-								<div className="channels__icon">
-									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-										<path d="M4.33609 13.8392L5.07712 13.1677L4.33609 13.8392C4.41679 13.9282 4.4623 14.061 4.44491 14.2008L3.93836 18.2738C3.71257 20.0893 5.54097 21.6302 7.30487 20.7566L10.8611 18.9953C10.9502 18.9512 11.0498 18.9512 11.1389 18.9953L14.6951 20.7566C16.459 21.6303 18.2874 20.0893 18.0616 18.2738L17.5551 14.2008L16.5627 14.3242L17.5551 14.2008C17.5377 14.061 17.5832 13.9282 17.6639 13.8392L20.3683 10.8547C21.5954 9.50044 20.9532 7.19977 19.0817 6.83411L15.2125 6.07811C15.1203 6.06011 15.024 5.99623 14.964 5.88156L13.0792 2.27573C12.1901 0.574753 9.80986 0.57476 8.92075 2.27573L7.03596 5.88156C6.97602 5.99622 6.87967 6.06011 6.78755 6.07811L2.91826 6.83411C1.04676 7.19977 0.404559 9.50044 1.63167 10.8547L4.33609 13.8392ZM14.8298 9.76088L14.8296 9.76111L14.8298 9.76088Z"
-											fill="white" stroke="black" strokeWidth="2" />
-									</svg>
-								</div>
-							</div>
-							<div className="channels__name h3">
-								Всё <br />
-								о Minecraft
-							</div>
-							<div className="channels__desc">Одно из первых сообществ о Майнкрафт</div>
-							<div className="channels__bottom">1M подписчиков</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide className='channels__slide'>
-						<div className="channels__card">
-							<div className="channels__img">
-								<img src="/img/channels/img-4.png" alt="img" />
-								<div className="channels__icon">
-									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-										<path d="M4.33609 13.8392L5.07712 13.1677L4.33609 13.8392C4.41679 13.9282 4.4623 14.061 4.44491 14.2008L3.93836 18.2738C3.71257 20.0893 5.54097 21.6302 7.30487 20.7566L10.8611 18.9953C10.9502 18.9512 11.0498 18.9512 11.1389 18.9953L14.6951 20.7566C16.459 21.6303 18.2874 20.0893 18.0616 18.2738L17.5551 14.2008L16.5627 14.3242L17.5551 14.2008C17.5377 14.061 17.5832 13.9282 17.6639 13.8392L20.3683 10.8547C21.5954 9.50044 20.9532 7.19977 19.0817 6.83411L15.2125 6.07811C15.1203 6.06011 15.024 5.99623 14.964 5.88156L13.0792 2.27573C12.1901 0.574753 9.80986 0.57476 8.92075 2.27573L7.03596 5.88156C6.97602 5.99622 6.87967 6.06011 6.78755 6.07811L2.91826 6.83411C1.04676 7.19977 0.404559 9.50044 1.63167 10.8547L4.33609 13.8392ZM14.8298 9.76088L14.8296 9.76111L14.8298 9.76088Z"
-											fill="white" stroke="black" strokeWidth="2" />
-									</svg>
-								</div>
-							</div>
-							<div className="channels__name h3">
-								Лера <br />
-								Изумруд
-							</div>
-							<div className="channels__desc">Блогер со вкусом к жизни</div>
-							<div className="channels__bottom">151К подписчиков</div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide className='channels__slide'>
-						<div className="channels__card">
-							<div className="channels__img">
-								<img src="/img/channels/img-5.png" alt="img" />
-								<div className="channels__icon">
-									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-										<path d="M4.33609 13.8392L5.07712 13.1677L4.33609 13.8392C4.41679 13.9282 4.4623 14.061 4.44491 14.2008L3.93836 18.2738C3.71257 20.0893 5.54097 21.6302 7.30487 20.7566L10.8611 18.9953C10.9502 18.9512 11.0498 18.9512 11.1389 18.9953L14.6951 20.7566C16.459 21.6303 18.2874 20.0893 18.0616 18.2738L17.5551 14.2008L16.5627 14.3242L17.5551 14.2008C17.5377 14.061 17.5832 13.9282 17.6639 13.8392L20.3683 10.8547C21.5954 9.50044 20.9532 7.19977 19.0817 6.83411L15.2125 6.07811C15.1203 6.06011 15.024 5.99623 14.964 5.88156L13.0792 2.27573C12.1901 0.574753 9.80986 0.57476 8.92075 2.27573L7.03596 5.88156C6.97602 5.99622 6.87967 6.06011 6.78755 6.07811L2.91826 6.83411C1.04676 7.19977 0.404559 9.50044 1.63167 10.8547L4.33609 13.8392ZM14.8298 9.76088L14.8296 9.76111L14.8298 9.76088Z"
-											fill="white" stroke="black" strokeWidth="2" />
-									</svg>
-								</div>
-							</div>
-							<div className="channels__name h3">
-								Мари <br />
-								Добро
-							</div>
-							<div className="channels__desc">Та самая с классными клипами</div>
-							<div className="channels__bottom">470K подписчиков</div>
-						</div>
-					</SwiperSlide>
+							</SwiperSlide>
+						)
+					})
+					)}
 
-					<div className="channels__pagination slider-pagination"></div>
+					<div className="channels__pagination slider-pagination swiper-pagination"></div>
 					<div className="channels__navigation slider-navigation">
 						<div className="channels__prev slider-prev">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

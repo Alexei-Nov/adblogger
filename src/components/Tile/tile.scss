@@ -15,7 +15,7 @@
 				}
 			}
 		}
-		&:nth-child(1) {
+		&_1 {
 			& .tile {
 				&__img {
 					& img {
@@ -23,28 +23,31 @@
 							bottom: -75px;
 							right: calc(50% + 8px);
 							transform: translateY(20px);
+							width: 224px;
 						}
 						&:nth-child(2) {
 							bottom: -75px;
 							left: calc(50% + 8px);
 							transform: translateY(40px);
+							width: 170px;
 						}
 					}
 				}
 			}
 		}
-		&:nth-child(2) {
+		&_2 {
 			& .tile {
 				&__img {
 					& img {
 						bottom: -50px;
 						left: 9%;
 						transform: translateY(30px);
+						width: 539px;
 					}
 				}
 			}
 		}
-		&:nth-child(3) {
+		&_3 {
 			& .tile {
 				&__img {
 					& img {
@@ -52,22 +55,25 @@
 							top: 0;
 							left: 0;
 							transform: translateY(30px);
+							width: 648px;
 						}
 						&:nth-child(2) {
 							bottom: -15px;
 							left: 22%;
 							transform: translateY(50px);
+							width: 126px;
 						}
 						&:nth-child(3) {
 							top: 50px;
 							right: 50px;
 							transform: translateY(50px);
+							width: 126px;
 						}
 					}
 				}
 			}
 		}
-		&:nth-child(4) {
+		&_4 {
 			& .tile {
 				&__img {
 					& img {
@@ -75,12 +81,38 @@
 							top: 0;
 							left: 0;
 							transform: translateY(30px);
+							width: 648px;
 						}
 						&:nth-child(2) {
 							bottom: 50px;
 							left: 40%;
 							transform: translateY(50px);
+							width: 328px;
 						}
+					}
+				}
+			}
+		}
+		&_5 {
+			& .tile {
+				&__img {
+					& img {
+						bottom: 0px;
+						left: 0;
+						transform: translateY(30px);
+						width: 100%;
+					}
+				}
+			}
+		}
+		&_6 {
+			& .tile {
+				&__img {
+					& img {
+						bottom: 0px;
+						left: 0;
+						transform: translateY(30px);
+						width: 100%;
 					}
 				}
 			}
@@ -160,7 +192,7 @@
 			}
 		}
 		&__slide {
-			&:nth-child(1) {
+			&_1 {
 				& .tile {
 					&__img {
 						& img {
@@ -176,7 +208,7 @@
 					}
 				}
 			}
-			&:nth-child(2) {
+			&_2 {
 				& .tile {
 					&__img {
 						& img {
@@ -185,7 +217,7 @@
 					}
 				}
 			}
-			&:nth-child(3) {
+			&_3 {
 				& .tile {
 					&__img {
 						& img {
@@ -209,7 +241,7 @@
 					}
 				}
 			}
-			&:nth-child(4) {
+			&_4 {
 				& .tile {
 					&__img {
 						& img {
@@ -220,6 +252,28 @@
 								bottom: 15px;
 								left: 25px;
 							}
+						}
+					}
+				}
+			}
+			&_5 {
+				& .tile {
+					&__img {
+						& img {
+							height: 100%;
+							object-fit: cover;
+							object-position: left bottom;
+						}
+					}
+				}
+			}
+			&_6 {
+				& .tile {
+					&__img {
+						& img {
+							height: 100%;
+							object-fit: cover;
+							object-position: left bottom;
 						}
 					}
 				}

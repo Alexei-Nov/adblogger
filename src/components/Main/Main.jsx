@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "../../pages/Home";
 import TopCase from "../../pages/TopCase";
 import DetailCase from "../../pages/DetailCase";
+import ForAdvisers from '../../pages/ForAdvertisers';
 
 export default function Main() {
 
@@ -18,6 +19,7 @@ export default function Main() {
 		<main className="main">
 			<Routes>
 				<Route exact path="/" element={<Home />} />
+				<Route exact path="/for-advertisers" element={<ForAdvisers />} />
 				<Route exact path="/top-cases" element={<TopCase />} />
 				<Route exact path="/top-cases/:slug" element={<DetailCase />} />
 			</Routes>

@@ -4,7 +4,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Advantages() {
+export default function Advantages({ advantagesState }) {
 
 	let wrapper = useRef()
 	useEffect(() => {
@@ -38,60 +38,31 @@ export default function Advantages() {
 		<section className='section advantages' ref={wrapper}>
 			<div className="container">
 				<div className="advantages__title title h2">
-					монетизируйте сообщество <br />
-					<span className='blue-text'>от&nbsp;1&nbsp;000 подписчиков</span>
+					{advantagesState.titleWhite} <br />
+					{advantagesState.titleBlue &&
+						<span className='blue-text' dangerouslySetInnerHTML={{ __html: advantagesState.titleBlue }} ></span>
+					}
 				</div>
 				<div className="advantages__wrapper" >
-					<div className="advantages__item" style={{ transform: 'translateY(-16px)' }}>
-						<div className="advantages__num ">
-							<div className="advantages__num-count h2" >
-								<div className="advantages__num-prev">6</div>
-								<div className="advantages__num-current">7</div>
+					{advantagesState.items.map((item, i) => {
+						return (
+							<div key={i} className="advantages__item" >
+								<div className="advantages__num ">
+									<div className="advantages__num-count h2" >
+										<div className="advantages__num-prev">{item.numPrev}</div>
+										<div className="advantages__num-current">{item.numCurrent}</div>
+										{item.numAfter &&
+											item.numAfter
+										}
+									</div>
+									{item.numLabel &&
+										<div className='advantages__num-label h3'>{item.numLabel}</div>
+									}
+								</div>
+								<div className="advantages__desc text-21" dangerouslySetInnerHTML={{ __html: item.desc }}></div>
 							</div>
-							<div className='advantages__num-label h3'>тыс.</div>
-						</div>
-						<div className="advantages__desc text-21">
-							блогеров и сообществ уже с нами
-						</div>
-					</div>
-					<div className="advantages__item" style={{ transform: 'translateY(152px)' }}>
-						<div className="advantages__num">
-							<div className="advantages__num-count h2" >
-								<div className="advantages__num-prev">99</div>
-								<div className="advantages__num-current">100</div>
-								+
-							</div>
-						</div>
-						<div className="advantages__desc text-21">
-							рекламодателей
-							на платформе
-						</div>
-					</div>
-					<div className="advantages__item" style={{ transform: 'translateY(44px)' }}>
-						<div className="advantages__num">
-							<div className="advantages__num-count h2">
-								<div className="advantages__num-prev">299</div>
-								<div className="advantages__num-current">300</div>
-								+
-							</div>
-						</div>
-						<div className="advantages__desc text-21">
-							активных заявок
-							от рекламодателей
-						</div>
-					</div>
-					<div className="advantages__item" style={{ transform: 'translateY(152px)' }}>
-						<div className="advantages__num ">
-							<div className="advantages__num-count h2">
-								<div className="advantages__num-prev">5,4</div>
-								<div className="advantages__num-current">5,5</div>
-							</div>
-							<div className='advantages__num-label h3'>млрд ₽</div>
-						</div>
-						<div className="advantages__desc text-21">
-							<a href="/">заработали</a> авторы ВКонтакте в 2024 году
-						</div>
-					</div>
+						)
+					})}
 				</div>
 			</div>
 		</section>

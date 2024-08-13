@@ -190,15 +190,21 @@ body {
 
 	& .swiper-pagination-bullet {
 		display: flex;
+		min-width: 10px;
 		width: 10px;
 		height: 10px;
 		border-radius: 50%;
 		background-color: var(--white);
 		opacity: 0.25;
 		cursor: pointer;
+		transition: all ease 0.5s !important;
 	}
 	& .swiper-pagination-bullet-active {
 		opacity: 1;
+	}
+	&.swiper-pagination {
+		gap: 0;
+		justify-content: unset;
 	}
 }
 

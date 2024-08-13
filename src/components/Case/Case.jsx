@@ -7,7 +7,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Case() {
+export default function Case({ caseState }) {
 	let wrapper = useRef();
 
 	useEffect(() => {
@@ -38,11 +38,8 @@ export default function Case() {
 			<div className="container">
 				<div className="case__wrapper">
 					<div className="case__body">
-						<div className="case__title title h2">вдохновляйтесь кейсами</div>
-						<div className="case__desc text-32 fw-500">
-							Как крупные рекламодатели работают с авторами — узнайте в коротких статьях
-							о топовых кейсах
-						</div>
+						<div className="case__title title h2" dangerouslySetInnerHTML={{ __html: caseState.title }}></div>
+						<div className="case__desc text-32 fw-500" dangerouslySetInnerHTML={{ __html: caseState.desc }}></div>
 					</div>
 
 					<Swiper className='case__slider'
@@ -75,152 +72,38 @@ export default function Case() {
 							},
 						}}
 					>
-						<SwiperSlide className='case__slide'>
-							<div className="case__name text-32 fw-500">
-								Отдых по-авторски
-							</div>
-							<div className="case__bottom">
-								<div className="case__desc">
-									Яндекс Путешествия. Как правильно вести блог и получать выгоду вовремя путешествий
-								</div>
-								<div className="case__icon">
-									<img src="/img/case/icon-1.svg" alt="img" />
-								</div>
-							</div>
-							<div className="case__img">
-								<img src="/img/case/img-1.png" alt="img" />
-							</div>
-						</SwiperSlide>
-						<SwiperSlide className='case__slide'>
-							<div className="case__name text-32 fw-500">
-								Просмотры растут
-							</div>
-							<div className="case__bottom">
-								<div className="case__desc">
-									Кинопоиск: как сделать CPA дешевле в два раза и причём здесь лимитированные промокоды
-								</div>
-								<div className="case__icon">
-									<img src="/img/case/icon-2.svg" alt="img" />
-								</div>
-							</div>
-							<div className="case__img">
-								<img src="/img/case/img-2.png" alt="img" />
-							</div>
-						</SwiperSlide>
-						<SwiperSlide className='case__slide'>
-							<div className="case__name text-32 fw-500">
-								Розыгрыш автомобиля Тинькофф
-							</div>
-							<div className="case__bottom">
-								<div className="case__desc">
-									Подпишись на мой канал, оформи любой продует в Тинькофф и у тебя будет шанс выиграть Tesla Model S
-								</div>
-								<div className="case__icon">
-									<img src="/img/case/icon-3.svg" alt="img" />
-								</div>
-							</div>
-							<div className="case__img">
-								<img src="/img/case/img-3.png" alt="img" />
-							</div>
-						</SwiperSlide>
-
-						<SwiperSlide className='case__slide'>
-							<div className="case__name text-32 fw-500">
-								Отдых по-авторски
-							</div>
-							<div className="case__bottom">
-								<div className="case__desc">
-									Яндекс Путешествия. Как правильно вести блог и получать выгоду вовремя путешествий
-								</div>
-								<div className="case__icon">
-									<img src="/img/case/icon-1.svg" alt="img" />
-								</div>
-							</div>
-							<div className="case__img">
-								<img src="/img/case/img-1.png" alt="img" />
-							</div>
-						</SwiperSlide>
-						<SwiperSlide className='case__slide'>
-							<div className="case__name text-32 fw-500">
-								Просмотры растут
-							</div>
-							<div className="case__bottom">
-								<div className="case__desc">
-									Кинопоиск: как сделать CPA дешевле в два раза и причём здесь лимитированные промокоды
-								</div>
-								<div className="case__icon">
-									<img src="/img/case/icon-2.svg" alt="img" />
-								</div>
-							</div>
-							<div className="case__img">
-								<img src="/img/case/img-2.png" alt="img" />
-							</div>
-						</SwiperSlide>
-						<SwiperSlide className='case__slide'>
-							<div className="case__name text-32 fw-500">
-								Розыгрыш автомобиля Тинькофф
-							</div>
-							<div className="case__bottom">
-								<div className="case__desc">
-									Подпишись на мой канал, оформи любой продует в Тинькофф и у тебя будет шанс выиграть Tesla Model S
-								</div>
-								<div className="case__icon">
-									<img src="/img/case/icon-3.svg" alt="img" />
-								</div>
-							</div>
-							<div className="case__img">
-								<img src="/img/case/img-3.png" alt="img" />
-							</div>
-						</SwiperSlide>
-
-						<SwiperSlide className='case__slide'>
-							<div className="case__name text-32 fw-500">
-								Отдых по-авторски
-							</div>
-							<div className="case__bottom">
-								<div className="case__desc">
-									Яндекс Путешествия. Как правильно вести блог и получать выгоду вовремя путешествий
-								</div>
-								<div className="case__icon">
-									<img src="/img/case/icon-1.svg" alt="img" />
-								</div>
-							</div>
-							<div className="case__img">
-								<img src="/img/case/img-1.png" alt="img" />
-							</div>
-						</SwiperSlide>
-						<SwiperSlide className='case__slide'>
-							<div className="case__name text-32 fw-500">
-								Просмотры растут
-							</div>
-							<div className="case__bottom">
-								<div className="case__desc">
-									Кинопоиск: как сделать CPA дешевле в два раза и причём здесь лимитированные промокоды
-								</div>
-								<div className="case__icon">
-									<img src="/img/case/icon-2.svg" alt="img" />
-								</div>
-							</div>
-							<div className="case__img">
-								<img src="/img/case/img-2.png" alt="img" />
-							</div>
-						</SwiperSlide>
-						<SwiperSlide className='case__slide'>
-							<div className="case__name text-32 fw-500">
-								Розыгрыш автомобиля Тинькофф
-							</div>
-							<div className="case__bottom">
-								<div className="case__desc">
-									Подпишись на мой канал, оформи любой продует в Тинькофф и у тебя будет шанс выиграть Tesla Model S
-								</div>
-								<div className="case__icon">
-									<img src="/img/case/icon-3.svg" alt="img" />
-								</div>
-							</div>
-							<div className="case__img">
-								<img src="/img/case/img-3.png" alt="img" />
-							</div>
-						</SwiperSlide>
+						{caseState.cases.map((caseItem, i) => {
+							return (
+								<SwiperSlide key={i} className='case__slide'>
+									<div className="case__name text-32 fw-500">{caseItem.name}</div>
+									<div className="case__bottom">
+										<div className="case__desc">{caseItem.desc}</div>
+										<div className="case__icon">
+											<img src={caseItem.iconPath} alt="img" />
+										</div>
+									</div>
+									<div className="case__img">
+										<img src={caseItem.imgPath} alt="img" />
+									</div>
+								</SwiperSlide>
+							)
+						})}
+						{caseState.cases.map((caseItem, i) => {
+							return (
+								<SwiperSlide key={i} className='case__slide'>
+									<div className="case__name text-32 fw-500">{caseItem.name}</div>
+									<div className="case__bottom">
+										<div className="case__desc">{caseItem.desc}</div>
+										<div className="case__icon">
+											<img src={caseItem.iconPath} alt="img" />
+										</div>
+									</div>
+									<div className="case__img">
+										<img src={caseItem.imgPath} alt="img" />
+									</div>
+								</SwiperSlide>
+							)
+						})}
 
 						<div className="case__navigation slider-navigation">
 							<div className="case__prev slider-prev">

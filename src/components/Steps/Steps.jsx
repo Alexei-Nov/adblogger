@@ -7,7 +7,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Steps() {
+export default function Steps({ stepsState }) {
 	let wrapper = useRef();
 	let title = useRef();
 
@@ -112,46 +112,23 @@ export default function Steps() {
 						},
 					}}
 				>
-					<SwiperSlide className='steps__slide'>
-						<div className="steps__body">
-							<div className="steps__num text-24">1</div>
-							<div className="steps__name text-32 fw-500">Подключитесь</div>
-							<div className="steps__desc text-21">
-								Зарегистрируйтесь как автор, подключите своё сообщество
-								и укажите реквизиты
-							</div>
-						</div>
-						<div className="steps__img">
-							<img src="/img/steps/img-1.png" alt="img" />
-						</div>
-					</SwiperSlide>
-					<SwiperSlide className='steps__slide'>
-						<div className="steps__body">
-							<div className="steps__num text-24">2</div>
-							<div className="steps__name text-32 fw-500">Принимайте заявки</div>
-							<div className="steps__desc text-21">
-								Укажите свободные слоты для размещения и получайте заявки
-								от рекламодателей
-							</div>
-						</div>
-						<div className="steps__img">
-							<img src="/img/steps/img-2.png" alt="img" />
-						</div>
-					</SwiperSlide>
-					<SwiperSlide className='steps__slide'>
-						<div className="steps__body">
-							<div className="steps__num text-24">3</div>
-							<div className="steps__name text-32 fw-500">Зарабатывайте</div>
-							<div className="steps__desc text-21">
-								Получайте деньги за рекламу
-								и выводите их на свой счёт
-							</div>
-							<a href='/' className="steps__btn btn btn_border btn_wide">Регистрация</a>
-						</div>
-						<div className="steps__img">
-							<img src="/img/steps/img-3.png" alt="img" />
-						</div>
-					</SwiperSlide>
+					{stepsState.map((stepItem, i) => {
+						return (
+							<SwiperSlide key={i} className='steps__slide'>
+								<div className="steps__body">
+									<div className="steps__num text-24">{i + 1}</div>
+									<div className="steps__name text-32 fw-500">{stepItem.title}</div>
+									<div className="steps__desc text-21">{stepItem.desc}</div>
+									{i === 2 &&
+										<a href='/' className="steps__btn btn btn_border btn_wide">Регистрация</a>
+									}
+								</div>
+								<div className="steps__img">
+									<img src={stepItem.imgPath} alt="img" />
+								</div>
+							</SwiperSlide>
+						)
+					})}
 
 					<div className="steps__pagination slider-pagination"></div>
 				</Swiper>

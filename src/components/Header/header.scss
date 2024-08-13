@@ -21,6 +21,9 @@
 	&__btn {
 		margin-left: auto;
 	}
+	&__menu-btn {
+		display: none;
+	}
 	& .nav {
 		&__list {
 			display: flex;

@@ -13,6 +13,17 @@
 		align-items: center;
 		overflow: hidden;
 		border: 1px solid var(--black-2);
+		position: relative;
+		&::after {
+			display: block;
+			content: "";
+			width: 100%;
+			height: 150px;
+			position: absolute;
+			bottom: -1px;
+			left: 0;
+			background: linear-gradient(0deg, #0f0f0f 0%, rgba(0, 0, 0, 0) 100%);
+		}
 	}
 	&__btn {
 		margin: 0 auto;
@@ -27,7 +38,7 @@
 	&__img {
 		display: flex;
 		width: 1190px;
-		min-height: 700px;
+		height: 700px;
 		& img {
 			width: 100%;
 			height: 100%;
@@ -45,6 +56,7 @@
 		&__img {
 			width: 150%;
 			min-height: 300px;
+			height: auto;
 		}
 	}
 }

@@ -1,198 +1,37 @@
 import React from 'react'
 import './partners.css'
 
-export default function Partners() {
+export default function Partners({ partnersState }) {
+	const rowCount = partnersState.rowsCount
 	return (
 		<section className='section partners'>
 			<div className="container">
-				<div className="partners__title title h2">заказывают рекламу у авторов</div>
+				<div className="partners__title title h2">{partnersState.title}</div>
 			</div>
 
 			<div className="partners__wrapper">
-				<div className="partners__row partners__row_animate">
-					<div className="partners__img">
-						<img src="/img/partners/img-1.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-2.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-3.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-4.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-5.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-6.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-7.png" alt="img" />
-					</div>
-					<div className="partners__row partners__row_cloned">
-						<div className="partners__img">
-							<img src="/img/partners/img-1.png" alt="img" />
+				{[...Array(rowCount)].map((row, i) => {
+					return (
+						<div key={i} className={"partners__row partners__row_animate" + (i % 2 === 0 ? '-reverse' : '')}>
+							{partnersState.imgList.map((img, j) => {
+								return (
+									<div key={j} className="partners__img">
+										<img src={img} alt="img" />
+									</div>
+								)
+							})}
+							<div className="partners__row partners__row_cloned">
+								{partnersState.imgList.map((img, j) => {
+									return (
+										<div key={j} className="partners__img">
+											<img src={img} alt="img" />
+										</div>
+									)
+								})}
+							</div>
 						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-2.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-3.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-4.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-5.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-6.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-7.png" alt="img" />
-						</div>
-					</div>
-				</div>
-				<div className="partners__row partners__row_animate-reverse">
-					<div className="partners__img">
-						<img src="/img/partners/img-1.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-2.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-3.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-4.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-5.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-6.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-7.png" alt="img" />
-					</div>
-					<div className="partners__row partners__row_cloned">
-						<div className="partners__img">
-							<img src="/img/partners/img-1.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-2.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-3.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-4.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-5.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-6.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-7.png" alt="img" />
-						</div>
-					</div>
-				</div>
-				<div className="partners__row partners__row_animate">
-					<div className="partners__img">
-						<img src="/img/partners/img-1.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-2.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-3.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-4.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-5.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-6.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-7.png" alt="img" />
-					</div>
-					<div className="partners__row partners__row_cloned">
-						<div className="partners__img">
-							<img src="/img/partners/img-1.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-2.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-3.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-4.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-5.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-6.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-7.png" alt="img" />
-						</div>
-					</div>
-				</div>
-				<div className="partners__row partners__row_animate-reverse">
-					<div className="partners__img">
-						<img src="/img/partners/img-1.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-2.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-3.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-4.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-5.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-6.png" alt="img" />
-					</div>
-					<div className="partners__img">
-						<img src="/img/partners/img-7.png" alt="img" />
-					</div>
-					<div className="partners__row partners__row_cloned">
-						<div className="partners__img">
-							<img src="/img/partners/img-1.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-2.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-3.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-4.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-5.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-6.png" alt="img" />
-						</div>
-						<div className="partners__img">
-							<img src="/img/partners/img-7.png" alt="img" />
-						</div>
-					</div>
-				</div>
+					)
+				})}
 			</div>
 		</section>
 	)

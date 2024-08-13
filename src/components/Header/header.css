@@ -35,6 +35,10 @@
   margin-left: auto;
 }
 
+.header__menu-btn {
+  display: none;
+}
+
 .header .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;

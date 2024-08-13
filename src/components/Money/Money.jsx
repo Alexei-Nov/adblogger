@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './money.css'
 
-export default function Money() {
+export default function Money({ moneyState }) {
 	let imgWrapper = useRef()
 
 	useEffect(() => {
@@ -24,8 +24,8 @@ export default function Money() {
 		<section className='section money'>
 			<div className="container">
 				<div className="money__wrapper" >
-					<div className="money__title title h2">Зарабатывайте на&nbsp;своём контенте</div>
-					<a href='/' className="money__btn btn btn_border">Подключить сообщество</a>
+					<div className="money__title title h2" dangerouslySetInnerHTML={{ __html: moneyState.title }}></div>
+					<a href='/' className="money__btn btn btn_border">{moneyState.btnText}</a>
 
 					<div className="money__img" ref={imgWrapper}>
 						<picture>
