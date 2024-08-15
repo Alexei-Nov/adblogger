@@ -21,23 +21,25 @@ export default function Money({ moneyState }) {
 
 
 	return (
-		<section className='section money'>
-			<div className="container">
-				<div className="money__wrapper" >
-					<div className="money__title title h2" dangerouslySetInnerHTML={{ __html: moneyState.title }}></div>
-					<a href='/' className="money__btn btn btn_border">{moneyState.btnText}</a>
+		<>
+			<section className='section money'>
+				<div className="container">
+					<div className="money__wrapper" >
+						<div className="money__title title h2" dangerouslySetInnerHTML={{ __html: moneyState.title }}></div>
+						<a href='/' className="money__btn btn btn_border">{moneyState.btnText}</a>
 
-					<div className="money__img" ref={imgWrapper}>
-						<picture>
-							<source media="(max-width: 570px)" srcSet="/img/money/img-1_mob.png" sizes="img" />
-							<source media="(max-width: 1024px)" srcSet="/img/money/img-1_tablet.png" sizes="img" />
-							<img src="/img/money/img-1.png" alt="img" />
-						</picture>
-						<img src="/img/money/img-2.png" alt="img" />
-						<img src="/img/money/img-3.png" alt="img" />
+						<div className="money__img" ref={imgWrapper}>
+							<picture>
+								<source media="(max-width: 570px)" srcSet="/img/money/img-1_mob.png" sizes="img" />
+								<source media="(max-width: 1024px)" srcSet="/img/money/img-1_tablet.png" sizes="img" />
+								<img src="/img/money/img-1.png" alt="img" />
+							</picture>
+							<img src="/img/money/img-2.png" alt="img" />
+							<img src="/img/money/img-3.png" alt="img" />
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</>
 	)
 }

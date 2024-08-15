@@ -17,8 +17,8 @@ export default function Steps({ stepsState }) {
 				scrollTrigger: {
 					trigger: wrapper.current,
 					start: "top 60%",
-					end: "bottom bottom",
-					scrub: false,
+					end: "+=" + window.innerHeight,
+					scrub: true,
 					markers: false,
 					pin: false,
 				}
@@ -32,18 +32,19 @@ export default function Steps({ stepsState }) {
 				ease: "elastic.out(0.8,0.4)",
 			});
 
+			let slidesArr = gsap.utils.selector(wrapper)('.steps__slide')
+
 			let tlCard = gsap.timeline({
 				scrollTrigger: {
 					trigger: wrapper.current,
-					start: "top 60%",
-					end: "bottom bottom",
-					scrub: false,
+					start: "top 80px",
+					end: "+=" + window.innerHeight * slidesArr.length,
+					scrub: true,
 					markers: false,
-					pin: false,
+					pin: true,
 				}
 			});
 
-			let slidesArr = gsap.utils.selector(wrapper)('.steps__slide')
 
 			slidesArr.forEach((card, index) => {
 				tlCard.fromTo(card, {
@@ -68,7 +69,7 @@ export default function Steps({ stepsState }) {
 			})
 
 			tlCard.to(gsap.utils.selector(wrapper)('.steps__img'), {
-				marginTop: '-80%'
+				marginTop: '-340px'
 			}, slidesArr.length + 1).to(gsap.utils.selector(wrapper)('.steps__num'), {
 				color: '#fff',
 				borderColor: '#fff',
@@ -77,62 +78,67 @@ export default function Steps({ stepsState }) {
 			}, slidesArr.length + 1).to(gsap.utils.selector(wrapper)('.steps__btn'), {
 				marginBottom: 0,
 				opacity: 1
-			}, slidesArr.length + 1)
+			}, slidesArr.length + 1);
 
+			tlCard.to(wrapper.current.closest('.pin-spacer'), {
+				marginBottom: '-340px'
+			})
 		}
 	})
 
 	return (
-		<section className='section steps' ref={wrapper}>
-			<div className="container">
-				<div className="steps__title title h2" ref={title}>cтаньте автором в VK AdBlogger</div>
-				<Swiper className='steps__slider'
-					modules={[Pagination]}
-					spaceBetween={24}
-					speed={800}
-					slidesPerView={3}
-					centeredSlides={false}
-					pagination={{
-						el: '.steps__pagination',
-						clickable: true
-					}}
+		<>
+			<section className='section steps' >
+				<div className="container" ref={wrapper}>
+					<div className="steps__title title h2" ref={title}>cтаньте автором в VK AdBlogger</div>
+					<Swiper className='steps__slider'
+						modules={[Pagination]}
+						spaceBetween={24}
+						speed={800}
+						slidesPerView={3}
+						centeredSlides={false}
+						pagination={{
+							el: '.steps__pagination',
+							clickable: true
+						}}
 
-					breakpoints={{
-						0: {
-							slidesPerView: 1,
-							centeredSlides: true
-						},
-						571: {
-							slidesPerView: 'auto',
-							centeredSlides: true
-						},
-						1201: {
-							slidesPerView: 3,
-							centeredSlides: false
-						},
-					}}
-				>
-					{stepsState.map((stepItem, i) => {
-						return (
-							<SwiperSlide key={i} className='steps__slide'>
-								<div className="steps__body">
-									<div className="steps__num text-24">{i + 1}</div>
-									<div className="steps__name text-32 fw-500">{stepItem.title}</div>
-									<div className="steps__desc text-21">{stepItem.desc}</div>
-									{i === 2 &&
-										<a href='/' className="steps__btn btn btn_border btn_wide">Регистрация</a>
-									}
-								</div>
-								<div className="steps__img">
-									<img src={stepItem.imgPath} alt="img" />
-								</div>
-							</SwiperSlide>
-						)
-					})}
+						breakpoints={{
+							0: {
+								slidesPerView: 1,
+								centeredSlides: true
+							},
+							571: {
+								slidesPerView: 'auto',
+								centeredSlides: true
+							},
+							1201: {
+								slidesPerView: 3,
+								centeredSlides: false
+							},
+						}}
+					>
+						{stepsState.map((stepItem, i) => {
+							return (
+								<SwiperSlide key={i} className='steps__slide'>
+									<div className="steps__body">
+										<div className="steps__num text-24">{i + 1}</div>
+										<div className="steps__name text-32 fw-500">{stepItem.title}</div>
+										<div className="steps__desc text-21">{stepItem.desc}</div>
+										{i === 2 &&
+											<a href='/' className="steps__btn btn btn_border btn_wide">Регистрация</a>
+										}
+									</div>
+									<div className="steps__img">
+										<img src={stepItem.imgPath} alt="img" />
+									</div>
+								</SwiperSlide>
+							)
+						})}
 
-					<div className="steps__pagination slider-pagination"></div>
-				</Swiper>
-			</div>
-		</section>
+						<div className="steps__pagination slider-pagination"></div>
+					</Swiper>
+				</div>
+			</section>
+		</>
 	)
 }

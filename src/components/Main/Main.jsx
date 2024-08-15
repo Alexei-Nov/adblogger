@@ -16,13 +16,15 @@ export default function Main() {
 	}, [location])
 
 	return (
-		<main className="main">
-			<Routes>
-				<Route exact path="/" element={<Home />} />
-				<Route exact path="/for-advertisers" element={<ForAdvisers />} />
-				<Route exact path="/top-cases" element={<TopCase />} />
-				<Route exact path="/top-cases/:slug" element={<DetailCase />} />
-			</Routes>
-		</main>
+		<>
+			<main className="main">
+				<Routes>
+					<Route exact path="/" element={<Home />} />
+					<Route exact path="/for-advertisers" element={<ForAdvisers />} />
+					<Route exact path="/top-cases" element={<TopCase />} />
+					<Route exact path="/top-cases/:slug" element={<DetailCase />} />
+				</Routes>
+			</main>
+		</>
 	)
 }

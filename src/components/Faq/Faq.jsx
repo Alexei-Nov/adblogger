@@ -19,23 +19,25 @@ export default function Faq({ faqState }) {
 	}
 
 	return (
-		<section className='section faq'>
-			<div className="container">
-				<div className="faq__title h2">FAQ</div>
-				<div className="faq__accordion accordion " >
-					{faqState.map((item, i) => {
-						return (
-							<div className="accordion__item" key={i} onClick={toggleItem}>
-								<div className="accordion__btn text-32 fw-500">
-									<div className="accordion__caret"></div>
-									{item.question}
+		<>
+			<section className='section faq'>
+				<div className="container">
+					<div className="faq__title h2">FAQ</div>
+					<div className="faq__accordion accordion " >
+						{faqState.map((item, i) => {
+							return (
+								<div className="accordion__item" key={i} onClick={toggleItem}>
+									<div className="accordion__btn text-32 fw-500">
+										<div className="accordion__caret"></div>
+										{item.question}
+									</div>
+									<div className="accordion__body text-21" dangerouslySetInnerHTML={{ __html: item.answer }}></div>
 								</div>
-								<div className="accordion__body text-21" dangerouslySetInnerHTML={{ __html: item.answer }}></div>
-							</div>
-						)
-					})}
+							)
+						})}
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</>
 	)
 }
