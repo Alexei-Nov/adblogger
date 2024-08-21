@@ -80,13 +80,13 @@
 						&:nth-child(1) {
 							top: 0;
 							left: 0;
-							transform: translateY(30px);
+							transform: translateY(35px);
 							width: 648px;
 						}
 						&:nth-child(2) {
 							bottom: 50px;
 							left: 40%;
-							transform: translateY(50px);
+							transform: translateY(40px);
 							width: 328px;
 						}
 					}
@@ -111,7 +111,7 @@
 					& img {
 						bottom: 0px;
 						left: 0;
-						transform: translateY(30px);
+						transform: translateY(35px);
 						width: 100%;
 					}
 				}

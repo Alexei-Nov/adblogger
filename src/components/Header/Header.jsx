@@ -41,7 +41,7 @@ export default function Header() {
 							</ul>
 						</nav>
 						<a href='/' className="header__btn btn btn_small text-18 fw-500">
-							Подключить сообщество
+							Зарегистрироваться
 						</a>
 						<div className="header__menu-btn" onClick={toggleMenuClass}>
 							<span></span>

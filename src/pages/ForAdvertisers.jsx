@@ -17,22 +17,22 @@ export default function ForAdvertisers() {
 		imgPath: '/img/entrance/img-2.png'
 	}
 	const advantagesState = {
-		titleWhite: 'монетизируйте сообщество',
-		titleBlue: 'от&nbsp;1&nbsp;000 подписчиков',
+		titleWhite: '',
+		titleBlue: '',
 		items: [
 			{
 				numPrev: '31',
 				numCurrent: '32',
 				numAfter: '',
 				numLabel: 'тыс.',
-				desc: 'рекламодателей на&nbsp;платформе'
+				desc: 'рекламодателей </br> на&nbsp;платформе'
 			},
 			{
 				numPrev: '499',
 				numCurrent: '500',
 				numAfter: '+',
 				numLabel: '',
-				desc: 'блогеров и&nbsp;сообществ'
+				desc: 'блогеров </br> и&nbsp;сообществ'
 			},
 			{
 				numPrev: '99',
@@ -183,7 +183,7 @@ export default function ForAdvertisers() {
 	}
 	const moneyState = {
 		title: 'Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте',
-		btnText: 'Подключить сообщество'
+		btnText: 'Зарегистрироваться'
 	}
 	const faqState = [
 		{

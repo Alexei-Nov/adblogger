@@ -41,8 +41,8 @@ export default function Footer() {
 						<div className="footer__logo">
 							<img src="/img/logo.svg" alt="img" />
 						</div>
-						<a href='/' className="footer__btn btn btn_border">
-							Подключить сообщество
+						<a href='/' className="footer__btn btn btn_small btn_border">
+							Зарегистрироваться
 						</a>
 					</div>
 					<div className="footer__wrapper">

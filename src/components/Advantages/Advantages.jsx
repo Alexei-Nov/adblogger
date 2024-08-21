@@ -48,12 +48,14 @@ export default function Advantages({ advantagesState }) {
 		<>
 			<section className='section advantages' ref={wrapper}>
 				<div className="container">
-					<div className="advantages__title title h2">
-						{advantagesState.titleWhite} <br />
-						{advantagesState.titleBlue &&
-							<span className='blue-text' dangerouslySetInnerHTML={{ __html: advantagesState.titleBlue }} ></span>
-						}
-					</div>
+					{(advantagesState.titleWhite || advantagesState.titleBlue) &&
+						<div className="advantages__title title h2">
+							{advantagesState.titleWhite} <br />
+							{advantagesState.titleBlue &&
+								<span className='blue-text' dangerouslySetInnerHTML={{ __html: advantagesState.titleBlue }} ></span>
+							}
+						</div>
+					}
 					<div className="advantages__wrapper" >
 						{advantagesState.items.map((item, i) => {
 							return (

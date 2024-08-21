@@ -69,16 +69,16 @@
 .tile__slide_4 .tile__img img:nth-child(1) {
   top: 0;
   left: 0;
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
+  -webkit-transform: translateY(35px);
+          transform: translateY(35px);
   width: 648px;
 }
 
 .tile__slide_4 .tile__img img:nth-child(2) {
   bottom: 50px;
   left: 40%;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
   width: 328px;
 }
 
@@ -93,8 +93,8 @@
 .tile__slide_6 .tile__img img {
   bottom: 0px;
   left: 0;
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
+  -webkit-transform: translateY(35px);
+          transform: translateY(35px);
   width: 100%;
 }
 

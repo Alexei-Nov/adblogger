@@ -31,7 +31,7 @@ export default function Channels({ channelsState }) {
 		});
 	})
 
-	const [chanellsTag, setChanellsTag] = useState()
+	const [chanellsTag, setChanellsTag] = useState(channelsState.tags[0])
 
 	function filterChannels(tag) {
 		if (chanellsTag === tag) {
