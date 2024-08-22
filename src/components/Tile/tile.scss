@@ -18,18 +18,18 @@
 		&_1 {
 			& .tile {
 				&__img {
-					& img {
-						&:nth-child(1) {
-							bottom: -75px;
-							right: calc(50% + 8px);
+					& picture {
+						&:nth-child(1) img {
+							top: 26px;
+							right: calc(50% + 26px);
 							transform: translateY(20px);
-							width: 224px;
+							width: 260px;
 						}
-						&:nth-child(2) {
-							bottom: -75px;
-							left: calc(50% + 8px);
-							transform: translateY(40px);
-							width: 170px;
+						&:nth-child(2) img {
+							top: 26px;
+							left: calc(50% - 14px);
+							transform: translateY(55px);
+							width: 300px;
 						}
 					}
 				}
@@ -38,7 +38,7 @@
 		&_2 {
 			& .tile {
 				&__img {
-					& img {
+					& picture img {
 						bottom: -50px;
 						left: 9%;
 						transform: translateY(30px);
@@ -50,20 +50,20 @@
 		&_3 {
 			& .tile {
 				&__img {
-					& img {
-						&:nth-child(1) {
+					& picture {
+						&:nth-child(1) img {
 							top: 0;
 							left: 0;
 							transform: translateY(30px);
 							width: 648px;
 						}
-						&:nth-child(2) {
+						&:nth-child(2) img {
 							bottom: -15px;
 							left: 22%;
 							transform: translateY(50px);
 							width: 126px;
 						}
-						&:nth-child(3) {
+						&:nth-child(3) img {
 							top: 50px;
 							right: 50px;
 							transform: translateY(50px);
@@ -76,14 +76,14 @@
 		&_4 {
 			& .tile {
 				&__img {
-					& img {
-						&:nth-child(1) {
+					& picture {
+						&:nth-child(1) img {
 							top: 0;
 							left: 0;
 							transform: translateY(35px);
 							width: 648px;
 						}
-						&:nth-child(2) {
+						&:nth-child(2) img {
 							bottom: 50px;
 							left: 40%;
 							transform: translateY(40px);
@@ -96,7 +96,7 @@
 		&_5 {
 			& .tile {
 				&__img {
-					& img {
+					& picture img {
 						bottom: 0px;
 						left: 0;
 						transform: translateY(30px);
@@ -108,7 +108,7 @@
 		&_6 {
 			& .tile {
 				&__img {
-					& img {
+					& picture img {
 						bottom: 0px;
 						left: 0;
 						transform: translateY(35px);
@@ -195,14 +195,18 @@
 			&_1 {
 				& .tile {
 					&__img {
-						& img {
-							&:nth-child(1) {
+						& picture {
+							&:nth-child(1) img {
 								width: 175px;
+								right: calc(50% + 6px);
 								bottom: 0;
+								top: unset;
 							}
-							&:nth-child(2) {
+							&:nth-child(2) img {
 								width: 133px;
+								left: calc(50% + 6px);
 								bottom: 0;
+								top: unset;
 							}
 						}
 					}
@@ -211,7 +215,7 @@
 			&_2 {
 				& .tile {
 					&__img {
-						& img {
+						& picture img {
 							left: 0;
 						}
 					}
@@ -220,18 +224,18 @@
 			&_3 {
 				& .tile {
 					&__img {
-						& img {
-							&:nth-child(1) {
+						& picture {
+							&:nth-child(1) img {
 								width: 440px;
 								left: -25px;
 								top: 30px;
 							}
-							&:nth-child(2) {
+							&:nth-child(2) img {
 								width: 100px;
 								left: 34px;
 								bottom: 0;
 							}
-							&:nth-child(3) {
+							&:nth-child(3) img {
 								width: 100px;
 								left: 65px;
 								top: 14px;
@@ -244,11 +248,11 @@
 			&_4 {
 				& .tile {
 					&__img {
-						& img {
-							&:nth-child(1) {
+						& picture {
+							&:nth-child(1) img {
 								left: -40px;
 							}
-							&:nth-child(2) {
+							&:nth-child(2) img {
 								bottom: 15px;
 								left: 25px;
 							}
@@ -259,7 +263,7 @@
 			&_5 {
 				& .tile {
 					&__img {
-						& img {
+						& picture img {
 							height: 100%;
 							object-fit: cover;
 							object-position: left bottom;
@@ -270,7 +274,7 @@
 			&_6 {
 				& .tile {
 					&__img {
-						& img {
+						& picture img {
 							height: 100%;
 							object-fit: cover;
 							object-position: left bottom;

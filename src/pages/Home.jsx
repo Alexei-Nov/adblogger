@@ -98,33 +98,57 @@ export default function Home() {
 				title: 'Размещайте рекламу в клипах или постах',
 				desc: 'Работайте в форматах,к которым привыкли ваши подписчики',
 				imgList: [
-					'/img/tile/img1-1.png',
-					'/img/tile/img1-2.png'
-				]
+					{
+						desktop: '/img/tile/img1-1.png',
+						mobile: ''
+					},
+					{
+						desktop: '/img/tile/img1-2.png',
+						mobile: '/img/tile/img1-2_mob.png'
+					}
+				],
 			}, {
 				id: 2,
 				title: 'Выпускайте готовую рекламу или по брифу',
 				desc: 'Размещайте готовые креативы от рекламодателя или создавайте посты в своём стиле',
 				imgList: [
-					'/img/tile/img2-1.png'
-				]
+					{
+						desktop: '/img/tile/img2-1.png',
+						mobile: ''
+					}
+				],
 			}, {
 				id: 3,
 				title: 'Занимайтесь творчеством, а не ОРД и бумагами',
 				desc: 'Документооборот, маркировка и оплата рекламы — автоматические.',
 				imgList: [
-					'/img/tile/img3-1.png',
-					'/img/tile/img3-2.png',
-					'/img/tile/img3-3.png'
-				]
+					{
+						desktop: '/img/tile/img3-1.png',
+						mobile: ''
+					},
+					{
+						desktop: '/img/tile/img3-2.png',
+						mobile: ''
+					},
+					{
+						desktop: '/img/tile/img3-2.png',
+						mobile: ''
+					}
+				],
 			}, {
 				id: 4,
 				title: 'Рекламируйте то, что интересно подписчикам',
 				desc: 'Выбирайте, какие заявки принять, а какие — отклонить. Либо настройте автоматический постинг.',
 				imgList: [
-					'/img/tile/img4-1.png',
-					'/img/tile/img4-2.png'
-				]
+					{
+						desktop: '/img/tile/img4-1.png',
+						mobile: ''
+					},
+					{
+						desktop: '/img/tile/img4-2.png',
+						mobile: ''
+					}
+				],
 			}
 		],
 		btnText: 'Подключить сообщество'

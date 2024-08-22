@@ -66,7 +66,12 @@ export default function Tile({ tileState }) {
 									<div className="tile__img">
 										{item.imgList.map((img, j) => {
 											return (
-												<img key={j} src={img} alt="img" />
+												<picture key={j}>
+													{img.mobile &&
+														<source media="(max-width: 1024px)" srcSet={img.mobile} />
+													}
+													<img src={img.desktop} alt="img" />
+												</picture>
 											)
 										})}
 									</div>
