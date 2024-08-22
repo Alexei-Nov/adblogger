@@ -97,31 +97,52 @@ export default function ForAdvertisers() {
 				title: 'Пользуйтесь каталогом авторов',
 				desc: 'Подбирайте сообщества с вовлечённой аудиторией по фильтрам и подробной аналитике',
 				imgList: [
-					'/img/tile/img5-1.png'
+					{
+						desktop: '/img/tile/img5-1.png',
+						mobile: ''
+					}
 				]
 			}, {
 				id: 1,
 				title: 'Работайте в эффективных форматах',
 				desc: 'Размещайте готовую рекламу в клипах и постах или отправляйте ТЗ авторам на создание креативов',
 				imgList: [
-					'/img/tile/img1-1.png',
-					'/img/tile/img1-2.png'
+					{
+						desktop: '/img/tile/img1-1.png',
+						mobile: ''
+					},
+					{
+						desktop: '/img/tile/img1-2.png',
+						mobile: '/img/tile/img1-2_mob.png'
+					}
 				]
 			}, {
 				id: 6,
 				title: 'Оценивайте результаты рекламы',
 				desc: 'Все рекламные посты можно разметить автоматически, чтобы лучше анализировать их эффективность',
 				imgList: [
-					'/img/tile/img6-1.png'
+					{
+						desktop: '/img/tile/img6-1.png',
+						mobile: ''
+					}
 				]
 			}, {
 				id: 3,
 				title: 'Экономьте рабочее время',
 				desc: 'ОРД, документооборот и платежи — автоматизированы. Достаточно внести юридические данные.',
 				imgList: [
-					'/img/tile/img3-1.png',
-					'/img/tile/img3-2.png',
-					'/img/tile/img3-3.png'
+					{
+						desktop: '/img/tile/img3-1.png',
+						mobile: ''
+					},
+					{
+						desktop: '/img/tile/img3-2.png',
+						mobile: ''
+					},
+					{
+						desktop: '/img/tile/img3-3.png',
+						mobile: ''
+					}
 				]
 			}
 		],
