@@ -49,7 +49,7 @@ export default function DetailCase() {
 
 	const moneyState = {
 		title: 'Зарабатывайте </br> на&nbsp;своём контенте',
-		btnText: 'Подключить сообщество'
+		btnText: 'Зарегестрироваться'
 	}
 
 	return (

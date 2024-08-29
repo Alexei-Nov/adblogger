@@ -4,6 +4,7 @@ import Home from "../../pages/Home";
 import TopCase from "../../pages/TopCase";
 import DetailCase from "../../pages/DetailCase";
 import ForAdvisers from '../../pages/ForAdvertisers';
+import ForAuthors from '../../pages/ForAuthors';
 
 export default function Main() {
 
@@ -20,6 +21,7 @@ export default function Main() {
 			<main className="main">
 				<Routes>
 					<Route exact path="/" element={<Home />} />
+					<Route exact path="/for-authors" element={<ForAuthors />} />
 					<Route exact path="/for-advertisers" element={<ForAdvisers />} />
 					<Route exact path="/top-cases" element={<TopCase />} />
 					<Route exact path="/top-cases/:slug" element={<DetailCase />} />

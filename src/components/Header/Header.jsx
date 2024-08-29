@@ -24,6 +24,14 @@ export default function Header() {
 							<ul className='nav__list'>
 								<li className='nav__item'>
 									<NavLink
+										to='for-authors'
+										className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
+										onClick={removeMenuClass}
+										end
+									>Авторам</NavLink>
+								</li>
+								<li className='nav__item'>
+									<NavLink
 										to='for-advertisers'
 										className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
 										onClick={removeMenuClass}
@@ -40,7 +48,7 @@ export default function Header() {
 								</li>
 							</ul>
 						</nav>
-						<a href='/' className="header__btn btn btn_small text-18 fw-500">
+						<a href='/' className={"header__btn btn btn_small text-18 fw-500 " + (window.innerWidth > 1024 ? 'btn_border' : '')}>
 							Зарегистрироваться
 						</a>
 						<div className="header__menu-btn" onClick={toggleMenuClass}>

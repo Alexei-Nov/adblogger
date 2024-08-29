@@ -12,9 +12,8 @@ import Faq from '../components/Faq/Faq'
 export default function ForAdvertisers() {
 
 	const entranceState = {
-		titleWhite: 'запускайте рекламу',
-		titleBlue: 'у&nbsp;блогеров',
-		imgPath: '/img/entrance/img-2.png'
+		title: 'запускайте рекламу у&nbsp;блогеров',
+		videoPath: '/video/video-1.mp4'
 	}
 	const advantagesState = {
 		titleWhite: '',
