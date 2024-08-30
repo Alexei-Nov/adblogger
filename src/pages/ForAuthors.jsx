@@ -8,6 +8,7 @@ import Steps from '../components/Steps/Steps'
 import Case from '../components/Case/Case'
 import Money from '../components/Money/Money'
 import Faq from '../components/Faq/Faq'
+import Preloader from '../components/Preloader/Preloader'
 
 export default function ForAuthors() {
 
@@ -235,6 +236,7 @@ export default function ForAuthors() {
 
 	return (
 		<>
+			<Preloader />
 			<Entrance entranceState={entranceState} />
 			<Advantages advantagesState={advantagesState} />
 			<Tile tileState={tileState} />
