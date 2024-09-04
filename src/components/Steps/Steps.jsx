@@ -81,7 +81,7 @@ export default function Steps({ stepsState }) {
 			}, slidesArr.length + 1);
 
 			tlCard.to(wrapper.current.closest('.pin-spacer'), {
-				marginBottom: '-340px'
+				// marginBottom: '-340px'
 			})
 		}
 	})

@@ -21,22 +21,22 @@ export default function ForAdvertisers() {
 		titleBlue: '',
 		items: [
 			{
-				numPrev: '31',
-				numCurrent: '32',
+				numPrev: '19',
+				numCurrent: '20',
 				numAfter: '',
 				numLabel: 'тыс.',
-				desc: 'рекламодателей </br> на&nbsp;платформе'
-			},
-			{
-				numPrev: '499',
-				numCurrent: '500',
-				numAfter: '+',
-				numLabel: '',
-				desc: 'блогеров </br> и&nbsp;сообществ'
+				desc: 'блогеров </br> и сообществ'
 			},
 			{
 				numPrev: '99',
 				numCurrent: '100',
+				numAfter: '+',
+				numLabel: '',
+				desc: 'рекламодателей </br> на платформе'
+			},
+			{
+				numPrev: '499',
+				numCurrent: '500',
 				numAfter: '+',
 				numLabel: '',
 				desc: 'опубликованных рекламных интеграций'
@@ -129,7 +129,7 @@ export default function ForAdvertisers() {
 			}, {
 				id: 3,
 				title: 'Экономьте рабочее время',
-				desc: 'ОРД, документооборот и платежи — автоматизированы. Достаточно внести юридические данные.',
+				desc: 'ОРД, документооборот и платежи — автоматизированы. Достаточно внести юридические данные',
 				imgList: [
 					{
 						desktop: '/img/tile/img3-1.png',

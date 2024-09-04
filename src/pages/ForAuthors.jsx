@@ -21,8 +21,8 @@ export default function ForAuthors() {
 		titleBlue: 'от&nbsp;1&nbsp;000 подписчиков',
 		items: [
 			{
-				numPrev: '6',
-				numCurrent: '7',
+				numPrev: '19',
+				numCurrent: '20',
 				numAfter: '',
 				numLabel: 'тыс.',
 				desc: 'блогеров и&nbsp;сообществ уже с&nbsp;нами'
@@ -35,8 +35,8 @@ export default function ForAuthors() {
 				desc: 'рекламодателей на&nbsp;платформе'
 			},
 			{
-				numPrev: '299',
-				numCurrent: '300',
+				numPrev: '499',
+				numCurrent: '500',
 				numAfter: '+',
 				numLabel: '',
 				desc: 'активных заявок от&nbsp;рекламодателей'
@@ -89,6 +89,62 @@ export default function ForAuthors() {
 				subscribers: '470K подписчиков',
 				tags: ['Фитнес', 'Стиль']
 			},
+			{
+				name: 'Саша Белькович РЕЦЕПТЫ / ПРОСТО КУХНЯ',
+				photoPath: '/img/channels/img-6.png',
+				desc: 'Рецепты',
+				subscribers: '1,1M подписчиков',
+				tags: ['Рецепты']
+			},
+			{
+				name: 'Bistrovi',
+				photoPath: '/img/channels/img-7.png',
+				desc: 'Юмор',
+				subscribers: '501K подписчиков',
+				tags: ['Юмор']
+			},
+			{
+				name: 'Gudim.',
+				photoPath: '/img/channels/img-8.png',
+				desc: 'Юмор',
+				subscribers: '261К подписчиков',
+				tags: ['Юмор']
+			},
+			{
+				name: 'Книга животных',
+				photoPath: '/img/channels/img-9.png',
+				desc: 'Животные',
+				subscribers: '588К подписчиков',
+				tags: ['Животные']
+			},
+			{
+				name: 'я живу в россии и мне не страшно',
+				photoPath: '/img/channels/img-10.png',
+				desc: 'Russian vibes',
+				subscribers: '1,1M подписчиков',
+				tags: ['Путешествия']
+			},
+			{
+				name: 'GOAL24 | ФУТБОЛ | ЛИГА ЧЕМПИОНОВ',
+				photoPath: '/img/channels/img-11.png',
+				desc: 'Футбол',
+				subscribers: '498К подписчиков',
+				tags: ['Футбол']
+			},
+			{
+				name: 'Раздетый стилист Лена Червова',
+				photoPath: '/img/channels/img-12.png',
+				desc: 'Стилист',
+				subscribers: '394К подписчиков',
+				tags: ['Стиль']
+			},
+			{
+				name: 'Люба Бич',
+				photoPath: '/img/channels/img-13.png',
+				desc: 'Лайфстайл',
+				subscribers: '206К подписчиков',
+				tags: ['Лайфстайл']
+			},
 		]
 	}
 	const tileState = {
@@ -96,7 +152,7 @@ export default function ForAuthors() {
 			{
 				id: 1,
 				title: 'Размещайте рекламу в клипах или постах',
-				desc: 'Работайте в форматах,к которым привыкли ваши подписчики',
+				desc: 'Работайте в форматах, к которым привыкли ваши подписчики',
 				imgList: [
 					{
 						desktop: '/img/tile/img1-1.png',
@@ -120,7 +176,7 @@ export default function ForAuthors() {
 			}, {
 				id: 3,
 				title: 'Занимайтесь творчеством, а не ОРД и бумагами',
-				desc: 'Документооборот, маркировка и оплата рекламы — автоматические.',
+				desc: 'Документооборот, маркировка и оплата рекламы — автоматические',
 				imgList: [
 					{
 						desktop: '/img/tile/img3-1.png',
@@ -138,7 +194,7 @@ export default function ForAuthors() {
 			}, {
 				id: 4,
 				title: 'Рекламируйте то, что интересно подписчикам',
-				desc: 'Выбирайте, какие заявки принять, а какие — отклонить. Либо настройте автоматический постинг.',
+				desc: 'Выбирайте, какие заявки принять, а какие — отклонить. Либо настройте автоматический постинг',
 				imgList: [
 					{
 						desktop: '/img/tile/img4-1.png',
@@ -174,7 +230,7 @@ export default function ForAuthors() {
 		},
 		{
 			title: 'Принимайте заявки',
-			desc: 'Укажите свободные слоты для размещения и получайте заявки от рекламодателей',
+			desc: 'Включайте монетизацию и получайте заявки от рекламодателей',
 			imgPath: '/img/steps/img-2.png',
 		},
 		{

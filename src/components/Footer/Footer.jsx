@@ -47,7 +47,7 @@ export default function Footer() {
 					</div>
 					<div className="footer__wrapper">
 						<div className="footer__body">
-							<div className="footer__title text-20">О Компании</div>
+							<div className="footer__title text-20">О компании</div>
 							<div className="footer__desc text-16">
 								VK AdBlogger — платформа для сотрудничества авторов и рекламодателей, на которой можно продавать рекламу в сообществах ВКонтакте.
 							</div>
@@ -81,7 +81,7 @@ export default function Footer() {
 											<a href="/" className='nav__link nav__link_lvl2'>Руководство</a>
 										</li>
 										<li className='nav__item nav__item_lvl2'>
-											<a href="/" className='nav__link nav__link_lvl2'>Лицензионное сошглашение</a>
+											<a href="/" className='nav__link nav__link_lvl2'>Лицензионное соглашение</a>
 										</li>
 									</ul>
 								</li>
@@ -116,7 +116,7 @@ export default function Footer() {
 								</svg>
 							</div>
 							<div className="footer__bottom-item">
-								Наше сообщество во ВКонтакте
+								Наше сообщество ВКонтакте
 								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
 									<path fillRule="evenodd" clipRule="evenodd" d="M1.54648 1.54648C0 3.09295 0 5.58197 0 10.56V11.44C0 16.418 0 18.907 1.54648 20.4535C3.09295 22 5.58197 22 10.56 22H11.44C16.418 22 18.907 22 20.4535 20.4535C22 18.907 22 16.418 22 11.44V10.56C22 5.58197 22 3.09295 20.4535 1.54648C18.907 0 16.418 0 11.44 0H10.56C5.58197 0 3.09295 0 1.54648 1.54648ZM3.71245 6.69082C3.83161 12.4108 6.69159 15.8483 11.7058 15.8483H11.99V12.5758C13.8325 12.7591 15.2257 14.1066 15.7849 15.8483H18.3883C17.6733 13.245 15.794 11.8058 14.6207 11.2558C15.794 10.5775 17.444 8.92748 17.8382 6.69082H15.4731C14.9598 8.50582 13.4383 10.1558 11.99 10.3116V6.69082H9.6249V13.0341C8.15824 12.6675 6.3066 10.8891 6.2241 6.69082H3.71245Z" fill="white" />
 								</svg>
