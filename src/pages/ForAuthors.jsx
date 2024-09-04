@@ -151,7 +151,7 @@ export default function ForAuthors() {
 				],
 			}
 		],
-		btnText: 'Зарегестрироваться'
+		btnText: 'Зарегистрироваться'
 	}
 	const partnersState = {
 		title: 'заказывают рекламу у авторов',
@@ -209,7 +209,7 @@ export default function ForAuthors() {
 	}
 	const moneyState = {
 		title: 'Зарабатывайте </br> на&nbsp;своём контенте',
-		btnText: 'Зарегестрироваться'
+		btnText: 'Зарегистрироваться'
 	}
 	const faqState = [
 		{
