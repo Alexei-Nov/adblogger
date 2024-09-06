@@ -6,8 +6,8 @@ import { setPreloaderInit } from '../../toolkitRedux/toolkitSlice'
 
 export default function Preloader() {
 	const preloaderInit = useSelector(state => state.toolkit.preloaderInit)
-
 	const dispatch = useDispatch()
+
 	let wrapper = useRef()
 
 	useEffect(() => {

@@ -27,6 +27,7 @@
   overflow: hidden;
   position: relative;
   min-height: 320px;
+  height: 320px;
 }
 
 .tile__img picture {
@@ -54,6 +55,7 @@
       grid-template-columns: 1fr 1fr;
   gap: 24px;
   width: 100%;
+  height: auto;
 }
 
 .tile__slide:nth-child(even) .tile__body {

@@ -4,9 +4,12 @@ import Main from "./components/Main/Main";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useEffect } from "react";
 import Preloader from "./components/Preloader/Preloader";
+import { useDispatch, useSelector } from "react-redux";
+import { setState } from "./toolkitRedux/toolkitSlice";
 
 
 function App() {
+	const dispatch = useDispatch()
 
 	useEffect(() => {
 		let scrollStep = 0;
@@ -47,6 +50,17 @@ function App() {
 		window.addEventListener('keydown', preventDefaultForScrollKeys, false);
 	})
 
+	fetch("./initialState.json")
+		.then(res => res.json())
+		.then(
+			(result) => {
+				dispatch(setState(result))
+			},
+			(error) => {
+				console.log(error);
+			}
+		)
+		.catch(err => console.error(err))
 
 	return (
 		<>

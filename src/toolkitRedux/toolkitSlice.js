@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
 const loadFromLocalStorage = () => {
 	try {
 		const stateStr = localStorage.getItem('state');
@@ -10,7 +9,6 @@ const loadFromLocalStorage = () => {
 		return undefined;
 	}
 };
-
 
 const defaultState = {
 	preloaderInit: false,
@@ -589,15 +587,19 @@ const defaultState = {
 	]
 }
 
+
 const toolkitSlice = createSlice({
 	name: "toolkit",
-	initialState: defaultState,
+	initialState: loadFromLocalStorage() && loadFromLocalStorage().toolkit ? loadFromLocalStorage().toolkit : defaultState,
 	reducers: {
 		setPreloaderInit(state, action) {
 			state.preloaderInit = action.payload
+		},
+		setState(state, action) {
+			state.pages = action.payload.pages
 		}
 	}
 })
 
 export default toolkitSlice.reducer
-export const { setPreloaderInit } = toolkitSlice.actions
+export const { setPreloaderInit, setState } = toolkitSlice.actions

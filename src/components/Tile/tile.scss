@@ -17,6 +17,7 @@
 		overflow: hidden;
 		position: relative;
 		min-height: 320px;
+		height: 320px;
 
 		& picture {
 			display: flex;
@@ -35,6 +36,7 @@
 		grid-template-columns: 1fr 1fr;
 		gap: 24px;
 		width: 100%;
+		height: auto;
 		&:nth-child(even) {
 			& .tile {
 				&__body {
