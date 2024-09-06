@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { useSelector } from 'react-redux'
 import 'swiper/css';
 import './tile.css'
 import { Pagination } from 'swiper/modules';
@@ -8,6 +9,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Tile({ tileState }) {
+
+	const btnState = useSelector(state => state.toolkit.registrationBtn)
 
 	let wrapper = useRef()
 	useEffect(() => {
@@ -85,7 +88,7 @@ export default function Tile({ tileState }) {
 
 						<div className="tile__pagination slider-pagination"></div>
 					</Swiper>
-					<a href='/' className="tile__btn btn fw-500">{tileState.btnText}</a>
+					<a href={btnState.link} className="tile__btn btn fw-500">{btnState.text}</a>
 				</div>
 			</section>
 		</>

@@ -1,7 +1,11 @@
 import React, { useEffect, useRef } from 'react'
+import { useSelector } from 'react-redux'
+
 import './money.css'
 
 export default function Money({ moneyState }) {
+	const btnState = useSelector(state => state.toolkit.registrationBtn)
+
 	let imgWrapper = useRef()
 
 	useEffect(() => {
@@ -26,7 +30,7 @@ export default function Money({ moneyState }) {
 				<div className="container">
 					<div className="money__wrapper" >
 						<div className="money__title title h2" dangerouslySetInnerHTML={{ __html: moneyState.title }}></div>
-						<a href='/' className="money__btn btn btn_border">{moneyState.btnText}</a>
+						<a href={btnState.link} className="money__btn btn btn_border">{btnState.text}</a>
 
 						<div className="money__img" ref={imgWrapper}>
 							<picture>

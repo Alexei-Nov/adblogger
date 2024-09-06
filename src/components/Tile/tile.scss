@@ -3,6 +3,33 @@
 		margin: 0 auto;
 		margin-top: 96px;
 	}
+	&__body {
+		padding: 32px;
+		background-color: var(--black-2);
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		transition: all ease 0.5s;
+	}
+	&__img {
+		background-color: var(--black-2);
+		transition: all ease 0.5s;
+		overflow: hidden;
+		position: relative;
+		min-height: 320px;
+
+		& picture {
+			display: flex;
+			position: absolute;
+			transition: all ease 0.5s;
+		}
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: center;
+		}
+	}
 	&__slide {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -19,13 +46,13 @@
 			& .tile {
 				&__img {
 					& picture {
-						&:nth-child(1) img {
+						&:nth-child(1) {
 							top: 26px;
 							right: calc(50% + 26px);
 							transform: translateY(20px);
 							width: 260px;
 						}
-						&:nth-child(2) img {
+						&:nth-child(2) {
 							top: 26px;
 							left: calc(50% - 14px);
 							transform: translateY(55px);
@@ -38,7 +65,7 @@
 		&_2 {
 			& .tile {
 				&__img {
-					& picture img {
+					& picture {
 						bottom: -50px;
 						left: 9%;
 						transform: translateY(30px);
@@ -51,19 +78,19 @@
 			& .tile {
 				&__img {
 					& picture {
-						&:nth-child(1) img {
+						&:nth-child(1) {
 							top: 0;
 							left: 0;
 							transform: translateY(30px);
 							width: 648px;
 						}
-						&:nth-child(2) img {
+						&:nth-child(2) {
 							bottom: -15px;
 							left: 22%;
 							transform: translateY(50px);
 							width: 126px;
 						}
-						&:nth-child(3) img {
+						&:nth-child(3) {
 							top: 50px;
 							right: 50px;
 							transform: translateY(50px);
@@ -77,13 +104,13 @@
 			& .tile {
 				&__img {
 					& picture {
-						&:nth-child(1) img {
+						&:nth-child(1) {
 							top: 0;
 							left: 0;
 							transform: translateY(35px);
 							width: 648px;
 						}
-						&:nth-child(2) img {
+						&:nth-child(2) {
 							bottom: 50px;
 							left: 40%;
 							transform: translateY(40px);
@@ -96,7 +123,7 @@
 		&_5 {
 			& .tile {
 				&__img {
-					& picture img {
+					& picture {
 						bottom: 0px;
 						left: 0;
 						transform: translateY(30px);
@@ -108,7 +135,7 @@
 		&_6 {
 			& .tile {
 				&__img {
-					& picture img {
+					& picture {
 						bottom: 0px;
 						left: 0;
 						transform: translateY(35px);
@@ -124,31 +151,11 @@
 				}
 				&__img {
 					border-radius: 28px;
-					& img {
+					& picture {
 						transform: none !important;
 					}
 				}
 			}
-		}
-	}
-	&__body {
-		padding: 32px;
-		background-color: var(--black-2);
-		display: flex;
-		justify-content: space-between;
-		flex-direction: column;
-		transition: all ease 0.5s;
-	}
-	&__img {
-		background-color: var(--black-2);
-		transition: all ease 0.5s;
-		overflow: hidden;
-		position: relative;
-		min-height: 320px;
-
-		& img {
-			position: absolute;
-			transition: all ease 0.5s;
 		}
 	}
 }
@@ -187,7 +194,7 @@
 @media screen and (max-width: 1024px) {
 	.tile {
 		&__img {
-			& img {
+			& picture {
 				transform: none !important;
 			}
 		}
@@ -196,13 +203,13 @@
 				& .tile {
 					&__img {
 						& picture {
-							&:nth-child(1) img {
+							&:nth-child(1) {
 								width: 175px;
 								right: calc(50% + 6px);
 								bottom: 0;
 								top: unset;
 							}
-							&:nth-child(2) img {
+							&:nth-child(2) {
 								width: 133px;
 								left: calc(50% + 6px);
 								bottom: 0;
@@ -215,7 +222,7 @@
 			&_2 {
 				& .tile {
 					&__img {
-						& picture img {
+						& picture {
 							left: 0;
 						}
 					}
@@ -225,17 +232,17 @@
 				& .tile {
 					&__img {
 						& picture {
-							&:nth-child(1) img {
+							&:nth-child(1) {
 								width: 440px;
 								left: -25px;
 								top: 30px;
 							}
-							&:nth-child(2) img {
+							&:nth-child(2) {
 								width: 100px;
 								left: 34px;
 								bottom: 0;
 							}
-							&:nth-child(3) img {
+							&:nth-child(3) {
 								width: 100px;
 								left: 65px;
 								top: 14px;
@@ -249,10 +256,10 @@
 				& .tile {
 					&__img {
 						& picture {
-							&:nth-child(1) img {
+							&:nth-child(1) {
 								left: -40px;
 							}
-							&:nth-child(2) img {
+							&:nth-child(2) {
 								bottom: 15px;
 								left: 25px;
 							}
@@ -263,7 +270,7 @@
 			&_5 {
 				& .tile {
 					&__img {
-						& picture img {
+						& picture {
 							height: 100%;
 							object-fit: cover;
 							object-position: left bottom;
@@ -274,7 +281,7 @@
 			&_6 {
 				& .tile {
 					&__img {
-						& picture img {
+						& picture {
 							height: 100%;
 							object-fit: cover;
 							object-position: left bottom;
@@ -297,7 +304,7 @@
 		}
 		&__img {
 			border-radius: 28px;
-			& img {
+			& picture {
 				transform: none !important;
 			}
 		}

@@ -1,8 +1,10 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
+import { useSelector } from 'react-redux'
 import './header.css'
 
 export default function Header() {
+	const btnState = useSelector(state => state.toolkit.registrationBtn)
 
 	function toggleMenuClass() {
 		document.body.classList.toggle('show-menu')
@@ -48,8 +50,8 @@ export default function Header() {
 								</li>
 							</ul>
 						</nav>
-						<a href='/' className={"header__btn btn btn_small text-18 fw-500 " + (window.innerWidth > 1024 ? 'btn_border' : '')}>
-							Зарегистрироваться
+						<a href={btnState.link} className={"header__btn btn btn_small text-18 fw-500 " + (window.innerWidth > 1024 ? 'btn_border' : '')}>
+							{btnState.text}
 						</a>
 						<div className="header__menu-btn" onClick={toggleMenuClass}>
 							<span></span>

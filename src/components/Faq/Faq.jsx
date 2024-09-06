@@ -24,7 +24,7 @@ export default function Faq({ faqState }) {
 				<div className="container">
 					<div className="faq__title h2">FAQ</div>
 					<div className="faq__accordion accordion " >
-						{faqState.map((item, i) => {
+						{faqState.faqList.map((item, i) => {
 							return (
 								<div className="accordion__item" key={i} onClick={toggleItem}>
 									<div className="accordion__btn text-32 fw-500">

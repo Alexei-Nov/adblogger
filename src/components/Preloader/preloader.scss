@@ -5,6 +5,7 @@
 	width: 100vw;
 	height: 100vh;
 	z-index: 100;
+	pointer-events: none;
 
 	& img {
 		position: absolute;
@@ -15,9 +16,6 @@
 		object-fit: cover;
 		object-position: center;
 		display: none;
-
-		&:first-child {
-			display: block;
-		}
+		pointer-events: all;
 	}
 }

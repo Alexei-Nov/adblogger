@@ -1,7 +1,10 @@
 import React, { useEffect, useRef } from 'react'
+import { useSelector } from 'react-redux'
 import './footer.css'
 
 export default function Footer() {
+	const btnState = useSelector(state => state.toolkit.registrationBtn)
+
 	let nav = useRef();
 
 	useEffect(() => {
@@ -41,9 +44,7 @@ export default function Footer() {
 						<div className="footer__logo">
 							<img src="/img/logo.svg" alt="img" />
 						</div>
-						<a href='/' className="footer__btn btn btn_small btn_border">
-							Зарегистрироваться
-						</a>
+						<a href={btnState.link} className="footer__btn btn btn_small btn_border">{btnState.text}</a>
 					</div>
 					<div className="footer__wrapper">
 						<div className="footer__body">

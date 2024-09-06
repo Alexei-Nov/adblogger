@@ -117,7 +117,7 @@ export default function Steps({ stepsState }) {
 							},
 						}}
 					>
-						{stepsState.map((stepItem, i) => {
+						{stepsState.stepsList.map((stepItem, i) => {
 							return (
 								<SwiperSlide key={i} className='steps__slide'>
 									<div className="steps__body">

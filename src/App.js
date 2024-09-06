@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useEffect } from "react";
+import Preloader from "./components/Preloader/Preloader";
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
 		<>
 			<div className="body-wrapper">
 				<Router>
+					<Preloader />
 					<Header />
 					<Main />
 					<Footer />
