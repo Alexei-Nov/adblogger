@@ -5,9 +5,12 @@ import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useSelector } from 'react-redux';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Steps({ stepsState }) {
+	const btnState = useSelector(state => state.toolkit.registrationBtn)
+
 	let wrapper = useRef();
 	let title = useRef();
 
@@ -125,7 +128,15 @@ export default function Steps({ stepsState }) {
 										<div className="steps__name text-32 fw-500">{stepItem.title}</div>
 										<div className="steps__desc text-21">{stepItem.desc}</div>
 										{i === 2 &&
-											<a href='/' className="steps__btn btn btn_border btn_wide">Регистрация</a>
+											<a
+												href={btnState.link}
+												className="steps__btn btn btn_border btn_wide"
+												onClick={() => `ym(98108619,'reachGoal','registration_other');
+												_tmr.push({ id: '3536479', type: 'reachGoal', goal: 'registration_other' });`
+												}
+											>
+												{btnState.text}
+											</a>
 										}
 									</div>
 									<div className="steps__img">

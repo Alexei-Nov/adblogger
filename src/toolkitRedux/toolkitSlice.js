@@ -13,7 +13,7 @@ const loadFromLocalStorage = () => {
 const defaultState = {
 	preloaderInit: false,
 	registrationBtn: {
-		text: 'Зарегистрироваться',
+		text: 'Перейти в кабинет',
 		link: '#registration'
 	},
 	pages: [
@@ -590,7 +590,7 @@ const defaultState = {
 
 const toolkitSlice = createSlice({
 	name: "toolkit",
-	initialState: loadFromLocalStorage() && loadFromLocalStorage().toolkit ? loadFromLocalStorage().toolkit : defaultState,
+	initialState: defaultState,
 	reducers: {
 		setPreloaderInit(state, action) {
 			state.preloaderInit = action.payload

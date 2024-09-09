@@ -50,7 +50,13 @@ export default function Header() {
 								</li>
 							</ul>
 						</nav>
-						<a href={btnState.link} className={"header__btn btn btn_small text-18 fw-500 " + (window.innerWidth > 1024 ? 'btn_border' : '')}>
+						<a
+							href={btnState.link}
+							className={"header__btn btn btn_small text-18 fw-500 " + (window.innerWidth > 1024 ? 'btn_border' : '')}
+							onClick={() => `ym(98108619, 'reachGoal', 'registration_header');
+								_tmr.push({ id: '3536479', type: 'reachGoal', goal: 'registration_header' });`
+							}
+						>
 							{btnState.text}
 						</a>
 						<div className="header__menu-btn" onClick={toggleMenuClass}>

@@ -13,11 +13,17 @@ export default function Question() {
 						<NavLink
 							to='for-authors'
 							className="question__btn btn btn_border"
+							onClick={() => `ym(98108619,'reachGoal','create-content');
+								_tmr.push({ id: '3536479', type: 'reachGoal', goal: 'create-content' });`
+							}
 							end
 						>Создаю контент</NavLink>
 						<NavLink
 							to='for-advertisers'
 							className="question__btn btn btn_border"
+							onClick={() => `ym(98108619,'reachGoal','order-adv');
+								_tmr.push({ id: '3536479', type: 'reachGoal', goal: 'order-adv' });`
+							}
 							end
 						>Размещаю рекламу</NavLink>
 					</div>

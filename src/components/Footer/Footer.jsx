@@ -44,7 +44,15 @@ export default function Footer() {
 						<div className="footer__logo">
 							<img src="/img/logo.svg" alt="img" />
 						</div>
-						<a href={btnState.link} className="footer__btn btn btn_small btn_border">{btnState.text}</a>
+						<a
+							href={btnState.link}
+							className="footer__btn btn btn_small btn_border"
+							onClick={() => `ym(98108619, 'reachGoal', 'registration_footer');
+								_tmr.push({ id: '3536479', type: 'reachGoal', goal: 'registration_footer' });`
+							}
+						>
+							{btnState.text}
+						</a>
 					</div>
 					<div className="footer__wrapper">
 						<div className="footer__body">

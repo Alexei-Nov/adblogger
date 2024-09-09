@@ -30,7 +30,15 @@ export default function Money({ moneyState }) {
 				<div className="container">
 					<div className="money__wrapper" >
 						<div className="money__title title h2" dangerouslySetInnerHTML={{ __html: moneyState.title }}></div>
-						<a href={btnState.link} className="money__btn btn btn_border">{btnState.text}</a>
+						<a
+							href={btnState.link}
+							className="money__btn btn btn_border"
+							onClick={() => `ym(98108619,'reachGoal','registration_other');
+							_tmr.push({ id: '3536479', type: 'reachGoal', goal: 'registration_other' });`
+							}
+						>
+							{btnState.text}
+						</a>
 
 						<div className="money__img" ref={imgWrapper}>
 							<picture>
