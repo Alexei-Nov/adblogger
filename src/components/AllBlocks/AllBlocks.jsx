@@ -1,6 +1,5 @@
 import React from 'react'
 import Entrance from '../Entrance/Entrance'
-import Preloader from '../Preloader/Preloader'
 import Advantages from '../Advantages/Advantages'
 import Tile from '../Tile/Tile'
 import Channels from '../Channels/Channels'

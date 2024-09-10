@@ -31,7 +31,7 @@ export default function Faq({ faqState }) {
 										<div className="accordion__caret"></div>
 										{item.question}
 									</div>
-									<div className="accordion__body text-21" dangerouslySetInnerHTML={{ __html: item.answer }}></div>
+									<div className="accordion__body content text-21" dangerouslySetInnerHTML={{ __html: item.answer }}></div>
 								</div>
 							)
 						})}

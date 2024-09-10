@@ -68,7 +68,7 @@
 			& .tile {
 				&__img {
 					& picture {
-						bottom: -50px;
+						bottom: 0px;
 						left: 9%;
 						transform: translateY(30px);
 						width: 539px;
@@ -206,14 +206,14 @@
 					&__img {
 						& picture {
 							&:nth-child(1) {
-								width: 175px;
-								right: calc(50% + 6px);
+								width: 181px;
+								right: calc(50% + 56px);
 								bottom: 0;
 								top: unset;
 							}
 							&:nth-child(2) {
-								width: 133px;
-								left: calc(50% + 6px);
+								width: 170px;
+								left: calc(50% - 46px);
 								bottom: 0;
 								top: unset;
 							}
@@ -225,7 +225,8 @@
 				& .tile {
 					&__img {
 						& picture {
-							left: 0;
+							left: 30px;
+							bottom: 0;
 						}
 					}
 				}

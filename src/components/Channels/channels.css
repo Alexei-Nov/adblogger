@@ -21,6 +21,7 @@
 
 .channels__bottom {
   margin-top: auto;
+  color: var(--grey-1);
 }
 
 .channels__img {

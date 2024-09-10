@@ -19,7 +19,10 @@ export default function Header() {
 				<div className="container">
 					<div className="header__wrapper">
 						<NavLink to='/' className="header__logo" onClick={removeMenuClass}>
-							<img src='/img/logo.svg' alt="logo" />
+							<picture>
+								<source media="(max-width: 570px)" srcSet="/img/logo_mob.svg" />
+								<img src='/img/logo.svg' alt="logo" />
+							</picture>
 						</NavLink>
 
 						<nav className="header__nav nav fw-500 text-18">
@@ -52,7 +55,7 @@ export default function Header() {
 						</nav>
 						<a
 							href={btnState.link}
-							className={"header__btn btn btn_small text-18 fw-500 " + (window.innerWidth > 1024 ? 'btn_border' : '')}
+							className={"header__btn btn btn_small text-18 fw-500 "}
 							onClick={() => `ym(98108619, 'reachGoal', 'registration_header');
 								_tmr.push({ id: '3536479', type: 'reachGoal', goal: 'registration_header' });`
 							}

@@ -16,7 +16,7 @@ export default function Entrance({ entranceState }) {
 				</div>
 				<a
 					href={btnState.link}
-					className="entrance__btn btn fw-500 text-20"
+					className="entrance__btn btn btn_small fw-500 text-20"
 					onClick={() => `ym(98108619,'reachGoal','registration_other');
 					_tmr.push({ id: '3536479', type: 'reachGoal', goal: 'registration_other' });`
 					}

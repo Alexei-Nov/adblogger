@@ -49,6 +49,8 @@
 
 .entrance__video {
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   height: calc(100vh - 80px - 24px);
 }
 
@@ -57,8 +59,8 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: bottom center;
-     object-position: bottom center;
+  -o-object-position: top center;
+     object-position: top center;
 }
 
 @media screen and (max-width: 768px) {
@@ -66,6 +68,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: calc(100% - 32px);
+    margin: 0 16px;
+    margin-top: 28px;
   }
   .entrance__title {
     top: 36px;

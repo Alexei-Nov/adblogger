@@ -153,5 +153,11 @@
 		&__btn {
 			display: none;
 		}
+		&__menu-btn {
+			order: unset;
+		}
+		&__wrapper {
+			justify-content: space-between;
+		}
 	}
 }
