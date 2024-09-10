@@ -34,13 +34,11 @@ export default function Channels({ channelsState }) {
 	const [chanellsTag, setChanellsTag] = useState(channelsState.tags[0])
 
 	function filterChannels(tag) {
-		if (chanellsTag === tag) {
-			setChanellsTag()
-		} else {
+		if (chanellsTag !== tag) {
 			setChanellsTag(tag)
+			swiper.current.swiper.update()
+			swiper.current.swiper.slideTo(0)
 		}
-		swiper.current.swiper.update()
-		swiper.current.swiper.slideTo(0)
 	}
 
 	let resultChannelsArr = channelsState.channels.filter((channel) => channel.tags.includes(chanellsTag))
