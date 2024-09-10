@@ -8,6 +8,11 @@
   text-align: center;
 }
 
+.faq .accordion__body a {
+  color: var(--blue-1);
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 570px) {
   .faq .accordion__btn {
     font-size: 24px;
@@ -16,9 +21,5 @@
   .faq .accordion__body {
     font-size: 17px;
     line-height: 140%;
-  }
-  .faq .accordion__body a {
-    color: var(--blue-1);
-    text-decoration: underline;
   }
 }

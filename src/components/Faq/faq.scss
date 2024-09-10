@@ -7,6 +7,14 @@
 		margin-bottom: 34px;
 		text-align: center;
 	}
+	& .accordion {
+		&__body {
+			& a {
+				color: var(--blue-1);
+				text-decoration: underline;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 570px) {
@@ -19,11 +27,6 @@
 			&__body {
 				font-size: 17px;
 				line-height: 140%;
-
-				& a {
-					color: var(--blue-1);
-					text-decoration: underline;
-				}
 			}
 		}
 	}
