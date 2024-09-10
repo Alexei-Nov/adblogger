@@ -132,6 +132,26 @@ body {
   font-weight: bolder;
 }
 
+.content ul {
+  padding-left: 25px;
+}
+
+.content ul:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.content ul:not(:first-child) {
+  margin-top: 1em;
+}
+
+.content ul > li {
+  list-style: disc;
+}
+
+.content ul > li::marker {
+  font-size: 0.7em;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
