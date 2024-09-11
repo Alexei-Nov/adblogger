@@ -8,6 +8,11 @@
 		flex-direction: column;
 		gap: 36px;
 	}
+	&__brand {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+	}
 	&__preview {
 		display: flex;
 		width: 100%;
@@ -115,6 +120,10 @@
 		}
 		&__logo {
 			height: 36px;
+		}
+		&__brand-name {
+			font-size: 17px;
+			line-height: 120%;
 		}
 	}
 }

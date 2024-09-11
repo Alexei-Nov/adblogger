@@ -48,19 +48,23 @@ function App() {
 		window.addEventListener(wheelEvent, preventDefault, wheelOpt);
 		// window.addEventListener('touchmove', preventDefault, wheelOpt); 
 		window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+
+
+		fetch("./initialState.json")
+			.then(res => res.json())
+			.then(
+				(result) => {
+					dispatch(setState(result))
+					console.log(1);
+
+				},
+				(error) => {
+					console.log(error);
+				}
+			)
+			.catch(err => console.error(err))
 	})
 
-	fetch("./initialState.json")
-		.then(res => res.json())
-		.then(
-			(result) => {
-				dispatch(setState(result))
-			},
-			(error) => {
-				console.log(error);
-			}
-		)
-		.catch(err => console.error(err))
 
 	return (
 		<>
