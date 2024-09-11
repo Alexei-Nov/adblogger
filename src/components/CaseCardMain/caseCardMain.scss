@@ -46,6 +46,17 @@
 		margin-top: auto;
 		max-width: 610px;
 	}
+	&__logo {
+		display: flex;
+		height: 85px;
+
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: top left;
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {

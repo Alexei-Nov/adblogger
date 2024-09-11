@@ -1,14 +1,16 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import 'swiper/css';
 import './case.css'
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { NavLink } from 'react-router-dom';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Case({ caseState }) {
 	let wrapper = useRef();
+	const [cases, setCases] = useState([])
 
 	useEffect(() => {
 		if (window.innerWidth > 1200) {
@@ -23,14 +25,26 @@ export default function Case({ caseState }) {
 				}
 			});
 
-			tl.fromTo(wrapper.current, {
-				y: 300,
-			}, {
-				y: 0,
-				duration: 2,
-				ease: "elastic.out(0.4,0.6)",
-			});
+			// tl.fromTo(wrapper.current, {
+			// 	y: 300,
+			// }, {
+			// 	y: 0,
+			// 	duration: 2,
+			// 	ease: "elastic.out(0.4,0.6)",
+			// });
 		}
+
+		fetch("./casesState.json")
+			.then(res => res.json())
+			.then(
+				(result) => {
+					setCases(result.cases)
+				},
+				(error) => {
+					console.log(error);
+				}
+			)
+			.catch(err => console.error(err))
 	})
 
 	return (
@@ -47,7 +61,7 @@ export default function Case({ caseState }) {
 							modules={[Navigation, Pagination]}
 							spaceBetween={24}
 							speed={800}
-							loop={true}
+							// loop={true}
 							loopAdditionalSlides={2}
 							slidesPerView={'auto'}
 
@@ -73,35 +87,21 @@ export default function Case({ caseState }) {
 								},
 							}}
 						>
-							{caseState.cases.map((caseItem, i) => {
+							{cases.map((caseItem, i) => {
 								return (
 									<SwiperSlide key={i} className='case__slide'>
-										<div className="case__name text-32 fw-500">{caseItem.name}</div>
-										<div className="case__bottom">
-											<div className="case__desc">{caseItem.desc}</div>
-											<div className="case__icon">
-												<img src={caseItem.iconPath} alt="img" />
+										<NavLink to={'/top-cases/' + caseItem.slug} className='case__slide-wrapper'>
+											<div className="case__name text-32 fw-500" dangerouslySetInnerHTML={{ __html: caseItem.desc }}></div>
+											<div className="case__bottom">
+												<div className="case__desc" dangerouslySetInnerHTML={{ __html: caseItem.title }}></div>
+												<div className="case__icon">
+													<img src={caseItem.logo} alt="img" />
+												</div>
 											</div>
-										</div>
-										<div className="case__img">
-											<img src={caseItem.imgPath} alt="img" />
-										</div>
-									</SwiperSlide>
-								)
-							})}
-							{caseState.cases.map((caseItem, i) => {
-								return (
-									<SwiperSlide key={i} className='case__slide'>
-										<div className="case__name text-32 fw-500">{caseItem.name}</div>
-										<div className="case__bottom">
-											<div className="case__desc">{caseItem.desc}</div>
-											<div className="case__icon">
-												<img src={caseItem.iconPath} alt="img" />
+											<div className="case__img">
+												<img src={caseItem.preview_img_vertical} alt="img" />
 											</div>
-										</div>
-										<div className="case__img">
-											<img src={caseItem.imgPath} alt="img" />
-										</div>
+										</NavLink>
 									</SwiperSlide>
 								)
 							})}
@@ -121,7 +121,6 @@ export default function Case({ caseState }) {
 						</Swiper>
 
 						<div className="case__pagination slider-pagination"></div>
-
 					</div>
 				</div>
 			</section>

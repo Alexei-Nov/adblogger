@@ -82,7 +82,7 @@
 	}
 	&__icon {
 		display: flex;
-		width: 56px;
+		// width: 56px;
 		height: 56px;
 		transition: all ease 0.5s;
 		opacity: 0;
@@ -91,7 +91,7 @@
 			width: 100%;
 			height: 100%;
 			object-fit: contain;
-			object-position: center;
+			object-position: bottom left;
 		}
 	}
 	&__title {
@@ -111,6 +111,11 @@
 	}
 	&__next {
 		margin-left: auto;
+	}
+	&__slide-wrapper {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
 	}
 }
 

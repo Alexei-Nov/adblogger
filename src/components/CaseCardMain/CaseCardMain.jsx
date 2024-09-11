@@ -1,26 +1,25 @@
 import React from 'react'
 import './caseCardMain.css'
 
-export default function CaseCardMain() {
+export default function CaseCardMain({ post }) {
 	return (
-		<section className='section case-card-main'>
-			<div className="container">
-				<div className="case-card-main__title page-title">топ-кейсы</div>
-				<div className="case-card-main__wrapper">
-					<div className="case-card-main__logo">
-						<picture>
-							<source media="(max-width: 570px)" srcSet="/img/caseCardMain/logo_mob.svg" sizes="img" />
-							<img src="/img/caseCardMain/logo.svg" alt="img" />
-						</picture>
-					</div>
-					<div className="case-card-main__text text-32 fw-500">
-						Кинопоиск: как сделать CPA дешевле в&nbsp;два раза и&nbsp;причём здесь лимитированные промокоды
-					</div>
-					<div className="case-card-main__img">
-						<img src="/img/caseCardMain/img.png" alt="img" />
-					</div>
+		<>
+			<section className='section case-card-main'>
+				<div className="container">
+					<div className="case-card-main__title page-title">топ-кейсы</div>
+					{post &&
+						<a href={'/top-cases/' + post.slug} className="case-card-main__wrapper">
+							<div className="case-card-main__logo">
+								<img src={post.logo} alt="img" />
+							</div>
+							<div className="case-card-main__text text-32 fw-500" dangerouslySetInnerHTML={{ __html: post.title }}></div>
+							<div className="case-card-main__img">
+								<img src={post.preview_img_main} alt="img" />
+							</div>
+						</a>
+					}
 				</div>
-			</div>
-		</section>
+			</section>
+		</>
 	)
 }
