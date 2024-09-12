@@ -51,7 +51,7 @@ function App() {
 
 
 
-		fetch("./initialState.json")
+		fetch("/initialState.json")
 			.then(res => res.json())
 			.then(
 				(result) => {
@@ -63,7 +63,7 @@ function App() {
 			)
 			.catch(err => console.error(err))
 
-		fetch("./casesState.json")
+		fetch("/casesState.json")
 			.then(res => res.json())
 			.then(
 				(result) => {
