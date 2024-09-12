@@ -4,12 +4,14 @@ import Main from "./components/Main/Main";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useEffect } from "react";
 import Preloader from "./components/Preloader/Preloader";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setCases, setState } from "./toolkitRedux/toolkitSlice";
 
 
 function App() {
 	const dispatch = useDispatch()
+
+	const footerState = useSelector(state => state.toolkit.footer)
 
 	useEffect(() => {
 		let scrollStep = 0;
@@ -74,8 +76,9 @@ function App() {
 				}
 			)
 			.catch(err => console.error(err))
-
 	})
+
+
 
 
 	return (
@@ -85,7 +88,7 @@ function App() {
 					<Preloader />
 					<Header />
 					<Main />
-					<Footer />
+					<Footer footer={footerState} />
 				</Router>
 			</div>
 		</>

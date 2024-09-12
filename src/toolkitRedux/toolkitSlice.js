@@ -1,20 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const loadFromLocalStorage = () => {
-	try {
-		const stateStr = localStorage.getItem('state');
-		return stateStr ? JSON.parse(stateStr) : undefined;
-	} catch (e) {
-		console.error(e);
-		return undefined;
-	}
-};
+// const loadFromLocalStorage = () => {
+// 	try {
+// 		const stateStr = localStorage.getItem('state');
+// 		return stateStr ? JSON.parse(stateStr) : undefined;
+// 	} catch (e) {
+// 		console.error(e);
+// 		return undefined;
+// 	}
+// };
 
 const defaultState = {
 	preloaderInit: false,
 	registrationBtn: {
 		text: 'Перейти в кабинет',
 		link: '#registration'
+	},
+	footer: {
+		title: 'О компании',
+		desc: 'VK AdBlogger — платформа для сотрудничества авторов и рекламодателей.'
 	},
 	pages: [
 		{
@@ -601,9 +605,12 @@ const toolkitSlice = createSlice({
 		},
 		setCases(state, action) {
 			state.cases = action.payload
+		},
+		setFooterDescText(state, action) {
+			state.footer.desc = action.payload
 		}
 	}
 })
 
 export default toolkitSlice.reducer
-export const { setPreloaderInit, setState, setCases } = toolkitSlice.actions
+export const { setPreloaderInit, setState, setCases, setFooterDescText } = toolkitSlice.actions

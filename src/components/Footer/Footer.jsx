@@ -1,10 +1,12 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
 import './footer.css'
+import { useLocation } from 'react-router-dom';
 
-export default function Footer() {
+export default function Footer({ footer }) {
+	const [footerState, setFooterState] = useState(footer)
+
 	const btnState = useSelector(state => state.toolkit.registrationBtn)
-
 	let nav = useRef();
 
 	useEffect(() => {
@@ -35,6 +37,20 @@ export default function Footer() {
 		}
 	})
 
+	const location = useLocation()
+	useEffect(() => {
+		switch (window.location.pathname) {
+			case '/for-authors':
+				setFooterState({ ...footerState, desc: 'VK AdBlogger — платформа для сотрудничества авторов и рекламодателей, на которой можно продавать рекламу в сообществах ВКонтакте.' })
+				break;
+			case '/for-advertisers':
+				setFooterState({ ...footerState, desc: 'VK AdBlogger — платформа для сотрудничества авторов и рекламодателей, на которой можно покупать рекламу в сообществах ВКонтакте.' })
+				break;
+			default:
+				setFooterState({ ...footerState, desc: 'VK AdBlogger — платформа для сотрудничества авторов и рекламодателей.' })
+				break;
+		}
+	}, [location])
 
 	return (
 		<>
@@ -56,10 +72,8 @@ export default function Footer() {
 					</div>
 					<div className="footer__wrapper">
 						<div className="footer__body">
-							<div className="footer__title text-20">О компании</div>
-							<div className="footer__desc text-16">
-								VK AdBlogger — платформа для сотрудничества авторов и рекламодателей, на которой можно продавать рекламу в сообществах ВКонтакте.
-							</div>
+							<div className="footer__title text-20">{footerState.title}</div>
+							<div className="footer__desc text-16">{footerState.desc}</div>
 						</div>
 						<nav className="footer__nav nav" ref={nav}>
 							<ul className='nav__list'>
