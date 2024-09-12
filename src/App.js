@@ -4,8 +4,8 @@ import Main from "./components/Main/Main";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useEffect } from "react";
 import Preloader from "./components/Preloader/Preloader";
-import { useDispatch, useSelector } from "react-redux";
-import { setState } from "./toolkitRedux/toolkitSlice";
+import { useDispatch } from "react-redux";
+import { setCases, setState } from "./toolkitRedux/toolkitSlice";
 
 
 function App() {
@@ -50,19 +50,31 @@ function App() {
 		window.addEventListener('keydown', preventDefaultForScrollKeys, false);
 
 
+
 		fetch("./initialState.json")
 			.then(res => res.json())
 			.then(
 				(result) => {
 					dispatch(setState(result))
-					console.log(1);
-
 				},
 				(error) => {
 					console.log(error);
 				}
 			)
 			.catch(err => console.error(err))
+
+		fetch("./casesState.json")
+			.then(res => res.json())
+			.then(
+				(result) => {
+					dispatch(setCases(result.cases))
+				},
+				(error) => {
+					console.log(error);
+				}
+			)
+			.catch(err => console.error(err))
+
 	})
 
 

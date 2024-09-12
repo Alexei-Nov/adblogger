@@ -584,7 +584,8 @@ const defaultState = {
 				},
 			]
 		},
-	]
+	],
+	cases: []
 }
 
 
@@ -597,9 +598,12 @@ const toolkitSlice = createSlice({
 		},
 		setState(state, action) {
 			state.pages = action.payload.pages
+		},
+		setCases(state, action) {
+			state.cases = action.payload
 		}
 	}
 })
 
 export default toolkitSlice.reducer
-export const { setPreloaderInit, setState } = toolkitSlice.actions
+export const { setPreloaderInit, setState, setCases } = toolkitSlice.actions

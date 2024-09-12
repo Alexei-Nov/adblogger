@@ -1,24 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import CaseCardMain from '../components/CaseCardMain/CaseCardMain'
 import CasesCatalog from '../components/CasesCatalog/CasesCatalog'
+import { useSelector } from 'react-redux'
 
 export default function TopCase() {
-	const [cardsArr, setCardsArr] = useState([])
-
-	useEffect(() => {
-		fetch("./casesState.json")
-			.then(res => res.json())
-			.then(
-				(result) => {
-					setCardsArr(result.cases)
-				},
-				(error) => {
-					console.log(error);
-				}
-			)
-			.catch(err => console.error(err))
-	})
-
+	const cardsArr = useSelector(state => state.toolkit.cases)
 
 	return (
 		<>
