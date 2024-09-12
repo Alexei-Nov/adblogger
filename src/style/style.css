@@ -158,6 +158,10 @@ body {
   margin-bottom: 1em;
 }
 
+.content a {
+  text-decoration: underline;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
