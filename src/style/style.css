@@ -155,6 +155,9 @@ body {
 .content h2 {
   font-size: 32px;
   line-height: 110%;
+}
+
+.content h2:not(:last-child) {
   margin-bottom: 1em;
 }
 

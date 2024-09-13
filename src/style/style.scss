@@ -151,7 +151,9 @@ body {
 	& h2 {
 		font-size: 32px;
 		line-height: 110%;
-		margin-bottom: 1em;
+		&:not(:last-child) {
+			margin-bottom: 1em;
+		}
 	}
 	& a {
 		text-decoration: underline;
