@@ -63,7 +63,7 @@
      object-position: top center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .entrance__btn {
     display: -webkit-box;
     display: -ms-flexbox;

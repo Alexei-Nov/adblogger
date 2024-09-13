@@ -1,5 +1,4 @@
 .header {
-  padding: 18px 0;
   position: relative;
   z-index: 10;
 }
@@ -22,6 +21,7 @@
 }
 
 .header__wrapper {
+  padding: 18px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,6 +29,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 48px;
+  background-color: var(--black);
 }
 
 .header__btn {
@@ -177,7 +178,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header__btn {
     display: none;
   }

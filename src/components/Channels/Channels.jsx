@@ -11,24 +11,26 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Channels({ channelsState }) {
 	let swiper = useRef();
 	useEffect(() => {
-		let tl = gsap.timeline({
-			scrollTrigger: {
-				trigger: swiper.current,
-				start: "bottom bottom",
-				end: "bottom bottom",
-				scrub: false,
-				markers: false,
-				pin: false,
-			}
-		});
+		if (window.innerWidth > 768) {
+			let tl = gsap.timeline({
+				scrollTrigger: {
+					trigger: swiper.current,
+					start: "bottom bottom",
+					end: "bottom bottom",
+					scrub: false,
+					markers: false,
+					pin: false,
+				}
+			});
 
-		tl.fromTo(gsap.utils.selector(swiper)('.swiper-wrapper'), {
-			xPercent: 50,
-		}, {
-			xPercent: 0,
-			duration: 2.5,
-			ease: "elastic.out(0.8,0.4)",
-		});
+			tl.fromTo(gsap.utils.selector(swiper)('.swiper-wrapper'), {
+				xPercent: 50,
+			}, {
+				xPercent: 0,
+				duration: 2.5,
+				ease: "elastic.out(0.8,0.4)",
+			});
+		}
 	})
 
 	const [chanellsTag, setChanellsTag] = useState(channelsState.tags[0])
@@ -37,7 +39,7 @@ export default function Channels({ channelsState }) {
 		if (chanellsTag !== tag) {
 			setChanellsTag(tag)
 			swiper.current.swiper.update()
-			swiper.current.swiper.slideTo(0)
+			// swiper.current.swiper.slideTo(0)
 		}
 	}
 

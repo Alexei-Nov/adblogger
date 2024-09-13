@@ -16,24 +16,24 @@ export default function Steps({ stepsState }) {
 
 	useEffect(() => {
 		if (window.innerWidth > 1200) {
-			let tlTitle = gsap.timeline({
-				scrollTrigger: {
-					trigger: wrapper.current,
-					start: "top 60%",
-					end: "+=" + window.innerHeight,
-					scrub: true,
-					markers: false,
-					pin: false,
-				}
-			});
+			// let tlTitle = gsap.timeline({
+			// 	scrollTrigger: {
+			// 		trigger: wrapper.current,
+			// 		start: "top 60%",
+			// 		end: "+=" + window.innerHeight,
+			// 		scrub: true,
+			// 		markers: false,
+			// 		pin: false,
+			// 	}
+			// });
 
-			tlTitle.fromTo(title.current, {
-				y: 160,
-			}, {
-				y: 0,
-				duration: 1.5,
-				ease: "elastic.out(0.8,0.4)",
-			});
+			// tlTitle.fromTo(title.current, {
+			// 	y: 160,
+			// }, {
+			// 	y: 0,
+			// 	duration: 1.5,
+			// 	ease: "elastic.out(0.8,0.4)",
+			// });
 
 			let slidesArr = gsap.utils.selector(wrapper)('.steps__slide')
 
