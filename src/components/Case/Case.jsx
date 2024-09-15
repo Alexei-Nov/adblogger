@@ -6,11 +6,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Case({ caseState }) {
 	let wrapper = useRef();
-	const [cases, setCases] = useState([])
+	// const [cases, setCases] = useState([])
+	const cases = useSelector(state => state.toolkit.cases)
 
 	useEffect(() => {
 		if (window.innerWidth > 1200) {
@@ -34,17 +36,17 @@ export default function Case({ caseState }) {
 			// });
 		}
 
-		fetch("./casesState.json")
-			.then(res => res.json())
-			.then(
-				(result) => {
-					setCases(result.cases)
-				},
-				(error) => {
-					console.log(error);
-				}
-			)
-			.catch(err => console.error(err))
+		// fetch("./casesState.json")
+		// 	.then(res => res.json())
+		// 	.then(
+		// 		(result) => {
+		// 			setCases(result.cases)
+		// 		},
+		// 		(error) => {
+		// 			console.log(error);
+		// 		}
+		// 	)
+		// 	.catch(err => console.error(err))
 	})
 
 	return (
