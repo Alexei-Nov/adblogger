@@ -82,13 +82,13 @@ export default function Footer({ footer }) {
 									<div className="nav__caret"></div>
 									<ul className='nav__submenu text-16'>
 										<li className='nav__item nav__item_lvl2'>
-											<a href="/" className='nav__link nav__link_lvl2'>Отдых по авторски</a>
+											<a href="/" className='nav__link nav__link_lvl2'>Посевы и треккинг</a>
 										</li>
 										<li className='nav__item nav__item_lvl2'>
-											<a href="/" className='nav__link nav__link_lvl2'>Просмотры растут</a>
+											<a href="/" className='nav__link nav__link_lvl2'>Простор для контента</a>
 										</li>
 										<li className='nav__item nav__item_lvl2'>
-											<a href="/" className='nav__link nav__link_lvl2'>Розыгрыш автомобиля Тинькофф</a>
+											<a href="/" className='nav__link nav__link_lvl2'>Космически нативно</a>
 										</li>
 										<li className='nav__item nav__item_lvl2'>
 											<a href="/" className='nav__link nav__link_lvl2'>Все кейсы</a>
@@ -101,10 +101,25 @@ export default function Footer({ footer }) {
 
 									<ul className='nav__submenu text-16'>
 										<li className='nav__item nav__item_lvl2'>
-											<a href="/" className='nav__link nav__link_lvl2'>Руководство</a>
+											<a href="https://adblogger.vk.com/documents/terms" className='nav__link nav__link_lvl2'>Пользовательское соглашение</a>
 										</li>
 										<li className='nav__item nav__item_lvl2'>
-											<a href="/" className='nav__link nav__link_lvl2'>Лицензионное соглашение</a>
+											<a href="https://adblogger.vk.com/documents/privacy" className='nav__link nav__link_lvl2'>Политика конфиденциальности</a>
+										</li>
+										<li className='nav__item nav__item_lvl2'>
+											<a href="https://adblogger.vk.com/documents/offer_creator" className='nav__link nav__link_lvl2'>Оферта для авторов</a>
+										</li>
+										<li className='nav__item nav__item_lvl2'>
+											<a href="https://adblogger.vk.com/documents/terms_creator" className='nav__link nav__link_lvl2'>Условия для авторов</a>
+										</li>
+										<li className='nav__item nav__item_lvl2'>
+											<a href="https://adblogger.vk.com/documents/offer_adv" className='nav__link nav__link_lvl2'>Оферта для рекламодателей</a>
+										</li>
+										<li className='nav__item nav__item_lvl2'>
+											<a href="https://adblogger.vk.com/documents/rules_adv" className='nav__link nav__link_lvl2'>Правила оказания рекламных услуг</a>
+										</li>
+										<li className='nav__item nav__item_lvl2'>
+											<a href="https://adblogger.vk.com/documents/moderation" className='nav__link nav__link_lvl2'>Правила размещения рекламы</a>
 										</li>
 									</ul>
 								</li>
@@ -114,10 +129,10 @@ export default function Footer({ footer }) {
 
 									<ul className='nav__submenu text-16'>
 										<li className='nav__item nav__item_lvl2'>
-											<a href="/" className='nav__link nav__link_lvl2'>FAQ</a>
+											<a href="adblogger.vk.com/documents/faq_author" className='nav__link nav__link_lvl2'>FAQ</a>
 										</li>
 										<li className='nav__item nav__item_lvl2'>
-											<a href="/" className='nav__link nav__link_lvl2'>Обратная связь</a>
+											<a href="vk.cc/cyEF76" className='nav__link nav__link_lvl2'>Обратная связь</a>
 										</li>
 									</ul>
 								</li>

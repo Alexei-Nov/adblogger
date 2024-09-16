@@ -31,7 +31,7 @@ export default function Channels({ channelsState }) {
 				ease: "elastic.out(0.8,0.4)",
 			});
 		}
-	})
+	}, [])
 
 	const [chanellsTag, setChanellsTag] = useState(channelsState.tags[0])
 
@@ -39,7 +39,7 @@ export default function Channels({ channelsState }) {
 		if (chanellsTag !== tag) {
 			setChanellsTag(tag)
 			swiper.current.swiper.update()
-			// swiper.current.swiper.slideTo(0)
+			// swiper.current.swiper.slideToLoop(0)
 		}
 	}
 
@@ -95,7 +95,7 @@ export default function Channels({ channelsState }) {
 						}}
 						centeredSlides={true}
 						loop={true}
-						loopAdditionalSlides={3}
+						loopAdditionalSlides={10}
 						breakpoints={{
 							0: {
 								slidesPerView: 1,
@@ -106,7 +106,7 @@ export default function Channels({ channelsState }) {
 						}}
 					>
 
-						{[...Array(10)].map((row, i) => resultChannelsArr.map((channel, i) => {
+						{[...Array(3)].map((row, i) => resultChannelsArr.map((channel, i) => {
 							return (
 								<SwiperSlide key={i} className='channels__slide'>
 									<div className="channels__card">

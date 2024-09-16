@@ -300,6 +300,8 @@ body {
   cursor: pointer;
   background-color: var(--black-2);
   pointer-events: all;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 .accordion__item {

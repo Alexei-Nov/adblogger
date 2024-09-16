@@ -139,12 +139,8 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 10px;
-  width: 100%;
+  width: calc(100% - 20px);
   z-index: 3;
-}
-
-.case__prev {
-  display: none;
 }
 
 .case__next {
@@ -160,6 +156,11 @@
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+}
+
+.case .swiper-button-disabled {
+  opacity: 0;
+  pointer-events: none;
 }
 
 @media screen and (min-width: 1440px) {
