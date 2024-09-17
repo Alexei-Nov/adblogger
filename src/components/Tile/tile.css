@@ -212,27 +212,20 @@
     bottom: 0;
   }
   .tile__slide_3 .tile__img picture:nth-child(1) {
-    width: 440px;
-    left: -25px;
-    top: 30px;
+    width: 100%;
   }
   .tile__slide_3 .tile__img picture:nth-child(2) {
-    width: 100px;
-    left: 34px;
-    bottom: 0;
+    display: none;
   }
   .tile__slide_3 .tile__img picture:nth-child(3) {
-    width: 100px;
-    left: 65px;
-    top: 14px;
-    right: unset;
+    display: none;
   }
   .tile__slide_4 .tile__img picture:nth-child(1) {
-    left: -40px;
+    width: 100%;
+    height: 100%;
   }
   .tile__slide_4 .tile__img picture:nth-child(2) {
-    bottom: 15px;
-    left: 25px;
+    display: none;
   }
   .tile__slide_5 .tile__img picture {
     height: 100%;

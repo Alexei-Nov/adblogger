@@ -2,9 +2,9 @@ import React, { useEffect } from 'react'
 import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "../../pages/Home";
 import TopCase from "../../pages/TopCase";
-import DetailCase from "../../pages/DetailCase";
 import ForAdvisers from '../../pages/ForAdvertisers';
 import ForAuthors from '../../pages/ForAuthors';
+import DetailCase from "../../pages/DetailCase";
 
 export default function Main() {
 

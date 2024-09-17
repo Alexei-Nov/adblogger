@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from "react-router-dom";
 import { useSelector } from 'react-redux'
 import './header.css'
+import { handleTracking } from 'utils/tracking'
 
 export default function Header() {
 	const btnState = useSelector(state => state.toolkit.registrationBtn)
@@ -56,9 +57,7 @@ export default function Header() {
 						<a
 							href={btnState.link}
 							className={"header__btn btn btn_small text-18 fw-500 "}
-							onClick={() => `ym(98108619, 'reachGoal', 'registration_header');
-								_tmr.push({ id: '3536479', type: 'reachGoal', goal: 'registration_header' });`
-							}
+							onClick={() => handleTracking('registration_header')}
 						>
 							{btnState.text}
 						</a>

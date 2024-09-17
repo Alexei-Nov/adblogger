@@ -2,42 +2,65 @@ import React, { useEffect, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
 import './footer.css'
 import { NavLink, useLocation } from 'react-router-dom';
+import { handleTracking } from 'utils/tracking'
 
 export default function Footer({ footer }) {
 	const [footerState, setFooterState] = useState(footer)
 
 	const btnState = useSelector(state => state.toolkit.registrationBtn)
 	let nav = useRef();
+	const location = useLocation()
 
 	useEffect(() => {
-		if (window.innerWidth < 768 && nav.current) {
-			let linkLvl1Arr = nav.current.querySelectorAll('.nav__link_lvl1')
-			linkLvl1Arr.forEach(link => {
-				let item = link.closest('.nav__item_lvl1')
-				let body = item.querySelector('.nav__submenu')
-				if (!item.closest('.nav__item_open')) {
-					body.style.maxHeight = 0
-				}
-				item.addEventListener('click', (e) => {
-					if (!link.closest('.nav__item_open')) {
-						e.preventDefault()
-					}
+    if (!nav.current) return;
 
-					if (!e.target.closest('.nav__submenu')) {
-						if (!item.closest('.nav__item_open')) {
-							item.classList.add('nav__item_open')
-							body.style.maxHeight = body.scrollHeight + 'px'
-						} else {
-							item.classList.remove('nav__item_open')
-							body.style.maxHeight = 0
-						}
-					}
-				})
-			})
-		}
-	})
+    const handleResize = () => {
+      if (window.innerWidth >= 768) return;
 
-	const location = useLocation()
+      const linkLvl1Arr = nav.current.querySelectorAll('.nav__link_lvl1');
+
+      linkLvl1Arr.forEach(link => {
+        const item = link.closest('.nav__item_lvl1');
+        const body = item.querySelector('.nav__submenu');
+
+				item.classList.contains('nav__item_open')
+
+        if (!item.classList.contains('nav__item_open')) {
+          body.style.maxHeight = 0;
+        }
+
+        const handleClick = (e) => {
+          if (!e.target.closest('.nav__submenu')) {
+            e.preventDefault();
+            
+            if (!item.classList.contains('nav__item_open')) {
+              item.classList.add('nav__item_open');
+              body.style.maxHeight = `${body.scrollHeight}px`;
+            } else {
+              item.classList.remove('nav__item_open');
+              body.style.maxHeight = 0;
+            }
+          }
+        };
+
+        item.addEventListener('click', handleClick);
+
+        return () => {
+          item.removeEventListener('click', handleClick);
+        };
+      });
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [nav, location]);
+
+	
 	useEffect(() => {
 		switch (window.location.pathname) {
 			case '/for-authors':
@@ -63,9 +86,7 @@ export default function Footer({ footer }) {
 						<a
 							href={btnState.link}
 							className="footer__btn btn btn_small btn_border"
-							onClick={() => `ym(98108619, 'reachGoal', 'registration_footer');
-								_tmr.push({ id: '3536479', type: 'reachGoal', goal: 'registration_footer' });`
-							}
+							onClick={() => handleTracking('registration_footer')}
 						>
 							{btnState.text}
 						</a>

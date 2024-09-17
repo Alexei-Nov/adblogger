@@ -53,29 +53,29 @@ function App() {
 
 
 
-		fetch("/initialState.json")
-			.then(res => res.json())
-			.then(
-				(result) => {
-					dispatch(setState(result))
-				},
-				(error) => {
-					console.log(error);
-				}
-			)
-			.catch(err => console.error(err))
+		// fetch("/initialState.json")
+		// 	.then(res => res.json())
+		// 	.then(
+		// 		(result) => {
+		// 			dispatch(setState(result))
+		// 		},
+		// 		(error) => {
+		// 			console.log(error);
+		// 		}
+		// 	)
+		// 	.catch(err => console.error(err))
 
-		fetch("/casesState.json")
-			.then(res => res.json())
-			.then(
-				(result) => {
-					dispatch(setCases(result.cases))
-				},
-				(error) => {
-					console.log(error);
-				}
-			)
-			.catch(err => console.error(err))
+		// fetch("/casesState.json")
+		// 	.then(res => res.json())
+		// 	.then(
+		// 		(result) => {
+		// 			dispatch(setCases(result.cases))
+		// 		},
+		// 		(error) => {
+		// 			console.log(error);
+		// 		}
+		// 	)
+		// 	.catch(err => console.error(err))
 
 
 	})

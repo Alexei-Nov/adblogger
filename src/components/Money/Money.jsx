@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { useSelector } from 'react-redux'
+import { handleTracking } from 'utils/tracking'
 
 import './money.css'
 
@@ -33,9 +34,7 @@ export default function Money({ moneyState }) {
 						<a
 							href={btnState.link}
 							className="money__btn btn btn_border"
-							onClick={() => `ym(98108619,'reachGoal','registration_other');
-							_tmr.push({ id: '3536479', type: 'reachGoal', goal: 'registration_other' });`
-							}
+							onClick={() => handleTracking('registration_other')}
 						>
 							{btnState.text}
 						</a>

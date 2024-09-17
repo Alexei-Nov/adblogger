@@ -23,15 +23,6 @@ export default function CasesCatalog({ posts }) {
 		<>
 			<section className='section cases-catalog'>
 				<div className="container">
-					<div className="cases-catalog__heading text-20 fw-500">
-						{tagsArr.map((tag, i) => {
-							return (
-								<div className={"cases-catalog__btn btn btn_rounded btn_transparent" + (caseTag === tag ? ' cases-catalog__btn_active' : '')} key={i} onClick={() => { setFilter(tag) }}>
-									{tag}
-								</div>
-							)
-						})}
-					</div>
 					<div className="cases-catalog__wrapper">
 						{resultCardsArr.map((card, i) => {
 							return (

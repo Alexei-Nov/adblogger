@@ -14,6 +14,10 @@ export default function Preloader() {
 		if (preloaderInit) {
 			let i = 0;
 			const imgArr = wrapper.current.querySelectorAll('img')
+
+			const entranceWrapper = document.querySelector('.entrance__wrapper');
+			
+
 			let animInterval = setInterval(() => {
 				if (imgArr[i - 1]) {
 					imgArr[i - 1].style.display = 'none'
@@ -26,6 +30,11 @@ export default function Preloader() {
 					dispatch(setPreloaderInit(false))
 				}
 			}, 50);
+
+
+			setTimeout(() => {
+				if (entranceWrapper) entranceWrapper.classList.add('is-active')
+			}, 2000);
 		}
 	})
 

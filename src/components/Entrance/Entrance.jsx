@@ -1,6 +1,7 @@
 import React from 'react'
 import './entrance.css'
 import { useSelector } from 'react-redux'
+import { handleTracking } from 'utils/tracking'
 
 export default function Entrance({ entranceState }) {
 	const btnState = useSelector(state => state.toolkit.registrationBtn)
@@ -17,9 +18,7 @@ export default function Entrance({ entranceState }) {
 				<a
 					href={btnState.link}
 					className="entrance__btn btn btn_small fw-500 text-20"
-					onClick={() => `ym(98108619,'reachGoal','registration_other');
-					_tmr.push({ id: '3536479', type: 'reachGoal', goal: 'registration_other' });`
-					}
+					onClick={() => handleTracking('registration_other')}
 				>
 					{btnState.text}
 				</a>

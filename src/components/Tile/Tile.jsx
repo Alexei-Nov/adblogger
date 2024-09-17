@@ -6,6 +6,8 @@ import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { handleTracking } from 'utils/tracking'
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Tile({ tileState }) {
@@ -91,9 +93,7 @@ export default function Tile({ tileState }) {
 					<a
 						href={btnState.link}
 						className="tile__btn btn fw-500"
-						onClick={() => `ym(98108619,'reachGoal','registration_other');
-						_tmr.push({ id: '3536479', type: 'reachGoal', goal: 'registration_other' });`
-						}
+						onClick={() => handleTracking('registration_other')}
 					>
 						{btnState.text}
 					</a>

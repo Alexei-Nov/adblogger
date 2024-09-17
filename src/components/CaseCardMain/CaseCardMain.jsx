@@ -14,7 +14,10 @@ export default function CaseCardMain({ post }) {
 							</div>
 							<div className="case-card-main__text text-32 fw-500" dangerouslySetInnerHTML={{ __html: post.title }}></div>
 							<div className="case-card-main__img">
-								<img src={post.preview_img_main} alt="img" />
+								<picture>
+									<source media="(max-width: 1024px)" srcSet={post.preview_img_vertical} />
+									<img src={post.preview_img_main} alt="img" />
+								</picture>
 							</div>
 						</a>
 					}

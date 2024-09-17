@@ -6,7 +6,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useSelector } from 'react-redux';
+import { handleTracking } from 'utils/tracking';
+
 gsap.registerPlugin(ScrollTrigger);
+
 
 export default function Steps({ stepsState }) {
 	const btnState = useSelector(state => state.toolkit.registrationBtn)
@@ -93,7 +96,9 @@ export default function Steps({ stepsState }) {
 		<>
 			<section className='section steps' >
 				<div className="container" ref={wrapper}>
-					<div className="steps__title title h2" ref={title}>cтаньте автором в VK AdBlogger</div>
+					{window.location.pathname === "/for-authors" &&
+						<div className="steps__title title h2" ref={title}>cтаньте автором в VK AdBlogger</div>
+					}
 					<Swiper className='steps__slider'
 						modules={[Pagination]}
 						spaceBetween={24}
@@ -131,9 +136,7 @@ export default function Steps({ stepsState }) {
 											<a
 												href={btnState.link}
 												className="steps__btn btn btn_border btn_wide"
-												onClick={() => `ym(98108619,'reachGoal','registration_other');
-												_tmr.push({ id: '3536479', type: 'reachGoal', goal: 'registration_other' });`
-												}
+												onClick={() => handleTracking('registration_other')}
 											>
 												{btnState.text}
 											</a>
