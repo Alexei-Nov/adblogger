@@ -46,10 +46,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: border-radius ease 0.5s,
- opacity ease 0.5s;
-  transition: border-radius ease 0.5s,
- opacity ease 0.5s;
+  -webkit-transition: border-radius ease 0.5s, opacity ease 0.5s;
+  transition: border-radius ease 0.5s, opacity ease 0.5s;
   overflow: hidden;
 }
 
@@ -91,8 +89,8 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .case__bottom {

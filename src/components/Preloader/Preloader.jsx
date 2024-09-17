@@ -16,7 +16,7 @@ export default function Preloader() {
 			const imgArr = wrapper.current.querySelectorAll('img')
 
 			const entranceWrapper = document.querySelector('.entrance__wrapper');
-			
+
 
 			let animInterval = setInterval(() => {
 				if (imgArr[i - 1]) {

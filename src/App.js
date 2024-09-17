@@ -4,13 +4,9 @@ import Main from "./components/Main/Main";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useEffect } from "react";
 import Preloader from "./components/Preloader/Preloader";
-import { useDispatch, useSelector } from "react-redux";
-import { setCases, setState } from "./toolkitRedux/toolkitSlice";
-
+import { useSelector } from "react-redux";
 
 function App() {
-	const dispatch = useDispatch()
-
 	const footerState = useSelector(state => state.toolkit.footer)
 
 	useEffect(() => {
@@ -50,44 +46,14 @@ function App() {
 		window.addEventListener(wheelEvent, preventDefault, wheelOpt);
 		// window.addEventListener('touchmove', preventDefault, wheelOpt); 
 		window.addEventListener('keydown', preventDefaultForScrollKeys, false);
-
-
-
-		// fetch("/initialState.json")
-		// 	.then(res => res.json())
-		// 	.then(
-		// 		(result) => {
-		// 			dispatch(setState(result))
-		// 		},
-		// 		(error) => {
-		// 			console.log(error);
-		// 		}
-		// 	)
-		// 	.catch(err => console.error(err))
-
-		// fetch("/casesState.json")
-		// 	.then(res => res.json())
-		// 	.then(
-		// 		(result) => {
-		// 			dispatch(setCases(result.cases))
-		// 		},
-		// 		(error) => {
-		// 			console.log(error);
-		// 		}
-		// 	)
-		// 	.catch(err => console.error(err))
-
-
 	})
-
-
 
 
 	return (
 		<>
 			<div className="body-wrapper">
 				<Router>
-					<Preloader />
+					{/* <Preloader /> */}
 					<Header />
 					<Main />
 					<Footer footer={footerState} />
