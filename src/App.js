@@ -52,7 +52,7 @@ function App() {
 
 
 
-		fetch('http://api.blogger.ra-studio.ru/api/top-cases/')
+		fetch('https://api.blogger.ra-studio.ru/api/top-cases/')
 			.then((res) => res.json())
 			.then((data) => {
 				dispatch(setCases(data.data))
