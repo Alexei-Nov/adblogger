@@ -2,6 +2,7 @@ import React from 'react'
 import './article.css'
 
 export default function Article({ article }) {
+
 	return (
 		<>
 			{article &&
@@ -23,7 +24,7 @@ export default function Article({ article }) {
 
 							<div className="article__content content">
 								{article.blocks.map((block, i) => {
-									switch (block.blockType) {
+									switch (block.block_type) {
 										case 'text':
 											if (block.title && block.text) {
 												return (
@@ -47,15 +48,15 @@ export default function Article({ article }) {
 											}
 											break;
 										case 'citation':
-											if (block.autorName || block.autorPhotoPath) {
+											if (block.autor_name || block.autor_photo_path) {
 												return (
 													<div key={i} className='article__block article__citation'>
 														<div className='article__citation-text text-21' dangerouslySetInnerHTML={{ __html: block.text }}></div>
 														<div className="article__citation-author">
 															<div className="article__citation-photo">
-																<img src={block.autorPhotoPath} alt="author" />
+																<img src={block.autor_photo_path} alt="author" />
 															</div>
-															<div className="article__citation-name" dangerouslySetInnerHTML={{ __html: block.autorName }}></div>
+															<div className="article__citation-name" dangerouslySetInnerHTML={{ __html: block.autor_name }}></div>
 														</div>
 													</div>
 												)
@@ -68,8 +69,8 @@ export default function Article({ article }) {
 											}
 										case 'gallery':
 											return (
-												<div key={i} className={'article__block article__gallery' + (block.imgList.length > 1 ? ' article__gallery_grid' : '')}>
-													{block.imgList.map((img, j) => {
+												<div key={i} className={'article__block article__gallery' + (block.images.length > 1 ? ' article__gallery_grid' : '')}>
+													{block.images.map((img, j) => {
 														return (
 															<div key={j} className="article__gallery-img">
 																<img src={img} alt="img" />
