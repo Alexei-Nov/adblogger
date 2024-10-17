@@ -10,8 +10,10 @@ export default function CasesCatalog({ posts }) {
 	const [currentPage, setCurrentPage] = useState(1)
 
 	const cardsOnPage = 8;
-	let resultCardsArr = posts.filter((card) => card.tags.includes(caseTag)).slice(0, cardsOnPage * currentPage)
-	let remainderCardsArr = posts.filter((card) => card.tags.includes(caseTag)).slice(cardsOnPage * currentPage)
+	let currentTagCardsArr = posts.filter((card) => card.tags.some(tag => tag.title == caseTag))
+
+	let resultCardsArr = currentTagCardsArr.slice(0, cardsOnPage * currentPage)
+	let remainderCardsArr = currentTagCardsArr.slice(cardsOnPage * currentPage)
 
 	function setFilter(tag) {
 		setCaseTag(tag)

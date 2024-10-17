@@ -4,10 +4,13 @@ import Main from "./components/Main/Main";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useEffect } from "react";
 import Preloader from "./components/Preloader/Preloader";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { setCases } from './toolkitRedux/toolkitSlice'
+
 
 function App() {
 	const footerState = useSelector(state => state.toolkit.footer)
+	const dispatch = useDispatch()
 
 	useEffect(() => {
 		let scrollStep = 0;
@@ -46,6 +49,17 @@ function App() {
 		window.addEventListener(wheelEvent, preventDefault, wheelOpt);
 		// window.addEventListener('touchmove', preventDefault, wheelOpt); 
 		window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+
+
+
+		fetch('http://api.blogger.ra-studio.ru/api/top-cases/')
+			.then((res) => res.json())
+			.then((data) => {
+				dispatch(setCases(data.data))
+			})
+			.catch((err) => {
+				console.log(err.message);
+			});
 	})
 
 
