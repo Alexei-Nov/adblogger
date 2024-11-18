@@ -1,0 +1,92 @@
+.case-card-main {
+  padding-bottom: 0 !important;
+}
+
+.case-card-main__title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.case-card-main__wrapper {
+  position: relative;
+  padding: 48px;
+  border-radius: 28px;
+  overflow: hidden;
+  z-index: 1;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 36px;
+}
+
+.case-card-main__wrapper::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 32, 32, 0.32);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.case-card-main__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.case-card-main__img img,
+.case-card-main__img picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.case-card-main__text {
+  margin-top: auto;
+  max-width: 610px;
+}
+
+.case-card-main__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 85px;
+}
+
+.case-card-main__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top left;
+     object-position: top left;
+}
+
+@media screen and (max-width: 768px) {
+  .case-card-main__wrapper {
+    padding: 32px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .case-card-main__title {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,119 @@
+.steps__body {
+  padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: var(--black-2);
+  min-height: 360px;
+}
+
+.steps__num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 46px;
+  height: 46px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.steps__desc {
+  margin: auto;
+}
+
+.steps__slider {
+  overflow: visible;
+}
+
+.steps__slide {
+  width: 100%;
+  max-width: 424px;
+}
+
+.steps__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  margin-top: 12px;
+  position: relative;
+  z-index: -1;
+}
+
+.steps__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.steps__pagination {
+  display: none;
+}
+
+.steps__btn {
+  opacity: 0;
+  margin-bottom: -60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .steps__pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .steps__body {
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .steps__img {
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .steps__num {
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .steps__slide {
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    opacity: 0.2;
+  }
+  .steps__slide.swiper-slide-active {
+    opacity: 1;
+  }
+  .steps__slide.swiper-slide-active .steps__num {
+    border-color: var(--blue-1);
+    color: var(--blue-1);
+  }
+  .steps__slide.swiper-slide-active .steps__body {
+    border-radius: 28px;
+  }
+  .steps__slide.swiper-slide-active .steps__img {
+    border-radius: 28px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .steps__slide {
+    max-width: none;
+  }
+}

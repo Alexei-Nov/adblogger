@@ -1,0 +1,25 @@
+.faq__accordion {
+  max-width: 872px;
+  margin: 0 auto;
+}
+
+.faq__title {
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.faq .accordion__body a {
+  color: var(--blue-1);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 570px) {
+  .faq .accordion__btn {
+    font-size: 24px;
+    line-height: 110%;
+  }
+  .faq .accordion__body {
+    font-size: 17px;
+    line-height: 140%;
+  }
+}

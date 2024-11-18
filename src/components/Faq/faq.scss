@@ -1,0 +1,33 @@
+.faq {
+	&__accordion {
+		max-width: 872px;
+		margin: 0 auto;
+	}
+	&__title {
+		margin-bottom: 34px;
+		text-align: center;
+	}
+	& .accordion {
+		&__body {
+			& a {
+				color: var(--blue-1);
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.faq {
+		& .accordion {
+			&__btn {
+				font-size: 24px;
+				line-height: 110%;
+			}
+			&__body {
+				font-size: 17px;
+				line-height: 140%;
+			}
+		}
+	}
+}

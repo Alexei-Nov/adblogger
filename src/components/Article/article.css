@@ -1,0 +1,237 @@
+.article__wrapper {
+  max-width: 872px;
+  margin: 0 auto;
+}
+
+.article__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 36px;
+}
+
+.article__brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+.article__preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 370px;
+  height: 500px;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.article__preview img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.article__content {
+  margin: 72px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 72px;
+}
+
+.article__block-title {
+  margin-bottom: 36px;
+}
+
+.article__citation-text {
+  font-style: italic;
+  color: #7c8a9a;
+}
+
+.article__citation-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  margin-top: 36px;
+}
+
+.article__citation-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 12px;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.article__citation-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.article__gallery_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.article__gallery-img {
+  width: 100%;
+}
+
+.article__gallery-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.article__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: auto;
+}
+
+.article__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left center;
+     object-position: left center;
+}
+
+.article__tile {
+  padding: 40px;
+  background-color: var(--black-2);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.article__tile-item {
+  border-radius: 30px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  background-color: var(--black);
+}
+
+.article__tile-name {
+  color: var(--blue-2);
+}
+
+.article__tile-desc {
+  line-height: 110%;
+}
+
+@media screen and (max-width: 768px) {
+  .article__preview {
+    height: 370px;
+  }
+  .article__content {
+    margin: 56px 0;
+    gap: 56px;
+  }
+  .article__tile {
+    gap: 14px;
+    padding: 55px 30px;
+  }
+  .article__tile-desc {
+    font-size: 0.73em !important;
+    line-height: 110%;
+  }
+  .article__tile-item {
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .article__title {
+    font-size: 24px;
+    line-height: 110%;
+    font-weight: 600;
+  }
+  .article__gallery_grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .article__logo {
+    height: 36px;
+  }
+  .article__brand-name {
+    font-size: 17px;
+    line-height: 120%;
+  }
+  .article__tile {
+    gap: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .article__tile-item {
+    gap: 11px;
+    width: 100%;
+    max-width: 182px;
+    padding: 15px;
+    border-radius: 13px;
+  }
+  .article__tile-desc {
+    font-size: 0.45em !important;
+    line-height: 110%;
+  }
+}

@@ -1,0 +1,127 @@
+.partners__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 64px;
+  position: relative;
+  z-index: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.partners__wrapper::after {
+  display: block;
+  content: "";
+  width: 150px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(40%, #000));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000 40%);
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.partners__wrapper::before {
+  display: block;
+  content: "";
+  width: 150px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #000), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(90deg, #000 40%, rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.partners__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 48px;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-right: 48px;
+}
+
+.partners__row_animate {
+  -webkit-animation: marquee 20s infinite linear;
+          animation: marquee 20s infinite linear;
+}
+
+.partners__row_animate:nth-of-type(2) {
+  margin-left: -300px;
+}
+
+.partners__row_animate-reverse {
+  animation: marquee 20s infinite reverse linear;
+}
+
+.partners__row_cloned {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: calc(100%);
+}
+
+.partners__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+}
+
+.partners__img img {
+  height: 100%;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .partners__img {
+    height: 40px;
+  }
+  .partners__wrapper {
+    gap: 48px;
+  }
+  .partners__wrapper::before, .partners__wrapper::after {
+    display: none;
+  }
+  .partners__row {
+    gap: 38px;
+    padding-right: 38px;
+  }
+}
