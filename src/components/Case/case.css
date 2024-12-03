@@ -46,8 +46,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: border-radius ease 0.5s, opacity ease 0.5s;
-  transition: border-radius ease 0.5s, opacity ease 0.5s;
+  -webkit-transition: border-radius ease 0.5s, opacity ease 0.5s;
+  transition: border-radius ease 0.5s, opacity ease 0.5s;
   overflow: hidden;
 }
 

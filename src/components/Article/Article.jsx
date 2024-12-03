@@ -18,7 +18,7 @@ export default function Article({ article }) {
 									<div className="article__brand-name text-21">{article.brand_name}</div>
 								</div>
 								<div className="article__preview">
-									<img src={article.preview_img} alt={article.title} />
+									<img src={article.preview_img} alt={article.brand_name} />
 								</div>
 							</div>
 

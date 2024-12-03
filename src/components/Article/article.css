@@ -164,6 +164,7 @@
 
 .article__tile-desc {
   line-height: 110%;
+  margin-top: auto;
 }
 
 @media screen and (max-width: 768px) {
