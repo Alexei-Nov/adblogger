@@ -17,7 +17,7 @@ export default function DetailCase() {
 	return (
 		<>
 			<Article article={articleState} />
-			<Money moneyState={moneyState} />
+			<Money block_state={moneyState} />
 		</>
 	)
 }
