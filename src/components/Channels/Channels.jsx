@@ -8,7 +8,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Channels({ channelsState }) {
+export default function Channels({ block_state }) {
 	let swiper = useRef();
 	useEffect(() => {
 		if (window.innerWidth > 768) {
@@ -33,7 +33,7 @@ export default function Channels({ channelsState }) {
 		}
 	}, [])
 
-	const [chanellsTag, setChanellsTag] = useState(channelsState.tags[0])
+	const [chanellsTag, setChanellsTag] = useState(block_state.tags[0])
 
 	function filterChannels(tag) {
 		if (chanellsTag !== tag) {
@@ -43,25 +43,25 @@ export default function Channels({ channelsState }) {
 		}
 	}
 
-	let resultChannelsArr = channelsState.channels.filter((channel) => channel.tags.includes(chanellsTag))
+	let resultChannelsArr = block_state.channels.filter((channel) => channel.tags.includes(chanellsTag))
 
 	if (!chanellsTag) {
-		resultChannelsArr = channelsState.channels
+		resultChannelsArr = block_state.channels
 	}
 
 	return (
 		<>
 			<section className='section channels'>
 				<div className="container">
-					<div className={"channels__heading" + (channelsState.tags.length > 1 ? ' channels__heading_has-tags' : '')}>
+					<div className={"channels__heading" + (block_state.tags.length > 1 ? ' channels__heading_has-tags' : '')}>
 						{
-							channelsState.title &&
-							<div className="channels__title title h2">{channelsState.title}</div>
+							block_state.title &&
+							<div className="channels__title title h2">{block_state.title}</div>
 						}
 						{
-							channelsState.tags.length > 1 &&
+							block_state.tags.length > 1 &&
 							<div className="channels__tags">
-								{channelsState.tags.map((tag, i) => {
+								{block_state.tags.map((tag, i) => {
 									return (
 										<div
 											key={i}

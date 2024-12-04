@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Case({ caseState }) {
+export default function Case({ block_state }) {
 	let wrapper = useRef();
 	// const [cases, setCases] = useState([])
 	const cases = useSelector(state => state.toolkit.cases)
@@ -55,8 +55,8 @@ export default function Case({ caseState }) {
 				<div className="container">
 					<div className="case__wrapper">
 						<div className="case__body">
-							<div className="case__title title h2" dangerouslySetInnerHTML={{ __html: caseState.title }}></div>
-							<div className="case__desc text-32 fw-500" dangerouslySetInnerHTML={{ __html: caseState.desc }}></div>
+							<div className="case__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+							<div className="case__desc text-32 fw-500" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
 						</div>
 
 						<Swiper className='case__slider'

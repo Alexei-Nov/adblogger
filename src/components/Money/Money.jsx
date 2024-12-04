@@ -4,7 +4,7 @@ import { handleTracking } from 'utils/tracking'
 
 import './money.css'
 
-export default function Money({ moneyState }) {
+export default function Money({ block_state }) {
 	const btnState = useSelector(state => state.toolkit.registrationBtn)
 
 	let imgWrapper = useRef()
@@ -30,7 +30,7 @@ export default function Money({ moneyState }) {
 			<section className='section money'>
 				<div className="container">
 					<div className="money__wrapper" >
-						<div className="money__title title h2" dangerouslySetInnerHTML={{ __html: moneyState.title }}></div>
+						<div className="money__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
 						<a
 							href={btnState.link}
 							className="money__btn btn btn_border"

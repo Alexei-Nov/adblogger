@@ -4,7 +4,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Advantages({ advantagesState }) {
+export default function Advantages({ block_state }) {
 
 	let wrapper = useRef()
 	useEffect(() => {
@@ -48,16 +48,16 @@ export default function Advantages({ advantagesState }) {
 		<>
 			<section className='section advantages' ref={wrapper}>
 				<div className="container">
-					{(advantagesState.titleWhite || advantagesState.titleBlue) &&
+					{(block_state.titleWhite || block_state.titleBlue) &&
 						<div className="advantages__title title h2">
-							{advantagesState.titleWhite} <br />
-							{advantagesState.titleBlue &&
-								<span className='blue-text' dangerouslySetInnerHTML={{ __html: advantagesState.titleBlue }} ></span>
+							{block_state.titleWhite} <br />
+							{block_state.titleBlue &&
+								<span className='blue-text' dangerouslySetInnerHTML={{ __html: block_state.titleBlue }} ></span>
 							}
 						</div>
 					}
 					<div className="advantages__wrapper" >
-						{advantagesState.items.map((item, i) => {
+						{block_state.items.map((item, i) => {
 							return (
 								<div key={i} className="advantages__item" >
 									<div className="advantages__num ">

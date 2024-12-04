@@ -10,7 +10,7 @@ import { handleTracking } from 'utils/tracking'
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Tile({ tileState }) {
+export default function Tile({ block_state }) {
 
 	const btnState = useSelector(state => state.toolkit.registrationBtn)
 
@@ -65,7 +65,7 @@ export default function Tile({ tileState }) {
 							},
 						}}
 					>
-						{tileState.items.map((item, i) => {
+						{block_state.items.map((item, i) => {
 							return (
 								<SwiperSlide key={i} className={'tile__slide tile__slide_' + item.id}>
 									<div className="tile__img">

@@ -10,7 +10,7 @@ import Money from '../Money/Money';
 import Faq from '../Faq/Faq';
 import { useDispatch } from 'react-redux';
 import { setPreloaderInit } from '../../toolkitRedux/toolkitSlice';
-import TextVideo from 'components/TextVideo/TextVideo';
+import EntranceEvent from 'components/EntranceEvent/EntranceEvent';
 
 export default function AllBlocks({ pageState }) {
 	const dispatch = useDispatch();
@@ -26,26 +26,26 @@ export default function AllBlocks({ pageState }) {
 		<>
 			{pageState.blocks.map((block, i) => {
 				switch (block.block_slug) {
-					case 'text_video':
-						return <TextVideo key={i} textVideoState={block.block_state} />;
+					case 'entrance_event':
+						return <EntranceEvent key={i} block_state={block.block_state} />;
 					case 'entrance':
-						return <Entrance key={i} entranceState={block.block_state} />;
+						return <Entrance key={i} block_state={block.block_state} />;
 					case 'advantages':
-						return <Advantages key={i} advantagesState={block.block_state} />;
+						return <Advantages key={i} block_state={block.block_state} />;
 					case 'tile':
-						return <Tile key={i} tileState={block.block_state} />;
+						return <Tile key={i} block_state={block.block_state} />;
 					case 'channels':
-						return <Channels key={i} channelsState={block.block_state} />;
+						return <Channels key={i} block_state={block.block_state} />;
 					case 'partners':
-						return <Partners key={i} partnersState={block.block_state} />;
+						return <Partners key={i} block_state={block.block_state} />;
 					case 'steps':
-						return <Steps key={i} stepsState={block.block_state} />;
+						return <Steps key={i} block_state={block.block_state} />;
 					case 'case':
-						return <Case key={i} caseState={block.block_state} />;
+						return <Case key={i} block_state={block.block_state} />;
 					case 'money':
-						return <Money key={i} moneyState={block.block_state} />;
+						return <Money key={i} block_state={block.block_state} />;
 					case 'faq':
-						return <Faq key={i} faqState={block.block_state} />;
+						return <Faq key={i} block_state={block.block_state} />;
 					default:
 						return null;
 				}

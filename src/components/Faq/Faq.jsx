@@ -1,7 +1,7 @@
 import React from 'react'
 import './faq.css'
 
-export default function Faq({ faqState }) {
+export default function Faq({ block_state }) {
 
 	function toggleItem(e) {
 		let item = e.target.closest('.accordion__item')
@@ -24,7 +24,7 @@ export default function Faq({ faqState }) {
 				<div className="container">
 					<div className="faq__title h2">FAQ</div>
 					<div className="faq__accordion accordion " >
-						{faqState.faqList.map((item, i) => {
+						{block_state.faqList.map((item, i) => {
 							return (
 								<div className="accordion__item" key={i} onClick={toggleItem}>
 									<div className="accordion__btn text-32 fw-500">

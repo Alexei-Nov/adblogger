@@ -11,7 +11,7 @@ import { handleTracking } from 'utils/tracking';
 gsap.registerPlugin(ScrollTrigger);
 
 
-export default function Steps({ stepsState }) {
+export default function Steps({ block_state }) {
 	const btnState = useSelector(state => state.toolkit.registrationBtn)
 
 	let wrapper = useRef();
@@ -125,7 +125,7 @@ export default function Steps({ stepsState }) {
 							},
 						}}
 					>
-						{stepsState.stepsList.map((stepItem, i) => {
+						{block_state.stepsList.map((stepItem, i) => {
 							return (
 								<SwiperSlide key={i} className='steps__slide'>
 									<div className="steps__body">
