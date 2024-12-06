@@ -75,6 +75,18 @@
      object-position: right center;
 }
 
+.entrance-event_video .entrance-event__media {
+  top: -40px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  max-width: 648px;
+  -webkit-transform: none;
+          transform: none;
+}
+
 @media screen and (min-width: 1301px) {
   .entrance-event__media {
     height: calc(100% + 120px);
@@ -125,6 +137,10 @@
     height: auto;
     max-height: none;
     min-height: 0;
+  }
+  .entrance-event_video .entrance-event__media {
+    width: 100%;
+    margin: 0;
   }
 }
 
