@@ -77,26 +77,6 @@
   width: 100%;
 }
 
-.advantages__item:nth-child(1) {
-  -webkit-transform: translateY(-16px);
-          transform: translateY(-16px);
-}
-
-.advantages__item:nth-child(2) {
-  -webkit-transform: translateY(152px);
-          transform: translateY(152px);
-}
-
-.advantages__item:nth-child(3) {
-  -webkit-transform: translateY(44px);
-          transform: translateY(44px);
-}
-
-.advantages__item:nth-child(4) {
-  -webkit-transform: translateY(152px);
-          transform: translateY(152px);
-}
-
 .advantages_active .advantages__num-prev, .advantages_active .advantages__num-current {
   -webkit-transform: none;
           transform: none;

@@ -9,31 +9,31 @@ export default function Advantages({ block_state }) {
 	let wrapper = useRef()
 	useEffect(() => {
 		if (window.innerWidth > 1200 && wrapper.current) {
-			let tlCards = gsap.timeline({
-				scrollTrigger: {
-					trigger: wrapper.current,
-					start: "top 70%",
-					end: "+=" + window.innerHeight,
-					scrub: true,
-					markers: false,
-					pin: false,
-				}
-			});
+			// let tlCards = gsap.timeline({
+			// 	scrollTrigger: {
+			// 		trigger: wrapper.current,
+			// 		start: "top 70%",
+			// 		end: "+=" + window.innerHeight,
+			// 		scrub: true,
+			// 		markers: false,
+			// 		pin: false,
+			// 	}
+			// });
 			let tlCounter = gsap.timeline({
 				scrollTrigger: {
 					trigger: wrapper.current,
 					start: "top 70%",
 					end: "+=" + window.innerHeight / 3,
-					scrub: true,
+					scrub: false,
 					markers: false,
 					pin: false,
 				}
 			});
 
-			tlCards.to(gsap.utils.selector(wrapper)('.advantages__item'), {
-				y: 0,
-				ease: "elastic.out(0.8,0.4)",
-			});
+			// tlCards.to(gsap.utils.selector(wrapper)('.advantages__item'), {
+			// 	y: 0,
+			// 	ease: "elastic.out(0.8,0.4)",
+			// });
 
 			tlCounter.to(gsap.utils.selector(wrapper)('.advantages__num-prev'), {
 				y: 0,

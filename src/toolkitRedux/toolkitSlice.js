@@ -43,25 +43,25 @@ const defaultState = {
 						"titleBlue": "от&nbsp;1&nbsp;000 подписчиков",
 						"items": [
 							{
-								"numPrev": "9",
-								"numCurrent": "10",
+								"numPrev": "34",
+								"numCurrent": "35",
 								"numAfter": "",
 								"numLabel": "тыс.",
 								"desc": "блогеров и&nbsp;сообществ уже с&nbsp;нами"
 							},
 							{
-								"numPrev": "99",
-								"numCurrent": "100",
+								"numPrev": "999",
+								"numCurrent": "1000",
 								"numAfter": "+",
 								"numLabel": "",
 								"desc": "рекламодателей на&nbsp;платформе"
 							},
 							{
-								"numPrev": "499",
-								"numCurrent": "500",
+								"numPrev": "9999",
+								"numCurrent": "10000",
 								"numAfter": "+",
 								"numLabel": "",
-								"desc": "активных заявок от&nbsp;рекламодателей"
+								"desc": "заявок от&nbsp;рекламодателей в&nbsp;неделю"
 							},
 							{
 								"numPrev": "5,4",
@@ -364,25 +364,25 @@ const defaultState = {
 						"titleBlue": "",
 						"items": [
 							{
-								"numPrev": "9",
-								"numCurrent": "10",
+								"numPrev": "39",
+								"numCurrent": "40",
 								"numAfter": "",
 								"numLabel": "тыс.",
 								"desc": "блогеров </br> и сообществ"
 							},
 							{
-								"numPrev": "99",
-								"numCurrent": "100",
+								"numPrev": "5999",
+								"numCurrent": "6000",
 								"numAfter": "+",
 								"numLabel": "",
 								"desc": "рекламодателей </br> на платформе"
 							},
 							{
-								"numPrev": "1699",
-								"numCurrent": "1700",
-								"numAfter": "+",
-								"numLabel": "",
-								"desc": "опубликованных рекламных интеграций"
+								"numPrev": "99",
+								"numCurrent": "100",
+								"numAfter": "",
+								"numLabel": "тыс.",
+								"desc": "рекламных интеграций"
 							}
 						]
 					}
