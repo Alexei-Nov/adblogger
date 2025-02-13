@@ -1012,7 +1012,7 @@ const defaultState = {
 				{
 					"block_type": "text",
 					"title": "",
-					"text": "<p> Для бренда профессиональных средств для волос EveLux Professional маркетплейсы <a href='https://www.ozon.ru/category/uhod-za-volosami-6584/evelux-professional-100987438/?brand_was_predicted=true&category_was_predicted=true&deny_category_prediction=true&from_global=true&text=evelux+professional&abt_att=1' target='_blank'>Ozon</a> и <a href='https://www.wildberries.ru/seller/799611' target='_blank'>Wildberries</a> — основные площадки продаж. <a href='https://vk.com/cerebro_vk' target='_blank'>Команда «Церебро Таргет»</a> протестировала VK AdBlogger, чтобы увеличить продажи бренда на этих площадках и снизить стоимость привлечения клиентов. В итоге — рост числа заказчиков и ниже стоимость целевых действий. </p>"
+					"text": "<p> Для бренда профессиональных средств для&nbsp;волос EveLux Professional маркетплейсы <a href='https://www.ozon.ru/category/uhod-za-volosami-6584/evelux-professional-100987438/?brand_was_predicted=true&category_was_predicted=true&deny_category_prediction=true&from_global=true&text=evelux+professional&abt_att=1' target='_blank'>Ozon</a> и <a href='https://www.wildberries.ru/seller/799611' target='_blank'>Wildberries</a> — основные площадки продаж. <a href='https://vk.com/cerebro_vk' target='_blank'>Команда «Церебро Таргет»</a> протестировала VK AdBlogger, чтобы увеличить продажи бренда на этих площадках и&nbsp;снизить стоимость привлечения клиентов. В итоге — рост числа заказчиков и&nbsp;ниже стоимость целевых действий. </p>"
 				},
 				{
 					"block_type": "tile",
@@ -1037,7 +1037,7 @@ const defaultState = {
 				{
 					"block_type": "text",
 					"title": "",
-					"text": "<h2>О рекламодателе</h2> <p> EveLux Professional — бренд профессиональных средств для волос, основан в 2022 году. Товары производят на фабриках в Республике Беларусь и в России, а продают на маркетплейсах <a href='https://www.ozon.ru/category/uhod-za-volosami-6584/evelux-professional-100987438/?brand_was_predicted=true&category_was_predicted=true&deny_category_prediction=true&from_global=true&text=evelux+professional' target='_blank'>Ozon</a> и <a href='https://www.wildberries.ru/seller/799611' target='_blank'>Wildberries</a> . </p>"
+					"text": "<h2>О рекламодателе</h2> <p> EveLux Professional — бренд профессиональных средств для&nbsp;волос, основан в&nbsp;2022&nbsp;году. Товары производят на&nbsp;фабриках в&nbsp;Республике Беларусь и&nbsp;в&nbsp;России, а&nbsp;продают на&nbsp;маркетплейсах <a href='https://www.ozon.ru/category/uhod-za-volosami-6584/evelux-professional-100987438/?brand_was_predicted=true&category_was_predicted=true&deny_category_prediction=true&from_global=true&text=evelux+professional' target='_blank'>Ozon</a> и&nbsp;<a href='https://www.wildberries.ru/seller/799611' target='_blank'>Wildberries</a> . </p>"
 				},
 				{
 					"block_type": "text",
@@ -1075,7 +1075,7 @@ const defaultState = {
 				{
 					"block_type": "text",
 					"title": "",
-					"text": "<p> В VK AdBlogger при меньших затратах бюджета удалось получить бо́льший охват: средний CPM — 45,5 рубля, что на 26% ниже, чем на Маркет-платформе, а стоимость клика в 2 раза меньше — всего 7,2 рубля. </p> <p> Бренд получил больше переходов при меньших охватах и затратах на рекламу, а также больше продаж и добавлений в корзину по более низкой цене. </p> <p><b>В VK AdBlogger при меньших затратах удалось снизить цену за клик, за продажу и добавление в корзину.</b></p> <p> Среднее число продаж в день — 35, что даже выше поставленной цели. К тому же оно будет увеличиваться, так как не все товары заказываются в день добавления в корзину </p>"
+					"text": "<p> В VK AdBlogger при меньших затратах бюджета удалось получить бо́льший охват: средний CPM — 45,5 рубля, что на 26% ниже, чем на Маркет-платформе, а стоимость клика в 2 раза меньше — всего 7,2 рубля. </p> <p> Бренд получил больше переходов при меньших охватах и затратах на рекламу, а также больше продаж и добавлений в корзину по более низкой цене. </p> <p><b>В VK&nbsp;AdBlogger при&nbsp;меньших затратах удалось снизить цену за&nbsp;клик, за&nbsp;продажу и&nbsp;добавление в&nbsp;корзину.</b></p> <p> Среднее число продаж в день — 35, что даже выше поставленной цели. К тому же оно будет увеличиваться, так как не все товары заказываются в день добавления в корзину </p>"
 				},
 				{
 					"block_type": "text",
