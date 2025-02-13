@@ -85,7 +85,7 @@ export default function Article({ article }) {
 													{block.tile_items.map((item, j) => {
 														return (
 															<div key={j} className="article__tile-item" style={{ fontSize: item.desc_font_size }}>
-																<div className="article__tile-name text-28 fw-600">{item.name}</div>
+																<div className="article__tile-name text-28 fw-600" dangerouslySetInnerHTML={{ __html: item.name }}></div>
 																<div className="article__tile-desc fw-700" >{item.desc}</div>
 															</div>
 														)
