@@ -13,9 +13,12 @@ export default function EntranceEvent({ block_state }) {
 
 						<div className="entrance-event__media">
 							<video src={block_state.media} autoPlay muted playsInline loop></video>
-							{/* <source media="(max-width: 1024px)" srcSet={block_state.media_mob} />
-							<img src={block_state.media} alt="img" /> */}
 						</div>
+
+						{/* <picture className="entrance-event__media">
+							<source media="(max-width: 1024px)" srcSet={block_state.media_mob} />
+							<img src={block_state.media} alt="img" />
+						</picture> */}
 
 						<div className="entrance-event__bottom">
 							<a href={block_state.btn_link}
