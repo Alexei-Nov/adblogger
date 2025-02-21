@@ -43,15 +43,15 @@ const defaultState = {
 						"titleBlue": "от&nbsp;1&nbsp;000 подписчиков",
 						"items": [
 							{
-								"numPrev": "34",
-								"numCurrent": "35",
+								"numPrev": "49",
+								"numCurrent": "50",
 								"numAfter": "",
 								"numLabel": "тыс.",
 								"desc": "блогеров и&nbsp;сообществ уже с&nbsp;нами"
 							},
 							{
-								"numPrev": "999",
-								"numCurrent": "1000",
+								"numPrev": "7999",
+								"numCurrent": "8000",
 								"numAfter": "+",
 								"numLabel": "",
 								"desc": "рекламодателей на&nbsp;платформе"
@@ -64,11 +64,11 @@ const defaultState = {
 								"desc": "заявок от&nbsp;рекламодателей в&nbsp;неделю"
 							},
 							{
-								"numPrev": "5,4",
-								"numCurrent": "5,5",
+								"numPrev": "7,0",
+								"numCurrent": "7,1",
 								"numAfter": "",
 								"numLabel": "млрд ₽",
-								"desc": "<a href='https://vk.com/press/content-2023' target='_blank'>заработали</a> авторы ВКонтакте в 2024 году"
+								"desc": "<a href='https://vk.com/press/content-2024' target='_blank'>заработали</a> авторы ВКонтакте в 2024 году"
 							}
 						]
 					}
@@ -338,25 +338,25 @@ const defaultState = {
 					"block_slug": "preloader",
 					"block_state": {}
 				},
-				{
-					"block_slug": "entrance",
-					"block_state": {
-						"title": "запускайте рекламу у&nbsp;блогеров",
-						"videoPath": "/video/video-2.mp4"
-					}
-				},
 				// {
-				// 	"block_slug": "entrance_event",
+				// 	"block_slug": "entrance",
 				// 	"block_state": {
-				// 		"title": "удвоим бюджет — до 11 000 ₽ на&nbsp;рекламу",
-				// 		"desc": "Пополните баланс в&nbsp;кабинете рекламодателя, а&nbsp;мы удвоим бюджет на&nbsp;рекламу бонусами ",
-				// 		"btn_text": "Запустить рекламу",
-				// 		"btn_link": "/app",
-				// 		"label": "Сроки акции «Удвоим бонусами»: с 11.11.2024 по 22.12.2024. Подробнее об&nbsp;условиях акции по&nbsp;<a href='https://vk.cc/cDVS87' target='_blank'>ссылке</a>. *VK AdBlogger – ВК ЭдБлоггер. 12+",
-				// 		"media": "/img/entrance-event/img.png",
-				// 		"media_mob": "/img/entrance-event/img_mob.png"
+				// 		"title": "запускайте рекламу у&nbsp;блогеров",
+				// 		"videoPath": "/video/video-2.mp4"
 				// 	}
 				// },
+				{
+					"block_slug": "entrance_event",
+					"block_state": {
+						"title": "удвоим бюджет — до 11 000 ₽ на&nbsp;рекламу",
+						"desc": "Пополните баланс в&nbsp;кабинете рекламодателя, а&nbsp;мы удвоим бюджет на&nbsp;рекламу бонусами ",
+						"btn_text": "Запустить рекламу",
+						"btn_link": "/app",
+						"label": "Сроки акции «Удвоим бонусами»: с 11.11.2024 по 22.12.2024. Подробнее об&nbsp;условиях акции по&nbsp;<a href='https://vk.cc/cDVS87' target='_blank'>ссылке</a>. *VK AdBlogger – ВК ЭдБлоггер. 12+",
+						"media": "/img/entrance-event/img.png",
+						"media_mob": "/img/entrance-event/img_mob.png"
+					}
+				},
 				{
 					"block_slug": "advantages",
 					"block_state": {
@@ -364,22 +364,22 @@ const defaultState = {
 						"titleBlue": "",
 						"items": [
 							{
-								"numPrev": "39",
-								"numCurrent": "40",
+								"numPrev": "49",
+								"numCurrent": "50",
 								"numAfter": "",
 								"numLabel": "тыс.",
 								"desc": "блогеров </br> и сообществ"
 							},
 							{
-								"numPrev": "5999",
-								"numCurrent": "6000",
+								"numPrev": "7999",
+								"numCurrent": "8000",
 								"numAfter": "+",
 								"numLabel": "",
 								"desc": "рекламодателей </br> на платформе"
 							},
 							{
-								"numPrev": "99",
-								"numCurrent": "100",
+								"numPrev": "199",
+								"numCurrent": "200",
 								"numAfter": "",
 								"numLabel": "тыс.",
 								"desc": "рекламных интеграций"
