@@ -65,7 +65,7 @@ const defaultState = {
 							},
 							{
 								"numPrev": "7,0",
-								"numCurrent": "7,1",
+								"numCurrent": "7,1  ",
 								"numAfter": "",
 								"numLabel": "млрд ₽",
 								"desc": "<a href='https://vk.com/press/content-2024' target='_blank'>заработали</a> авторы ВКонтакте в 2024 году"
