@@ -352,7 +352,7 @@ const defaultState = {
 						"desc": "Пополните баланс в&nbsp;кабинете VK&nbsp;AdBlogger, а&nbsp;мы&nbsp;добавим бонусы на&nbsp;посевы и&nbsp;нативную рекламу в&nbsp;сообществах",
 						"btn_text": "Запустить рекламу",
 						"btn_link": "/app",
-						"label": "Сроки акции «Удвоим бонусами»: с 11.11.2024 по 22.12.2024. Подробнее об&nbsp;условиях акции по&nbsp;<a href='https://vk.cc/cILJWw' target='_blank'>ссылке</a>. *VK AdBlogger – ВК ЭдБлоггер. 12+",
+						"label": "Сроки акции «Удвоим бонусами»: с 24.02.2025 по 30.04.2025. Подробнее об&nbsp;условиях акции по&nbsp;<a href='https://vk.cc/cILJWw' target='_blank'>ссылке</a>. *VK AdBlogger – ВК ЭдБлоггер. 12+",
 						"media": "/video/video-3.mp4",
 						"media_mob": "/img/entrance-event/img_mob.png"
 					}
