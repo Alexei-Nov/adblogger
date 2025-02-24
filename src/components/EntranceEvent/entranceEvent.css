@@ -103,7 +103,6 @@
   .entrance-event__media {
     position: static;
     width: calc(100% + 80px);
-    margin: -27vw 0 -15vw;
     bottom: 0;
     top: unset;
     -webkit-transform: none;
@@ -163,9 +162,6 @@
   .entrance-event__btn {
     font-size: 20px;
     line-height: 120%;
-  }
-  .entrance-event__media {
-    margin: -30vw 0 -20vw;
   }
 }
 
