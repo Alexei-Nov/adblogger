@@ -1060,7 +1060,7 @@ const defaultState = {
 				{
 					"block_type": "gallery",
 					"images": [
-						"/img/case/article-6-3.png"
+						"/img/case/article-7-3.png"
 					]
 				},
 				{
