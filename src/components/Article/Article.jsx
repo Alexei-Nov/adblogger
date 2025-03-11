@@ -15,7 +15,7 @@ export default function Article({ article }) {
 									<div className="article__logo">
 										<img src={article.logo} alt="img" />
 									</div>
-									<div className="article__brand-name text-21">{article.brand_name}</div>
+									<div className="article__brand-name text-21" dangerouslySetInnerHTML={{ __html: article.brand_name }}></div>
 								</div>
 								<div className="article__preview">
 									<img src={article.preview_img} alt={article.brand_name} />
