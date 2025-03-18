@@ -70,6 +70,10 @@
   animation: marquee 20s infinite reverse linear;
 }
 
+.partners__row_animate-reverse:nth-of-type(1) {
+  margin-left: -450px;
+}
+
 .partners__row_cloned {
   position: absolute;
   height: 100%;

@@ -44,13 +44,15 @@
 
 		&_animate {
 			animation: marquee 20s infinite linear;
-
 			&:nth-of-type(2) {
 				margin-left: -300px;
 			}
 		}
 		&_animate-reverse {
 			animation: marquee 20s infinite reverse linear;
+			&:nth-of-type(1) {
+				margin-left: -450px;
+			}
 		}
 		&_cloned {
 			position: absolute;

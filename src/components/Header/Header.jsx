@@ -30,15 +30,16 @@ export default function Header() {
 							<ul className='nav__list'>
 								<li className='nav__item'>
 									<NavLink
-										to='for-authors'
+										to='/for-authors'
 										className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
 										onClick={removeMenuClass}
 										end
 									>Авторам</NavLink>
 								</li>
+
 								<li className='nav__item'>
 									<NavLink
-										to='for-advertisers'
+										to='/for-advertisers'
 										className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
 										onClick={removeMenuClass}
 										end
@@ -46,11 +47,19 @@ export default function Header() {
 								</li>
 								<li className='nav__item'>
 									<NavLink
-										to='top-cases'
+										to='/top-cases'
 										className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
 										onClick={removeMenuClass}
 										end
 									>Топ-кейсы</NavLink>
+								</li>
+								<li className='nav__item'>
+									<NavLink
+										to='/for-sellers'
+										className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
+										onClick={removeMenuClass}
+										end
+									>Селлерам</NavLink>
 								</li>
 							</ul>
 						</nav>

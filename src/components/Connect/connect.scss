@@ -1,0 +1,59 @@
+.connect {
+	&__desc {
+		margin-top: 34px;
+	}
+	&__slider {
+		overflow: visible;
+	}
+	&__icon {
+		display: flex;
+		width: 64px;
+		height: 64px;
+		margin-bottom: auto;
+
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: center;
+		}
+	}
+	&__slide {
+		width: 100%;
+		max-width: 424px;
+		padding: 32px;
+		display: flex;
+		flex-direction: column;
+		background-color: var(--black-2);
+		min-height: 480px;
+	}
+
+	&__pagination {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.connect {
+		&__pagination {
+			display: flex;
+		}
+		&__slide {
+			transition: all ease 0.5s;
+			opacity: 0.2;
+
+			&.swiper-slide-active {
+				opacity: 1;
+				border-radius: 28px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.connect {
+		&__slide {
+			max-width: none;
+		}
+	}
+}
