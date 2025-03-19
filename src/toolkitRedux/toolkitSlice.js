@@ -994,6 +994,16 @@ const defaultState = {
 					"block_state": {}
 				},
 				{
+					"block_slug": "popup_seller",
+					"block_state": {
+						"title": "Удвоим бюджет — до 10 000 ₽ на рекламу",
+						"desc": "Пополните впервые баланс в кабинете VK AdBlogger, а мы добавим бонусы на посевы",
+						"btn_text": "Подробнее",
+						"btn_link": "/for-advertisers",
+						"img": "/for-advertisers",
+					}
+				},
+				{
 					"block_slug": "entrance_seller",
 					"block_state": {
 						"title": "<span class='blue-text'>увеличивайте продажи</span> на&nbsp;маркетплейсах",
