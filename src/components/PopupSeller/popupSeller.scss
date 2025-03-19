@@ -48,3 +48,11 @@
 		transform: none;
 	}
 }
+
+@media screen and (max-width: 570px) {
+	.popup-seller {
+		width: calc(100% - 44px);
+		right: 24px;
+		bottom: 24px;
+	}
+}
