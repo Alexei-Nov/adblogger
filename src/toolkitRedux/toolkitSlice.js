@@ -1019,6 +1019,38 @@ const defaultState = {
 					}
 				},
 				{
+					"block_slug": "vertical_slider",
+					"block_state": {
+						"title": "рекламируйте товары у&nbsp;авторов ВКонтакте",
+						"slides_list": [
+							{
+								"title": "Продвигайте товары нативно",
+								"desc": "Реклама от автора вызовет больше доверия, ~70% пользователей соцсетей хотя бы раз покупали товары по рекомендации блогеров",
+								"img": "./img/vertical-slider-1/img-1.png",
+								"img_mob": "./img/vertical-slider-1/img-1_mob.png",
+								"btn_text": "",
+								"btn_link": "",
+							},
+							{
+								"title": "Получайте целевые действияпо низкой цене",
+								"desc": "Стоимость рекламы у блогеров и в сообществах ВКонтакте значительно ниже, чем перегретые ставки на маркетплейсах",
+								"img": "./img/vertical-slider-1/img-2.png",
+								"img_mob": "./img/vertical-slider-1/img-2_mob.png",
+								"btn_text": "",
+								"btn_link": "",
+							},
+							{
+								"title": "Попадайте точно в целевую аудиторию",
+								"desc": "В базе VK AdBlogger много нишевых и региональных сообществ — продвигайте товары на подходящую вам аудиторию",
+								"img": "./img/vertical-slider-1/img-3.png",
+								"img_mob": "./img/vertical-slider-1/img-3_mob.png",
+								"btn_text": "",
+								"btn_link": "",
+							}
+						]
+					}
+				},
+				{
 					"block_slug": "tile_sellers",
 					"block_state": {
 						"title": "самые эффективные форматы рекламы для&nbsp;селлеров",
