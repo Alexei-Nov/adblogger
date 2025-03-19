@@ -1051,6 +1051,41 @@ const defaultState = {
 					}
 				},
 				{
+					"block_slug": "number_seller",
+					"block_state": {
+						"title": "максимальный эффект с&nbsp;минимальными усилиями",
+						"number": "50000",
+						"number_after": "+",
+						"label": "авторов <br> рекламы",
+						"img_list": [
+							{
+								"img": "./img/number-seller/img-1.png"
+							},
+							{
+								"img": "./img/number-seller/img-2.png"
+							},
+							{
+								"img": "./img/number-seller/img-3.png"
+							},
+							{
+								"img": "./img/number-seller/img-4.png"
+							},
+							{
+								"img": "./img/number-seller/img-5.png"
+							},
+							{
+								"img": "./img/number-seller/img-6.png"
+							},
+							{
+								"img": "./img/number-seller/img-7.png"
+							},
+							{
+								"img": "./img/number-seller/img-8.png"
+							}
+						]
+					}
+				},
+				{
 					"block_slug": "tile_sellers",
 					"block_state": {
 						"title": "самые эффективные форматы рекламы для&nbsp;селлеров",
