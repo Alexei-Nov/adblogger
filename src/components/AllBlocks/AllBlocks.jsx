@@ -15,6 +15,9 @@ import BannerSellers from 'components/BannersSellers/BannerSellers';
 import Connect from 'components/Connect/Connect';
 import SalesImprovement from 'components/SalesImprovement/SalesImprovement';
 import TileSellers from 'components/TileSellers/TileSellers';
+import VerticalSlider from 'components/VerticalSlider/VerticalSlider';
+import EntranceSellers from 'components/EntranceSellers/EntranceSellers';
+import NumberSeller from 'components/NumberSeller/NumberSeller';
 
 export default function AllBlocks({ pageState }) {
 	const dispatch = useDispatch();
@@ -58,6 +61,12 @@ export default function AllBlocks({ pageState }) {
 						return <SalesImprovement key={i} block_state={block.block_state} />;
 					case 'tile_sellers':
 						return <TileSellers key={i} block_state={block.block_state} />;
+					case 'vertical_slider':
+						return <VerticalSlider key={i} block_state={block.block_state} />;
+					case 'entrance_seller':
+						return <EntranceSellers key={i} block_state={block.block_state} />;
+					case 'number_seller':
+						return <NumberSeller key={i} block_state={block.block_state} />;
 					default:
 						return null;
 				}

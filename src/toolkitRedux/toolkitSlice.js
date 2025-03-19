@@ -994,6 +994,31 @@ const defaultState = {
 					"block_state": {}
 				},
 				{
+					"block_slug": "entrance_seller",
+					"block_state": {
+						"title": "<span class='blue-text'>увеличивайте продажи</span> на&nbsp;маркетплейсах",
+						"btn_text": "Зарегистрироваться",
+						"btn_link": "/app",
+						"img_list": [
+							{
+								"img": "./img/entrance-seller/img-1.png"
+							},
+							{
+								"img": "./img/entrance-seller/img-4.png"
+							},
+							{
+								"img": "./img/entrance-seller/img-2.png"
+							},
+							{
+								"img": "./img/entrance-seller/img-5.png"
+							},
+							{
+								"img": "./img/entrance-seller/img-3.png",
+							}
+						]
+					}
+				},
+				{
 					"block_slug": "tile_sellers",
 					"block_state": {
 						"title": "самые эффективные форматы рекламы для&nbsp;селлеров",

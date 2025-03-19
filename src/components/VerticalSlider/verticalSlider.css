@@ -1,1 +1,120 @@
-/* No CSS */
+.vertical-slider__title {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vertical-slider__slider {
+  position: relative;
+  overflow: visible;
+}
+
+.vertical-slider__pagination {
+  display: none;
+}
+
+.vertical-slider__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.vertical-slider__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top left;
+     object-position: top left;
+}
+
+.vertical-slider__body-btn {
+  margin-top: 32px;
+}
+
+.vertical-slider__body {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 32px;
+}
+
+.vertical-slider__body-bottom {
+  margin-top: auto;
+}
+
+@media screen and (min-width: 700px) {
+  .vertical-slider__slide {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 648fr 424fr;
+        grid-template-columns: 648fr 424fr;
+    gap: 24px;
+  }
+  .vertical-slider__slide:not(:first-child) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .vertical-slider__slide {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vertical-slider__body-title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .vertical-slider__body {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .vertical-slider__body-title {
+    margin-bottom: 95px;
+  }
+  .vertical-slider__slide {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .vertical-slider__pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 40px;
+  }
+  .vertical-slider__body-btn {
+    width: 100%;
+    margin-top: 24px;
+  }
+  .vertical-slider__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 0.97;
+  }
+}
