@@ -17,6 +17,8 @@
   z-index: 10;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
+  -webkit-transform: translateY(calc(100% + 60px));
+          transform: translateY(calc(100% + 60px));
 }
 
 .popup-seller__title {
@@ -57,7 +59,7 @@
   right: 12px;
 }
 
-.popup-seller_hide {
-  -webkit-transform: translateY(calc(100% + 60px));
-          transform: translateY(calc(100% + 60px));
+.popup-seller_show {
+  -webkit-transform: none;
+          transform: none;
 }

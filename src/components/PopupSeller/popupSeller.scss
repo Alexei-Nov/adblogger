@@ -12,6 +12,7 @@
 	max-width: 440px;
 	z-index: 10;
 	transition: all ease 0.5s;
+	transform: translateY(calc(100% + 60px));
 
 	&__title {
 		letter-spacing: 0.15px;
@@ -43,7 +44,7 @@
 		right: 12px;
 	}
 
-	&_hide {
-		transform: translateY(calc(100% + 60px));
+	&_show {
+		transform: none;
 	}
 }

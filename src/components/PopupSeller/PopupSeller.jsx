@@ -6,9 +6,17 @@ import { NavLink } from 'react-router-dom'
 export default function PopupSeller({ block_state }) {
 	let popup = useRef();
 
-	function hidePopup() {
-		popup.current.classList.add('popup-seller_hide')
+	function initPopup() {
+		popup.current.classList.add('popup-seller_show')
 	}
+
+	function hidePopup() {
+		popup.current.classList.remove('popup-seller_show')
+	}
+
+	setTimeout(() => {
+		initPopup()
+	}, 500);
 
 	return (
 		<>
@@ -19,6 +27,7 @@ export default function PopupSeller({ block_state }) {
 					<NavLink
 						to={block_state.btn_link}
 						className='popup-seller__btn btn btn_border btn_small'
+						onClick={hidePopup}
 						end
 					>{block_state.btn_text}</NavLink>
 				</div>
