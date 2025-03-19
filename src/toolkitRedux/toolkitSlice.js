@@ -996,11 +996,11 @@ const defaultState = {
 				{
 					"block_slug": "popup_seller",
 					"block_state": {
-						"title": "Удвоим бюджет — до 10 000 ₽ на рекламу",
-						"desc": "Пополните впервые баланс в кабинете VK AdBlogger, а мы добавим бонусы на посевы",
+						"title": "Удвоим бюджет — до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;рекламу",
+						"desc": "Пополните впервые баланс в&nbsp;кабинете VK&nbsp;AdBlogger, а&nbsp;мы&nbsp;добавим бонусы на&nbsp;посевы",
 						"btn_text": "Подробнее",
 						"btn_link": "/for-advertisers",
-						"img": "/for-advertisers",
+						"img": "./img/popup-seller/img-1.png",
 					}
 				},
 				{

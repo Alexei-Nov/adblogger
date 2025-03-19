@@ -18,6 +18,7 @@ import TileSellers from 'components/TileSellers/TileSellers';
 import VerticalSlider from 'components/VerticalSlider/VerticalSlider';
 import EntranceSellers from 'components/EntranceSellers/EntranceSellers';
 import NumberSeller from 'components/NumberSeller/NumberSeller';
+import PopupSeller from 'components/PopupSeller/PopupSeller';
 
 export default function AllBlocks({ pageState }) {
 	const dispatch = useDispatch();
@@ -67,6 +68,8 @@ export default function AllBlocks({ pageState }) {
 						return <EntranceSellers key={i} block_state={block.block_state} />;
 					case 'number_seller':
 						return <NumberSeller key={i} block_state={block.block_state} />;
+					case 'popup_seller':
+						return <PopupSeller key={i} block_state={block.block_state} />;
 					default:
 						return null;
 				}
