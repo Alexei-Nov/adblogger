@@ -1086,6 +1086,38 @@ const defaultState = {
 					}
 				},
 				{
+					"block_slug": "vertical_slider",
+					"block_state": {
+						"title": "рекламируйте товары у&nbsp;авторов ВКонтакте",
+						"slides_list": [
+							{
+								"title": "Мгновенный запуск",
+								"desc": "Запускайте рекламу за пару кликов одновременно в нескольких сотнях сообществ",
+								"img": "./img/vertical-slider-2/img-1.png",
+								"img_mob": "./img/vertical-slider-2/img-1_mob.png",
+								"btn_text": "",
+								"btn_link": "",
+							},
+							{
+								"title": "Простой выбор сообществ",
+								"desc": "Используйте единый каталог по сообществам и блогерам с удобной фильтрацией ",
+								"img": "./img/vertical-slider-2/img-2.png",
+								"img_mob": "./img/vertical-slider-2/img-2_mob.png",
+								"btn_text": "",
+								"btn_link": "",
+							},
+							{
+								"title": "Защита от штрафов",
+								"desc": "VK AdBlogger маркирует рекламу, получает токены и отправляет отчёты в ОРД",
+								"img": "./img/vertical-slider-2/img-3.png",
+								"img_mob": "./img/vertical-slider-2/img-3_mob.png",
+								"btn_text": "Зарегистрироваться",
+								"btn_link": "/app",
+							}
+						]
+					}
+				},
+				{
 					"block_slug": "tile_sellers",
 					"block_state": {
 						"title": "самые эффективные форматы рекламы для&nbsp;селлеров",
