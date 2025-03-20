@@ -30,7 +30,7 @@ export default function Money({ block_state }) {
 			<section className='section money'>
 				<div className="container">
 					<div className="money__wrapper" >
-						<div className="money__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+						<h2 className="money__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></h2>
 						<a
 							href={btnState.link}
 							className="money__btn btn btn_border"

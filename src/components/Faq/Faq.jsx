@@ -22,7 +22,7 @@ export default function Faq({ block_state }) {
 		<>
 			<section className='section faq'>
 				<div className="container">
-					<div className="faq__title h2">FAQ</div>
+					<h2 className="faq__title h2">FAQ</h2>
 					<div className="faq__accordion accordion " >
 						{block_state.faqList.map((item, i) => {
 							return (

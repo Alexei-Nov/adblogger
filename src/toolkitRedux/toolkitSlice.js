@@ -32,14 +32,14 @@ const defaultState = {
 				{
 					"block_slug": "entrance",
 					"block_state": {
-						"title": "зарабатывайте на&nbsp;своём контенте",
+						"title": "<span class='tt-lc'>Зарабатывайте</span> на&nbsp;своём контенте",
 						"videoPath": "/video/video-2.mp4"
 					}
 				},
 				{
 					"block_slug": "advantages",
 					"block_state": {
-						"titleWhite": "монетизируйте сообщество",
+						"titleWhite": "<span class='tt-lc'>Монетизируйте</span> сообщество",
 						"titleBlue": "от&nbsp;1&nbsp;000 подписчиков",
 						"items": [
 							{
@@ -143,7 +143,7 @@ const defaultState = {
 				{
 					"block_slug": "channels",
 					"block_state": {
-						"title": "уже подключились к VK AdBlogger",
+						"title": "<span class='tt-lc'>Уже</span> подключились к VK AdBlogger",
 						"tags": [],
 						"channels": [
 							{
@@ -224,7 +224,7 @@ const defaultState = {
 				{
 					"block_slug": "partners",
 					"block_state": {
-						"title": "заказывают рекламу у авторов",
+						"title": "<span class='tt-lc'>Заказывают</span> рекламу у авторов",
 						"rowsCount": 4,
 						"imgList": [
 							"/img/partners/img-1.png",
@@ -263,7 +263,7 @@ const defaultState = {
 				{
 					"block_slug": "case",
 					"block_state": {
-						"title": "вдохновляйтесь кейсами",
+						"title": "<span class='tt-lc'>Вдохновляйтесь</span> кейсами",
 						"desc": "Как крупные рекламодатели работают с авторами — узнайте в коротких статьях о топовых кейсах"
 					}
 				},

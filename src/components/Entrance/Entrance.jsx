@@ -10,7 +10,7 @@ export default function Entrance({ block_state }) {
 		<>
 			<section className='section entrance'>
 				<div className="entrance__wrapper">
-					<div className="entrance__title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+					<h1 className="entrance__title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></h1>
 					<div className="entrance__video">
 						<video src={block_state.videoPath} autoPlay muted playsInline loop></video>
 					</div>

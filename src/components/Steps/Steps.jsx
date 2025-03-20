@@ -97,7 +97,7 @@ export default function Steps({ block_state }) {
 			<section className='section steps' >
 				<div className="container" ref={wrapper}>
 					{window.location.pathname === "/for-authors" &&
-						<div className="steps__title title h2" ref={title}>cтаньте автором в VK AdBlogger</div>
+						<h2 className="steps__title title h2" ref={title}> <span className='tt-lc'>Станьте</span>  автором в VK AdBlogger</h2>
 					}
 					<Swiper className='steps__slider'
 						modules={[Pagination]}

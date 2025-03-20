@@ -55,7 +55,7 @@ export default function Case({ block_state }) {
 				<div className="container">
 					<div className="case__wrapper">
 						<div className="case__body">
-							<div className="case__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+							<h2 className="case__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></h2>
 							<div className="case__desc text-32 fw-500" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
 						</div>
 

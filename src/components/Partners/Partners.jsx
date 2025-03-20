@@ -7,7 +7,7 @@ export default function Partners({ block_state }) {
 		<>
 			<section className='section partners'>
 				<div className="container">
-					<div className="partners__title title h2">{block_state.title}</div>
+					<h2 className="partners__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></h2>
 				</div>
 
 				<div className="partners__wrapper">

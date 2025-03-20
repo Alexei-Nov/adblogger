@@ -56,7 +56,7 @@ export default function Channels({ block_state }) {
 					<div className={"channels__heading" + (block_state.tags.length > 1 ? ' channels__heading_has-tags' : '')}>
 						{
 							block_state.title &&
-							<div className="channels__title title h2">{block_state.title}</div>
+							<h2 className="channels__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></h2>
 						}
 						{
 							block_state.tags.length > 1 &&
