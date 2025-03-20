@@ -348,7 +348,7 @@ const defaultState = {
 				{
 					"block_slug": "entrance_event",
 					"block_state": {
-						"title": "удвоим бюджет — до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;рекламу",
+						"title": "<span class='tt-lc'>Удвоим бюджет</span> — до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;рекламу",
 						"desc": "Пополните баланс в&nbsp;кабинете VK&nbsp;AdBlogger, а&nbsp;мы&nbsp;добавим бонусы на&nbsp;посевы и&nbsp;нативную рекламу в&nbsp;сообществах",
 						"btn_text": "Запустить рекламу",
 						"btn_link": "/app",
@@ -390,7 +390,7 @@ const defaultState = {
 				{
 					"block_slug": "channels",
 					"block_state": {
-						"title": "выбирайте авторов под ваши задачи",
+						"title": "<span class='tt-lc'>Выбирайте</span> авторов под ваши задачи",
 						"tags": [
 							"Лайфстайл",
 							"Юмор",
@@ -913,7 +913,7 @@ const defaultState = {
 				{
 					"block_slug": "partners",
 					"block_state": {
-						"title": "с нами уже работают",
+						"title": "<span class='tt-lc'>С нами уже работают</span>",
 						"rowsCount": 4,
 						"imgList": [
 							"/img/partners/img-1.png",
@@ -930,7 +930,7 @@ const defaultState = {
 				{
 					"block_slug": "case",
 					"block_state": {
-						"title": "топ-кейсы с&nbsp;блогерами",
+						"title": "<span class='tt-lc'>Топ-кейсы рекламодателей</span>",
 						"desc": "Как авторы помогают бизнесу — узнайте в коротких статьях об успешных кейсах"
 					}
 				},
