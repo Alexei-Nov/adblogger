@@ -6,6 +6,7 @@ import ForAdvisers from '../../pages/ForAdvertisers';
 import ForAuthors from '../../pages/ForAuthors';
 import DetailCase from "../../pages/DetailCase";
 import ForSellers from 'pages/ForSellers';
+import NotFound from 'components/NotFound/NotFound';
 
 export default function Main() {
 
@@ -27,6 +28,7 @@ export default function Main() {
 					<Route exact path="/top-cases" element={<TopCase />} />
 					<Route exact path="/for-sellers" element={<ForSellers />} />
 					<Route exact path="/top-cases/:slug" element={<DetailCase />} />
+					<Route exact path="*" element={<NotFound />} />
 				</Routes>
 			</main>
 		</>

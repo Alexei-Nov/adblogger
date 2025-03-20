@@ -19,7 +19,6 @@ export default function SalesImprovement({ block_state }) {
 										<NavLink
 											to={case_item.link}
 											className="sales-improvement__name text-32 fw-500"
-											end
 										>
 											<div className="sales-improvement__name-text">
 												{case_item.title}

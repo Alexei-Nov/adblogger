@@ -28,7 +28,6 @@ export default function PopupSeller({ block_state }) {
 						to={block_state.btn_link}
 						className='popup-seller__btn btn btn_border btn_small'
 						onClick={hidePopup}
-						end
 					>{block_state.btn_text}</NavLink>
 				</div>
 				<div className="popup-seller__img">
