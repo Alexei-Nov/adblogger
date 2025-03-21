@@ -83,7 +83,7 @@ export default function Connect({ block_state }) {
 									<div className="connect__icon">
 										<img src={connect_item.icon_path} alt="img" />
 									</div>
-									<div className="connect__name text-32 fw-500">{connect_item.title}</div>
+									<div className="connect__name text-32 fw-500" dangerouslySetInnerHTML={{ __html: connect_item.title }}></div>
 									<div className="connect__desc text-21" dangerouslySetInnerHTML={{ __html: connect_item.desc }}></div>
 								</SwiperSlide>
 							)
