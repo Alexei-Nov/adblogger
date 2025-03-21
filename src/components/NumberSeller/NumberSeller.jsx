@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react'
 import './numberSeller.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { current } from '@reduxjs/toolkit';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function NumberSeller({ block_state }) {
@@ -25,15 +24,15 @@ export default function NumberSeller({ block_state }) {
 			tl.fromTo(img, {
 				scale: 0,
 			}, {
-				delay: Math.random() * 2 + 1,
+				delay: Math.random(),
 				scale: 1,
 			}, 0);
 		})
 
 		let number = gsap.utils.selector(wrapper)('.number-seller__number')
 		tl.from(number, {
-			textContent: 47000,
-			duration: 3,
+			textContent: 48000,
+			duration: 1.5,
 			ease: "power1.in",
 			snap: { textContent: 10 },
 			stagger: {

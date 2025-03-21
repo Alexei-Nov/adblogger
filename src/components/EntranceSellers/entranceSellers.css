@@ -133,8 +133,17 @@
 }
 
 @media screen and (max-width: 570px) {
+  .entrance-seller {
+    padding: 70px 0;
+  }
   .entrance-seller__img {
     max-width: 175px;
+  }
+  .entrance-seller__wrapper {
+    padding-bottom: 100px;
+  }
+  .entrance-seller__btn {
+    margin-top: 48px;
   }
   .entrance-seller__sticker_top {
     width: 111px;

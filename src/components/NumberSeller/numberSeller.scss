@@ -1,4 +1,5 @@
 .number-seller {
+	padding: 140px 0;
 	&__title {
 		width: 100%;
 		max-width: 1000px;
@@ -106,6 +107,7 @@
 }
 @media screen and (max-width: 1024px) {
 	.number-seller {
+		padding: 100px 0;
 		&__body {
 			padding-top: 50px;
 		}
@@ -135,6 +137,8 @@
 }
 @media screen and (max-width: 570px) {
 	.number-seller {
+		padding: 48px 0;
+
 		&__body {
 			padding-top: 30px;
 		}

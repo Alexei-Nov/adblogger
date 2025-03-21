@@ -19,18 +19,11 @@ export default function EntranceSellers({ block_state }) {
 				end: "+=" + window.innerHeight,
 				scrub: true,
 				markers: false,
-				pin: true,
+				pin: window.innerWidth > 570 ? true : false,
 			}
 		});
 
-		tl.to(left_sticker, {
-			xPercent: 48,
-			yPercent: -8,
-		}, 0)
-		tl.to(right_sticker, {
-			xPercent: -65,
-			yPercent: -20,
-		}, 0)
+
 
 		imgArr.forEach((img, index) => {
 			img.style.zIndex = imgArr.length - index
@@ -48,33 +41,38 @@ export default function EntranceSellers({ block_state }) {
 
 			if (index != 0) {
 				if (index % 2 == 0) {
-					tl.fromTo(img, {
+					tl.set(img, {
 						xPercent: left_position,
 						yPercent: top_position,
 						rotateY: '9deg',
 						scale: 0.93,
-					}, {
-						xPercent: 0,
-						yPercent: 0,
-						rotateY: '0',
-						scale: 1,
 					}, 0);
-
 				} else {
-					tl.fromTo(img, {
+					tl.set(img, {
 						xPercent: -(left_position),
 						yPercent: top_position,
 						rotateY: '-9deg',
 						scale: 0.93,
-					}, {
+					}, 0);
+				}
+
+				if (window.innerWidth > 570) {
+					tl.to(img, {
 						xPercent: 0,
 						yPercent: 0,
 						rotateY: '0',
 						scale: 1,
 					}, 0);
+
+					tl.to(left_sticker, {
+						xPercent: 48,
+						yPercent: -8,
+					}, 0)
+					tl.to(right_sticker, {
+						xPercent: -65,
+						yPercent: -20,
+					}, 0)
 				}
-
-
 			}
 		})
 

@@ -59,6 +59,14 @@
 		&__item {
 			display: flex;
 			flex-direction: column;
+
+			&:nth-child(even) {
+				.tile-sellers {
+					&__body {
+						order: unset;
+					}
+				}
+			}
 		}
 		&__item-desc {
 			margin-bottom: 0;

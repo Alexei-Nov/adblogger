@@ -12,42 +12,42 @@ function App() {
 	const dispatch = useDispatch()
 
 	useEffect(() => {
-		let scrollStep = 0;
-		var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
+		// let scrollStep = 0;
+		// var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
 
-		function preventDefault(e) {
-			if (e.wheelDelta) {
-				scrollStep = e.wheelDelta / 3
-			}
+		// function preventDefault(e) {
+		// 	if (e.wheelDelta) {
+		// 		scrollStep = e.wheelDelta / 3
+		// 	}
 
-			e.preventDefault();
-			window.scrollBy({
-				top: -scrollStep,
-				left: 0
-			})
-		}
+		// 	e.preventDefault();
+		// 	window.scrollBy({
+		// 		top: -scrollStep,
+		// 		left: 0
+		// 	})
+		// }
 
-		function preventDefaultForScrollKeys(e) {
-			if (keys[e.keyCode]) {
-				preventDefault(e);
-				return false;
-			}
-		}
+		// function preventDefaultForScrollKeys(e) {
+		// 	if (keys[e.keyCode]) {
+		// 		preventDefault(e);
+		// 		return false;
+		// 	}
+		// }
 
-		var supportsPassive = false;
-		try {
-			window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-				get: function () { supportsPassive = true; }
-			}));
-		} catch (e) { }
+		// var supportsPassive = false;
+		// try {
+		// 	window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+		// 		get: function () { supportsPassive = true; }
+		// 	}));
+		// } catch (e) { }
 
-		var wheelOpt = supportsPassive ? { passive: false } : false;
-		var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+		// var wheelOpt = supportsPassive ? { passive: false } : false;
+		// var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
 
-		window.addEventListener('DOMMouseScroll', preventDefault, false);
-		window.addEventListener(wheelEvent, preventDefault, wheelOpt);
-		// window.addEventListener('touchmove', preventDefault, wheelOpt); 
-		window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+		// window.addEventListener('DOMMouseScroll', preventDefault, false);
+		// window.addEventListener(wheelEvent, preventDefault, wheelOpt);
+		// // window.addEventListener('touchmove', preventDefault, wheelOpt); 
+		// window.addEventListener('keydown', preventDefaultForScrollKeys, false);
 
 
 

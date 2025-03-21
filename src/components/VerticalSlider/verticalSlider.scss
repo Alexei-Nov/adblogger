@@ -8,6 +8,7 @@
 	&__slider {
 		position: relative;
 		overflow: visible;
+		z-index: 1;
 	}
 
 	&__pagination {
@@ -23,12 +24,15 @@
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			object-position: top left;
+			object-position: top center;
 		}
 	}
 
 	&__body-btn {
 		margin-top: 32px;
+	}
+	&__body-desc {
+		margin-top: 30px;
 	}
 
 	&__body {
@@ -60,6 +64,22 @@
 				pointer-events: none;
 			}
 		}
+		&__title {
+			position: relative;
+			z-index: 2;
+			&::after {
+				display: block;
+				content: "";
+				width: 100vw;
+				height: calc(100% + 96px + 100px);
+				position: absolute;
+				top: -100px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: linear-gradient(rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+				z-index: -1;
+			}
+		}
 	}
 }
 
@@ -68,6 +88,14 @@
 	.vertical-slider {
 		&__slide {
 			grid-template-columns: 1fr 1fr;
+		}
+		&__img {
+			& img {
+				object-position: top left;
+			}
+		}
+		&__body-desc {
+			font-size: 17px;
 		}
 	}
 }

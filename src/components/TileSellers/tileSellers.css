@@ -83,6 +83,11 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .tile-sellers__item:nth-child(even) .tile-sellers__body {
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+  }
   .tile-sellers__item-desc {
     margin-bottom: 0;
   }

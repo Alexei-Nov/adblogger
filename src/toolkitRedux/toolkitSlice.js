@@ -1098,7 +1098,7 @@ const defaultState = {
 				{
 					"block_slug": "vertical_slider",
 					"block_state": {
-						"title": "рекламируйте товары у&nbsp;авторов ВКонтакте",
+						"title": "",
 						"slides_list": [
 							{
 								"title": "Мгновенный запуск",
