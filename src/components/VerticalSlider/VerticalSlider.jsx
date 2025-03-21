@@ -111,9 +111,9 @@ export default function VerticalSlider({ block_state }) {
 									</picture>
 
 									<div className="vertical-slider__body">
-										<div className="vertical-slider__body-title text-32 fw-500">{slide.title}</div>
+										<div className="vertical-slider__body-title text-32 fw-500" dangerouslySetInnerHTML={{ __html: slide.title }}></div>
 										<div className="vertical-slider__body-bottom">
-											<div className="vertical-slider__body-desc text-21">{slide.desc}</div>
+											<div className="vertical-slider__body-desc text-21" dangerouslySetInnerHTML={{ __html: slide.desc }}></div>
 											{slide.btn_link &&
 												<a href={slide.btn_link} className="vertical-slider__body-btn btn btn_small" target='_blank'>{slide.btn_text}</a>
 											}

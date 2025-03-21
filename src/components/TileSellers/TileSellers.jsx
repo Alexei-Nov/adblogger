@@ -16,7 +16,7 @@ export default function TileSellers({ block_state }) {
 									</div>
 									<div className="tile-sellers__body">
 										<div className="tile-sellers__item-title text-32 fw-500">{elem.title}</div>
-										<div className="tile-sellers__item-desc text-21">{elem.desc}</div>
+										<div className="tile-sellers__item-desc text-21" dangerouslySetInnerHTML={{ __html: elem.desc }}></div>
 										<div className="tile-sellers__item-content content text-21" dangerouslySetInnerHTML={{ __html: elem.content }}></div>
 									</div>
 								</div>

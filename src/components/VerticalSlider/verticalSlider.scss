@@ -27,19 +27,23 @@
 			object-position: top center;
 		}
 	}
-
-	&__body-btn {
-		margin-top: 32px;
-	}
-	&__body-desc {
-		margin-top: 30px;
-	}
-
 	&__body {
 		height: auto;
 		display: flex;
 		flex-direction: column;
 		padding: 32px;
+	}
+	&__body-btn {
+		margin-top: 32px;
+	}
+	&__body-desc {
+		margin-top: 30px;
+		width: 100%;
+		max-width: 360px;
+	}
+	&__body-title {
+		width: 100%;
+		max-width: 310px;
 	}
 	&__body-bottom {
 		margin-top: auto;

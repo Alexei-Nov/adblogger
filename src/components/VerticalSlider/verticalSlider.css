@@ -33,14 +33,6 @@
      object-position: top center;
 }
 
-.vertical-slider__body-btn {
-  margin-top: 32px;
-}
-
-.vertical-slider__body-desc {
-  margin-top: 30px;
-}
-
 .vertical-slider__body {
   height: auto;
   display: -webkit-box;
@@ -51,6 +43,21 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 32px;
+}
+
+.vertical-slider__body-btn {
+  margin-top: 32px;
+}
+
+.vertical-slider__body-desc {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 360px;
+}
+
+.vertical-slider__body-title {
+  width: 100%;
+  max-width: 310px;
 }
 
 .vertical-slider__body-bottom {
