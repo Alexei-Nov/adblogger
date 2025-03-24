@@ -25,8 +25,8 @@ export default function Main() {
 					<Route exact path="/" element={<Home />} />
 					<Route exact path="/for-authors" element={<ForAuthors />} />
 					<Route exact path="/for-advertisers" element={<ForAdvisers />} />
-					<Route exact path="/top-cases" element={<TopCase />} />
 					<Route exact path="/for-sellers" element={<ForSellers />} />
+					<Route exact path="/top-cases" element={<TopCase />} />
 					<Route exact path="/top-cases/:slug" element={<DetailCase />} />
 					<Route exact path="*" element={<NotFound />} />
 				</Routes>

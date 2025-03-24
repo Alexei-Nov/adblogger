@@ -13,7 +13,7 @@ export default function VerticalSlider({ block_state }) {
 
 	useEffect(() => {
 		if (window.innerWidth > 700) {
-			let slidesArr = gsap.utils.selector(wrapper)('.vertical-slider__slide')
+			let slidesArr = wrapper.current.querySelectorAll('.vertical-slider__slide')
 
 			let tl = gsap.timeline({
 				scrollTrigger: {
@@ -25,7 +25,6 @@ export default function VerticalSlider({ block_state }) {
 					pin: true,
 				}
 			});
-
 
 			slidesArr.forEach((slide, index) => {
 				if (index + 1 < slidesArr.length) {
@@ -66,11 +65,7 @@ export default function VerticalSlider({ block_state }) {
 						opacity: 1
 					}, index);
 				}
-
-
-
 			})
-
 		}
 	})
 

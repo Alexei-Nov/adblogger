@@ -22,8 +22,9 @@
 	}
 
 	&__img {
-		width: 100%;
-		max-width: 350px;
+		width: 350px;
+		height: 424px;
+		max-width: 100%;
 		perspective: 1000px;
 		box-shadow: 0px 0px 43px rgba(107, 143, 184, 0.2);
 		border-radius: 28px;
@@ -82,6 +83,8 @@
 @media screen and (max-width: 1024px) {
 	.entrance-seller {
 		&__img {
+			height: 285px;
+			width: 100%;
 			max-width: 235px;
 		}
 		&__sticker {
@@ -108,6 +111,7 @@
 		padding: 70px 0;
 		&__img {
 			max-width: 175px;
+			height: 212px;
 		}
 		&__wrapper {
 			padding-bottom: 100px;
