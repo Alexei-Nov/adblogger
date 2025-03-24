@@ -18,7 +18,7 @@ export default function VerticalSlider({ block_state }) {
 			let tl = gsap.timeline({
 				scrollTrigger: {
 					trigger: wrapper.current,
-					start: "top top",
+					start: "top 60px",
 					end: "+=" + window.innerHeight * slidesArr.length,
 					scrub: true,
 					markers: false,
@@ -71,13 +71,14 @@ export default function VerticalSlider({ block_state }) {
 
 	return (
 		<>
-			<section className='section vertical-slider' ref={wrapper}>
-				<div className="container">
+			<section className='section vertical-slider' >
+				<div className="container" ref={wrapper}>
 					{
 						block_state.title &&
 						<div className="vertical-slider__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
 					}
 					<Swiper className='vertical-slider__slider'
+
 						spaceBetween={24}
 						speed={800}
 						slidesPerView={1}
