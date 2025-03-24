@@ -21,13 +21,18 @@
           transform: translateY(calc(100% + 60px));
 }
 
+.popup-seller__wrapper {
+  width: 100%;
+  max-width: 220px;
+}
+
 .popup-seller__title {
   letter-spacing: 0.15px;
 }
 
 .popup-seller__desc {
   color: var(--grey-1);
-  margin-top: 6px;
+  margin-top: 12px;
 }
 
 .popup-seller__btn {
@@ -37,7 +42,7 @@
 .popup-seller__img {
   width: 100%;
   height: auto;
-  max-width: 150px;
+  max-width: 140px;
 }
 
 .popup-seller__img img {

@@ -934,10 +934,21 @@ const defaultState = {
 						"desc": "Как авторы помогают бизнесу — узнайте в коротких статьях об успешных кейсах"
 					}
 				},
+				// {
+				// 	"block_slug": "money",
+				// 	"block_state": {
+				// 		"title": "Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте"
+				// 	}
+				// },
 				{
-					"block_slug": "money",
+					"block_slug": "banner_sellers",
 					"block_state": {
-						"title": "Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте"
+						"title": "Больше продаж на&nbsp;маркетплейсах — меньше затрат",
+						"desc": "",
+						"btn_text": "Подробнее",
+						"btn_link": "/for-sellers/",
+						"img": "./img/banner-sellers-2/img.png",
+						"img_tablet": "./img/banner-sellers-2/img_tablet.png",
 					}
 				},
 				{
@@ -996,8 +1007,8 @@ const defaultState = {
 				{
 					"block_slug": "popup_seller",
 					"block_state": {
-						"title": "Удвоим бюджет — до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;рекламу",
-						"desc": "Пополните впервые баланс в&nbsp;кабинете VK&nbsp;AdBlogger, а&nbsp;мы&nbsp;добавим бонусы на&nbsp;посевы",
+						"title": "А&nbsp;еще мы&nbsp;удвоим бюджет — до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;рекламу",
+						"desc": "Пополните впервые баланс в&nbsp;кабинете VK&nbsp;AdBlogger, а&nbsp;мы&nbsp;добавим бонусы",
 						"btn_text": "Подробнее",
 						"btn_link": "/for-advertisers",
 						"img": "./img/popup-seller/img-1.png",

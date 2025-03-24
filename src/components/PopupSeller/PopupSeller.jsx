@@ -22,13 +22,8 @@ export default function PopupSeller({ block_state }) {
 		<>
 			<div className='popup-seller' ref={popup}>
 				<div className="popup-seller__wrapper">
-					<div className="popup-seller__title text-16 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+					<div className="popup-seller__title text-18 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
 					<div className="popup-seller__desc text-14" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
-					<NavLink
-						to={block_state.btn_link}
-						className='popup-seller__btn btn btn_border btn_small'
-						onClick={hidePopup}
-					>{block_state.btn_text}</NavLink>
 				</div>
 				<div className="popup-seller__img">
 					<img src={block_state.img} alt="img" />
