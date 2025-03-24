@@ -1007,7 +1007,7 @@ const defaultState = {
 				{
 					"block_slug": "popup_seller",
 					"block_state": {
-						"title": "А&nbsp;еще мы&nbsp;удвоим бюджет — до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;рекламу",
+						"title": "А&nbsp;ещё мы&nbsp;удвоим бюджет — до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;рекламу",
 						"desc": "Пополните впервые баланс в&nbsp;кабинете VK&nbsp;AdBlogger, а&nbsp;мы&nbsp;добавим бонусы",
 						"btn_text": "Подробнее",
 						"btn_link": "/for-advertisers",
