@@ -946,7 +946,7 @@ const defaultState = {
 						"title": "Больше продаж на&nbsp;маркетплейсах — меньше затрат",
 						"desc": "",
 						"btn_text": "Подробнее",
-						"btn_link": "/for-sellers/",
+						"btn_link": "/for-sellers",
 						"img": "./img/banner-sellers-2/img.png",
 						"img_tablet": "./img/banner-sellers-2/img_tablet.png",
 					}
@@ -1229,7 +1229,7 @@ const defaultState = {
 						"title": "удвоим бюджет — до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;рекламу",
 						"desc": "Пополните впервые баланс в&nbsp;кабинете VK&nbsp;AdBlogger, а&nbsp;мы&nbsp;добавим бонусы на&nbsp;посевы и&nbsp;нативную рекламу товаров в&nbsp;сообществах",
 						"btn_text": "Подробнее",
-						"btn_link": "/for-advertisers/",
+						"btn_link": "/for-advertisers",
 						"img": "./img/banner-sellers/img.png",
 						"img_tablet": "./img/banner-sellers/img_tablet.png",
 					}

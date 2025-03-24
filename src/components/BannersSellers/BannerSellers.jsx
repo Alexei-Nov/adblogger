@@ -16,6 +16,7 @@ export default function BannerSellers({ block_state }) {
 							<NavLink
 								to={block_state.btn_link}
 								className="banner-sellers__btn btn btn_border btn_small text-20 fw-500"
+								end
 							>{block_state.btn_text}</NavLink>
 						</div>
 						<picture className="banner-sellers__img">
