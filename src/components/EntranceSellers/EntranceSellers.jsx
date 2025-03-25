@@ -44,14 +44,16 @@ export default function EntranceSellers({ block_state }) {
 					tl.set(img, {
 						xPercent: left_position,
 						yPercent: top_position,
-						rotateY: '9deg',
+						rotate: '-4deg',
+						skewX: '-4deg',
 						scale: 0.93,
 					}, 0);
 				} else {
 					tl.set(img, {
 						xPercent: -(left_position),
 						yPercent: top_position,
-						rotateY: '-9deg',
+						rotate: '4deg',
+						skewX: '4deg',
 						scale: 0.93,
 					}, 0);
 				}
@@ -60,8 +62,9 @@ export default function EntranceSellers({ block_state }) {
 					tl.to(img, {
 						xPercent: 0,
 						yPercent: 0,
-						rotateY: '0',
+						rotate: '0',
 						scale: 1,
+						skewX: '0',
 					}, 0);
 
 					tl.to(left_sticker, {
@@ -96,7 +99,7 @@ export default function EntranceSellers({ block_state }) {
 						})}
 
 						<div className="entrance-seller__sticker entrance-seller__sticker_top">
-							<img src='./img/entrance-seller/sticker-top.png' alt="img" />
+							<img src='./img/entrance-seller/sticker-top.svg' alt="img" />
 						</div>
 						<div className="entrance-seller__sticker entrance-seller__sticker_left">
 							<img src='./img/entrance-seller/sticker-1.png' alt="img" />

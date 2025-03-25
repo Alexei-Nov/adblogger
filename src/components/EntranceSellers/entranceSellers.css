@@ -32,8 +32,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
