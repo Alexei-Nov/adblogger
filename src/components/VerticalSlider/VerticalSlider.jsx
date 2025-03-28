@@ -19,12 +19,13 @@ export default function VerticalSlider({ block_state }) {
 				scrollTrigger: {
 					trigger: wrapper.current,
 					start: "top 60px",
-					end: "+=" + window.innerHeight * slidesArr.length,
+					end: "+=" + (window.innerHeight * slidesArr.length - 60),
 					scrub: true,
 					markers: false,
 					pin: true,
 				}
 			});
+
 
 			slidesArr.forEach((slide, index) => {
 				if (index + 1 < slidesArr.length) {
@@ -111,7 +112,7 @@ export default function VerticalSlider({ block_state }) {
 										<div className="vertical-slider__body-bottom">
 											<div className="vertical-slider__body-desc text-21" dangerouslySetInnerHTML={{ __html: slide.desc }}></div>
 											{slide.btn_link &&
-												<a href={slide.btn_link} className="vertical-slider__body-btn btn btn_small" target='_blank'>{slide.btn_text}</a>
+												<a href={slide.btn_link} className="vertical-slider__body-btn btn btn_small text-18 fw-500" target='_blank'>{slide.btn_text}</a>
 											}
 										</div>
 									</div>

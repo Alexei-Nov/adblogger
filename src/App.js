@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setCases } from './toolkitRedux/toolkitSlice'
+import { HelmetProvider } from "react-helmet-async";
 
 
 function App() {
@@ -12,45 +13,6 @@ function App() {
 	const dispatch = useDispatch()
 
 	useEffect(() => {
-		// let scrollStep = 0;
-		// var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
-
-		// function preventDefault(e) {
-		// 	if (e.wheelDelta) {
-		// 		scrollStep = e.wheelDelta / 3
-		// 	}
-
-		// 	e.preventDefault();
-		// 	window.scrollBy({
-		// 		top: -scrollStep,
-		// 		left: 0
-		// 	})
-		// }
-
-		// function preventDefaultForScrollKeys(e) {
-		// 	if (keys[e.keyCode]) {
-		// 		preventDefault(e);
-		// 		return false;
-		// 	}
-		// }
-
-		// var supportsPassive = false;
-		// try {
-		// 	window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-		// 		get: function () { supportsPassive = true; }
-		// 	}));
-		// } catch (e) { }
-
-		// var wheelOpt = supportsPassive ? { passive: false } : false;
-		// var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
-
-		// window.addEventListener('DOMMouseScroll', preventDefault, false);
-		// window.addEventListener(wheelEvent, preventDefault, wheelOpt);
-		// // window.addEventListener('touchmove', preventDefault, wheelOpt); 
-		// window.addEventListener('keydown', preventDefaultForScrollKeys, false);
-
-
-
 		// fetch('https://api.blogger.ra-studio.ru/api/top-cases/')
 		// 	.then((res) => res.json())
 		// 	.then((data) => {
@@ -66,12 +28,14 @@ function App() {
 	return (
 		<>
 			<div className="body-wrapper">
-				<Router>
-					{/* <Preloader /> */}
-					<Header />
-					<Main />
-					<Footer footer={footerState} />
-				</Router>
+				<HelmetProvider>
+					<Router>
+						{/* <Preloader /> */}
+						<Header />
+						<Main />
+						<Footer footer={footerState} />
+					</Router>
+				</HelmetProvider>
 			</div>
 		</>
 	);

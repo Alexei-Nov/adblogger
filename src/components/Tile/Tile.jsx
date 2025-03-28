@@ -93,7 +93,10 @@ export default function Tile({ block_state }) {
 					<a
 						href={btnState.link}
 						className="tile__btn btn fw-500"
-						onClick={() => handleTracking('registration_other')}
+						onClick={() => {
+							handleTracking('registration_other')
+							handleTracking('registration_all')
+						}}
 					>
 						{btnState.text}
 					</a>

@@ -66,7 +66,10 @@ export default function Header() {
 						<a
 							href={btnState.link}
 							className={"header__btn btn btn_small text-18 fw-500 "}
-							onClick={() => handleTracking('registration_header')}
+							onClick={() => {
+								handleTracking('registration_header')
+								handleTracking('registration_all')
+							}}
 						>
 							{btnState.text}
 						</a>

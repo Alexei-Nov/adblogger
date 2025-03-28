@@ -1,65 +1,16 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { useSelector } from 'react-redux'
-import './footer.css'
-import { NavLink, useLocation } from 'react-router-dom';
-import { handleTracking } from 'utils/tracking'
+import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
+import './footer.css';
+import { useLocation } from 'react-router-dom';
+import { handleTracking } from 'utils/tracking';
+import { NavItem } from './NavItem';
 
 export default function Footer({ footer }) {
 	const [footerState, setFooterState] = useState(footer)
-
 	const btnState = useSelector(state => state.toolkit.registrationBtn)
-	let nav = useRef();
 	const location = useLocation()
-
-	useEffect(() => {
-    if (!nav.current) return;
-
-    const handleResize = () => {
-      if (window.innerWidth >= 768) return;
-
-      const linkLvl1Arr = nav.current.querySelectorAll('.nav__link_lvl1');
-
-      linkLvl1Arr.forEach(link => {
-        const item = link.closest('.nav__item_lvl1');
-        const body = item.querySelector('.nav__submenu');
-
-				item.classList.contains('nav__item_open')
-
-        if (!item.classList.contains('nav__item_open')) {
-          body.style.maxHeight = 0;
-        }
-
-        const handleClick = (e) => {
-          if (!e.target.closest('.nav__submenu')) {
-            e.preventDefault();
-            
-            if (!item.classList.contains('nav__item_open')) {
-              item.classList.add('nav__item_open');
-              body.style.maxHeight = `${body.scrollHeight}px`;
-            } else {
-              item.classList.remove('nav__item_open');
-              body.style.maxHeight = 0;
-            }
-          }
-        };
-
-        item.addEventListener('click', handleClick);
-
-        return () => {
-          item.removeEventListener('click', handleClick);
-        };
-      });
-    };
-
-    handleResize();
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, [nav, location]);
-
+	const isForAuthors = window.location.pathname === "/for-authors"
+	const isForAdvertisers = window.location.pathname === "/for-advertisers"
 	
 	useEffect(() => {
 		switch (window.location.pathname) {
@@ -75,6 +26,44 @@ export default function Footer({ footer }) {
 		}
 	}, [location])
 
+	const caseItems = [
+		{ text: 'Посевы и треккинг', link: 'top-cases/case-1' },
+		{ text: 'Простор для контента', link: 'top-cases/case-3' },
+		{ text: 'Космически нативно', link: 'top-cases/case-2' },
+		{ text: 'Все кейсы', link: 'top-cases' }
+	  ];
+	  
+	  const documentItems = [
+		{ text: 'Пользовательское соглашение', link: 'https://adblogger.vk.com/documents/terms', target: "_blank" },
+		{ text: 'Политика конфиденциальности', link: 'https://adblogger.vk.com/documents/privacy', target: "_blank" },
+		...(isForAuthors
+		  ? [
+			  { text: 'Оферта для авторов', link: 'https://adblogger.vk.com/documents/offer_creator', target: "_blank" },
+			  { text: 'Условия для авторов', link: 'https://adblogger.vk.com/documents/terms_creator', target: "_blank" },
+			  { text: 'Правила размещения рекламы', link: 'https://adblogger.vk.com/documents/moderation', target: "_blank" },
+			]
+		  : []),
+		...(isForAdvertisers
+		  ? [
+			  { text: 'Оферта для рекламодателей', link: 'https://adblogger.vk.com/documents/offer_adv', target: "_blank" },
+			  { text: 'Правила оказания рекламных услуг', link: 'https://adblogger.vk.com/documents/rules_adv', target: "_blank" },
+			  { text: 'Правила размещения рекламы', link: 'https://adblogger.vk.com/documents/moderation', target: "_blank" },
+			]
+		  : []),
+	  ];
+
+	  const helpItems = [
+		...(isForAuthors
+		  ? [
+			  { text: 'FAQ', link: 'https://adblogger.vk.com/documents/faq_author', target: "_blank" }
+			]
+		  : [
+			  { text: 'FAQ', link: 'https://adblogger.vk.com/documents/faq_advertiser', target: "_blank" }
+			]),
+		{ text: 'Обратная связь', link: 'https://vk.cc/cyEF76', target: "_blank" }
+	  ];
+	  
+	  
 	return (
 		<>
 			<footer className='footer'>
@@ -86,7 +75,10 @@ export default function Footer({ footer }) {
 						<a
 							href={btnState.link}
 							className="footer__btn btn btn_small btn_border"
-							onClick={() => handleTracking('registration_footer')}
+							onClick={() => {
+								handleTracking('registration_footer')
+								handleTracking('registration_all')
+							}}
 						>
 							{btnState.text}
 						</a>
@@ -96,91 +88,11 @@ export default function Footer({ footer }) {
 							<div className="footer__title text-20">{footerState.title}</div>
 							<div className="footer__desc text-16">{footerState.desc}</div>
 						</div>
-						<nav className="footer__nav nav" ref={nav}>
+						<nav className="footer__nav nav">
 							<ul className='nav__list'>
-								<li className='nav__item nav__item_lvl1'>
-									<div className='nav__link nav__link_lvl1 text-20'>Кейсы</div>
-									<div className="nav__caret"></div>
-									<ul className='nav__submenu text-16'>
-										<li className='nav__item nav__item_lvl2'>
-											<NavLink to="top-cases/case-1" className='nav__link nav__link_lvl2'>Посевы и треккинг</NavLink>
-										</li>
-										<li className='nav__item nav__item_lvl2'>
-											<NavLink to="top-cases/case-3" className='nav__link nav__link_lvl2'>Простор для контента</NavLink>
-										</li>
-										<li className='nav__item nav__item_lvl2'>
-											<NavLink to="top-cases/case-2" className='nav__link nav__link_lvl2'>Космически нативно</NavLink>
-										</li>
-										<li className='nav__item nav__item_lvl2'>
-											<NavLink to="top-cases" className='nav__link nav__link_lvl2'>Все кейсы</NavLink>
-										</li>
-									</ul>
-								</li>
-								<li className='nav__item nav__item_lvl1'>
-									<div className='nav__link nav__link_lvl1 text-20'>Документы</div>
-									<div className="nav__caret"></div>
-
-									<ul className='nav__submenu text-16'>
-										<li className='nav__item nav__item_lvl2'>
-											<a href="https://adblogger.vk.com/documents/terms" className='nav__link nav__link_lvl2' target='_blank' rel="noreferrer">Пользовательское соглашение</a>
-										</li>
-										<li className='nav__item nav__item_lvl2'>
-											<a href="https://adblogger.vk.com/documents/privacy" className='nav__link nav__link_lvl2' target='_blank' rel="noreferrer">Политика конфиденциальности</a>
-										</li>
-
-										{window.location.pathname === "/for-authors" &&
-											<>
-												<li className='nav__item nav__item_lvl2'>
-													<a href="https://adblogger.vk.com/documents/offer_creator" className='nav__link nav__link_lvl2' target='_blank' rel="noreferrer">Оферта для авторов</a>
-												</li>
-												<li className='nav__item nav__item_lvl2'>
-													<a href="https://adblogger.vk.com/documents/terms_creator" className='nav__link nav__link_lvl2' target='_blank' rel="noreferrer">Условия для авторов</a>
-												</li>
-												<li className='nav__item nav__item_lvl2'>
-													<a href="https://adblogger.vk.com/documents/moderation" className='nav__link nav__link_lvl2' target='_blank' rel="noreferrer">Правила размещения рекламы</a>
-												</li>
-											</>
-										}
-
-										{window.location.pathname === "/for-advertisers" &&
-											<>
-												<li className='nav__item nav__item_lvl2'>
-													<a href="https://adblogger.vk.com/documents/offer_adv" className='nav__link nav__link_lvl2' target='_blank' rel="noreferrer">Оферта для рекламодателей</a>
-												</li>
-												<li className='nav__item nav__item_lvl2'>
-													<a href="https://adblogger.vk.com/documents/rules_adv" className='nav__link nav__link_lvl2' target='_blank' rel="noreferrer">Правила оказания рекламных услуг</a>
-												</li>
-												<li className='nav__item nav__item_lvl2'>
-													<a href="https://adblogger.vk.com/documents/moderation" className='nav__link nav__link_lvl2' target='_blank' rel="noreferrer">Правила размещения рекламы</a>
-												</li>
-											</>
-										}
-
-
-									</ul>
-								</li>
-								<li className='nav__item nav__item_lvl1'>
-									<div className='nav__link nav__link_lvl1 text-20'>Помощь</div>
-									<div className="nav__caret"></div>
-
-									<ul className='nav__submenu text-16'>
-										{window.location.pathname === "/for-authors" &&
-											<li className='nav__item nav__item_lvl2'>
-												<a href="https://adblogger.vk.com/documents/faq_author" className='nav__link nav__link_lvl2' target='_blank' rel="noreferrer">FAQ</a>
-											</li>
-										}
-
-										{window.location.pathname !== "/for-authors" &&
-											<li className='nav__item nav__item_lvl2'>
-												<a href="https://adblogger.vk.com/documents/faq_advertiser" className='nav__link nav__link_lvl2' target='_blank' rel="noreferrer">FAQ</a>
-											</li>
-										}
-
-										<li className='nav__item nav__item_lvl2'>
-											<a href="https://vk.cc/cyEF76" className='nav__link nav__link_lvl2' target='_blank' rel="noreferrer">Обратная связь</a>
-										</li>
-									</ul>
-								</li>
+								<NavItem title={"Кейсы"} submenu={caseItems}/>
+								<NavItem title={"Документы"} submenu={documentItems}/>
+								<NavItem title={"Помощь"} submenu={helpItems}/>
 							</ul>
 						</nav>
 					</div>

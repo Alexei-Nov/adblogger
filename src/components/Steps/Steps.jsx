@@ -136,7 +136,10 @@ export default function Steps({ block_state }) {
 											<a
 												href={btnState.link}
 												className="steps__btn btn btn_border btn_wide"
-												onClick={() => handleTracking('registration_other')}
+												onClick={() => {
+													handleTracking('registration_other')
+													handleTracking('registration_all')
+												}}
 											>
 												{btnState.text}
 											</a>

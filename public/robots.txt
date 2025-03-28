@@ -1,0 +1,10 @@
+User-Agent: *
+
+Disallow: /app
+Disallow: /app/*
+
+User-Agent: Yandex
+
+Clean-param: utm_source&mt_link_id&mt_click_id&mt_sub5&scheme
+
+Sitemap: https://adblogger.vk.com/sitemap.xml

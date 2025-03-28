@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import AllBlocks from '../components/AllBlocks/AllBlocks'
+import TitleAndMetaTags from '../components/TitleAndMetaTags/TitleAndMetaTags'
 
 
 export default function ForSellers() {
@@ -8,6 +9,7 @@ export default function ForSellers() {
 
 	return (
 		<>
+			<TitleAndMetaTags />
 			<AllBlocks pageState={pageState} />
 		</>
 	)

@@ -9,6 +9,9 @@
 		position: relative;
 		overflow: visible;
 		z-index: 1;
+		width: 100%;
+		max-width: 1096px;
+		margin: 0 auto;
 	}
 
 	&__pagination {
@@ -32,6 +35,7 @@
 		display: flex;
 		flex-direction: column;
 		padding: 32px;
+		background-color: var(--black-2);
 	}
 	&__body-btn {
 		margin-top: 32px;
@@ -84,6 +88,9 @@
 				z-index: -1;
 			}
 		}
+		&__slider {
+			min-height: 384px;
+		}
 	}
 }
 
@@ -117,12 +124,10 @@
 		&__body {
 			flex-grow: 1;
 		}
-		&__body-title {
-			margin-bottom: 95px;
-		}
 		&__slide {
 			height: auto;
 			display: flex;
+			gap: 24px;
 			flex-direction: column;
 		}
 		&__pagination {
@@ -130,7 +135,6 @@
 			margin-top: 40px;
 		}
 		&__body-btn {
-			width: 100%;
 			margin-top: 24px;
 		}
 		&__img {

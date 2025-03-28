@@ -3,6 +3,7 @@ import Money from '../components/Money/Money'
 import { useParams } from 'react-router-dom';
 import Article from '../components/Article/Article';
 import { useSelector } from 'react-redux';
+import TitleAndMetaTags from '../components/TitleAndMetaTags/TitleAndMetaTags';
 
 export default function DetailCase() {
 	const { slug } = useParams();
@@ -16,6 +17,7 @@ export default function DetailCase() {
 
 	return (
 		<>
+			<TitleAndMetaTags />
 			<Article article={articleState} />
 			<Money block_state={moneyState} />
 		</>

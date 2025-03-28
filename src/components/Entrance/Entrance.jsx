@@ -18,7 +18,10 @@ export default function Entrance({ block_state }) {
 				<a
 					href={btnState.link}
 					className="entrance__btn btn btn_small fw-500 text-20"
-					onClick={() => handleTracking('registration_other')}
+					onClick={() => {
+						handleTracking('registration_other')
+						handleTracking('registration_all')
+					}}
 				>
 					{btnState.text}
 				</a>

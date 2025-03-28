@@ -34,7 +34,10 @@ export default function Money({ block_state }) {
 						<a
 							href={btnState.link}
 							className="money__btn btn btn_border"
-							onClick={() => handleTracking('registration_other')}
+							onClick={() => {
+								handleTracking('registration_other')
+								handleTracking('registration_all')
+							}}
 						>
 							{btnState.text}
 						</a>
