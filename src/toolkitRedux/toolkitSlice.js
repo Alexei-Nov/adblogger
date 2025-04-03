@@ -47,28 +47,21 @@ const defaultState = {
 								"numCurrent": "50",
 								"numAfter": "",
 								"numLabel": "тыс.",
-								"desc": "блогеров и&nbsp;сообществ уже с&nbsp;нами"
-							},
-							{
-								"numPrev": "7999",
-								"numCurrent": "8000",
-								"numAfter": "+",
-								"numLabel": "",
-								"desc": "рекламодателей на&nbsp;платформе"
+								"desc": "блогеров и&nbsp;сообществ <br> уже с&nbsp;нами"
 							},
 							{
 								"numPrev": "9999",
 								"numCurrent": "10000",
 								"numAfter": "+",
 								"numLabel": "",
-								"desc": "заявок от&nbsp;рекламодателей в&nbsp;неделю"
+								"desc": "рекламных <br> интеграций в&nbsp;неделю"
 							},
 							{
 								"numPrev": "7,0",
 								"numCurrent": "7,1  ",
 								"numAfter": "",
 								"numLabel": "млрд ₽",
-								"desc": "<a href='https://vk.com/press/content-2024' target='_blank'>заработали</a> авторы ВКонтакте в 2024 году"
+								"desc": "<a href='https://vk.com/press/content-2024' target='_blank'>заработали</a> авторы <br> ВКонтакте в&nbsp;2024 году"
 							}
 						]
 					}
@@ -372,21 +365,21 @@ const defaultState = {
 								"numCurrent": "50",
 								"numAfter": "",
 								"numLabel": "тыс.",
-								"desc": "блогеров </br> и сообществ"
+								"desc": "блогеров <br> и&nbsp;сообществ"
 							},
 							{
-								"numPrev": "7999",
-								"numCurrent": "8000",
+								"numPrev": "9999",
+								"numCurrent": "10000",
 								"numAfter": "+",
 								"numLabel": "",
-								"desc": "рекламодателей </br> на платформе"
+								"desc": "рекламных <br> интеграций в&nbsp;неделю"
 							},
 							{
-								"numPrev": "199",
-								"numCurrent": "200",
+								"numPrev": "319",
+								"numCurrent": "320",
 								"numAfter": "",
 								"numLabel": "тыс.",
-								"desc": "рекламных интеграций"
+								"desc": "опубликованных <br> рекламных интеграций"
 							}
 						]
 					}
