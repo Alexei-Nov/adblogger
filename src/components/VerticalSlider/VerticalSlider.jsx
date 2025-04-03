@@ -6,6 +6,7 @@ import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { handleTracking } from 'utils/tracking';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function VerticalSlider({ block_state }) {
@@ -112,7 +113,12 @@ export default function VerticalSlider({ block_state }) {
 										<div className="vertical-slider__body-bottom">
 											<div className="vertical-slider__body-desc text-21" dangerouslySetInnerHTML={{ __html: slide.desc }}></div>
 											{slide.btn_link &&
-												<a href={slide.btn_link} className="vertical-slider__body-btn btn btn_small text-18 fw-500" target='_blank'>{slide.btn_text}</a>
+												<a href={slide.btn_link}
+													className="vertical-slider__body-btn btn btn_small text-18 fw-500"
+													target='_blank'
+													onClick={() => { handleTracking('reg_seller_second'); handleTracking('reg_seller_all'); }}
+
+												>{slide.btn_text}</a>
 											}
 										</div>
 									</div>

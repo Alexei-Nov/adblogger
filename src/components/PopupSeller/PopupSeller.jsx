@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import './popupSeller.css'
 import { NavLink } from 'react-router-dom'
+import { handleTracking } from 'utils/tracking';
 
 
 export default function PopupSeller({ block_state }) {
@@ -12,6 +13,7 @@ export default function PopupSeller({ block_state }) {
 
 	function hidePopup() {
 		popup.current.classList.remove('popup-seller_show')
+		handleTracking('close_pop-up')
 	}
 
 	setTimeout(() => {

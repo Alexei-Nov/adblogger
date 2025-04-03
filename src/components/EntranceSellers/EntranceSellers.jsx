@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import './entranceSellers.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { handleTracking } from 'utils/tracking';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function EntranceSellers({ block_state }) {
@@ -87,7 +88,11 @@ export default function EntranceSellers({ block_state }) {
 				<div className="container">
 					<div className="entrance-seller__heading title">
 						<div className="entrance-seller__title h1" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
-						<a href={block_state.btn_link} className="entrance-seller__btn btn text-28 fw-500" target='_blank'>{block_state.btn_text}</a>
+						<a href={block_state.btn_link}
+							className="entrance-seller__btn btn text-28 fw-500"
+							target='_blank'
+							onClick={() => { handleTracking('reg_seller_first'); handleTracking('reg_seller_all'); }}
+						>{block_state.btn_text}</a>
 					</div>
 					<div className="entrance-seller__wrapper" ref={wrapper}>
 						{block_state.img_list.map((img, i) => {
@@ -107,8 +112,6 @@ export default function EntranceSellers({ block_state }) {
 						<div className="entrance-seller__sticker entrance-seller__sticker_right">
 							<img src='./img/entrance-seller/sticker-2.png' alt="img" />
 						</div>
-
-
 					</div>
 				</div>
 			</section>
