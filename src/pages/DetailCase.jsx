@@ -17,7 +17,10 @@ export default function DetailCase() {
 
 	return (
 		<>
-			<TitleAndMetaTags />
+			<TitleAndMetaTags
+				{...(articleState.seo_title ? { title: articleState.seo_title } : {})}
+				{...(articleState.seo_desc ? { description: articleState.seo_desc } : {})}
+			/>
 			<Article article={articleState} />
 			<Money block_state={moneyState} />
 		</>

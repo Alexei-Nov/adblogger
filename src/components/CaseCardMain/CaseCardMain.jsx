@@ -6,7 +6,7 @@ export default function CaseCardMain({ post }) {
 		<>
 			<section className='section case-card-main'>
 				<div className="container">
-					<div className="case-card-main__title page-title">топ-кейсы</div>
+					<h1 className="case-card-main__title page-title">топ-кейсы</h1>
 					{post &&
 						<a href={'/top-cases/' + post.slug} className="case-card-main__wrapper">
 							<div className="case-card-main__logo">
