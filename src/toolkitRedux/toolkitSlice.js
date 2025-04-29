@@ -347,25 +347,25 @@ const defaultState = {
 					"block_slug": "preloader",
 					"block_state": {}
 				},
-				// {
-				// 	"block_slug": "entrance",
-				// 	"block_state": {
-				// 		"title": "запускайте рекламу у&nbsp;блогеров",
-				// 		"videoPath": "/video/video-2.mp4"
-				// 	}
-				// },
 				{
-					"block_slug": "entrance_event",
+					"block_slug": "entrance",
 					"block_state": {
-						"title": "<span class='tt-lc'>Удвоим бюджет</span> — до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;рекламу",
-						"desc": "Пополните баланс в&nbsp;кабинете VK&nbsp;AdBlogger, а&nbsp;мы&nbsp;добавим бонусы на&nbsp;посевы и&nbsp;нативную рекламу в&nbsp;сообществах",
-						"btn_text": "Запустить рекламу",
-						"btn_link": "/app",
-						"label": "Сроки акции «Удвоим бонусами»: с 24.02.2025 по 30.04.2025. Подробнее об&nbsp;условиях акции по&nbsp;<a href='https://vk.cc/cILJWw' target='_blank'>ссылке</a>. *VK AdBlogger – ВК ЭдБлоггер. 12+",
-						"media": "/video/video-3.mp4",
-						"media_mob": "/img/entrance-event/img_mob.png"
+						"title": "запускайте рекламу у&nbsp;блогеров",
+						"videoPath": "/video/video-2.mp4"
 					}
 				},
+				// {
+				// 	"block_slug": "entrance_event",
+				// 	"block_state": {
+				// 		"title": "<span class='tt-lc'>Удвоим бюджет</span> — до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;рекламу",
+				// 		"desc": "Пополните баланс в&nbsp;кабинете VK&nbsp;AdBlogger, а&nbsp;мы&nbsp;добавим бонусы на&nbsp;посевы и&nbsp;нативную рекламу в&nbsp;сообществах",
+				// 		"btn_text": "Запустить рекламу",
+				// 		"btn_link": "/app",
+				// 		"label": "Сроки акции «Удвоим бонусами»: с 24.02.2025 по 30.04.2025. Подробнее об&nbsp;условиях акции по&nbsp;<a href='https://vk.cc/cILJWw' target='_blank'>ссылке</a>. *VK AdBlogger – ВК ЭдБлоггер. 12+",
+				// 		"media": "/video/video-3.mp4",
+				// 		"media_mob": "/img/entrance-event/img_mob.png"
+				// 	}
+				// },
 				{
 					"block_slug": "advantages",
 					"block_state": {
@@ -1021,16 +1021,16 @@ const defaultState = {
 					"block_slug": "preloader",
 					"block_state": {}
 				},
-				{
-					"block_slug": "popup_seller",
-					"block_state": {
-						"title": "А&nbsp;ещё мы&nbsp;удвоим бюджет — до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;рекламу",
-						"desc": "Пополните впервые баланс в&nbsp;кабинете VK&nbsp;AdBlogger, а&nbsp;мы&nbsp;добавим бонусы",
-						"btn_text": "Подробнее",
-						"btn_link": "/for-advertisers",
-						"img": "./img/popup-seller/img-1.png",
-					}
-				},
+				// {
+				// 	"block_slug": "popup_seller",
+				// 	"block_state": {
+				// 		"title": "А&nbsp;ещё мы&nbsp;удвоим бюджет — до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;рекламу",
+				// 		"desc": "Пополните впервые баланс в&nbsp;кабинете VK&nbsp;AdBlogger, а&nbsp;мы&nbsp;добавим бонусы",
+				// 		"btn_text": "Подробнее",
+				// 		"btn_link": "/for-advertisers",
+				// 		"img": "./img/popup-seller/img-1.png",
+				// 	}
+				// },
 				{
 					"block_slug": "entrance_seller",
 					"block_state": {
@@ -1241,16 +1241,22 @@ const defaultState = {
 					}
 				},
 				{
-					"block_slug": "banner_sellers",
+					"block_slug": "money",
 					"block_state": {
-						"title": "удвоим бюджет — до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;рекламу",
-						"desc": "Пополните впервые баланс в&nbsp;кабинете VK&nbsp;AdBlogger, а&nbsp;мы&nbsp;добавим бонусы на&nbsp;посевы и&nbsp;нативную рекламу товаров в&nbsp;сообществах",
-						"btn_text": "Подробнее",
-						"btn_link": "/for-advertisers",
-						"img": "./img/banner-sellers/img.png",
-						"img_tablet": "./img/banner-sellers/img_tablet.png",
+						"title": "Зарабатывайте </br> на&nbsp;своём контенте"
 					}
 				},
+				// {
+				// 	"block_slug": "banner_sellers",
+				// 	"block_state": {
+				// 		"title": "удвоим бюджет — до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;рекламу",
+				// 		"desc": "Пополните впервые баланс в&nbsp;кабинете VK&nbsp;AdBlogger, а&nbsp;мы&nbsp;добавим бонусы на&nbsp;посевы и&nbsp;нативную рекламу товаров в&nbsp;сообществах",
+				// 		"btn_text": "Подробнее",
+				// 		"btn_link": "/for-advertisers",
+				// 		"img": "./img/banner-sellers/img.png",
+				// 		"img_tablet": "./img/banner-sellers/img_tablet.png",
+				// 	}
+				// },
 				{
 					"block_slug": "faq",
 					"block_state": {
