@@ -1243,7 +1243,7 @@ const defaultState = {
 				{
 					"block_slug": "money",
 					"block_state": {
-						"title": "Зарабатывайте </br> на&nbsp;своём контенте"
+						"title": "Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте"
 					}
 				},
 				// {
