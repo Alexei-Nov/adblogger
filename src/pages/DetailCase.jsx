@@ -12,7 +12,7 @@ export default function DetailCase() {
 
 
 	const moneyState = {
-		title: 'Зарабатывайте </br> на&nbsp;своём контенте'
+		title: 'Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте'
 	}
 
 	return (
