@@ -200,6 +200,9 @@ body {
 	}
 	& ul {
 		padding-left: 25px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
 		&:not(:last-child) {
 			margin-bottom: 1em;
 		}
