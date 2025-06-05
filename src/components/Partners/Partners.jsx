@@ -1,7 +1,11 @@
 import React from 'react'
 import './partners.css'
+import { useSelector } from 'react-redux'
+import { handleTracking } from 'utils/tracking'
 
 export default function Partners({ block_state }) {
+	const btnState = useSelector(state => state.toolkit.registrationBtn)
+
 	const rowCount = block_state.rowsCount
 	return (
 		<>
@@ -33,6 +37,19 @@ export default function Partners({ block_state }) {
 							</div>
 						)
 					})}
+				</div>
+
+				<div className="container">
+					<a
+						href={btnState.link}
+						className="partners__btn btn text-20"
+						onClick={() => {
+							handleTracking('registration_other')
+							handleTracking('registration_all')
+						}}
+					>
+						{btnState.text}
+					</a>
 				</div>
 			</section>
 		</>

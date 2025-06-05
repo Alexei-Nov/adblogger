@@ -42,6 +42,11 @@
   z-index: 2;
 }
 
+.partners__btn {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
 .partners__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,5 +132,8 @@
   .partners__row {
     gap: 38px;
     padding-right: 38px;
+  }
+  .partners__btn {
+    margin-top: 48px;
   }
 }

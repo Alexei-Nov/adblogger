@@ -132,16 +132,17 @@ export default function Steps({ block_state }) {
 										<div className="steps__num text-24">{i + 1}</div>
 										<div className="steps__name text-32 fw-500">{stepItem.title}</div>
 										<div className="steps__desc text-21">{stepItem.desc}</div>
-										{i === 2 &&
+
+										{stepItem.btn_text &&
 											<a
-												href={btnState.link}
+												href={stepItem.btn_link}
 												className="steps__btn btn btn_border btn_wide"
 												onClick={() => {
 													handleTracking('registration_other')
 													handleTracking('registration_all')
 												}}
 											>
-												{btnState.text}
+												{stepItem.btn_text}
 											</a>
 										}
 									</div>

@@ -34,6 +34,10 @@
 			z-index: 2;
 		}
 	}
+	&__btn {
+		margin: 0 auto;
+		margin-top: 100px;
+	}
 	&__row {
 		display: flex;
 		align-items: center;
@@ -95,6 +99,9 @@
 		&__row {
 			gap: 38px;
 			padding-right: 38px;
+		}
+		&__btn {
+			margin-top: 48px;
 		}
 	}
 }

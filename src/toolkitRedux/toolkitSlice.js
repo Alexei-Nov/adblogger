@@ -242,17 +242,23 @@ const defaultState = {
 							{
 								"title": "Подключитесь",
 								"desc": "Зарегистрируйтесь как автор, подключите своё сообщество и укажите реквизиты",
-								"imgPath": "/img/steps/img-1.png"
+								"imgPath": "/img/steps/img-1.png",
+								"btn_text": "",
+								"btn_link": ""
 							},
 							{
 								"title": "Принимайте заявки",
 								"desc": "Включайте монетизацию и принимайте заявки от рекламодателей",
-								"imgPath": "/img/steps/img-2.png"
+								"imgPath": "/img/steps/img-2.png",
+								"btn_text": "",
+								"btn_link": ""
 							},
 							{
 								"title": "Зарабатывайте",
 								"desc": "Получайте деньги за рекламу и выводите их на свой счёт",
-								"imgPath": "/img/steps/img-3.png"
+								"imgPath": "/img/steps/img-3.png",
+								"btn_text": "Перейти в кабинет",
+								"btn_link": "/app"
 							}
 						]
 					}
@@ -904,17 +910,23 @@ const defaultState = {
 							{
 								"title": "Создайте кабинет",
 								"desc": "Зарегистрируйтесь как рекламодатель или агентство",
-								"imgPath": "/img/steps/img-4.png"
+								"imgPath": "/img/steps/img-4.png",
+								"btn_text": "",
+								"btn_link": ""
 							},
 							{
 								"title": "Выберите сообщества",
 								"desc": "Добавьте креатив и оплатите посты у подходящих авторов",
-								"imgPath": "/img/steps/img-5.png"
+								"imgPath": "/img/steps/img-5.png",
+								"btn_text": "",
+								"btn_link": ""
 							},
 							{
 								"title": "Отслеживайте выход рекламы",
 								"desc": "Оценивайте эффективность вышедших постов",
-								"imgPath": "/img/steps/img-6.png"
+								"imgPath": "/img/steps/img-6.png",
+								"btn_text": "",
+								"btn_link": ""
 							}
 						]
 					}
