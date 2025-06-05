@@ -953,15 +953,26 @@ const defaultState = {
 				// 		"title": "Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте"
 				// 	}
 				// },
+				// {
+				// 	"block_slug": "banner_sellers",
+				// 	"block_state": {
+				// 		"title": "Превращайте <br> клики — в&nbsp;кэш",
+				// 		"desc": "",
+				// 		"btn_text": "К обучению",
+				// 		"btn_link": "https://expert.vk.com/marathon/kliki-v-kesh/landing/",
+				// 		"img": "./img/banner-sellers-2/img.png",
+				// 		"img_tablet": "./img/banner-sellers-2/img_tablet.png",
+				// 	}
+				// },
 				{
-					"block_slug": "banner_sellers",
+					"block_slug": "banner_kurs",
 					"block_state": {
-						"title": "Больше продаж на&nbsp;маркетплейсах — меньше затрат",
-						"desc": "",
-						"btn_text": "Подробнее",
-						"btn_link": "/for-sellers",
-						"img": "./img/banner-sellers-2/img.png",
-						"img_tablet": "./img/banner-sellers-2/img_tablet.png",
+						"title": "Превращайте <br> клики — в&nbsp;кэш",
+						"desc": "Научитесь продвигать продукты быстро и&nbsp;эффективно на&nbsp;бесплатном курсе для&nbsp;рекламодателей",
+						"btn_text": "К обучению",
+						"btn_link": "https://expert.vk.com/marathon/kliki-v-kesh/landing/",
+						"img": "./img/banner-kurs/img.png",
+						"img_tablet": "./img/banner-kurs/img.png",
 					}
 				},
 				{

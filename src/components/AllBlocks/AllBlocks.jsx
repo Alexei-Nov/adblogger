@@ -19,6 +19,7 @@ import VerticalSlider from 'components/VerticalSlider/VerticalSlider';
 import EntranceSellers from 'components/EntranceSellers/EntranceSellers';
 import NumberSeller from 'components/NumberSeller/NumberSeller';
 import PopupSeller from 'components/PopupSeller/PopupSeller';
+import BannerKurs from 'components/BannersKurs/BannerKurs';
 
 export default function AllBlocks({ pageState }) {
 	const dispatch = useDispatch();
@@ -56,6 +57,8 @@ export default function AllBlocks({ pageState }) {
 						return <Faq key={i} block_state={block.block_state} />;
 					case 'banner_sellers':
 						return <BannerSellers key={i} block_state={block.block_state} />;
+					case 'banner_kurs':
+						return <BannerKurs key={i} block_state={block.block_state} />;
 					case 'connect':
 						return <Connect key={i} block_state={block.block_state} />;
 					case 'sales_improvement':
