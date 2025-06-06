@@ -982,7 +982,7 @@ const defaultState = {
 						"title": "Превращайте <br> клики — в&nbsp;кэш",
 						"desc": "Научитесь продвигать продукты быстро и&nbsp;эффективно на&nbsp;бесплатном курсе для&nbsp;рекламодателей",
 						"btn_text": "К обучению",
-						"btn_link": "https://expert.vk.com/marathon/kliki-v-kesh/landing/",
+						"btn_link": "https://vk.cc/cMyz6F",
 						"img": "./img/banner-kurs/img.png",
 						"img_tablet": "./img/banner-kurs/img.png",
 					}

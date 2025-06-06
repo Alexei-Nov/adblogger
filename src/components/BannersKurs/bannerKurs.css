@@ -65,16 +65,15 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
   }
   .banner-kurs__btn {
     margin-top: 32px;
   }
   .banner-kurs__title {
-    max-width: 495px;
     width: 100%;
   }
   .banner-kurs__desc {
-    max-width: 495px;
     width: 100%;
   }
   .banner-kurs__img {
