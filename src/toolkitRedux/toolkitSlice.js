@@ -379,8 +379,8 @@ const defaultState = {
 						"titleBlue": "",
 						"items": [
 							{
-								"numPrev": "49",
-								"numCurrent": "50",
+								"numPrev": "54",
+								"numCurrent": "55",
 								"numAfter": "",
 								"numLabel": "тыс.",
 								"desc": "блогеров <br> и&nbsp;сообществ"
@@ -393,8 +393,8 @@ const defaultState = {
 								"desc": "рекламных <br> интеграций в&nbsp;неделю"
 							},
 							{
-								"numPrev": "319",
-								"numCurrent": "320",
+								"numPrev": "499",
+								"numCurrent": "500",
 								"numAfter": "",
 								"numLabel": "тыс.",
 								"desc": "опубликованных <br> рекламных интеграций"
