@@ -338,7 +338,7 @@ const defaultState = {
 							},
 							{
 								"question": "Могу ли я рекламировать своё сообщество через VK AdBlogger или VK Реклама?",
-								"answer": "<p>Да, на&nbsp;обеих рекламных площадках автор может продвигать своё&nbsp;сообщество и&nbsp;привлекать новых подписчиков. Для&nbsp;этого ему потребуется создать рекламный кабинет в&nbsp;VK&nbsp;AdBlogger или&nbsp;<a href='https://ads.vk.com/promo/firstbonus?utm_source=vk_adblogger_site_authors' target='_blank'>VK&nbsp;Реклама</a>.</p> <p>Дополнительно новые пользователи <a href='https://ads.vk.com/promo/firstbonus?utm_source=vk_adblogger_site_authors' target='_blank'>VK&nbsp;Реклама</a> могут получить приветственный  бонус до&nbsp;10 000 ₽ на&nbsp;первую рекламу. Его можно использовать, чтобы&nbsp;продвигать своё&nbsp;сообщество или&nbsp;овары и&nbsp;услуги в&nbsp;нём.</p>"
+								"answer": "<p>Да, на&nbsp;обеих рекламных площадках автор может продвигать своё&nbsp;сообщество и&nbsp;привлекать новых подписчиков. Для&nbsp;этого ему потребуется создать рекламный кабинет в&nbsp;VK&nbsp;AdBlogger или&nbsp;<a href='https://ads.vk.com/promo/firstbonus?utm_source=vk_adblogger_site_authors' target='_blank'>VK&nbsp;Реклама</a>.</p> <p>Дополнительно новые пользователи <a href='https://ads.vk.com/promo/firstbonus?utm_source=vk_adblogger_site_authors' target='_blank'>VK&nbsp;Реклама</a> могут получить приветственный  бонус до&nbsp;10 000 ₽ на&nbsp;первую рекламу. Его можно использовать, чтобы&nbsp;продвигать своё&nbsp;сообщество или&nbsp;товары и&nbsp;услуги в&nbsp;нём.</p>"
 							}
 						]
 					}
