@@ -23,6 +23,8 @@ import BannerKurs from 'components/BannersKurs/BannerKurs';
 import StepsTovary from 'components/StepsTovary/StepsTovary';
 import СonnectionСonditions from 'components/СonnectionСonditions/СonnectionСonditions';
 import Calculator from 'components/Calculator/Calculator';
+import Advices from 'components/Advices/Advices';
+import CasePreview from 'components/CasePreview/CasePreview';
 
 export default function AllBlocks({ pageState }) {
 	const dispatch = useDispatch();
@@ -82,6 +84,10 @@ export default function AllBlocks({ pageState }) {
 						return <СonnectionСonditions key={i} block_state={block.block_state} />;
 					case 'calculator':
 						return <Calculator key={i} block_state={block.block_state} />;
+					case 'advices':
+						return <Advices key={i} block_state={block.block_state} />;
+					case 'case_preview':
+						return <CasePreview key={i} block_state={block.block_state} />;
 					default:
 						return null;
 				}

@@ -107,6 +107,7 @@
   }
   .connection-conditions__left {
     padding: 40px 24px 24px;
+    border-radius: 40px;
   }
   .connection-conditions__list {
     gap: 30px;
@@ -123,5 +124,6 @@
   }
   .connection-conditions__right {
     padding: 40px 24px 24px;
+    border-radius: 40px;
   }
 }

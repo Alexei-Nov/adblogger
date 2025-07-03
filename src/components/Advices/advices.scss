@@ -1,0 +1,140 @@
+.advices {
+	&__title {
+		font-family: "VK Sans Display Expanded";
+		margin-bottom: 72px;
+		text-align: center;
+	}
+	&__wrapper {
+		width: 100%;
+		max-width: 1096px;
+		display: flex;
+		gap: 24px;
+		margin: 0 auto;
+	}
+	&__bottom {
+		margin: 0 auto;
+		margin-top: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-radius: 48px;
+		background-color: var(--blue-2);
+		padding: 40px;
+		color: var(--black);
+		width: 100%;
+		max-width: 1096px;
+	}
+	&__bottom-title {
+		font-size: 32px;
+		line-height: 100%;
+		font-weight: 600;
+		font-family: "VK Sans Display Expanded";
+	}
+	&__img {
+		display: flex;
+		width: 100%;
+		height: 240px;
+		margin-bottom: 26px;
+
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: center;
+		}
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 30px 40px;
+		border-radius: 48px;
+		background-color: var(--black-2);
+	}
+	&__name {
+		margin-bottom: 30px;
+		color: var(--blue-2);
+		text-align: center;
+		font-family: "VK Sans Display Expanded";
+		font-size: 34px;
+		font-weight: 600;
+		line-height: normal;
+	}
+	&__list {
+		margin-bottom: 46px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	&__list-item {
+		padding-left: 35px;
+		position: relative;
+		font-size: 22px;
+		line-height: normal;
+		&::before {
+			display: block;
+			content: "";
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			background-color: var(--blue-1);
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	&__btn {
+		margin-top: auto;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.advices {
+		&__wrapper {
+			flex-direction: column;
+		}
+		&__bottom {
+			flex-direction: column;
+			gap: 46px;
+		}
+		&__img {
+			height: 220px;
+		}
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.advices {
+		&__wrapper {
+			margin: 0 -24px;
+			width: auto;
+			gap: 20px;
+		}
+		&__bottom {
+			margin: 20px -24px 0;
+			width: auto;
+			padding: 40px 24px 24px;
+			border-radius: 40px;
+		}
+		&__bottom-btn {
+			width: 100%;
+		}
+		&__bottom-title {
+			text-align: center;
+			font-size: 26px;
+			line-height: normal;
+			max-width: 286px;
+		}
+		&__item {
+			padding: 24px;
+			border-radius: 40px;
+		}
+		&__name {
+			font-size: 26px;
+		}
+		&__list-item {
+			font-size: 20px;
+		}
+	}
+}
