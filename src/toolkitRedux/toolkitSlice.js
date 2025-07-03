@@ -979,12 +979,25 @@ const defaultState = {
 				{
 					"block_slug": "banner_kurs",
 					"block_state": {
-						"title": "Превращайте <br> клики — в&nbsp;кэш",
-						"desc": "Научитесь продвигать продукты быстро и&nbsp;эффективно на&nbsp;бесплатном курсе для&nbsp;рекламодателей",
-						"btn_text": "К обучению",
-						"btn_link": "https://vk.cc/cMyz6F",
-						"img": "./img/banner-kurs/img.png",
-						"img_tablet": "./img/banner-kurs/img.png",
+						"banners": [
+							{
+								"title": "Пройдите сертификацию от&nbsp;VK AdBlogger",
+								"desc": "Подтвердите свою экспертизу и&nbsp;получите&nbsp;сертификат",
+								"btn_text": "Узнать больше",
+								"btn_link": "https://vk.cc/cNhTjJ",
+								"img": "./img/banner-kurs/img2.png",
+								"img_tablet": "./img/banner-kurs/img2_tablet.png",
+								"modificator": "type-2"
+							},
+							{
+								"title": "Превращайте <br> клики — в&nbsp;кэш",
+								"desc": "Научитесь продвигать продукты быстро и&nbsp;эффективно на&nbsp;бесплатном курсе для&nbsp;рекламодателей",
+								"btn_text": "К обучению",
+								"btn_link": "https://vk.cc/cMyz6F",
+								"img": "./img/banner-kurs/img.png",
+								"img_tablet": "./img/banner-kurs/img.png"
+							}
+						]
 					}
 				},
 				{
@@ -1329,6 +1342,67 @@ const defaultState = {
 				{
 					"block_slug": "preloader",
 					"block_state": {}
+				},
+
+				{
+					"block_slug": "steps_tovary",
+					"block_state": {
+						"title": "подключайтесь к&nbsp;VK&nbsp;AdBlogger и&nbsp;зарабатывайте ",
+						"desc": "Рекламируйте товары с&nbsp;Ozon в&nbsp;постах и&nbsp;клипах.</br> Получайте фиксированный доход за&nbsp;просмотры и&nbsp;процент за&nbsp;продажи ",
+						"gallery": [
+							{
+								"img": "./img/steps-tovary/img-1.png"
+							},
+							{
+								"img": "./img/steps-tovary/img-2.png"
+							},
+							{
+								"img": "./img/steps-tovary/img-3.png"
+							}
+						],
+						"steps": [
+							{
+								"text": "<b>Зарегистрируйтесь</b> как автор, подключите своё сообщество и&nbsp;укажите реквизиты"
+							},
+							{
+								"text": "<b>Выбирайте товары</b> в&nbsp;каталоге и&nbsp;публикуйте посты или&nbsp;клипы со&nbsp;ссылкой на&nbsp;Ozon "
+							},
+							{
+								"text": "<b>Получайте фиксированные выплаты</b> за&nbsp;просмотры публикаций и&nbsp;процент с&nbsp;каждой продажи "
+							}
+						],
+						"btn_link": "/app",
+						"btn_text": "Перейти в кабинет",
+					}
+				},
+				{
+					"block_slug": "connection_conditions",
+					"block_state": {
+						"title": "условия подключения </br> к&nbsp;программе",
+						"desc": "Если вы пока не&nbsp;подходите под&nbsp;условия, <span class='blue-text fw-600'> узнайте, как улучшить сообщество </span> в&nbsp;наших рекомендациях",
+						"list": [
+							{
+								"text": "У&nbsp;автора есть самозанятость, ИП или&nbsp;юридическое лицо"
+							},
+							{
+								"text": "Открытое сообщество от&nbsp;1000 подписчиков"
+							},
+							{
+								"text": "Хотя&nbsp;бы одна публикация за&nbsp;последние 30&nbsp;дней"
+							}
+						],
+						"btn_right_link": "/app",
+						"btn_right_text": "Узнать больше",
+						"btn_link": "/app",
+						"btn_text": "Перейти в кабинет",
+					}
+				},
+				{
+					"block_slug": "calculator",
+					"block_state": {
+						"title": "рассчитайте свой заработок",
+						"subtitle": "вот здесь будет калькулятор",
+					}
 				},
 
 				{

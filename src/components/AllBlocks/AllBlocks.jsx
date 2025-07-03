@@ -20,6 +20,9 @@ import EntranceSellers from 'components/EntranceSellers/EntranceSellers';
 import NumberSeller from 'components/NumberSeller/NumberSeller';
 import PopupSeller from 'components/PopupSeller/PopupSeller';
 import BannerKurs from 'components/BannersKurs/BannerKurs';
+import StepsTovary from 'components/StepsTovary/StepsTovary';
+import СonnectionСonditions from 'components/СonnectionСonditions/СonnectionСonditions';
+import Calculator from 'components/Calculator/Calculator';
 
 export default function AllBlocks({ pageState }) {
 	const dispatch = useDispatch();
@@ -74,7 +77,11 @@ export default function AllBlocks({ pageState }) {
 					case 'popup_seller':
 						return <PopupSeller key={i} block_state={block.block_state} />;
 					case 'steps_tovary':
-						return <PopupSeller key={i} block_state={block.block_state} />;
+						return <StepsTovary key={i} block_state={block.block_state} />;
+					case 'connection_conditions':
+						return <СonnectionСonditions key={i} block_state={block.block_state} />;
+					case 'calculator':
+						return <Calculator key={i} block_state={block.block_state} />;
 					default:
 						return null;
 				}

@@ -1,0 +1,96 @@
+.connection-conditions {
+	&__title {
+		font-family: "VK Sans Display Expanded";
+		margin-bottom: 72px;
+		text-align: center;
+	}
+	&__wrapper {
+		display: flex;
+		gap: 24px;
+		justify-content: center;
+	}
+	&__left {
+		width: 100%;
+		max-width: 648px;
+		padding: 40px;
+		border-radius: 48px;
+		background: var(--blue-2);
+		color: var(--black);
+	}
+	&__btn {
+		margin-top: 40px;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		font-size: 28px;
+		line-height: normal;
+		font-weight: 600;
+	}
+	&__list-item {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+	}
+	&__list-icon {
+		display: flex;
+	}
+	&__right {
+		width: 100%;
+		max-width: 424px;
+		border-radius: 48px;
+		border: 2px solid var(--blue-2);
+		padding: 40px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__right-btn {
+		margin-top: 40px;
+		background-color: rgba(237, 243, 252, 0.08);
+	}
+	&__right-text {
+		font-size: 28px;
+		line-height: normal;
+		margin-bottom: auto;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.connection-conditions {
+		&__wrapper {
+			flex-direction: column;
+		}
+		&__right {
+			max-width: none;
+		}
+		&__left {
+			max-width: none;
+		}
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.connection-conditions {
+		&__wrapper {
+			margin: 0 -24px;
+		}
+		&__title {
+			margin-bottom: 60px;
+		}
+		&__left {
+			padding: 40px 24px 24px;
+		}
+		&__list {
+			gap: 30px;
+		}
+		&__list-item {
+			gap: 10px;
+			align-items: flex-start;
+			flex-direction: column;
+		}
+		&__right {
+			padding: 40px 24px 24px;
+		}
+	}
+}

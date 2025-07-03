@@ -1,1 +1,207 @@
-/* No CSS */
+.steps-tovary__wrapper {
+  border-radius: 48px;
+  background: var(--blue-2);
+  padding: 40px;
+  color: var(--black);
+  width: 100%;
+  max-width: 1096px;
+  margin: 0 auto;
+}
+
+.steps-tovary__title {
+  text-align: center;
+  line-height: normal;
+  font-family: "VK Sans Display Expanded";
+}
+
+.steps-tovary__desc {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 28px;
+  line-height: 100%;
+}
+
+.steps-tovary__heading {
+  margin-bottom: 60px;
+}
+
+.steps-tovary__steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 596px;
+}
+
+.steps-tovary__btn {
+  margin-top: 40px;
+}
+
+.steps-tovary__steps-body {
+  padding: 30px 25px;
+  padding-top: 83px;
+  -webkit-mask-image: url("/public/img/steps-tovary/mask.svg");
+          mask-image: url("/public/img/steps-tovary/mask.svg");
+  -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background-color: var(--blue-1);
+  min-height: 208px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.steps-tovary__steps-item {
+  position: relative;
+}
+
+.steps-tovary__steps-desc {
+  margin-top: auto;
+}
+
+.steps-tovary__steps-num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--blue-1);
+}
+
+.steps-tovary__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.steps-tovary__slider {
+  border-radius: 30px;
+  border: 8px solid var(--white);
+  background-color: var(--white);
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 395px;
+  z-index: 1;
+}
+
+.steps-tovary__slide-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.steps-tovary__slide-img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.steps-tovary__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+
+.steps-tovary__pagination {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 15px !important;
+  left: 15px !important;
+  z-index: 2;
+}
+
+.steps-tovary .swiper-pagination-bullet {
+  background-color: var(--white);
+  opacity: 0.5;
+}
+
+.steps-tovary .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .steps-tovary__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .steps-tovary__steps {
+    max-width: 314px;
+    gap: 20px;
+  }
+  .steps-tovary__steps-body {
+    padding-top: 90px;
+    -webkit-mask-image: url("/public/img/steps-tovary/mask_mob.svg");
+            mask-image: url("/public/img/steps-tovary/mask_mob.svg");
+  }
+  .steps-tovary__desc {
+    font-size: 22px;
+    line-height: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .steps-tovary__wrapper {
+    width: auto;
+    margin: 0 -24px;
+    padding: 40px 24px 24px;
+  }
+  .steps-tovary__heading {
+    margin-bottom: 40px;
+  }
+  .steps-tovary__desc {
+    margin-top: 40px;
+  }
+  .steps-tovary__body {
+    gap: 40px;
+  }
+}

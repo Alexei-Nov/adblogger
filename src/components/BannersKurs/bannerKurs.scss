@@ -4,6 +4,14 @@
 		border-radius: 28px;
 		border: 2px solid var(--black-2);
 		overflow: hidden;
+
+		&_type-2 {
+			.banner-kurs__img {
+				& img {
+					transform: scale(1.25);
+				}
+			}
+		}
 	}
 	&__desc {
 		margin-top: 30px;

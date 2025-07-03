@@ -81,6 +81,11 @@ body {
   line-height: 110%;
 }
 
+.text-40 {
+  font-size: 40px;
+  line-height: 110%;
+}
+
 .text-32 {
   font-size: 32px;
   line-height: 110%;
@@ -139,6 +144,10 @@ body {
     font-size: 43px;
     line-height: 110%;
   }
+  .text-40 {
+    font-size: 30px;
+    line-height: 110%;
+  }
   .text-28 {
     font-size: 20px;
     line-height: 120%;
@@ -157,6 +166,10 @@ body {
   }
   .text-48 {
     font-size: 22px;
+    line-height: 110%;
+  }
+  .text-40 {
+    font-size: 26px;
     line-height: 110%;
   }
   .text-28 {
@@ -280,12 +293,18 @@ body {
   border: 1px solid var(--white);
 }
 
+.btn_border-black {
+  color: var(--black);
+  background-color: transparent;
+  border: 1px solid var(--black);
+}
+
 .btn_wide {
   width: 100%;
 }
 
 .btn_rounded {
-  border-radius: 50px;
+  border-radius: 100px;
 }
 
 .btn_transparent {
