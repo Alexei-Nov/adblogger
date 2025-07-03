@@ -73,6 +73,8 @@ export default function AllBlocks({ pageState }) {
 						return <NumberSeller key={i} block_state={block.block_state} />;
 					case 'popup_seller':
 						return <PopupSeller key={i} block_state={block.block_state} />;
+					case 'steps_tovary':
+						return <PopupSeller key={i} block_state={block.block_state} />;
 					default:
 						return null;
 				}

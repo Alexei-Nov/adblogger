@@ -21,7 +21,7 @@ export default function Header() {
 					<div className="header__wrapper">
 						<NavLink to='/' className="header__logo" onClick={removeMenuClass}>
 							<picture>
-								<source media="(max-width: 570px)" srcSet="/img/logo_mob.svg" />
+								{/* <source media="(max-width: 570px)" srcSet="/img/logo_mob.svg" /> */}
 								<img src='/img/logo.svg' alt="logo" />
 							</picture>
 						</NavLink>
@@ -60,6 +60,14 @@ export default function Header() {
 										onClick={removeMenuClass}
 										end
 									>Селлерам</NavLink>
+								</li>
+								<li className='nav__item'>
+									<NavLink
+										to='/tovary'
+										className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
+										onClick={removeMenuClass}
+										end
+									>Товары</NavLink>
 								</li>
 							</ul>
 						</nav>

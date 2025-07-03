@@ -3,7 +3,7 @@
 	z-index: 10;
 	&__logo {
 		display: flex;
-		width: 350px;
+		// width: 350px;
 		height: 44px;
 		& img {
 			width: 100%;
@@ -51,7 +51,7 @@
 	}
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 	.header {
 		&__wrapper {
 			gap: 16px;
@@ -159,6 +159,14 @@
 		}
 		&__wrapper {
 			justify-content: space-between;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header {
+		&__logo {
+			height: 36px;
 		}
 	}
 }

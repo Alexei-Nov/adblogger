@@ -7,7 +7,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 350px;
   height: 44px;
 }
 
@@ -68,7 +67,7 @@
   background-color: #00d3e6;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .header__wrapper {
     gap: 16px;
   }
@@ -191,5 +190,11 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__logo {
+    height: 36px;
   }
 }
