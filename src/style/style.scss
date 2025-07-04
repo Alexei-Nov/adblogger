@@ -286,6 +286,18 @@ body {
 	}
 	&_rounded {
 		border-radius: 100px;
+		&:hover {
+			background-color: var(--white);
+			color: var(--black);
+		}
+		&.btn {
+			&_border-black {
+				&:hover {
+					background-color: var(--black);
+					color: var(--white);
+				}
+			}
+		}
 	}
 	&_transparent {
 		background-color: transparent;

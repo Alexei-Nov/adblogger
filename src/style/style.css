@@ -307,6 +307,16 @@ body {
   border-radius: 100px;
 }
 
+.btn_rounded:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.btn_rounded.btn_border-black:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
 .btn_transparent {
   background-color: transparent;
   color: var(--white);

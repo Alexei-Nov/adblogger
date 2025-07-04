@@ -25,6 +25,8 @@ import СonnectionСonditions from 'components/СonnectionСonditions/Сonnectio
 import Calculator from 'components/Calculator/Calculator';
 import Advices from 'components/Advices/Advices';
 import CasePreview from 'components/CasePreview/CasePreview';
+import CasesSlider from 'components/CasesSlider/CasesSlider';
+import CardsSlider from 'components/CardsSlider/CardsSlider';
 
 export default function AllBlocks({ pageState }) {
 	const dispatch = useDispatch();
@@ -88,6 +90,10 @@ export default function AllBlocks({ pageState }) {
 						return <Advices key={i} block_state={block.block_state} />;
 					case 'case_preview':
 						return <CasePreview key={i} block_state={block.block_state} />;
+					case 'cases_slider':
+						return <CasesSlider key={i} block_state={block.block_state} />;
+					case 'cards_slider':
+						return <CardsSlider key={i} block_state={block.block_state} />;
 					default:
 						return null;
 				}

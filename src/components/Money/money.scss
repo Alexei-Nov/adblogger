@@ -35,6 +35,14 @@
 			transform: translate(-50%, -50%);
 		}
 	}
+	&_without-border {
+		& .money {
+			&__wrapper {
+				overflow: visible;
+				border: none;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 1024px) {

@@ -73,7 +73,7 @@ export default function Header() {
 						</nav>
 						<a
 							href={btnState.link}
-							className={"header__btn btn btn_small text-18 fw-500 "}
+							className={"header__btn btn btn_small text-18 fw-500 " + (window.location.pathname == '/tovary' ? 'btn_rounded btn_border' : '')}
 							onClick={() => {
 								handleTracking('registration_header')
 								handleTracking('registration_all')

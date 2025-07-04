@@ -1,0 +1,90 @@
+.cases-slider {
+	&__title {
+		text-align: center;
+		margin-bottom: 72px;
+		font-family: "VK Sans Display Expanded";
+	}
+	&__slider {
+		overflow: visible;
+		width: 100%;
+		max-width: 418px;
+		height: calc(748px + 58px);
+		padding-bottom: 58px;
+	}
+	&__slide {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		border-radius: 48px;
+		transition: all ease 0.5s;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+
+		&:not(.swiper-slide-active) {
+			opacity: 0.5;
+			transform: scale(0.9);
+
+			& .cases-slider {
+				&__slide-icon {
+					opacity: 0;
+				}
+			}
+		}
+	}
+	&__navigation {
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		top: calc(50% - 29px);
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: fit-content;
+		width: calc(100% + 200px);
+		pointer-events: none;
+		z-index: 2;
+	}
+	&__prev,
+	&__next {
+		display: flex;
+		border-radius: 50%;
+		pointer-events: all;
+		cursor: pointer;
+	}
+	&__slide-icon {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 2;
+		width: 60px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		background-color: var(--blue-2);
+		transition: all ease 0.5s;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.cases-slider {
+		&__navigation {
+			width: calc(100% + 34px);
+		}
+		&__slide {
+			border-radius: 30px;
+			&:not(.swiper-slide-active) {
+				transform: none;
+			}
+		}
+		&__slider {
+			max-width: 312px;
+			height: calc(583px + 58px);
+		}
+	}
+}

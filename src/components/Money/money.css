@@ -47,6 +47,11 @@
           transform: translate(-50%, -50%);
 }
 
+.money_without-border .money__wrapper {
+  overflow: visible;
+  border: none;
+}
+
 @media screen and (max-width: 1024px) {
   .money__img img {
     width: calc(100% + 100px);

@@ -27,13 +27,13 @@ export default function Money({ block_state }) {
 
 	return (
 		<>
-			<section className='section money'>
+			<section className={'section money ' + (block_state.has_border == 'false' ? 'money_without-border' : '')}>
 				<div className="container">
 					<div className="money__wrapper" >
 						<h2 className="money__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></h2>
 						<a
 							href={btnState.link}
-							className="money__btn btn btn_border"
+							className={"money__btn btn btn_border " + (window.location.pathname == '/tovary' ? 'btn_rounded' : '')}
 							onClick={() => {
 								handleTracking('registration_other')
 								handleTracking('registration_all')

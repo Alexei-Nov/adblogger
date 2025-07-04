@@ -1,0 +1,112 @@
+.cases-slider__title {
+  text-align: center;
+  margin-bottom: 72px;
+  font-family: "VK Sans Display Expanded";
+}
+
+.cases-slider__slider {
+  overflow: visible;
+  width: 100%;
+  max-width: 418px;
+  height: calc(748px + 58px);
+  padding-bottom: 58px;
+}
+
+.cases-slider__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 48px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.cases-slider__slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.cases-slider__slide:not(.swiper-slide-active) {
+  opacity: 0.5;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.cases-slider__slide:not(.swiper-slide-active) .cases-slider__slide-icon {
+  opacity: 0;
+}
+
+.cases-slider__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: calc(50% - 29px);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: calc(100% + 200px);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.cases-slider__prev, .cases-slider__next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.cases-slider__slide-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: var(--blue-2);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .cases-slider__navigation {
+    width: calc(100% + 34px);
+  }
+  .cases-slider__slide {
+    border-radius: 30px;
+  }
+  .cases-slider__slide:not(.swiper-slide-active) {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .cases-slider__slider {
+    max-width: 312px;
+    height: calc(583px + 58px);
+  }
+}

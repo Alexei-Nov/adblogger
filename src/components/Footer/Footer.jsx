@@ -11,7 +11,7 @@ export default function Footer({ footer }) {
 	const location = useLocation()
 	const isForAuthors = window.location.pathname === "/for-authors"
 	const isForAdvertisers = window.location.pathname === "/for-advertisers"
-	
+
 	useEffect(() => {
 		switch (window.location.pathname) {
 			case '/for-authors':
@@ -31,39 +31,39 @@ export default function Footer({ footer }) {
 		{ text: 'Простор для контента', link: 'top-cases/case-3' },
 		{ text: 'Космически нативно', link: 'top-cases/case-2' },
 		{ text: 'Все кейсы', link: 'top-cases' }
-	  ];
-	  
-	  const documentItems = [
+	];
+
+	const documentItems = [
 		{ text: 'Пользовательское соглашение', link: 'https://adblogger.vk.com/documents/terms', target: "_blank" },
 		{ text: 'Политика конфиденциальности', link: 'https://adblogger.vk.com/documents/privacy', target: "_blank" },
 		...(isForAuthors
-		  ? [
-			  { text: 'Оферта для авторов', link: 'https://adblogger.vk.com/documents/offer_creator', target: "_blank" },
-			  { text: 'Условия для авторов', link: 'https://adblogger.vk.com/documents/terms_creator', target: "_blank" },
-			  { text: 'Правила размещения рекламы', link: 'https://adblogger.vk.com/documents/moderation', target: "_blank" },
+			? [
+				{ text: 'Оферта для авторов', link: 'https://adblogger.vk.com/documents/offer_creator', target: "_blank" },
+				{ text: 'Условия для авторов', link: 'https://adblogger.vk.com/documents/terms_creator', target: "_blank" },
+				{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.com/documents/moderation', target: "_blank" },
 			]
-		  : []),
+			: []),
 		...(isForAdvertisers
-		  ? [
-			  { text: 'Оферта для рекламодателей', link: 'https://adblogger.vk.com/documents/offer_adv', target: "_blank" },
-			  { text: 'Правила оказания рекламных услуг', link: 'https://adblogger.vk.com/documents/rules_adv', target: "_blank" },
-			  { text: 'Правила размещения рекламы', link: 'https://adblogger.vk.com/documents/moderation', target: "_blank" },
+			? [
+				{ text: 'Оферта для рекламодателей', link: 'https://adblogger.vk.com/documents/offer_adv', target: "_blank" },
+				{ text: 'Правила оказания рекламных услуг', link: 'https://adblogger.vk.com/documents/rules_adv', target: "_blank" },
+				{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.com/documents/moderation', target: "_blank" },
 			]
-		  : []),
-	  ];
+			: []),
+	];
 
-	  const helpItems = [
+	const helpItems = [
 		...(isForAuthors
-		  ? [
-			  { text: 'FAQ', link: 'https://adblogger.vk.com/documents/faq_author', target: "_blank" }
+			? [
+				{ text: 'FAQ', link: 'https://adblogger.vk.com/documents/faq_author', target: "_blank" }
 			]
-		  : [
-			  { text: 'FAQ', link: 'https://adblogger.vk.com/documents/faq_advertiser', target: "_blank" }
+			: [
+				{ text: 'FAQ', link: 'https://adblogger.vk.com/documents/faq_advertiser', target: "_blank" }
 			]),
 		{ text: 'Обратная связь', link: 'https://vk.cc/cyEF76', target: "_blank" }
-	  ];
-	  
-	  
+	];
+
+
 	return (
 		<>
 			<footer className='footer'>
@@ -74,7 +74,7 @@ export default function Footer({ footer }) {
 						</div>
 						<a
 							href={btnState.link}
-							className="footer__btn btn btn_small btn_border"
+							className={"footer__btn btn btn_small btn_border " + (window.location.pathname == '/tovary' ? 'btn_rounded' : '')}
 							onClick={() => {
 								handleTracking('registration_footer')
 								handleTracking('registration_all')
@@ -90,9 +90,9 @@ export default function Footer({ footer }) {
 						</div>
 						<nav className="footer__nav nav">
 							<ul className='nav__list'>
-								<NavItem title={"Кейсы"} submenu={caseItems}/>
-								<NavItem title={"Документы"} submenu={documentItems}/>
-								<NavItem title={"Помощь"} submenu={helpItems}/>
+								<NavItem title={"Кейсы"} submenu={caseItems} />
+								<NavItem title={"Документы"} submenu={documentItems} />
+								<NavItem title={"Помощь"} submenu={helpItems} />
 							</ul>
 						</nav>
 					</div>

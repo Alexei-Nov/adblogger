@@ -273,7 +273,8 @@ const defaultState = {
 				{
 					"block_slug": "money",
 					"block_state": {
-						"title": "Зарабатывайте </br> на&nbsp;своём контенте"
+						"title": "Зарабатывайте </br> на&nbsp;своём контенте",
+						"has_border": "true",
 					}
 				},
 				{
@@ -962,7 +963,8 @@ const defaultState = {
 				// {
 				// 	"block_slug": "money",
 				// 	"block_state": {
-				// 		"title": "Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте"
+				// 		"title": "Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте",
+				// 		"has_border": "true",
 				// 	}
 				// },
 				// {
@@ -1279,7 +1281,8 @@ const defaultState = {
 				{
 					"block_slug": "money",
 					"block_state": {
-						"title": "Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте"
+						"title": "Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте",
+						"has_border": "true",
 					}
 				},
 				// {
@@ -1344,6 +1347,70 @@ const defaultState = {
 					"block_state": {}
 				},
 
+				{
+					"block_slug": "cards_slider",
+					"block_state": {
+						"title": "рекламируйте товары с&nbsp;Ozon - получайте <span class='blue-text'>выплаты за&nbsp;просмотры</span>",
+						"btn_link": "/app",
+						"btn_text": "Перейти в кабинет",
+						"gallery": [
+							{
+								"img": "./img/cards-slider/img-1.png"
+							},
+							{
+								"img": "./img/cards-slider/img-2.png"
+							},
+							{
+								"img": "./img/cards-slider/img-3.png"
+							},
+							{
+								"img": "./img/cards-slider/img-4.png"
+							},
+							{
+								"img": "./img/cards-slider/img-5.png"
+							},
+							{
+								"img": "./img/cards-slider/img-1.png"
+							},
+							{
+								"img": "./img/cards-slider/img-2.png"
+							},
+							{
+								"img": "./img/cards-slider/img-3.png"
+							},
+							{
+								"img": "./img/cards-slider/img-4.png"
+							},
+							{
+								"img": "./img/cards-slider/img-5.png"
+							}
+						],
+						"items_list": [
+							{
+								"icon": "./img/cards-slider/icon-1.svg",
+								"name": "<span style='color: #7CEDF8;'>Автоматическая</span> </br> маркировка рекламы",
+								"dropdownn_text": "",
+							},
+							{
+								"icon": "./img/cards-slider/icon-2.svg",
+								"name": "<span style='color: #7CEDF8;'>Гарантированный доход</span></br> до&nbsp;90&nbsp;000&nbsp;₽ за&nbsp;посты и&nbsp;клипы",
+								"dropdownn_text": "<p>Платформа гарантирует минимальные выплаты за&nbsp;первые три публикации в&nbsp;каждом сообществе, если контент набрал 25% от&nbsp;целевых просмотров. </p><p>Размер выплаты зависит от&nbsp;формата контента (пост или&nbsp;клип) и&nbsp;числа подписчиков в&nbsp;сообществе.</p>",
+							},
+							{
+								"icon": "./img/cards-slider/icon-3.svg",
+								"name": "<span style='color: #7CEDF8;'>Большой каталог</span></br> товаров c&nbsp;Ozon",
+								"desc": "",
+								"dropdownn_text": "",
+							},
+							{
+								"icon": "./img/cards-slider/icon-4.svg",
+								"name": "<span style='color: #7CEDF8;'>Быстрое размещение</span></br> без&nbsp;согласований с&nbsp;рекламодателем",
+								"dropdownn_text": "",
+							}
+						],
+
+					}
+				},
 				{
 					"block_slug": "steps_tovary",
 					"block_state": {
@@ -1476,11 +1543,44 @@ const defaultState = {
 						"btn_text": "Подробнее",
 					}
 				},
+				{
+					"block_slug": "cases_slider",
+					"block_state": {
+						"title": "примеры других авторов",
+						"gallery": [
+							{
+								"img": "./img/cases-slider/img-1.png",
+							},
+							{
+								"img": "./img/cases-slider/img-2.png",
+							},
+							{
+								"img": "./img/cases-slider/img-3.png",
+							},
+							{
+								"img": "./img/cases-slider/img-4.png",
+							},
+							{
+								"img": "./img/cases-slider/img-1.png",
+							},
+							{
+								"img": "./img/cases-slider/img-2.png",
+							},
+							{
+								"img": "./img/cases-slider/img-3.png",
+							},
+							{
+								"img": "./img/cases-slider/img-4.png",
+							}
+						],
+					}
+				},
 
 				{
 					"block_slug": "money",
 					"block_state": {
-						"title": "Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте"
+						"title": "Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте",
+						"has_border": "false",
 					}
 				},
 				{
