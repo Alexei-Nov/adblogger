@@ -57,8 +57,8 @@
 	}
 	&__slide-icon {
 		position: absolute;
-		top: 10px;
-		right: 10px;
+		top: 16px;
+		right: 16px;
 		z-index: 2;
 		width: 60px;
 		height: 60px;
@@ -68,6 +68,12 @@
 		border-radius: 50%;
 		background-color: var(--blue-2);
 		transition: all ease 0.5s;
+		cursor: pointer;
+		color: var(--black);
+		&:hover {
+			color: var(--white);
+			background-color: var(--black);
+		}
 	}
 }
 
@@ -83,8 +89,13 @@
 			}
 		}
 		&__slider {
-			max-width: 312px;
-			height: calc(583px + 58px);
+			max-width: calc(100% - 48px);
+			aspect-ratio: 0.53;
+			height: auto;
+		}
+		&__slide-icon {
+			top: 10px;
+			right: 10px;
 		}
 	}
 }

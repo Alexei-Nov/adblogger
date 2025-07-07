@@ -102,6 +102,9 @@
 			object-position: center;
 		}
 	}
+	& .swiper-wrapper {
+		transition-timing-function: linear;
+	}
 }
 
 @media screen and (max-width: 1440px) {

@@ -5,6 +5,7 @@
   border-radius: 28px;
   border: 2px solid var(--black-2);
   overflow: hidden;
+  height: auto;
 }
 
 .banner-kurs__wrapper_type-2 .banner-kurs__img img {
@@ -36,6 +37,7 @@
   height: auto;
   width: 100%;
   max-width: 650px;
+  pointer-events: none;
 }
 
 .banner-kurs__img img {

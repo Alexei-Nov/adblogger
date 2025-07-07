@@ -52,6 +52,11 @@
   border: none;
 }
 
+.money_without-border .money__img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 @media screen and (max-width: 1024px) {
   .money__img img {
     width: calc(100% + 100px);

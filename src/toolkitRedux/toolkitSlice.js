@@ -1350,7 +1350,7 @@ const defaultState = {
 				{
 					"block_slug": "cards_slider",
 					"block_state": {
-						"title": "рекламируйте товары с&nbsp;Ozon - получайте <span class='blue-text'>выплаты за&nbsp;просмотры</span>",
+						"title": "рекламируйте товары с&nbsp;Ozon – получайте <span class='blue-text'>выплаты за&nbsp;просмотры</span>",
 						"btn_link": "/app",
 						"btn_text": "Перейти в кабинет",
 						"gallery": [
@@ -1417,6 +1417,9 @@ const defaultState = {
 						"title": "подключайтесь к&nbsp;VK&nbsp;AdBlogger и&nbsp;зарабатывайте ",
 						"desc": "Рекламируйте товары с&nbsp;Ozon в&nbsp;постах и&nbsp;клипах.</br> Получайте фиксированный доход за&nbsp;просмотры и&nbsp;процент за&nbsp;продажи ",
 						"gallery": [
+							{
+								"img": "./img/steps-tovary/img-4.png"
+							},
 							{
 								"img": "./img/steps-tovary/img-1.png"
 							},
@@ -1579,7 +1582,7 @@ const defaultState = {
 				{
 					"block_slug": "money",
 					"block_state": {
-						"title": "Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте",
+						"title": "зарабатывайте <br> на&nbsp;своём контенте",
 						"has_border": "false",
 					}
 				},

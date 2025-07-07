@@ -41,6 +41,11 @@
 				overflow: visible;
 				border: none;
 			}
+			&__img {
+				& img {
+					object-fit: contain;
+				}
+			}
 		}
 	}
 }

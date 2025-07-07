@@ -137,6 +137,11 @@
      object-position: center;
 }
 
+.cards-slider .swiper-wrapper {
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
 @media screen and (max-width: 1440px) {
   .cards-slider__list {
     width: -webkit-fit-content;
