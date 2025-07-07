@@ -43,13 +43,25 @@ export default function Money({ block_state }) {
 						</a>
 
 						<div className="money__img" ref={imgWrapper}>
-							<picture>
-								<source media="(max-width: 570px)" srcSet="/img/money/img-1_mob.png" sizes="img" />
-								<source media="(max-width: 1024px)" srcSet="/img/money/img-1_tablet.png" sizes="img" />
-								<img src="/img/money/img-1.png" alt="img" />
-							</picture>
-							<img src="/img/money/img-2.png" alt="img" />
-							<img src="/img/money/img-3.png" alt="img" />
+							{block_state.has_border == 'true' &&
+								<>
+									<picture>
+										<source media="(max-width: 570px)" srcSet="/img/money/img-1_mob.png" sizes="img" />
+										<source media="(max-width: 1024px)" srcSet="/img/money/img-1_tablet.png" sizes="img" />
+										<img src="/img/money/img-1.png" alt="img" />
+									</picture>
+									<img src="/img/money/img-2.png" alt="img" />
+									<img src="/img/money/img-3.png" alt="img" />
+								</>
+							}
+							{block_state.has_border == 'false' &&
+								<>
+									<picture>
+										<source media="(max-width: 570px)" srcSet="/img/money/img_v2_mob.png" sizes="img" />
+										<img src="/img/money/img_v2.png" alt="img" />
+									</picture>
+								</>
+							}
 						</div>
 					</div>
 				</div>

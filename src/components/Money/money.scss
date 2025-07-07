@@ -40,11 +40,16 @@
 			&__wrapper {
 				overflow: visible;
 				border: none;
+				padding: 195px 48px;
 			}
 			&__img {
 				& img {
 					object-fit: contain;
 				}
+			}
+			&__title {
+				font-size: 60px;
+				line-height: 100%;
 			}
 		}
 	}
@@ -61,6 +66,14 @@
 				display: none;
 			}
 		}
+		&_without-border {
+			& .money {
+				&__title {
+					font-size: 44px;
+					line-height: 100%;
+				}
+			}
+		}
 	}
 }
 
@@ -74,6 +87,20 @@
 			& img {
 				width: calc(100% + 50px);
 				height: calc(100% + 50px);
+			}
+		}
+		&_without-border {
+			& .money {
+				&__title {
+					font-size: 28px;
+					line-height: 100%;
+				}
+				&__wrapper {
+					padding: 300px 0px;
+				}
+				&__btn {
+					width: 100%;
+				}
 			}
 		}
 	}
