@@ -44,8 +44,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
-  height: 730px;
+  width: 100%;
+  max-width: 657px;
+  height: auto;
+  aspect-ratio: 0.9;
   margin-top: -25px;
   margin-right: -45px;
 }
