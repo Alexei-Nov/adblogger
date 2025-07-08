@@ -43,6 +43,9 @@ export default function Tile({ block_state }) {
 		<>
 			<section className='section tile' ref={wrapper}>
 				<div className="container">
+					{block_state.title &&
+						<div className="tile__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+					}
 					<Swiper className='tile__slider'
 						modules={[Pagination]}
 						spaceBetween={0}
@@ -81,8 +84,8 @@ export default function Tile({ block_state }) {
 										})}
 									</div>
 									<div className="tile__body ">
-										<div className="tile__subtitle text-32 fw-500">{item.title}</div>
-										<div className="tile__desc">{item.desc}</div>
+										<div className="tile__subtitle text-32 fw-500" dangerouslySetInnerHTML={{ __html: item.title }}></div>
+										<div className="tile__desc" dangerouslySetInnerHTML={{ __html: item.desc }}></div>
 									</div>
 								</SwiperSlide>
 							)

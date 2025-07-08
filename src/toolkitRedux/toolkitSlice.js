@@ -29,11 +29,52 @@ const defaultState = {
 					"block_slug": "preloader",
 					"block_state": {}
 				},
+				// {
+				// 	"block_slug": "entrance",
+				// 	"block_state": {
+				// 		"title": "<span class='tt-lc'>Зарабатывайте</span> на&nbsp;своём контенте",
+				// 		"videoPath": "/video/video-2.mp4"
+				// 	}
+				// },
 				{
-					"block_slug": "entrance",
+					"block_slug": "tile",
 					"block_state": {
-						"title": "<span class='tt-lc'>Зарабатывайте</span> на&nbsp;своём контенте",
-						"videoPath": "/video/video-2.mp4"
+						"title": "управляйте своим доходом",
+						"items": [
+							{
+								"id": 7,
+								"title": "Выбирайте из&nbsp;трёх видов заработка",
+								"desc": "Продвигайте товары самостоятельно или&nbsp;получайте заявки от&nbsp;рекламодателей",
+								"imgList": [
+									{
+										"desktop": "/img/tile/img7-1.png",
+										"mobile": "/img/tile/img7-1_mob.png"
+									}
+								]
+							},
+							{
+								"id": 8,
+								"title": "Занимайтесь творчеством, а&nbsp;не&nbsp;бумагами",
+								"desc": "Документооборот, маркировка и&nbsp;оплата рекламы — автоматические",
+								"imgList": [
+									{
+										"desktop": "/img/tile/img8-1.png",
+										"mobile": "/img/tile/img8-1_mob.png"
+									}
+								]
+							},
+							{
+								"id": 9,
+								"title": "Рекламируйте то, что&nbsp;интересно подписчикам ",
+								"desc": "Выбирайте, какие заявки принять или&nbsp;отклонить, либо настройте автоматический постинг",
+								"imgList": [
+									{
+										"desktop": "/img/tile/img9-1.png",
+										"mobile": "/img/tile/img9-1_mob.png"
+									}
+								]
+							}
+						]
 					}
 				},
 				{
@@ -43,8 +84,8 @@ const defaultState = {
 						"titleBlue": "от&nbsp;1&nbsp;000 подписчиков",
 						"items": [
 							{
-								"numPrev": "49",
-								"numCurrent": "50",
+								"numPrev": "59",
+								"numCurrent": "60",
 								"numAfter": "",
 								"numLabel": "тыс.",
 								"desc": "блогеров и&nbsp;сообществ <br> уже с&nbsp;нами"
@@ -67,68 +108,29 @@ const defaultState = {
 					}
 				},
 				{
-					"block_slug": "tile",
+					"block_slug": "steps",
 					"block_state": {
-						"items": [
+						"stepsList": [
 							{
-								"id": 1,
-								"title": "Размещайте рекламу в клипах или постах",
-								"desc": "Работайте в форматах, к которым привыкли ваши подписчики",
-								"imgList": [
-									{
-										"desktop": "/img/tile/img1-1.png",
-										"mobile": ""
-									},
-									{
-										"desktop": "/img/tile/img1-2.png",
-										"mobile": "/img/tile/img1-2_mob.png"
-									}
-								]
+								"title": "Подключитесь",
+								"desc": "Зарегистрируйтесь как автор, подключите своё сообщество и укажите реквизиты",
+								"imgPath": "/img/steps/img-1.png",
+								"btn_text": "",
+								"btn_link": ""
 							},
 							{
-								"id": 2,
-								"title": "Выпускайте готовую рекламу или по брифу",
-								"desc": "Размещайте готовые креативы от рекламодателя или создавайте посты в своём стиле",
-								"imgList": [
-									{
-										"desktop": "/img/tile/img2-1.png",
-										"mobile": ""
-									}
-								]
+								"title": "Принимайте заявки",
+								"desc": "Включайте монетизацию и принимайте заявки от рекламодателей",
+								"imgPath": "/img/steps/img-2.png",
+								"btn_text": "",
+								"btn_link": ""
 							},
 							{
-								"id": 3,
-								"title": "Занимайтесь творчеством, а не ОРД и бумагами",
-								"desc": "Документооборот, маркировка и оплата рекламы — автоматические",
-								"imgList": [
-									{
-										"desktop": "/img/tile/img3-1.png",
-										"mobile": "/img/tile/img3-1_mob.png"
-									},
-									{
-										"desktop": "/img/tile/img3-2.png",
-										"mobile": ""
-									},
-									{
-										"desktop": "/img/tile/img3-3.png",
-										"mobile": ""
-									}
-								]
-							},
-							{
-								"id": 4,
-								"title": "Рекламируйте то, что интересно подписчикам",
-								"desc": "Выбирайте, какие заявки принять, а какие — отклонить. Либо настройте автоматический постинг",
-								"imgList": [
-									{
-										"desktop": "/img/tile/img4-1.png",
-										"mobile": "/img/tile/img4-1_mob.png"
-									},
-									{
-										"desktop": "/img/tile/img4-2.png",
-										"mobile": ""
-									}
-								]
+								"title": "Зарабатывайте",
+								"desc": "Получайте деньги за рекламу и выводите их на свой счёт",
+								"imgPath": "/img/steps/img-3.png",
+								"btn_text": "Перейти в кабинет",
+								"btn_link": "/app"
 							}
 						]
 					}
@@ -214,55 +216,28 @@ const defaultState = {
 						]
 					}
 				},
-				{
-					"block_slug": "partners",
-					"block_state": {
-						"title": "<span class='tt-lc'>Заказывают</span> рекламу у авторов",
-						"rowsCount": 4,
-						"imgList": [
-							"/img/partners/img-1.png",
-							"/img/partners/img-2.png",
-							"/img/partners/img-3.png",
-							"/img/partners/img-4.png",
-							"/img/partners/img-5.png",
-							"/img/partners/img-6.png",
-							"/img/partners/img-7.png",
-							"/img/partners/img-8.png",
-							"/img/partners/img-9.png",
-							"/img/partners/img-10.png",
-							"/img/partners/img-11.png",
-							"/img/partners/img-12.png"
-						]
-					}
-				},
-				{
-					"block_slug": "steps",
-					"block_state": {
-						"stepsList": [
-							{
-								"title": "Подключитесь",
-								"desc": "Зарегистрируйтесь как автор, подключите своё сообщество и укажите реквизиты",
-								"imgPath": "/img/steps/img-1.png",
-								"btn_text": "",
-								"btn_link": ""
-							},
-							{
-								"title": "Принимайте заявки",
-								"desc": "Включайте монетизацию и принимайте заявки от рекламодателей",
-								"imgPath": "/img/steps/img-2.png",
-								"btn_text": "",
-								"btn_link": ""
-							},
-							{
-								"title": "Зарабатывайте",
-								"desc": "Получайте деньги за рекламу и выводите их на свой счёт",
-								"imgPath": "/img/steps/img-3.png",
-								"btn_text": "Перейти в кабинет",
-								"btn_link": "/app"
-							}
-						]
-					}
-				},
+				// {
+				// 	"block_slug": "partners",
+				// 	"block_state": {
+				// 		"title": "<span class='tt-lc'>Заказывают</span> рекламу у авторов",
+				// 		"rowsCount": 4,
+				// 		"imgList": [
+				// 			"/img/partners/img-1.png",
+				// 			"/img/partners/img-2.png",
+				// 			"/img/partners/img-3.png",
+				// 			"/img/partners/img-4.png",
+				// 			"/img/partners/img-5.png",
+				// 			"/img/partners/img-6.png",
+				// 			"/img/partners/img-7.png",
+				// 			"/img/partners/img-8.png",
+				// 			"/img/partners/img-9.png",
+				// 			"/img/partners/img-10.png",
+				// 			"/img/partners/img-11.png",
+				// 			"/img/partners/img-12.png"
+				// 		]
+				// 	}
+				// },
+
 				{
 					"block_slug": "case",
 					"block_state": {
@@ -844,6 +819,7 @@ const defaultState = {
 				{
 					"block_slug": "tile",
 					"block_state": {
+						"title": "",
 						"items": [
 							{
 								"id": 5,

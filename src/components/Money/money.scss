@@ -14,6 +14,8 @@
 		gap: 48px;
 		position: relative;
 		z-index: 1;
+		min-height: 400px;
+		justify-content: center;
 	}
 	&__img {
 		position: absolute;
@@ -82,6 +84,7 @@
 		&__wrapper {
 			padding: 70px 27px;
 			gap: 56px;
+			min-height: 320px;
 		}
 		&__img {
 			& img {

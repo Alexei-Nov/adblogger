@@ -21,6 +21,10 @@
   gap: 48px;
   position: relative;
   z-index: 1;
+  min-height: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .money__img {
@@ -81,6 +85,7 @@
   .money__wrapper {
     padding: 70px 27px;
     gap: 56px;
+    min-height: 320px;
   }
   .money__img img {
     width: calc(100% + 50px);
