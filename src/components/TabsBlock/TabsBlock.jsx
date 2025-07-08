@@ -4,12 +4,6 @@ import './tabsBlock.css'
 export default function TabsBlock({ block_state }) {
 	const [activeTab, setActiveTab] = useState(0)
 
-	// useEffect(() => {
-
-
-	// }, [activeTab]) 
-
-
 	return (
 		<>
 			<section className='section tabs-block'>
