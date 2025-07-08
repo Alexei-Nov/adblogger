@@ -27,6 +27,7 @@ import Advices from 'components/Advices/Advices';
 import CasePreview from 'components/CasePreview/CasePreview';
 import CasesSlider from 'components/CasesSlider/CasesSlider';
 import CardsSlider from 'components/CardsSlider/CardsSlider';
+import TabsBlock from 'components/TabsBlock/TabsBlock';
 
 export default function AllBlocks({ pageState }) {
 	const dispatch = useDispatch();
@@ -94,6 +95,8 @@ export default function AllBlocks({ pageState }) {
 						return <CasesSlider key={i} block_state={block.block_state} />;
 					case 'cards_slider':
 						return <CardsSlider key={i} block_state={block.block_state} />;
+					case 'tabs_block':
+						return <TabsBlock key={i} block_state={block.block_state} />;
 					default:
 						return null;
 				}
