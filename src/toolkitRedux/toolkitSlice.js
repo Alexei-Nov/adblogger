@@ -1463,7 +1463,7 @@ const defaultState = {
 					"block_slug": "connection_conditions",
 					"block_state": {
 						"title": "условия подключения </br> к&nbsp;программе",
-						"desc": "Если вы пока не&nbsp;подходите под&nbsp;условия, <span class='blue-text fw-600'> узнайте, как&nbsp;улучшить сообщество </span> в&nbsp;наших рекомендациях",
+						"desc": "Если вы пока не&nbsp;подходите&nbsp;под&nbsp;условия, <span class='blue-text fw-600'> узнайте, как&nbsp;улучшить сообщество </span> в&nbsp;наших рекомендациях",
 						"list": [
 							{
 								"text": "У&nbsp;автора есть самозанятость, ИП или&nbsp;юридическое лицо"
