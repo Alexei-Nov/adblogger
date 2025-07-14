@@ -158,6 +158,10 @@
   background-color: var(--black);
 }
 
+.article__tile-item_wide {
+  grid-column: span 2;
+}
+
 .article__tile-name {
   color: var(--blue-2);
 }

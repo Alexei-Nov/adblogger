@@ -115,36 +115,36 @@ const defaultState = {
 						]
 					}
 				},
-				{
-					"block_slug": "advantages",
-					"block_state": {
-						"titleWhite": "<span class='tt-lc'>Монетизируйте</span> сообщество",
-						"titleBlue": "от&nbsp;1&nbsp;000 подписчиков",
-						"items": [
-							{
-								"numPrev": "59",
-								"numCurrent": "60",
-								"numAfter": "",
-								"numLabel": "тыс.",
-								"desc": "блогеров и&nbsp;сообществ <br> уже с&nbsp;нами"
-							},
-							{
-								"numPrev": "9999",
-								"numCurrent": "10000",
-								"numAfter": "+",
-								"numLabel": "",
-								"desc": "рекламных <br> интеграций в&nbsp;неделю"
-							},
-							{
-								"numPrev": "7,0",
-								"numCurrent": "7,1  ",
-								"numAfter": "",
-								"numLabel": "млрд ₽",
-								"desc": "<a href='https://vk.com/press/content-2024' target='_blank'>заработали</a> авторы <br> ВКонтакте в&nbsp;2024 году"
-							}
-						]
-					}
-				},
+				// {
+				// 	"block_slug": "advantages",
+				// 	"block_state": {
+				// 		"titleWhite": "<span class='tt-lc'>Монетизируйте</span> сообщество",
+				// 		"titleBlue": "от&nbsp;1&nbsp;000 подписчиков",
+				// 		"items": [
+				// 			{
+				// 				"numPrev": "59",
+				// 				"numCurrent": "60",
+				// 				"numAfter": "",
+				// 				"numLabel": "тыс.",
+				// 				"desc": "блогеров и&nbsp;сообществ <br> уже с&nbsp;нами"
+				// 			},
+				// 			{
+				// 				"numPrev": "9999",
+				// 				"numCurrent": "10000",
+				// 				"numAfter": "+",
+				// 				"numLabel": "",
+				// 				"desc": "рекламных <br> интеграций в&nbsp;неделю"
+				// 			},
+				// 			{
+				// 				"numPrev": "7,0",
+				// 				"numCurrent": "7,1  ",
+				// 				"numAfter": "",
+				// 				"numLabel": "млрд ₽",
+				// 				"desc": "<a href='https://vk.com/press/content-2024' target='_blank'>заработали</a> авторы <br> ВКонтакте в&nbsp;2024 году"
+				// 			}
+				// 		]
+				// 	}
+				// },
 				{
 					"block_slug": "steps",
 					"block_state": {
@@ -386,36 +386,36 @@ const defaultState = {
 				// 		"media_mob": "/img/entrance-event/img_mob.png"
 				// 	}
 				// },
-				{
-					"block_slug": "advantages",
-					"block_state": {
-						"titleWhite": "",
-						"titleBlue": "",
-						"items": [
-							{
-								"numPrev": "54",
-								"numCurrent": "55",
-								"numAfter": "",
-								"numLabel": "тыс.",
-								"desc": "блогеров <br> и&nbsp;сообществ"
-							},
-							{
-								"numPrev": "9999",
-								"numCurrent": "10000",
-								"numAfter": "+",
-								"numLabel": "",
-								"desc": "рекламных <br> интеграций в&nbsp;неделю"
-							},
-							{
-								"numPrev": "499",
-								"numCurrent": "500",
-								"numAfter": "",
-								"numLabel": "тыс.",
-								"desc": "опубликованных <br> рекламных интеграций"
-							}
-						]
-					}
-				},
+				// {
+				// 	"block_slug": "advantages",
+				// 	"block_state": {
+				// 		"titleWhite": "",
+				// 		"titleBlue": "",
+				// 		"items": [
+				// 			{
+				// 				"numPrev": "54",
+				// 				"numCurrent": "55",
+				// 				"numAfter": "",
+				// 				"numLabel": "тыс.",
+				// 				"desc": "блогеров <br> и&nbsp;сообществ"
+				// 			},
+				// 			{
+				// 				"numPrev": "9999",
+				// 				"numCurrent": "10000",
+				// 				"numAfter": "+",
+				// 				"numLabel": "",
+				// 				"desc": "рекламных <br> интеграций в&nbsp;неделю"
+				// 			},
+				// 			{
+				// 				"numPrev": "499",
+				// 				"numCurrent": "500",
+				// 				"numAfter": "",
+				// 				"numLabel": "тыс.",
+				// 				"desc": "опубликованных <br> рекламных интеграций"
+				// 			}
+				// 		]
+				// 	}
+				// },
 				{
 					"block_slug": "channels",
 					"block_state": {
@@ -1800,7 +1800,7 @@ const defaultState = {
 				{
 					"block_type": "text",
 					"title": "",
-					"text": "<h2>Цели продвижения</h2><ul><li>Еженедельно привлекать 1500–2000 заявок на обратный звонок через лид-форму ВКонтакте.</li><li>Максимальная цена заявки до 150 рублей.</li><li>Конверсия в телефонный звонок дольше минуты от 65% — по внутренней статистике, длительность созвона с менеджеров прямо пропорциональна дальнейшим продажам.</li></ul>"
+					"text": "<h2>Цели продвижения</h2><ul><li>Еженедельно привлекать 1500–2000 заявок на&nbsp;обратный звонок через лид-форму ВКонтакте.</li><li>Максимальная цена заявки до&nbsp;150 рублей.</li><li>Конверсия в&nbsp;телефонный звонок дольше минуты от 65% — по внутренней статистике, длительность созвона с&nbsp;менеджером прямо пропорциональна дальнейшим продажам.</li></ul>"
 				},
 				{
 					"block_type": "text",

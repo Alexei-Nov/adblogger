@@ -105,6 +105,10 @@
 		flex-direction: column;
 		gap: 25px;
 		background-color: var(--black);
+
+		&_wide {
+			grid-column: span 2;
+		}
 	}
 	&__tile-name {
 		color: var(--blue-2);
