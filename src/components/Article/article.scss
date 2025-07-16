@@ -82,10 +82,10 @@
 	&__logo {
 		display: flex;
 		height: 50px;
-		width: auto;
+		width: fit-content;
 
 		& img {
-			width: 100%;
+			width: auto;
 			height: 100%;
 			object-fit: contain;
 			object-position: left center;
