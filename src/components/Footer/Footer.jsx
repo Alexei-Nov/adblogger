@@ -9,11 +9,11 @@ export default function Footer({ footer }) {
 	const [footerState, setFooterState] = useState(footer)
 	const btnState = useSelector(state => state.toolkit.registrationBtn)
 	const location = useLocation()
-	const isForAuthors = window.location.pathname === "/for-authors"
-	const isForAdvertisers = window.location.pathname === "/for-advertisers"
+	const isForAuthors = location.pathname === "/for-authors"
+	const isForAdvertisers = location.pathname === "/for-advertisers"
 
 	useEffect(() => {
-		switch (window.location.pathname) {
+		switch (location.pathname) {
 			case '/for-authors':
 				setFooterState({ ...footerState, desc: 'VK AdBlogger — платформа для сотрудничества авторов и рекламодателей, на которой можно продавать рекламу в сообществах ВКонтакте.' })
 				break;
@@ -74,7 +74,7 @@ export default function Footer({ footer }) {
 						</div>
 						<a
 							href={btnState.link}
-							className={"footer__btn btn btn_small btn_border " + (window.location.pathname == '/tovary' ? 'btn_rounded' : '')}
+							className={"footer__btn btn btn_small btn_border " + (location.pathname == '/tovary' ? 'btn_rounded' : '')}
 							onClick={() => {
 								handleTracking('registration_footer')
 								handleTracking('registration_all')

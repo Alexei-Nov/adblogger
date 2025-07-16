@@ -1,5 +1,5 @@
-import React from 'react'
-import { NavLink } from "react-router-dom";
+import React, { useEffect } from 'react'
+import { NavLink, useLocation } from "react-router-dom";
 import { useSelector } from 'react-redux'
 import './header.css'
 import { handleTracking } from 'utils/tracking'
@@ -13,6 +13,11 @@ export default function Header() {
 	function removeMenuClass() {
 		document.body.classList.remove('show-menu')
 	}
+
+	const location = useLocation();
+	useEffect(() => {
+
+	}, [location]);
 
 	return (
 		<>
@@ -45,14 +50,16 @@ export default function Header() {
 										end
 									>Рекламодателям</NavLink>
 								</li>
-								<li className='nav__item'>
-									<NavLink
-										to='/top-cases'
-										className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
-										onClick={removeMenuClass}
-										end
-									>Топ-кейсы</NavLink>
-								</li>
+								{location.pathname != '/tovary' &&
+									<li className='nav__item'>
+										<NavLink
+											to='/top-cases'
+											className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
+											onClick={removeMenuClass}
+											end
+										>Топ-кейсы</NavLink>
+									</li>
+								}
 								<li className='nav__item'>
 									<NavLink
 										to='/for-sellers'
@@ -73,7 +80,7 @@ export default function Header() {
 						</nav>
 						<a
 							href={btnState.link}
-							className={"header__btn btn btn_small text-18 fw-500 " + (window.location.pathname == '/tovary' ? 'btn_rounded btn_border' : '')}
+							className={"header__btn btn btn_small text-18 fw-500 " + (location.pathname == '/tovary' ? 'btn_rounded btn_border' : '')}
 							onClick={() => {
 								handleTracking('registration_header')
 								handleTracking('registration_all')

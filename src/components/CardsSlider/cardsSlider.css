@@ -197,4 +197,18 @@
     margin-bottom: 45px;
     gap: 40px;
   }
+  .cards-slider__list-tooltip {
+    position: relative;
+  }
+  .cards-slider__list-tooltip::after {
+    display: block;
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }

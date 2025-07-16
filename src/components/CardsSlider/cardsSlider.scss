@@ -157,5 +157,18 @@
 			margin-bottom: 45px;
 			gap: 40px;
 		}
+		&__list-tooltip {
+			position: relative;
+			&::after {
+				display: block;
+				content: "";
+				width: 200%;
+				height: 200%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
 	}
 }

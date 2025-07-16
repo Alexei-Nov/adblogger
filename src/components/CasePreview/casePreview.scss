@@ -81,7 +81,7 @@
 		flex-wrap: wrap;
 	}
 	&__list-item {
-		padding: 6px 20px;
+		padding: 17px 20px;
 		border-radius: 20px;
 		background-color: var(--blue-1);
 		display: flex;
@@ -95,7 +95,7 @@
 	}
 	&__list-num {
 		font-size: 52px;
-		line-height: normal;
+		line-height: 90%;
 		font-weight: 500;
 	}
 	&__text {

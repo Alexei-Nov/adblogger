@@ -5,6 +5,7 @@ import { Autoplay } from 'swiper/modules';
 import './cardsSlider.css'
 
 export default function CardsSlider({ block_state }) {
+	const windowWidth = window.innerWidth
 
 	function toggleItem(e) {
 		let item = e.target.closest('.cards-slider__list-item')
@@ -126,8 +127,10 @@ export default function CardsSlider({ block_state }) {
 										<div className="cards-slider__list-name" dangerouslySetInnerHTML={{ __html: item.name }}></div>
 										{item.dropdownn_text &&
 											<div className="cards-slider__list-tooltip"
-												onMouseEnter={toggleItem}
-												onMouseLeave={toggleItem}
+
+												onMouseEnter={windowWidth > 570 ? toggleItem : null}
+												onMouseLeave={windowWidth > 570 ? toggleItem : null}
+												onClick={windowWidth <= 570 ? toggleItem : null}
 											>
 												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
 													<path d="M10.0778 11.1499C10.5147 11.1499 10.7546 10.9051 10.8469 10.4847C10.9269 9.95762 11.1115 9.6878 11.9298 9.20463C12.7974 8.68381 13.2465 8.03749 13.2465 7.08997C13.2465 5.6279 12.0714 4.64901 10.3239 4.64901C9.00109 4.64901 8.01664 5.18238 7.62286 6.01067C7.49981 6.24912 7.43828 6.48757 7.43828 6.75739C7.43828 7.23429 7.73977 7.54176 8.22584 7.54176C8.60116 7.54176 8.87804 7.36607 9.03186 6.96447C9.22875 6.406 9.63483 6.1048 10.2378 6.1048C10.9146 6.1048 11.3822 6.5315 11.3822 7.14644C11.3822 7.72374 11.1423 8.03749 10.3486 8.52066C9.62253 8.95363 9.24721 9.44308 9.24721 10.1835V10.2714C9.24721 10.7859 9.55485 11.1499 10.0778 11.1499Z" fill="white" fillOpacity="0.6" />
