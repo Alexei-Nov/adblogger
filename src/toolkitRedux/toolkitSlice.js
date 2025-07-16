@@ -85,9 +85,14 @@ const defaultState = {
 								"desc": "Продвигайте товары самостоятельно или&nbsp;получайте заявки от&nbsp;рекламодателей",
 								"imgList": [
 									{
+										"desktop": "/img/tile/img7-2.png",
+										"mobile": ""
+									},
+									{
 										"desktop": "/img/tile/img7-1.png",
 										"mobile": "/img/tile/img7-1_mob.png"
 									}
+
 								]
 							},
 							{

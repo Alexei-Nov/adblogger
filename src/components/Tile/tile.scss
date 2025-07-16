@@ -146,6 +146,44 @@
 				}
 			}
 		}
+		&_7 {
+			& .tile {
+				&__img {
+					& picture {
+						&:nth-child(2) {
+							top: 0;
+							left: 0;
+							transform: translateY(35px);
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+		&_8 {
+			& .tile {
+				&__img {
+					& picture {
+						bottom: 0px;
+						left: 0;
+						transform: translateY(25px);
+						width: 100%;
+					}
+				}
+			}
+		}
+		&_9 {
+			& .tile {
+				&__img {
+					& picture {
+						bottom: 0px;
+						left: 0;
+						transform: translateY(20px);
+						width: 100%;
+					}
+				}
+			}
+		}
 		&:hover {
 			& .tile {
 				&__body {
