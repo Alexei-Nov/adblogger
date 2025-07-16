@@ -110,26 +110,70 @@
   z-index: 1;
 }
 
-.tabs-block__heading-btn::before {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 100px;
-  background-color: var(--black-2);
-  position: absolute;
-  z-index: -1;
-  bottom: 50%;
-  left: 0;
-  opacity: 0;
-}
-
 .tabs-block__heading-btn_active {
   cursor: default;
   background-color: var(--black-2);
 }
 
-.tabs-block__heading-btn_active::before {
+.tabs-block__heading-btn_active .tabs-block__heading-btn-panel {
   opacity: 1;
+}
+
+.tabs-block__heading-btn:first-child .tabs-block__heading-btn-panel {
+  left: 0;
+  width: calc(100% + 28px);
+}
+
+.tabs-block__heading-btn:first-child .tabs-block__heading-btn-panel::before {
+  display: none;
+}
+
+.tabs-block__heading-btn:last-child .tabs-block__heading-btn-panel {
+  width: calc(100% + 28px);
+}
+
+.tabs-block__heading-btn:last-child .tabs-block__heading-btn-panel::after {
+  display: none;
+}
+
+.tabs-block__heading-btn-panel {
+  display: block;
+  content: "";
+  width: calc(100% + 56px);
+  height: 100px;
+  background-color: var(--black-2);
+  position: absolute;
+  z-index: -1;
+  bottom: 50%;
+  left: -28px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tabs-block__heading-btn-panel::before {
+  display: block;
+  content: "";
+  width: 56px;
+  height: 100%;
+  background-color: var(--black);
+  position: absolute;
+  z-index: 1;
+  top: 28px;
+  right: calc(100% - 28px);
+  border-radius: 28px;
+}
+
+.tabs-block__heading-btn-panel::after {
+  display: block;
+  content: "";
+  width: 56px;
+  height: 100%;
+  background-color: var(--black);
+  position: absolute;
+  z-index: 1;
+  top: 28px;
+  left: calc(100% - 28px);
+  border-radius: 28px;
 }
 
 .tabs-block__body-desc {
@@ -182,13 +226,13 @@
     -webkit-transition: all ease 0.5s;
     transition: all ease 0.5s;
   }
-  .tabs-block__heading-btn::before {
-    display: none;
-  }
   .tabs-block__heading-btn_active {
     color: var(--black);
     background-color: var(--blue-2);
     border-color: transparent;
+  }
+  .tabs-block__heading-btn-panel {
+    display: none;
   }
 }
 

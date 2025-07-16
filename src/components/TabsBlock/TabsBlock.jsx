@@ -36,7 +36,10 @@ export default function TabsBlock({ block_state }) {
 										key={i}
 										className={"tabs-block__heading-btn " + (activeTab == i ? 'tabs-block__heading-btn_active' : '')}
 										onClick={() => setActiveTab(i)}
-									>{item.tab_name}</div>
+									>
+										<div className='tabs-block__heading-btn-panel'></div>
+										{item.tab_name}
+									</div>
 								)
 							})}
 						</div>

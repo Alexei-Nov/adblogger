@@ -71,25 +71,74 @@
 		position: relative;
 		z-index: 1;
 
-		&::before {
-			display: block;
-			content: "";
-			width: 100%;
-			height: 100px;
-			background-color: var(--black-2);
-			position: absolute;
-			z-index: -1;
-			bottom: 50%;
-			left: 0;
-			opacity: 0;
-		}
-
 		&_active {
 			cursor: default;
 			background-color: var(--black-2);
-			&::before {
-				opacity: 1;
+			& .tabs-block {
+				&__heading-btn-panel {
+					opacity: 1;
+				}
 			}
+		}
+
+		&:first-child {
+			& .tabs-block {
+				&__heading-btn-panel {
+					left: 0;
+					width: calc(100% + 28px);
+					&::before {
+						display: none;
+					}
+				}
+			}
+		}
+		&:last-child {
+			& .tabs-block {
+				&__heading-btn-panel {
+					width: calc(100% + 28px);
+					&::after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	&__heading-btn-panel {
+		display: block;
+		content: "";
+		width: calc(100% + 56px);
+		height: 100px;
+		background-color: var(--black-2);
+		position: absolute;
+		z-index: -1;
+		bottom: 50%;
+		left: -28px;
+		opacity: 0;
+		pointer-events: none;
+
+		&::before {
+			display: block;
+			content: "";
+			width: 56px;
+			height: 100%;
+			background-color: var(--black);
+			position: absolute;
+			z-index: 1;
+			top: 28px;
+			right: calc(100% - 28px);
+			border-radius: 28px;
+		}
+		&::after {
+			display: block;
+			content: "";
+			width: 56px;
+			height: 100%;
+			background-color: var(--black);
+			position: absolute;
+			z-index: 1;
+			top: 28px;
+			left: calc(100% - 28px);
+			border-radius: 28px;
 		}
 	}
 	&__body-desc {
@@ -131,14 +180,14 @@
 			width: fit-content;
 			min-width: 127px;
 			transition: all ease 0.5s;
-			&::before {
-				display: none;
-			}
 			&_active {
 				color: var(--black);
 				background-color: var(--blue-2);
 				border-color: transparent;
 			}
+		}
+		&__heading-btn-panel {
+			display: none;
 		}
 	}
 }
