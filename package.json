@@ -3,6 +3,10 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"@coreui/coreui": "^5.4.1",
+		"@coreui/coreui-pro": "^5.15.0",
+		"@coreui/react": "^5.7.1",
+		"@coreui/react-pro": "^5.17.1",
 		"@gsap/react": "^2.1.1",
 		"@reduxjs/toolkit": "^2.2.7",
 		"cra-template": "1.2.0",

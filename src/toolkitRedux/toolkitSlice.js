@@ -1490,6 +1490,26 @@ const defaultState = {
 					"block_slug": "calculator",
 					"block_state": {
 						"title": "рассчитать <br> вознаграждение за&nbsp;интеграцию",
+						"calc_table": [
+							{
+								'postType': 'post',
+								'followersCountStep': 1,
+								'viewCondition': '0-874',
+								'totalIncome': 0
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 1,
+								'viewCondition': '875-3499',
+								'totalIncome': 200
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 1,
+								'viewCondition': '3500-',
+								'totalIncome': 700
+							},
+						]
 					}
 				},
 				{

@@ -12,8 +12,6 @@
 		font-family: "VK Sans Display Expanded";
 		margin-bottom: 40px;
 	}
-	&__subtitle {
-	}
 	&__body {
 		display: flex;
 		gap: 40px;
@@ -78,6 +76,80 @@
 			color: var(--black);
 			background-color: var(--blue-2);
 			border-color: transparent;
+		}
+	}
+	&__range {
+		margin-top: 20px;
+	}
+	&__input {
+		width: 100%;
+		max-width: 355px;
+		border-radius: 100px;
+		padding: 12px;
+		border: 1.6px solid #959595;
+		border-radius: 100px;
+		color: #959595;
+		background-color: transparent;
+		text-align: center;
+	}
+}
+
+.range-slider {
+	display: flex;
+	flex-direction: column;
+	--cui-range-slider-track-in-range-bg: var(--blue-2);
+	&-inputs-container {
+		position: relative;
+	}
+	&-input {
+		appearance: none;
+		background-color: transparent;
+		pointer-events: none;
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			appearance: none;
+			background-color: var(--blue-2);
+			border: 6px solid var(--white);
+			border-radius: 50%;
+			cursor: pointer;
+			height: 22px;
+			pointer-events: all;
+			width: 22px;
+			transform: translateY(-4px);
+		}
+	}
+	&-track {
+		height: 14px;
+		border-radius: 50px;
+		width: 100%;
+		background-color: var(--white);
+		cursor: pointer;
+	}
+	&-tooltip {
+		display: none;
+	}
+	&-labels-container {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		order: -1;
+		margin-bottom: 8px;
+	}
+	&-label {
+		// position: absolute;
+		// transform: translateX(-50%);
+		font-size: 16px;
+		font-weight: 500;
+		color: #959595;
+		transition: all ease 0.5s;
+		cursor: pointer;
+
+		&:hover {
+			color: var(--white);
 		}
 	}
 }

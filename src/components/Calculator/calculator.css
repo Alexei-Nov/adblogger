@@ -112,3 +112,98 @@
   background-color: var(--blue-2);
   border-color: transparent;
 }
+
+.calculator__range {
+  margin-top: 20px;
+}
+
+.calculator__input {
+  width: 100%;
+  max-width: 355px;
+  border-radius: 100px;
+  padding: 12px;
+  border: 1.6px solid #959595;
+  border-radius: 100px;
+  color: #959595;
+  background-color: transparent;
+  text-align: center;
+}
+
+.range-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  --cui-range-slider-track-in-range-bg: var(--blue-2);
+}
+
+.range-slider-inputs-container {
+  position: relative;
+}
+
+.range-slider-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.range-slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--blue-2);
+  border: 6px solid var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 22px;
+  pointer-events: all;
+  width: 22px;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.range-slider-track {
+  height: 14px;
+  border-radius: 50px;
+  width: 100%;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.range-slider-tooltip {
+  display: none;
+}
+
+.range-slider-labels-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  margin-bottom: 8px;
+}
+
+.range-slider-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #959595;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.range-slider-label:hover {
+  color: var(--white);
+}
