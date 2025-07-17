@@ -19,7 +19,9 @@ export default function Calculator({ block_state }) {
 			viewCount >= item.viewCondition.split('-')[0]
 		)
 
-		setTotalIncome(tableItem[0].totalIncome)
+		if (tableItem) {
+			setTotalIncome(tableItem[0].totalIncome)
+		}
 	}
 
 

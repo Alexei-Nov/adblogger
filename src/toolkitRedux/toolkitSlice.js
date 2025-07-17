@@ -1509,6 +1509,240 @@ const defaultState = {
 								'viewCondition': '3500-',
 								'totalIncome': 700
 							},
+							{
+								'postType': 'post',
+								'followersCountStep': 2,
+								'viewCondition': '0-2624',
+								'totalIncome': 0
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 2,
+								'viewCondition': '2625-10499',
+								'totalIncome': 500
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 2,
+								'viewCondition': '10500-',
+								'totalIncome': 2100
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 3,
+								'viewCondition': '0-4624',
+								'totalIncome': 0
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 3,
+								'viewCondition': '4625-18499',
+								'totalIncome': 900
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 3,
+								'viewCondition': '18500-',
+								'totalIncome': 3700
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 4,
+								'viewCondition': '0-8749',
+								'totalIncome': 0
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 4,
+								'viewCondition': '8750-34999',
+								'totalIncome': 1800
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 4,
+								'viewCondition': '35000-',
+								'totalIncome': 7000
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 5,
+								'viewCondition': '0-13749',
+								'totalIncome': 0
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 5,
+								'viewCondition': '13750-54999',
+								'totalIncome': 2800
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 5,
+								'viewCondition': '55000-',
+								'totalIncome': 11000
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 6,
+								'viewCondition': '0-23749',
+								'totalIncome': 0
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 6,
+								'viewCondition': '23750-94999',
+								'totalIncome': 4800
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 6,
+								'viewCondition': '95000-',
+								'totalIncome': 19000
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 7,
+								'viewCondition': '0-44999',
+								'totalIncome': 0
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 7,
+								'viewCondition': '45000-179999',
+								'totalIncome': 9000
+							},
+							{
+								'postType': 'post',
+								'followersCountStep': 7,
+								'viewCondition': '180000-',
+								'totalIncome': 36000
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 1,
+								'viewCondition': '0-499',
+								'totalIncome': 0
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 1,
+								'viewCondition': '500-1999',
+								'totalIncome': 600
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 1,
+								'viewCondition': '2000-',
+								'totalIncome': 2500
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 2,
+								'viewCondition': '0-1624',
+								'totalIncome': 0
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 2,
+								'viewCondition': '1625-6499',
+								'totalIncome': 1600
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 2,
+								'viewCondition': '6500-',
+								'totalIncome': 6500
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 3,
+								'viewCondition': '0-2624',
+								'totalIncome': 0
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 3,
+								'viewCondition': '2625-10499',
+								'totalIncome': 2500
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 3,
+								'viewCondition': '10500-',
+								'totalIncome': 10000
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 4,
+								'viewCondition': '0-4249',
+								'totalIncome': 0
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 4,
+								'viewCondition': '4250-16999',
+								'totalIncome': 4500
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 4,
+								'viewCondition': '17000-',
+								'totalIncome': 18000
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 5,
+								'viewCondition': '0-6749',
+								'totalIncome': 0
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 5,
+								'viewCondition': '6750-26999',
+								'totalIncome': 5000
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 5,
+								'viewCondition': '27000-',
+								'totalIncome': 20000
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 6,
+								'viewCondition': '0-9749',
+								'totalIncome': 0
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 6,
+								'viewCondition': '9750-38999',
+								'totalIncome': 6800
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 6,
+								'viewCondition': '39000-',
+								'totalIncome': 27500
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 7,
+								'viewCondition': '0-12499',
+								'totalIncome': 0
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 7,
+								'viewCondition': '12500-49999',
+								'totalIncome': 12500
+							},
+							{
+								'postType': 'clip',
+								'followersCountStep': 7,
+								'viewCondition': '50000-',
+								'totalIncome': 50000
+							},
 						]
 					}
 				},
