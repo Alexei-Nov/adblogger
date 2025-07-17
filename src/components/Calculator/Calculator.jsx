@@ -60,7 +60,7 @@ export default function Calculator({ block_state }) {
 											min={1}
 											max={7}
 											value={followersCountStep}
-											labels={['1--20К', '20--50К', '50--100К', '100--250К', '250--500К', '500К--1М', '>1М']}
+											labels={['1—20К', '20—50К', '50—100К', '100—250К', '250—500К', '500К—1М', '>1М']}
 											onChange={(value) => { setFollowersCountStep(value[0]) }}
 										/>
 									</div>
@@ -94,7 +94,7 @@ export default function Calculator({ block_state }) {
 								<div className="calculator__results-bottom">
 									<div className="calculator__results-label text-24 fw-500">Ваш прогнозируемый доход</div>
 									<div className="calculator__results-num fw-600">
-										<span>{totalIncome.toLocaleString()}</span> ₽
+										<span>{totalIncome.toLocaleString()}</span>&nbsp;₽
 									</div>
 								</div>
 							</div>
