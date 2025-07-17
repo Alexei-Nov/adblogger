@@ -1489,8 +1489,7 @@ const defaultState = {
 				{
 					"block_slug": "calculator",
 					"block_state": {
-						"title": "рассчитайте свой заработок",
-						"subtitle": "вот здесь будет калькулятор",
+						"title": "рассчитать <br> вознаграждение за&nbsp;интеграцию",
 					}
 				},
 				{

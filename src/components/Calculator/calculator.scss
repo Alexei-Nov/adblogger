@@ -10,30 +10,74 @@
 	&__title {
 		text-align: center;
 		font-family: "VK Sans Display Expanded";
+		margin-bottom: 40px;
 	}
 	&__subtitle {
-		margin-top: 40px;
-		text-align: center;
 	}
 	&__body {
 		display: flex;
+		gap: 40px;
 		width: 100%;
-		height: 477px;
+	}
+	&__form {
+		width: 100%;
+		max-width: 580px;
+		display: flex;
+		flex-direction: column;
+		gap: 60px;
+	}
+	&__results-img {
+		display: flex;
+		width: 100%;
+		height: auto;
+
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: center;
+		}
+	}
+	&__results-bottom {
+		padding: 35px 32px;
+		background-color: var(--blue-2);
+		border-radius: 25px;
+		color: var(--black);
+		text-align: center;
+	}
+	&__results-num {
+		font-size: 70px;
+		line-height: 100%;
+		margin-top: 10px;
+	}
+	&__row {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+	}
+	&__btns {
+		display: flex;
+		align-items: center;
+		gap: 14px;
+		width: 100%;
+		max-width: 355px;
+	}
+	&__btn {
+		display: flex;
 		justify-content: center;
 		align-items: center;
-		background: #b4b4b4;
-		margin-top: 58px;
-		border-radius: 20px;
-	}
-}
+		width: 100%;
+		cursor: pointer;
+		padding: 12px;
+		border: 1.6px solid #959595;
+		border-radius: 100px;
+		color: #959595;
+		transition: all ease 0.5s;
 
-@media screen and (max-width: 570px) {
-	.calculator {
-		&__wrapper {
-			width: auto;
-			margin: 0 -24px;
-			padding: 40px 24px 24px;
-			border-radius: 40px;
+		&_active {
+			color: var(--black);
+			background-color: var(--blue-2);
+			border-color: transparent;
 		}
 	}
 }

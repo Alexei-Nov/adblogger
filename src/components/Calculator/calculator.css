@@ -10,35 +10,105 @@
 .calculator__title {
   text-align: center;
   font-family: "VK Sans Display Expanded";
-}
-
-.calculator__subtitle {
-  margin-top: 40px;
-  text-align: center;
+  margin-bottom: 40px;
 }
 
 .calculator__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 40px;
   width: 100%;
-  height: 477px;
+}
+
+.calculator__form {
+  width: 100%;
+  max-width: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
+}
+
+.calculator__results-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.calculator__results-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.calculator__results-bottom {
+  padding: 35px 32px;
+  background-color: var(--blue-2);
+  border-radius: 25px;
+  color: var(--black);
+  text-align: center;
+}
+
+.calculator__results-num {
+  font-size: 70px;
+  line-height: 100%;
+  margin-top: 10px;
+}
+
+.calculator__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculator__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+  width: 100%;
+  max-width: 355px;
+}
+
+.calculator__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #b4b4b4;
-  margin-top: 58px;
-  border-radius: 20px;
+  width: 100%;
+  cursor: pointer;
+  padding: 12px;
+  border: 1.6px solid #959595;
+  border-radius: 100px;
+  color: #959595;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
-@media screen and (max-width: 570px) {
-  .calculator__wrapper {
-    width: auto;
-    margin: 0 -24px;
-    padding: 40px 24px 24px;
-    border-radius: 40px;
-  }
+.calculator__btn_active {
+  color: var(--black);
+  background-color: var(--blue-2);
+  border-color: transparent;
 }
