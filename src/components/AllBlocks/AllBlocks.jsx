@@ -20,13 +20,6 @@ import EntranceSellers from 'components/EntranceSellers/EntranceSellers';
 import NumberSeller from 'components/NumberSeller/NumberSeller';
 import PopupSeller from 'components/PopupSeller/PopupSeller';
 import BannerKurs from 'components/BannersKurs/BannerKurs';
-import StepsTovary from 'components/StepsTovary/StepsTovary';
-import СonnectionСonditions from 'components/СonnectionСonditions/СonnectionСonditions';
-import Calculator from 'components/Calculator/Calculator';
-import Advices from 'components/Advices/Advices';
-import CasePreview from 'components/CasePreview/CasePreview';
-import CasesSlider from 'components/CasesSlider/CasesSlider';
-import CardsSlider from 'components/CardsSlider/CardsSlider';
 import TabsBlock from 'components/TabsBlock/TabsBlock';
 
 export default function AllBlocks({ pageState }) {
@@ -81,20 +74,6 @@ export default function AllBlocks({ pageState }) {
 						return <NumberSeller key={i} block_state={block.block_state} />;
 					case 'popup_seller':
 						return <PopupSeller key={i} block_state={block.block_state} />;
-					case 'steps_tovary':
-						return <StepsTovary key={i} block_state={block.block_state} />;
-					case 'connection_conditions':
-						return <СonnectionСonditions key={i} block_state={block.block_state} />;
-					case 'calculator':
-						return <Calculator key={i} block_state={block.block_state} />;
-					case 'advices':
-						return <Advices key={i} block_state={block.block_state} />;
-					case 'case_preview':
-						return <CasePreview key={i} block_state={block.block_state} />;
-					case 'cases_slider':
-						return <CasesSlider key={i} block_state={block.block_state} />;
-					case 'cards_slider':
-						return <CardsSlider key={i} block_state={block.block_state} />;
 					case 'tabs_block':
 						return <TabsBlock key={i} block_state={block.block_state} />;
 					default:
