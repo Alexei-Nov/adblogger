@@ -1907,7 +1907,7 @@ const defaultState = {
 			"title": "EveLux: ещё больше продаж, ещё ниже стоимость привлечения",
 			"seo_title": "Кейс бренда EveLux Professional в VK AdBlogger",
 			"seo_desc": "EveLux Professional увеличил продажи на маркетплейсах Ozon и Wildberries с помощью VK AdBlogger. Кампания снизила стоимость заказа и добавления в корзину на 40-43%, увеличив продажи до 35 в день при бюджете 100 000₽.",
-			"desc": "Бренд профессиональных средств для волос",
+			"desc": "Как увеличить продажи на маркетплейсах",
 			"preview_img": "/img/case/img-6.png",
 			"preview_img_main": "/img/case/img-6.png",
 			"preview_img_small": "/img/case/img-6.png",
@@ -2006,7 +2006,7 @@ const defaultState = {
 			"title": "Перевыполнили план и снизили CPL на 20%: как привлечь несколько тысяч заявок из ВКонтакте",
 			"seo_title": "Кейс бренда Церебро в VK AdBlogger",
 			"seo_desc": "Команда издательской компании провела рекламную кампанию в агентском кабинете «Церебро Таргет» и смогла еженедельно привлекать по 1500-2000 заявок из ВКонтакте. С помощью платформы VK AdBlogger удалось перевыполнить план по заявкам на звонок и сократить CPL на 20%.",
-			"desc": "Церебро — издательский холдинг",
+			"desc": "Несколько тысяч заявок из&nbsp;ВКонтакте",
 			"preview_img": "/img/case/img-9.png",
 			"preview_img_main": "/img/case/img-9.png",
 			"preview_img_small": "/img/case/img-9.png",
@@ -2126,7 +2126,7 @@ const defaultState = {
 			"title": "MyFamilySchool: как посевы помогают продавать обучающие курсы",
 			"seo_title": "Кейс бренда MyFamilySchool в VK AdBlogger",
 			"seo_desc": "Команда агентства FAQMarketing и клиент MyFamilySchool протестировали VK AdBlogger, чтобы проверить, удастся ли привлечь потенциальных клиентов из ВКонтакте на посадочную страницу и получить регистрации на обучающие курсы по более низкой стоимости.",
-			"desc": "Общеобразовательные программы и программы дополнительного профессионального образования",
+			"desc": "Обучающие курсы и&nbsp;посевы",
 			"preview_img": "/img/case/img-8.png",
 			"preview_img_main": "/img/case/img-8.png",
 			"preview_img_small": "/img/case/img-8.png",
@@ -2217,7 +2217,6 @@ const defaultState = {
 				}
 			]
 		},
-
 		{
 			"slug": "case-7",
 			"title": "Секретный подарок: клики, подписки и&nbsp;заявки — ещё дешевле",
