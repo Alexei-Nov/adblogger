@@ -59,6 +59,7 @@ export default function CardsSlider({ block_state }) {
 							const sizesGrid = swiper.slidesSizesGrid;
 							const rotate = 17;
 							const angleModifier = 1 / (180 / rotate);
+							const perspective = window.innerWidth >= 1024 ? "1500px" : "800px"
 
 							for (let i = 0; i < swiper.slides.length; i += 1) {
 								const slideEl = swiper.slides[i];
@@ -69,10 +70,11 @@ export default function CardsSlider({ block_state }) {
 								const translateX = slideProgress * (slideSize / rotate) * angleCos / 100;
 								const scale = 0.98 + Math.abs((rotateY * 0.004) * slideProgress) / 1.5
 								const opacity = 1 - Math.abs((rotateY * 0.004) * slideProgress);
+
 								Object.assign(slideEl.style, {
 									opacity,
 									zIndex: `${slideProgress}`,
-									perspective: "1500px",
+									perspective: `${perspective}`,
 									transformOrigin: "center",
 									backfaceVisibility: "hidden",
 									transform: `translateX(${translateX}px)`
