@@ -37,7 +37,7 @@ export default function StepsTovary({ block_state }) {
 								slidesPerView={1}
 								centeredSlides={true}
 								autoplay={{
-									delay: 2000,
+									delay: 4000,
 									disableOnInteraction: false
 								}}
 								pagination={{

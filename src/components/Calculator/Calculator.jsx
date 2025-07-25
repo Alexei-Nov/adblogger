@@ -37,7 +37,7 @@ export default function Calculator({ block_state }) {
 									Выберите тип контента, количество подписчиков в&nbsp;своём сообществе и&nbsp;количество просмотров
 								</div>
 								<div className="calculator__item">
-									<div className="calculator__row">
+									<div className="calculator__row calculator__row_mob">
 										<div className="calculator__item-title text-32 fw-500">
 											Тип контента
 										</div>
@@ -55,6 +55,11 @@ export default function Calculator({ block_state }) {
 										Количество подписчиков в&nbsp;сообществе
 									</div>
 									<div className="calculator__range">
+										<style>
+											{`.range-slider-label:nth-child(` + followersCountStep + `){
+												color:#fff;
+											}`}
+										</style>
 										<CRangeSlider
 											step={1}
 											min={1}
@@ -72,7 +77,7 @@ export default function Calculator({ block_state }) {
 										</div>
 										<input type="text"
 											className='calculator__input text-20 fw-500'
-											value={viewCount.toLocaleString()}
+											value={viewCount.toLocaleString("ru-RU")}
 											onChange={(e) => {
 												const currentNum = parseInt(e.target.value.replace(/\s/g, ''))
 												if (!Number.isNaN(currentNum)) {
@@ -82,6 +87,7 @@ export default function Calculator({ block_state }) {
 													setViewCount('')
 												}
 											}}
+											onFocus={(e) => { setViewCount('') }}
 										/>
 									</div>
 								</div>
@@ -94,7 +100,7 @@ export default function Calculator({ block_state }) {
 								<div className="calculator__results-bottom">
 									<div className="calculator__results-label text-24 fw-500">Ваш прогнозируемый доход</div>
 									<div className="calculator__results-num fw-600">
-										<span>{totalIncome.toLocaleString()}</span>&nbsp;₽
+										<span>{totalIncome.toLocaleString("ru-RU")}</span>&nbsp;₽
 									</div>
 								</div>
 							</div>

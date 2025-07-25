@@ -144,11 +144,20 @@
   width: 100%;
 }
 
+.tile__slide_7 .tile__img picture:nth-child(1) {
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  width: 100%;
+  margin-top: -40px;
+}
+
 .tile__slide_7 .tile__img picture:nth-child(2) {
   top: 0;
   left: 0;
-  -webkit-transform: translateY(35px);
-          transform: translateY(35px);
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px);
   width: 100%;
 }
 
