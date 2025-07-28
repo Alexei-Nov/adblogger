@@ -2132,7 +2132,7 @@ const defaultState = {
 			"preview_img_small": "/img/case/img-8.png",
 			"preview_img_vertical": "/img/case/img-8.png",
 			"logo": "/img/case/icon-8.svg",
-			"card_label": "команда FAQMarketing",
+			"card_label": "FAQMarketing",
 			"brand_name": "Общеобразовательные программы и программы дополнительного профессионального образования ",
 			"tags": [
 				{
