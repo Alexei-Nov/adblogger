@@ -1824,29 +1824,35 @@ const defaultState = {
 						"title": "примеры других авторов",
 						"gallery": [
 							{
-								"img": "./img/cases-slider/img-1.png",
+								"video": "./video/clips/1.mp4",
 							},
 							{
-								"img": "./img/cases-slider/img-2.png",
+								"video": "./video/clips/2.mp4",
 							},
 							{
-								"img": "./img/cases-slider/img-3.png",
+								"video": "./video/clips/3.mp4",
 							},
 							{
-								"img": "./img/cases-slider/img-4.png",
+								"video": "./video/clips/4.mp4",
 							},
 							{
-								"img": "./img/cases-slider/img-1.png",
+								"video": "./video/clips/5.mp4",
 							},
 							{
-								"img": "./img/cases-slider/img-2.png",
+								"video": "./video/clips/1.mp4",
 							},
 							{
-								"img": "./img/cases-slider/img-3.png",
+								"video": "./video/clips/2.mp4",
 							},
 							{
-								"img": "./img/cases-slider/img-4.png",
-							}
+								"video": "./video/clips/3.mp4",
+							},
+							{
+								"video": "./video/clips/4.mp4",
+							},
+							{
+								"video": "./video/clips/5.mp4",
+							},
 						],
 					}
 				},
