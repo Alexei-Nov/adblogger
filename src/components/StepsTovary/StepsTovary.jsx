@@ -6,6 +6,12 @@ import { handleTracking } from 'utils/tracking';
 
 
 export default function StepsTovary({ block_state }) {
+	let zoomValue = 1
+	if (window.innerWidth <= 570) {
+		zoomValue = (window.innerWidth - 48) / 314
+	} else if (window.innerWidth <= 768) {
+		zoomValue = (window.innerWidth - 120 - 80) / 314
+	}
 
 	return (
 		<>
@@ -17,7 +23,7 @@ export default function StepsTovary({ block_state }) {
 							<div className="steps-tovary__desc fw-500" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
 						</div>
 						<div className="steps-tovary__body">
-							<div className="steps-tovary__steps">
+							<div className="steps-tovary__steps" style={{ zoom: zoomValue }}>
 								{block_state.steps.map((item, i) => {
 									return (
 										<div key={i} className="steps-tovary__steps-item">

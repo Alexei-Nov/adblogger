@@ -257,6 +257,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 20px;
   }
   .calculator__results-bottom {
     -webkit-box-ordinal-group: 0;
@@ -315,5 +316,6 @@
   .range-slider-label {
     font-size: 10px;
     line-height: 100%;
+    max-width: 30px;
   }
 }

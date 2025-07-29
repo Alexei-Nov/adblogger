@@ -232,6 +232,21 @@ body {
 			}
 		}
 	}
+	& ol {
+		padding-left: 25px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		&:not(:last-child) {
+			margin-bottom: 1em;
+		}
+		&:not(:first-child) {
+			margin-top: 1em;
+		}
+		& > li {
+			list-style: decimal;
+		}
+	}
 	& h2 {
 		font-size: 32px;
 		line-height: 110%;
@@ -262,7 +277,7 @@ body {
 	user-select: none;
 	gap: 10px;
 
-	&:hover {
+	&:active {
 		border-radius: 50px;
 	}
 
@@ -275,25 +290,25 @@ body {
 	&_border {
 		color: var(--white);
 		background-color: transparent;
-		border: 1px solid var(--white);
+		border: 1.6px solid var(--white);
 	}
 	&_border-black {
 		color: var(--black);
 		background-color: transparent;
-		border: 1px solid var(--black);
+		border: 1.6px solid var(--black);
 	}
 	&_wide {
 		width: 100%;
 	}
 	&_rounded {
 		border-radius: 100px;
-		&:hover {
+		&:active {
 			background-color: var(--white);
 			color: var(--black);
 		}
 		&.btn {
 			&_border-black {
-				&:hover {
+				&:active {
 					background-color: var(--black);
 					color: var(--white);
 				}
@@ -303,9 +318,34 @@ body {
 	&_transparent {
 		background-color: transparent;
 		color: var(--white);
-		&:hover {
+		&:active {
 			background-color: var(--white);
 			color: var(--black);
+		}
+	}
+}
+
+@media (hover: hover) {
+	.btn {
+		&_rounded {
+			&:hover {
+				background-color: var(--white);
+				color: var(--black);
+			}
+			&.btn {
+				&_border-black {
+					&:hover {
+						background-color: var(--black);
+						color: var(--white);
+					}
+				}
+			}
+		}
+		&_transparent {
+			&:hover {
+				background-color: var(--white);
+				color: var(--black);
+			}
 		}
 	}
 }

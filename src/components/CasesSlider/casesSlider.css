@@ -96,9 +96,16 @@
   color: var(--black);
 }
 
-.cases-slider__slide-icon:hover {
+.cases-slider__slide-icon:active {
   color: var(--white);
   background-color: var(--black);
+}
+
+@media (hover: hover) {
+  .cases-slider__slide-icon:hover {
+    color: var(--white);
+    background-color: var(--black);
+  }
 }
 
 @media screen and (max-width: 768px) {

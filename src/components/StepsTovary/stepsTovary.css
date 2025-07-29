@@ -109,9 +109,7 @@
   border: 8px solid var(--white);
   background-color: var(--white);
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
   max-width: 395px;
   z-index: 1;
 }
@@ -183,9 +181,13 @@
     gap: 20px;
   }
   .steps-tovary__steps-body {
-    padding-top: 90px;
-    -webkit-mask-image: url("/public/img/steps-tovary/mask_mob.svg");
-            mask-image: url("/public/img/steps-tovary/mask_mob.svg");
+    padding-top: 95px;
+    -webkit-mask-image: url("/public/img/steps-tovary/mask_mob2.svg");
+            mask-image: url("/public/img/steps-tovary/mask_mob2.svg");
+  }
+  .steps-tovary__steps-item:nth-child(1) .steps-tovary__steps-body {
+    -webkit-mask-image: url("/public/img/steps-tovary/mask_mob1.svg");
+            mask-image: url("/public/img/steps-tovary/mask_mob1.svg");
   }
   .steps-tovary__desc {
     font-size: 22px;

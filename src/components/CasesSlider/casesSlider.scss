@@ -70,9 +70,21 @@
 		transition: all ease 0.5s;
 		cursor: pointer;
 		color: var(--black);
-		&:hover {
+
+		&:active {
 			color: var(--white);
 			background-color: var(--black);
+		}
+	}
+}
+
+@media (hover: hover) {
+	.cases-slider {
+		&__slide-icon {
+			&:hover {
+				color: var(--white);
+				background-color: var(--black);
+			}
 		}
 	}
 }

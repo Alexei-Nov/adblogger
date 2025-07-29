@@ -50,7 +50,7 @@ export default function Header() {
 										end
 									>Рекламодателям</NavLink>
 								</li>
-								{location.pathname != '/tovary' &&
+								{/* {location.pathname != '/tovary' &&
 									<li className='nav__item'>
 										<NavLink
 											to='/top-cases'
@@ -59,7 +59,7 @@ export default function Header() {
 											end
 										>Топ-кейсы</NavLink>
 									</li>
-								}
+								} */}
 								<li className='nav__item'>
 									<NavLink
 										to='/for-sellers'

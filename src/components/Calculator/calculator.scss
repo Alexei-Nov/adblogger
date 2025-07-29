@@ -184,6 +184,7 @@
 		}
 		&__results {
 			align-items: center;
+			gap: 20px;
 		}
 		&__results-bottom {
 			order: -1;
@@ -242,6 +243,7 @@
 		&-label {
 			font-size: 10px;
 			line-height: 100%;
+			max-width: 30px;
 		}
 	}
 }

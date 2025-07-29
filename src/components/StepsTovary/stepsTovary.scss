@@ -77,7 +77,7 @@
 		border: 8px solid var(--white);
 		background-color: var(--white);
 		width: 100%;
-		height: fit-content;
+		height: auto;
 		max-width: 395px;
 		z-index: 1;
 	}
@@ -132,8 +132,15 @@
 			gap: 20px;
 		}
 		&__steps-body {
-			padding-top: 90px;
-			mask-image: url("/public/img/steps-tovary/mask_mob.svg");
+			padding-top: 95px;
+			mask-image: url("/public/img/steps-tovary/mask_mob2.svg");
+		}
+		&__steps-item {
+			&:nth-child(1) .steps-tovary {
+				&__steps-body {
+					mask-image: url("/public/img/steps-tovary/mask_mob1.svg");
+				}
+			}
 		}
 		&__desc {
 			font-size: 22px;

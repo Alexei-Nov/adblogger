@@ -106,6 +106,8 @@
   cursor: pointer;
   margin-left: auto;
   margin-bottom: auto;
+  margin-right: -14px;
+  margin-top: -5px;
 }
 
 .cards-slider__slide {
