@@ -41,7 +41,22 @@ export default function Header() {
 										end
 									>Авторам</NavLink>
 								</li>
-
+								<li className='nav__item'>
+									<NavLink
+										to='/tovary'
+										style={{ color: '#00D3E6' }}
+										className={({ isActive }) => 'nav__link fw-400 ' + (isActive ? ' nav__link_active' : '')}
+										onClick={removeMenuClass}
+										end
+									>
+										Шопсы
+										<div className="nav__link-img">
+											<svg width="95" height="48" viewBox="0 0 95 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M70.0004 12.9999C15.885 -2.66109 -26.9983 20.4999 25.0008 41.0001C51.6415 51.5029 108 46.4997 89.5006 20.4999C76.1322 1.71131 35.1016 -1.02065 12.0005 3.49985" stroke="#00D3E6" strokeWidth="2" />
+											</svg>
+										</div>
+									</NavLink>
+								</li>
 								<li className='nav__item'>
 									<NavLink
 										to='/for-advertisers'
@@ -68,14 +83,7 @@ export default function Header() {
 										end
 									>Селлерам</NavLink>
 								</li>
-								<li className='nav__item'>
-									<NavLink
-										to='/tovary'
-										className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
-										onClick={removeMenuClass}
-										end
-									>Товары</NavLink>
-								</li>
+
 							</ul>
 						</nav>
 						<a

@@ -3,8 +3,9 @@
 		padding: 40px;
 		padding-bottom: 20px;
 		border-radius: 48px;
-		background-color: var(--blue-2);
-		color: var(--black);
+		// background-color: var(--blue-2);
+		// color: var(--black);
+		background-color: var(--black-2);
 		width: 100%;
 		max-width: 1096px;
 		margin: 0 auto;
@@ -16,6 +17,9 @@
 	}
 	&__subtitle {
 		text-align: center;
+		width: 100%;
+		max-width: 700px;
+		margin: 0 auto;
 		margin-bottom: 60px;
 	}
 	&__bottom-btn {
@@ -67,7 +71,7 @@
 	&__bottom-body {
 		overflow: hidden;
 		transition: all ease 0.5s;
-		max-height: 0;
+		// max-height: 0;
 
 		&::before {
 			display: block;
@@ -76,20 +80,23 @@
 		}
 	}
 	&__list {
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		gap: 10px;
 		flex-wrap: wrap;
 	}
 	&__list-item {
-		padding: 17px 20px;
+		padding: 20px;
+		padding-right: 76px;
 		border-radius: 20px;
-		background-color: var(--blue-1);
+		background-color: #363738;
 		display: flex;
-		align-items: flex-end;
-		gap: 10px;
+		flex-direction: column;
+		gap: 20px;
+		position: relative;
 	}
 	&__list-label {
-		font-size: 28px;
+		font-size: 24px;
 		line-height: normal;
 		font-weight: 500;
 	}
@@ -97,6 +104,37 @@
 		font-size: 52px;
 		line-height: 90%;
 		font-weight: 500;
+	}
+	&__list-icon {
+		display: flex;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: 7px;
+		right: 6px;
+		z-index: 1;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: center;
+		}
+
+		&::after {
+			display: block;
+			content: "";
+			width: 70px;
+			height: 70px;
+			position: absolute;
+			top: -8px;
+			right: -6.5px;
+			background-color: var(--black-2);
+			z-index: -1;
+			mask-image: url("/public/img/case-preview/mask.svg");
+			mask-repeat: no-repeat;
+			mask-size: contain;
+			mask-position: top right;
+		}
 	}
 	&__text {
 		margin-top: 20px;
@@ -113,6 +151,18 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.case-preview {
+		&__list {
+			display: flex;
+			flex-direction: column;
+		}
+		&__card {
+			height: 525px;
 		}
 	}
 }

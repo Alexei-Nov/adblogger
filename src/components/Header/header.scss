@@ -31,6 +31,9 @@
 			align-items: center;
 			gap: 32px;
 		}
+		&__item {
+			position: relative;
+		}
 		&__link {
 			&_active {
 				position: relative;
@@ -46,6 +49,19 @@
 					border-radius: 50%;
 					background-color: #00d3e6;
 				}
+			}
+		}
+		&__link-img {
+			display: flex;
+			width: 149%;
+			height: 215%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			& svg {
+				width: 100%;
+				height: 100%;
 			}
 		}
 	}
