@@ -1465,6 +1465,15 @@ const defaultState = {
 					}
 				},
 				{
+					"block_slug": "tovary_about",
+					"block_state": {
+						"title": "Что такое <span style='color:#00D3E6;'>шопсы</span>?",
+						"desc": "<p><b style='color:#00D3E6;'>Шопсы</b> — это рекламные посты или клипы.</p> <p>В <b style='color:#00D3E6;'>них</b> пользователи видят карточку товара, могут кликнуть по ней и сделать покупку.</p>",
+						"img": "./img/tovary-about/img.png",
+						"img_mob": "./img/tovary-about/img_mob.png",
+					}
+				},
+				{
 					"block_slug": "connection_conditions",
 					"block_state": {
 						"title": "условия подключения </br> к&nbsp;программе",

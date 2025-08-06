@@ -1,0 +1,67 @@
+.tovary-about {
+	&__wrapper {
+		background-color: var(--black-2);
+		padding: 40px;
+		border-radius: 30px;
+		display: flex;
+		width: 100%;
+		max-width: 1095px;
+		margin: 85px auto 55px;
+	}
+	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 42px;
+		width: 100%;
+		max-width: 540px;
+	}
+	&__img {
+		display: flex;
+		width: 100%;
+		max-width: 575px;
+
+		margin-top: calc(-8% - 40px);
+		margin-right: calc(-6% - 40px);
+		margin-bottom: calc(-7% - 40px);
+
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: right center;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.tovary-about {
+		&__wrapper {
+			flex-direction: column;
+			margin-top: 0;
+			margin-bottom: 70px;
+			gap: 30px;
+		}
+		&__img {
+			width: auto;
+			max-width: none;
+			margin-top: 0;
+			margin-left: calc(-6% - 40px);
+			margin-right: -40px;
+			margin-bottom: calc(-15% - 40px);
+		}
+	}
+}
+@media screen and (max-width: 570px) {
+	.tovary-about {
+		&__wrapper {
+			padding: 32px;
+			border-radius: 20px;
+			margin-bottom: 50px;
+		}
+		&__desc {
+			font-size: 17px;
+			line-height: 130%;
+		}
+	}
+}
