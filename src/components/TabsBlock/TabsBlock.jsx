@@ -8,7 +8,7 @@ export default function TabsBlock({ block_state }) {
 		<>
 			<section className='section tabs-block'>
 				<div className="container">
-					<div className="tabs-block__title title h1" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+					{/* <div className="tabs-block__title title h1" dangerouslySetInnerHTML={{ __html: block_state.title }}></div> */}
 					<div className="tabs-block__wrapper">
 						<div className="tabs-block__body">
 							{block_state.tabs.map((item, i) => {
