@@ -16,6 +16,10 @@ export default function DetailCase() {
 		has_border: 'true',
 	}
 
+	if (articleState.slug == 'case-for-authors') {
+		moneyState.title = 'Зарабатывайте <br> на&nbsp;своём контенте'
+	}
+
 	return (
 		<>
 			<TitleAndMetaTags
