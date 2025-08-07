@@ -97,7 +97,9 @@ export default function Case({ block_state }) {
 											<div className="case__bottom">
 												<div className="case__desc" dangerouslySetInnerHTML={{ __html: caseItem.title }}></div>
 												<div className="case__icon">
-													<img src={caseItem.logo} alt="img" />
+													{caseItem.logo &&
+														<img src={caseItem.logo} alt="img" />
+													}
 												</div>
 											</div>
 											<div className="case__img">
