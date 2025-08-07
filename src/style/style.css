@@ -357,6 +357,9 @@ body {
 }
 
 @media (hover: hover) {
+  .btn:hover {
+    border-radius: 50px;
+  }
   .btn_rounded:hover {
     background-color: var(--white);
     color: var(--black);

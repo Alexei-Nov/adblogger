@@ -29,7 +29,7 @@ export default function Main() {
 					<Route exact path="/for-sellers" element={<ForSellers />} />
 					<Route exact path="/top-cases" element={<TopCase />} />
 					<Route exact path="/top-cases/:slug" element={<DetailCase />} />
-					<Route exact path="/tovary" element={<TovaryPage />} />
+					<Route exact path="/shops" element={<TovaryPage />} />
 					<Route exact path="*" element={<NotFound />} />
 				</Routes>
 			</main>

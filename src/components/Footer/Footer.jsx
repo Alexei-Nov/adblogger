@@ -74,7 +74,7 @@ export default function Footer({ footer }) {
 						</div>
 						<a
 							href={btnState.link}
-							className={"footer__btn btn btn_small btn_border " + (location.pathname == '/tovary' ? 'btn_rounded' : '')}
+							className={"footer__btn btn btn_small btn_border " + (location.pathname == '/shops' ? 'btn_rounded' : '')}
 							onClick={() => {
 								handleTracking('registration_footer')
 								handleTracking('registration_all')

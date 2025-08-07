@@ -43,7 +43,7 @@ export default function Header() {
 								</li>
 								<li className='nav__item'>
 									<NavLink
-										to='/tovary'
+										to='/shops'
 										style={{ color: '#00D3E6' }}
 										className={({ isActive }) => 'nav__link fw-400 ' + (isActive ? ' nav__link_active' : '')}
 										onClick={removeMenuClass}
@@ -88,7 +88,7 @@ export default function Header() {
 						</nav>
 						<a
 							href={btnState.link}
-							className={"header__btn btn btn_small text-18 fw-500 " + (location.pathname == '/tovary' ? 'btn_rounded btn_border' : '')}
+							className={"header__btn btn btn_small text-18 fw-500 " + (location.pathname == '/shops' ? 'btn_rounded btn_border' : '')}
 							onClick={() => {
 								handleTracking('registration_header')
 								handleTracking('registration_all')
