@@ -7,7 +7,7 @@ const title = "Станьте автором в VK AdBlogger и зарабаты
 const description = "Поможем блогерам и сообществам с аудиторией от 1000 подписчиков размещать рекламу ВКонтакте. Маркет-платформа VK AdBlogger позволяет зарабатывать авторам контента ВКонтакте. Автоматический документооборот и выплаты. Маркировка рекламы."
 
 export default function TovaryPage() {
-	const pageState = useSelector(state => state.toolkit.pages).filter((item) => item.page_slug === 'tovary')[0]
+	const pageState = useSelector(state => state.toolkit.pages).filter((item) => item.page_slug === 'shops')[0]
 
 	return (
 		<>
