@@ -48,7 +48,7 @@ const defaultState = {
 								"tab_name": "Шопсы",
 								"title": "Рекламируйте товары с&nbsp;Оzon, а&nbsp;мы&nbsp;<span style='color:#7CEDF8;'>заплатим за&nbsp;просмотры</span> и&nbsp;продажи",
 								"desc": "<p>Выбирайте товары с&nbsp;Ozon и&nbsp;продвигайте их&nbsp;в&nbsp;постах и&nbsp;клипах. Согласовывать рекламу не&nbsp;нужно: у&nbsp;вас полная свобода</p><p>Больше просмотров — выше доход. Получайте выплаты за&nbsp;просмотры и&nbsp;проценты за&nbsp;продажи</p>",
-								"btn_text": "Подробнее",
+								"btn_text": "Узнать больше о шопсах",
 								"btn_link": "/tovary",
 								"img": "/img/tabs-block/img-1.png",
 								"img_mob": "/img/tabs-block/img-1_mob.png",
