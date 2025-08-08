@@ -94,6 +94,20 @@ export default function Article({ article }) {
 													})}
 												</div>
 											)
+										case 'clips':
+											return (
+												<div key={i} className='article__block article__clips'>
+													{block.videos.map((item, j) => {
+														return (
+															<div key={j} className={"article__clips-item "}>
+																<div className="article__clips-video">
+																	<video src={item} controls></video>
+																</div>
+															</div>
+														)
+													})}
+												</div>
+											)
 									}
 								})}
 							</div>
