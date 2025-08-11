@@ -122,14 +122,19 @@ export default function CardsSlider({ block_state }) {
 						{block_state.items_list.map((item, i) => {
 							return (
 								<div key={i} className="cards-slider__list-item">
-									<div className="cards-slider__list-item-body">
+									<div className={"cards-slider__list-item-body " + (item.dropdownn_text ? 'cards-slider__list-item-body_bg' : '')}>
+										{item.dropdownn_text &&
+											<picture className='cards-slider__list-item-bg'>
+												<source media="(max-width: 450px)" srcSet="/img/cards-slider/bg_mob.svg" />
+												<img src="/img/cards-slider/bg.svg" alt="img" />
+											</picture>
+										}
 										<div className="cards-slider__list-icon">
 											<img src={item.icon} alt="img" />
 										</div>
 										<div className="cards-slider__list-name fw-600" dangerouslySetInnerHTML={{ __html: item.name }}></div>
 										{item.dropdownn_text &&
 											<div className="cards-slider__list-tooltip"
-
 												onMouseEnter={windowWidth > 570 ? toggleItem : null}
 												onMouseLeave={windowWidth > 570 ? toggleItem : null}
 												onClick={windowWidth <= 570 ? toggleItem : null}

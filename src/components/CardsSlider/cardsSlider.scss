@@ -17,7 +17,6 @@
 		display: flex;
 		justify-content: center;
 		gap: 24px;
-		margin-top: -35px;
 	}
 	&__list-item {
 		position: relative;
@@ -30,10 +29,14 @@
 					border-color: var(--blue-2);
 				}
 				&__list-tooltip-body {
-					bottom: calc(100% - 24px);
+					bottom: calc(100% + 10px);
+					opacity: 1;
 				}
 			}
 		}
+	}
+	&__list-item-bg {
+		display: none;
 	}
 	&__list-item-body {
 		padding: 15px 24px;
@@ -43,8 +46,28 @@
 		align-items: center;
 		gap: 20px;
 		height: fit-content;
-		border: 2px solid transparent;
+		// border: 2px solid transparent;
 		transition: all ease 0.5s;
+
+		&_bg {
+			background: none;
+			padding-right: 62px;
+			& .cards-slider {
+				&__list-item-bg {
+					display: flex;
+					position: absolute;
+					top: 0px;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					z-index: -1;
+					& img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
 	}
 	&__list-icon {
 		display: flex;
@@ -59,32 +82,38 @@
 		width: 100%;
 		height: 0;
 		border-radius: 18px;
-		padding: 24px;
-		padding-bottom: 50px;
+		padding: 24px 32px;
 		background-color: var(--black-2);
-		z-index: -1;
+		z-index: -2;
 		transition: all ease 0.5s;
 		overflow: hidden;
-
+		opacity: 0;
+		border: 2px solid #7cedf8;
 		&::after {
 			display: block;
 			content: "";
 			// height: 80px;
 		}
 	}
+
 	&__list-tooltip {
-		height: fit-content;
 		display: flex;
+		align-items: center;
+		justify-content: center;
 		cursor: pointer;
-		margin-left: auto;
-		margin-bottom: auto;
-		margin-right: -14px;
-		margin-top: -5px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 34px;
+		height: 34px;
+		border-radius: 50%;
+		background-color: var(--black-2);
 	}
 	&__slide {
 		display: flex;
 		width: 100%;
-		height: 100%;
+		height: auto;
+		aspect-ratio: 0.94;
 		max-width: 293px;
 
 		// overflow: hidden;
@@ -101,7 +130,7 @@
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			object-position: center;
+			object-position: top center;
 		}
 	}
 	& .swiper-wrapper {
@@ -127,19 +156,15 @@
 			gap: 10px;
 			flex-direction: column;
 			margin-top: -25px;
+			max-width: 395px;
 		}
 		&__list-item {
 			&:nth-child(2) {
 				order: -1;
 			}
 		}
-		&__list-tooltip {
-			margin-top: auto;
-			margin-right: -10px;
-			margin-bottom: -10px;
-		}
 		&__list-item-body {
-			padding: 24px;
+			// padding: 24px;
 		}
 		&__slide {
 			max-width: 200px;
@@ -160,7 +185,6 @@
 			gap: 40px;
 		}
 		&__list-tooltip {
-			position: relative;
 			&::after {
 				display: block;
 				content: "";
@@ -170,6 +194,23 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.cards-slider {
+		&__list {
+			max-width: 312px;
+		}
+		&__list-item-body {
+			padding: 25px 18px;
+			&_bg {
+				padding-right: 52px;
+				& br {
+					display: none;
+				}
 			}
 		}
 	}

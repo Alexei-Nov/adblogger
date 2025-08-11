@@ -1398,23 +1398,23 @@ const defaultState = {
 						"items_list": [
 							{
 								"icon": "./img/cards-slider/icon-1.svg",
-								"name": "<span style='color: #7CEDF8;'>Автоматическая</span> </br> маркировка рекламы",
+								"name": "<span style='color: #00D3E6;'>Автоматическая</span> </br> маркировка рекламы",
 								"dropdownn_text": "",
 							},
 							{
 								"icon": "./img/cards-slider/icon-2.svg",
-								"name": "<span style='color: #7CEDF8;'>Фиксированный доход</span></br> до&nbsp;90&nbsp;000&nbsp;₽ за&nbsp;посты и&nbsp;клипы",
+								"name": "<span style='color: #00D3E6;'>Фиксированный доход</span> </br> до&nbsp;90&nbsp;000&nbsp;₽ за&nbsp;посты и&nbsp;клипы",
 								"dropdownn_text": "<p>Получите минимальные выплаты за&nbsp;первые 3 публикации в&nbsp;каждом сообществе, если они набрали 25% от&nbsp;цели. Размер выплаты зависит от&nbsp;формата контента (пост или&nbsp;клип) и&nbsp;числа подписчиков в&nbsp;сообществе</p>",
 							},
 							{
 								"icon": "./img/cards-slider/icon-3.svg",
-								"name": "<span style='color: #7CEDF8;'>Большой каталог</span></br> товаров c&nbsp;Ozon",
+								"name": "<span style='color: #00D3E6;'>Большой каталог</span></br> товаров c&nbsp;Ozon",
 								"desc": "",
 								"dropdownn_text": "",
 							},
 							{
 								"icon": "./img/cards-slider/icon-4.svg",
-								"name": "<span style='color: #7CEDF8;'>Быстрое размещение</span></br> без&nbsp;согласований с&nbsp;рекламодателем",
+								"name": "<span style='color: #00D3E6;'>Быстрое размещение</span></br> без&nbsp;согласований с&nbsp;рекламодателем",
 								"dropdownn_text": "",
 							}
 						],
