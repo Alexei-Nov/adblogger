@@ -552,6 +552,9 @@ body {
   .title {
     margin-bottom: 72px;
   }
+  .br-desktop {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 570px) {
