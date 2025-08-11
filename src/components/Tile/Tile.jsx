@@ -94,14 +94,14 @@ export default function Tile({ block_state }) {
 						<div className="tile__pagination slider-pagination"></div>
 					</Swiper>
 					<a
-						href={btnState.link}
+						href={block_state.btn_link}
 						className="tile__btn btn fw-500"
 						onClick={() => {
 							handleTracking('registration_other')
 							handleTracking('registration_all')
 						}}
 					>
-						{btnState.text}
+						{block_state.btn_text}
 					</a>
 				</div>
 			</section>

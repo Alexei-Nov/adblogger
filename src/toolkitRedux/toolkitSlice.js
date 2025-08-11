@@ -78,6 +78,8 @@ const defaultState = {
 					"block_slug": "tile",
 					"block_state": {
 						"title": "зарабатывайте с&nbsp;VK&nbsp;AdBlogger",
+						"btn_text": "Начать зарабатывать",
+						"btn_link": "/app",
 						"items": [
 							{
 								"id": 7,
@@ -153,6 +155,7 @@ const defaultState = {
 				{
 					"block_slug": "steps",
 					"block_state": {
+						"title": "3 шага до первой прибыли",
 						"stepsList": [
 							{
 								"title": "Зарегистрируйтесь как&nbsp;автор",
@@ -293,6 +296,8 @@ const defaultState = {
 					"block_state": {
 						"title": "не стоит откладывать, пора...",
 						"has_border": "true",
+						"btn_text": "начать зарабатывать",
+						"btn_link": "/app"
 					}
 				},
 				{
@@ -854,6 +859,8 @@ const defaultState = {
 					"block_slug": "tile",
 					"block_state": {
 						"title": "",
+						"btn_text": "Увеличить продажи",
+						"btn_link": "/app",
 						"items": [
 							{
 								"id": 5,
@@ -917,6 +924,7 @@ const defaultState = {
 				{
 					"block_slug": "steps",
 					"block_state": {
+						"title": "",
 						"stepsList": [
 							{
 								"title": "Создайте кабинет",
@@ -975,6 +983,8 @@ const defaultState = {
 				// 	"block_state": {
 				// 		"title": "Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте",
 				// 		"has_border": "true",
+				// 		"btn_text": "Перейти в кабинет",
+				// 		"btn_link": "/app"
 				// 	}
 				// },
 				// {
@@ -1293,6 +1303,8 @@ const defaultState = {
 					"block_state": {
 						"title": "Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте",
 						"has_border": "true",
+						"btn_text": "Перейти в кабинет",
+						"btn_link": "/app"
 					}
 				},
 				// {
@@ -1872,6 +1884,8 @@ const defaultState = {
 					"block_state": {
 						"title": "пора пробовать&nbsp;— <br>и&nbsp;получать деньги",
 						"has_border": "false",
+						"btn_text": "начать зарабатывать",
+						"btn_link": "/app"
 					}
 				},
 				{

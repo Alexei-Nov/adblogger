@@ -14,6 +14,8 @@ export default function DetailCase() {
 	const moneyState = {
 		title: 'Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте',
 		has_border: 'true',
+		btn_text: "Перейти в кабинет",
+		btn_link: "/app"
 	}
 
 	if (articleState.slug == 'case-for-authors') {

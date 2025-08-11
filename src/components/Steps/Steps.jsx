@@ -96,8 +96,8 @@ export default function Steps({ block_state }) {
 		<>
 			<section className='section steps' >
 				<div className="container" ref={wrapper}>
-					{window.location.pathname === "/for-authors" &&
-						<h2 className="steps__title title h2" ref={title}> 3 шага до первой прибыли</h2>
+					{block_state.title &&
+						<h2 className="steps__title title h2" ref={title} dangerouslySetInnerHTML={{ __html: block_state.title }}></h2>
 					}
 					<Swiper className='steps__slider'
 						modules={[Pagination]}
