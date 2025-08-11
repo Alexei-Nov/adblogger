@@ -31,7 +31,7 @@ export default function SalesImprovement({ block_state }) {
 										</NavLink>
 										<div className="sales-improvement__desc content" dangerouslySetInnerHTML={{ __html: case_item.desc }}></div>
 										<div className="sales-improvement__bottom">
-											<div className="sales-improvement__subtitle text-21 fw-700">{case_item.subtitle}</div>
+											{/* <div className="sales-improvement__subtitle text-21 fw-700">{case_item.subtitle}</div> */}
 											<div className="sales-improvement__list">
 												{case_item.elems_list.map((elem, j) => {
 													return (

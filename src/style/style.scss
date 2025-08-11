@@ -486,6 +486,27 @@ body {
 	}
 }
 
+ul.list-stars {
+	padding-left: 47px;
+	& > li {
+		list-style: none;
+		position: relative;
+		&::before {
+			display: block;
+			content: "";
+			width: 25px;
+			height: 25px;
+			background-image: url("/public/icons/list-star.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			position: absolute;
+			top: 5px;
+			left: -47px;
+		}
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.section {
 		padding: 48px 0;
