@@ -130,8 +130,8 @@ export default function Steps({ block_state }) {
 								<SwiperSlide key={i} className='steps__slide'>
 									<div className="steps__body">
 										<div className="steps__num text-24">{i + 1}</div>
-										<div className="steps__name text-32 fw-500">{stepItem.title}</div>
-										<div className="steps__desc text-21">{stepItem.desc}</div>
+										<div className="steps__name text-32 fw-500" dangerouslySetInnerHTML={{ __html: stepItem.title }}></div>
+										<div className="steps__desc text-21" dangerouslySetInnerHTML={{ __html: stepItem.desc }}></div>
 
 										{stepItem.btn_text &&
 											<a

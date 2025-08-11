@@ -15,7 +15,7 @@ export default function TabsBlock({ block_state }) {
 								return (
 									<div key={i} className={"tabs-block__body-item " + (activeTab == i ? 'tabs-block__body-item_active' : '')}>
 										<div className="tabs-block__body-left">
-											<div className="tabs-block__body-title" dangerouslySetInnerHTML={{ __html: item.title }}></div>
+											<div className="tabs-block__body-title text-40 fw-500" dangerouslySetInnerHTML={{ __html: item.title }}></div>
 											<div className="tabs-block__body-desc content" dangerouslySetInnerHTML={{ __html: item.desc }}></div>
 											<a href={item.btn_link} className="tabs-block__body-btn btn  btn_wide text-20 fw-500">{item.btn_text}</a>
 										</div>

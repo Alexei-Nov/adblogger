@@ -18,7 +18,7 @@ const defaultState = {
 	},
 	footer: {
 		title: 'О компании',
-		desc: 'VK AdBlogger — платформа для&nbsp;сотрудничества авторов и&nbsp;рекламодателей, на&nbsp;которой можно покупать рекламу в&nbsp;сообществах ВКонтакте'
+		desc: 'VK AdBlogger — платформа для сотрудничества авторов и рекламодателей.'
 	},
 	pages: [
 		{
@@ -46,26 +46,26 @@ const defaultState = {
 						"tabs": [
 							{
 								"tab_name": "Шопсы",
-								"title": "Рекламируйте товары с&nbsp;Оzon, а&nbsp;мы&nbsp;<span style='color:#7CEDF8;'>заплатим за&nbsp;просмотры</span> и&nbsp;продажи",
-								"desc": "<p>Выбирайте товары с&nbsp;Ozon и&nbsp;продвигайте их&nbsp;в&nbsp;постах и&nbsp;клипах. Согласовывать рекламу не&nbsp;нужно: у&nbsp;вас полная свобода</p><p>Больше просмотров — выше доход. Получайте выплаты за&nbsp;просмотры и&nbsp;проценты за&nbsp;продажи</p>",
-								"btn_text": "Узнать больше о шопсах",
+								"title": "Больше <span style='color:#00D3E6;'>шопсов</span>&nbsp;— больше <span style='color:#00D3E6;'>денег</span>: зарабатывайте ВКонтакте на&nbsp;рекламе товаров ",
+								"desc": "<p>Шопсы — новый формат рекламного контента ВКонтакте: посты и&nbsp;клипы, в&nbsp;которых есть ссылка на&nbsp;товар</p><p>Вы начинаете зарабатывать уже на&nbsp;просмотрах вашего контента — и&nbsp;получаете процент с&nbsp;продаж </p>",
+								"btn_text": "Узнать больше",
 								"btn_link": "/tovary",
 								"img": "/img/tabs-block/img-1.png",
 								"img_mob": "/img/tabs-block/img-1_mob.png",
 							},
 							{
-								"tab_name": "Контент на заказ",
-								"title": "Публикуйте контент на&nbsp;заказ — полностью в&nbsp;вашем стиле",
-								"desc": "<p>Создавайте нативные авторские посты и&nbsp;клипы без&nbsp;лишней коммуникации с&nbsp;рекламодателями</p><p>Документооборот, маркировка рекламы и&nbsp;оплата автоматические. Все&nbsp;процессы защищены</p>",
-								"btn_text": "Перейти в кабинет",
+								"tab_name": "Посевы",
+								"title": "Зарабатывайте на готовом контенте&nbsp;— <span style='color:#00D3E6;'>посевах</span> от&nbsp;рекламодателей",
+								"desc": "<p>Размещайте полностью оформленные посты от&nbsp;рекламодателей. Всё что вам нужно сделать&nbsp;— установить цену</p><p>Принимайте заявки вручную или&nbsp;настройте автопостинг, чтобы они сразу шли &nbsp;работу</p>",
+								"btn_text": "Начать зарабатывать",
 								"btn_link": "/app",
 								"img": "/img/tabs-block/img-2.png",
 								"img_mob": "/img/tabs-block/img-2_mob.png",
 							},
 							{
-								"tab_name": "Посевы",
-								"title": "Размещайте посевы от&nbsp;рекламодателей",
-								"desc": "<p>Публикуйте в&nbsp;своих сообществах посевы — готовые посты от&nbsp;рекламодателей</p><p>Вы&nbsp;сами устанавливаете цену за&nbsp;рекламу в&nbsp;каждом сообществе. Настройте автоматический постинг и&nbsp;размещайте посты без&nbsp;лишних усилий</p>",
+								"tab_name": "Контент на заказ",
+								"title": "<span style='color:#00D3E6;'>Контент на заказ</span>&nbsp;— реклама, которую вы создаёте в&nbsp;своём стиле",
+								"desc": "<p>От заказчика&nbsp;— бриф, с вас&nbsp;— классный креатив</p><p>А&nbsp;документооборот, маркировка рекламы и&nbsp;другие заботы остаются на&nbsp;нас</p>",
 								"btn_text": "Перейти в кабинет",
 								"btn_link": "/app",
 								"img": "/img/tabs-block/img-3.png",
@@ -77,12 +77,12 @@ const defaultState = {
 				{
 					"block_slug": "tile",
 					"block_state": {
-						"title": "управляйте своим доходом",
+						"title": "зарабатывайте с&nbsp;VK&nbsp;AdBlogger",
 						"items": [
 							{
 								"id": 7,
-								"title": "Выбирайте из&nbsp;трёх видов заработка",
-								"desc": "Продвигайте товары самостоятельно или&nbsp;получайте заявки от&nbsp;рекламодателей",
+								"title": "Выбирайте, какой контент публиковать",
+								"desc": "Размещайте авторский контент или&nbsp;готовые публикации от&nbsp;заказчиков ",
 								"imgList": [
 									{
 										"desktop": "/img/tile/img7-2.png",
@@ -97,8 +97,8 @@ const defaultState = {
 							},
 							{
 								"id": 8,
-								"title": "Занимайтесь творчеством, а&nbsp;не&nbsp;бумагами",
-								"desc": "Документооборот, маркировка и&nbsp;оплата рекламы — автоматические",
+								"title": "Не думайте о&nbsp;маркировке и&nbsp;документах",
+								"desc": "Всё автоматизировано&nbsp;— вы сможете уделять больше времени творчеству ",
 								"imgList": [
 									{
 										"desktop": "/img/tile/img8-1.png",
@@ -108,8 +108,8 @@ const defaultState = {
 							},
 							{
 								"id": 9,
-								"title": "Рекламируйте то, что&nbsp;интересно подписчикам ",
-								"desc": "Выбирайте, какие заявки принять или&nbsp;отклонить, либо настройте автоматический постинг",
+								"title": "Решайте сами, какую рекламу размещать ",
+								"desc": "Или настройте автоматический постинг, чтобы&nbsp;публиковать все заявки",
 								"imgList": [
 									{
 										"desktop": "/img/tile/img9-1.png",
@@ -155,22 +155,22 @@ const defaultState = {
 					"block_state": {
 						"stepsList": [
 							{
-								"title": "Подключитесь",
-								"desc": "Зарегистрируйтесь как автор, подключите своё сообщество и укажите реквизиты",
+								"title": "Зарегистрируйтесь как&nbsp;автор",
+								"desc": "Подключите своё сообщество и&nbsp;укажите реквизиты",
 								"imgPath": "/img/steps/img-1.png",
 								"btn_text": "",
 								"btn_link": ""
 							},
 							{
-								"title": "Принимайте заявки",
-								"desc": "Выбирайте товары и продвигайте их самостоятельно либо получайте заявки от рекламодателей",
+								"title": "Рекламируйте товары",
+								"desc": "Снимайте контент с&nbsp;товарами, которые выбрали сами, или&nbsp;получайте заявки от&nbsp;рекламодателей",
 								"imgPath": "/img/steps/img-2.png",
 								"btn_text": "",
 								"btn_link": ""
 							},
 							{
-								"title": "Зарабатывайте",
-								"desc": "Получайте деньги за рекламу и выводите их на свой счёт",
+								"title": "Начинайте зарабатывать",
+								"desc": "Получайте деньги за&nbsp;рекламу и&nbsp;выводите их на&nbsp;свой счёт",
 								"imgPath": "/img/steps/img-3.png",
 								"btn_text": "Перейти в кабинет",
 								"btn_link": "/app"
@@ -181,7 +181,7 @@ const defaultState = {
 				{
 					"block_slug": "channels",
 					"block_state": {
-						"title": "<span class='tt-lc'>Уже</span> подключились к VK AdBlogger",
+						"title": "<span class='tt-lc'>60&nbsp;000</span> сообществ уже подключились",
 						"tags": [],
 						"channels": [
 							{
@@ -284,14 +284,14 @@ const defaultState = {
 				{
 					"block_slug": "case",
 					"block_state": {
-						"title": "<span class='tt-lc'>Вдохновляйтесь</span> кейсами",
-						"desc": "Как крупные рекламодатели работают с авторами — узнайте в коротких статьях о&nbsp;топовых кейсах"
+						"title": "большой бизнес тоже делает это",
+						"desc": "Узнайте, как крупные рекламодатели работают с&nbsp;авторами "
 					}
 				},
 				{
 					"block_slug": "money",
 					"block_state": {
-						"title": "Зарабатывайте </br> на&nbsp;своём контенте",
+						"title": "не стоит откладывать, пора...",
 						"has_border": "true",
 					}
 				},
@@ -375,7 +375,7 @@ const defaultState = {
 				{
 					"block_slug": "entrance",
 					"block_state": {
-						"title": "запускайте рекламу у&nbsp;блогеров",
+						"title": "продажи ждут&nbsp;— в&nbsp;рекламе у&nbsp;блогеров",
 						"videoPath": "/video/video-2.mp4"
 					}
 				},
@@ -424,7 +424,7 @@ const defaultState = {
 				{
 					"block_slug": "channels",
 					"block_state": {
-						"title": "<span class='tt-lc'>Выбирайте</span> авторов под ваши задачи",
+						"title": "<span class='tt-lc'>найдите</span> авторов под любые задачи",
 						"tags": [
 							"Лайфстайл",
 							"Юмор",
@@ -437,7 +437,7 @@ const defaultState = {
 								"name": "RAVILOVA",
 								"photoPath": "/img/channels/lifestyle-1.png",
 								"desc": "Блогер и артистка Катя Равилова",
-								"subscribers": "135K подписчиков",
+								"subscribers": "188K подписчиков",
 								"tags": [
 									"Лайфстайл"
 								]
@@ -445,8 +445,8 @@ const defaultState = {
 							{
 								"name": "Настя Рыжик",
 								"photoPath": "/img/channels/lifestyle-2.png",
-								"desc": "Хитрая лиса, блогер и актриса",
-								"subscribers": "319K подписчиков",
+								"desc": "Хитрая лиса, блогер и артистка",
+								"subscribers": "349K подписчиков",
 								"tags": [
 									"Лайфстайл"
 								]
@@ -454,8 +454,8 @@ const defaultState = {
 							{
 								"name": "Люба Бич",
 								"photoPath": "/img/channels/lifestyle-3.png",
-								"desc": "Лайфстайл блогера в коротких клипах",
-								"subscribers": "206К подписчиков",
+								"desc": "Лайфстайл",
+								"subscribers": "263К подписчиков",
 								"tags": [
 									"Лайфстайл"
 								]
@@ -464,7 +464,7 @@ const defaultState = {
 								"name": "vasha.milasha | ISKRA",
 								"photoPath": "/img/channels/lifestyle-4.png",
 								"desc": "Жизненные видео от блогера Миланы Гасымовой",
-								"subscribers": "161K подписчиков",
+								"subscribers": "186K подписчиков",
 								"tags": [
 									"Лайфстайл"
 								]
@@ -473,7 +473,7 @@ const defaultState = {
 								"name": "TWIXI",
 								"photoPath": "/img/channels/lifestyle-5.png",
 								"desc": "Про блогинг и юмор от близняшек",
-								"subscribers": "187K подписчиков",
+								"subscribers": "230K подписчиков",
 								"tags": [
 									"Лайфстайл"
 								]
@@ -482,7 +482,7 @@ const defaultState = {
 								"name": "Дина Мирная",
 								"photoPath": "/img/channels/lifestyle-6.png",
 								"desc": "Королева лайфхаков",
-								"subscribers": "46K подписчиков",
+								"subscribers": "69K подписчиков",
 								"tags": [
 									"Лайфстайл"
 								]
@@ -491,7 +491,7 @@ const defaultState = {
 								"name": "Штепс",
 								"photoPath": "/img/channels/lifestyle-7.png",
 								"desc": "Про семью, про музыку и про кино",
-								"subscribers": "48K подписчиков",
+								"subscribers": "54K подписчиков",
 								"tags": [
 									"Лайфстайл"
 								]
@@ -500,16 +500,16 @@ const defaultState = {
 								"name": "POLI | Полина Дубкова",
 								"photoPath": "/img/channels/lifestyle-8.png",
 								"desc": "Поёт, шикарно танцует и ведёт блог",
-								"subscribers": "102K подписчиков",
+								"subscribers": "157K подписчиков",
 								"tags": [
 									"Лайфстайл"
 								]
 							},
 							{
-								"name": "ann.abramovaa",
+								"name": "Аня Абрамова",
 								"photoPath": "/img/channels/lifestyle-9.png",
 								"desc": "О семье, материнстве и полезных покупках",
-								"subscribers": "112K подписчиков",
+								"subscribers": "178K подписчиков",
 								"tags": [
 									"Лайфстайл"
 								]
@@ -518,7 +518,7 @@ const defaultState = {
 								"name": "Tobolator",
 								"photoPath": "/img/channels/lifestyle-10.png",
 								"desc": "Папа-блогер",
-								"subscribers": "149K подписчиков",
+								"subscribers": "313K подписчиков",
 								"tags": [
 									"Лайфстайл"
 								]
@@ -527,7 +527,7 @@ const defaultState = {
 								"name": "МХК",
 								"photoPath": "/img/channels/humor-1.png",
 								"desc": "Тот самый паблик с мемами",
-								"subscribers": "6.6M подписчиков",
+								"subscribers": "5.6M подписчиков",
 								"tags": [
 									"Юмор"
 								]
@@ -536,7 +536,7 @@ const defaultState = {
 								"name": "Шпильки | Женский Журнал",
 								"photoPath": "/img/channels/humor-2.png",
 								"desc": "И мейк-ап советы, и стиль, и юмор",
-								"subscribers": "5M подписчиков",
+								"subscribers": "3.9M подписчиков",
 								"tags": [
 									"Юмор"
 								]
@@ -545,7 +545,7 @@ const defaultState = {
 								"name": "БОРЩ",
 								"photoPath": "/img/channels/humor-3.png",
 								"desc": "Здесь смеются над актуальным",
-								"subscribers": "7.1M подписчиков",
+								"subscribers": "4.7M подписчиков",
 								"tags": [
 									"Юмор"
 								]
@@ -554,7 +554,7 @@ const defaultState = {
 								"name": "Мозги трески",
 								"photoPath": "/img/channels/humor-4.png",
 								"desc": "Мини-комиксы про твою жизнь",
-								"subscribers": "141K подписчиков",
+								"subscribers": "137K подписчиков",
 								"tags": [
 									"Юмор"
 								]
@@ -563,7 +563,7 @@ const defaultState = {
 								"name": "мемы про работу",
 								"photoPath": "/img/channels/humor-5.png",
 								"desc": "Смеёмся работе в лицо",
-								"subscribers": "7.1M подписчиков",
+								"subscribers": "319К подписчиков",
 								"tags": [
 									"Юмор"
 								]
@@ -572,7 +572,7 @@ const defaultState = {
 								"name": "котямбусы",
 								"photoPath": "/img/channels/humor-6.png",
 								"desc": "Обязательный паблик с котами",
-								"subscribers": "115K подписчиков",
+								"subscribers": "129K подписчиков",
 								"tags": [
 									"Юмор"
 								]
@@ -581,7 +581,7 @@ const defaultState = {
 								"name": "Мудрый волк | Нейронный клык | Ауф цитаты",
 								"photoPath": "/img/channels/humor-7.png",
 								"desc": "Цитаты на все случаи жизни",
-								"subscribers": "89K подписчиков",
+								"subscribers": "110K подписчиков",
 								"tags": [
 									"Юмор"
 								]
@@ -590,7 +590,7 @@ const defaultState = {
 								"name": "Да, Но / Yes, But",
 								"photoPath": "/img/channels/humor-8.png",
 								"desc": "Те самые комиксы «Да, Но»",
-								"subscribers": "137K подписчиков",
+								"subscribers": "175K подписчиков",
 								"tags": [
 									"Юмор"
 								]
@@ -599,7 +599,7 @@ const defaultState = {
 								"name": "еда не еда",
 								"photoPath": "/img/channels/humor-9.png",
 								"desc": "Бытовые зарисовки на языке еды",
-								"subscribers": "454K подписчиков",
+								"subscribers": "444K подписчиков",
 								"tags": [
 									"Юмор"
 								]
@@ -608,7 +608,7 @@ const defaultState = {
 								"name": "Эшкрек фром Кряков | Escape from Tarkov",
 								"photoPath": "/img/channels/gaming-1.png",
 								"desc": "Игровые мемы",
-								"subscribers": "41K подписчиков",
+								"subscribers": "44K подписчиков",
 								"tags": [
 									"Гейминг"
 								]
@@ -617,7 +617,7 @@ const defaultState = {
 								"name": "Всё о Minecraft",
 								"photoPath": "/img/channels/gaming-2.png",
 								"desc": "Карты, моды, текстуры и всё-всё в Minecraft",
-								"subscribers": "46K подписчиков",
+								"subscribers": "82K подписчиков",
 								"tags": [
 									"Гейминг"
 								]
@@ -626,7 +626,7 @@ const defaultState = {
 								"name": "Tavern | Dota",
 								"photoPath": "/img/channels/gaming-3.png",
 								"desc": "Коммьюнити игроков Dota",
-								"subscribers": "43K подписчиков",
+								"subscribers": "49K подписчиков",
 								"tags": [
 									"Гейминг"
 								]
@@ -635,7 +635,7 @@ const defaultState = {
 								"name": "Новости GTA Online и GTA 6",
 								"photoPath": "/img/channels/gaming-4.png",
 								"desc": "Cообщество для игроков в GTA",
-								"subscribers": "25K подписчиков",
+								"subscribers": "32K подписчиков",
 								"tags": [
 									"Гейминг"
 								]
@@ -644,7 +644,7 @@ const defaultState = {
 								"name": "ЧЕЛОВЕК-САМОВАР | DOTA 2",
 								"photoPath": "/img/channels/gaming-5.png",
 								"desc": "Новости и мемы по Dota 2",
-								"subscribers": "81K подписчиков",
+								"subscribers": "90K подписчиков",
 								"tags": [
 									"Гейминг"
 								]
@@ -653,7 +653,7 @@ const defaultState = {
 								"name": "Gaming за 30",
 								"photoPath": "/img/channels/gaming-6.png",
 								"desc": "Геймер с хорошим стажем",
-								"subscribers": "34K подписчиков",
+								"subscribers": "47K подписчиков",
 								"tags": [
 									"Гейминг"
 								]
@@ -662,7 +662,7 @@ const defaultState = {
 								"name": "Tavern | Tarkov",
 								"photoPath": "/img/channels/gaming-7.png",
 								"desc": "Ищем тиммейтов и общаемся",
-								"subscribers": "34K подписчиков",
+								"subscribers": "38K подписчиков",
 								"tags": [
 									"Гейминг"
 								]
@@ -671,7 +671,7 @@ const defaultState = {
 								"name": "МАЙНКРАФТ | Роменский",
 								"photoPath": "/img/channels/gaming-8.png",
 								"desc": "Группа настоящего майнкрафтера",
-								"subscribers": "21K подписчиков",
+								"subscribers": "64K подписчиков",
 								"tags": [
 									"Гейминг"
 								]
@@ -680,7 +680,7 @@ const defaultState = {
 								"name": "FC25 | Карьера | Перспективные футболисты",
 								"photoPath": "/img/channels/gaming-9.png",
 								"desc": "Настоящие фанаты FC25",
-								"subscribers": "78K подписчиков",
+								"subscribers": "94K подписчиков",
 								"tags": [
 									"Гейминг"
 								]
@@ -707,7 +707,7 @@ const defaultState = {
 								"name": "Александр Михайленко",
 								"photoPath": "/img/channels/travel-3.png",
 								"desc": "Самое красивое с Крымского полуострова",
-								"subscribers": "148К подписчиков",
+								"subscribers": "273К подписчиков",
 								"tags": [
 									"Путешествия"
 								]
@@ -716,7 +716,7 @@ const defaultState = {
 								"name": "Traveler's blog",
 								"photoPath": "/img/channels/travel-4.png",
 								"desc": "Контент со всего света",
-								"subscribers": "834K подписчиков",
+								"subscribers": "818K подписчиков",
 								"tags": [
 									"Путешествия"
 								]
@@ -725,7 +725,7 @@ const defaultState = {
 								"name": "В поисках света | Александр Мазуров",
 								"photoPath": "/img/channels/travel-5.png",
 								"desc": "Фотограф-путешественник в поисках света",
-								"subscribers": "89K подписчиков",
+								"subscribers": "103K подписчиков",
 								"tags": [
 									"Путешествия"
 								]
@@ -734,7 +734,7 @@ const defaultState = {
 								"name": "Романтика русских деревень",
 								"photoPath": "/img/channels/travel-6.png",
 								"desc": "О жизни русской глубинки",
-								"subscribers": "392K подписчиков",
+								"subscribers": "419K подписчиков",
 								"tags": [
 									"Путешествия"
 								]
@@ -743,7 +743,7 @@ const defaultState = {
 								"name": "Дотошный турист",
 								"photoPath": "/img/channels/travel-7.png",
 								"desc": "Чек-лист для новичков по Питеру",
-								"subscribers": "83K подписчиков",
+								"subscribers": "111K подписчиков",
 								"tags": [
 									"Путешествия"
 								]
@@ -752,16 +752,7 @@ const defaultState = {
 								"name": "Путешествия без багажа",
 								"photoPath": "/img/channels/travel-8.png",
 								"desc": "Были везде и расскажут об этом всё",
-								"subscribers": "63K подписчиков",
-								"tags": [
-									"Путешествия"
-								]
-							},
-							{
-								"name": "BEZгида || маршруты от Олега Меркурьева",
-								"photoPath": "/img/channels/travel-9.png",
-								"desc": "Треки по всему свету",
-								"subscribers": "77K подписчиков",
+								"subscribers": "185K подписчиков",
 								"tags": [
 									"Путешествия"
 								]
@@ -770,7 +761,7 @@ const defaultState = {
 								"name": "Раздетый стилист Лена Червова",
 								"photoPath": "/img/channels/style-1.png",
 								"desc": "Меняет жизни силой стиля",
-								"subscribers": "394K подписчиков",
+								"subscribers": "533K подписчиков",
 								"tags": [
 									"Стиль"
 								]
@@ -779,7 +770,7 @@ const defaultState = {
 								"name": "Стилист Оксана Самарина",
 								"photoPath": "/img/channels/style-2.png",
 								"desc": "Вдохновляет на модные эксперименты",
-								"subscribers": "33K подписчиков",
+								"subscribers": "41K подписчиков",
 								"tags": [
 									"Стиль"
 								]
@@ -788,7 +779,7 @@ const defaultState = {
 								"name": "Яркий Nail блогер - Alena Lavrenteva",
 								"photoPath": "/img/channels/style-3.png",
 								"desc": "Настоящий эксперт в ногтевом сервисе",
-								"subscribers": "130K подписчиков",
+								"subscribers": "166K подписчиков",
 								"tags": [
 									"Стиль"
 								]
@@ -797,7 +788,7 @@ const defaultState = {
 								"name": "Стиль с Катей Гершуни",
 								"photoPath": "/img/channels/style-4.png",
 								"desc": "Бодипозитивный стилист",
-								"subscribers": "92K подписчиков",
+								"subscribers": "130K подписчиков",
 								"tags": [
 									"Стиль"
 								]
@@ -806,7 +797,7 @@ const defaultState = {
 								"name": "Ok. Love",
 								"photoPath": "/img/channels/style-5.png",
 								"desc": "Место, где глаза отдыхают",
-								"subscribers": "85K подписчиков",
+								"subscribers": "100K подписчиков",
 								"tags": [
 									"Стиль"
 								]
@@ -815,7 +806,7 @@ const defaultState = {
 								"name": "Алла Смирнова",
 								"photoPath": "/img/channels/style-6.png",
 								"desc": "Художник по гриму, визажист и гораздо больше",
-								"subscribers": "42K подписчиков",
+								"subscribers": "51K подписчиков",
 								"tags": [
 									"Стиль"
 								]
@@ -824,7 +815,7 @@ const defaultState = {
 								"name": "Советы по стилю, тренды, мода",
 								"photoPath": "/img/channels/style-7.png",
 								"desc": "Фэшн-эскизы и советы по стилю",
-								"subscribers": "208K подписчиков",
+								"subscribers": "254K подписчиков",
 								"tags": [
 									"Стиль"
 								]
@@ -833,7 +824,7 @@ const defaultState = {
 								"name": "Разговоры с Ириной Муромцевой",
 								"photoPath": "/img/channels/style-8.png",
 								"desc": "Про здоровье, красоту и саморазвитие",
-								"subscribers": "103K подписчиков",
+								"subscribers": "170K подписчиков",
 								"tags": [
 									"Стиль"
 								]
@@ -842,7 +833,7 @@ const defaultState = {
 								"name": "Академия Леди",
 								"photoPath": "/img/channels/style-9.png",
 								"desc": "Медиа о благородном воспитании девушек",
-								"subscribers": "297K подписчиков",
+								"subscribers": "313K подписчиков",
 								"tags": [
 									"Стиль"
 								]
@@ -851,7 +842,7 @@ const defaultState = {
 								"name": "Tina Bukreeva",
 								"photoPath": "/img/channels/style-10.png",
 								"desc": "Бьюти-лайфхаки от профи мейк-апа",
-								"subscribers": "48K подписчиков",
+								"subscribers": "54K подписчиков",
 								"tags": [
 									"Стиль"
 								]
@@ -866,8 +857,8 @@ const defaultState = {
 						"items": [
 							{
 								"id": 5,
-								"title": "Пользуйтесь каталогом авторов",
-								"desc": "Подбирайте сообщества с вовлечённой аудиторией по фильтрам и подробной аналитике",
+								"title": "Выбирайте среди 60&nbsp;тысяч авторов",
+								"desc": "Подбирайте сообщества по&nbsp;тематике, качеству аудитории и&nbsp;параметрам, которые важны для&nbsp;вас",
 								"imgList": [
 									{
 										"desktop": "/img/tile/img5-1.png",
@@ -877,8 +868,8 @@ const defaultState = {
 							},
 							{
 								"id": 1,
-								"title": "Работайте в эффективных форматах",
-								"desc": "Размещайте готовую рекламу в клипах и постах или отправляйте ТЗ авторам на создание креативов",
+								"title": "Создавайте рекламу сами или&nbsp;заказывайте контент",
+								"desc": "Размещайте готовые креативы или&nbsp;отправляйте исполнителю бриф",
 								"imgList": [
 									{
 										"desktop": "/img/tile/img1-1.png",
@@ -893,7 +884,7 @@ const defaultState = {
 							{
 								"id": 6,
 								"title": "Оценивайте результаты рекламы",
-								"desc": "Все рекламные посты можно разметить автоматически, чтобы лучше анализировать их эффективность",
+								"desc": "Детальная аналитика, UTM-метки и&nbsp;другие инструменты помогут понять, как&nbsp;отработали креативы",
 								"imgList": [
 									{
 										"desktop": "/img/tile/img6-1.png",
@@ -903,8 +894,8 @@ const defaultState = {
 							},
 							{
 								"id": 3,
-								"title": "Экономьте рабочее время",
-								"desc": "ОРД, документооборот и платежи — автоматизированы. Достаточно внести юридические данные",
+								"title": "Не думайте об ОРД и&nbsp;документах",
+								"desc": "Всё автоматизировано, вам нужно только заполнить юридические данные",
 								"imgList": [
 									{
 										"desktop": "/img/tile/img3-1.png",
@@ -929,21 +920,21 @@ const defaultState = {
 						"stepsList": [
 							{
 								"title": "Создайте кабинет",
-								"desc": "Зарегистрируйтесь как рекламодатель или агентство",
+								"desc": "Зарегистрируйтесь как&nbsp;рекламодатель или&nbsp;агентство",
 								"imgPath": "/img/steps/img-4.png",
 								"btn_text": "",
 								"btn_link": ""
 							},
 							{
-								"title": "Выберите сообщества",
-								"desc": "Добавьте креатив и оплатите посты у подходящих авторов",
+								"title": "Размещайте рекламу",
+								"desc": "Создайте креатив или&nbsp;бриф, выберите авторов и&nbsp;оплатите размещение",
 								"imgPath": "/img/steps/img-5.png",
 								"btn_text": "",
 								"btn_link": ""
 							},
 							{
-								"title": "Отслеживайте выход рекламы",
-								"desc": "Оценивайте эффективность вышедших постов",
+								"title": "Оценивайте результат",
+								"desc": "По статистике UTM-меток и&nbsp;другим показателям можно понять, как&nbsp;отработал креатив",
 								"imgPath": "/img/steps/img-6.png",
 								"btn_text": "",
 								"btn_link": ""
@@ -975,8 +966,8 @@ const defaultState = {
 				{
 					"block_slug": "case",
 					"block_state": {
-						"title": "<span class='tt-lc'>Топ-кейсы рекламодателей</span>",
-						"desc": "Как авторы помогают бизнесу — узнайте в коротких статьях об успешных кейсах"
+						"title": "<span class='tt-lc'>большой бизнес <br> уже делает это</span>",
+						"desc": "Узнайте, как крупные рекламодатели работают с&nbsp;авторами "
 					}
 				},
 				// {
@@ -1369,7 +1360,7 @@ const defaultState = {
 				{
 					"block_slug": "cards_slider",
 					"block_state": {
-						"title": "рекламируйте товары с&nbsp;Ozon – получайте <span class='blue-text'>выплаты за&nbsp;просмотры</span>",
+						"title": "<span class='blue-text'>шопсы-шопсы-шопсы!</span>новый формат контента, который поможет <span class='blue-text'>зарабатывать ВКонтакте</span>",
 						"btn_link": "/app",
 						"btn_text": "Перейти в кабинет",
 						"gallery": [
@@ -1413,7 +1404,7 @@ const defaultState = {
 							{
 								"icon": "./img/cards-slider/icon-2.svg",
 								"name": "<span style='color: #7CEDF8;'>Фиксированный доход</span></br> до&nbsp;90&nbsp;000&nbsp;₽ за&nbsp;посты и&nbsp;клипы",
-								"dropdownn_text": "<p>Платформа гарантирует минимальные выплаты за&nbsp;первые три публикации в&nbsp;каждом сообществе, если контент набрал 25% от&nbsp;целевых просмотров. </p><p>Размер выплаты зависит от&nbsp;формата контента (пост или&nbsp;клип) и&nbsp;числа подписчиков в&nbsp;сообществе.</p>",
+								"dropdownn_text": "<p>Получите минимальные выплаты за&nbsp;первые 3 публикации в&nbsp;каждом сообществе, если они набрали 25% от&nbsp;цели. Размер выплаты зависит от&nbsp;формата контента (пост или&nbsp;клип) и&nbsp;числа подписчиков в&nbsp;сообществе</p>",
 							},
 							{
 								"icon": "./img/cards-slider/icon-3.svg",
@@ -1428,6 +1419,15 @@ const defaultState = {
 							}
 						],
 
+					}
+				},
+				{
+					"block_slug": "tovary_about",
+					"block_state": {
+						"title": "Что такое <span style='color:#00D3E6;'>шопсы</span> ВКонтакте?",
+						"desc": "<p><b style='color:#00D3E6;'>Шопсы</b>&nbsp;— это&nbsp;рекламные посты и&nbsp;клипы, в&nbsp;которых есть ссылка на&nbsp;товар. По&nbsp;ней пользователи могут сразу перейти к&nbsp;покупке</p> <p>Вы получаете деньги за&nbsp;просмотры шопсов и&nbsp;процент с&nbsp;продаж</p>",
+						"img": "./img/tovary-about/img.png",
+						"img_mob": "./img/tovary-about/img_mob.png",
 					}
 				},
 				{
@@ -1454,7 +1454,7 @@ const defaultState = {
 								"text": "<b>Зарегистрируйтесь</b> как автор, подключите своё сообщество и&nbsp;укажите реквизиты"
 							},
 							{
-								"text": "<b>Выбирайте товары</b> в&nbsp;каталоге и&nbsp;публикуйте посты или&nbsp;клипы со&nbsp;ссылкой на&nbsp;Ozon "
+								"text": "<b>Выбирайте товары</b> в&nbsp;каталоге и&nbsp;публикуйте шопсы со&nbsp;ссылками на&nbsp;товары Ozon "
 							},
 							{
 								"text": "<b>Получайте фиксированные выплаты</b> за&nbsp;просмотры публикаций и&nbsp;процент с&nbsp;каждой продажи "
@@ -1465,25 +1465,16 @@ const defaultState = {
 					}
 				},
 				{
-					"block_slug": "tovary_about",
-					"block_state": {
-						"title": "Что такое <span style='color:#00D3E6;'>шопсы</span>?",
-						"desc": "<p><b style='color:#00D3E6;'>Шопсы</b> — это рекламные посты или клипы.</p> <p>В <b style='color:#00D3E6;'>них</b> пользователи видят карточку товара, могут кликнуть по ней и сделать покупку.</p>",
-						"img": "./img/tovary-about/img.png",
-						"img_mob": "./img/tovary-about/img_mob.png",
-					}
-				},
-				{
 					"block_slug": "connection_conditions",
 					"block_state": {
-						"title": "условия подключения </br> к&nbsp;программе",
-						"desc": "Если вы пока не&nbsp;подходите&nbsp;под&nbsp;условия, <span class='blue-text fw-600'> узнайте, как&nbsp;улучшить сообщество </span> в&nbsp;наших рекомендациях",
+						"title": "чек-лист для подключения </br> к&nbsp;программе",
+						"desc": "Сообщество пока не&nbsp;подходит под все условия? Мы поможем <span class='blue-text fw-600'>это&nbsp;изменить</span>",
 						"list": [
 							{
-								"text": "У&nbsp;автора есть самозанятость, ИП или&nbsp;юридическое лицо"
+								"text": "У&nbsp;вас есть самозанятость, ИП или&nbsp;юридическое лицо"
 							},
 							{
-								"text": "Открытое сообщество от&nbsp;1000 подписчиков"
+								"text": "Открытое сообщество от 1&nbsp;000 подписчиков"
 							},
 							{
 								"text": "Хотя&nbsp;бы одна публикация за&nbsp;последние 30&nbsp;дней"
@@ -1492,13 +1483,13 @@ const defaultState = {
 						"btn_right_link": "/app",
 						"btn_right_text": "Узнать больше",
 						"btn_link": "/app",
-						"btn_text": "Перейти в кабинет",
+						"btn_text": "Начать зарабатывать",
 					}
 				},
 				{
 					"block_slug": "calculator",
 					"block_state": {
-						"title": "рассчитать <br> вознаграждение за&nbsp;интеграцию",
+						"title": "калькулятор вашего дохода",
 						"calc_table": [
 							{
 								'postType': 'post',
@@ -1758,23 +1749,23 @@ const defaultState = {
 				{
 					"block_slug": "advices",
 					"block_state": {
-						"title": "следуйте советам </br> и&nbsp;зарабатывайте больше",
+						"title": "советы по&nbsp;созданию <br> продающего контента",
 						"items_list": [
 							{
 								"img": "./img/advices/img-1.png",
-								"name": "удерживайте внимание",
+								"name": "подсвечивайте плюсы товара",
 								"list": [
 									{
-										"text": "Интригуйте покупателя с&nbsp;первых секунд"
+										"text": "Снимайте видеообзоры и&nbsp;ролики в&nbsp;формате «до — после» "
 									},
 									{
 										"text": "Показывайте товар с&nbsp;разных ракурсов"
 									},
 									{
-										"text": "Используйте цепляющий заголовок и&nbsp;динамичные кадры"
+										"text": "Делитесь личным опытом&nbsp;— это&nbsp;вызывает доверие"
 									},
 								],
-								"btn_link": "/app",
+								"btn_link": "https://vk.com/@adblogger-kak-snyat-prodauschii-klip-top-9-scenariev",
 								"btn_text": "Читать статью",
 							},
 							{
@@ -1782,57 +1773,57 @@ const defaultState = {
 								"name": "применяйте сторителлинг",
 								"list": [
 									{
-										"text": "Рассказывайте истории о&nbsp;товарах, а&nbsp;не&nbsp;сухие факты"
+										"text": "Начните с&nbsp;интриги, чтобы&nbsp;захватить внимание зрителя"
 									},
 									{
-										"text": "Добавляйте больше эмоций  в&nbsp;посты и&nbsp;клипы"
+										"text": "Определите боль, которую закрывает товар, и&nbsp;расскажите, как&nbsp;он это&nbsp;делает "
 									},
 									{
-										"text": "Придумывайте яркие сюжеты, чтобы вызвать отклик"
+										"text": "Захватите внимание: используйте динамичную музыку и&nbsp;смену кадров"
 									},
 								],
-								"btn_link": "/app",
+								"btn_link": "https://vk.com/@adblogger-kak-ispolzovat-storitelling-chtoby-povysit-prodazhi",
 								"btn_text": "Читать статью",
 							}
 						],
-						"bottom_text": "больше советов",
-						"bottom_btn_link": "/app",
-						"bottom_btn_text": "Перейти в базу знаний",
+						"bottom_text": "больше идей и&nbsp;лайфхаков",
+						"bottom_btn_link": "https://vk.com/@adblogger-baza-znanii-soco",
+						"bottom_btn_text": "Узнать",
 					}
 				},
 				{
 					"block_slug": "case_preview",
 					"block_state": {
-						"title": "",
-						"subtitle": "Как авторы ВКонтакте заработали 6,5&nbsp;млн&nbsp;₽ за&nbsp;месяц на&nbsp;нативном контенте",
+						"title": "это работает&nbsp;— мы проверяли",
+						"subtitle": "Как авторы ВКонтакте за&nbsp;месяц увеличили заработок на&nbsp;6,5&nbsp;млн&nbsp;₽ за&nbsp; счёт нативного контента",
 						"name": "Ролик на миллион",
 						"img": "./img/case-preview/img.png",
 						"img_mob": "./img/case-preview/img_mob.png",
 						"desc": "Как авторы ВКонтакте заработали больше 7&nbsp;млн на&nbsp;рекламе товаров Ozon",
 						"number_list": [
 							{
-								"number": "1568",
-								"label": "авторов разместили рекламу",
+								"number": "1568 авторов",
+								"label": "разместили рекламу",
 								"icon": "./img/case-preview/icon-1.svg",
 							},
 							{
-								"number": "4,9 млн",
+								"number": "4,9 млн рублей",
 								"label": "заработали на клипах",
 								"icon": "./img/case-preview/icon-2.svg",
 							},
 							{
-								"number": "1,6 млн",
+								"number": "1,6 млн рублей",
 								"label": "заработали на постах",
 								"icon": "./img/case-preview/icon-3.svg",
 							},
 							{
-								"number": "12 млн",
-								"label": "просмотров собрано контентом",
+								"number": "12 млн просмотров",
+								"label": "собрал контент",
 								"icon": "./img/case-preview/icon-4.svg",
 							},
 
 						],
-						"text": "В рамках рекламной кампании авторы выбирали товары Ozon из каталога и размещали в сообществах шопсы — посты и клипы с товарами.</br> Реклама принесла выгоду всем: авторы получили дополнительный доход, а рекламодатели — охваты.",
+						"text": "Авторы выбирали товары Ozon для&nbsp;рекламы и&nbsp;создавали с&nbsp;ними публикации, прикрепляя ссылку на&nbsp;покупку. По&nbsp;результатам рекламной кампании мы выяснили, что&nbsp;пользователи кликают по&nbsp;нативной рекламе на&nbsp;188% чаще, чем по&nbsp;обычной. Подробности&nbsp;— в&nbsp;кейсе.",
 						"btn_link": "/top-cases/case-for-authors",
 						"btn_text": "Подробнее",
 					}
@@ -1840,7 +1831,7 @@ const defaultState = {
 				{
 					"block_slug": "cases_slider",
 					"block_state": {
-						"title": "примеры других авторов",
+						"title": "взгляните на&nbsp;шопсы в&nbsp;деле",
 						"gallery": [
 							{
 								"video": "./video/clips/1.mp4",
@@ -1879,7 +1870,7 @@ const defaultState = {
 				{
 					"block_slug": "money",
 					"block_state": {
-						"title": "зарабатывайте <br> на&nbsp;своём контенте",
+						"title": "пора пробовать&nbsp;— <br>и&nbsp;получать деньги",
 						"has_border": "false",
 					}
 				},
@@ -1987,115 +1978,16 @@ const defaultState = {
 	],
 	cases: [
 		{
-			"slug": "case-6",
-			"title": "EveLux: ещё больше продаж, ещё ниже стоимость привлечения",
-			"seo_title": "Кейс бренда EveLux Professional в VK AdBlogger",
-			"seo_desc": "EveLux Professional увеличил продажи на маркетплейсах Ozon и Wildberries с помощью VK AdBlogger. Кампания снизила стоимость заказа и добавления в корзину на 40-43%, увеличив продажи до 35 в день при бюджете 100 000₽.",
-			"desc": "Как увеличить продажи на маркетплейсах",
-			"preview_img": "/img/case/img-6.png",
-			"preview_img_main": "/img/case/img-6.png",
-			"preview_img_small": "/img/case/img-6.png",
-			"preview_img_vertical": "/img/case/img-6.png",
-			"logo": "/img/case/icon-6.svg",
-			"card_label": "EveLux",
-			"brand_name": "Бренд профессиональных средств для волос",
-			"tags": [
-				{
-					"created_at": "2024-10-17T01:58:12.000000Z",
-					"id": 2,
-					"laravel_through_key": 4,
-					"slug": "for-authors",
-					"title": "Авторам",
-					"updated_at": "2024-10-17T01:58:12.000000Z"
-				}
-			],
-			"blocks": [
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<p> Для бренда профессиональных средств для&nbsp;волос EveLux Professional маркетплейсы <a href='https://www.ozon.ru/category/uhod-za-volosami-6584/evelux-professional-100987438/?brand_was_predicted=true&category_was_predicted=true&deny_category_prediction=true&from_global=true&text=evelux+professional&abt_att=1' target='_blank'>Ozon</a> и <a href='https://www.wildberries.ru/seller/799611' target='_blank'>Wildberries</a> — основные площадки продаж. <a href='https://vk.com/cerebro_vk' target='_blank'>Команда «Церебро Таргет»</a> протестировала VK AdBlogger, чтобы увеличить продажи бренда на этих площадках и&nbsp;снизить стоимость привлечения клиентов. В итоге — рост числа заказчиков и&nbsp;ниже стоимость целевых действий. </p>"
-				},
-				{
-					"block_type": "tile",
-					"tile_items": [
-						{
-							"name": "Стоимость заказа </br> (cost per order)",
-							"desc": "ниже на 40%",
-							"desc_font_size": "48px"
-						},
-						{
-							"name": "Стоимость добавления в корзину",
-							"desc": "ниже на 43%",
-							"desc_font_size": "48px"
-						}
-					]
-				},
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<p><p><b>Цели кампании:</b></p> <ul> <li>стабильные 30 продаж в день при бюджете 100 000 ₽ на один товар; </li> <li>стоимость заказа (CPO — cost per order) ниже 111 ₽ .</li> </ul></p>"
-				},
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<h2>О рекламодателе</h2> <p> EveLux Professional — бренд профессиональных средств для&nbsp;волос, основан в&nbsp;2022&nbsp;году. Товары производят на&nbsp;фабриках в&nbsp;Республике Беларусь и&nbsp;в&nbsp;России, а&nbsp;продают на&nbsp;маркетплейсах <a href='https://www.ozon.ru/category/uhod-za-volosami-6584/evelux-professional-100987438/?brand_was_predicted=true&category_was_predicted=true&deny_category_prediction=true&from_global=true&text=evelux+professional' target='_blank'>Ozon</a> и&nbsp;<a href='https://www.wildberries.ru/seller/799611' target='_blank'>Wildberries</a> . </p>"
-				},
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<h2>Что в фокусе?</h2><ul><li>Стоимость заказа (CPO — cost per order).</li><li>Стоимость добавления товара в корзину.</li></ul>"
-				},
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<h2>Креативы бренда</h2><p> Для рекламы выбрали один товар — крем-спрей. Использовали 16 оригинальных креативов, всего размещений было 555. <br> Для рекламы использовали видео в формате обзоров, которые в предыдущих рекламных кампаниях показали максимальную эффективность. В самих роликах обязательно указывали конкретные маркетплейсы, где можно заказать товар. </p> <p> Чтобы увеличить конверсию в целевое действие, в креативы добавили число отзывов на маркетплейсе, среднюю оценку товара. И рассказали о скидке при заказе — это помогло создать для покупателей образ выгодной покупки. </p>"
-				},
-				{
-					"block_type": "gallery",
-					"images": [
-						"/img/case/article-6-1.png",
-						"/img/case/article-6-2.png"
-					]
-				},
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<h2>Аудитория</h2> <p> Сообщества фильтровали по CPM, охватам, проценту женской аудитории, количеству рекламных постов, оптимальной стоимости размещения и числу подписчиков. </p> <p> Ключевой фактор при выборе сообществ — охваты. Стояла задача охватить широкую аудиторию и снизить средний CPM, но также попасть в ЦА, поэтому было важно отобрать сообщества именно с целевой аудиторией. </p>"
-				},
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<h2>В итоге: увеличили количество продаж в день и&nbsp;получили стоимость заказа ниже на 40%.</h2> <p> Кампания в VK AdBlogger продолжалась с 4 октября по 8 января. За это время выросло число просмотров карточки товара, добавлений в корзину и продаж, если сравнить те же показатели в момент продвижения через Маркет-платформу ВКонтакте. А главное — снизились стоимости заказа и добавления в корзину. </p>"
-				},
-				{
-					"block_type": "gallery",
-					"images": [
-						"/img/case/article-6-3.png"
-					]
-				},
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<p> В VK AdBlogger при меньших затратах бюджета удалось получить больший охват: средний CPM — 45,5 рубля, что на 26% ниже, чем на Маркет-платформе, а стоимость клика в 2 раза меньше — всего 7,2 рубля. </p> <p> Бренд получил больше переходов при меньших охватах и затратах на рекламу, а также больше продаж и добавлений в корзину по более низкой цене. </p> <p><b>В VK&nbsp;AdBlogger при&nbsp;меньших затратах удалось снизить цену за&nbsp;клик, за&nbsp;продажу и&nbsp;добавление в&nbsp;корзину.</b></p> <p> Среднее число продаж в день — 35, что даже выше поставленной цели. К тому же оно будет увеличиваться, так как не все товары заказываются в день добавления в корзину </p>"
-				},
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<h2>Вывод</h2> <p> «Опыт работы с VK AdBlogger — положительный. Очень понятный дашборд, который помогает анализировать динамику закупок, но самая удобная фишка — возможность купить рекламу в один клик у всей подборки сообществ. </p> <p> VK AdBlogger можно назвать хорошим инструментом для посевов, средний СРМ здесь ниже, чем на Маркет-платформе ВКонтакте, результаты лучше за счёт бо́льшего количества показов за прежние бюджеты. </p> <p> Надеемся, что вскоре на площадке будет ещё больше сообществ, чтобы можно было масштабировать кампании и находить свою ЦА в разных тематических группах», — команда «Церебро Таргет».</p>"
-				}
-			]
-		},
-		{
 			"slug": "case-for-authors",
-			"title": "Как авторы ВКонтакте <br> за&nbsp;месяц увеличили заработок на&nbsp;6,5 млн ₽ за&nbsp;счет&nbsp;нативного контента",
+			"title": "Как авторы ВКонтакте <br> за&nbsp;месяц увеличили заработок на 6,5 млн ₽ за&nbsp;счёт&nbsp;нативного контента",
 			"seo_title": "Кейс для авторов в VK AdBlogger",
 			"seo_desc": "Нативный контент — это когда реклама больше похожа на дружеский совет, искреннюю рекомендацию или живой отзыв блогера, которому доверяют и прислушиваются.",
-			"desc": "Нативный контент ",
+			"desc": "Нативно и креативно",
 			"preview_img": "/img/case/img-10.png",
 			"preview_img_main": "/img/case/img-10.png",
 			"preview_img_small": "/img/case/img-10.png",
 			"preview_img_vertical": "/img/case/img-10.png",
-			"logo": "",
+			"logo": "/img/case/icon-10.svg",
 			"card_label": "",
 			"brand_name": "",
 			"tags": [
@@ -2192,6 +2084,193 @@ const defaultState = {
 					"title": "",
 					"text": "<p>Если вы пишете атмосферные посты, снимаете яркие клипы или делитесь полезными лайфхаками — вы уже готовы к сотрудничеству с крупными брендами! Начните монетизировать свой талант и контент вместе с платформой VK AdBlogger уже сегодня.</p>"
 				},
+			]
+		},
+		{
+			"slug": "case-5",
+			"title": "Из&nbsp;ВКонтакте — на&nbsp;маркетплейсы: как&nbsp;Levrana использовала посевы для&nbsp;продажи новых товаров",
+			"seo_title": "Кейс производителя косметики Levrana в VK AdBlogger",
+			"seo_desc": "«Леврана» использовала VK AdBlogger для продвижения товаров на Wildberries, увеличив продажи на 20% и снизив цену за клик до 6,5 ₽. В ходе теста команда оптимизировала креативы, что привело к улучшению результатов и решению масштабировать кампанию.",
+			"desc": "Как Levrana использовала посевы для&nbsp;продажи новых товаров",
+			"preview_img": "/img/case/img-5.png",
+			"preview_img_main": "/img/case/img-5_main.png",
+			"preview_img_small": "/img/case/img-5.png",
+			"preview_img_vertical": "/img/case/img-5_vertical.png",
+			"logo": "/img/case/icon-5.svg",
+			"card_label": "Levrana",
+			"brand_name": "Популярный российский бренд косметики",
+			"tags": [
+				{
+					"created_at": "2024-10-17T01:58:12.000000Z",
+					"id": 2,
+					"laravel_through_key": 4,
+					"slug": "for-authors",
+					"title": "Авторам",
+					"updated_at": "2024-10-17T01:58:12.000000Z"
+				}
+			],
+			"blocks": [
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<p>Команда компании «Леврана» решила использовать инструменты VK AdBlogger для&nbsp;продвижения товаров развивающегося бренда. Они&nbsp;подобрали сообщества из&nbsp;каталога со&nbsp;своей целевой аудиторией и&nbsp;протестировали разные креативы. В&nbsp;итоге&nbsp;получили положительную динамику продаж на&nbsp;маркетплейсе Wildberries.</p>"
+				},
+				{
+					"block_type": "tile",
+					"tile_items": [
+						{
+							"name": "Увеличили количество продаж",
+							"desc": "на 20 %",
+							"desc_font_size": "48px"
+						},
+						{
+							"name": "Цена за клик",
+							"desc": "6,5 рубля",
+							"desc_font_size": "48px"
+						}
+					]
+				},
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<p><b>Цели кампании:</b>  увеличить продажи продуктов Levrana на Wildberries.</p>"
+				},
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<h2>О рекламодателе</h2><p>Levrana занимается производством косметических средств, БАДов и&nbsp;бытовой нехимии. Компания на&nbsp;рынке с&nbsp;2014&nbsp;года.</p> <p><br>Проблема: перегретые ставки на&nbsp;маркетплейсах. </br> Решение: посевы ВКонтакте.</b></p> <p>VK AdBlogger — новый инструмент для&nbsp;компании. Команда решила использовать его&nbsp;для&nbsp;посевов ВКонтакте из-за&nbsp;перегретых ставок на&nbsp;маркетплейсах — основном канале продаж продуктов.</p> <p><b>Цель Levrana</b> — повысить продажи на&nbsp;маркетплейсах.</p> <p>Команда следила за&nbsp;динамикой продаж конкретных товаров в&nbsp;кабинете маркетплейса после рекламы. А эффективность самих креативов оценивали по&nbsp;стоимости клика (CPC).</p>"
+				},
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<h2>Что в фокусе?</h2><ul><li>Стоимость клика</li><li>Динамика продаж на маркетплейсе</li></ul>"
+				},
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<h2>Креативы бренда</h2>"
+				},
+				{
+					"block_type": "gallery",
+					"images": [
+						"/img/case/article-5-2.png",
+						"/img/case/article-5-1.png"
+					]
+				},
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<p>Для теста выбрали несколько товаров одного из&nbsp;развивающихся брендов компании.</p> <p>На&nbsp;первых этапах нужно было протестировать креативы и&nbsp;выбрать самые эффективные, поэтому использовали разные тексты: от&nbsp;коротких «кликбейтов» до&nbsp;больших постов с&nbsp;подробными УТП товаров. Визуалы для&nbsp;посевов не&nbsp;создавали специально, а&nbsp;использовали те&nbsp;же, что публиковались в&nbsp;соцсетях бренда.</p> <p>Всего протестировали 16 постов, из&nbsp;них выбрали два самых успешных и&nbsp;запустили посевы с&nbsp;ними в&nbsp;VK&nbsp;AdBlogger. Но&nbsp;в&nbsp;процессе решили, что нужно создать новые креативы с&nbsp;визуалами специально для&nbsp;посевов через нашу платформу.</p> <p><b>Важно было получить максимальный охват при&nbsp;заданном бюджете</b></p> <p>При&nbsp;выборе сообществ настроили фильтр так, чтобы подобрать сообщества с&nbsp;высокими охватами, и&nbsp;добавляли в&nbsp;корзину те, что&nbsp;укладывались в&nbsp;бюджет каждого продвижения.</p> <p>Также подбирали сообщества с&nbsp;целевой аудиторией «женщины старше 35&nbsp;лет». </br> </p>"
+				},
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<h2>Итог теста — увеличили количество продаж на 20 %</h2> <p><b>Решено масштабировать кампанию и&nbsp;использовать посевы ВКонтакте</b></p> <p>На&nbsp;первом этапе команда Levrana вышла «в&nbsp;ноль» — сколько потратили на&nbsp;продвижение, столько дополнительно и&nbsp;заработали. Такой результат они оценили как&nbsp;положительный, ведь тестировали товары «развивающегося» бренда компании, где&nbsp;главная задача — увеличить оборот. Поэтому важен был любой дополнительный заказ на&nbsp;Wildberries, чтобы поднять позиции карточек в&nbsp;общем каталоге маркетплейса.</br> Далее, когда выделили по-настоящему рабочие креативы и&nbsp;снизили CPO (cost per order — стоимость за заказ), в&nbsp;юнит-экономике появились положительные значения. В&nbsp;итоге&nbsp;Levrana суммарно увеличила количество продаж на&nbsp;20 % и&nbsp;получила цену за&nbsp;клик всего 6,5&nbsp;рубля.</p>"
+				},
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<h2>Вывод</h2> <p>«Успех размещений на&nbsp;90 % зависит от&nbsp;креатива. В&nbsp;нашем случае использовать в&nbsp;качестве медиаматериалов то, что “было под рукой”, — скорее ошибка. Сейчас на&nbsp;создание креативов для&nbsp;посевов мы&nbsp;выделяем отдельные ресурсы.</p> <p>И&nbsp;также важно учитывать, что&nbsp;реклама в&nbsp;сообществах ВКонтакте сработает, если у вас действительно есть товар, который заинтересует потребителя. В&nbsp;этом случае посевы — это ещё одна возможность донести такой товар до&nbsp;клиента», — бренд-менеджер компании «Леврана».</p>"
+				}
+			]
+		},
+		{
+			"slug": "case-6",
+			"title": "EveLux: ещё больше продаж, ещё ниже стоимость привлечения",
+			"seo_title": "Кейс бренда EveLux Professional в VK AdBlogger",
+			"seo_desc": "EveLux Professional увеличил продажи на маркетплейсах Ozon и Wildberries с помощью VK AdBlogger. Кампания снизила стоимость заказа и добавления в корзину на 40-43%, увеличив продажи до 35 в день при бюджете 100 000₽.",
+			"desc": "Как увеличить продажи на маркетплейсах",
+			"preview_img": "/img/case/img-6.png",
+			"preview_img_main": "/img/case/img-6.png",
+			"preview_img_small": "/img/case/img-6.png",
+			"preview_img_vertical": "/img/case/img-6.png",
+			"logo": "/img/case/icon-6.svg",
+			"card_label": "EveLux",
+			"brand_name": "Бренд профессиональных средств для волос",
+			"tags": [
+				{
+					"created_at": "2024-10-17T01:58:12.000000Z",
+					"id": 2,
+					"laravel_through_key": 4,
+					"slug": "for-authors",
+					"title": "Авторам",
+					"updated_at": "2024-10-17T01:58:12.000000Z"
+				}
+			],
+			"blocks": [
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<p> Для бренда профессиональных средств для&nbsp;волос EveLux Professional маркетплейсы <a href='https://www.ozon.ru/category/uhod-za-volosami-6584/evelux-professional-100987438/?brand_was_predicted=true&category_was_predicted=true&deny_category_prediction=true&from_global=true&text=evelux+professional&abt_att=1' target='_blank'>Ozon</a> и <a href='https://www.wildberries.ru/seller/799611' target='_blank'>Wildberries</a> — основные площадки продаж. <a href='https://vk.com/cerebro_vk' target='_blank'>Команда «Церебро Таргет»</a> протестировала VK AdBlogger, чтобы увеличить продажи бренда на этих площадках и&nbsp;снизить стоимость привлечения клиентов. В итоге — рост числа заказчиков и&nbsp;ниже стоимость целевых действий. </p>"
+				},
+				{
+					"block_type": "tile",
+					"tile_items": [
+						{
+							"name": "Стоимость заказа </br> (cost per order)",
+							"desc": "ниже на 40%",
+							"desc_font_size": "48px"
+						},
+						{
+							"name": "Стоимость добавления в корзину",
+							"desc": "ниже на 43%",
+							"desc_font_size": "48px"
+						}
+					]
+				},
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<p><p><b>Цели кампании:</b></p> <ul> <li>стабильные 30 продаж в день при бюджете 100 000 ₽ на один товар; </li> <li>стоимость заказа (CPO — cost per order) ниже 111 ₽ .</li> </ul></p>"
+				},
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<h2>О рекламодателе</h2> <p> EveLux Professional — бренд профессиональных средств для&nbsp;волос, основан в&nbsp;2022&nbsp;году. Товары производят на&nbsp;фабриках в&nbsp;Республике Беларусь и&nbsp;в&nbsp;России, а&nbsp;продают на&nbsp;маркетплейсах <a href='https://www.ozon.ru/category/uhod-za-volosami-6584/evelux-professional-100987438/?brand_was_predicted=true&category_was_predicted=true&deny_category_prediction=true&from_global=true&text=evelux+professional' target='_blank'>Ozon</a> и&nbsp;<a href='https://www.wildberries.ru/seller/799611' target='_blank'>Wildberries</a> . </p>"
+				},
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<h2>Что в фокусе?</h2><ul><li>Стоимость заказа (CPO — cost per order).</li><li>Стоимость добавления товара в корзину.</li></ul>"
+				},
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<h2>Креативы бренда</h2><p> Для рекламы выбрали один товар — крем-спрей. Использовали 16 оригинальных креативов, всего размещений было 555. <br> Для рекламы использовали видео в формате обзоров, которые в предыдущих рекламных кампаниях показали максимальную эффективность. В самих роликах обязательно указывали конкретные маркетплейсы, где можно заказать товар. </p> <p> Чтобы увеличить конверсию в целевое действие, в креативы добавили число отзывов на маркетплейсе, среднюю оценку товара. И рассказали о скидке при заказе — это помогло создать для покупателей образ выгодной покупки. </p>"
+				},
+				{
+					"block_type": "gallery",
+					"images": [
+						"/img/case/article-6-1.png",
+						"/img/case/article-6-2.png"
+					]
+				},
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<h2>Аудитория</h2> <p> Сообщества фильтровали по CPM, охватам, проценту женской аудитории, количеству рекламных постов, оптимальной стоимости размещения и числу подписчиков. </p> <p> Ключевой фактор при выборе сообществ — охваты. Стояла задача охватить широкую аудиторию и снизить средний CPM, но также попасть в ЦА, поэтому было важно отобрать сообщества именно с целевой аудиторией. </p>"
+				},
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<h2>В итоге: увеличили количество продаж в день и&nbsp;получили стоимость заказа ниже на 40%.</h2> <p> Кампания в VK AdBlogger продолжалась с 4 октября по 8 января. За это время выросло число просмотров карточки товара, добавлений в корзину и продаж, если сравнить те же показатели в момент продвижения через Маркет-платформу ВКонтакте. А главное — снизились стоимости заказа и добавления в корзину. </p>"
+				},
+				{
+					"block_type": "gallery",
+					"images": [
+						"/img/case/article-6-3.png"
+					]
+				},
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<p> В VK AdBlogger при меньших затратах бюджета удалось получить больший охват: средний CPM — 45,5 рубля, что на 26% ниже, чем на Маркет-платформе, а стоимость клика в 2 раза меньше — всего 7,2 рубля. </p> <p> Бренд получил больше переходов при меньших охватах и затратах на рекламу, а также больше продаж и добавлений в корзину по более низкой цене. </p> <p><b>В VK&nbsp;AdBlogger при&nbsp;меньших затратах удалось снизить цену за&nbsp;клик, за&nbsp;продажу и&nbsp;добавление в&nbsp;корзину.</b></p> <p> Среднее число продаж в день — 35, что даже выше поставленной цели. К тому же оно будет увеличиваться, так как не все товары заказываются в день добавления в корзину </p>"
+				},
+				{
+					"block_type": "text",
+					"title": "",
+					"text": "<h2>Вывод</h2> <p> «Опыт работы с VK AdBlogger — положительный. Очень понятный дашборд, который помогает анализировать динамику закупок, но самая удобная фишка — возможность купить рекламу в один клик у всей подборки сообществ. </p> <p> VK AdBlogger можно назвать хорошим инструментом для посевов, средний СРМ здесь ниже, чем на Маркет-платформе ВКонтакте, результаты лучше за счёт бо́льшего количества показов за прежние бюджеты. </p> <p> Надеемся, что вскоре на площадке будет ещё больше сообществ, чтобы можно было масштабировать кампании и находить свою ЦА в разных тематических группах», — команда «Церебро Таргет».</p>"
+				}
 			]
 		},
 		{
@@ -2314,7 +2393,6 @@ const defaultState = {
 				}
 			]
 		},
-
 		{
 			"slug": "my-family-school",
 			"title": "MyFamilySchool: как посевы помогают продавать обучающие курсы",
@@ -2509,94 +2587,6 @@ const defaultState = {
 					"text": "«Мы начали тестировать VK AdBlogger сразу после запуска платформы. Чувствуем себя первопроходцами, которые в награду за смелость получили впечатляющие результаты, каких не удавалось добиться раньше. С VK AdBlogger закупка рекламы проходит быстрее, а для поиска сообществ для посевов не нужны сторонние программы — достаточно фильтров»",
 					"autor_name": "Полина Рылишкина, маркетолог сервиса «Страна в коробочке».",
 					"autor_photo_path": "/img/case/article-author-7.png"
-				}
-			]
-		},
-		{
-			"slug": "case-5",
-			"title": "Из&nbsp;ВКонтакте — на&nbsp;маркетплейсы: как&nbsp;Levrana использовала посевы для&nbsp;продажи новых товаров",
-			"seo_title": "Кейс производителя косметики Levrana в VK AdBlogger",
-			"seo_desc": "«Леврана» использовала VK AdBlogger для продвижения товаров на Wildberries, увеличив продажи на 20% и снизив цену за клик до 6,5 ₽. В ходе теста команда оптимизировала креативы, что привело к улучшению результатов и решению масштабировать кампанию.",
-			"desc": "Как Levrana использовала посевы для&nbsp;продажи новых товаров",
-			"preview_img": "/img/case/img-5.png",
-			"preview_img_main": "/img/case/img-5_main.png",
-			"preview_img_small": "/img/case/img-5.png",
-			"preview_img_vertical": "/img/case/img-5_vertical.png",
-			"logo": "/img/case/icon-5.svg",
-			"card_label": "Levrana",
-			"brand_name": "Популярный российский бренд косметики",
-			"tags": [
-				{
-					"created_at": "2024-10-17T01:58:12.000000Z",
-					"id": 2,
-					"laravel_through_key": 4,
-					"slug": "for-authors",
-					"title": "Авторам",
-					"updated_at": "2024-10-17T01:58:12.000000Z"
-				}
-			],
-			"blocks": [
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<p>Команда компании «Леврана» решила использовать инструменты VK AdBlogger для&nbsp;продвижения товаров развивающегося бренда. Они&nbsp;подобрали сообщества из&nbsp;каталога со&nbsp;своей целевой аудиторией и&nbsp;протестировали разные креативы. В&nbsp;итоге&nbsp;получили положительную динамику продаж на&nbsp;маркетплейсе Wildberries.</p>"
-				},
-				{
-					"block_type": "tile",
-					"tile_items": [
-						{
-							"name": "Увеличили количество продаж",
-							"desc": "на 20 %",
-							"desc_font_size": "48px"
-						},
-						{
-							"name": "Цена за клик",
-							"desc": "6,5 рубля",
-							"desc_font_size": "48px"
-						}
-					]
-				},
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<p><b>Цели кампании:</b>  увеличить продажи продуктов Levrana на Wildberries.</p>"
-				},
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<h2>О рекламодателе</h2><p>Levrana занимается производством косметических средств, БАДов и&nbsp;бытовой нехимии. Компания на&nbsp;рынке с&nbsp;2014&nbsp;года.</p> <p><br>Проблема: перегретые ставки на&nbsp;маркетплейсах. </br> Решение: посевы ВКонтакте.</b></p> <p>VK AdBlogger — новый инструмент для&nbsp;компании. Команда решила использовать его&nbsp;для&nbsp;посевов ВКонтакте из-за&nbsp;перегретых ставок на&nbsp;маркетплейсах — основном канале продаж продуктов.</p> <p><b>Цель Levrana</b> — повысить продажи на&nbsp;маркетплейсах.</p> <p>Команда следила за&nbsp;динамикой продаж конкретных товаров в&nbsp;кабинете маркетплейса после рекламы. А эффективность самих креативов оценивали по&nbsp;стоимости клика (CPC).</p>"
-				},
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<h2>Что в фокусе?</h2><ul><li>Стоимость клика</li><li>Динамика продаж на маркетплейсе</li></ul>"
-				},
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<h2>Креативы бренда</h2>"
-				},
-				{
-					"block_type": "gallery",
-					"images": [
-						"/img/case/article-5-2.png",
-						"/img/case/article-5-1.png"
-					]
-				},
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<p>Для теста выбрали несколько товаров одного из&nbsp;развивающихся брендов компании.</p> <p>На&nbsp;первых этапах нужно было протестировать креативы и&nbsp;выбрать самые эффективные, поэтому использовали разные тексты: от&nbsp;коротких «кликбейтов» до&nbsp;больших постов с&nbsp;подробными УТП товаров. Визуалы для&nbsp;посевов не&nbsp;создавали специально, а&nbsp;использовали те&nbsp;же, что публиковались в&nbsp;соцсетях бренда.</p> <p>Всего протестировали 16 постов, из&nbsp;них выбрали два самых успешных и&nbsp;запустили посевы с&nbsp;ними в&nbsp;VK&nbsp;AdBlogger. Но&nbsp;в&nbsp;процессе решили, что нужно создать новые креативы с&nbsp;визуалами специально для&nbsp;посевов через нашу платформу.</p> <p><b>Важно было получить максимальный охват при&nbsp;заданном бюджете</b></p> <p>При&nbsp;выборе сообществ настроили фильтр так, чтобы подобрать сообщества с&nbsp;высокими охватами, и&nbsp;добавляли в&nbsp;корзину те, что&nbsp;укладывались в&nbsp;бюджет каждого продвижения.</p> <p>Также подбирали сообщества с&nbsp;целевой аудиторией «женщины старше 35&nbsp;лет». </br> </p>"
-				},
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<h2>Итог теста — увеличили количество продаж на 20 %</h2> <p><b>Решено масштабировать кампанию и&nbsp;использовать посевы ВКонтакте</b></p> <p>На&nbsp;первом этапе команда Levrana вышла «в&nbsp;ноль» — сколько потратили на&nbsp;продвижение, столько дополнительно и&nbsp;заработали. Такой результат они оценили как&nbsp;положительный, ведь тестировали товары «развивающегося» бренда компании, где&nbsp;главная задача — увеличить оборот. Поэтому важен был любой дополнительный заказ на&nbsp;Wildberries, чтобы поднять позиции карточек в&nbsp;общем каталоге маркетплейса.</br> Далее, когда выделили по-настоящему рабочие креативы и&nbsp;снизили CPO (cost per order — стоимость за заказ), в&nbsp;юнит-экономике появились положительные значения. В&nbsp;итоге&nbsp;Levrana суммарно увеличила количество продаж на&nbsp;20 % и&nbsp;получила цену за&nbsp;клик всего 6,5&nbsp;рубля.</p>"
-				},
-				{
-					"block_type": "text",
-					"title": "",
-					"text": "<h2>Вывод</h2> <p>«Успех размещений на&nbsp;90 % зависит от&nbsp;креатива. В&nbsp;нашем случае использовать в&nbsp;качестве медиаматериалов то, что “было под рукой”, — скорее ошибка. Сейчас на&nbsp;создание креативов для&nbsp;посевов мы&nbsp;выделяем отдельные ресурсы.</p> <p>И&nbsp;также важно учитывать, что&nbsp;реклама в&nbsp;сообществах ВКонтакте сработает, если у вас действительно есть товар, который заинтересует потребителя. В&nbsp;этом случае посевы — это ещё одна возможность донести такой товар до&nbsp;клиента», — бренд-менеджер компании «Леврана».</p>"
 				}
 			]
 		},

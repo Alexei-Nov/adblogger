@@ -11,7 +11,7 @@ export default function Article({ article }) {
 						<div className="article__wrapper">
 							<div className="article__heading">
 								<h1 className="article__title h2" dangerouslySetInnerHTML={{ __html: article.title }}></h1>
-								{article.logo && article.brand_name &&
+								{article.logo &&
 									<div className="article__brand">
 										<div className="article__logo">
 											<img src={article.logo} alt="img" />
