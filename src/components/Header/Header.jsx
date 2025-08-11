@@ -65,6 +65,17 @@ export default function Header() {
 									>Рекламодателям</NavLink>
 								</li>
 
+								<a
+									href={btnState.link}
+									className="header__nav-btn btn text-18 fw-500 "
+									onClick={() => {
+										handleTracking('registration_header')
+										handleTracking('registration_all')
+									}}
+								>
+									{btnState.text}
+								</a>
+
 								{/* <li className='nav__item'>
 									<NavLink
 										to='/top-cases'

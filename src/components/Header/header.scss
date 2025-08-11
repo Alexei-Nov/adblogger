@@ -25,6 +25,9 @@
 	&__menu-btn {
 		display: none;
 	}
+	&__nav-btn {
+		display: none;
+	}
 	& .nav {
 		&__list {
 			display: flex;
@@ -75,6 +78,9 @@
 	.header {
 		&__wrapper {
 			gap: 16px;
+		}
+		&__nav-btn {
+			display: flex;
 		}
 		&__menu-btn {
 			display: flex;

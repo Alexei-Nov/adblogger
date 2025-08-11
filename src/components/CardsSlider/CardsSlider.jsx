@@ -126,7 +126,7 @@ export default function CardsSlider({ block_state }) {
 										<div className="cards-slider__list-icon">
 											<img src={item.icon} alt="img" />
 										</div>
-										<div className="cards-slider__list-name" dangerouslySetInnerHTML={{ __html: item.name }}></div>
+										<div className="cards-slider__list-name fw-600" dangerouslySetInnerHTML={{ __html: item.name }}></div>
 										{item.dropdownn_text &&
 											<div className="cards-slider__list-tooltip"
 

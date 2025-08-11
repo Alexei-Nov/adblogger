@@ -53,13 +53,16 @@
 		line-height: normal;
 		margin: 0 -10px;
 	}
+	&__link {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 768px) {
 	.question {
 		&__wrapper {
 			min-height: calc(100vh - 80px - 98px);
-			gap: 60px;
+			gap: 30px;
 		}
 		&__btns {
 			flex-direction: column;
@@ -73,6 +76,13 @@
 		&__card-desc {
 			margin: 0;
 		}
+		&__link {
+			display: flex;
+			font-size: 20px;
+			line-height: 110%;
+			color: var(--blue-1);
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -82,6 +92,27 @@
 			font-size: 26px;
 			line-height: 120%;
 			font-weight: 600;
+		}
+		&__card {
+			position: relative;
+			padding: 24px;
+			gap: 16px;
+
+			&:nth-child(2) {
+				& .question {
+					&__card-img {
+						top: 40px;
+						left: calc(100% - 50px);
+					}
+				}
+			}
+		}
+		&__card-img {
+			position: absolute;
+			top: 0;
+			left: -18px;
+			height: 90px;
+			width: 90px;
 		}
 	}
 }

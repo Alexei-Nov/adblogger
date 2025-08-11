@@ -39,6 +39,10 @@
   display: none;
 }
 
+.header__nav-btn {
+  display: none;
+}
+
 .header .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,6 +100,11 @@
 @media screen and (max-width: 1300px) {
   .header__wrapper {
     gap: 16px;
+  }
+  .header__nav-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .header__menu-btn {
     display: -webkit-box;
