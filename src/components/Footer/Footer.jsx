@@ -40,7 +40,7 @@ export default function Footer({ footer }) {
 		{ text: 'Политика конфиденциальности', link: 'https://adblogger.vk.com/documents/privacy', target: "_blank" },
 		...(isForAuthors
 			? [
-				{ text: 'Оферта для авторов', link: 'https://adblogger.vk.com/documents/offer_creator', target: "_blank" },
+				{ text: 'Оферта для авторов', link: 'https://adblogger.vk.com/documents/offer_creator_products', target: "_blank" },
 				{ text: 'Условия для авторов', link: 'https://adblogger.vk.com/documents/terms_creator', target: "_blank" },
 				{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.com/documents/moderation', target: "_blank" },
 			]
@@ -57,7 +57,7 @@ export default function Footer({ footer }) {
 	const helpItems = [
 		...(isForAuthors
 			? [
-				{ text: 'FAQ', link: 'https://adblogger.vk.com/documents/faq_author', target: "_blank" }
+				{ text: 'FAQ', link: 'https://vk.com/@-225265420-faq-po-platforme-vk-adblogger', target: "_blank" }
 			]
 			: [
 				{ text: 'FAQ', link: 'https://adblogger.vk.com/documents/faq_advertiser', target: "_blank" }
