@@ -15,7 +15,7 @@ export default function Question() {
 							<div className="question__card-img">
 								<img src="./img/question/img-1.png" alt="img" />
 							</div>
-							<div className="question__card-desc">Буду создавать <br /> рекламные посты и&nbsp;клипы</div>
+							<div className="question__card-desc">Буду создавать <br className='br-mobile' /> рекламные посты и&nbsp;клипы</div>
 							<NavLink
 								to='for-authors'
 								className="question__card-btn btn btn_border btn_rounded btn_wide text-20 fw-500"

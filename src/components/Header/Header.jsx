@@ -83,7 +83,8 @@ export default function Header() {
 										onClick={removeMenuClass}
 										end
 									>Топ-кейсы</NavLink>
-								</li>
+								</li> */}
+
 								<li className='nav__item'>
 									<NavLink
 										to='/for-sellers'
@@ -91,7 +92,7 @@ export default function Header() {
 										onClick={removeMenuClass}
 										end
 									>Селлерам</NavLink>
-								</li> */}
+								</li>
 
 							</ul>
 						</nav>

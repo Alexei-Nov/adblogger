@@ -49,7 +49,7 @@ const defaultState = {
 								"title": "Больше <span style='color:#00D3E6;'>шопсов</span>&nbsp;— больше <span style='color:#00D3E6;'>денег</span>: зарабатывайте ВКонтакте на&nbsp;рекламе товаров ",
 								"desc": "<p>Шопсы — новый формат рекламного контента ВКонтакте: посты и&nbsp;клипы, в&nbsp;которых есть ссылка на&nbsp;товар</p><p>Вы начинаете зарабатывать уже на&nbsp;просмотрах вашего контента — и&nbsp;получаете процент с&nbsp;продаж </p>",
 								"btn_text": "Узнать больше",
-								"btn_link": "/tovary",
+								"btn_link": "/shops",
 								"img": "/img/tabs-block/img-1.png",
 								"img_mob": "/img/tabs-block/img-1_mob.png",
 							},
@@ -66,7 +66,7 @@ const defaultState = {
 								"tab_name": "Контент на заказ",
 								"title": "<span style='color:#00D3E6;'>Контент на&nbsp;заказ</span>&nbsp;— реклама, которую вы создаёте <br> в&nbsp;своём стиле",
 								"desc": "<p>От заказчика&nbsp;— бриф, с вас&nbsp;— классный креатив</p><p>А&nbsp;документооборот, маркировка рекламы и&nbsp;другие заботы остаются на&nbsp;нас</p>",
-								"btn_text": "Перейти в кабинет",
+								"btn_text": "Начать зарабатывать",
 								"btn_link": "/app",
 								"img": "/img/tabs-block/img-3.png",
 								"img_mob": "/img/tabs-block/img-3_mob.png",
@@ -100,7 +100,7 @@ const defaultState = {
 							{
 								"id": 8,
 								"title": "Не думайте о&nbsp;маркировке и&nbsp;документах",
-								"desc": "Всё автоматизировано&nbsp;— вы сможете уделять больше времени творчеству ",
+								"desc": "Всё автоматизировано&nbsp;— вы сможете <br class='br-desktop'>уделять больше времени творчеству ",
 								"imgList": [
 									{
 										"desktop": "/img/tile/img8-1.png",
@@ -891,7 +891,7 @@ const defaultState = {
 							{
 								"id": 6,
 								"title": "Оценивайте результаты рекламы",
-								"desc": "Детальная аналитика, UTM-метки и&nbsp;другие инструменты помогут понять, как&nbsp;отработали креативы",
+								"desc": "Детальная аналитика, UTM-метки <br class='br-desktop'>и&nbsp;другие инструменты помогут понять, <br class='br-desktop'>как&nbsp;отработали креативы",
 								"imgList": [
 									{
 										"desktop": "/img/tile/img6-1.png",
@@ -942,7 +942,7 @@ const defaultState = {
 							},
 							{
 								"title": "Оценивайте результат",
-								"desc": "По статистике UTM-меток и&nbsp;другим показателям можно понять, как&nbsp;отработал креатив",
+								"desc": "По статистике UTM-меток <br class='br-desktop'>и&nbsp;другим показателям можно <br class='br-desktop'>понять, как&nbsp;отработал креатив",
 								"imgPath": "/img/steps/img-6.png",
 								"btn_text": "",
 								"btn_link": ""
@@ -1092,7 +1092,7 @@ const defaultState = {
 				{
 					"block_slug": "entrance_seller",
 					"block_state": {
-						"title": "реклама у авторов <br>Контакте&nbsp;— для роста <span class='blue-text'>продаж на&nbsp;маркетплейсах</span>",
+						"title": "реклама у авторов <br>ВКонтакте&nbsp;— для роста <br> <span class='blue-text'>продаж на&nbsp;маркетплейсах</span>",
 						"btn_text": "Попробовать",
 						"btn_link": "/app",
 						"img_list": [
@@ -1301,9 +1301,9 @@ const defaultState = {
 				{
 					"block_slug": "money",
 					"block_state": {
-						"title": "Запускайте рекламу у&nbsp;блогеров и&nbsp;в&nbsp;сообществах ВКонтакте",
+						"title": "пора действовать&nbsp;— <br class='br-desktop'>и пусть продажи взлетят",
 						"has_border": "true",
-						"btn_text": "Перейти в кабинет",
+						"btn_text": "Увеличить продажи",
 						"btn_link": "/app"
 					}
 				},
@@ -1808,7 +1808,7 @@ const defaultState = {
 					"block_slug": "case_preview",
 					"block_state": {
 						"title": "это работает — мы проверяли",
-						"subtitle": "Как авторы ВКонтакте за&nbsp;месяц увеличили заработок на&nbsp;6,5&nbsp;млн&nbsp;₽ за&nbsp; счёт нативного контента",
+						"subtitle": "Как авторы ВКонтакте за&nbsp;месяц увеличили <br class='br-desktop'>заработок на&nbsp;6,5&nbsp;млн&nbsp;₽ за&nbsp; счёт нативного <br class='br-desktop'>контента",
 						"name": "Ролик на миллион",
 						"img": "./img/case-preview/img.png",
 						"img_mob": "./img/case-preview/img_mob.png",

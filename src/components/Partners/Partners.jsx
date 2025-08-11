@@ -39,7 +39,7 @@ export default function Partners({ block_state }) {
 					})}
 				</div>
 
-				<div className="container">
+				{/* <div className="container">
 					<a
 						href={btnState.link}
 						className="partners__btn btn text-20"
@@ -50,7 +50,7 @@ export default function Partners({ block_state }) {
 					>
 						{btnState.text}
 					</a>
-				</div>
+				</div> */}
 			</section>
 		</>
 	)

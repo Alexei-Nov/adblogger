@@ -25,11 +25,11 @@ export default function СonnectionСonditions({ block_state }) {
 								})}
 
 							</div>
-							<a href={block_state.btn_link} className="connection-conditions__btn btn btn_border-black btn_wide btn_rounded fw-500">{block_state.btn_text}</a>
+							<a href={block_state.btn_link} className="connection-conditions__btn btn btn_border-black btn_wide btn_rounded fw-500" >{block_state.btn_text}</a>
 						</div>
 						<div className="connection-conditions__right">
 							<div className="connection-conditions__right-text" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
-							<a href={block_state.btn_right_link} className="connection-conditions__right-btn btn btn_border btn_rounded btn_wide fw-500">{block_state.btn_right_text}</a>
+							<a href={block_state.btn_right_link} className="connection-conditions__right-btn btn btn_border btn_rounded btn_wide fw-500" target='_blank' rel="noreferrer">{block_state.btn_right_text}</a>
 						</div>
 					</div>
 				</div>

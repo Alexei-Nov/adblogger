@@ -571,3 +571,9 @@ body {
     padding: 14px 30px;
   }
 }
+
+@media screen and (min-width: 570px) {
+  .br-mobile {
+    display: none;
+  }
+}

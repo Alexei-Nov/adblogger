@@ -515,3 +515,9 @@ body {
 		}
 	}
 }
+
+@media screen and (min-width: 570px) {
+	.br-mobile {
+		display: none;
+	}
+}
