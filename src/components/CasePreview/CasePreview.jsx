@@ -24,8 +24,8 @@ export default function CasePreview({ block_state }) {
 		<>
 			<section className='section case-preview'>
 				<div className="container">
+					<div className="case-preview__title title text-40 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
 					<div className="case-preview__wrapper">
-						{/* <div className="case-preview__title text-40 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div> */}
 						<div className="case-preview__subtitle text-32 fw-500" dangerouslySetInnerHTML={{ __html: block_state.subtitle }}></div>
 						<div className="case-preview__card">
 							<picture className="case-preview__img">

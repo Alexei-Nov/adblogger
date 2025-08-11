@@ -41,6 +41,10 @@
   font-family: "VK Sans Display Expanded";
 }
 
+.advices__bottom-btn {
+  min-width: 190px;
+}
+
 .advices__img {
   display: -webkit-box;
   display: -ms-flexbox;

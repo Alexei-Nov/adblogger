@@ -1794,7 +1794,7 @@ const defaultState = {
 				{
 					"block_slug": "case_preview",
 					"block_state": {
-						"title": "это работает&nbsp;— мы проверяли",
+						"title": "это работает — мы проверяли",
 						"subtitle": "Как авторы ВКонтакте за&nbsp;месяц увеличили заработок на&nbsp;6,5&nbsp;млн&nbsp;₽ за&nbsp; счёт нативного контента",
 						"name": "Ролик на миллион",
 						"img": "./img/case-preview/img.png",
