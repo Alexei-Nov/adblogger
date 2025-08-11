@@ -253,6 +253,9 @@
 		&__body-title {
 			margin-top: calc(32px + 40px);
 			font-size: 28px;
+			& br {
+				display: none;
+			}
 		}
 		&__body-desc {
 			font-size: 17px;

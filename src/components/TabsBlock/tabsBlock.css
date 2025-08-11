@@ -309,6 +309,9 @@
     margin-top: calc(32px + 40px);
     font-size: 28px;
   }
+  .tabs-block__body-title br {
+    display: none;
+  }
   .tabs-block__body-desc {
     font-size: 17px;
   }
