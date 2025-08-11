@@ -1360,7 +1360,7 @@ const defaultState = {
 				{
 					"block_slug": "cards_slider",
 					"block_state": {
-						"title": "<span class='blue-text'>шопсы-шопсы-шопсы!</span>новый формат контента, который поможет <span class='blue-text'>зарабатывать ВКонтакте</span>",
+						"title": "<span class='blue-text'>шопсы-шопсы-шопсы!</span><br> новый формат контента, который поможет <span class='blue-text'>зарабатывать ВКонтакте</span>",
 						"btn_link": "/app",
 						"btn_text": "Перейти в кабинет",
 						"gallery": [
