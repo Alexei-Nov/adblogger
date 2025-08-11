@@ -25,9 +25,9 @@ export default function TabsBlock({ block_state }) {
 											}
 											<img src={item.img} alt="img" />
 										</picture>
-									</div>)
+									</div>
+								)
 							})}
-
 						</div>
 						<div className="tabs-block__heading">
 							{block_state.tabs.map((item, i) => {

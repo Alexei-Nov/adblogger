@@ -206,10 +206,20 @@
     margin: 0;
   }
   .tabs-block__body-left {
-    padding: 32px;
+    padding: 0;
     max-width: none;
-    background-color: var(--black-2);
+    background: none;
     border-radius: 20px;
+    gap: 16px;
+  }
+  .tabs-block__body-title {
+    margin-top: calc(32px + 82px);
+  }
+  .tabs-block__body-desc {
+    max-width: none;
+  }
+  .tabs-block__body-btn {
+    max-width: none;
   }
   .tabs-block__heading {
     margin: 0;
