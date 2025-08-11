@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import './footer.css';
-import { useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { handleTracking } from 'utils/tracking';
 import { NavItem } from './NavItem';
 
@@ -12,19 +12,21 @@ export default function Footer({ footer }) {
 	const isForAuthors = location.pathname === "/for-authors"
 	const isForAdvertisers = location.pathname === "/for-advertisers"
 
-	useEffect(() => {
-		switch (location.pathname) {
-			case '/for-authors':
-				setFooterState({ ...footerState, desc: 'VK AdBlogger — платформа для сотрудничества авторов и рекламодателей, на которой можно продавать рекламу в сообществах ВКонтакте.' })
-				break;
-			case '/for-advertisers':
-				setFooterState({ ...footerState, desc: 'VK AdBlogger — платформа для сотрудничества авторов и рекламодателей, на которой можно покупать рекламу в сообществах ВКонтакте.' })
-				break;
-			default:
-				setFooterState({ ...footerState, desc: 'VK AdBlogger — платформа для сотрудничества авторов и рекламодателей.' })
-				break;
-		}
-	}, [location])
+	// useEffect(() => {
+	// 	switch (location.pathname) {
+	// 		case '/for-authors':
+	// 			setFooterState({ ...footerState, desc: 'VK AdBlogger — платформа для сотрудничества авторов и рекламодателей, на которой можно продавать рекламу в сообществах ВКонтакте.' })
+	// 			break;
+	// 		case '/for-advertisers':
+	// 			setFooterState({ ...footerState, desc: 'VK AdBlogger — платформа для сотрудничества авторов и рекламодателей, на которой можно покупать рекламу в сообществах ВКонтакте.' })
+	// 			break;
+	// 		default:
+	// 			setFooterState({
+	// 				...footerState, desc: 'VK AdBlogger — платформа для&nbsp;сотрудничества авторов и&nbsp;рекламодателей, на&nbsp;которой можно покупать рекламу в&nbsp;сообществах ВКонтакте'
+	// 			})
+	// 			break;
+	// 	}
+	// }, [location])
 
 	const caseItems = [
 		{ text: 'Посевы и треккинг', link: 'top-cases/case-1' },
@@ -86,11 +88,12 @@ export default function Footer({ footer }) {
 					<div className="footer__wrapper">
 						<div className="footer__body">
 							<div className="footer__title text-20">{footerState.title}</div>
-							<div className="footer__desc text-16">{footerState.desc}</div>
+							<div className="footer__desc text-16" dangerouslySetInnerHTML={{ __html: footerState.desc }}></div>
 						</div>
 						<nav className="footer__nav nav">
 							<ul className='nav__list'>
-								<NavItem title={"Кейсы"} submenu={caseItems} />
+								<NavLink to='/top-cases/' className='nav__link nav__link_lvl1 text-20'>Кейсы</NavLink>
+								{/* <NavItem title={"Кейсы"} submenu={caseItems} /> */}
 								<NavItem title={"Документы"} submenu={documentItems} />
 								<NavItem title={"Помощь"} submenu={helpItems} />
 							</ul>
@@ -100,7 +103,7 @@ export default function Footer({ footer }) {
 					<div className="footer__bottom text-16">
 						<div className="footer__bottom-row">
 							<div className="footer__bottom-links ">
-								<span>© VK, 2024 г.  Все права защищены.</span>
+								<span>© VK, 2025.  Все права защищены.</span>
 								<a href='https://adblogger.vk.com/documents/privacy' target='_blank' rel="noreferrer">Политика конфиденциальности</a>
 								<span>125167, г. Москва, Ленинградский проспект, д. 39, стр. 79</span>
 							</div>

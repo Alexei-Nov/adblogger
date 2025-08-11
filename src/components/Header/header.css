@@ -71,6 +71,10 @@
   background-color: #00d3e6;
 }
 
+.header .nav__link_active.nav__link_with-img {
+  color: #00d3e6;
+}
+
 .header .nav__link-img {
   display: -webkit-box;
   display: -ms-flexbox;
