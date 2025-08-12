@@ -12,14 +12,18 @@ export default function CasesSlider({ block_state }) {
 	const [mutedVideo, setMutedVideo] = useState(true)
 
 	useEffect(() => {
-		const viewportCenterY = window.innerHeight / 2;
+		const viewportStart = window.innerHeight / 2;
+		const viewportEnd = window.innerHeight / 3;
 		window.addEventListener('scroll', (e) => {
 			let elementCenterY = slider.current.getBoundingClientRect().top;
-			if (elementCenterY < viewportCenterY) {
+			if (elementCenterY < viewportStart &&
+				elementCenterY > viewportEnd &&
+				!slider.current.classList.contains('cases-slider__slider_view')
+			) {
+				slider.current.classList.add('cases-slider__slider_view')
 				slider.current.querySelector('.swiper-slide-active video').play()
 			}
 		})
-
 	}, [])
 
 
