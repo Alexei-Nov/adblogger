@@ -1389,7 +1389,16 @@ const defaultState = {
 								"img": "./img/cards-slider/img-4.png"
 							},
 							{
-								"img": "./img/cards-slider/img-5.png"
+								"img": "./img/cards-slider/img-6.png"
+							},
+							{
+								"img": "./img/cards-slider/img-7.png"
+							},
+							{
+								"img": "./img/cards-slider/img-8.png"
+							},
+							{
+								"img": "./img/cards-slider/img-9.png"
 							},
 							{
 								"img": "./img/cards-slider/img-1.png"
@@ -1404,7 +1413,16 @@ const defaultState = {
 								"img": "./img/cards-slider/img-4.png"
 							},
 							{
-								"img": "./img/cards-slider/img-5.png"
+								"img": "./img/cards-slider/img-6.png"
+							},
+							{
+								"img": "./img/cards-slider/img-7.png"
+							},
+							{
+								"img": "./img/cards-slider/img-8.png"
+							},
+							{
+								"img": "./img/cards-slider/img-9.png"
 							}
 						],
 						"items_list": [
@@ -1808,7 +1826,7 @@ const defaultState = {
 					"block_slug": "case_preview",
 					"block_state": {
 						"title": "это работает — мы проверяли",
-						"subtitle": "Как авторы ВКонтакте за&nbsp;месяц увеличили <br class='br-desktop'>заработок на&nbsp;6,5&nbsp;млн&nbsp;₽ за&nbsp; счёт нативного <br class='br-desktop'>контента",
+						"subtitle": "Как авторы ВКонтакте за&nbsp;месяц увеличили <br class='br-desktop'>заработок на&nbsp;6,5&nbsp;млн&nbsp;₽ за&nbsp;счёт нативного <br class='br-desktop'>контента",
 						"name": "Ролик на миллион",
 						"img": "./img/case-preview/img.png",
 						"img_mob": "./img/case-preview/img_mob.png",
@@ -1862,6 +1880,18 @@ const defaultState = {
 								"video": "./video/clips/5.mp4",
 							},
 							{
+								"video": "./video/clips/6.mp4",
+							},
+							{
+								"video": "./video/clips/7.mp4",
+							},
+							{
+								"video": "./video/clips/8.mp4",
+							},
+							{
+								"video": "./video/clips/9.mp4",
+							},
+							{
 								"video": "./video/clips/1.mp4",
 							},
 							{
@@ -1875,6 +1905,18 @@ const defaultState = {
 							},
 							{
 								"video": "./video/clips/5.mp4",
+							},
+							{
+								"video": "./video/clips/6.mp4",
+							},
+							{
+								"video": "./video/clips/7.mp4",
+							},
+							{
+								"video": "./video/clips/8.mp4",
+							},
+							{
+								"video": "./video/clips/9.mp4",
 							},
 						],
 					}
@@ -1994,10 +2036,10 @@ const defaultState = {
 	cases: [
 		{
 			"slug": "case-for-authors",
-			"title": "Как авторы ВКонтакте <br> за&nbsp;месяц увеличили заработок на 6,5 млн рублей за&nbsp;счёт&nbsp;нативного контента",
+			"title": "Как авторы ВКонтакте <br> за&nbsp;месяц увеличили заработок на&nbsp;6,5&nbsp;млн&nbsp;рублей за&nbsp;счёт&nbsp;нативного контента",
 			"seo_title": "Кейс для авторов в VK AdBlogger",
 			"seo_desc": "Нативный контент — это когда реклама больше похожа на дружеский совет, искреннюю рекомендацию или живой отзыв блогера, которому доверяют и прислушиваются.",
-			"desc": "Нативно и креативно",
+			"desc": "Нативно и&nbsp;креативно",
 			"preview_img": "/img/case/img-10.png",
 			"preview_img_main": "/img/case/img-10.png",
 			"preview_img_small": "/img/case/img-10.png",
@@ -2194,7 +2236,7 @@ const defaultState = {
 			"title": "EveLux: ещё больше продаж, ещё ниже стоимость привлечения",
 			"seo_title": "Кейс бренда EveLux Professional в VK AdBlogger",
 			"seo_desc": "EveLux Professional увеличил продажи на маркетплейсах Ozon и Wildberries с помощью VK AdBlogger. Кампания снизила стоимость заказа и добавления в корзину на 40-43%, увеличив продажи до 35 в день при бюджете 100 000₽.",
-			"desc": "Как увеличить продажи на маркетплейсах",
+			"desc": "Как увеличить продажи <br class='br-desktop'>на маркетплейсах",
 			"preview_img": "/img/case/img-6.png",
 			"preview_img_main": "/img/case/img-6.png",
 			"preview_img_small": "/img/case/img-6.png",
@@ -2290,7 +2332,7 @@ const defaultState = {
 		},
 		{
 			"slug": "cerebro-target",
-			"title": "Перевыполнили план и снизили CPL на 20%: как привлечь несколько тысяч заявок из ВКонтакте",
+			"title": "Перевыполнили план и&nbsp;снизили CPL на&nbsp;20%: как&nbsp;привлечь несколько тысяч заявок из&nbsp;ВКонтакте",
 			"seo_title": "Кейс бренда Церебро в VK AdBlogger",
 			"seo_desc": "Команда издательской компании провела рекламную кампанию в агентском кабинете «Церебро Таргет» и смогла еженедельно привлекать по 1500-2000 заявок из ВКонтакте. С помощью платформы VK AdBlogger удалось перевыполнить план по заявкам на звонок и сократить CPL на 20%.",
 			"desc": "Несколько тысяч заявок из&nbsp;ВКонтакте",
@@ -2707,10 +2749,10 @@ const defaultState = {
 		},
 		{
 			"slug": "case-1",
-			"title": "Как сохранить низкую цену на конверсию в действие",
+			"title": "Как сохранить низкую цену на&nbsp;конверсию в&nbsp;действие",
 			"seo_title": "Кейс бренда одежды Chukcha в VK AdBlogger",
 			"seo_desc": "Chukcha протестировала VK AdBlogger для привлечения подписчиков и активации промокодов, получив схожие результаты с маркет-платформой. Кампания показала эффективное масштабирование, с удобным поиском и отслеживанием эффективности размещений.",
-			"desc": "Посевы и треккинг",
+			"desc": "Посевы и&nbsp;треккинг",
 			"preview_img": "/img/case/img-1.png",
 			"preview_img_main": "/img/case/img-1_main.png",
 			"preview_img_small": "/img/case/img-1_small.png",
@@ -2793,7 +2835,7 @@ const defaultState = {
 		},
 		{
 			"slug": "case-2",
-			"title": "Космически нативно: как рекламировать мерч у стилистов и в космических сообществах",
+			"title": "Космически нативно: как&nbsp;рекламировать мерч у&nbsp;стилистов и&nbsp;в&nbsp;космических сообществах",
 			"seo_title": "Кейс бренда одежды КосмоМерч в VK AdBlogger",
 			"seo_desc": "КосмоМерч использовал VK AdBlogger для повышения узнаваемости среди новой аудитории, выбрав сообщества моды и космоса. Кампания привела к хорошему отклику, особенно в нишевых сообществах, с планами на нативные интеграции в кино и сериалы.",
 			"desc": "Космически нативно",
