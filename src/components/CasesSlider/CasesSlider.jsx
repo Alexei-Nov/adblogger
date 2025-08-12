@@ -70,7 +70,7 @@ export default function CasesSlider({ block_state }) {
 						return (
 							<SwiperSlide key={i} className="cases-slider__slide">
 								<div className="cases-slider__slide-video">
-									<video src={slide.video} muted={mutedVideo} controls></video>
+									<video src={slide.video} muted={mutedVideo} controls playsInline ></video>
 								</div>
 								<div className="cases-slider__slide-icon"
 									onClick={(e) => { setMutedVideo(!mutedVideo) }}>
