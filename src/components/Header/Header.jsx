@@ -85,14 +85,14 @@ export default function Header() {
 									>Топ-кейсы</NavLink>
 								</li> */}
 
-								<li className='nav__item'>
+								{/* <li className='nav__item'>
 									<NavLink
 										to='/for-sellers'
 										className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
 										onClick={removeMenuClass}
 										end
 									>Селлерам</NavLink>
-								</li>
+								</li> */}
 
 							</ul>
 						</nav>

@@ -236,4 +236,21 @@
   .case-preview__btn {
     margin-top: 40px;
   }
+  .case-preview__list-num {
+    font-size: 22px;
+  }
+  .case-preview__list-label {
+    font-size: 16px;
+  }
+  .case-preview__list-item {
+    gap: 10px;
+  }
+  .case-preview__list-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .case-preview__list-icon::after {
+    width: 55px;
+    height: 55px;
+  }
 }

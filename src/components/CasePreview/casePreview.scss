@@ -196,5 +196,22 @@
 		&__btn {
 			margin-top: 40px;
 		}
+		&__list-num {
+			font-size: 22px;
+		}
+		&__list-label {
+			font-size: 16px;
+		}
+		&__list-item {
+			gap: 10px;
+		}
+		&__list-icon {
+			width: 30px;
+			height: 30px;
+			&::after {
+				width: 55px;
+				height: 55px;
+			}
+		}
 	}
 }
