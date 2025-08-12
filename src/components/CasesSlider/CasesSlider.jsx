@@ -64,13 +64,14 @@ export default function CasesSlider({ block_state }) {
 					}}
 					onSlideChange={(swiper) => {
 						swiper.slides[swiper.previousIndex].querySelector('video').pause()
+						swiper.slides[swiper.activeIndex].querySelector('video').play()
 					}}
 				>
 					{block_state.gallery.map((slide, i) => {
 						return (
 							<SwiperSlide key={i} className="cases-slider__slide">
 								<div className="cases-slider__slide-video">
-									<video src={slide.video} muted={mutedVideo} controls playsInline preload="none"></video>
+									<video src={slide.video} muted={mutedVideo} controls playsInline preload="none" poster={slide.poster}></video>
 								</div>
 								<div className="cases-slider__slide-icon"
 									onClick={(e) => { setMutedVideo(!mutedVideo) }}>
