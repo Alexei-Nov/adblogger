@@ -517,6 +517,18 @@ ul.list-stars {
 	.br-desktop {
 		display: none;
 	}
+
+	ul.list-stars {
+		padding: 0;
+		gap: 26px;
+		& > li {
+			padding-top: 42px;
+			&::before {
+				top: 0;
+				left: 0;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 570px) {

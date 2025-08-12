@@ -54,8 +54,11 @@
 	&__bottom {
 		margin-top: auto;
 	}
+	&__desc {
+		margin-bottom: 48px;
+	}
 	&__subtitle {
-		margin-top: 48px;
+		// margin-top: 48px;
 		margin-bottom: 24px;
 	}
 	&__list {

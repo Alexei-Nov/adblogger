@@ -71,6 +71,9 @@
 		&__title {
 			top: 36px;
 		}
+		&__video {
+			height: calc(100dvh - 80px - 95px);
+		}
 		// &__img {
 		// 	width: 150%;
 		// 	min-height: 300px;
@@ -94,9 +97,6 @@
 
 		&__title {
 			top: 24px;
-		}
-		&__video {
-			height: calc(100vh - 80px - 95px);
 		}
 	}
 }

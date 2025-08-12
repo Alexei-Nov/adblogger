@@ -157,6 +157,10 @@
   }
   .number-seller__body {
     padding-top: 30px;
+    font-size: 19vw;
+  }
+  .number-seller__number {
+    width: auto;
   }
   .number-seller__img {
     width: 37px;
@@ -195,7 +199,8 @@
     border-radius: 10px;
   }
   .number-seller__img:nth-child(8) {
-    top: 40%;
+    top: 46%;
+    left: 66%;
   }
   .number-seller__label {
     margin: 0;

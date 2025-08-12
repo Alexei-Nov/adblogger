@@ -578,6 +578,17 @@ ul.list-stars > li::before {
   .br-desktop {
     display: none;
   }
+  ul.list-stars {
+    padding: 0;
+    gap: 26px;
+  }
+  ul.list-stars > li {
+    padding-top: 42px;
+  }
+  ul.list-stars > li::before {
+    top: 0;
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 570px) {

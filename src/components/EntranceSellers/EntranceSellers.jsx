@@ -89,7 +89,7 @@ export default function EntranceSellers({ block_state }) {
 					<div className="entrance-seller__heading title">
 						<div className="entrance-seller__title text-40 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
 						<a href={block_state.btn_link}
-							className="entrance-seller__btn btn text-28 fw-500"
+							className="entrance-seller__btn btn  text-18 fw-500"
 							target='_blank'
 							onClick={() => { handleTracking('reg_seller_first'); handleTracking('reg_seller_all'); }}
 						>{block_state.btn_text}</a>

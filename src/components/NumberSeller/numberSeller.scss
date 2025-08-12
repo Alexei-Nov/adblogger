@@ -141,6 +141,10 @@
 
 		&__body {
 			padding-top: 30px;
+			font-size: 19vw;
+		}
+		&__number {
+			width: auto;
 		}
 		&__img {
 			width: 37px;
@@ -183,7 +187,8 @@
 				border-radius: 10px;
 			}
 			&:nth-child(8) {
-				top: 40%;
+				top: 46%;
+				left: 66%;
 			}
 		}
 		&__label {

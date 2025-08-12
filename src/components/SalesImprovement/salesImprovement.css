@@ -81,8 +81,11 @@
   margin-top: auto;
 }
 
+.sales-improvement__desc {
+  margin-bottom: 48px;
+}
+
 .sales-improvement__subtitle {
-  margin-top: 48px;
   margin-bottom: 24px;
 }
 

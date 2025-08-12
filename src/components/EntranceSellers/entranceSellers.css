@@ -1,5 +1,5 @@
 .entrance-seller {
-  padding-top: 120px;
+  padding-top: 60px;
 }
 
 .entrance-seller__heading {
@@ -17,6 +17,7 @@
 
 .entrance-seller__btn {
   margin-top: 53px;
+  padding: 11px 20px;
 }
 
 .entrance-seller__title {

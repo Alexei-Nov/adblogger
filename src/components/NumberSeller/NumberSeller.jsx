@@ -30,15 +30,16 @@ export default function NumberSeller({ block_state }) {
 		})
 
 		let number = gsap.utils.selector(wrapper)('.number-seller__number')
+
 		tl.from(number, {
-			textContent: 48000,
+			textContent: window.innerWidth > 570 ? 48000 : 10,
 			duration: 1.5,
 			ease: "power1.in",
-			snap: { textContent: 10 },
+			snap: { textContent: window.innerWidth > 570 ? 10 : 1 },
 			stagger: {
 				each: 1.0,
 				onUpdate: function () {
-					this.targets()[0].innerHTML = (+this.targets()[0].textContent).toLocaleString();
+					this.targets()[0].innerHTML = (+this.targets()[0].textContent).toLocaleString("ru-RU") + (window.innerWidth > 570 ? '' : 'k');
 				},
 			}
 		}, 0);
@@ -51,7 +52,7 @@ export default function NumberSeller({ block_state }) {
 					<div className="number-seller__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
 					<div className="number-seller__wrapper">
 						<div className="number-seller__body">
-							<div className="number-seller__number">{block_state.number}</div>
+							<div className="number-seller__number">{window.innerWidth > 570 ? block_state.number : block_state.number / 1000}</div>
 							<div className="number-seller__number-after">{block_state.number_after}</div>
 						</div>
 						<div className="number-seller__label h2" dangerouslySetInnerHTML={{ __html: block_state.label }}></div>

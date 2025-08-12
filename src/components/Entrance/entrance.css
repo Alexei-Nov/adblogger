@@ -74,6 +74,9 @@
   .entrance__title {
     top: 36px;
   }
+  .entrance__video {
+    height: calc(100dvh - 80px - 95px);
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -89,8 +92,5 @@
   }
   .entrance__title {
     top: 24px;
-  }
-  .entrance__video {
-    height: calc(100vh - 80px - 95px);
   }
 }

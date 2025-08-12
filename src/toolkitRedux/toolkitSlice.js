@@ -1152,7 +1152,7 @@ const defaultState = {
 						"title": "разные тематики — <br>под любые задачи бизнеса",
 						"number": "60000",
 						"number_after": "+",
-						"label": "сообществ<br> для<br> рекламы ",
+						"label": "сообществ<br> для<br class='br-desktop'> рекламы ",
 						"img_list": [
 							{
 								"img": "./img/number-seller/img-1.png"
