@@ -1092,7 +1092,7 @@ const defaultState = {
 				{
 					"block_slug": "entrance_seller",
 					"block_state": {
-						"title": "реклама у авторов <br>ВКонтакте&nbsp;— для роста <br> <span class='blue-text'>продаж на&nbsp;маркетплейсах</span>",
+						"title": "реклама <br class='br-mobile'>у авторов <br>ВКонтакте&nbsp;— для&nbsp;роста <br> <span class='blue-text'>продаж на маркетплейсах</span>",
 						"btn_text": "Попробовать",
 						"btn_link": "/app",
 						"img_list": [
@@ -1301,7 +1301,7 @@ const defaultState = {
 				{
 					"block_slug": "money",
 					"block_state": {
-						"title": "пора действовать&nbsp;— <br class='br-desktop'>и пусть продажи взлетят",
+						"title": "пора <br class='br-mobile'>действовать <br class='br-mobile'>— <br>и&nbsp;пусть <br class='br-mobile'>продажи <br class='br-mobile'>взлетят",
 						"has_border": "true",
 						"btn_text": "Увеличить продажи",
 						"btn_link": "/app"
@@ -1433,7 +1433,7 @@ const defaultState = {
 							},
 							{
 								"icon": "./img/cards-slider/icon-2.svg",
-								"name": "<span style='color: #00D3E6;'>Фиксированный доход</span> </br> до&nbsp;90&nbsp;000&nbsp;₽ за&nbsp;посты и&nbsp;клипы",
+								"name": "<span style='color: #00D3E6;'>Фиксированный доход</span> </br> до&nbsp;50&nbsp;000&nbsp;₽ за&nbsp;посты и&nbsp;клипы",
 								"dropdownn_text": "<p>Получите минимальные выплаты за&nbsp;первые 3 публикации в&nbsp;каждом сообществе, если они набрали 25% от&nbsp;цели. Размер выплаты зависит от&nbsp;формата контента (пост или&nbsp;клип) и&nbsp;числа подписчиков в&nbsp;сообществе</p>",
 							},
 							{
