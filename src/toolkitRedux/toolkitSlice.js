@@ -2066,7 +2066,7 @@ const defaultState = {
 				{
 					"block_type": "gallery",
 					"images": [
-						"/img/case/article-10-6.svg"
+						"/img/case/article-10-6.png"
 					]
 				},
 				{
