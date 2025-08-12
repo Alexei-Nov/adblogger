@@ -167,13 +167,16 @@
 		padding: 12px;
 		border: 1.6px solid #959595;
 		border-radius: 100px;
-		color: #959595;
+		// color: #959595;
+		color: var(--white);
 		background-color: transparent;
 		text-align: center;
 		transition: all ease 0.5s;
 
 		&:focus {
-			color: var(--white);
+			&::placeholder {
+				color: transparent;
+			}
 		}
 	}
 }

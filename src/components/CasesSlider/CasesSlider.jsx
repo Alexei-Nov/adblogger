@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, EffectCoverflow, Navigation } from 'swiper/modules';
 import { handleTracking } from 'utils/tracking';
@@ -7,8 +7,21 @@ import './casesSlider.css'
 
 
 export default function CasesSlider({ block_state }) {
+	const slider = useRef()
 
 	const [mutedVideo, setMutedVideo] = useState(true)
+
+	useEffect(() => {
+		const viewportCenterY = window.innerHeight / 2;
+		window.addEventListener('scroll', (e) => {
+			let elementCenterY = slider.current.getBoundingClientRect().top;
+			if (elementCenterY < viewportCenterY) {
+				slider.current.querySelector('.swiper-slide-active video').play()
+			}
+		})
+
+	}, [])
+
 
 	return (
 		<>
@@ -17,6 +30,7 @@ export default function CasesSlider({ block_state }) {
 					<div className="cases-slider__title text-40 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
 				</div>
 				<Swiper
+					ref={slider}
 					className="cases-slider__slider"
 					modules={[EffectCoverflow, Pagination, Navigation]}
 					spaceBetween={8}
@@ -43,6 +57,9 @@ export default function CasesSlider({ block_state }) {
 							spaceBetween: 8,
 							allowTouchMove: false,
 						},
+					}}
+					onSlideChange={(swiper) => {
+						swiper.slides[swiper.previousIndex].querySelector('video').pause()
 					}}
 				>
 					{block_state.gallery.map((slide, i) => {

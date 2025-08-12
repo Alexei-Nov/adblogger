@@ -23,7 +23,7 @@ export default function Advices({ block_state }) {
 										})}
 
 									</ul>
-									<a href={item.btn_link} className="advices__btn btn btn_rounded btn_wide btn_border text-20 fw-500" >{item.btn_text}</a>
+									<a href={item.btn_link} className="advices__btn btn btn_rounded btn_wide btn_border text-20 fw-500" target='_blank'>{item.btn_text}</a>
 								</div>
 							)
 						})}
@@ -31,7 +31,7 @@ export default function Advices({ block_state }) {
 					</div>
 					<div className="advices__bottom">
 						<div className="advices__bottom-title" dangerouslySetInnerHTML={{ __html: block_state.bottom_text }}></div>
-						<a href={block_state.bottom_btn_link} className="advices__bottom-btn btn btn_rounded btn_border-black fw-500 text-20" >{block_state.bottom_btn_text}</a>
+						<a href={block_state.bottom_btn_link} className="advices__bottom-btn btn btn_rounded btn_border-black fw-500 text-20" target='_blank'>{block_state.bottom_btn_text}</a>
 					</div>
 				</div>
 			</section>

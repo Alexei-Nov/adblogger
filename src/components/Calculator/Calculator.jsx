@@ -6,7 +6,7 @@ export default function Calculator({ block_state }) {
 	const rangeSlider = useRef()
 
 	const [contentType, setContentType] = useState('clip')
-	const [viewCount, setViewCount] = useState(25000)
+	const [viewCount, setViewCount] = useState('')
 	const [followersCountStep, setFollowersCountStep] = useState(4)
 	const [totalIncome, setTotalIncome] = useState(18000)
 
@@ -24,9 +24,22 @@ export default function Calculator({ block_state }) {
 		}
 	}
 
-
 	const windowWidth = window.innerWidth
 	const [totalCostTooltip, setTotalCostTooltip] = useState(false)
+
+	function anchorTransition(e) {
+		e.preventDefault()
+
+		let anchor = e.target
+		let elem = document.querySelector(anchor.hash)
+		elem.closest('.accordion__item').click()
+
+		let blockPosition = elem.getBoundingClientRect()
+		window.scrollBy({
+			top: blockPosition.top - 100,
+			left: 0,
+		});
+	}
 
 	return (
 		<>
@@ -79,6 +92,7 @@ export default function Calculator({ block_state }) {
 										<input type="text"
 											className='calculator__input text-20 fw-500'
 											value={viewCount.toLocaleString("ru-RU")}
+											placeholder='25 000'
 											onChange={(e) => {
 												const currentNum = parseInt(e.target.value.replace(/\s/g, ''))
 												if (!Number.isNaN(currentNum)) {
@@ -120,7 +134,7 @@ export default function Calculator({ block_state }) {
 									</div>
 									<div className="calculator__results-tooltip-body content">
 										<p>Доход за продвижение товара с Ozon состоит из фиксированной выплаты и процента от продажи товара</p>
-										<p>Подробнее <a href="#anchor-calculator">здесь</a></p>
+										<p>Подробнее <a href="#anchor-calculator" onClick={anchorTransition}>здесь</a></p>
 									</div>
 									<div className="calculator__results-num fw-600">
 										<span>{totalIncome.toLocaleString("ru-RU")}</span>&nbsp;₽

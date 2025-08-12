@@ -235,15 +235,27 @@
   padding: 12px;
   border: 1.6px solid #959595;
   border-radius: 100px;
-  color: #959595;
+  color: var(--white);
   background-color: transparent;
   text-align: center;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
 
-.calculator__input:focus {
-  color: var(--white);
+.calculator__input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.calculator__input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.calculator__input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.calculator__input:focus::placeholder {
+  color: transparent;
 }
 
 .range-slider {
