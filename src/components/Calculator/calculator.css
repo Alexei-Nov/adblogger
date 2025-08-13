@@ -31,7 +31,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 60px;
+  gap: 40px;
 }
 
 .calculator__results {
@@ -45,6 +45,9 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .calculator__results-img {
@@ -52,6 +55,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  max-width: 295px;
   height: auto;
 }
 
@@ -65,15 +69,15 @@
 }
 
 .calculator__results-bottom {
-  padding: 35px 32px;
+  padding: 20px;
   border-radius: 25px;
   color: var(--black);
   text-align: center;
   position: relative;
   z-index: 1;
-  height: 180px;
-  max-width: 100%;
   width: 395px;
+  max-width: 100%;
+  height: 130px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -115,10 +119,11 @@
   display: none;
   color: var(--white);
   text-align: left;
+  padding-right: 24px;
 }
 
 .calculator__results-num {
-  font-size: 70px;
+  font-size: 60px;
   line-height: 100%;
 }
 
@@ -165,8 +170,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 34px;
-  height: 34px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
@@ -230,7 +235,6 @@
 
 .calculator__input {
   width: 100%;
-  max-width: 355px;
   border-radius: 100px;
   padding: 12px;
   border: 1.6px solid #959595;
@@ -256,6 +260,35 @@
 
 .calculator__input:focus::placeholder {
   color: transparent;
+}
+
+.calculator__input_error {
+  border-color: var(--red);
+}
+
+.calculator__input_error ~ .calculator__input-error {
+  opacity: 1;
+}
+
+.calculator__input-container {
+  width: 100%;
+  max-width: 405px;
+  position: relative;
+}
+
+.calculator__input-error {
+  text-align: center;
+  color: var(--red);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
 }
 
 .range-slider {

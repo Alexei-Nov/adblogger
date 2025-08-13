@@ -49,10 +49,10 @@ export default function Calculator({ block_state }) {
 						<div className="calculator__title text-40 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
 						<div className="calculator__body">
 							<div className="calculator__form">
-								<div className="calculator__subtitle text-24" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
+								<div className="calculator__subtitle text-22" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
 								<div className="calculator__item">
 									<div className="calculator__row calculator__row_mob">
-										<div className="calculator__item-title text-32 fw-500">
+										<div className="calculator__item-title text-22 fw-500">
 											Тип контента
 										</div>
 										<div className="calculator__btns text-20 fw-500">
@@ -65,7 +65,7 @@ export default function Calculator({ block_state }) {
 									</div>
 								</div>
 								<div className="calculator__item">
-									<div className="calculator__item-title text-32 fw-500">
+									<div className="calculator__item-title text-22 fw-500">
 										Количество подписчиков в&nbsp;сообществе
 									</div>
 									<div className="calculator__range">
@@ -86,24 +86,28 @@ export default function Calculator({ block_state }) {
 								</div>
 								<div className="calculator__item">
 									<div className="calculator__row">
-										<div className="calculator__item-title text-32 fw-500">
+										<div className="calculator__item-title text-22 fw-500">
 											Количество просмотров
 										</div>
-										<input type="text"
-											className='calculator__input text-20 fw-500'
-											value={viewCount.toLocaleString("ru-RU")}
-											placeholder='25 000'
-											onChange={(e) => {
-												const currentNum = parseInt(e.target.value.replace(/\s/g, ''))
-												if (!Number.isNaN(currentNum)) {
-													setViewCount(currentNum)
-												}
-												if (e.target.value === '') {
-													setViewCount('')
-												}
-											}}
-											onFocus={(e) => { setViewCount('') }}
-										/>
+										<div className="calculator__input-container">
+											<input type="text"
+												name='Количество просмотров'
+												className={'calculator__input text-20 fw-500' + (viewCount ? ' calculator__input_error' : '')}
+												value={viewCount.toLocaleString("ru-RU")}
+												placeholder={'введите число от '}
+												onChange={(e) => {
+													const currentNum = parseInt(e.target.value.replace(/\s/g, ''))
+													if (!Number.isNaN(currentNum)) {
+														setViewCount(currentNum)
+													}
+													if (e.target.value === '') {
+														setViewCount('')
+													}
+												}}
+												onFocus={(e) => { setViewCount('') }}
+											/>
+											<div className="calculator__input-error text-16 fw-500">минимальное значение 8 750</div>
+										</div>
 									</div>
 								</div>
 								<div className="calculator__submit btn btn_rounded btn_wide text-20 fw-500" onClick={finalCalc}>Посчитать</div>
@@ -124,7 +128,9 @@ export default function Calculator({ block_state }) {
 										</picture>
 									</div>
 									<div className="calculator__results-bottom-tooltip"
-										onClick={() => setTotalCostTooltip(!totalCostTooltip)}
+										onMouseEnter={windowWidth > 570 ? () => setTotalCostTooltip(!totalCostTooltip) : null}
+										onMouseLeave={windowWidth > 570 ? () => setTotalCostTooltip(!totalCostTooltip) : null}
+										onClick={windowWidth <= 570 ? () => setTotalCostTooltip(!totalCostTooltip) : null}
 									>
 										<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M9.26143 11.4863C9.69828 11.4863 9.93824 11.2416 10.0305 10.8211C10.1105 10.2941 10.2951 10.0242 11.1134 9.54105C11.981 9.02023 12.4301 8.37391 12.4301 7.42639C12.4301 5.96433 11.2549 4.98543 9.50754 4.98543C8.18469 4.98543 7.20024 5.5188 6.80646 6.3471C6.6834 6.58555 6.62187 6.824 6.62187 7.09382C6.62187 7.57072 6.92336 7.87819 7.40943 7.87819C7.78475 7.87819 8.06163 7.70249 8.21545 7.30089C8.41234 6.74242 8.81843 6.44122 9.4214 6.44122C10.0982 6.44122 10.5658 6.86792 10.5658 7.48287C10.5658 8.06016 10.3259 8.37391 9.53216 8.85708C8.80612 9.29006 8.4308 9.7795 8.4308 10.5199V10.6078C8.4308 11.1223 8.73844 11.4863 9.26143 11.4863Z" fill="#0D6871" />
@@ -132,9 +138,11 @@ export default function Calculator({ block_state }) {
 											<path d="M10.3391 13.2307C10.3391 13.8081 9.87105 14.2762 9.29365 14.2762C8.71624 14.2762 8.24816 13.8081 8.24816 13.2307C8.24816 12.6533 8.71624 12.1852 9.29365 12.1852C9.87105 12.1852 10.3391 12.6533 10.3391 13.2307Z" fill="#0D6871" />
 										</svg>
 									</div>
-									<div className="calculator__results-tooltip-body content">
-										<p>Доход за продвижение товара с Ozon состоит из фиксированной выплаты и процента от продажи товара</p>
-										<p>Подробнее <a href="#anchor-calculator" onClick={anchorTransition}>здесь</a></p>
+									<div className="calculator__results-tooltip-body content text-18">
+										<p>
+											Доход за продвижение товара с Ozon состоит из фиксированной выплаты и процента от продажи товара <br />
+											Подробнее <a href="#anchor-calculator" onClick={anchorTransition}>здесь</a>
+										</p>
 									</div>
 									<div className="calculator__results-num fw-600">
 										<span>{totalIncome.toLocaleString("ru-RU")}</span>&nbsp;₽

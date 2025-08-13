@@ -8,6 +8,7 @@
   --blue-1: #00d3e6;
   --blue-2: #7cedf8;
   --grey-1: #7c8a9a;
+  --red: #ff3985;
 }
 
 html {
@@ -99,6 +100,11 @@ body {
 
 .text-24 {
   font-size: 24px;
+  line-height: 120%;
+}
+
+.text-22 {
+  font-size: 22px;
   line-height: 120%;
 }
 

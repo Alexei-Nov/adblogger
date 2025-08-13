@@ -1433,12 +1433,12 @@ const defaultState = {
 							},
 							{
 								"icon": "./img/cards-slider/icon-2.svg",
-								"name": "<span style='color: #00D3E6;'>Фиксированный доход</span> </br> до&nbsp;50&nbsp;000&nbsp;₽ за&nbsp;посты и&nbsp;клипы",
+								"name": "<span style='color: #00D3E6;'>Фиксированные выплаты</span> </br> до&nbsp;50&nbsp;000&nbsp;₽ за&nbsp;пост или&nbsp;клип",
 								"dropdownn_text": "<p>Получите минимальные выплаты за&nbsp;первые 3 публикации в&nbsp;каждом сообществе, если они набрали 25% от&nbsp;цели. Размер выплаты зависит от&nbsp;формата контента (пост или&nbsp;клип) и&nbsp;числа подписчиков в&nbsp;сообществе</p>",
 							},
 							{
 								"icon": "./img/cards-slider/icon-3.svg",
-								"name": "<span style='color: #00D3E6;'>Большой каталог</span></br> товаров c&nbsp;Ozon",
+								"name": "<span style='color: #00D3E6;'>Большой каталог</span></br> товаров Ozon",
 								"desc": "",
 								"dropdownn_text": "",
 							},
