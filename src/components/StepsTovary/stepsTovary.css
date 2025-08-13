@@ -43,7 +43,7 @@
 }
 
 .steps-tovary__steps-body {
-  padding: 30px 25px;
+  padding: 30px 20px;
   padding-top: 83px;
   -webkit-mask-image: url("/public/img/steps-tovary/mask.svg");
           mask-image: url("/public/img/steps-tovary/mask.svg");
