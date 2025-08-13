@@ -1759,13 +1759,13 @@ const defaultState = {
 								"name": "подсвечивайте плюсы товара",
 								"list": [
 									{
-										"text": "Снимайте видеообзоры и&nbsp;ролики в&nbsp;формате «до — после» "
+										"text": "Снимайте видеообзоры <br class='br-mobile'>и&nbsp;ролики <br class='br-desktop'>в&nbsp;формате <br class='br-mobile'>«до&nbsp;—&nbsp;после» "
 									},
 									{
-										"text": "Показывайте товар с&nbsp;разных ракурсов"
+										"text": "Показывайте товар <br>с&nbsp;разных ракурсов"
 									},
 									{
-										"text": "Делитесь личным опытом&nbsp;— это&nbsp;вызывает доверие"
+										"text": "Делитесь личным опытом&nbsp;— это <br class='br-mobile'>вызывает <br class='br-desktop'>доверие"
 									},
 								],
 								"btn_link": "https://vk.com/@adblogger-kak-snyat-prodauschii-klip-top-9-scenariev",
@@ -1776,13 +1776,13 @@ const defaultState = {
 								"name": "применяйте сторителлинг",
 								"list": [
 									{
-										"text": "Начните с&nbsp;интриги, чтобы&nbsp;захватить внимание зрителя"
+										"text": "Начните с&nbsp;интриги, чтобы <br class='br-mobile'>захватить <br class='br-desktop'>внимание зрителя"
 									},
 									{
-										"text": "Определите боль, которую закрывает товар, и&nbsp;расскажите, как&nbsp;он это&nbsp;делает "
+										"text": "Определите боль, <br class='br-mobile'>которую закрывает товар, <br>и&nbsp;расскажите, как&nbsp;он <br class='br-mobile'>это&nbsp;делает "
 									},
 									{
-										"text": "Захватите внимание: используйте динамичную музыку и&nbsp;смену кадров"
+										"text": "Захватите внимание: <br class='br-mobile'>используйте <br class='br-desktop'>динамичную музыку <br class='br-mobile'>и&nbsp;смену кадров"
 									},
 								],
 								"btn_link": "https://vk.com/@adblogger-kak-ispolzovat-storitelling-chtoby-povysit-prodazhi",
