@@ -315,7 +315,7 @@
 		}
 		&__row {
 			flex-direction: column;
-			gap: 20px;
+			gap: 10px;
 			align-items: flex-start;
 
 			// &_mob {
@@ -331,7 +331,7 @@
 			max-width: none;
 		}
 		&__item-title {
-			font-size: 24px;
+			font-size: 20px;
 			line-height: 110%;
 		}
 		&__form {

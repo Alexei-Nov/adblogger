@@ -9,6 +9,7 @@ export default function Calculator({ block_state }) {
 	const [viewCount, setViewCount] = useState('')
 	const [followersCountStep, setFollowersCountStep] = useState(4)
 	const [totalIncome, setTotalIncome] = useState(18000)
+	const [minViewCount, setMinViewCount] = useState(4250)
 
 
 	function finalCalc() {
@@ -19,7 +20,7 @@ export default function Calculator({ block_state }) {
 			viewCount >= item.viewCondition.split('-')[0]
 		)
 
-		if (tableItem) {
+		if (tableItem && tableItem.length && tableItem[0].totalIncome != 0) {
 			setTotalIncome(tableItem[0].totalIncome)
 		}
 	}
@@ -40,6 +41,23 @@ export default function Calculator({ block_state }) {
 			left: 0,
 		});
 	}
+
+	function minViewCountCheck() {
+		const tableItem = block_state.calc_table.filter((item) =>
+			item.postType == contentType &&
+			item.followersCountStep == followersCountStep &&
+			item.totalIncome == 0
+		)
+
+		if (tableItem && tableItem.length) {
+			setMinViewCount(+tableItem[0].viewCondition.split('-')[1] + 1)
+		}
+	}
+
+	useEffect(() => {
+		minViewCountCheck()
+	}, [contentType, viewCount, followersCountStep])
+
 
 	return (
 		<>
@@ -92,9 +110,9 @@ export default function Calculator({ block_state }) {
 										<div className="calculator__input-container">
 											<input type="text"
 												name='Количество просмотров'
-												className={'calculator__input text-20 fw-500' + (viewCount ? ' calculator__input_error' : '')}
+												className={'calculator__input text-20 fw-500' + (viewCount && viewCount < minViewCount ? ' calculator__input_error' : '')}
 												value={viewCount.toLocaleString("ru-RU")}
-												placeholder={'введите число от '}
+												placeholder={'введите число от ' + minViewCount.toLocaleString("ru-RU")}
 												onChange={(e) => {
 													const currentNum = parseInt(e.target.value.replace(/\s/g, ''))
 													if (!Number.isNaN(currentNum)) {
@@ -106,7 +124,7 @@ export default function Calculator({ block_state }) {
 												}}
 												onFocus={(e) => { setViewCount('') }}
 											/>
-											<div className="calculator__input-error text-16 fw-500">минимальное значение 8 750</div>
+											<div className="calculator__input-error text-16 fw-500">минимальное значение {minViewCount.toLocaleString()}</div>
 										</div>
 									</div>
 								</div>
