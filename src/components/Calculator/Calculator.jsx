@@ -6,7 +6,7 @@ export default function Calculator({ block_state }) {
 	const rangeSlider = useRef()
 
 	const [contentType, setContentType] = useState('clip')
-	const [viewCount, setViewCount] = useState('')
+	const [viewCount, setViewCount] = useState(25000)
 	const [followersCountStep, setFollowersCountStep] = useState(4)
 	const [totalIncome, setTotalIncome] = useState(18000)
 	const [minViewCount, setMinViewCount] = useState(4250)
