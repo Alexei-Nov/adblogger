@@ -1368,7 +1368,6 @@ const defaultState = {
 					"block_slug": "preloader",
 					"block_state": {}
 				},
-
 				{
 					"block_slug": "cards_slider",
 					"block_state": {
@@ -1397,33 +1396,6 @@ const defaultState = {
 							{
 								"img": "./img/cards-slider/img-8.png"
 							},
-							{
-								"img": "./img/cards-slider/img-9.png"
-							},
-							{
-								"img": "./img/cards-slider/img-1.png"
-							},
-							{
-								"img": "./img/cards-slider/img-2.png"
-							},
-							{
-								"img": "./img/cards-slider/img-3.png"
-							},
-							{
-								"img": "./img/cards-slider/img-4.png"
-							},
-							{
-								"img": "./img/cards-slider/img-6.png"
-							},
-							{
-								"img": "./img/cards-slider/img-7.png"
-							},
-							{
-								"img": "./img/cards-slider/img-8.png"
-							},
-							{
-								"img": "./img/cards-slider/img-9.png"
-							}
 						],
 						"items_list": [
 							{
@@ -1866,15 +1838,15 @@ const defaultState = {
 						"gallery": [
 							{
 								"video": "./video/clips/8.mp4",
-								"poster": "./img/cases-slider/img-1.png",
+								"poster": "./img/cases-slider/img-8.png",
 							},
 							{
 								"video": "./video/clips/6.mp4",
-								"poster": "./img/cases-slider/img-1.png",
+								"poster": "./img/cases-slider/img-6.png",
 							},
 							{
 								"video": "./video/clips/7.mp4",
-								"poster": "./img/cases-slider/img-1.png",
+								"poster": "./img/cases-slider/img-7.png",
 							},
 							{
 								"video": "./video/clips/1.mp4",
@@ -1882,23 +1854,23 @@ const defaultState = {
 							},
 							{
 								"video": "./video/clips/2.mp4",
-								"poster": "./img/cases-slider/img-1.png",
+								"poster": "./img/cases-slider/img-2.png",
 							},
 							{
 								"video": "./video/clips/3.mp4",
-								"poster": "./img/cases-slider/img-1.png",
+								"poster": "./img/cases-slider/img-3.png",
 							},
 							{
 								"video": "./video/clips/4.mp4",
-								"poster": "./img/cases-slider/img-1.png",
+								"poster": "./img/cases-slider/img-4.png",
 							},
 							{
 								"video": "./video/clips/5.mp4",
-								"poster": "./img/cases-slider/img-1.png",
+								"poster": "./img/cases-slider/img-5.png",
 							},
 							{
 								"video": "./video/clips/9.mp4",
-								"poster": "./img/cases-slider/img-1.png",
+								"poster": "./img/cases-slider/img-9.png",
 							},
 						],
 					}

@@ -107,15 +107,17 @@ export default function CardsSlider({ block_state }) {
 							},
 						}}
 					>
-						{block_state.gallery.map((slide, i) => {
-							return (
-								<SwiperSlide key={i} className="cards-slider__slide">
-									<div className="cards-slider__slide-img">
-										<img src={slide.img} alt="img" />
-									</div>
-								</SwiperSlide>
-							)
-						})}
+						{[...Array(2)].map(() =>
+							block_state.gallery.map((slide, i) => {
+								return (
+									<SwiperSlide key={i} className="cards-slider__slide">
+										<div className="cards-slider__slide-img">
+											<img src={slide.img} alt="img" />
+										</div>
+									</SwiperSlide>
+								)
+							})
+						)}
 					</Swiper>
 
 					<div className="cards-slider__list">
