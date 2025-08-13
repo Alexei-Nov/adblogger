@@ -82,9 +82,6 @@
   color: var(--blue-2);
   text-align: center;
   font-family: "VK Sans Display Expanded";
-  font-size: 34px;
-  font-weight: 600;
-  line-height: normal;
 }
 
 .advices__list {
@@ -102,8 +99,6 @@
 .advices__list-item {
   padding-left: 35px;
   position: relative;
-  font-size: 22px;
-  line-height: normal;
 }
 
 .advices__list-item::before {
@@ -154,6 +149,7 @@
     width: auto;
     padding: 40px 24px 24px;
     border-radius: 40px;
+    gap: 30px;
   }
   .advices__bottom-btn {
     width: 100%;
@@ -169,15 +165,21 @@
     border-radius: 40px;
   }
   .advices__name {
-    font-size: 26px;
-  }
-  .advices__list-item {
-    font-size: 20px;
+    font-size: 24px;
   }
   .advices__title {
     max-width: 325px;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 60px;
+  }
+  .advices__img {
+    height: auto;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .advices__list {
+    margin-bottom: 30px;
   }
 }

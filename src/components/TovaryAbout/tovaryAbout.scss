@@ -1,12 +1,13 @@
 .tovary-about {
 	&__wrapper {
-		background-color: var(--black-2);
-		padding: 40px;
+		// background-color: var(--black-2);
+		padding: 40px 0;
 		border-radius: 30px;
 		display: flex;
 		width: 100%;
 		max-width: 1095px;
-		margin: 85px auto 55px;
+		margin: 85px auto 60px;
+		justify-content: space-between;
 	}
 	&__body {
 		display: flex;
@@ -14,7 +15,7 @@
 		justify-content: space-between;
 		gap: 42px;
 		width: 100%;
-		max-width: 540px;
+		max-width: 524px;
 	}
 	&__img {
 		display: flex;
@@ -41,6 +42,7 @@
 			margin-top: 0;
 			margin-bottom: 70px;
 			gap: 30px;
+			background-color: var(--black-2);
 		}
 		&__img {
 			width: auto;

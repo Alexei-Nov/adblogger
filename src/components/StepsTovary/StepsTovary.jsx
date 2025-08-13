@@ -29,11 +29,13 @@ export default function StepsTovary({ block_state }) {
 										<div key={i} className="steps-tovary__steps-item">
 											<div className="steps-tovary__steps-num">{i + 1}</div>
 											<div className="steps-tovary__steps-body">
-												<div className="steps-tovary__steps-desc content text-24" dangerouslySetInnerHTML={{ __html: item.text }}></div>
+												<div className="steps-tovary__steps-desc content text-22" dangerouslySetInnerHTML={{ __html: item.text }}></div>
 											</div>
 										</div>
 									)
 								})}
+
+								<a href={block_state.btn_link} className="steps-tovary__btn btn btn_rounded btn_wide btn_border-black text-20 fw-500">{block_state.btn_text}</a>
 							</div>
 							<Swiper
 								className="steps-tovary__slider"
@@ -69,7 +71,6 @@ export default function StepsTovary({ block_state }) {
 								<div className="steps-tovary__pagination"></div>
 							</Swiper>
 						</div>
-						<a href={block_state.btn_link} className="steps-tovary__btn btn btn_rounded btn_wide btn_border-black text-20 fw-500">{block_state.btn_text}</a>
 					</div>
 				</div>
 			</section>

@@ -39,7 +39,7 @@
 }
 
 .steps-tovary__btn {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .steps-tovary__steps-body {
@@ -52,7 +52,7 @@
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   background-color: var(--blue-1);
-  min-height: 208px;
+  min-height: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,7 +106,7 @@
   background-color: var(--white);
   width: 100%;
   height: auto;
-  max-width: 395px;
+  max-width: 382px;
   z-index: 1;
 }
 

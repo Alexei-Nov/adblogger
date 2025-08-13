@@ -1,13 +1,15 @@
 .tovary-about__wrapper {
-  background-color: var(--black-2);
-  padding: 40px;
+  padding: 40px 0;
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   max-width: 1095px;
-  margin: 85px auto 55px;
+  margin: 85px auto 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .tovary-about__body {
@@ -23,7 +25,7 @@
           justify-content: space-between;
   gap: 42px;
   width: 100%;
-  max-width: 540px;
+  max-width: 524px;
 }
 
 .tovary-about__img {
@@ -55,6 +57,7 @@
     margin-top: 0;
     margin-bottom: 70px;
     gap: 30px;
+    background-color: var(--black-2);
   }
   .tovary-about__img {
     width: auto;

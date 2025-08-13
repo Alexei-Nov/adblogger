@@ -17,9 +17,7 @@
 .case-preview__subtitle {
   text-align: center;
   width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .case-preview__bottom-btn {
@@ -86,7 +84,7 @@
 }
 
 .case-preview__btn {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .case-preview__bottom-body {
@@ -125,18 +123,6 @@
           flex-direction: column;
   gap: 20px;
   position: relative;
-}
-
-.case-preview__list-label {
-  font-size: 24px;
-  line-height: normal;
-  font-weight: 500;
-}
-
-.case-preview__list-num {
-  font-size: 52px;
-  line-height: 90%;
-  font-weight: 500;
 }
 
 .case-preview__list-icon {
@@ -182,9 +168,6 @@
 
 .case-preview__text {
   margin-top: 20px;
-  font-size: 28px;
-  line-height: normal;
-  font-weight: 500;
 }
 
 .case-preview__bottom_active .case-preview__bottom-btn svg {
@@ -215,26 +198,27 @@
     border-radius: 40px;
   }
   .case-preview__subtitle {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 22px;
     line-height: normal;
     font-weight: 600;
   }
   .case-preview__bottom-body::before {
-    height: 40px;
+    height: 30px;
   }
   .case-preview__list {
-    gap: 20px;
+    gap: 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .case-preview__text {
-    margin-top: 40px;
+    margin-top: 30px;
+    font-size: 20px;
   }
   .case-preview__btn {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .case-preview__list-num {
     font-size: 22px;
@@ -252,5 +236,10 @@
   .case-preview__list-icon::after {
     width: 55px;
     height: 55px;
+  }
+  .case-preview__card {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
   }
 }

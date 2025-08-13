@@ -36,9 +36,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 24px;
-  font-size: 28px;
-  line-height: normal;
-  font-weight: 500;
+  width: 100%;
+  max-width: 540px;
 }
 
 .connection-conditions__list-item {
@@ -78,8 +77,6 @@
 }
 
 .connection-conditions__right-text {
-  font-size: 28px;
-  line-height: normal;
   margin-bottom: auto;
 }
 
@@ -129,5 +126,11 @@
   .connection-conditions__right-text {
     font-size: 24px;
     line-height: normal;
+  }
+  .connection-conditions__btn {
+    margin-top: 30px;
+  }
+  .connection-conditions__right-btn {
+    margin-top: 30px;
   }
 }

@@ -59,9 +59,6 @@
 		color: var(--blue-2);
 		text-align: center;
 		font-family: "VK Sans Display Expanded";
-		font-size: 34px;
-		font-weight: 600;
-		line-height: normal;
 	}
 	&__list {
 		margin-bottom: 46px;
@@ -72,8 +69,6 @@
 	&__list-item {
 		padding-left: 35px;
 		position: relative;
-		font-size: 22px;
-		line-height: normal;
 		&::before {
 			display: block;
 			content: "";
@@ -119,6 +114,7 @@
 			width: auto;
 			padding: 40px 24px 24px;
 			border-radius: 40px;
+			gap: 30px;
 		}
 		&__bottom-btn {
 			width: 100%;
@@ -134,16 +130,22 @@
 			border-radius: 40px;
 		}
 		&__name {
-			font-size: 26px;
-		}
-		&__list-item {
-			font-size: 20px;
+			font-size: 24px;
 		}
 		&__title {
 			max-width: 325px;
 			width: 100%;
 			margin: 0 auto;
 			margin-bottom: 60px;
+		}
+		&__img {
+			height: auto;
+			width: 60%;
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+		&__list {
+			margin-bottom: 30px;
 		}
 	}
 }

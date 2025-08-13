@@ -30,7 +30,7 @@
 		max-width: 596px;
 	}
 	&__btn {
-		margin-top: 40px;
+		margin-top: 10px;
 	}
 	&__steps-body {
 		padding: 30px 25px;
@@ -39,7 +39,7 @@
 		mask-size: 100% 100%;
 		mask-repeat: no-repeat;
 		background-color: var(--blue-1);
-		min-height: 208px;
+		min-height: 170px;
 		display: flex;
 		flex-direction: column;
 	}
@@ -75,7 +75,7 @@
 		background-color: var(--white);
 		width: 100%;
 		height: auto;
-		max-width: 395px;
+		max-width: 382px;
 		z-index: 1;
 	}
 	&__slide-img {

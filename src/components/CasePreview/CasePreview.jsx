@@ -44,13 +44,13 @@ export default function CasePreview({ block_state }) {
 												<div className="case-preview__list-icon">
 													<img src={item.icon} alt="img" />
 												</div>
-												<div className="case-preview__list-num">{item.number}</div>
-												<div className="case-preview__list-label" >{item.label}</div>
+												<div className="case-preview__list-num text-32 fw-500">{item.number}</div>
+												<div className="case-preview__list-label text-18 fw-500" >{item.label}</div>
 											</div>
 										)
 									})}
 								</div>
-								<div className="case-preview__text" dangerouslySetInnerHTML={{ __html: block_state.text }}></div>
+								<div className="case-preview__text text-22" dangerouslySetInnerHTML={{ __html: block_state.text }}></div>
 								<a href={block_state.btn_link} className="case-preview__btn btn btn_wide btn_border btn_rounded text-20 fw-500">{block_state.btn_text}</a>
 							</div>
 							{/* <div className="case-preview__bottom-btn"

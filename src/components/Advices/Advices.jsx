@@ -14,8 +14,8 @@ export default function Advices({ block_state }) {
 									<div className="advices__img">
 										<img src={item.img} alt="img" />
 									</div>
-									<div className="advices__name">{item.name}</div>
-									<ul className="advices__list">
+									<div className="advices__name text-32 fw-600">{item.name}</div>
+									<ul className="advices__list text-18">
 										{item.list.map((list_item, j) => {
 											return (
 												<li key={j} className="advices__list-item" dangerouslySetInnerHTML={{ __html: list_item.text }}></li>

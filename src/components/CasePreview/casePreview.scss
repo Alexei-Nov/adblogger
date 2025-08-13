@@ -18,9 +18,7 @@
 	&__subtitle {
 		text-align: center;
 		width: 100%;
-		max-width: 700px;
-		margin: 0 auto;
-		margin-bottom: 60px;
+		margin-bottom: 30px;
 	}
 	&__bottom-btn {
 		display: flex;
@@ -66,7 +64,7 @@
 		}
 	}
 	&__btn {
-		margin-top: 60px;
+		margin-top: 30px;
 	}
 	&__bottom-body {
 		overflow: hidden;
@@ -94,16 +92,6 @@
 		flex-direction: column;
 		gap: 20px;
 		position: relative;
-	}
-	&__list-label {
-		font-size: 24px;
-		line-height: normal;
-		font-weight: 500;
-	}
-	&__list-num {
-		font-size: 52px;
-		line-height: 90%;
-		font-weight: 500;
 	}
 	&__list-icon {
 		display: flex;
@@ -138,9 +126,6 @@
 	}
 	&__text {
 		margin-top: 20px;
-		font-size: 28px;
-		line-height: normal;
-		font-weight: 500;
 	}
 	&__bottom {
 		&_active {
@@ -176,25 +161,26 @@
 			border-radius: 40px;
 		}
 		&__subtitle {
-			margin-bottom: 40px;
+			margin-bottom: 30px;
 			font-size: 22px;
 			line-height: normal;
 			font-weight: 600;
 		}
 		&__bottom-body {
 			&::before {
-				height: 40px;
+				height: 30px;
 			}
 		}
 		&__list {
-			gap: 20px;
+			gap: 10px;
 			flex-direction: column;
 		}
 		&__text {
-			margin-top: 40px;
+			margin-top: 30px;
+			font-size: 20px;
 		}
 		&__btn {
-			margin-top: 40px;
+			margin-top: 30px;
 		}
 		&__list-num {
 			font-size: 22px;
@@ -212,6 +198,11 @@
 				width: 55px;
 				height: 55px;
 			}
+		}
+		&__card {
+			width: 100%;
+			height: auto;
+			aspect-ratio: 1;
 		}
 	}
 }
