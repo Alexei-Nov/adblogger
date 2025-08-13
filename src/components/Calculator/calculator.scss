@@ -140,7 +140,7 @@
 		align-items: center;
 		gap: 14px;
 		width: 100%;
-		max-width: 355px;
+		max-width: 420px;
 	}
 	&__btn {
 		display: flex;
@@ -314,11 +314,15 @@
 			margin-bottom: 20px;
 		}
 		&__row {
-			&_mob {
-				flex-direction: column;
-				gap: 20px;
-				align-items: flex-start;
-			}
+			flex-direction: column;
+			gap: 20px;
+			align-items: flex-start;
+
+			// &_mob {
+			// 	flex-direction: column;
+			// 	gap: 20px;
+			// 	align-items: flex-start;
+			// }
 		}
 		&__btns {
 			max-width: none;
