@@ -62,7 +62,7 @@ export default function Footer({ footer }) {
 			: [
 				{ text: 'FAQ', link: 'https://adblogger.vk.com/documents/faq_advertiser', target: "_blank" }
 			]),
-		{ text: 'Обратная связь', link: 'https://vk.cc/cyEF76', target: "_blank" }
+		{ text: 'Написать в Поддержку', link: 'https://vk.cc/cyEF76', target: "_blank" }
 	];
 
 

@@ -13,7 +13,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: calc(100vh - 80px - 120px);
+  min-height: calc(100dvh - 80px - 120px);
 }
 
 .question__btns {
@@ -86,8 +86,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .question {
+    padding-top: 0;
+  }
   .question__wrapper {
-    min-height: calc(100vh - 80px - 98px);
+    min-height: calc(100vh - 72px - 48px);
     gap: 30px;
   }
   .question__btns {
@@ -119,6 +122,9 @@
 }
 
 @media screen and (max-width: 570px) {
+  .question {
+    padding-top: 0;
+  }
   .question__title {
     font-size: 26px;
     line-height: 120%;
