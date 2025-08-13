@@ -1865,23 +1865,7 @@ const defaultState = {
 						"title": "взгляните на&nbsp;шопсы в&nbsp;деле",
 						"gallery": [
 							{
-								"video": "./video/clips/1.mp4",
-								"poster": "./img/cases-slider/img-1.png",
-							},
-							{
-								"video": "./video/clips/2.mp4",
-								"poster": "./img/cases-slider/img-1.png",
-							},
-							{
-								"video": "./video/clips/3.mp4",
-								"poster": "./img/cases-slider/img-1.png",
-							},
-							{
-								"video": "./video/clips/4.mp4",
-								"poster": "./img/cases-slider/img-1.png",
-							},
-							{
-								"video": "./video/clips/5.mp4",
+								"video": "./video/clips/8.mp4",
 								"poster": "./img/cases-slider/img-1.png",
 							},
 							{
@@ -1890,14 +1874,6 @@ const defaultState = {
 							},
 							{
 								"video": "./video/clips/7.mp4",
-								"poster": "./img/cases-slider/img-1.png",
-							},
-							{
-								"video": "./video/clips/8.mp4",
-								"poster": "./img/cases-slider/img-1.png",
-							},
-							{
-								"video": "./video/clips/9.mp4",
 								"poster": "./img/cases-slider/img-1.png",
 							},
 							{
@@ -1918,18 +1894,6 @@ const defaultState = {
 							},
 							{
 								"video": "./video/clips/5.mp4",
-								"poster": "./img/cases-slider/img-1.png",
-							},
-							{
-								"video": "./video/clips/6.mp4",
-								"poster": "./img/cases-slider/img-1.png",
-							},
-							{
-								"video": "./video/clips/7.mp4",
-								"poster": "./img/cases-slider/img-1.png",
-							},
-							{
-								"video": "./video/clips/8.mp4",
 								"poster": "./img/cases-slider/img-1.png",
 							},
 							{
