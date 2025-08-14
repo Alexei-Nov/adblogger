@@ -1,5 +1,6 @@
 .tovary-about__wrapper {
-  padding: 40px 0;
+  background-color: var(--black-2);
+  padding: 40px;
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,7 +58,6 @@
     margin-top: 0;
     margin-bottom: 70px;
     gap: 30px;
-    background-color: var(--black-2);
   }
   .tovary-about__img {
     width: auto;
