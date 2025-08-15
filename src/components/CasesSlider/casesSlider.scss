@@ -75,20 +75,9 @@
 		cursor: pointer;
 		color: var(--black);
 
-		&:active {
+		&_muted {
 			color: var(--white);
 			background-color: var(--black);
-		}
-	}
-}
-
-@media (hover: hover) {
-	.cases-slider {
-		&__slide-icon {
-			&:hover {
-				color: var(--white);
-				background-color: var(--black);
-			}
 		}
 	}
 }

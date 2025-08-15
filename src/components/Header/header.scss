@@ -1,6 +1,11 @@
 .header {
-	position: relative;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
 	z-index: 10;
+	background-color: var(--black);
+	border-bottom: 2px solid #363738;
 	&__logo {
 		display: flex;
 		// width: 350px;

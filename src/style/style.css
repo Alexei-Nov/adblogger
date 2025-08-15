@@ -25,6 +25,10 @@ body {
   line-height: 130%;
 }
 
+.main {
+  padding-top: 80px;
+}
+
 .body-wrapper {
   position: relative;
   overflow: hidden;
@@ -594,6 +598,9 @@ ul.list-stars > li::before {
   ul.list-stars > li::before {
     top: 0;
     left: 0;
+  }
+  .main {
+    padding-top: 72px;
   }
 }
 
