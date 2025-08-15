@@ -57,6 +57,11 @@
 					color: #00d3e6;
 				}
 			}
+			&_with-img {
+				&::after {
+					display: none;
+				}
+			}
 		}
 		&__link-img {
 			display: flex;

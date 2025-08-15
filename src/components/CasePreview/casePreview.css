@@ -121,7 +121,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   position: relative;
 }
 
@@ -227,7 +227,7 @@
     font-size: 16px;
   }
   .case-preview__list-item {
-    gap: 10px;
+    gap: 5px;
   }
   .case-preview__list-icon {
     width: 30px;

@@ -47,6 +47,11 @@
   opacity: 1;
 }
 
+.cards-slider__list-item_open .cards-slider__list-tooltip {
+  background-color: var(--blue-2);
+  color: var(--black-2);
+}
+
 .cards-slider__list-item-bg {
   display: none;
 }
@@ -140,6 +145,9 @@
   height: 34px;
   border-radius: 50%;
   background-color: var(--black-2);
+  color: var(--white);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 .cards-slider__slide {

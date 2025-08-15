@@ -92,7 +92,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
+  gap: 0px;
 }
 
 .calculator__results-bottom_open .calculator__results-bottom-bg picture:nth-child(1) {
@@ -477,12 +477,9 @@
 @media screen and (max-width: 440px) {
   .calculator__results-bottom {
     width: 312px;
-    height: 142px;
+    height: 160px;
     padding: 20px 25px;
     padding-right: 35px;
-  }
-  .calculator__results-bottom_open {
-    height: 160px;
   }
   .calculator__results-tooltip-body {
     font-size: 16px;

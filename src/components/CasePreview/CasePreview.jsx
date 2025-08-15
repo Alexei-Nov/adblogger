@@ -45,7 +45,7 @@ export default function CasePreview({ block_state }) {
 													<img src={item.icon} alt="img" />
 												</div>
 												<div className="case-preview__list-num text-32 fw-500">{item.number}</div>
-												<div className="case-preview__list-label text-18 fw-500" >{item.label}</div>
+												<div className="case-preview__list-label text-18" >{item.label}</div>
 											</div>
 										)
 									})}

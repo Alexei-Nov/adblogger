@@ -134,7 +134,8 @@ export default function Calculator({ block_state }) {
 								<div className="calculator__results-img">
 									<img src="./img/calculator/img.png" alt="img" />
 								</div>
-								<div className={"calculator__results-bottom" + (totalCostTooltip ? ' calculator__results-bottom_open' : '')}>
+								<div className={"calculator__results-bottom" + (totalCostTooltip ? ' calculator__results-bottom_open' : '')}
+									onMouseLeave={windowWidth > 570 ? () => setTotalCostTooltip(false) : null}>
 									<div className="calculator__results-bottom-bg">
 										<picture>
 											<source media="(max-width: 440px)" srcSet="/img/calculator/mask-1_mob.svg" />
@@ -146,8 +147,8 @@ export default function Calculator({ block_state }) {
 										</picture>
 									</div>
 									<div className="calculator__results-bottom-tooltip"
-										onMouseEnter={windowWidth > 570 ? () => setTotalCostTooltip(!totalCostTooltip) : null}
-										onMouseLeave={windowWidth > 570 ? () => setTotalCostTooltip(!totalCostTooltip) : null}
+										onMouseEnter={windowWidth > 570 ? () => setTotalCostTooltip(true) : null}
+
 										onClick={windowWidth <= 570 ? () => setTotalCostTooltip(!totalCostTooltip) : null}
 									>
 										<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">

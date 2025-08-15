@@ -178,12 +178,12 @@
   }
   .steps-tovary__steps-body {
     padding-top: 95px;
-    -webkit-mask-image: url("/public/img/steps-tovary/mask_mob2.svg");
-            mask-image: url("/public/img/steps-tovary/mask_mob2.svg");
-  }
-  .steps-tovary__steps-item:nth-child(1) .steps-tovary__steps-body {
     -webkit-mask-image: url("/public/img/steps-tovary/mask_mob1.svg");
             mask-image: url("/public/img/steps-tovary/mask_mob1.svg");
+  }
+  .steps-tovary__steps-item:nth-child(3) .steps-tovary__steps-body {
+    -webkit-mask-image: url("/public/img/steps-tovary/mask_mob2.svg");
+            mask-image: url("/public/img/steps-tovary/mask_mob2.svg");
   }
   .steps-tovary__desc {
     font-size: 22px;

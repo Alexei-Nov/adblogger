@@ -79,6 +79,10 @@
   color: #00d3e6;
 }
 
+.header .nav__link_with-img::after {
+  display: none;
+}
+
 .header .nav__link-img {
   display: -webkit-box;
   display: -ms-flexbox;

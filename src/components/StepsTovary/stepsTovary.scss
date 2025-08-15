@@ -130,12 +130,12 @@
 		}
 		&__steps-body {
 			padding-top: 95px;
-			mask-image: url("/public/img/steps-tovary/mask_mob2.svg");
+			mask-image: url("/public/img/steps-tovary/mask_mob1.svg");
 		}
 		&__steps-item {
-			&:nth-child(1) .steps-tovary {
+			&:nth-child(3) .steps-tovary {
 				&__steps-body {
-					mask-image: url("/public/img/steps-tovary/mask_mob1.svg");
+					mask-image: url("/public/img/steps-tovary/mask_mob2.svg");
 				}
 			}
 		}

@@ -32,6 +32,10 @@
 					bottom: calc(100% + 10px);
 					opacity: 1;
 				}
+				&__list-tooltip {
+					background-color: var(--blue-2);
+					color: var(--black-2);
+				}
 			}
 		}
 	}
@@ -108,6 +112,8 @@
 		height: 34px;
 		border-radius: 50%;
 		background-color: var(--black-2);
+		color: var(--white);
+		transition: all ease 0.5s;
 	}
 	&__slide {
 		display: flex;
