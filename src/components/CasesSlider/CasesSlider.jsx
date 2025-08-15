@@ -20,10 +20,8 @@ export default function CasesSlider({ block_state }) {
 				elementCenterY > viewportEnd &&
 				!slider.current.classList.contains('cases-slider__slider_view')
 			) {
-				console.log(1);
 				slider.current.classList.add('cases-slider__slider_view')
 				slider.current.querySelector('.swiper-slide-active video').play()
-
 			}
 		})
 	}, [])
