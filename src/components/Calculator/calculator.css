@@ -270,6 +270,10 @@
   opacity: 1;
 }
 
+.calculator__input_grey {
+  color: #959595;
+}
+
 .calculator__input-container {
   width: 100%;
   max-width: 405px;

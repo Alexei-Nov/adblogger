@@ -9,8 +9,8 @@ export default function TovaryAbout({ block_state }) {
 				<div className="container">
 					<div className="tovary-about__wrapper">
 						<div className="tovary-about__body">
-							<div className="tovary-about__title text-40 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
-							<div className="tovary-about__desc content text-22 fw-500" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
+							<div className="tovary-about__title text-40 fw-500" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+							<div className="tovary-about__desc content text-22" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
 						</div>
 						<picture className="tovary-about__img">
 							<source media="(max-width: 768px)" srcSet={block_state.img_mob} />

@@ -286,11 +286,21 @@
 			border-width: 1px;
 		}
 		&__body-title {
+			margin: 0;
 			margin-top: calc(32px + 26px);
 			font-size: 20px;
 		}
 		&__body-desc {
 			font-size: 14px;
+		}
+		&__body-item {
+			min-height: 600px;
+		}
+		&__body-btn {
+			margin-top: auto;
+		}
+		&__body-left {
+			flex-grow: 1;
 		}
 	}
 }

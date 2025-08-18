@@ -5,6 +5,8 @@ import './calculator.css'
 export default function Calculator({ block_state }) {
 	const rangeSlider = useRef()
 
+	const [hasChanges, setHasChanges] = useState(0)
+
 	const [contentType, setContentType] = useState('clip')
 	const [viewCount, setViewCount] = useState(25000)
 	const [followersCountStep, setFollowersCountStep] = useState(4)
@@ -56,8 +58,19 @@ export default function Calculator({ block_state }) {
 
 	useEffect(() => {
 		minViewCountCheck()
+		setHasChanges(hasChanges + 1)
+
+		if (hasChanges == 1) {
+			setViewCount('')
+		}
+
 	}, [contentType, viewCount, followersCountStep])
 
+
+	let zoomValue = 1
+	if (window.innerWidth <= 450) {
+		zoomValue = (window.innerWidth - 48) / 314
+	}
 
 	return (
 		<>
@@ -110,7 +123,7 @@ export default function Calculator({ block_state }) {
 										<div className="calculator__input-container">
 											<input type="text"
 												name='Количество просмотров'
-												className={'calculator__input text-20 fw-500' + (viewCount && viewCount < minViewCount ? ' calculator__input_error' : '')}
+												className={'calculator__input text-20 fw-500' + (viewCount && viewCount < minViewCount ? ' calculator__input_error' : '') + (hasChanges == 1 ? ' calculator__input_grey' : '')}
 												value={viewCount.toLocaleString("ru-RU")}
 												placeholder={'введите число от ' + minViewCount.toLocaleString("ru-RU")}
 												onChange={(e) => {
@@ -135,7 +148,7 @@ export default function Calculator({ block_state }) {
 									<img src="./img/calculator/img.png" alt="img" />
 								</div>
 								<div className={"calculator__results-bottom" + (totalCostTooltip ? ' calculator__results-bottom_open' : '')}
-									onMouseLeave={windowWidth > 570 ? () => setTotalCostTooltip(false) : null}>
+									onMouseLeave={windowWidth > 570 ? () => setTotalCostTooltip(false) : null} style={{ zoom: zoomValue }}>
 									<div className="calculator__results-bottom-bg">
 										<picture>
 											<source media="(max-width: 440px)" srcSet="/img/calculator/mask-1_mob.svg" />

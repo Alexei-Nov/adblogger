@@ -121,7 +121,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 15px;
+  gap: 12px;
   position: relative;
 }
 

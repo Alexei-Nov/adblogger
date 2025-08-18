@@ -339,10 +339,22 @@
     border-width: 1px;
   }
   .tabs-block__body-title {
+    margin: 0;
     margin-top: calc(32px + 26px);
     font-size: 20px;
   }
   .tabs-block__body-desc {
     font-size: 14px;
+  }
+  .tabs-block__body-item {
+    min-height: 600px;
+  }
+  .tabs-block__body-btn {
+    margin-top: auto;
+  }
+  .tabs-block__body-left {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }

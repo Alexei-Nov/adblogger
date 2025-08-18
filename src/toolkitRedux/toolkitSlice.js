@@ -1282,8 +1282,8 @@ const defaultState = {
 						"items_list": [
 							{
 								"icon_path": "./img/connect/icon-1.svg",
-								"title": "Простой запуск <br>кампаний",
-								"desc": "Запускайте рекламу с&nbsp;быстрым и&nbsp;удобным масштабированием",
+								"title": "Простой запуск <br> кампаний",
+								"desc": "Запускайте рекламу <br> с&nbsp;быстрым и&nbsp;удобным <br> масштабированием",
 							},
 							{
 								"icon_path": "./img/connect/icon-2.svg",
@@ -1293,7 +1293,7 @@ const defaultState = {
 							{
 								"icon_path": "./img/connect/icon-3.svg",
 								"title": "Конкурентное <br>преимущество",
-								"desc": "Используйте новый канал продаж и&nbsp;опережайте конкурентов",
+								"desc": "Используйте <br> новый канал продаж <br> и&nbsp;опережайте конкурентов",
 							}
 						]
 					}
@@ -1373,7 +1373,7 @@ const defaultState = {
 					"block_state": {
 						"title": "<span class='blue-text'>шопсы-шопсы-шопсы!</span><br> новый формат контента, который поможет <span class='blue-text'>зарабатывать ВКонтакте</span>",
 						"btn_link": "/app",
-						"btn_text": "Перейти в кабинет",
+						"btn_text": "Подключиться",
 						"gallery": [
 							{
 								"img": "./img/cards-slider/img-1.png"
@@ -1463,7 +1463,7 @@ const defaultState = {
 							}
 						],
 						"btn_link": "/app",
-						"btn_text": "Перейти в кабинет",
+						"btn_text": "Подключиться",
 					}
 				},
 				{
@@ -1485,7 +1485,7 @@ const defaultState = {
 						"btn_right_link": "https://vk.com/commerce-for-creators",
 						"btn_right_text": "Узнать больше",
 						"btn_link": "https://vk.com/commerce-for-creators",
-						"btn_text": "Начать зарабатывать",
+						"btn_text": "Подключиться",
 					}
 				},
 				{
@@ -1805,7 +1805,7 @@ const defaultState = {
 						"desc": "Как авторы ВКонтакте заработали больше 7&nbsp;млн на&nbsp;рекламе товаров Ozon",
 						"number_list": [
 							{
-								"number": "1568 авторов",
+								"number": "1 568 авторов",
 								"label": "разместили рекламу",
 								"icon": "./img/case-preview/icon-1.svg",
 							},
