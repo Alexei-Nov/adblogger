@@ -35,6 +35,7 @@ export default function Calculator({ block_state }) {
 
 		let anchor = e.target
 		let elem = document.querySelector(anchor.hash)
+
 		elem.closest('.accordion__item').click()
 
 		let blockPosition = elem.getBoundingClientRect()
@@ -170,10 +171,9 @@ export default function Calculator({ block_state }) {
 											<path d="M10.3391 13.2307C10.3391 13.8081 9.87105 14.2762 9.29365 14.2762C8.71624 14.2762 8.24816 13.8081 8.24816 13.2307C8.24816 12.6533 8.71624 12.1852 9.29365 12.1852C9.87105 12.1852 10.3391 12.6533 10.3391 13.2307Z" fill="#0D6871" />
 										</svg>
 									</div>
-									<div className="calculator__results-tooltip-body content text-18">
+									<div className="calculator__results-tooltip-body content text-14">
 										<p>
-											Доход за продвижение товара с Ozon состоит из фиксированной выплаты и процента от продажи товара <br />
-											Подробнее <a href="#anchor-calculator" onClick={anchorTransition}>здесь</a>
+											На старте доход за&nbsp;рекламу товара с&nbsp;Ozon состоит из&nbsp;фиксированной выплаты и&nbsp;процента от&nbsp;продажи. Размер выплаты зависит от&nbsp;формата контента (пост или&nbsp;клип) и&nbsp;числа подписчиков в&nbsp;сообществе. Подробнее <a href="#anchor-calculator" onClick={anchorTransition}>здесь</a>
 										</p>
 									</div>
 									<div className="calculator__results-num fw-600">
