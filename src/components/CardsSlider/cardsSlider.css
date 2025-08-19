@@ -244,6 +244,20 @@
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
+  .cards-slider__list-item {
+    width: 100%;
+    -ms-flex-negative: unset;
+        flex-shrink: unset;
+  }
+  .cards-slider__list-item-bg img {
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .cards-slider__list-item-body {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 450px) {

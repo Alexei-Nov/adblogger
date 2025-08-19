@@ -173,7 +173,7 @@ export default function Calculator({ block_state }) {
 									</div>
 									<div className="calculator__results-tooltip-body content text-14">
 										<p>
-											На старте доход за&nbsp;рекламу товара с&nbsp;Ozon состоит из&nbsp;фиксированной выплаты и&nbsp;процента от&nbsp;продажи. Размер выплаты зависит от&nbsp;формата контента (пост или&nbsp;клип) и&nbsp;числа подписчиков в&nbsp;сообществе. Подробнее <a href="#anchor-calculator" onClick={anchorTransition}>здесь</a>
+											На старте доход за&nbsp;рекламу товара с&nbsp;Ozon состоит из&nbsp;фиксированной выплаты и&nbsp;процента от&nbsp;продажи. Размер выплаты зависит <br /> от&nbsp;формата контента (пост или&nbsp;клип) и&nbsp;числа подписчиков в&nbsp;сообществе. Подробнее <a href="#anchor-calculator" onClick={anchorTransition}>здесь</a>
 										</p>
 									</div>
 									<div className="calculator__results-num fw-600">
