@@ -62,7 +62,7 @@ export default function CasesSlider({ block_state }) {
 							allowTouchMove: false,
 						},
 					}}
-					onSlideChange={(swiper) => {
+					onRealIndexChange={(swiper) => {
 						swiper.slides[swiper.previousIndex].querySelector('video').pause()
 						swiper.slides[swiper.activeIndex].querySelector('video').play()
 					}}
