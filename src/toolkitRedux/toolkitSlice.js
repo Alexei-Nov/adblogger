@@ -1371,7 +1371,7 @@ const defaultState = {
 				{
 					"block_slug": "cards_slider",
 					"block_state": {
-						"title": "<span class='blue-text'>шопсы-шопсы-шопсы!</span><br> новый формат контента, который поможет <span class='blue-text'>зарабатывать ВКонтакте</span>",
+						"title": "<span class='blue-text'>шопсы-шопсы-шопсы!</span><br> новый формат контента ВКонтакте, на котором можно <span class='blue-text'>зарабатывать</span>",
 						"btn_link": "/app",
 						"btn_text": "Подключиться",
 						"gallery": [
@@ -1405,7 +1405,7 @@ const defaultState = {
 							},
 							{
 								"icon": "./img/cards-slider/icon-2.svg",
-								"name": "<span style='color: #00D3E6;'>Фиксированные выплаты</span> </br> до&nbsp;50&nbsp;000&nbsp;₽ за&nbsp;пост или&nbsp;клип",
+								"name": "<span style='color: #00D3E6;'>Заработок с продаж </br> до 50% </span> от стоимости товара",
 								"dropdownn_text": "<p>На&nbsp;старте доход за&nbsp;рекламу товара с&nbsp;Ozon состоит из&nbsp;фиксированной выплаты и&nbsp;процента от&nbsp;продажи. Размер выплаты зависит от&nbsp;формата контента (пост или&nbsp;клип) и&nbsp;числа подписчиков в&nbsp;сообществе</p>",
 							},
 							{
@@ -1427,7 +1427,7 @@ const defaultState = {
 					"block_slug": "tovary_about",
 					"block_state": {
 						"title": "Что такое <span style='color:#00D3E6;'>шопсы</span> ВКонтакте?",
-						"desc": "<p><b style='color:#00D3E6;'>Шопсы</b>&nbsp;— это&nbsp;рекламные посты и&nbsp;клипы, в&nbsp;которых есть ссылка на&nbsp;товар. По&nbsp;ней пользователи могут сразу перейти к&nbsp;покупке</p> <p>Вы получаете деньги за&nbsp;просмотры шопсов и&nbsp;процент с&nbsp;продаж</p>",
+						"desc": "<p><b style='color:#00D3E6;'>Шопсы</b> — это рекламные посты и клипы со ссылкой на товар. Пользователи могут сразу перейти по ней к покупке, а вы получите процент с продажи каждого товара</p>",
 						"img": "./img/tovary-about/img.png",
 						"img_mob": "./img/tovary-about/img_mob.png",
 					}
@@ -1459,7 +1459,7 @@ const defaultState = {
 								"text": "<b>Выбирайте товары</b> в&nbsp;каталоге и&nbsp;публикуйте шопсы со&nbsp;ссылками на&nbsp;товары Ozon "
 							},
 							{
-								"text": "<b>Получайте фиксированные выплаты</b> за&nbsp;просмотры публикаций и&nbsp;процент с&nbsp;каждой продажи "
+								"text": "<b>Получайте выплаты</b>  за продажи — чем больше продаж, тем выше ваш доход"
 							}
 						],
 						"btn_link": "/app",
@@ -1480,6 +1480,9 @@ const defaultState = {
 							},
 							{
 								"text": "Хотя&nbsp;бы одна публикация за&nbsp;последние 30&nbsp;дней"
+							},
+							{
+								"text": "Тематика сообщества <br class='br-desktop'> соответствует <a href='https://adblogger.vk.com/documents/groups_moderation' target='_blank'>требованиям</a>"
 							}
 						],
 						"btn_right_link": "https://vk.com/commerce-for-creators",
@@ -1488,267 +1491,267 @@ const defaultState = {
 						"btn_text": "Подключиться",
 					}
 				},
-				{
-					"block_slug": "calculator",
-					"block_state": {
-						"title": "калькулятор вашего дохода",
-						"desc": "Пара кликов — и вы увидите, сколько можно зарабатывать с VK AdBlogger",
-						"calc_table": [
-							{
-								'postType': 'post',
-								'followersCountStep': 1,
-								'viewCondition': '0-874',
-								'totalIncome': 0
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 1,
-								'viewCondition': '875-3499',
-								'totalIncome': 200
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 1,
-								'viewCondition': '3500-',
-								'totalIncome': 700
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 2,
-								'viewCondition': '0-2624',
-								'totalIncome': 0
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 2,
-								'viewCondition': '2625-10499',
-								'totalIncome': 500
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 2,
-								'viewCondition': '10500-',
-								'totalIncome': 2100
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 3,
-								'viewCondition': '0-4624',
-								'totalIncome': 0
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 3,
-								'viewCondition': '4625-18499',
-								'totalIncome': 900
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 3,
-								'viewCondition': '18500-',
-								'totalIncome': 3700
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 4,
-								'viewCondition': '0-8749',
-								'totalIncome': 0
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 4,
-								'viewCondition': '8750-34999',
-								'totalIncome': 1800
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 4,
-								'viewCondition': '35000-',
-								'totalIncome': 7000
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 5,
-								'viewCondition': '0-13749',
-								'totalIncome': 0
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 5,
-								'viewCondition': '13750-54999',
-								'totalIncome': 2800
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 5,
-								'viewCondition': '55000-',
-								'totalIncome': 11000
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 6,
-								'viewCondition': '0-23749',
-								'totalIncome': 0
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 6,
-								'viewCondition': '23750-94999',
-								'totalIncome': 4800
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 6,
-								'viewCondition': '95000-',
-								'totalIncome': 19000
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 7,
-								'viewCondition': '0-44999',
-								'totalIncome': 0
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 7,
-								'viewCondition': '45000-179999',
-								'totalIncome': 9000
-							},
-							{
-								'postType': 'post',
-								'followersCountStep': 7,
-								'viewCondition': '180000-',
-								'totalIncome': 36000
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 1,
-								'viewCondition': '0-499',
-								'totalIncome': 0
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 1,
-								'viewCondition': '500-1999',
-								'totalIncome': 600
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 1,
-								'viewCondition': '2000-',
-								'totalIncome': 2500
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 2,
-								'viewCondition': '0-1624',
-								'totalIncome': 0
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 2,
-								'viewCondition': '1625-6499',
-								'totalIncome': 1600
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 2,
-								'viewCondition': '6500-',
-								'totalIncome': 6500
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 3,
-								'viewCondition': '0-2624',
-								'totalIncome': 0
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 3,
-								'viewCondition': '2625-10499',
-								'totalIncome': 2500
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 3,
-								'viewCondition': '10500-',
-								'totalIncome': 10000
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 4,
-								'viewCondition': '0-4249',
-								'totalIncome': 0
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 4,
-								'viewCondition': '4250-16999',
-								'totalIncome': 4500
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 4,
-								'viewCondition': '17000-',
-								'totalIncome': 18000
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 5,
-								'viewCondition': '0-6749',
-								'totalIncome': 0
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 5,
-								'viewCondition': '6750-26999',
-								'totalIncome': 5000
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 5,
-								'viewCondition': '27000-',
-								'totalIncome': 20000
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 6,
-								'viewCondition': '0-9749',
-								'totalIncome': 0
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 6,
-								'viewCondition': '9750-38999',
-								'totalIncome': 6800
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 6,
-								'viewCondition': '39000-',
-								'totalIncome': 27500
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 7,
-								'viewCondition': '0-12499',
-								'totalIncome': 0
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 7,
-								'viewCondition': '12500-49999',
-								'totalIncome': 12500
-							},
-							{
-								'postType': 'clip',
-								'followersCountStep': 7,
-								'viewCondition': '50000-',
-								'totalIncome': 50000
-							},
-						]
-					}
-				},
+				// {
+				// 	"block_slug": "calculator",
+				// 	"block_state": {
+				// 		"title": "калькулятор вашего дохода",
+				// 		"desc": "Пара кликов — и вы увидите, сколько можно зарабатывать с VK AdBlogger",
+				// 		"calc_table": [
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 1,
+				// 				'viewCondition': '0-874',
+				// 				'totalIncome': 0
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 1,
+				// 				'viewCondition': '875-3499',
+				// 				'totalIncome': 200
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 1,
+				// 				'viewCondition': '3500-',
+				// 				'totalIncome': 700
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 2,
+				// 				'viewCondition': '0-2624',
+				// 				'totalIncome': 0
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 2,
+				// 				'viewCondition': '2625-10499',
+				// 				'totalIncome': 500
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 2,
+				// 				'viewCondition': '10500-',
+				// 				'totalIncome': 2100
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 3,
+				// 				'viewCondition': '0-4624',
+				// 				'totalIncome': 0
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 3,
+				// 				'viewCondition': '4625-18499',
+				// 				'totalIncome': 900
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 3,
+				// 				'viewCondition': '18500-',
+				// 				'totalIncome': 3700
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 4,
+				// 				'viewCondition': '0-8749',
+				// 				'totalIncome': 0
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 4,
+				// 				'viewCondition': '8750-34999',
+				// 				'totalIncome': 1800
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 4,
+				// 				'viewCondition': '35000-',
+				// 				'totalIncome': 7000
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 5,
+				// 				'viewCondition': '0-13749',
+				// 				'totalIncome': 0
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 5,
+				// 				'viewCondition': '13750-54999',
+				// 				'totalIncome': 2800
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 5,
+				// 				'viewCondition': '55000-',
+				// 				'totalIncome': 11000
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 6,
+				// 				'viewCondition': '0-23749',
+				// 				'totalIncome': 0
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 6,
+				// 				'viewCondition': '23750-94999',
+				// 				'totalIncome': 4800
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 6,
+				// 				'viewCondition': '95000-',
+				// 				'totalIncome': 19000
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 7,
+				// 				'viewCondition': '0-44999',
+				// 				'totalIncome': 0
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 7,
+				// 				'viewCondition': '45000-179999',
+				// 				'totalIncome': 9000
+				// 			},
+				// 			{
+				// 				'postType': 'post',
+				// 				'followersCountStep': 7,
+				// 				'viewCondition': '180000-',
+				// 				'totalIncome': 36000
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 1,
+				// 				'viewCondition': '0-499',
+				// 				'totalIncome': 0
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 1,
+				// 				'viewCondition': '500-1999',
+				// 				'totalIncome': 600
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 1,
+				// 				'viewCondition': '2000-',
+				// 				'totalIncome': 2500
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 2,
+				// 				'viewCondition': '0-1624',
+				// 				'totalIncome': 0
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 2,
+				// 				'viewCondition': '1625-6499',
+				// 				'totalIncome': 1600
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 2,
+				// 				'viewCondition': '6500-',
+				// 				'totalIncome': 6500
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 3,
+				// 				'viewCondition': '0-2624',
+				// 				'totalIncome': 0
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 3,
+				// 				'viewCondition': '2625-10499',
+				// 				'totalIncome': 2500
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 3,
+				// 				'viewCondition': '10500-',
+				// 				'totalIncome': 10000
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 4,
+				// 				'viewCondition': '0-4249',
+				// 				'totalIncome': 0
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 4,
+				// 				'viewCondition': '4250-16999',
+				// 				'totalIncome': 4500
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 4,
+				// 				'viewCondition': '17000-',
+				// 				'totalIncome': 18000
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 5,
+				// 				'viewCondition': '0-6749',
+				// 				'totalIncome': 0
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 5,
+				// 				'viewCondition': '6750-26999',
+				// 				'totalIncome': 5000
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 5,
+				// 				'viewCondition': '27000-',
+				// 				'totalIncome': 20000
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 6,
+				// 				'viewCondition': '0-9749',
+				// 				'totalIncome': 0
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 6,
+				// 				'viewCondition': '9750-38999',
+				// 				'totalIncome': 6800
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 6,
+				// 				'viewCondition': '39000-',
+				// 				'totalIncome': 27500
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 7,
+				// 				'viewCondition': '0-12499',
+				// 				'totalIncome': 0
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 7,
+				// 				'viewCondition': '12500-49999',
+				// 				'totalIncome': 12500
+				// 			},
+				// 			{
+				// 				'postType': 'clip',
+				// 				'followersCountStep': 7,
+				// 				'viewCondition': '50000-',
+				// 				'totalIncome': 50000
+				// 			},
+				// 		]
+				// 	}
+				// },
 				{
 					"block_slug": "advices",
 					"block_state": {
@@ -1794,43 +1797,43 @@ const defaultState = {
 						"bottom_btn_text": "Узнать",
 					}
 				},
-				{
-					"block_slug": "case_preview",
-					"block_state": {
-						"title": "это работает — мы проверяли",
-						"subtitle": "Как авторы ВКонтакте за&nbsp;месяц увеличили заработок <br class='br-desktop'>на&nbsp;6,5&nbsp;млн&nbsp;₽ за&nbsp;счёт нативного контента",
-						"name": "Ролик на миллион",
-						"img": "./img/case-preview/img.png",
-						"img_mob": "./img/case-preview/img_mob.png",
-						"desc": "Как авторы ВКонтакте заработали больше 7&nbsp;млн на&nbsp;рекламе товаров Ozon",
-						"number_list": [
-							{
-								"number": "1 568 авторов",
-								"label": "разместили рекламу",
-								"icon": "./img/case-preview/icon-1.svg",
-							},
-							{
-								"number": "4,9 млн рублей",
-								"label": "заработали на клипах",
-								"icon": "./img/case-preview/icon-2.svg",
-							},
-							{
-								"number": "1,6 млн рублей",
-								"label": "заработали на постах",
-								"icon": "./img/case-preview/icon-3.svg",
-							},
-							{
-								"number": "12 млн просмотров",
-								"label": "собрал контент",
-								"icon": "./img/case-preview/icon-4.svg",
-							},
+				// {
+				// 	"block_slug": "case_preview",
+				// 	"block_state": {
+				// 		"title": "это работает — мы проверяли",
+				// 		"subtitle": "Как авторы ВКонтакте за&nbsp;месяц увеличили заработок <br class='br-desktop'>на&nbsp;6,5&nbsp;млн&nbsp;₽ за&nbsp;счёт нативного контента",
+				// 		"name": "Ролик на миллион",
+				// 		"img": "./img/case-preview/img.png",
+				// 		"img_mob": "./img/case-preview/img_mob.png",
+				// 		"desc": "Как авторы ВКонтакте заработали больше 7&nbsp;млн на&nbsp;рекламе товаров Ozon",
+				// 		"number_list": [
+				// 			{
+				// 				"number": "1 568 авторов",
+				// 				"label": "разместили рекламу",
+				// 				"icon": "./img/case-preview/icon-1.svg",
+				// 			},
+				// 			{
+				// 				"number": "4,9 млн рублей",
+				// 				"label": "заработали на клипах",
+				// 				"icon": "./img/case-preview/icon-2.svg",
+				// 			},
+				// 			{
+				// 				"number": "1,6 млн рублей",
+				// 				"label": "заработали на постах",
+				// 				"icon": "./img/case-preview/icon-3.svg",
+				// 			},
+				// 			{
+				// 				"number": "12 млн просмотров",
+				// 				"label": "собрал контент",
+				// 				"icon": "./img/case-preview/icon-4.svg",
+				// 			},
 
-						],
-						"text": "Авторы выбирали товары Ozon для&nbsp;рекламы и&nbsp;создавали с&nbsp;ними публикации, прикрепляя ссылку на&nbsp;покупку. По&nbsp;результатам рекламной кампании мы выяснили, что&nbsp;пользователи кликают по&nbsp;нативной рекламе на&nbsp;188% чаще, чем по&nbsp;обычной. Подробности&nbsp;— в&nbsp;кейсе.",
-						"btn_link": "/top-cases/case-for-authors",
-						"btn_text": "Подробнее",
-					}
-				},
+				// 		],
+				// 		"text": "Авторы выбирали товары Ozon для&nbsp;рекламы и&nbsp;создавали с&nbsp;ними публикации, прикрепляя ссылку на&nbsp;покупку. По&nbsp;результатам рекламной кампании мы выяснили, что&nbsp;пользователи кликают по&nbsp;нативной рекламе на&nbsp;188% чаще, чем по&nbsp;обычной. Подробности&nbsp;— в&nbsp;кейсе.",
+				// 		"btn_link": "/top-cases/case-for-authors",
+				// 		"btn_text": "Подробнее",
+				// 	}
+				// },
 				{
 					"block_slug": "cases_slider",
 					"block_state": {
@@ -1891,19 +1894,31 @@ const defaultState = {
 						"faqList": [
 							{
 								"question": "Что&nbsp;такое шопсы ВКонтакте?",
-								"answer": "Шопсы&nbsp;— это&nbsp;рекламные посты и&nbsp;клипы, в&nbsp;которых есть ссылка на&nbsp;товар. По&nbsp;ней пользователи могут сразу перейти к&nbsp;покупке."
+								"answer": "Шопсы — это рекламные посты и клипы, в которых есть ссылка на товар. По ней пользователи могут сразу перейти к покупке."
 							},
 							{
 								"question": "Какие сообщества могут использовать инструмент?",
-								"answer": "<ul> <li>Сообщество подключено к&nbsp;<a href='https://adblogger.vk.com/for-authors?utm_source=vk&utm_medium=social&utm_campaign=soccom&utm_content=faq_ref' target='_blank'>VK&nbsp;AdBlogger</a></li> <li>В&nbsp;нём больше 1000&nbsp;подписчиков</li> <li>Есть хотя&nbsp;бы одна публикация за&nbsp;последние 30&nbsp;дней</li> <li>Тематика сообщества соответствует <a href='https://adblogger.vk.com/documents/groups_moderation' target='_blank'>требованиям модерации</a> </li> <li>У&nbsp;автора есть самозанятость, ИП или&nbsp;юрлицо с&nbsp;российским ИНН</li> </ul> <p>Если сообщество перестанет соответствовать условиям или&nbsp;не&nbsp;будет соблюдать правила платформы, в&nbsp;нём нельзя будет рекламировать товары с&nbsp;Ozon через VK&nbsp;AdBlogger.</p>"
+								"answer": "<ul> <li>Сообщество подключено к&nbsp;<a href='https://adblogger.vk.com/for-authors?utm_source=vk&utm_medium=social&utm_campaign=soccom&utm_content=faq_ref' target='_blank'>VK&nbsp;AdBlogger</a></li> <li>В&nbsp;нём больше 1000&nbsp;подписчиков</li> <li>Есть хотя&nbsp;бы одна публикация за&nbsp;последние 30&nbsp;дней</li> <li>Cоответствует <a href='https://adblogger.vk.com/documents/groups_moderation' target='_blank'>требованиям модерации</a> и <a href='https://adblogger.vk.com/documents/offer_creator_products' target='_blank'>оферте</a> VK AdBlogger </li> <li>В сообществе публикуется качественный контент</li> <li>У&nbsp;автора есть самозанятость, ИП или&nbsp;юрлицо с&nbsp;российским ИНН</li> </ul> <p>Если сообщество перестанет соответствовать условиям или&nbsp;не&nbsp;будет соблюдать правила платформы, в&nbsp;нём нельзя будет рекламировать товары с&nbsp;Ozon через VK&nbsp;AdBlogger.</p>"
 							},
 							{
-								"question": "Как&nbsp;начать продвигать контент с&nbsp;товарами Ozon?",
-								"answer": '<p>Начать работу можно в&nbsp;личном кабинете VK&nbsp;AdBlogger. Как&nbsp;его создать&nbsp;— рассказали в&nbsp;<a href="https://vk.com/@-225265420-faq-po-platforme-vk-adblogger" target="_blank">статье</a>.</p> <ol> <li>Авторизуйтесь на&nbsp;<a href="https://adblogger.vk.com/for-authors" target="_blank">adblogger.vk.com</a> и&nbsp;найдите раздел «Товары» в&nbsp;левом меню</li> <li>В&nbsp;каталоге выберите товар для&nbsp;продвижения и&nbsp;нажмите «Взять в&nbsp;работу» </li> <li>Напишите пост о&nbsp;товаре или&nbsp;загрузите клип. В&nbsp;описание добавьте ссылку на&nbsp;товар из&nbsp;заявки&nbsp;— платформа автоматически прикрепит товар к&nbsp;публикации </li> <li>Отправьте контент на&nbsp;модерацию&nbsp;— обычно она занимает не&nbsp;больше суток </li> <li>Когда&nbsp;контент пройдёт модерацию, запланируйте дату публикации </li> </ol> <p>Кампания по&nbsp;продвижению длится 30&nbsp;дней&nbsp;— она начинается в&nbsp;тот момент, когда пост или&nbsp;клип будет опубликован. Вы получите проценты за&nbsp;продажи, которые произойдут по&nbsp;вашей ссылке в&nbsp;этот период </p>'
+								"question": "Можно ли использовать инструмент сразу в нескольких сообществах?",
+								"answer": 'Да, вы можете подключить к программе все сообщества, которые соответствуют условиям.'
 							},
+							{
+								"question": "Как начать рекламировать товары в шопсах?",
+								"answer": '<p>Создайте кабинет в VK AdBlogger. Как это сделать — рассказали в статье Авторизуйтесь на adblogger.vk.com и найдите раздел «Товары» в левом меню В каталоге выберите товар для продвижения и нажмите «Взять в работу» Напишите пост о товаре или снимите клип. В описание добавьте ссылку на товар из заявки — платформа автоматически прикрепит товар к публикации Отправьте контент на модерацию — обычно она занимает не больше суток Когда контент пройдёт модерацию, запланируйте дату публикации Кампания по продвижению длится 30 дней — она начинается в тот момент, когда пост или клип будет опубликован. Вы получите проценты за продажи, которые произойдут по вашей ссылке в этот период. </p>'
+							},
+							// {
+							// 	"question": "Как&nbsp;начать продвигать контент с&nbsp;товарами Ozon?",
+							// 	"answer": '<p>Начать работу можно в&nbsp;личном кабинете VK&nbsp;AdBlogger. Как&nbsp;его создать&nbsp;— рассказали в&nbsp;<a href="https://vk.com/@-225265420-faq-po-platforme-vk-adblogger" target="_blank">статье</a>.</p> <ol> <li>Авторизуйтесь на&nbsp;<a href="https://adblogger.vk.com/for-authors" target="_blank">adblogger.vk.com</a> и&nbsp;найдите раздел «Товары» в&nbsp;левом меню</li> <li>В&nbsp;каталоге выберите товар для&nbsp;продвижения и&nbsp;нажмите «Взять в&nbsp;работу» </li> <li>Напишите пост о&nbsp;товаре или&nbsp;загрузите клип. В&nbsp;описание добавьте ссылку на&nbsp;товар из&nbsp;заявки&nbsp;— платформа автоматически прикрепит товар к&nbsp;публикации </li> <li>Отправьте контент на&nbsp;модерацию&nbsp;— обычно она занимает не&nbsp;больше суток </li> <li>Когда&nbsp;контент пройдёт модерацию, запланируйте дату публикации </li> </ol> <p>Кампания по&nbsp;продвижению длится 30&nbsp;дней&nbsp;— она начинается в&nbsp;тот момент, когда пост или&nbsp;клип будет опубликован. Вы получите проценты за&nbsp;продажи, которые произойдут по&nbsp;вашей ссылке в&nbsp;этот период </p>'
+							// },
 							{
 								"question": "Какие есть ограничения?",
-								"answer": 'В&nbsp;месяц вы можете брать максимум 30&nbsp;заявок на&nbsp;продвижение товаров с&nbsp;Ozon. При&nbsp;этом одновременно в&nbsp;статусе «В&nbsp;работе» может быть только 3&nbsp;товара —&nbsp;как только опубликуете контент с&nbsp;одним из&nbsp;них, сможете взять новую заявку.'
+								"answer": '<p> В месяц вы можете брать максимум 10 заявок. При этом одновременно в статусе «В работе» может быть только 3 товара — как только запланируете публикацию с одним из них, сможете взять новую заявку. </p>'
+							},
+							{
+								"question": "Ограничения действуют во всех сообществах сразу?",
+								"answer": '<p> Лимиты распространяются на одно сообщество: </p> <ul> <li>если вы взяли в работу суммарно 5 заявок только в одном сообществе, то в нём сможете взять ещё 5 заявок, а в остальных — всё так же 10 </li> <li>если у вас в работе одновременно 3 заявки в одном сообществе, то в нём брать новые заявки пока не получится. В других ваших сообществах это сделать можно — их лимит не расходуется </li> </ul>'
 							},
 							{
 								"question": "Нужно&nbsp;ли согласовывать креатив с&nbsp;рекламодателем?",
@@ -1911,7 +1926,19 @@ const defaultState = {
 							},
 							{
 								"question": "Что&nbsp;делать с&nbsp;обязательной маркировкой рекламы?",
-								"answer": 'VK&nbsp;AdBlogger берёт на&nbsp;себя вопросы маркировки и&nbsp;автоматически регистрирует авторов в&nbsp;<a href="https://ads.vk.com/insights/chto-takoe-ord" target="_blank">операторе рекламных данных</a>. С&nbsp;вас&nbsp;— только контент.'
+								"answer": 'VK AdBlogger берёт на себя вопросы маркировки и автоматически регистрирует авторов в операторе рекламных данных. С вас — только качественный контент.'
+							},
+							{
+								"question": "Из&nbsp;чего будет складываться мой доход?",
+								"answer": '<p id="anchor-calculator">Доход за продвижение товара Ozon на старте программы складывается из процентов от продажи товара. </p> <ul> <li> Выплачивается через 14 дней после продажи — ровно сколько времени будет у покупателя, чтобы вернуть товар </li> <li> Если покупатель вернёт товар, процент начислен не будет </li> <li> Если товар купят после завершения рекламной кампании, то есть через 30 дней после публикации, то проценты не начислятся </li> <li> Цены на один и тот же товар могут отличаться — на Ozon они зависят от города покупателя и других параметров. Поэтому и процент от продаж одного и того же товара может быть разным </li> </ul> <p> В будущем условия выплат могут измениться. </p>'
+							},
+							{
+								"question": "Как отслеживать продажи товара?",
+								"answer": 'Перейдите в личный кабинет автора VK AdBlogger и найдите нужную рекламную публикацию в разделе «Заявки» — здесь будет статистика по совершённым покупкам по вашей ссылке. Данные подгружаются в кабинет в течение 3–4 часов после оплаты.'
+							},
+							{
+								"question": "Как часто обновляется статистика публикаций?",
+								"answer": 'Статистика публикаций обновляется в течение 24 часов. Если этого не происходит — напишите в <a href="https://vk.me/club225265420" target="_blank">Поддержку</a>.'
 							},
 							{
 								"question": "В&nbsp;каких форматах можно разместить рекламу? ",
@@ -1921,10 +1948,7 @@ const defaultState = {
 								"question": "Что&nbsp;будет, если опубликовать контент со&nbsp;сторонней ссылкой?",
 								"answer": '<p >Опубликовать контент со&nbsp;сторонней ссылкой не&nbsp;получится. В&nbsp;тексте поста и&nbsp;описании клипа может быть только ссылка на&nbsp;товар Ozon, которая прикреплена к&nbsp;заявке в&nbsp;VK&nbsp;AdBlogger. Это&nbsp;нужно, чтобы&nbsp;посчитать количество продаж именно из&nbsp;вашей публикации.</p>'
 							},
-							{
-								"question": "Из&nbsp;чего будет складываться мой доход?",
-								"answer": '<p id="anchor-calculator">На&nbsp;старте программы доход за&nbsp;продвижение товара с&nbsp;Ozon складывается из&nbsp;<b>фиксированной выплаты за&nbsp;просмотры</b> и&nbsp;<b>процента от&nbsp;продажи товара</b>. В&nbsp;будущем условия выплат могут измениться.</p> <p>Фиксированная выплата</p> <ul> <li>Размер зависит от&nbsp;формата контента (пост или&nbsp;клип) и&nbsp;числа подписчиков в&nbsp;сообществе</li> <li>Выплачивается, если контент в&nbsp;течение 30&nbsp;дней после публикации наберёт целевое число качественных просмотров</li> </ul> <p>Чтобы&nbsp;начать было проще, за&nbsp;первые три публикации вы получите минимальную выплату, даже если они не&nbsp;наберут нужное число просмотров. Для&nbsp;этого у&nbsp;публикаций должно быть хотя&nbsp;бы 25% от&nbsp;целевых просмотров.</p> <p>Процент от&nbsp;продажи товара </p> <ul> <li>Выплачивается вне зависимости от&nbsp;формата контента, количества подписчиков и&nbsp;просмотров</li> <li>Выплачивается через 14&nbsp;дней после продажи&nbsp;— ровно сколько времени будет у&nbsp;покупателя, чтобы вернуть товар</li> <li>Если&nbsp;покупатель вернёт товар, процент начислен не&nbsp;будет</li> <li>Если&nbsp;товар купят после завершения рекламной кампании, то&nbsp;есть через 30&nbsp;дней после публикации, то&nbsp;проценты не&nbsp;начислятся</li> <li> Цены на&nbsp;один и&nbsp;тот&nbsp;же товар могут отличаться&nbsp;— на&nbsp;Ozon они зависят от&nbsp;города покупателя и&nbsp;других параметров. Поэтому и&nbsp;процент от&nbsp;продаж одного и&nbsp;того&nbsp;же товара может быть разным</li> </ul> <img src="/img/faq/img-1.jpg" alt="img" width="100%"> <img src="/img/faq/img-2.jpg" alt="img" width="100%"> <p>Пример. Вы&nbsp;опубликовали второй рекламный клип в&nbsp;сообществе на&nbsp;75&nbsp;тысяч подписчиков. За&nbsp;30&nbsp;дней клип собрал 40&nbsp;тысяч просмотров&nbsp;— порог достигнут, поэтому фиксированная выплата составит 10&nbsp;000&nbsp;рублей. Если&nbsp;бы клип набрал 4&nbsp;тысячи просмотров, то&nbsp;вы получили&nbsp;бы 2&nbsp;500&nbsp;рублей.</p>'
-							},
+
 							{
 								"question": "Какую выплату я получу, если публикация не&nbsp;наберёт просмотры?",
 								"answer": '<p> Вы получите минимальную выплату за&nbsp;первые 3&nbsp;публикации в&nbsp;сообществе, если контент набрал хотя&nbsp;бы 25% от&nbsp;целевых просмотров. Размер зависит от&nbsp;формата контента (пост или&nbsp;клип) и&nbsp;числа подписчиков в&nbsp;сообществе. </p> <img src="/img/faq/img-3.jpg" alt="img" width="100%"> <img src="/img/faq/img-4.jpg" alt="img" width="100%"> <p> Пример. Вы опубликовали в&nbsp;сообществе на&nbsp;64&nbsp;тысячи подписчиков 2&nbsp;рекламных поста и&nbsp;клип, но&nbsp;не&nbsp;набрали нужное число просмотров, чтобы&nbsp;получить фиксированные выплаты. </p> <p> При&nbsp;этом публикации набрали 25% от&nbsp;целевых просмотров, поэтому вам доступна минимальная выплата&nbsp;— она составит 900 + 900 + 2&nbsp;500 = 4&nbsp;300&nbsp;₽. Если&nbsp;у&nbsp;вас несколько сообществ, сможете получить минимальные выплаты за&nbsp;первые 3&nbsp;публикации в&nbsp;каждом из&nbsp;них&nbsp;— при&nbsp;условии, что&nbsp;контент набрал хотя&nbsp;бы 25% от&nbsp;порога просмотров. </p>'
@@ -1977,10 +2001,7 @@ const defaultState = {
 							// 	"question": "Как удалить рекламную публикацию?",
 							// 	"answer": '<ol> <li>Перейдите в раздел «Заявки» и найдите ту, которую хотите удалить </li> <li>Откройте заявку и нажмите на три точки в правом верхнем углу, затем «Отклонить заявку» </li> </ol> <p>Пост или клип удалится автоматически. После этого вы сможете брать в работу на 1 заявку меньше — в месяц и одновременно. Ограничение будет действовать до конца текущего месяца. </p>'
 							// },
-							// {
-							// 	"question": "Можно ли использовать инструмент сразу в нескольких сообществах?",
-							// 	"answer": 'Да, вы можете подключить к программе все сообщества, которые соответствуют условиям.'
-							// },
+
 							// {
 							// 	"question": "Могу ли я использовать инструмент, если уже зарабатываю через другие программы монетизации?",
 							// 	"answer": 'Да, вы можете рекламировать товары с Ozon через VK AdBlogger, даже если уже используете другие инструменты монетизации ВКонтакте.'
