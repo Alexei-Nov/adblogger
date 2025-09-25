@@ -38,6 +38,7 @@
 	&__tags {
 		display: flex;
 		gap: 20px;
+		flex-wrap: wrap;
 	}
 	&__tag {
 		display: flex;
@@ -46,6 +47,7 @@
 		border-radius: 100px;
 		background-color: var(--blue-1);
 		color: var(--black);
+		white-space: nowrap;
 
 		&_border {
 			background-color: var(--black-2);
@@ -60,5 +62,71 @@
 		width: 100%;
 		max-width: 1176px;
 		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.review {
+		&__slide-top {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			margin: 0;
+		}
+		&__tags {
+			justify-content: center;
+		}
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.review {
+		&__slider {
+			margin: 0 -24px;
+			width: auto;
+		}
+		&__slide {
+			padding: 40px 24px;
+			border-radius: 40px;
+		}
+		&__slide-top {
+			gap: 20px;
+		}
+		&__name {
+			font-size: 28px;
+			margin-bottom: 14px;
+			min-height: 68px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		&__tags {
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 14px;
+			min-height: 90px;
+		}
+		&__tag {
+			font-size: 22px;
+			line-height: 100%;
+			padding: 7px 18px;
+		}
+		&__text {
+			margin-top: 84px;
+			font-size: 18px;
+			line-height: 120%;
+		}
+
+		&__pagination {
+			position: absolute;
+			top: 425px !important;
+			bottom: unset !important;
+			left: 50% !important;
+			width: fit-content !important;
+			transform: translateX(-50%);
+			z-index: 3;
+			margin: 0;
+		}
 	}
 }

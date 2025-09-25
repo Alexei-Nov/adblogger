@@ -55,6 +55,8 @@
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .review__tag {
@@ -68,6 +70,7 @@
   border-radius: 100px;
   background-color: var(--blue-1);
   color: var(--black);
+  white-space: nowrap;
 }
 
 .review__tag_border {
@@ -84,4 +87,88 @@
   width: 100%;
   max-width: 1176px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .review__slide-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  .review__tags {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .review__slider {
+    margin: 0 -24px;
+    width: auto;
+  }
+  .review__slide {
+    padding: 40px 24px;
+    border-radius: 40px;
+  }
+  .review__slide-top {
+    gap: 20px;
+  }
+  .review__name {
+    font-size: 28px;
+    margin-bottom: 14px;
+    min-height: 68px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .review__tags {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 14px;
+    min-height: 90px;
+  }
+  .review__tag {
+    font-size: 22px;
+    line-height: 100%;
+    padding: 7px 18px;
+  }
+  .review__text {
+    margin-top: 84px;
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .review__pagination {
+    position: absolute;
+    top: 425px !important;
+    bottom: unset !important;
+    left: 50% !important;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 3;
+    margin: 0;
+  }
 }

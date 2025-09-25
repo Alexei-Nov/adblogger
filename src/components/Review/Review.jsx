@@ -1,8 +1,8 @@
 import React from 'react'
 import 'swiper/css';
-import './review.css'
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import './review.css'
 
 export default function Review({ block_state }) {
 	return (
