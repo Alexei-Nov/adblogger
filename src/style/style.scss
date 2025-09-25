@@ -388,6 +388,7 @@ body {
 		opacity: 0.25;
 		cursor: pointer;
 		transition: all ease 0.5s !important;
+		margin: 0 !important;
 	}
 	& .swiper-pagination-bullet-active {
 		opacity: 1;

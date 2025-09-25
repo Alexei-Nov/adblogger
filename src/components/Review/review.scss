@@ -1,0 +1,64 @@
+.review {
+	&__title {
+		margin-bottom: 72px;
+		text-align: center;
+		font-family: "VK Sans Display Expanded";
+	}
+	&__slide {
+		padding: 40px;
+		border-radius: 48px;
+		background-color: var(--black-2);
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	&__slide-top {
+		display: flex;
+		gap: 40px;
+		margin-bottom: auto;
+	}
+	&__photo {
+		display: flex;
+		min-width: 154px;
+		width: 154px;
+		height: 154px;
+		overflow: hidden;
+		border-radius: 50%;
+
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+	&__name {
+		margin-bottom: 30px;
+	}
+	&__tags {
+		display: flex;
+		gap: 20px;
+	}
+	&__tag {
+		display: flex;
+		width: fit-content;
+		padding: 13px 28px;
+		border-radius: 100px;
+		background-color: var(--blue-1);
+		color: var(--black);
+
+		&_border {
+			background-color: var(--black-2);
+			border: 2px solid var(--blue-1);
+			color: var(--blue-1);
+		}
+	}
+	&__text {
+		margin-top: 48px;
+	}
+	&__slider {
+		width: 100%;
+		max-width: 1176px;
+		margin: 0 auto;
+	}
+}

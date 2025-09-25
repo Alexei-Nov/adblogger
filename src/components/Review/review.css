@@ -1,0 +1,87 @@
+.review__title {
+  margin-bottom: 72px;
+  text-align: center;
+  font-family: "VK Sans Display Expanded";
+}
+
+.review__slide {
+  padding: 40px;
+  border-radius: 48px;
+  background-color: var(--black-2);
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.review__slide-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  margin-bottom: auto;
+}
+
+.review__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 154px;
+  width: 154px;
+  height: 154px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.review__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.review__name {
+  margin-bottom: 30px;
+}
+
+.review__tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.review__tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 13px 28px;
+  border-radius: 100px;
+  background-color: var(--blue-1);
+  color: var(--black);
+}
+
+.review__tag_border {
+  background-color: var(--black-2);
+  border: 2px solid var(--blue-1);
+  color: var(--blue-1);
+}
+
+.review__text {
+  margin-top: 48px;
+}
+
+.review__slider {
+  width: 100%;
+  max-width: 1176px;
+  margin: 0 auto;
+}
