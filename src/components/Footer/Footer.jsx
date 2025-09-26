@@ -11,6 +11,7 @@ export default function Footer({ footer }) {
 	const location = useLocation()
 	const isForAuthors = location.pathname === "/for-authors"
 	const isForAdvertisers = location.pathname === "/for-advertisers"
+	const isForShops = location.pathname === "/shops"
 
 	// useEffect(() => {
 	// 	switch (location.pathname) {
@@ -59,9 +60,17 @@ export default function Footer({ footer }) {
 			? [
 				{ text: 'FAQ', link: 'https://vk.com/@-225265420-faq-po-platforme-vk-adblogger', target: "_blank" }
 			]
-			: [
+			: []),
+		...(isForShops
+			? [
+				{ text: 'FAQ', link: 'https://vk.com/@adblogger-for-authors-socom', target: "_blank" }
+			]
+			: []),
+		...(!isForShops && !isForAuthors
+			? [
 				{ text: 'FAQ', link: 'https://adblogger.vk.com/documents/faq_advertiser', target: "_blank" }
-			]),
+			]
+			: []),
 		{ text: 'Написать в Поддержку', link: 'https://vk.cc/cyEF76', target: "_blank" }
 	];
 

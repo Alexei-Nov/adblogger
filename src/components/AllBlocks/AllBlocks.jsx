@@ -30,6 +30,7 @@ import CardsSlider from 'components/CardsSlider/CardsSlider';
 import TabsBlock from 'components/TabsBlock/TabsBlock';
 import TovaryAbout from 'components/TovaryAbout/TovaryAbout';
 import Review from 'components/Review/Review';
+import Timer from 'components/Timer/Timer';
 
 export default function AllBlocks({ pageState }) {
 	const dispatch = useDispatch();
@@ -103,6 +104,8 @@ export default function AllBlocks({ pageState }) {
 						return <TovaryAbout key={i} block_state={block.block_state} />;
 					case 'review':
 						return <Review key={i} block_state={block.block_state} />;
+					case 'timer':
+						return <Timer key={i} block_state={block.block_state} />;
 					default:
 						return null;
 				}

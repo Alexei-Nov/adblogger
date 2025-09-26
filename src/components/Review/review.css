@@ -30,9 +30,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 154px;
-  width: 154px;
-  height: 154px;
+  min-width: 111px;
+  width: 111px;
+  height: 111px;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -48,6 +48,7 @@
 
 .review__name {
   margin-bottom: 30px;
+  font-family: "VK Sans Display Expanded";
 }
 
 .review__tags {
@@ -66,7 +67,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 13px 28px;
+  padding: 9px 25px;
   border-radius: 100px;
   background-color: var(--blue-1);
   color: var(--black);
@@ -85,7 +86,7 @@
 
 .review__slider {
   width: 100%;
-  max-width: 1176px;
+  max-width: 1095px;
   margin: 0 auto;
 }
 
@@ -112,10 +113,12 @@
   .review__slider {
     margin: 0 -24px;
     width: auto;
+    background-color: var(--black-2);
+    border-radius: 40px;
   }
   .review__slide {
     padding: 40px 24px;
-    border-radius: 40px;
+    background: none;
   }
   .review__slide-top {
     gap: 20px;
@@ -160,7 +163,7 @@
   }
   .review__pagination {
     position: absolute;
-    top: 425px !important;
+    top: 383px !important;
     bottom: unset !important;
     left: 50% !important;
     width: -webkit-fit-content !important;

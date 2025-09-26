@@ -76,14 +76,14 @@ export default function Header() {
 									{btnState.text}
 								</a>
 
-								{/* <li className='nav__item'>
+								<li className='nav__item'>
 									<NavLink
 										to='/top-cases'
 										className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
 										onClick={removeMenuClass}
 										end
 									>Топ-кейсы</NavLink>
-								</li> */}
+								</li>
 
 								{/* <li className='nav__item'>
 									<NavLink
