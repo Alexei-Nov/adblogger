@@ -1,7 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './timer.css'
 
 export default function Timer({ block_state }) {
+	const [distance, setDistance] = useState(1)
+
+	useEffect(() => {
+		const timerInterval = setInterval(() => {
+			const currentTime = new Date().getTime();
+			const countDownDate = new Date(block_state.date_start).getTime();
+
+			setDistance((time) => {
+				if (time <= 0) {
+					clearInterval(timerInterval);
+					return 0;
+				} else {
+					return countDownDate - currentTime
+				}
+			});
+		}, 1000);
+	}, [])
+
+
 	return (
 		<>
 			<section className='section timer'>
@@ -17,14 +36,41 @@ export default function Timer({ block_state }) {
 							</div>
 						</div>
 						<div className="timer__bottom">
-							<div className="timer__bottom-title text-40 fw-600">До старта:</div>
+							<div className="timer__bottom-title text-40 fw-600">До старта: </div>
 							<div className="timer__list">
 								<div className="timer__item">
 									<div className="timer__count">
-										<div className="timer__count-num">1</div>
-										<div className="timer__count-num">4</div>
+										{Math.floor(distance / (1000 * 60 * 60 * 24)) < 10 &&
+											<>
+												<div className="timer__count-num">0</div>
+												<div className="timer__count-num">{Math.floor(distance / (1000 * 60 * 60 * 24)).toString().charAt(0)}</div>
+											</>
+										}
+										{Math.floor(distance / (1000 * 60 * 60 * 24)) >= 10 &&
+											<>
+												<div className="timer__count-num">{Math.floor(distance / (1000 * 60 * 60 * 24)).toString().charAt(0)}</div>
+												<div className="timer__count-num">{Math.floor(distance / (1000 * 60 * 60 * 24)).toString().charAt(1)}</div>
+											</>
+										}
 									</div>
 									<div className="timer__label text-32 fw-600">дней</div>
+								</div>
+								<div className="timer__item">
+									<div className="timer__count">
+										{Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) < 10 &&
+											<>
+												<div className="timer__count-num">0</div>
+												<div className="timer__count-num">{Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().charAt(0)}</div>
+											</>
+										}
+										{Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) >= 10 &&
+											<>
+												<div className="timer__count-num">{Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().charAt(0)}</div>
+												<div className="timer__count-num">{Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().charAt(1)}</div>
+											</>
+										}
+									</div>
+									<div className="timer__label text-32 fw-600">часа</div>
 								</div>
 							</div>
 						</div>
