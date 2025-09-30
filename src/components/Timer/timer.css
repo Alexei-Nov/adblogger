@@ -102,46 +102,162 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   min-width: 56px;
   width: 56px;
-  height: 70px;
+  height: 64px;
   border-radius: 9px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
   font-family: "VK Sans Display Expanded";
   font-size: 54px;
   font-weight: 600;
   line-height: 120%;
+  -webkit-perspective: 200px;
+          perspective: 200px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-.timer__count-num::before {
-  display: block;
-  content: "";
-  width: 100%;
+.timer__count-top {
   height: 50%;
-  border-radius: 9px 9px 0 0;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.timer__count-front {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  text-align: center;
+  overflow: hidden;
   background: #2f2f2f;
+  border-radius: 9px 9px 0 0;
 }
 
-.timer__count-num::after {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 50%;
-  border-radius: 0 0 9px 9px;
+.timer__count-back {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  background: #3d3d3d;
+  -webkit-transform: rotateY(180deg) rotate(180deg);
+          transform: rotateY(180deg) rotate(180deg);
+  border-radius: 0 0 9px 9px;
+}
+
+.timer__count-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.timer__count-current {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   top: 50%;
   left: 0;
-  z-index: -1;
+  width: 100%;
+  height: 50%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  text-align: center;
+  overflow: hidden;
   background: #3d3d3d;
+  border-radius: 0 0 9px 9px;
+  z-index: 1;
+}
+
+.timer__count-next {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 9px 9px 0 0;
+  background: #2f2f2f;
+  z-index: 1;
+}
+
+.timer__flip {
+  -webkit-animation: flip 1s;
+          animation: flip 1s;
+}
+
+@-webkit-keyframes flip {
+  50%,
+  100% {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+  }
+  80% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-transform: rotateX(-170deg);
+            transform: rotateX(-170deg);
+  }
+}
+
+@keyframes flip {
+  50%,
+  100% {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+  }
+  80% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-transform: rotateX(-170deg);
+            transform: rotateX(-170deg);
+  }
 }
 
 @media screen and (max-width: 1024px) {

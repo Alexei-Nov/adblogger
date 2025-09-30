@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './timer.css'
 
 export default function Timer({ block_state }) {
 	const [distance, setDistance] = useState(1)
-	const [days, setDays] = useState(1)
-	const [hours, setHours] = useState(1)
-	const [seconds, setSeconds] = useState(1)
+	const [days, setDays] = useState('01')
+	const [hours, setHours] = useState('01')
+
+	let prevDays = usePrevious(days)
+	let prevHours = usePrevious(hours)
 
 	function addZeroToNumber(number) {
 		if (number < 10) {
@@ -20,6 +22,14 @@ export default function Timer({ block_state }) {
 		if (number % 10 > 1 && number % 10 < 5) return words[1];
 		if (number % 10 == 1) return words[0];
 		return words[2];
+	}
+
+	function usePrevious(value) {
+		const ref = useRef();
+		useEffect(() => {
+			ref.current = value;
+		}, [value]);
+		return ref.current;
 	}
 
 	useEffect(() => {
@@ -41,7 +51,6 @@ export default function Timer({ block_state }) {
 		setDays(addZeroToNumber(Math.floor(distance / (1000 * 60 * 60 * 24))));
 		setHours(addZeroToNumber(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))));
 
-		setSeconds(addZeroToNumber(Math.floor((distance % (1000 * 60)) / 1000)));
 	}, [distance])
 
 
@@ -64,24 +73,55 @@ export default function Timer({ block_state }) {
 							<div className="timer__list">
 								<div className="timer__item">
 									<div className="timer__count">
-										<div className="timer__count-num">{days.toString().charAt(0)}</div>
-										<div className="timer__count-num">{days.toString().charAt(1)}</div>
+										{(prevDays = '' + prevDays) && false}
+										<div className="timer__count-num">
+											<div className={"timer__count-top" + (prevDays.toString().charAt(0) != days.toString().charAt(0) ? ' timer__flip' : '')}>
+												<div className="timer__count-front">{prevDays.toString().charAt(0)}</div>
+												<div className="timer__count-back">{days.toString().charAt(0)}</div>
+											</div>
+											<div className="timer__count-bg">
+												<div className="timer__count-current">{prevDays.toString().charAt(0)}</div>
+												<div className="timer__count-next">{days.toString().charAt(0)}</div>
+											</div>
+										</div>
+										<div className="timer__count-num">
+											<div className={"timer__count-top" + (prevDays.toString().charAt(1) != days.toString().charAt(1) ? ' timer__flip' : '')}>
+												<div className="timer__count-front">{prevDays.toString().charAt(1)}</div>
+												<div className="timer__count-back">{days.toString().charAt(1)}</div>
+											</div>
+											<div className="timer__count-bg">
+												<div className="timer__count-current">{prevDays.toString().charAt(1)}</div>
+												<div className="timer__count-next">{days.toString().charAt(1)}</div>
+											</div>
+										</div>
 									</div>
 									<div className="timer__label text-32 fw-600">{getDeclension(days, ['день', 'дня', 'дней'])}</div>
 								</div>
 								<div className="timer__item">
 									<div className="timer__count">
-										<div className="timer__count-num">{hours.toString().charAt(0)}</div>
-										<div className="timer__count-num">{hours.toString().charAt(1)}</div>
+										{(prevHours = '' + prevHours) && false}
+										<div className="timer__count-num">
+											<div className={"timer__count-top" + (prevDays.toString().charAt(0) != days.toString().charAt(0) ? ' timer__flip' : '')}>
+												<div className="timer__count-front">{prevDays.toString().charAt(0)}</div>
+												<div className="timer__count-back">{days.toString().charAt(0)}</div>
+											</div>
+											<div className="timer__count-bg">
+												<div className="timer__count-current">{prevDays.toString().charAt(0)}</div>
+												<div className="timer__count-next">{days.toString().charAt(0)}</div>
+											</div>
+										</div>
+										<div className="timer__count-num">
+											<div className={"timer__count-top" + (prevDays.toString().charAt(0) != days.toString().charAt(0) ? ' timer__flip' : '')}>
+												<div className="timer__count-front">{prevDays.toString().charAt(0)}</div>
+												<div className="timer__count-back">{days.toString().charAt(0)}</div>
+											</div>
+											<div className="timer__count-bg">
+												<div className="timer__count-current">{prevDays.toString().charAt(0)}</div>
+												<div className="timer__count-next">{days.toString().charAt(0)}</div>
+											</div>
+										</div>
 									</div>
 									<div className="timer__label text-32 fw-600">{getDeclension(hours, ['час', 'часа', 'часов'])}</div>
-								</div>
-								<div className="timer__item">
-									<div className="timer__count">
-										<div className="timer__count-num">{seconds.toString().charAt(0)}</div>
-										<div className="timer__count-num">{seconds.toString().charAt(1)}</div>
-									</div>
-									<div className="timer__label text-32 fw-600">{getDeclension(seconds, ['сек', 'сек', 'сек'])}</div>
 								</div>
 							</div>
 						</div>
