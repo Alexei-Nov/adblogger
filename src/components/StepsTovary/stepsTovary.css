@@ -66,6 +66,11 @@
   position: relative;
 }
 
+.steps-tovary__steps-item:nth-child(2) .steps-tovary__steps-body {
+  -webkit-mask-image: url("/public/img/steps-tovary/mask2.svg");
+          mask-image: url("/public/img/steps-tovary/mask2.svg");
+}
+
 .steps-tovary__steps-desc {
   margin-top: auto;
 }
@@ -178,8 +183,12 @@
   }
   .steps-tovary__steps-body {
     padding-top: 95px;
-    -webkit-mask-image: url("/public/img/steps-tovary/mask_mob1.svg");
-            mask-image: url("/public/img/steps-tovary/mask_mob1.svg");
+    -webkit-mask-image: url("/public/img/steps-tovary/mask_mob.svg");
+            mask-image: url("/public/img/steps-tovary/mask_mob.svg");
+  }
+  .steps-tovary__steps-item:nth-child(2) .steps-tovary__steps-body {
+    -webkit-mask-image: url("/public/img/steps-tovary/mask2_mob.svg");
+            mask-image: url("/public/img/steps-tovary/mask2_mob.svg");
   }
   .steps-tovary__desc {
     font-size: 22px;

@@ -45,6 +45,11 @@
 	}
 	&__steps-item {
 		position: relative;
+		&:nth-child(2) .steps-tovary {
+			&__steps-body {
+				mask-image: url("/public/img/steps-tovary/mask2.svg");
+			}
+		}
 	}
 	&__steps-desc {
 		margin-top: auto;
@@ -130,15 +135,15 @@
 		}
 		&__steps-body {
 			padding-top: 95px;
-			mask-image: url("/public/img/steps-tovary/mask_mob1.svg");
+			mask-image: url("/public/img/steps-tovary/mask_mob.svg");
 		}
-		// &__steps-item {
-		// 	&:nth-child(3) .steps-tovary {
-		// 		&__steps-body {
-		// 			mask-image: url("/public/img/steps-tovary/mask_mob2.svg");
-		// 		}
-		// 	}
-		// }
+		&__steps-item {
+			&:nth-child(2) .steps-tovary {
+				&__steps-body {
+					mask-image: url("/public/img/steps-tovary/mask2_mob.svg");
+				}
+			}
+		}
 		&__desc {
 			font-size: 22px;
 			line-height: 100%;
