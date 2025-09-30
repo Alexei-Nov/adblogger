@@ -15,9 +15,9 @@ export default function Header() {
 	}
 
 	const location = useLocation();
-	useEffect(() => {
+	// useEffect(() => {
 
-	}, [location]);
+	// }, [location]);
 
 	return (
 		<>
@@ -26,7 +26,7 @@ export default function Header() {
 					<div className="header__wrapper">
 						<NavLink to='/' className="header__logo" onClick={removeMenuClass}>
 							<picture>
-								{/* <source media="(max-width: 570px)" srcSet="/img/logo_mob.svg" /> */}
+								<source media="(max-width: 570px)" srcSet="/img/logo_mob.svg" />
 								<img src='/img/logo.svg' alt="logo" />
 							</picture>
 						</NavLink>
