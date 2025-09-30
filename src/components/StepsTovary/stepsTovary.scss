@@ -132,13 +132,13 @@
 			padding-top: 95px;
 			mask-image: url("/public/img/steps-tovary/mask_mob1.svg");
 		}
-		&__steps-item {
-			&:nth-child(3) .steps-tovary {
-				&__steps-body {
-					mask-image: url("/public/img/steps-tovary/mask_mob2.svg");
-				}
-			}
-		}
+		// &__steps-item {
+		// 	&:nth-child(3) .steps-tovary {
+		// 		&__steps-body {
+		// 			mask-image: url("/public/img/steps-tovary/mask_mob2.svg");
+		// 		}
+		// 	}
+		// }
 		&__desc {
 			font-size: 22px;
 			line-height: 100%;

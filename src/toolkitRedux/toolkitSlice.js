@@ -184,7 +184,7 @@ const defaultState = {
 				{
 					"block_slug": "channels",
 					"block_state": {
-						"title": "<span class='tt-lc'>60&nbsp;000</span> сообществ уже подключились",
+						"title": "<span class='tt-lc'>65&nbsp;000</span> сообществ уже подключились",
 						"tags": [],
 						"channels": [
 							{
