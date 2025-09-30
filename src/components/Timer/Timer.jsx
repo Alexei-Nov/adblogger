@@ -50,7 +50,6 @@ export default function Timer({ block_state }) {
 	useEffect(() => {
 		setDays(addZeroToNumber(Math.floor(distance / (1000 * 60 * 60 * 24))));
 		setHours(addZeroToNumber(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))));
-
 	}, [distance])
 
 
@@ -101,23 +100,23 @@ export default function Timer({ block_state }) {
 									<div className="timer__count">
 										{(prevHours = '' + prevHours) && false}
 										<div className="timer__count-num">
-											<div className={"timer__count-top" + (prevDays.toString().charAt(0) != days.toString().charAt(0) ? ' timer__flip' : '')}>
-												<div className="timer__count-front">{prevDays.toString().charAt(0)}</div>
-												<div className="timer__count-back">{days.toString().charAt(0)}</div>
+											<div className={"timer__count-top" + (prevHours.toString().charAt(0) != hours.toString().charAt(0) ? ' timer__flip' : '')}>
+												<div className="timer__count-front">{prevHours.toString().charAt(0)}</div>
+												<div className="timer__count-back">{hours.toString().charAt(0)}</div>
 											</div>
 											<div className="timer__count-bg">
-												<div className="timer__count-current">{prevDays.toString().charAt(0)}</div>
-												<div className="timer__count-next">{days.toString().charAt(0)}</div>
+												<div className="timer__count-current">{prevHours.toString().charAt(0)}</div>
+												<div className="timer__count-next">{hours.toString().charAt(0)}</div>
 											</div>
 										</div>
 										<div className="timer__count-num">
-											<div className={"timer__count-top" + (prevDays.toString().charAt(0) != days.toString().charAt(0) ? ' timer__flip' : '')}>
-												<div className="timer__count-front">{prevDays.toString().charAt(0)}</div>
-												<div className="timer__count-back">{days.toString().charAt(0)}</div>
+											<div className={"timer__count-top" + (prevHours.toString().charAt(0) != hours.toString().charAt(0) ? ' timer__flip' : '')}>
+												<div className="timer__count-front">{prevHours.toString().charAt(1)}</div>
+												<div className="timer__count-back">{hours.toString().charAt(1)}</div>
 											</div>
 											<div className="timer__count-bg">
-												<div className="timer__count-current">{prevDays.toString().charAt(0)}</div>
-												<div className="timer__count-next">{days.toString().charAt(0)}</div>
+												<div className="timer__count-current">{prevHours.toString().charAt(1)}</div>
+												<div className="timer__count-next">{hours.toString().charAt(1)}</div>
 											</div>
 										</div>
 									</div>
