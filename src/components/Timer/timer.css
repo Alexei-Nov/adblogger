@@ -32,6 +32,10 @@
   max-width: 497px;
 }
 
+.timer__desc a {
+  text-decoration: none;
+}
+
 .timer__bottom {
   display: -webkit-box;
   display: -ms-flexbox;

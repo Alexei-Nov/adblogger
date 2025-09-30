@@ -21,7 +21,7 @@ export default function Review({ block_state }) {
 							clickable: true
 						}}
 						autoplay={{
-							delay: 2500,
+							delay: 5000,
 							disableOnInteraction: false,
 						}}
 					>

@@ -23,6 +23,10 @@
 		margin-top: 30px;
 		width: 100%;
 		max-width: 497px;
+
+		& a {
+			text-decoration: none;
+		}
 	}
 	&__bottom {
 		display: flex;

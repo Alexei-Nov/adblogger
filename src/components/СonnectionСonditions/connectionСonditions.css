@@ -80,6 +80,10 @@
   margin-bottom: auto;
 }
 
+.connection-conditions__list-text a {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1024px) {
   .connection-conditions__wrapper {
     -webkit-box-orient: vertical;
