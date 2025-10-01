@@ -212,4 +212,7 @@
   .steps-tovary__body {
     gap: 40px;
   }
+  .steps-tovary__steps-desc {
+    max-width: 274px;
+  }
 }

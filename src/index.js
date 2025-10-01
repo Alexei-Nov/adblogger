@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style/fonts.css';
 import './style/reset.css';
-import './style/style.css';
+import './style/style.css?v=2';
 import App from './App';
 import { Provider } from 'react-redux'
 import { store } from './toolkitRedux';
