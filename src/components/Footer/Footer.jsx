@@ -39,7 +39,7 @@ export default function Footer({ footer }) {
 	const documentItems = [
 		{ text: 'Пользовательское соглашение', link: 'https://adblogger.vk.com/documents/terms', target: "_blank" },
 		{ text: 'Политика конфиденциальности', link: 'https://adblogger.vk.com/documents/privacy', target: "_blank" },
-		{ text: 'Правила акции "шопс-чарт"', link: 'https://adblogger.vk.com/documents/shops-chart', target: "_blank" },
+		{ text: 'Правила конкурса "шопс-чарт"', link: 'https://adblogger.vk.com/documents/shops-chart', target: "_blank" },
 		...(isForAuthors
 			? [
 				{ text: 'Оферта для авторов', link: 'https://adblogger.vk.com/documents/offer_creator_products', target: "_blank" },
