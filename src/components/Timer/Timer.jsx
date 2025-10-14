@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './timer.css'
+import { NavLink } from 'react-router-dom'
 
 export default function Timer({ block_state }) {
 	const [distance, setDistance] = useState(1)
@@ -62,7 +63,9 @@ export default function Timer({ block_state }) {
 							<div className="timer__info">
 								<div className="timer__title text-35 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
 								<div className="timer__desc content text-22" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
-								<a href='' className="timer__btn btn btn_rounded text-20 fw-500">Подробнее</a>
+								<NavLink to='/shops-chart' className="timer__btn btn btn_rounded text-20 fw-500">
+									Залететь в чарт
+								</NavLink>
 							</div>
 							<div className="timer__img">
 								<img src={block_state.img} alt="img" />
