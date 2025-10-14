@@ -3,14 +3,22 @@ import './iframe.css'
 
 export default function Iframe({ block_state }) {
 
-	const iframeRef = useRef();
-	const [height, setHeight] = useState('200');
+	const [iframeHeight, setIframeHeight] = useState('8000px');
+	const iframeRef = useRef(null); // Optional, for direct iframe interaction if needed
 
-	const onLoad = () => {
-		// setHeight(iframeRef.current.contentWindow.document.body.scrollHeight + 'px');
-	};
 	useEffect(() => {
-		onLoad();
+		const handleMessage = (event) => {
+			// Verify the origin for security if possible, e.g., event.origin === "https://your-iframe-domain.com"
+			if (event.data && event.data.type === 'iframeHeight' && event.data.height) {
+				setIframeHeight(`${event.data.height}px`);
+			}
+		};
+
+		window.addEventListener('message', handleMessage);
+
+		return () => {
+			window.removeEventListener('message', handleMessage);
+		};
 	}, []);
 
 
@@ -21,11 +29,10 @@ export default function Iframe({ block_state }) {
 					src={block_state.src}
 					ref={iframeRef}
 					width="100%"
-					height={height}
+					height={iframeHeight}
 					frameBorder="0"
 					scrolling="no"
 					style={{ width: '100%', border: 'none' }}
-					onLoad={onLoad}
 				></iframe >
 			</section>
 		</>
