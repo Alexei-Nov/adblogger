@@ -8,6 +8,7 @@ import DetailCase from "../../pages/DetailCase";
 import ForSellers from 'pages/ForSellers';
 import NotFound from 'components/NotFound/NotFound';
 import TovaryPage from 'pages/TovaryPage';
+import ShopsChart from 'pages/ShopsChart';
 
 export default function Main() {
 
@@ -30,6 +31,7 @@ export default function Main() {
 					<Route exact path="/top-cases" element={<TopCase />} />
 					<Route exact path="/top-cases/:slug" element={<DetailCase />} />
 					<Route exact path="/shops" element={<TovaryPage />} />
+					<Route exact path="/shops-chart" element={<ShopsChart />} />
 					<Route exact path="*" element={<NotFound />} />
 				</Routes>
 			</main>

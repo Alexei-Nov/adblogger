@@ -1755,8 +1755,8 @@ const defaultState = {
 				{
 					"block_slug": "timer",
 					"block_state": {
-						"title": "станьте лидером <br> <span class='blue-text'>шопс-чарта</span> ",
-						"desc": "<p> Это рейтинг с денежными призами для авторов шопсов. Каждая продажа из публикаций продвигает автора в рейтинге и повышает шанс на вознаграждение </p> <p> Чтобы узнать о старте шопс&#8209;чарта, следите за <a href='http://vk.com/adblogger' target='_blank' class='blue-text'>сообществом</a> </p>",
+						"title": "публикуйте шопсы&nbsp;— <br> <span class='blue-text'>выигрывайте деньги</span> ",
+						"desc": "<p> Создавайте контент с товарами и продвигайтесь в <span class='blue-text'>шопс-чарте</span>: чем больше выручка и количество продаж из ваших публикаций, тем крупнее приз </p> <p> Топ-500 авторов разделят призовой фонд — <span class='blue-text'>5 000 000 рублей</span> </p>",
 						"img": "./img/timer/img.png",
 						"date_start": "2025-10-15T00:00:00+03:00",
 					}
@@ -2106,6 +2106,22 @@ const defaultState = {
 						]
 					}
 				}
+			]
+		},
+		{
+			"page_slug": "shops-chart",
+			"page_title": "Шопс-чарты",
+			"blocks": [
+				{
+					"block_slug": "preloader",
+					"block_state": {}
+				},
+				{
+					"block_slug": "iframe",
+					"block_state": {
+						"src": "https://adbloggers-landing-front-main.ktsdev.ru/",
+					}
+				},
 			]
 		},
 	],

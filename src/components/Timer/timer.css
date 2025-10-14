@@ -11,7 +11,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 68px;
+  gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -29,7 +29,6 @@
 .timer__desc {
   margin-top: 30px;
   width: 100%;
-  max-width: 497px;
 }
 
 .timer__bottom {
@@ -226,6 +225,10 @@
 .timer__flip {
   -webkit-animation: flip 1s;
           animation: flip 1s;
+}
+
+.timer__btn {
+  margin-top: 30px;
 }
 
 @-webkit-keyframes flip {

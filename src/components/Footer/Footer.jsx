@@ -9,25 +9,6 @@ export default function Footer({ footer }) {
 	const [footerState, setFooterState] = useState(footer)
 	const btnState = useSelector(state => state.toolkit.registrationBtn)
 	const location = useLocation()
-	const isForAuthors = location.pathname === "/for-authors"
-	const isForAdvertisers = location.pathname === "/for-advertisers"
-	const isForShops = location.pathname === "/shops"
-
-	// useEffect(() => {
-	// 	switch (location.pathname) {
-	// 		case '/for-authors':
-	// 			setFooterState({ ...footerState, desc: 'VK AdBlogger — платформа для сотрудничества авторов и рекламодателей, на которой можно продавать рекламу в сообществах ВКонтакте.' })
-	// 			break;
-	// 		case '/for-advertisers':
-	// 			setFooterState({ ...footerState, desc: 'VK AdBlogger — платформа для сотрудничества авторов и рекламодателей, на которой можно покупать рекламу в сообществах ВКонтакте.' })
-	// 			break;
-	// 		default:
-	// 			setFooterState({
-	// 				...footerState, desc: 'VK AdBlogger — платформа для&nbsp;сотрудничества авторов и&nbsp;рекламодателей, на&nbsp;которой можно покупать рекламу в&nbsp;сообществах ВКонтакте'
-	// 			})
-	// 			break;
-	// 	}
-	// }, [location])
 
 	const caseItems = [
 		{ text: 'Посевы и треккинг', link: 'top-cases/case-1' },
@@ -36,42 +17,28 @@ export default function Footer({ footer }) {
 		{ text: 'Все кейсы', link: 'top-cases' }
 	];
 
-	const documentItems = [
+	const documentItemsForAuthors = [
 		{ text: 'Пользовательское соглашение', link: 'https://adblogger.vk.com/documents/terms', target: "_blank" },
 		{ text: 'Политика конфиденциальности', link: 'https://adblogger.vk.com/documents/privacy', target: "_blank" },
 		{ text: 'Правила конкурса "шопс-чарт"', link: 'https://adblogger.vk.com/documents/shops-chart', target: "_blank" },
-		...(isForAuthors
-			? [
-				{ text: 'Оферта для авторов', link: 'https://adblogger.vk.com/documents/offer_creator_products', target: "_blank" },
-				{ text: 'Условия для авторов', link: 'https://adblogger.vk.com/documents/terms_creator', target: "_blank" },
-				{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.com/documents/moderation', target: "_blank" },
-			]
-			: []),
-		...(isForAdvertisers
-			? [
-				{ text: 'Оферта для рекламодателей', link: 'https://adblogger.vk.com/documents/offer_adv', target: "_blank" },
-				{ text: 'Правила оказания рекламных услуг', link: 'https://adblogger.vk.com/documents/rules_adv', target: "_blank" },
-				{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.com/documents/moderation', target: "_blank" },
-			]
-			: []),
+		{ text: 'Оферта для авторов', link: 'https://adblogger.vk.com/documents/offer_creator_products', target: "_blank" },
+		{ text: 'Дополнительная оферта для авторов', link: 'https://adblogger.vk.com/documents/offer_creator', target: "_blank" },
+		{ text: 'Условия для авторов', link: 'https://adblogger.vk.com/documents/terms_creator', target: "_blank" },
+		{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.com/documents/moderation', target: "_blank" }
+	];
+
+	const documentItemsForAdvertisers = [
+		{ text: 'Пользовательское соглашение', link: 'https://adblogger.vk.com/documents/terms', target: "_blank" },
+		{ text: 'Политика конфиденциальности', link: 'https://adblogger.vk.com/documents/privacy', target: "_blank" },
+		{ text: 'Оферта для рекламодателей', link: 'https://adblogger.vk.com/documents/offer_adv', target: "_blank" },
+		{ text: 'Правила оказания рекламных услуг', link: 'https://adblogger.vk.com/documents/rules_adv', target: "_blank" },
+		{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.com/documents/moderation', target: "_blank" }
 	];
 
 	const helpItems = [
-		...(isForAuthors
-			? [
-				{ text: 'FAQ', link: 'https://vk.com/@-225265420-faq-po-platforme-vk-adblogger', target: "_blank" }
-			]
-			: []),
-		...(isForShops
-			? [
-				{ text: 'FAQ', link: 'https://vk.com/@adblogger-for-authors-socom', target: "_blank" }
-			]
-			: []),
-		...(!isForShops && !isForAuthors
-			? [
-				{ text: 'FAQ', link: 'https://adblogger.vk.com/documents/faq_advertiser', target: "_blank" }
-			]
-			: []),
+		{ text: 'FAQ для авторов', link: 'https://vk.com/@-225265420-faq-po-platforme-vk-adblogger', target: "_blank" },
+		{ text: 'FAQ по шопсам', link: 'https://vk.com/@adblogger-for-authors-socom', target: "_blank" },
+		{ text: 'FAQ для рекламодателей', link: 'https://adblogger.vk.com/documents/faq_advertiser', target: "_blank" },
 		{ text: 'Написать в Поддержку', link: 'https://vk.cc/cyEF76', target: "_blank" }
 	];
 
@@ -104,8 +71,9 @@ export default function Footer({ footer }) {
 							<ul className='nav__list'>
 								<NavLink to='/top-cases/' className='nav__link nav__link_lvl1 text-20'>Кейсы</NavLink>
 								{/* <NavItem title={"Кейсы"} submenu={caseItems} /> */}
-								<NavItem title={"Документы"} submenu={documentItems} />
+								<NavItem title={"Документы для авторов"} submenu={documentItemsForAuthors} />
 								<NavItem title={"Помощь"} submenu={helpItems} />
+								<NavItem title={"Документы для рекламодателей"} submenu={documentItemsForAdvertisers} />
 							</ul>
 						</nav>
 					</div>

@@ -60,14 +60,15 @@ export default function Timer({ block_state }) {
 					<div className="timer__wrapper">
 						<div className="timer__body">
 							<div className="timer__info">
-								<div className="timer__title text-40 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+								<div className="timer__title text-35 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
 								<div className="timer__desc content text-22" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
+								<a href='' className="timer__btn btn btn_rounded text-20 fw-500">Подробнее</a>
 							</div>
 							<div className="timer__img">
 								<img src={block_state.img} alt="img" />
 							</div>
 						</div>
-						<div className="timer__bottom">
+						{/* <div className="timer__bottom">
 							<div className="timer__bottom-title text-40 fw-600">До старта: </div>
 							<div className="timer__list">
 								<div className="timer__item">
@@ -123,7 +124,7 @@ export default function Timer({ block_state }) {
 									<div className="timer__label text-32 fw-600">{getDeclension(hours, ['час', 'часа', 'часов'])}</div>
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</section>

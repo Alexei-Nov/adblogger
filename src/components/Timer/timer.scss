@@ -9,7 +9,8 @@
 	}
 	&__body {
 		display: flex;
-		gap: 68px;
+		// gap: 68px;
+		gap: 20px;
 		align-items: center;
 	}
 	&__info {
@@ -22,7 +23,7 @@
 	&__desc {
 		margin-top: 30px;
 		width: 100%;
-		max-width: 497px;
+		// max-width: 497px;
 	}
 	&__bottom {
 		display: flex;
@@ -163,6 +164,9 @@
 
 	&__flip {
 		animation: flip 1s;
+	}
+	&__btn {
+		margin-top: 30px;
 	}
 }
 

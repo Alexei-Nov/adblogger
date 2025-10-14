@@ -72,6 +72,14 @@ export default function Header() {
 										end
 									>Топ-кейсы</NavLink>
 								</li>
+								<li className='nav__item'>
+									<NavLink
+										to='/shops-chart'
+										className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
+										onClick={removeMenuClass}
+										end
+									>Шопс-чарты</NavLink>
+								</li>
 
 								{/* <li className='nav__item'>
 									<NavLink
