@@ -38,6 +38,7 @@
 
 .header__btn {
   margin-left: auto;
+  white-space: nowrap;
 }
 
 .header__menu-btn {
@@ -60,6 +61,10 @@
 
 .header .nav__item {
   position: relative;
+}
+
+.header .nav__link {
+  white-space: nowrap;
 }
 
 .header .nav__link_active {

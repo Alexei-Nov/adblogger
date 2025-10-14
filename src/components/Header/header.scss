@@ -26,6 +26,7 @@
 	}
 	&__btn {
 		margin-left: auto;
+		white-space: nowrap;
 	}
 	&__menu-btn {
 		display: none;
@@ -43,6 +44,8 @@
 			position: relative;
 		}
 		&__link {
+			white-space: nowrap;
+
 			&_active {
 				position: relative;
 				&::after {
