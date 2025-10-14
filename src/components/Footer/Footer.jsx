@@ -21,8 +21,8 @@ export default function Footer({ footer }) {
 		{ text: 'Пользовательское соглашение', link: 'https://adblogger.vk.com/documents/terms', target: "_blank" },
 		{ text: 'Политика конфиденциальности', link: 'https://adblogger.vk.com/documents/privacy', target: "_blank" },
 		{ text: 'Правила конкурса "шопс-чарт"', link: 'https://adblogger.vk.com/documents/shops-chart', target: "_blank" },
-		{ text: 'Оферта для авторов', link: 'https://adblogger.vk.com/documents/offer_creator_products', target: "_blank" },
-		{ text: 'Дополнительная оферта для авторов', link: 'https://adblogger.vk.com/documents/offer_creator', target: "_blank" },
+		{ text: 'Оферта для авторов', link: 'https://adblogger.vk.com/documents/offer_creator', target: "_blank" },
+		{ text: 'Дополнительная оферта для авторов', link: 'https://adblogger.vk.com/documents/offer_creator_products', target: "_blank" },
 		{ text: 'Условия для авторов', link: 'https://adblogger.vk.com/documents/terms_creator', target: "_blank" },
 		{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.com/documents/moderation', target: "_blank" }
 	];

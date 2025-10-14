@@ -2119,7 +2119,7 @@ const defaultState = {
 				{
 					"block_slug": "iframe",
 					"block_state": {
-						"src": "https://adbloggers-landing-front-main.ktsdev.ru/",
+						"src": "https://adbloggers-landing.ru-prod2.kts.studio/",
 					}
 				},
 			]
