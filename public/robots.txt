@@ -5,6 +5,6 @@ Disallow: /app/*
 
 User-Agent: Yandex
 
-Clean-param: utm_source&mt_link_id&mt_click_id&mt_sub5&scheme
+Clean-param: utm_source&mt_link_id&mt_click_id&mt_sub5&scheme&logid&mt_network
 
-Sitemap: https://adblogger.vk.com/sitemap.xml
+Sitemap: https://adblogger.vk.ru/sitemap.xml

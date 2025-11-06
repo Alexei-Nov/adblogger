@@ -18,27 +18,27 @@ export default function Footer({ footer }) {
 	];
 
 	const documentItemsForAuthors = [
-		{ text: 'Пользовательское соглашение', link: 'https://adblogger.vk.com/documents/terms', target: "_blank" },
-		{ text: 'Политика конфиденциальности', link: 'https://adblogger.vk.com/documents/privacy', target: "_blank" },
-		{ text: 'Правила конкурса "шопс-чарт"', link: 'https://adblogger.vk.com/documents/shops-chart', target: "_blank" },
-		{ text: 'Оферта для авторов', link: 'https://adblogger.vk.com/documents/offer_creator', target: "_blank" },
-		{ text: 'Дополнительная оферта для авторов', link: 'https://adblogger.vk.com/documents/offer_creator_products', target: "_blank" },
-		{ text: 'Условия для авторов', link: 'https://adblogger.vk.com/documents/terms_creator', target: "_blank" },
-		{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.com/documents/moderation', target: "_blank" }
+		{ text: 'Пользовательское соглашение', link: 'https://adblogger.vk.ru/documents/terms', target: "_blank" },
+		{ text: 'Политика конфиденциальности', link: 'https://adblogger.vk.ru/documents/privacy', target: "_blank" },
+		{ text: 'Правила конкурса "шопс-чарт"', link: 'https://adblogger.vk.ru/documents/shops-chart', target: "_blank" },
+		{ text: 'Оферта для авторов', link: 'https://adblogger.vk.ru/documents/offer_creator', target: "_blank" },
+		{ text: 'Дополнительная оферта для авторов', link: 'https://adblogger.vk.ru/documents/offer_creator_products', target: "_blank" },
+		{ text: 'Условия для авторов', link: 'https://adblogger.vk.ru/documents/terms_creator', target: "_blank" },
+		{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.ru/documents/moderation', target: "_blank" }
 	];
 
 	const documentItemsForAdvertisers = [
-		{ text: 'Пользовательское соглашение', link: 'https://adblogger.vk.com/documents/terms', target: "_blank" },
-		{ text: 'Политика конфиденциальности', link: 'https://adblogger.vk.com/documents/privacy', target: "_blank" },
-		{ text: 'Оферта для рекламодателей', link: 'https://adblogger.vk.com/documents/offer_adv', target: "_blank" },
-		{ text: 'Правила оказания рекламных услуг', link: 'https://adblogger.vk.com/documents/rules_adv', target: "_blank" },
-		{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.com/documents/moderation', target: "_blank" }
+		{ text: 'Пользовательское соглашение', link: 'https://adblogger.vk.ru/documents/terms', target: "_blank" },
+		{ text: 'Политика конфиденциальности', link: 'https://adblogger.vk.ru/documents/privacy', target: "_blank" },
+		{ text: 'Оферта для рекламодателей', link: 'https://adblogger.vk.ru/documents/offer_adv', target: "_blank" },
+		{ text: 'Правила оказания рекламных услуг', link: 'https://adblogger.vk.ru/documents/rules_adv', target: "_blank" },
+		{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.ru/documents/moderation', target: "_blank" }
 	];
 
 	const helpItems = [
-		{ text: 'FAQ для авторов', link: 'https://vk.com/@-225265420-faq-po-platforme-vk-adblogger', target: "_blank" },
-		{ text: 'FAQ по шопсам', link: 'https://vk.com/@adblogger-for-authors-socom', target: "_blank" },
-		{ text: 'FAQ для рекламодателей', link: 'https://adblogger.vk.com/documents/faq_advertiser', target: "_blank" },
+		{ text: 'FAQ для авторов', link: 'https://vk.ru/@-225265420-faq-po-platforme-vk-adblogger', target: "_blank" },
+		{ text: 'FAQ по шопсам', link: 'https://vk.ru/@adblogger-for-authors-socom', target: "_blank" },
+		{ text: 'FAQ для рекламодателей', link: 'https://adblogger.vk.ru/documents/faq_advertiser', target: "_blank" },
 		{ text: 'Написать в Поддержку', link: 'https://vk.cc/cyEF76', target: "_blank" }
 	];
 
@@ -83,7 +83,7 @@ export default function Footer({ footer }) {
 							<div className="footer__bottom-row">
 								<div className="footer__bottom-links ">
 									<span>© VK, 2025.  Все права защищены.</span>
-									<a href='https://adblogger.vk.com/documents/privacy' target='_blank' rel="noreferrer">Политика конфиденциальности</a>
+									<a href='https://adblogger.vk.ru/documents/privacy' target='_blank' rel="noreferrer">Политика конфиденциальности</a>
 									<span>125167, г. Москва, Ленинградский проспект, д. 39, стр. 79</span>
 								</div>
 

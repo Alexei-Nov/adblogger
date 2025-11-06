@@ -147,7 +147,7 @@ const defaultState = {
 				// 				"numCurrent": "7,1  ",
 				// 				"numAfter": "",
 				// 				"numLabel": "млрд ₽",
-				// 				"desc": "<a href='https://vk.com/press/content-2024' target='_blank'>заработали</a> авторы <br> ВКонтакте в&nbsp;2024 году"
+				// 				"desc": "<a href='https://vk.ru/press/content-2024' target='_blank'>заработали</a> авторы <br> ВКонтакте в&nbsp;2024 году"
 				// 			}
 				// 		]
 				// 	}
@@ -362,7 +362,7 @@ const defaultState = {
 							},
 							{
 								"question": "Могу&nbsp;ли я рекламировать своё сообщество через VK&nbsp;AdBlogger или&nbsp;VK&nbsp;Реклама?",
-								"answer": "<p>Да, на&nbsp;обеих рекламных площадках автор может продвигать своё&nbsp;сообщество и&nbsp;привлекать новых подписчиков. Для&nbsp;этого&nbsp;ему потребуется создать рекламный кабинет в&nbsp;VK&nbsp;AdBlogger или&nbsp;<a href='https://ads.vk.com/promo/firstbonus?utm_source=vk_adblogger_site_authors' target='_blank'>VK&nbsp;Реклама</a>.</p> <p>Дополнительно новые пользователи <a href='https://ads.vk.com/promo/firstbonus?utm_source=vk_adblogger_site_authors' target='_blank'>VK&nbsp;Реклама</a> могут получить приветственный  бонус до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;первую рекламу. Его можно использовать, чтобы&nbsp;продвигать своё&nbsp;сообщество или&nbsp;товары и&nbsp;услуги в&nbsp;нём.</p>"
+								"answer": "<p>Да, на&nbsp;обеих рекламных площадках автор может продвигать своё&nbsp;сообщество и&nbsp;привлекать новых подписчиков. Для&nbsp;этого&nbsp;ему потребуется создать рекламный кабинет в&nbsp;VK&nbsp;AdBlogger или&nbsp;<a href='https://ads.vk.ru/promo/firstbonus?utm_source=vk_adblogger_site_authors' target='_blank'>VK&nbsp;Реклама</a>.</p> <p>Дополнительно новые пользователи <a href='https://ads.vk.ru/promo/firstbonus?utm_source=vk_adblogger_site_authors' target='_blank'>VK&nbsp;Реклама</a> могут получить приветственный  бонус до&nbsp;10&nbsp;000&nbsp;₽ на&nbsp;первую рекламу. Его можно использовать, чтобы&nbsp;продвигать своё&nbsp;сообщество или&nbsp;товары и&nbsp;услуги в&nbsp;нём.</p>"
 							}
 						]
 					}
@@ -993,7 +993,7 @@ const defaultState = {
 				// 		"title": "Превращайте <br> клики — в&nbsp;кэш",
 				// 		"desc": "",
 				// 		"btn_text": "К обучению",
-				// 		"btn_link": "https://expert.vk.com/marathon/kliki-v-kesh/landing/",
+				// 		"btn_link": "https://expert.vk.ru/marathon/kliki-v-kesh/landing/",
 				// 		"img": "./img/banner-sellers-2/img.png",
 				// 		"img_tablet": "./img/banner-sellers-2/img_tablet.png",
 				// 	}
@@ -1064,7 +1064,7 @@ const defaultState = {
 							},
 							{
 								"question": "Могу ли я одновременно рекламироваться через VK AdBlogger и VK Реклама?",
-								"answer": "<p>Да, вы&nbsp;можете одновременно завести два рекламных кабинета. <br> Для&nbsp;регистрации в&nbsp;VK&nbsp;AdBlogger можно использовать тот&nbsp;же&nbsp;VK&nbsp;ID или&nbsp;почту, что&nbsp;и&nbsp;в&nbsp;<a href='https://ads.vk.com/promo/firstbonus?utm_source=vk_adblogger_site_advertisers' target='_blank'>VK&nbsp;Реклама</a>.</p>"
+								"answer": "<p>Да, вы&nbsp;можете одновременно завести два рекламных кабинета. <br> Для&nbsp;регистрации в&nbsp;VK&nbsp;AdBlogger можно использовать тот&nbsp;же&nbsp;VK&nbsp;ID или&nbsp;почту, что&nbsp;и&nbsp;в&nbsp;<a href='https://ads.vk.ru/promo/firstbonus?utm_source=vk_adblogger_site_advertisers' target='_blank'>VK&nbsp;Реклама</a>.</p>"
 							}
 						]
 					}
@@ -1482,12 +1482,12 @@ const defaultState = {
 								"text": "Хотя&nbsp;бы одна публикация <br>за&nbsp;последние 30&nbsp;дней"
 							},
 							{
-								"text": "Тематика сообщества <br>соответствует <a href='https://adblogger.vk.com/documents/groups_moderation' target='_blank'>требованиям модерации</a> и&nbsp;<a href='https://adblogger.vk.com/documents/offer_creator_products' target='_blank'>оферте</a> VK&nbsp;AdBlogger"
+								"text": "Тематика сообщества <br>соответствует <a href='https://adblogger.vk.ru/documents/groups_moderation' target='_blank'>требованиям модерации</a> и&nbsp;<a href='https://adblogger.vk.ru/documents/offer_creator_products' target='_blank'>оферте</a> VK&nbsp;AdBlogger"
 							}
 						],
-						"btn_right_link": "https://vk.com/commerce-for-creators",
+						"btn_right_link": "https://vk.ru/commerce-for-creators",
 						"btn_right_text": "Узнать больше",
-						"btn_link": "https://vk.com/commerce-for-creators",
+						"btn_link": "https://vk.ru/commerce-for-creators",
 						"btn_text": "Подключиться",
 					}
 				},
@@ -1780,7 +1780,7 @@ const defaultState = {
 										"text": "Делитесь личным опытом&nbsp;— это&nbsp;вызывает доверие"
 									},
 								],
-								"btn_link": "https://vk.com/@adblogger-kak-snyat-prodauschii-klip-top-9-scenariev",
+								"btn_link": "https://vk.ru/@adblogger-kak-snyat-prodauschii-klip-top-9-scenariev",
 								"btn_text": "Читать статью",
 							},
 							{
@@ -1797,12 +1797,12 @@ const defaultState = {
 										"text": "Захватите внимание: <br class='br-mobile'>используйте <br class='br-desktop'>динамичную музыку <br class='br-mobile'>и&nbsp;смену кадров"
 									},
 								],
-								"btn_link": "https://vk.com/@adblogger-kak-ispolzovat-storitelling-chtoby-povysit-prodazhi",
+								"btn_link": "https://vk.ru/@adblogger-kak-ispolzovat-storitelling-chtoby-povysit-prodazhi",
 								"btn_text": "Читать статью",
 							}
 						],
 						"bottom_text": "больше идей и&nbsp;лайфхаков",
-						"bottom_btn_link": "https://vk.com/@adblogger-baza-znanii-soco",
+						"bottom_btn_link": "https://vk.com/vk_authors/shops/?utm_source=vkadblogger_shops&utm_medium=card",
 						"bottom_btn_text": "Узнать",
 					}
 				},
@@ -2001,7 +2001,7 @@ const defaultState = {
 							},
 							{
 								"question": "Какие сообщества могут использовать инструмент?",
-								"answer": "<ul> <li>Сообщество подключено к&nbsp;VK&nbsp;AdBlogger</li> <li>В&nbsp;нём больше 1000&nbsp;подписчиков</li> <li>Есть хотя&nbsp;бы одна публикация за&nbsp;последние 30&nbsp;дней</li> <li>Cоответствует <a href='https://adblogger.vk.com/documents/groups_moderation' target='_blank'>требованиям модерации</a> и <a href='https://adblogger.vk.com/documents/offer_creator_products' target='_blank'>оферте</a> VK AdBlogger </li> <li>В сообществе публикуется качественный контент</li> <li>У&nbsp;автора есть самозанятость, ИП или&nbsp;юрлицо с&nbsp;российским ИНН</li> </ul> <p>Если сообщество перестанет соответствовать условиям или&nbsp;не&nbsp;будет соблюдать правила платформы, в&nbsp;нём нельзя будет рекламировать товары с&nbsp;Ozon через VK&nbsp;AdBlogger.</p>"
+								"answer": "<ul> <li>Сообщество подключено к&nbsp;VK&nbsp;AdBlogger</li> <li>В&nbsp;нём больше 1000&nbsp;подписчиков</li> <li>Есть хотя&nbsp;бы одна публикация за&nbsp;последние 30&nbsp;дней</li> <li>Cоответствует <a href='https://adblogger.vk.ru/documents/groups_moderation' target='_blank'>требованиям модерации</a> и <a href='https://adblogger.vk.ru/documents/offer_creator_products' target='_blank'>оферте</a> VK AdBlogger </li> <li>В сообществе публикуется качественный контент</li> <li>У&nbsp;автора есть самозанятость, ИП или&nbsp;юрлицо с&nbsp;российским ИНН</li> </ul> <p>Если сообщество перестанет соответствовать условиям или&nbsp;не&nbsp;будет соблюдать правила платформы, в&nbsp;нём нельзя будет рекламировать товары с&nbsp;Ozon через VK&nbsp;AdBlogger.</p>"
 							},
 							{
 								"question": "Можно&nbsp;ли использовать инструмент сразу в&nbsp;нескольких сообществах?",
@@ -2009,7 +2009,7 @@ const defaultState = {
 							},
 							{
 								"question": "Как начать рекламировать товары в&nbsp;шопсах?",
-								"answer": '<ol><li>Создайте кабинет в&nbsp;VK&nbsp;AdBlogger. Как это сделать&nbsp;&mdash; рассказали в&nbsp;<a href="https://vk.com/@adblogger-faq-po-platforme-vk-adblogger" target="_blank">статье</a></li><li>Авторизуйтесь на&nbsp;adblogger.vk.com и&nbsp;найдите раздел &laquo;Товары&raquo; в&nbsp;левом меню</li><li>В&nbsp;каталоге выберите товар для продвижения и&nbsp;нажмите &laquo;Взять в&nbsp;работу&raquo;</li><li>Напишите пост о&nbsp;товаре или снимите клип. В&nbsp;описание добавьте ссылку на&nbsp;товар из&nbsp;заявки&nbsp;&mdash; платформа автоматически прикрепит товар к&nbsp;публикации</li><li>Отправьте контент на&nbsp;модерацию&nbsp;&mdash; обычно она занимает не&nbsp;больше суток</li><li>Когда контент пройдёт модерацию, запланируйте дату публикации</li></ol><p>Кампания по&nbsp;продвижению длится 30&nbsp;дней&nbsp;&mdash; она начинается в&nbsp;тот момент, когда пост или клип будет опубликован. Вы&nbsp;получите проценты за&nbsp;продажи, которые произойдут по&nbsp;вашей ссылке в&nbsp;этот период.</p>'
+								"answer": '<ol> <li> Создайте кабинет автора и пройдите модерацию в VK AdBlogger. Как это сделать — рассказали в <a href="https://vk.com/@-225265420-faq-po-platforme-vk-adblogger" target="_blank">статье</a> </li> <li> Когда сообщество одобрят, сможете выбирать товары в каталоге и создавать шопсы со ссылками на товары Ozon </li> <li> Зайдите в <a href="https://adblogger.vk.com/app/author-placements/ad-placement" target="_blank">личный кабинет</a> и найдите раздел «Товары» в левом меню </li> <li> В каталоге выберите товар для продвижения и нажмите «Взять в работу» </li> <li> Напишите пост о товаре или снимите клип. В описание добавьте ссылку на товар из заявки — платформа автоматически прикрепит товар к публикации </li> <li> Отправьте контент на модерацию — обычно она занимает не больше суток </li> <li> Когда контент пройдёт модерацию, запланируйте дату публикации </li> </ol> <p> Кампания по продвижению длится 30 дней — она начинается в тот момент, когда пост или клип будет опубликован. Вы получите проценты за продажи, которые произойдут по вашей ссылке в этот период. </p>'
 							},
 							{
 								"question": "Какие есть ограничения?",
@@ -2029,7 +2029,7 @@ const defaultState = {
 							},
 							{
 								"question": "Из&nbsp;чего будет складываться мой доход?",
-								"answer": '<p id="anchor-calculator">Доход за&nbsp;продвижение товара Ozon на&nbsp;старте программы складывается из&nbsp;процентов от&nbsp;продажи товара. </p> <ul> <li> Выплачивается через 14&nbsp;дней после продажи&nbsp;&mdash; ровно сколько времени будет у&nbsp;покупателя, чтобы вернуть товар </li> <li> Если покупатель вернёт товар, процент начислен не&nbsp;будет </li> <li> Если товар купят после завершения рекламной кампании, то&nbsp;есть через 30&nbsp;дней после публикации, то&nbsp;проценты не&nbsp;начислятся </li> <li> Цены на&nbsp;один и&nbsp;тот&nbsp;же товар могут отличаться&nbsp;&mdash; на&nbsp;Ozon они зависят от&nbsp;города покупателя и&nbsp;других параметров. Поэтому и&nbsp;процент от&nbsp;продаж одного и&nbsp;того&nbsp;же товара может быть разным </li> </ul> <p> В&nbsp;будущем условия выплат могут измениться. </p>'
+								"answer": '<p id="anchor-calculator">Доход за&nbsp;продвижение товара Ozon на&nbsp;старте программы складывается из&nbsp;процентов от&nbsp;продажи товара. </p> <ul> <li> Начисляется через 14&nbsp;дней после продажи&nbsp;&mdash; ровно сколько времени будет у&nbsp;покупателя, чтобы вернуть товар </li> <li> Если покупатель вернёт товар, процент начислен не&nbsp;будет </li> <li> Если товар купят после завершения рекламной кампании, то&nbsp;есть через 30&nbsp;дней после публикации, то&nbsp;проценты не&nbsp;начислятся </li> <li> Цены на&nbsp;один и&nbsp;тот&nbsp;же товар могут отличаться&nbsp;&mdash; на&nbsp;Ozon они зависят от&nbsp;города покупателя и&nbsp;других параметров. Поэтому и&nbsp;процент от&nbsp;продаж одного и&nbsp;того&nbsp;же товара может быть разным </li> </ul> <p> В&nbsp;будущем условия выплат могут измениться. </p>'
 							},
 							{
 								"question": "Как отслеживать продажи товара?",
@@ -2049,7 +2049,7 @@ const defaultState = {
 							},
 							{
 								"question": "Как&nbsp;создавать качественный контент, набирающий охваты?",
-								"answer": '<ul> <li> Создавайте нативный контент: публикации с&nbsp;товарами должны гармонично вписываться в&nbsp;ваше сообщество. Чем креативнее интеграция, тем больше интереса она вызовет. </li> <li> Используйте сторителлинг и&nbsp;рассказывайте о&nbsp;личном опыте: чем&nbsp;вам понравился товар, какие проблемы решил и&nbsp;так далее. Истории вызывают эмоции&nbsp;&mdash; это поможет подписчикам увидеть реальную ценность продукта. </li> <li> Снимайте привлекательные фото и&nbsp;видео: так читатели подробнее изучат товар и&nbsp;быстрее решатся на&nbsp;покупку. Не&nbsp;забывайте показывать товар в&nbsp;действии и&nbsp;снимать его с&nbsp;разных ракурсов. </li> </ul> <p> Больше советов по&nbsp;созданию и&nbsp;продвижению контента можно найти в&nbsp;<a href="https://vk.com/@adblogger-baza-znanii-soco" target="_blank">Базе знаний для авторов</a>. </p>'
+								"answer": '<ul> <li> Создавайте нативный контент: публикации с&nbsp;товарами должны гармонично вписываться в&nbsp;ваше сообщество. Чем креативнее интеграция, тем больше интереса она вызовет. </li> <li> Используйте сторителлинг и&nbsp;рассказывайте о&nbsp;личном опыте: чем&nbsp;вам понравился товар, какие проблемы решил и&nbsp;так далее. Истории вызывают эмоции&nbsp;&mdash; это поможет подписчикам увидеть реальную ценность продукта. </li> <li> Снимайте привлекательные фото и&nbsp;видео: так читатели подробнее изучат товар и&nbsp;быстрее решатся на&nbsp;покупку. Не&nbsp;забывайте показывать товар в&nbsp;действии и&nbsp;снимать его с&nbsp;разных ракурсов. </li> </ul> <p> Больше советов по&nbsp;созданию и&nbsp;продвижению контента можно найти в&nbsp;<a href="https://vk.ru/@adblogger-baza-znanii-soco" target="_blank">Базе знаний для авторов</a>. </p>'
 							},
 							{
 								"question": "Куда&nbsp;можно написать, если остались вопросы?",
@@ -2057,7 +2057,7 @@ const defaultState = {
 							},
 							// {
 							// 	"question": "Как&nbsp;начать продвигать контент с&nbsp;товарами Ozon?",
-							// 	"answer": '<p>Начать работу можно в&nbsp;личном кабинете VK&nbsp;AdBlogger. Как&nbsp;его создать&nbsp;— рассказали в&nbsp;<a href="https://vk.com/@-225265420-faq-po-platforme-vk-adblogger" target="_blank">статье</a>.</p> <ol> <li>Авторизуйтесь на&nbsp;<a href="https://adblogger.vk.com/for-authors" target="_blank">adblogger.vk.com</a> и&nbsp;найдите раздел «Товары» в&nbsp;левом меню</li> <li>В&nbsp;каталоге выберите товар для&nbsp;продвижения и&nbsp;нажмите «Взять в&nbsp;работу» </li> <li>Напишите пост о&nbsp;товаре или&nbsp;загрузите клип. В&nbsp;описание добавьте ссылку на&nbsp;товар из&nbsp;заявки&nbsp;— платформа автоматически прикрепит товар к&nbsp;публикации </li> <li>Отправьте контент на&nbsp;модерацию&nbsp;— обычно она занимает не&nbsp;больше суток </li> <li>Когда&nbsp;контент пройдёт модерацию, запланируйте дату публикации </li> </ol> <p>Кампания по&nbsp;продвижению длится 30&nbsp;дней&nbsp;— она начинается в&nbsp;тот момент, когда пост или&nbsp;клип будет опубликован. Вы получите проценты за&nbsp;продажи, которые произойдут по&nbsp;вашей ссылке в&nbsp;этот период </p>'
+							// 	"answer": '<p>Начать работу можно в&nbsp;личном кабинете VK&nbsp;AdBlogger. Как&nbsp;его создать&nbsp;— рассказали в&nbsp;<a href="https://vk.ru/@-225265420-faq-po-platforme-vk-adblogger" target="_blank">статье</a>.</p> <ol> <li>Авторизуйтесь на&nbsp;<a href="https://adblogger.vk.ru/for-authors" target="_blank">adblogger.vk.ru</a> и&nbsp;найдите раздел «Товары» в&nbsp;левом меню</li> <li>В&nbsp;каталоге выберите товар для&nbsp;продвижения и&nbsp;нажмите «Взять в&nbsp;работу» </li> <li>Напишите пост о&nbsp;товаре или&nbsp;загрузите клип. В&nbsp;описание добавьте ссылку на&nbsp;товар из&nbsp;заявки&nbsp;— платформа автоматически прикрепит товар к&nbsp;публикации </li> <li>Отправьте контент на&nbsp;модерацию&nbsp;— обычно она занимает не&nbsp;больше суток </li> <li>Когда&nbsp;контент пройдёт модерацию, запланируйте дату публикации </li> </ol> <p>Кампания по&nbsp;продвижению длится 30&nbsp;дней&nbsp;— она начинается в&nbsp;тот момент, когда пост или&nbsp;клип будет опубликован. Вы получите проценты за&nbsp;продажи, которые произойдут по&nbsp;вашей ссылке в&nbsp;этот период </p>'
 							// },
 							// {
 							// 	"question": "В&nbsp;каких форматах можно разместить рекламу? ",
@@ -2119,7 +2119,7 @@ const defaultState = {
 				{
 					"block_slug": "iframe",
 					"block_state": {
-						"src": "https://adbloggers-landing-front-main.ktsdev.ru/",
+						"src": "https://adbloggers-landing.ru-prod2.kts.studio/#old-chart",
 					}
 				},
 			]
@@ -2350,7 +2350,7 @@ const defaultState = {
 				{
 					"block_type": "text",
 					"title": "",
-					"text": "<p> Для бренда профессиональных средств для&nbsp;волос EveLux Professional маркетплейсы <a href='https://www.ozon.ru/category/uhod-za-volosami-6584/evelux-professional-100987438/?brand_was_predicted=true&category_was_predicted=true&deny_category_prediction=true&from_global=true&text=evelux+professional&abt_att=1' target='_blank'>Ozon</a> и <a href='https://www.wildberries.ru/seller/799611' target='_blank'>Wildberries</a> — основные площадки продаж. <a href='https://vk.com/cerebro_vk' target='_blank'>Команда «Церебро Таргет»</a> протестировала VK AdBlogger, чтобы увеличить продажи бренда на этих площадках и&nbsp;снизить стоимость привлечения клиентов. В итоге — рост числа заказчиков и&nbsp;ниже стоимость целевых действий. </p>"
+					"text": "<p> Для бренда профессиональных средств для&nbsp;волос EveLux Professional маркетплейсы <a href='https://www.ozon.ru/category/uhod-za-volosami-6584/evelux-professional-100987438/?brand_was_predicted=true&category_was_predicted=true&deny_category_prediction=true&from_global=true&text=evelux+professional&abt_att=1' target='_blank'>Ozon</a> и <a href='https://www.wildberries.ru/seller/799611' target='_blank'>Wildberries</a> — основные площадки продаж. <a href='https://vk.ru/cerebro_vk' target='_blank'>Команда «Церебро Таргет»</a> протестировала VK AdBlogger, чтобы увеличить продажи бренда на этих площадках и&nbsp;снизить стоимость привлечения клиентов. В итоге — рост числа заказчиков и&nbsp;ниже стоимость целевых действий. </p>"
 				},
 				{
 					"block_type": "tile",
@@ -2557,7 +2557,7 @@ const defaultState = {
 				{
 					"block_type": "text",
 					"title": "",
-					"text": "<p>Команда издательской компании провела рекламную кампанию в&nbsp;агентском кабинете <a href='https://vk.com/cerebro_vk/' target='_blank'>«Церебро Таргет»</a>  и&nbsp;смогла еженедельно привлекать по&nbsp;1500-2000 заявок из&nbsp;ВКонтакте. С&nbsp;помощью платформы VK&nbsp;AdBlogger удалось перевыполнить план по&nbsp;заявкам на&nbsp;звонок и&nbsp;сократить CPL на&nbsp;20%. "
+					"text": "<p>Команда издательской компании провела рекламную кампанию в&nbsp;агентском кабинете <a href='https://vk.ru/cerebro_vk/' target='_blank'>«Церебро Таргет»</a>  и&nbsp;смогла еженедельно привлекать по&nbsp;1500-2000 заявок из&nbsp;ВКонтакте. С&nbsp;помощью платформы VK&nbsp;AdBlogger удалось перевыполнить план по&nbsp;заявкам на&nbsp;звонок и&nbsp;сократить CPL на&nbsp;20%. "
 				},
 				{
 					"block_type": "tile",
@@ -2773,7 +2773,7 @@ const defaultState = {
 				{
 					"block_type": "text",
 					"title": "",
-					"text": "<p>Команда сервиса «Страна в коробочке» протестировала платформу VK AdBlogger и&nbsp;уменьшила стоимость клика и&nbsp;целевого действия на&nbsp;20%. Сервис вёл работу над&nbsp;кампанией самостоятельно через агентский кабинет <a href='https://vk.com/cerebro_vk' target='_blank'>«Церебро Таргет»</a>.</p>"
+					"text": "<p>Команда сервиса «Страна в коробочке» протестировала платформу VK AdBlogger и&nbsp;уменьшила стоимость клика и&nbsp;целевого действия на&nbsp;20%. Сервис вёл работу над&nbsp;кампанией самостоятельно через агентский кабинет <a href='https://vk.ru/cerebro_vk' target='_blank'>«Церебро Таргет»</a>.</p>"
 				},
 				{
 					"block_type": "text",
@@ -2784,7 +2784,7 @@ const defaultState = {
 				{
 					"block_type": "text",
 					"title": "",
-					"text": "<h2>О рекламодателе</h2> <p> <a href='https://vk.com/countrybox_gifts' target='_blank'>«Страна в коробочке»</a> — это сервис необычных подарков из&nbsp;разных стран. Они собирают сюрприз-боксы с&nbsp;предметами из&nbsp;Европы, Азии, Америки, Африки и&nbsp;отправляют по&nbsp;России и&nbsp;всему миру. Наполнение коробочки подбирается индивидуально по&nbsp;анкете, но&nbsp;что именно окажется внутри — тайна и&nbsp;для&nbsp;заказчика, и&nbsp;для&nbsp;человека, который получит подарок. Именно это и&nbsp;стало главной фишкой сервиса. Все подарки внутри коробочки оформляют вручную — заворачивают в&nbsp;крафт, рисуют флаги стран, откуда были привезены подарки. Так заказчик дарит не&nbsp;просто подарок, а&nbsp;коробочку, внутри которой собрано 5-7 отдельных сюрпризов. Ощущения, прямо как в&nbsp;детстве. </p>"
+					"text": "<h2>О рекламодателе</h2> <p> <a href='https://vk.ru/countrybox_gifts' target='_blank'>«Страна в коробочке»</a> — это сервис необычных подарков из&nbsp;разных стран. Они собирают сюрприз-боксы с&nbsp;предметами из&nbsp;Европы, Азии, Америки, Африки и&nbsp;отправляют по&nbsp;России и&nbsp;всему миру. Наполнение коробочки подбирается индивидуально по&nbsp;анкете, но&nbsp;что именно окажется внутри — тайна и&nbsp;для&nbsp;заказчика, и&nbsp;для&nbsp;человека, который получит подарок. Именно это и&nbsp;стало главной фишкой сервиса. Все подарки внутри коробочки оформляют вручную — заворачивают в&nbsp;крафт, рисуют флаги стран, откуда были привезены подарки. Так заказчик дарит не&nbsp;просто подарок, а&nbsp;коробочку, внутри которой собрано 5-7 отдельных сюрпризов. Ощущения, прямо как в&nbsp;детстве. </p>"
 				},
 				{
 					"block_type": "text",
@@ -2909,7 +2909,7 @@ const defaultState = {
 				{
 					"block_type": "text",
 					"title": "",
-					"text": "<h2>О рекламодателе</h2><p><a href='https://3.shkolkovo.online/' target='_blank'>«Школково»</a> — это онлайн-платформа для подготовки к ЕГЭ, ОГЭ и олимпиадам. Здесь можно подготовиться к экзаменам, пройти курсы по любому направлению, прорешать целую базу задач бесплатно и принять участие в интенсивах. На платформе есть даже курсы повышения квалификации и рекомендации по ведению математических кружков.</p><p><b>Миссия «Школково»</b> — повысить уровень образования и детей, и преподавателей.</p><p><b>Цель — привлечь новых подписчиков полезной рассылки.</b></p><p>«Школково» собирают полезные чеклисты для преподавателей и руководителей кружков, а также шпаргалки для выпускников.</p><p>Все эти материалы они упаковывают в&nbsp;<a href='https://vk.com/app5898182_-215270197#s=2969351&force=1' target='_blank'>короткую рассылку</a> через Senler, которая в&nbsp;будущем поможет привести новых клиентов в&nbsp;образовательный продукт: школьников или учителей.</p>"
+					"text": "<h2>О рекламодателе</h2><p><a href='https://3.shkolkovo.online/' target='_blank'>«Школково»</a> — это онлайн-платформа для подготовки к ЕГЭ, ОГЭ и олимпиадам. Здесь можно подготовиться к экзаменам, пройти курсы по любому направлению, прорешать целую базу задач бесплатно и принять участие в интенсивах. На платформе есть даже курсы повышения квалификации и рекомендации по ведению математических кружков.</p><p><b>Миссия «Школково»</b> — повысить уровень образования и детей, и преподавателей.</p><p><b>Цель — привлечь новых подписчиков полезной рассылки.</b></p><p>«Школково» собирают полезные чеклисты для преподавателей и руководителей кружков, а также шпаргалки для выпускников.</p><p>Все эти материалы они упаковывают в&nbsp;<a href='https://vk.ru/app5898182_-215270197#s=2969351&force=1' target='_blank'>короткую рассылку</a> через Senler, которая в&nbsp;будущем поможет привести новых клиентов в&nbsp;образовательный продукт: школьников или учителей.</p>"
 				},
 				{
 					"block_type": "text",
@@ -3065,7 +3065,7 @@ const defaultState = {
 				{
 					"block_type": "text",
 					"title": "",
-					"text": "<h2>О бренде</h2> <p><a href='https://cosmomerch.ru/page/about-us' target='_blank'>КосмоМерч</a> — это одежда, вдохновлённая идеей исследования и освоения космоса.</p><p>«Классика и оверсайз, фантастические принты и текстуры, секретные коды и дизайнерские шрифты с зашифрованными космическими посланиями — частичку космоса можно найти в каждой из 10 коллекций для взрослых и детей».</p><p style='font-style:italic;color:#7C8A9A;'>Сообщество ВКонтакте: <a href='https://vk.com/cosmomerch' target='_blank'>https://vk.com/cosmomerch</a>.</p>"
+					"text": "<h2>О бренде</h2> <p><a href='https://cosmomerch.ru/page/about-us' target='_blank'>КосмоМерч</a> — это одежда, вдохновлённая идеей исследования и освоения космоса.</p><p>«Классика и оверсайз, фантастические принты и текстуры, секретные коды и дизайнерские шрифты с зашифрованными космическими посланиями — частичку космоса можно найти в каждой из 10 коллекций для взрослых и детей».</p><p style='font-style:italic;color:#7C8A9A;'>Сообщество ВКонтакте: <a href='https://vk.ru/cosmomerch' target='_blank'>https://vk.ru/cosmomerch</a>.</p>"
 				},
 				{
 					"block_type": "gallery",

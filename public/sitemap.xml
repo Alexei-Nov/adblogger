@@ -1,116 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://adblogger.vk.com/</loc>
+    <loc>https://adblogger.vk.ru/</loc>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/app</loc>
+    <loc>https://adblogger.vk.ru/app</loc>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/for-authors</loc>
+    <loc>https://adblogger.vk.ru/for-authors</loc>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/for-advertisers</loc>
+    <loc>https://adblogger.vk.ru/for-advertisers</loc>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/for-sellers</loc>
+    <loc>https://adblogger.vk.ru/for-sellers</loc>
+  </url>
+  <url>
+    <loc>https://adblogger.vk.ru/shops</loc>
+  </url>
+  <url>
+    <loc>https://adblogger.vk.ru/shops-chart</loc>
   </url>
   <!-- Top cases -->
   <url>
-    <loc>https://adblogger.vk.com/top-cases</loc>
+    <loc>https://adblogger.vk.ru/top-cases</loc>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/top-cases/case-1</loc>
+    <loc>https://adblogger.vk.ru/top-cases/case-1</loc>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/top-cases/case-2</loc>
+    <loc>https://adblogger.vk.ru/top-cases/case-2</loc>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/top-cases/case-3</loc>
+    <loc>https://adblogger.vk.ru/top-cases/case-3</loc>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/top-cases/case-4</loc>
+    <loc>https://adblogger.vk.ru/top-cases/case-4</loc>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/top-cases/case-5</loc>
+    <loc>https://adblogger.vk.ru/top-cases/case-5</loc>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/top-cases/case-6</loc>
+    <loc>https://adblogger.vk.ru/top-cases/case-6</loc>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/top-cases/case-7</loc>
+    <loc>https://adblogger.vk.ru/top-cases/case-7</loc>
+  </url>
+  <url>
+    <loc>https://adblogger.vk.ru/top-cases/my-family-school</loc>
+  </url>
+  <url>
+    <loc>https://adblogger.vk.ru/top-cases/cerebro-target</loc>
+  </url>
+  <url>
+    <loc>https://adblogger.vk.ru/top-cases/drivee</loc>
   </url>
   <!-- Documents -->
   <url>
-    <loc>https://adblogger.vk.com/documents/agency_requirements</loc>
+    <loc>https://adblogger.vk.ru/documents/agency_requirements</loc>
     <lastmod>2024-09-25</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/faq_advertiser</loc>
+    <loc>https://adblogger.vk.ru/documents/faq_advertiser</loc>
     <lastmod>2025-02-24</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/faq_author</loc>
+    <loc>https://adblogger.vk.ru/documents/faq_author</loc>
     <lastmod>2024-10-07</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/faq_moderation</loc>
+    <loc>https://adblogger.vk.ru/documents/faq_moderation</loc>
     <lastmod>2024-10-10</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/groups_moderation</loc>
-    <lastmod>2024-10-10</lastmod>
+    <loc>https://adblogger.vk.ru/documents/groups_moderation</loc>
+    <lastmod>2025-06-02</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/moderation</loc>
+    <loc>https://adblogger.vk.ru/documents/moderation</loc>
     <lastmod>2025-03-24</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/offer_adv</loc>
+    <loc>https://adblogger.vk.ru/documents/offer_adv</loc>
     <lastmod>2024-10-10</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/offer_creator</loc>
-    <lastmod>2025-02-24</lastmod>
+    <loc>https://adblogger.vk.ru/documents/offer_creator</loc>
+    <lastmod>2025-10-10</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/offer_creator_products</loc>
-    <lastmod>2024-11-28</lastmod>
+    <loc>https://adblogger.vk.ru/documents/offer_creator_products</loc>
+    <lastmod>2025-07-30</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/ord_adv</loc>
+    <loc>https://adblogger.vk.ru/documents/offer_creator_products_2509</loc>
+    <lastmod>2025-09-18</lastmod>
+  </url>
+  <url>
+    <loc>https://adblogger.vk.ru/documents/ord_adv</loc>
     <lastmod>2024-10-10</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/ord_creator</loc>
+    <loc>https://adblogger.vk.ru/documents/ord_creator</loc>
     <lastmod>2024-10-10</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/ord_tariff</loc>
+    <loc>https://adblogger.vk.ru/documents/ord_tariff</loc>
     <lastmod>2024-10-10</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/privacy</loc>
-    <lastmod>2025-03-06</lastmod>
+    <loc>https://adblogger.vk.ru/documents/privacy</loc>
+    <lastmod>2025-08-18</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/promotion_consent</loc>
+    <loc>https://adblogger.vk.ru/documents/promotion_consent</loc>
+    <lastmod>2025-04-17</lastmod>
+  </url>
+  <url>
+    <loc>https://adblogger.vk.ru/documents/required_documents</loc>
     <lastmod>2024-09-25</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/required_documents</loc>
-    <lastmod>2024-09-25</lastmod>
+    <loc>https://adblogger.vk.ru/documents/rules_adv</loc>
+    <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/rules_adv</loc>
-    <lastmod>2024-11-01</lastmod>
+    <loc>https://adblogger.vk.ru/documents/terms</loc>
+    <lastmod>2025-08-18</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/terms</loc>
-    <lastmod>2024-10-10</lastmod>
+    <loc>https://adblogger.vk.ru/documents/terms_creator</loc>
+    <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://adblogger.vk.com/documents/terms_creator</loc>
-    <lastmod>2025-02-24</lastmod>
+    <loc>https://adblogger.vk.ru/documents/tarif</loc>
+    <lastmod>2025-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://adblogger.vk.ru/documents/guide_creatives</loc>
+    <lastmod>2025-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://adblogger.vk.ru/documents/guide_ref_utm</loc>
+    <lastmod>2025-10-06</lastmod>
+  </url>
+  <url>
+    <loc>https://adblogger.vk.ru/documents/shops-chart</loc>
+    <lastmod>2025-10-10</lastmod>
   </url>
 </urlset>
