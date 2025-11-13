@@ -24,7 +24,8 @@ export default function Footer({ footer }) {
 		{ text: 'Оферта для авторов', link: 'https://adblogger.vk.ru/documents/offer_creator', target: "_blank" },
 		{ text: 'Дополнительная оферта для авторов', link: 'https://adblogger.vk.ru/documents/offer_creator_products', target: "_blank" },
 		{ text: 'Условия для авторов', link: 'https://adblogger.vk.ru/documents/terms_creator', target: "_blank" },
-		{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.ru/documents/moderation', target: "_blank" }
+		{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.ru/documents/moderation', target: "_blank" },
+		{ text: 'Правила модерации сообществ', link: 'https://adblogger.vk.ru/documents/groups_moderation', target: "_blank" },
 	];
 
 	const documentItemsForAdvertisers = [
