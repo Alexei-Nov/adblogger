@@ -1369,44 +1369,27 @@ const defaultState = {
 					"block_state": {}
 				},
 				{
-					"block_slug": "cards_slider",
+					"block_slug": "shops_entrance",
 					"block_state": {
-						"title": "<span class='blue-text'>шопсы-шопсы-шопсы!</span><br> новый формат контента ВКонтакте, на котором можно <span class='blue-text'>зарабатывать</span>",
+						"title": "<span class='blue-text'>шопсы-шопсы!</span>",
+						"desc": "новый формат контента ВКонтакте, на котором можно <span class='blue-text'>зарабатывать</span>",
 						"btn_link": "/app",
 						"btn_text": "Подключиться",
-						"gallery": [
-							{
-								"img": "./img/cards-slider/img-1.png"
-							},
-							{
-								"img": "./img/cards-slider/img-2.png"
-							},
-							{
-								"img": "./img/cards-slider/img-3.png"
-							},
-							{
-								"img": "./img/cards-slider/img-4.png"
-							},
-							{
-								"img": "./img/cards-slider/img-6.png"
-							},
-							{
-								"img": "./img/cards-slider/img-7.png"
-							},
-							{
-								"img": "./img/cards-slider/img-8.png"
-							},
-						],
 						"items_list": [
+							{
+								"icon": "./img/cards-slider/icon-2.svg",
+								"name": "<span style='color: #00D3E6;'>Заработок с продаж </br> до 50% </span> от стоимости товара",
+								"dropdownn_text": "<p>На&nbsp;старте доход за&nbsp;рекламу товара с&nbsp;Ozon состоит из&nbsp;процента от&nbsp;его продажи. В&nbsp;будущем условия выплат могут измениться</p>",
+							},
 							{
 								"icon": "./img/cards-slider/icon-1.svg",
 								"name": "<span style='color: #00D3E6;'>Автоматическая</span> </br> маркировка рекламы",
 								"dropdownn_text": "",
 							},
 							{
-								"icon": "./img/cards-slider/icon-2.svg",
-								"name": "<span style='color: #00D3E6;'>Заработок с продаж </br> до 50% </span> от стоимости товара",
-								"dropdownn_text": "<p>На&nbsp;старте доход за&nbsp;рекламу товара с&nbsp;Ozon состоит из&nbsp;процента от&nbsp;его продажи. В&nbsp;будущем условия выплат могут измениться</p>",
+								"icon": "./img/cards-slider/icon-4.svg",
+								"name": "<span style='color: #00D3E6;'>Быстрое размещение</span></br> без&nbsp;согласований с&nbsp;рекламодателем",
+								"dropdownn_text": "",
 							},
 							{
 								"icon": "./img/cards-slider/icon-3.svg",
@@ -1414,15 +1397,64 @@ const defaultState = {
 								"desc": "",
 								"dropdownn_text": "",
 							},
-							{
-								"icon": "./img/cards-slider/icon-4.svg",
-								"name": "<span style='color: #00D3E6;'>Быстрое размещение</span></br> без&nbsp;согласований с&nbsp;рекламодателем",
-								"dropdownn_text": "",
-							}
 						],
-
 					}
 				},
+				// {
+				// 	"block_slug": "cards_slider",
+				// 	"block_state": {
+				// 		"title": "<span class='blue-text'>шопсы-шопсы-шопсы!</span><br> новый формат контента ВКонтакте, на котором можно <span class='blue-text'>зарабатывать</span>",
+				// 		"btn_link": "/app",
+				// 		"btn_text": "Подключиться",
+				// 		"gallery": [
+				// 			{
+				// 				"img": "./img/cards-slider/img-1.png"
+				// 			},
+				// 			{
+				// 				"img": "./img/cards-slider/img-2.png"
+				// 			},
+				// 			{
+				// 				"img": "./img/cards-slider/img-3.png"
+				// 			},
+				// 			{
+				// 				"img": "./img/cards-slider/img-4.png"
+				// 			},
+				// 			{
+				// 				"img": "./img/cards-slider/img-6.png"
+				// 			},
+				// 			{
+				// 				"img": "./img/cards-slider/img-7.png"
+				// 			},
+				// 			{
+				// 				"img": "./img/cards-slider/img-8.png"
+				// 			},
+				// 		],
+				// 		"items_list": [
+				// 			{
+				// 				"icon": "./img/cards-slider/icon-1.svg",
+				// 				"name": "<span style='color: #00D3E6;'>Автоматическая</span> </br> маркировка рекламы",
+				// 				"dropdownn_text": "",
+				// 			},
+				// 			{
+				// 				"icon": "./img/cards-slider/icon-2.svg",
+				// 				"name": "<span style='color: #00D3E6;'>Заработок с продаж </br> до 50% </span> от стоимости товара",
+				// 				"dropdownn_text": "<p>На&nbsp;старте доход за&nbsp;рекламу товара с&nbsp;Ozon состоит из&nbsp;процента от&nbsp;его продажи. В&nbsp;будущем условия выплат могут измениться</p>",
+				// 			},
+				// 			{
+				// 				"icon": "./img/cards-slider/icon-3.svg",
+				// 				"name": "<span style='color: #00D3E6;'>Большой каталог</span></br> товаров Ozon",
+				// 				"desc": "",
+				// 				"dropdownn_text": "",
+				// 			},
+				// 			{
+				// 				"icon": "./img/cards-slider/icon-4.svg",
+				// 				"name": "<span style='color: #00D3E6;'>Быстрое размещение</span></br> без&nbsp;согласований с&nbsp;рекламодателем",
+				// 				"dropdownn_text": "",
+				// 			}
+				// 		],
+
+				// 	}
+				// },
 				{
 					"block_slug": "tovary_about",
 					"block_state": {
@@ -1752,15 +1784,15 @@ const defaultState = {
 				// 		]
 				// 	}
 				// },
-				{
-					"block_slug": "timer",
-					"block_state": {
-						"title": "публикуйте шопсы&nbsp;— <br> <span class='blue-text'>выигрывайте деньги</span> ",
-						"desc": "<p> Создавайте контент с товарами и продвигайтесь в <span class='blue-text'>шопс-чарте</span>: чем больше сумма продаж из ваших шопсов, тем крупнее приз </p> <p> Топ-500 авторов разделят призовой фонд — <span class='blue-text'>7 000 000 рублей</span> </p>",
-						"img": "./img/timer/img.png",
-						"date_start": "2025-10-15T00:00:00+03:00",
-					}
-				},
+				// {
+				// 	"block_slug": "timer",
+				// 	"block_state": {
+				// 		"title": "публикуйте шопсы&nbsp;— <br> <span class='blue-text'>выигрывайте деньги</span> ",
+				// 		"desc": "<p> Создавайте контент с товарами и продвигайтесь в <span class='blue-text'>шопс-чарте</span>: чем больше сумма продаж из ваших шопсов, тем крупнее приз </p> <p> Топ-500 авторов разделят призовой фонд — <span class='blue-text'>7 000 000 рублей</span> </p>",
+				// 		"img": "./img/timer/img.png",
+				// 		"date_start": "2025-10-15T00:00:00+03:00",
+				// 	}
+				// },
 				{
 					"block_slug": "advices",
 					"block_state": {
