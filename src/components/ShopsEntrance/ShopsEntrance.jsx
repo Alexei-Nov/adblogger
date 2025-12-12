@@ -69,7 +69,18 @@ export default function ShopsEntrance({ block_state }) {
 							</div>
 						</div>
 						<div className="shops-entrance__img">
-
+							<div className="shops-entrance__img-item">
+								<img src="./img/shops-entrance/img-2.png" alt="img" />
+							</div>
+							<div className="shops-entrance__img-item">
+								<img src="./img/shops-entrance/img-3.png" alt="img" />
+							</div>
+							<div className="shops-entrance__img-item">
+								<img src="./img/shops-entrance/img-1.png" alt="img" />
+							</div>
+							<div className="shops-entrance__img-panel">
+								<img src="./img/shops-entrance/img-4.png" alt="img" />
+							</div>
 						</div>
 					</div>
 				</div>

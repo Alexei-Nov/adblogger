@@ -152,7 +152,125 @@
   transition: all ease 0.5s;
 }
 
-@media screen and (max-width: 1024px) {
+.shops-entrance__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.25;
+}
+
+.shops-entrance__img-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.shops-entrance__img-item:nth-child(1) {
+  top: 54%;
+  left: 31.5%;
+  height: 90%;
+  -webkit-animation: cardsShowLeft 1s ease-out;
+          animation: cardsShowLeft 1s ease-out;
+}
+
+.shops-entrance__img-item:nth-child(2) {
+  top: 54%;
+  left: 83%;
+  height: 90%;
+  -webkit-animation: cardsShowRight 1s ease-out;
+          animation: cardsShowRight 1s ease-out;
+}
+
+.shops-entrance__img-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.shops-entrance__img-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+  width: 230px;
+  max-width: 32%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 3;
+}
+
+.shops-entrance__img-panel img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@-webkit-keyframes cardsShowLeft {
+  0% {
+    -webkit-transform: translate(-30%, -50%) rotate(10deg);
+            transform: translate(-30%, -50%) rotate(10deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes cardsShowLeft {
+  0% {
+    -webkit-transform: translate(-30%, -50%) rotate(10deg);
+            transform: translate(-30%, -50%) rotate(10deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes cardsShowRight {
+  0% {
+    -webkit-transform: translate(-70%, -50%) rotate(-10deg);
+            transform: translate(-70%, -50%) rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes cardsShowRight {
+  0% {
+    -webkit-transform: translate(-70%, -50%) rotate(-10deg);
+            transform: translate(-70%, -50%) rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .shops-entrance__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -181,6 +299,10 @@
   }
   .shops-entrance__btn {
     margin-bottom: 40px;
+  }
+  .shops-entrance__img {
+    -webkit-transform: translateX(-7%);
+            transform: translateX(-7%);
   }
 }
 
@@ -215,6 +337,10 @@
   }
   .shops-entrance__list-item-body {
     width: 100%;
+  }
+  .shops-entrance__img-panel {
+    right: 0px;
+    max-width: 35%;
   }
 }
 
