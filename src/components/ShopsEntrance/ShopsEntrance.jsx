@@ -25,7 +25,13 @@ export default function ShopsEntrance({ block_state }) {
 
 	return (
 		<>
-			<section className='section shops-entrance'>
+			<section className='section shops-entrance snow'>
+				{[...Array(200)].map((item, i) => {
+					return (
+						<div key={i} className="snow__elem"></div>
+					)
+				})}
+
 				<div className="container">
 					<div className="shops-entrance__wrapper">
 						<div className="shops-entrance__body">
