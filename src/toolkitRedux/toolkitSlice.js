@@ -1784,15 +1784,15 @@ const defaultState = {
 				// 		]
 				// 	}
 				// },
-				{
-					"block_slug": "timer",
-					"block_state": {
-						"title": "публикуйте шопсы&nbsp;— <br> <span class='blue-text'>выигрывайте деньги</span> ",
-						"desc": "<p> Создавайте контент с товарами и продвигайтесь в <span class='blue-text'>шопс-чарте</span>: чем больше сумма продаж из ваших шопсов, тем крупнее приз </p> <p> Топ-500 авторов разделят призовой фонд — <span class='blue-text'>7 000 000 рублей</span> </p>",
-						"img": "./img/timer/img.png",
-						"date_start": "2025-10-15T00:00:00+03:00",
-					}
-				},
+				// {
+				// 	"block_slug": "timer",
+				// 	"block_state": {
+				// 		"title": "публикуйте шопсы&nbsp;— <br> <span class='blue-text'>выигрывайте деньги</span> ",
+				// 		"desc": "<p> Создавайте контент с товарами и продвигайтесь в <span class='blue-text'>шопс-чарте</span>: чем больше сумма продаж из ваших шопсов, тем крупнее приз </p> <p> Топ-500 авторов разделят призовой фонд — <span class='blue-text'>7 000 000 рублей</span> </p>",
+				// 		"img": "./img/timer/img.png",
+				// 		"date_start": "2025-10-15T00:00:00+03:00",
+				// 	}
+				// },
 				{
 					"block_slug": "advices",
 					"block_state": {
