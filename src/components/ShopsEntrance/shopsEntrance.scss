@@ -210,11 +210,14 @@
 	&__elem {
 		$total: 200;
 		position: absolute;
-		width: 10px;
-		height: 10px;
-		background: white;
-		border-radius: 50%;
+		width: 15px;
+		height: 15px;
 		z-index: 3;
+		pointer-events: none;
+		background-image: url("/public/img/shops-entrance/snow-flake.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
 
 		@for $i from 1 through $total {
 			$random-x: random(1000000) * 0.0001vw;
