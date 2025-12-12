@@ -181,16 +181,16 @@
   top: 54%;
   left: 31.5%;
   height: 90%;
-  -webkit-animation: cardsShowLeft 1s ease-out;
-          animation: cardsShowLeft 1s ease-out;
+  -webkit-animation: cardsShowLeft 1.5s cubic-bezier(0.54, 0.02, 0.15, 1);
+          animation: cardsShowLeft 1.5s cubic-bezier(0.54, 0.02, 0.15, 1);
 }
 
 .shops-entrance__img-item:nth-child(2) {
   top: 54%;
   left: 83%;
   height: 90%;
-  -webkit-animation: cardsShowRight 1s ease-out;
-          animation: cardsShowRight 1s ease-out;
+  -webkit-animation: cardsShowRight 1.5s cubic-bezier(0.54, 0.02, 0.15, 1);
+          animation: cardsShowRight 1.5s cubic-bezier(0.54, 0.02, 0.15, 1);
 }
 
 .shops-entrance__img-item img {
