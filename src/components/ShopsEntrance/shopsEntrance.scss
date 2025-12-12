@@ -166,7 +166,8 @@
 		right: 60px;
 		width: 230px;
 		max-width: 32%;
-		height: fit-content;
+		height: auto;
+		aspect-ratio: 2.07;
 		z-index: 3;
 
 		& img {
