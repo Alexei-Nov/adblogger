@@ -159,7 +159,7 @@ const defaultState = {
 						"stepsList": [
 							{
 								"title": "Зарегистрируйтесь как&nbsp;автор",
-								"desc": "Подключите своё сообщество и&nbsp;укажите реквизиты",
+								"desc": "Добавьте свою страницу и&nbsp;укажите реквизиты",
 								"imgPath": "/img/steps/img-1.png",
 								"btn_text": "",
 								"btn_link": ""
@@ -184,7 +184,7 @@ const defaultState = {
 				{
 					"block_slug": "channels",
 					"block_state": {
-						"title": "<span class='tt-lc'>65&nbsp;000</span> сообществ уже подключились",
+						"title": "<span class='tt-lc'>65&nbsp;000</span> авторов уже подключились",
 						"tags": [],
 						"channels": [
 							{
@@ -1372,7 +1372,7 @@ const defaultState = {
 					"block_slug": "shops_entrance",
 					"block_state": {
 						"title": "<span class='blue-text'>шопсы-шопсы!</span>",
-						"desc": "новый формат контента ВКонтакте, на котором можно <span class='blue-text'>зарабатывать</span>",
+						"desc": "новый формат контента ВКонтакте, на&nbsp;котором сообщества и&nbsp;профили могут <span class='blue-text'>зарабатывать</span>",
 						"btn_link": "/app",
 						"btn_text": "Подключиться",
 						"items_list": [
@@ -1388,7 +1388,7 @@ const defaultState = {
 							},
 							{
 								"icon": "./img/cards-slider/icon-4.svg",
-								"name": "<span style='color: #00D3E6;'>Быстрое размещение</span></br> без&nbsp;согласований с&nbsp;рекламодателем",
+								"name": "<span style='color: #00D3E6;'>Быстрое размещение</span></br> без&nbsp;согласований",
 								"dropdownn_text": "",
 							},
 							{
@@ -1459,7 +1459,7 @@ const defaultState = {
 					"block_slug": "tovary_about",
 					"block_state": {
 						"title": "Что такое <span style='color:#00D3E6;'>шопсы</span> ВКонтакте?",
-						"desc": "<p><b style='color:#00D3E6;'>Шопсы</b> — это рекламные посты и клипы со ссылкой на товар. Пользователи могут сразу перейти по ней к покупке, а вы получите процент с продажи каждого товара</p>",
+						"desc": "<p><b style='color:#00D3E6;'>Шопсы</b>&nbsp;— это рекламные посты и&nbsp;клипы со&nbsp;ссылкой на&nbsp;товар, которые можно публиковать в&nbsp;сообществе или на&nbsp;личной странице ВКонтакте<br><br>Из&nbsp;шопса пользователи сразу переходят к&nbsp;заказу, а&nbsp;вы&nbsp;получаете проценты с&nbsp;каждой продажи</p>",
 						"img": "./img/tovary-about/img.png",
 						"img_mob": "./img/tovary-about/img_mob.png",
 					}
@@ -1485,13 +1485,13 @@ const defaultState = {
 						],
 						"steps": [
 							{
-								"text": "<b>Зарегистрируйтесь</b> <br class='br-mobile'> как автор, подключите своё сообщество и&nbsp;укажите реквизиты"
+								"text": "<b>Зарегистрируйтесь</b> <br class='br-mobile'>как автор и&nbsp;добавьте <br class='br-desktop'>свою страницу&nbsp;&mdash; сообщество или профиль. <br class='br-desktop'>Укажите реквизиты, чтобы выводить доход"
 							},
 							{
-								"text": "Когда сообщество <br class='br-mobile'> одобрят,  сможете <br class='br-mobile'> <b>выбирать товары</b> <br class='br-mobile'> в каталоге и <b>создавать <br class='br-mobile'> шопсы</b> со ссылками <br class='br-mobile'> на товары Ozon"
+								"text": "Когда ваше сообщество или профиль одобрят, <br class='br-desktop'>сможете <b>выбирать товары</b> в&nbsp;каталоге и&nbsp;<b>создавать <br class='br-desktop'>шопсы</b> со&nbsp;ссылками на&nbsp;них"
 							},
 							{
-								"text": "<b>Получайте выплаты</b>  за продажи — <br class='br-mobile'> чем больше продаж, <br class='br-mobile'> тем выше ваш доход"
+								"text": "<b>Получайте выплаты</b> за&nbsp;продажи&nbsp;&mdash; чем больше <br class='br-desktop'>продаж из&nbsp;ваших публикаций, тем выше ваш доход"
 							}
 						],
 						"btn_link": "/app",
@@ -1502,19 +1502,19 @@ const defaultState = {
 					"block_slug": "connection_conditions",
 					"block_state": {
 						"title": "чек-лист для&nbsp;подключения </br> к&nbsp;программе",
-						"desc": "Сообщество пока не&nbsp;подходит под все условия? Мы поможем <span class='blue-text fw-600'>это&nbsp;изменить</span>",
+						"desc": "Хотите подключить сообщество, но&nbsp;оно пока не&nbsp;подходит под условия? Мы&nbsp;поможем <span class='blue-text fw-600'>это&nbsp;изменить</span>",
 						"list": [
 							{
 								"text": "У&nbsp;вас есть самозанятость, <br class='br-mobile'>ИП <br class='br-desktop'> или&nbsp;юридическое лицо"
 							},
 							{
-								"text": "Открытое сообщество <br>от&nbsp;1&nbsp;000 подписчиков"
+								"text": "Открытая страница&nbsp;&mdash; сообщество или профиль от&nbsp;1&nbsp;000&nbsp;подписчиков. У&nbsp;профилей считаются и&nbsp;друзья"
 							},
 							{
-								"text": "Хотя&nbsp;бы одна публикация <br>за&nbsp;последние 30&nbsp;дней"
+								"text": "Хотя&nbsp;бы одна публикация за&nbsp;последние 30&nbsp;дней"
 							},
 							{
-								"text": "Тематика сообщества <br>соответствует <a href='https://adblogger.vk.ru/documents/groups_moderation' target='_blank'>требованиям модерации</a> и&nbsp;<a href='https://adblogger.vk.ru/documents/offer_creator_products' target='_blank'>оферте</a> VK&nbsp;AdBlogger"
+								"text": "Сообщество или профиль <br>соответствуют <a href='https://adblogger.vk.ru/documents/groups_moderation' target='_blank'>требованиям модерации</a> и&nbsp;<a href='https://adblogger.vk.ru/documents/offer_creator_products' target='_blank'>оферте</a> VK&nbsp;AdBlogger"
 							}
 						],
 						"btn_right_link": "https://vk.ru/commerce-for-creators",
@@ -2168,7 +2168,7 @@ const defaultState = {
 							},
 							{
 								"question": "Какие профили могут зарабатывать на шопсах?",
-								"answer": '<p> Критерии для профилей такие же, как и для сообществ: </p> <ul> <li>открытая страница</li> <li>не менее 1000 подписчиков</li> <li>опубликован хотя бы 1 пост или клип за последние 30 дней</li> </ul>'
+								"answer": '<p> Критерии для профилей: </p> <ul> <li>открытая страница</li> <li>не&nbsp;менее 1000 друзей и&nbsp;подписчиков суммарно</li> <li>опубликован хотя&nbsp;бы один пост или клип за&nbsp;последние 30&nbsp;дней</li> </ul>'
 							},
 							{
 								"question": "Мой профиль не прошёл проверку. Можно подать заявку снова?",
