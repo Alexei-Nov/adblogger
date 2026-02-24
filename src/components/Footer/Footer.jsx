@@ -20,7 +20,8 @@ export default function Footer({ footer }) {
 	const documentItemsForAuthors = [
 		{ text: 'Пользовательское соглашение', link: 'https://adblogger.vk.ru/documents/terms', target: "_blank" },
 		{ text: 'Политика конфиденциальности', link: 'https://adblogger.vk.ru/documents/privacy', target: "_blank" },
-		{ text: 'Правила конкурса "шопс-чарт"', link: 'https://adblogger.vk.ru/documents/shops-chart', target: "_blank" },
+		{ text: 'Правила конкурса “шопс-чарт” 15/11&#8209;15/12', link: 'https://adblogger.vk.ru/documents/shops-chart-15-11', target: "_blank" },
+		{ text: 'Правила конкурса "шопс-чарт" 15/02&#8209;14/03', link: 'https://adblogger.vk.ru/documents/shops-chart', target: "_blank" },
 		{ text: 'Оферта для авторов', link: 'https://adblogger.vk.ru/documents/offer_creator', target: "_blank" },
 		{ text: 'Дополнительная оферта для авторов', link: 'https://adblogger.vk.ru/documents/offer_creator_products', target: "_blank" },
 		{ text: 'Условия для авторов', link: 'https://adblogger.vk.ru/documents/terms_creator', target: "_blank" },

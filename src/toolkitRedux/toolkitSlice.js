@@ -184,7 +184,7 @@ const defaultState = {
 				{
 					"block_slug": "channels",
 					"block_state": {
-						"title": "<span class='tt-lc'>65&nbsp;000</span> авторов уже подключились",
+						"title": "<span class='tt-lc'>70&nbsp;000</span> авторов уже подключились",
 						"tags": [],
 						"channels": [
 							{
@@ -2148,7 +2148,7 @@ const defaultState = {
 							},
 							{
 								"question": "Как удалить рекламную публикацию?",
-								"answer": '<ol> <li> Перейдите в&nbsp;раздел &laquo;Заявки&raquo; и&nbsp;найдите&nbsp;ту, которую хотите удалить </li> <li> Откройте заявку и&nbsp;нажмите на&nbsp;три точки в&nbsp;правом верхнем углу, затем &laquo;Отклонить заявку&raquo;. Пост удалится автоматически, а&nbsp;чтобы удалить клип&nbsp;&mdash; напишите в&nbsp;<a href="https://vk.me/club225265420" target="_blank">Поддержку</a>. </li> </ol>'
+								"answer": 'Самостоятельно удалить контент после публикации вы не сможете. Для этого обратитесь в <a href="https://vk.me/club225265420" target="_blank">Поддержку</a>. </li> </ol>'
 							},
 							{
 								"question": "Могу&nbsp;ли я&nbsp;использовать инструмент, если уже зарабатываю через другие программы монетизации?",
