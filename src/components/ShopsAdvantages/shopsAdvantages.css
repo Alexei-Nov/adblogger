@@ -55,9 +55,7 @@
     height: 60%;
   }
   .shops-advantages__item:nth-child(2) {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    grid-column: span 2;
   }
   .shops-advantages__item:nth-child(3) {
     grid-row: auto;
@@ -70,9 +68,6 @@
     height: 100%;
   }
   .shops-advantages__item:nth-child(4) {
-    grid-column: span 2;
-  }
-  .shops-advantages__item:nth-child(5) {
     grid-column: span 2;
   }
 }

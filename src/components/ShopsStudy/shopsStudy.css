@@ -1,0 +1,180 @@
+.shops-study__wrapper {
+  padding: 40px 60px;
+  margin: 0 -60px;
+  background-color: #83f5ff;
+  color: #000;
+  border-radius: 48px;
+}
+
+.shops-study__title {
+  margin-bottom: 80px;
+  font-family: "VK Sans Display Expanded";
+}
+
+.shops-study__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 34px;
+}
+
+.shops-study__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 32px;
+  border-radius: 20px;
+  background-color: #00d3e6;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.shops-study__item:first-child {
+  grid-column: span 2;
+}
+
+.shops-study__item:first-child .shops-study__item-btn {
+  margin-left: 0;
+}
+
+.shops-study__item:first-child .shops-study__item-name {
+  max-width: 390px;
+  font-family: "VK Sans Display";
+}
+
+.shops-study__item:first-child .shops-study__item-desc {
+  max-width: 390px;
+}
+
+.shops-study__item-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 165%;
+  width: auto;
+  max-width: 60%;
+  right: 90px;
+  top: 64%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1;
+}
+
+.shops-study__item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.shops-study__item-desc {
+  margin-top: 20px;
+}
+
+.shops-study__item-btn {
+  margin-left: auto;
+  margin-top: 32px;
+  min-width: 210px;
+}
+
+.shops-study__item-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 26px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 2px solid #027e89;
+  color: #027e89;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+.shops-study__item-name {
+  font-family: "VK Sans Display Expanded";
+}
+
+@media screen and (max-width: 1024px) {
+  .shops-study__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shops-study__item-img {
+    height: 100%;
+    top: 50%;
+    right: 0px;
+    max-width: 70%;
+  }
+  .shops-study__item:first-child .shops-study__item-desc {
+    max-width: 340px;
+  }
+  .shops-study__item:first-child .shops-study__item-name {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .shops-study__title {
+    margin-bottom: 36px;
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .shops-study__wrapper {
+    margin: 0 -24px;
+    padding: 32px 24px;
+  }
+  .shops-study__item-name {
+    font-size: 14px;
+    line-height: 110%;
+    max-width: 280px;
+  }
+  .shops-study__list {
+    gap: 8px;
+  }
+  .shops-study__item-btn {
+    margin-top: 0;
+    font-size: 12px;
+    min-width: 110px;
+    padding: 5px;
+  }
+  .shops-study__item-desc {
+    max-width: 280px;
+    font-size: 10px;
+    line-height: 140%;
+    margin-top: 8px;
+  }
+  .shops-study__item {
+    padding: 16px;
+  }
+  .shops-study__item:first-child .shops-study__item-desc {
+    display: none;
+  }
+  .shops-study__item:first-child .shops-study__item-btn {
+    margin-top: 40px;
+  }
+  .shops-study__item:first-child .shops-study__item-name {
+    max-width: 150px;
+  }
+  .shops-study__item-tag {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+}

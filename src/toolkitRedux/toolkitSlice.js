@@ -1389,16 +1389,16 @@ const defaultState = {
 								"icon": './img/shops-advantages/icon-1.svg',
 							},
 							{
-								"name": 'Доход до&nbsp;50% с&nbsp;продажи',
-								"icon": './img/shops-advantages/icon-2.svg',
+								"name": 'Бесплатные товары для&nbsp;обзоров',
+								"icon": './img/shops-advantages/icon-4.svg',
 							},
 							{
 								"name": 'Автоматическая <br> маркировка рекламы',
 								"icon": './img/shops-advantages/icon-3.svg',
 							},
 							{
-								"name": 'Бесплатные товары для&nbsp;обзоров',
-								"icon": './img/shops-advantages/icon-4.svg',
+								"name": 'Доход до&nbsp;50% с&nbsp;продажи',
+								"icon": './img/shops-advantages/icon-2.svg',
 							},
 							{
 								"name": 'Каталог товаров Ozon под&nbsp;любой блог',
@@ -1444,6 +1444,38 @@ const defaultState = {
 								"img_mob": './img/shops-steps/img-3_mob.png',
 								"name": 'Зарабатывайте',
 								"desc": 'Получайте выплаты с&nbsp;продаж — ваш доход ничем не ограничен',
+							},
+						],
+					}
+				},
+				{
+					"block_slug": "shops_study",
+					"block_state": {
+						"title": "Для успешного старта — <br class='br-desktop'> бесплатное обучение",
+						"items_list": [
+							{
+								"name": 'База знаний для&nbsp;авторов',
+								"desc": 'Подключите профиль или&nbsp;сообщество и укажите реквизиты',
+								"btn_text": 'Перейти',
+								"btn_link": '/app',
+								"tag": '',
+								"img": './img/shops-study/img.png',
+							},
+							{
+								"name": 'Курс для начинающих авторов',
+								"desc": 'Для тех, кто только на старте, но уже хочет превращать посты и клипы на своей странице в заработок. Расскажем, как начать с нуля',
+								"btn_text": 'К урокам',
+								"btn_link": '/app',
+								"tag": 'Вход в доход',
+								"img": '',
+							},
+							{
+								"name": 'Курс для продвинутых авторов',
+								"desc": 'Для тех, кто уже разбирается в монетизации, но хочет зарабатывать больше. Углубимся в шопсы и секреты создания эффективной рекламы',
+								"btn_text": 'К урокам',
+								"btn_link": '/app',
+								"tag": 'Шопсы — в кэш',
+								"img": '',
 							},
 						],
 					}

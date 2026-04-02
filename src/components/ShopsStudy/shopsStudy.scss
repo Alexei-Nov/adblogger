@@ -1,0 +1,168 @@
+.shops-study {
+	&__wrapper {
+		padding: 40px 60px;
+		margin: 0 -60px;
+		background-color: #83f5ff;
+		color: #000;
+		border-radius: 48px;
+	}
+	&__title {
+		margin-bottom: 80px;
+		font-family: "VK Sans Display Expanded";
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 34px;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 32px;
+		border-radius: 20px;
+		background-color: #00d3e6;
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+
+		&:first-child {
+			grid-column: span 2;
+
+			& .shops-study {
+				&__item-btn {
+					margin-left: 0;
+				}
+				&__item-name {
+					max-width: 390px;
+					font-family: "VK Sans Display";
+				}
+				&__item-desc {
+					max-width: 390px;
+				}
+			}
+		}
+	}
+	&__item-img {
+		display: flex;
+		position: absolute;
+		height: 165%;
+		width: auto;
+		max-width: 60%;
+		right: 90px;
+		top: 64%;
+		transform: translateY(-50%);
+		z-index: -1;
+
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: center;
+		}
+	}
+	&__item-desc {
+		margin-top: 20px;
+	}
+	&__item-btn {
+		margin-left: auto;
+		margin-top: 32px;
+		min-width: 210px;
+	}
+	&__item-tag {
+		display: flex;
+		width: fit-content;
+		margin-bottom: 26px;
+		padding: 3px 10px;
+		border-radius: 4px;
+		border: 2px solid #027e89;
+		color: #027e89;
+		text-transform: uppercase;
+		line-height: 100%;
+	}
+	&__item-name {
+		font-family: "VK Sans Display Expanded";
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.shops-study {
+		&__list {
+			display: flex;
+			flex-direction: column;
+		}
+		&__item-img {
+			height: 100%;
+			top: 50%;
+			right: 0px;
+			max-width: 70%;
+		}
+		&__item {
+			&:first-child {
+				& .shops-study {
+					&__item-desc {
+						max-width: 340px;
+					}
+					&__item-name {
+						max-width: 200px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.shops-study {
+		&__title {
+			margin-bottom: 36px;
+			font-size: 20px;
+			line-height: 120%;
+		}
+		&__wrapper {
+			margin: 0 -24px;
+			padding: 32px 24px;
+		}
+		&__item-name {
+			font-size: 14px;
+			line-height: 110%;
+			max-width: 280px;
+		}
+		&__list {
+			gap: 8px;
+		}
+		&__item-btn {
+			margin-top: 0;
+			font-size: 12px;
+			min-width: 110px;
+			padding: 5px;
+		}
+		&__item-desc {
+			max-width: 280px;
+			font-size: 10px;
+			line-height: 140%;
+			margin-top: 8px;
+		}
+		&__item {
+			padding: 16px;
+
+			&:first-child {
+				& .shops-study {
+					&__item-desc {
+						display: none;
+					}
+					&__item-btn {
+						margin-top: 40px;
+					}
+					&__item-name {
+						max-width: 150px;
+					}
+				}
+			}
+		}
+		&__item-tag {
+			font-size: 10px;
+			margin-bottom: 10px;
+		}
+	}
+}

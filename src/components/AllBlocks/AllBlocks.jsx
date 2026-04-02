@@ -35,6 +35,7 @@ import Iframe from 'components/Iframe/Iframe';
 import ShopsEntrance from 'components/ShopsEntrance/ShopsEntrance';
 import ShopsAdvantages from 'components/ShopsAdvantages/ShopsAdvantages';
 import ShopsSteps from 'components/ShopsSteps/ShopsSteps';
+import ShopsStudy from 'components/ShopsStudy/ShopsStudy';
 
 export default function AllBlocks({ pageState }) {
 	const dispatch = useDispatch();
@@ -118,6 +119,8 @@ export default function AllBlocks({ pageState }) {
 						return <ShopsAdvantages key={i} block_state={block.block_state} />;
 					case 'shops_steps':
 						return <ShopsSteps key={i} block_state={block.block_state} />;
+					case 'shops_study':
+						return <ShopsStudy key={i} block_state={block.block_state} />;
 					default:
 						return null;
 				}

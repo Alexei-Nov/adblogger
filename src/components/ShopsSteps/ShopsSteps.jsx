@@ -9,7 +9,6 @@ export default function ShopsSteps({ block_state }) {
 					<div className="shops-steps__title text-40 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
 					<div className="shops-steps__wrapper">
 						<div className="shops-steps__body">
-
 							<div className="shops-steps__subtitle text-32 fw-500" >
 								<div className="shops-steps__subtitle-text" dangerouslySetInnerHTML={{ __html: block_state.subtitle }}></div>
 								<div className="shops-steps__arrow">
