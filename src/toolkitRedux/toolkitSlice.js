@@ -1387,21 +1387,24 @@ const defaultState = {
 						"items_list": [
 							{
 								"name": 'Простая регистрация',
-								"icon": './img/cards-slider/icon-2.svg',
+								"icon": './img/shops-advantages/icon-1.svg',
 							},
 							{
 								"name": 'Доход до&nbsp;50% с&nbsp;продажи',
-								"icon": './img/cards-slider/icon-2.svg',
+								"icon": './img/shops-advantages/icon-2.svg',
 							},
 							{
 								"name": 'Автоматическая маркировка рекламы',
-								"icon": './img/cards-slider/icon-2.svg',
+								"icon": './img/shops-advantages/icon-3.svg',
 							},
 							{
 								"name": 'Бесплатные товары для&nbsp;обзоров',
-								"icon": './img/cards-slider/icon-2.svg',
+								"icon": './img/shops-advantages/icon-4.svg',
 							},
-
+							{
+								"name": 'Каталог товаров Ozon под&nbsp;любой блог',
+								"icon": './img/shops-advantages/icon-5.svg',
+							},
 						],
 					}
 				},
