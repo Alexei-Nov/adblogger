@@ -1371,7 +1371,7 @@ const defaultState = {
 				{
 					"block_slug": "entrance_event",
 					"block_state": {
-						"title": "<span>зарабатывайте</span> <span>на&nbsp;<span style='color:#00D3E6;'>публикациях</span></span> <span style='color:#00D3E6;'>с&nbsp;товарами</span>",
+						"title": "<span>зарабатывайте</span> <span>на&nbsp;<span style='color:#00D3E6;'>публикациях</span></span> <div style='color:#00D3E6; text-align:center;'>с&nbsp;товарами</div>",
 						"desc": "доступно профилям <br> и&nbsp;сообществам <span style='color:#00D3E6;'>от&nbsp;100&nbsp;подписчиков</span> ",
 						"btn_text": "Начать зарабатывать",
 						"btn_link": "/app",
@@ -1381,12 +1381,11 @@ const defaultState = {
 					}
 				},
 				{
-					"block_slug": "entrance_advantages",
+					"block_slug": "shops_advantages",
 					"block_state": {
-						"title": "",
 						"items_list": [
 							{
-								"name": 'Простая регистрация',
+								"name": 'Простая <br> регистрация',
 								"icon": './img/shops-advantages/icon-1.svg',
 							},
 							{
@@ -1394,7 +1393,7 @@ const defaultState = {
 								"icon": './img/shops-advantages/icon-2.svg',
 							},
 							{
-								"name": 'Автоматическая маркировка рекламы',
+								"name": 'Автоматическая <br> маркировка рекламы',
 								"icon": './img/shops-advantages/icon-3.svg',
 							},
 							{
@@ -1404,6 +1403,47 @@ const defaultState = {
 							{
 								"name": 'Каталог товаров Ozon под&nbsp;любой блог',
 								"icon": './img/shops-advantages/icon-5.svg',
+							},
+						],
+					}
+				},
+				{
+					"block_slug": "shops_steps",
+					"block_state": {
+						"title": "Сделайте первый шаг <br class='br-desktop'> к&nbsp;доходам — зарегистрируйтесь",
+						"subtitle": "Кто может получать доход от шопсов?",
+						"list_title": "Налоговые резиденты РФ, у которых:",
+						"btn_text": "Начать зарабатывать",
+						"btn_link": "/app",
+						"items_list": [
+							{
+								"text": 'открытая страница — профиль или&nbsp;сообщество',
+							},
+							{
+								"text": 'есть хотя&nbsp;бы одна публикация за&nbsp;30&nbsp;дней',
+							},
+							{
+								"text": 'больше 100&nbsp;подписчиков',
+							},
+						],
+						"cards_list": [
+							{
+								"img": './img/shops-steps/img-1.png',
+								"img_mob": './img/shops-steps/img-1_mob.png',
+								"name": 'Зарегистрируйтесь как&nbsp;автор',
+								"desc": 'Подключите профиль или&nbsp;сообщество и укажите реквизиты',
+							},
+							{
+								"img": './img/shops-steps/img-2.png',
+								"img_mob": './img/shops-steps/img-2_mob.png',
+								"name": 'Публикуйте <br> шопсы',
+								"desc": 'Выбирайте товары и&nbsp;делайте контент со&nbsp;ссылкой на&nbsp;них',
+							},
+							{
+								"img": './img/shops-steps/img-3.png',
+								"img_mob": './img/shops-steps/img-3_mob.png',
+								"name": 'Зарабатывайте',
+								"desc": 'Получайте выплаты с&nbsp;продаж — ваш доход ничем не ограничен',
 							},
 						],
 					}

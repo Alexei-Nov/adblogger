@@ -1,23 +1,18 @@
 .entrance-event {
 	&__title {
+		// font-family: "VK Sans Display Expanded";
 		font-size: 94px;
 		line-height: 110%;
 		font-weight: 600;
 	}
 	&__wrapper {
 		gap: 30px;
-		padding-top: 80px;
 		position: relative;
 		z-index: 1;
-		height: calc(100vh - 120px - 80px);
-		max-height: 740px;
-		min-height: 550px;
 	}
 	&__desc {
 		margin-top: 110px;
 		width: 100%;
-		// max-width: 500px;
-		margin-bottom: 30px;
 	}
 	&__body {
 		display: flex;
@@ -25,7 +20,6 @@
 		height: 100%;
 		width: 100%;
 		max-width: 660px;
-		// max-width: 50%;
 	}
 	&__bottom {
 		margin-top: 30px;
@@ -40,12 +34,11 @@
 	&__media {
 		display: flex;
 		position: absolute;
-		right: 0;
-		width: calc(70% + (100vw - 1440px) / 2);
-		height: 100%;
-		top: 50%;
-		transform: translateY(-50%);
-		pointer-events: none;
+		left: 50%;
+		width: 70%;
+		height: calc(100% + 110px);
+		top: 0;
+		// pointer-events: none;
 		z-index: -1;
 
 		& video {
@@ -58,7 +51,7 @@
 			width: 100%;
 			height: 100%;
 			object-fit: contain;
-			object-position: right center;
+			object-position: left center;
 		}
 	}
 
@@ -76,34 +69,18 @@
 	}
 }
 
-@media screen and (min-width: 1301px) {
-	.entrance-event {
-		&__media {
-			height: calc(100% + 120px);
-		}
-	}
-}
-
-@media screen and (min-width: 1440px) {
-	.entrance-event {
-		&__media {
-			right: calc((100vw - 1440px) / -2);
-		}
-	}
-}
-
 @media screen and (max-width: 1024px) {
 	.entrance-event {
 		&__media {
 			position: static;
-			width: calc(100% + 80px);
-			// margin: -27vw 0 -15vw;
+			width: calc(100% + 50px);
 			bottom: 0;
 			top: unset;
 			transform: none;
+			margin-top: 30px;
 		}
 		&__desc {
-			margin-top: 32px;
+			margin-top: 0px;
 			max-width: 650px;
 		}
 		&__body {
@@ -111,10 +88,9 @@
 			max-width: 720px;
 			margin: 0 auto;
 			align-items: center;
-			text-align: center;
 		}
 		&__bottom {
-			margin-top: 0;
+			margin-top: 18px;
 			max-width: none;
 		}
 		&__btn {
@@ -124,7 +100,6 @@
 			margin-top: 24px;
 		}
 		&__wrapper {
-			padding-top: 16px;
 			height: auto;
 			max-height: none;
 			min-height: 0;
@@ -141,14 +116,26 @@
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.entrance-event {
+		&__title {
+			font-size: 45px;
+			line-height: 110%;
+			width: 100%;
+			max-width: 360px;
+		}
+	}
+}
+
 @media screen and (max-width: 570px) {
 	.entrance-event {
+		padding-bottom: 35px;
 		&__wrapper {
 			padding-top: 0px;
 		}
 		&__desc {
-			margin-top: 20px;
-			font-size: 17px;
+			margin-top: -30px;
+			font-size: 14px;
 			line-height: 120%;
 			margin-bottom: 0px;
 		}
@@ -156,22 +143,16 @@
 			margin-top: 18px;
 		}
 		&__bottom {
-			margin-top: 13px;
+			width: 100%;
 		}
 		&__btn {
-			font-size: 20px;
+			font-size: 16px;
 			line-height: 120%;
 		}
 		&__media {
-			// margin: -30vw 0 -20vw;
-		}
-	}
-}
-
-@media screen and (max-height: 750px) {
-	.entrance-event {
-		&__wrapper {
-			padding-top: 0;
+			height: auto;
+			width: auto;
+			margin-right: -40px;
 		}
 	}
 }
