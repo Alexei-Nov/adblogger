@@ -1369,37 +1369,74 @@ const defaultState = {
 					"block_state": {}
 				},
 				{
-					"block_slug": "shops_entrance",
+					"block_slug": "entrance_event",
 					"block_state": {
-						"title": "<span class='blue-text'>шопсы-шопсы!</span>",
-						"desc": "новый формат контента ВКонтакте, на&nbsp;котором сообщества и&nbsp;профили могут <span class='blue-text'>зарабатывать</span>",
+						"title": "<span>зарабатывайте</span> <span>на&nbsp;<span style='color:#00D3E6;'>публикациях</span></span> <span style='color:#00D3E6;'>с&nbsp;товарами</span>",
+						"desc": "доступно профилям <br> и&nbsp;сообществам <span style='color:#00D3E6;'>от&nbsp;100&nbsp;подписчиков</span> ",
+						"btn_text": "Начать зарабатывать",
 						"btn_link": "/app",
-						"btn_text": "Подключиться",
+						"label": "",
+						"media": "/img/entrance-event/img.png",
+						"media_mob": "/img/entrance-event/img_mob.png"
+					}
+				},
+				{
+					"block_slug": "entrance_advantages",
+					"block_state": {
+						"title": "",
 						"items_list": [
 							{
-								"icon": "./img/cards-slider/icon-2.svg",
-								"name": "<span style='color: #00D3E6;'>Заработок с продаж </br> до 50% </span> от стоимости товара",
-								"dropdownn_text": "<p>На&nbsp;старте доход за&nbsp;рекламу товара с&nbsp;Ozon состоит из&nbsp;процента от&nbsp;его продажи. В&nbsp;будущем условия выплат могут измениться</p>",
+								"name": 'Простая регистрация',
+								"icon": './img/cards-slider/icon-2.svg',
 							},
 							{
-								"icon": "./img/cards-slider/icon-1.svg",
-								"name": "<span style='color: #00D3E6;'>Автоматическая</span> </br> маркировка рекламы",
-								"dropdownn_text": "",
+								"name": 'Доход до&nbsp;50% с&nbsp;продажи',
+								"icon": './img/cards-slider/icon-2.svg',
 							},
 							{
-								"icon": "./img/cards-slider/icon-4.svg",
-								"name": "<span style='color: #00D3E6;'>Быстрое размещение</span></br> без&nbsp;согласований",
-								"dropdownn_text": "",
+								"name": 'Автоматическая маркировка рекламы',
+								"icon": './img/cards-slider/icon-2.svg',
 							},
 							{
-								"icon": "./img/cards-slider/icon-3.svg",
-								"name": "<span style='color: #00D3E6;'>Большой каталог</span></br> товаров Ozon",
-								"desc": "",
-								"dropdownn_text": "",
+								"name": 'Бесплатные товары для&nbsp;обзоров',
+								"icon": './img/cards-slider/icon-2.svg',
 							},
+
 						],
 					}
 				},
+				// {
+				// 	"block_slug": "shops_entrance",
+				// 	"block_state": {
+				// 		"title": "<span class='blue-text'>шопсы-шопсы!</span>",
+				// 		"desc": "новый формат контента ВКонтакте, на&nbsp;котором сообщества и&nbsp;профили могут <span class='blue-text'>зарабатывать</span>",
+				// 		"btn_link": "/app",
+				// 		"btn_text": "Подключиться",
+				// 		"items_list": [
+				// 			{
+				// 				"icon": "./img/cards-slider/icon-2.svg",
+				// 				"name": "<span style='color: #00D3E6;'>Заработок с продаж </br> до 50% </span> от стоимости товара",
+				// 				"dropdownn_text": "<p>На&nbsp;старте доход за&nbsp;рекламу товара с&nbsp;Ozon состоит из&nbsp;процента от&nbsp;его продажи. В&nbsp;будущем условия выплат могут измениться</p>",
+				// 			},
+				// 			{
+				// 				"icon": "./img/cards-slider/icon-1.svg",
+				// 				"name": "<span style='color: #00D3E6;'>Автоматическая</span> </br> маркировка рекламы",
+				// 				"dropdownn_text": "",
+				// 			},
+				// 			{
+				// 				"icon": "./img/cards-slider/icon-4.svg",
+				// 				"name": "<span style='color: #00D3E6;'>Быстрое размещение</span></br> без&nbsp;согласований",
+				// 				"dropdownn_text": "",
+				// 			},
+				// 			{
+				// 				"icon": "./img/cards-slider/icon-3.svg",
+				// 				"name": "<span style='color: #00D3E6;'>Большой каталог</span></br> товаров Ozon",
+				// 				"desc": "",
+				// 				"dropdownn_text": "",
+				// 			},
+				// 		],
+				// 	}
+				// },
 				// {
 				// 	"block_slug": "cards_slider",
 				// 	"block_state": {
@@ -1455,74 +1492,74 @@ const defaultState = {
 
 				// 	}
 				// },
-				{
-					"block_slug": "tovary_about",
-					"block_state": {
-						"title": "Что такое <span style='color:#00D3E6;'>шопсы</span> ВКонтакте?",
-						"desc": "<p><b style='color:#00D3E6;'>Шопсы</b>&nbsp;— это рекламные посты и&nbsp;клипы со&nbsp;ссылкой на&nbsp;товар, которые можно публиковать в&nbsp;сообществе или на&nbsp;личной странице ВКонтакте<br><br>Из&nbsp;шопса пользователи сразу переходят к&nbsp;заказу, а&nbsp;вы&nbsp;получаете проценты с&nbsp;каждой продажи</p>",
-						"img": "./img/tovary-about/img.png",
-						"img_mob": "./img/tovary-about/img_mob.png",
-					}
-				},
-				{
-					"block_slug": "steps_tovary",
-					"block_state": {
-						"title": "подключайтесь к&nbsp;VK&nbsp;AdBlogger и&nbsp;зарабатывайте ",
-						"desc": "",
-						"gallery": [
-							{
-								"img": "./img/steps-tovary/img-4.png"
-							},
-							{
-								"img": "./img/steps-tovary/img-1.png"
-							},
-							{
-								"img": "./img/steps-tovary/img-2.png"
-							},
-							{
-								"img": "./img/steps-tovary/img-3.png"
-							}
-						],
-						"steps": [
-							{
-								"text": "<b>Зарегистрируйтесь</b> <br class='br-mobile'>как автор и&nbsp;добавьте <br class='br-desktop'>свою страницу&nbsp;&mdash; сообщество или профиль. <br class='br-desktop'>Укажите реквизиты, чтобы выводить доход"
-							},
-							{
-								"text": "Когда ваше сообщество или профиль одобрят, <br class='br-desktop'>сможете <b>выбирать товары</b> в&nbsp;каталоге и&nbsp;<b>создавать <br class='br-desktop'>шопсы</b> со&nbsp;ссылками на&nbsp;них"
-							},
-							{
-								"text": "<b>Получайте выплаты</b> за&nbsp;продажи&nbsp;&mdash; чем больше <br class='br-desktop'>продаж из&nbsp;ваших публикаций, тем выше ваш доход"
-							}
-						],
-						"btn_link": "/app",
-						"btn_text": "Подключиться",
-					}
-				},
-				{
-					"block_slug": "connection_conditions",
-					"block_state": {
-						"title": "чек-лист для&nbsp;подключения </br> к&nbsp;программе",
-						"desc": "Хотите подключить сообщество, но&nbsp;оно пока не&nbsp;подходит под условия? Мы&nbsp;поможем <span class='blue-text fw-600'>это&nbsp;изменить</span>",
-						"list": [
-							{
-								"text": "Вы&nbsp;резидент&nbsp;РФ: самозанятый, ИП, физическое или юридическое лицо"
-							},
-							{
-								"text": "Открытая страница&nbsp;&mdash; сообщество или профиль от&nbsp;100&nbsp;подписчиков. У&nbsp;профилей считаются и&nbsp;друзья"
-							},
-							{
-								"text": "Хотя&nbsp;бы одна публикация за&nbsp;последние 30&nbsp;дней"
-							},
-							{
-								"text": "Сообщество или профиль <br>соответствуют <a href='https://adblogger.vk.ru/documents/groups_moderation' target='_blank'>требованиям модерации</a> и&nbsp;<a href='https://adblogger.vk.ru/documents/offer_creator_products' target='_blank'>оферте</a> VK&nbsp;AdBlogger"
-							}
-						],
-						"btn_right_link": "https://vk.ru/commerce-for-creators",
-						"btn_right_text": "Узнать больше",
-						"btn_link": "https://vk.ru/commerce-for-creators",
-						"btn_text": "Подключиться",
-					}
-				},
+				// {
+				// 	"block_slug": "tovary_about",
+				// 	"block_state": {
+				// 		"title": "Что такое <span style='color:#00D3E6;'>шопсы</span> ВКонтакте?",
+				// 		"desc": "<p><b style='color:#00D3E6;'>Шопсы</b>&nbsp;— это рекламные посты и&nbsp;клипы со&nbsp;ссылкой на&nbsp;товар, которые можно публиковать в&nbsp;сообществе или на&nbsp;личной странице ВКонтакте<br><br>Из&nbsp;шопса пользователи сразу переходят к&nbsp;заказу, а&nbsp;вы&nbsp;получаете проценты с&nbsp;каждой продажи</p>",
+				// 		"img": "./img/tovary-about/img.png",
+				// 		"img_mob": "./img/tovary-about/img_mob.png",
+				// 	}
+				// },
+				// {
+				// 	"block_slug": "steps_tovary",
+				// 	"block_state": {
+				// 		"title": "подключайтесь к&nbsp;VK&nbsp;AdBlogger и&nbsp;зарабатывайте ",
+				// 		"desc": "",
+				// 		"gallery": [
+				// 			{
+				// 				"img": "./img/steps-tovary/img-4.png"
+				// 			},
+				// 			{
+				// 				"img": "./img/steps-tovary/img-1.png"
+				// 			},
+				// 			{
+				// 				"img": "./img/steps-tovary/img-2.png"
+				// 			},
+				// 			{
+				// 				"img": "./img/steps-tovary/img-3.png"
+				// 			}
+				// 		],
+				// 		"steps": [
+				// 			{
+				// 				"text": "<b>Зарегистрируйтесь</b> <br class='br-mobile'>как автор и&nbsp;добавьте <br class='br-desktop'>свою страницу&nbsp;&mdash; сообщество или профиль. <br class='br-desktop'>Укажите реквизиты, чтобы выводить доход"
+				// 			},
+				// 			{
+				// 				"text": "Когда ваше сообщество или профиль одобрят, <br class='br-desktop'>сможете <b>выбирать товары</b> в&nbsp;каталоге и&nbsp;<b>создавать <br class='br-desktop'>шопсы</b> со&nbsp;ссылками на&nbsp;них"
+				// 			},
+				// 			{
+				// 				"text": "<b>Получайте выплаты</b> за&nbsp;продажи&nbsp;&mdash; чем больше <br class='br-desktop'>продаж из&nbsp;ваших публикаций, тем выше ваш доход"
+				// 			}
+				// 		],
+				// 		"btn_link": "/app",
+				// 		"btn_text": "Подключиться",
+				// 	}
+				// },
+				// {
+				// 	"block_slug": "connection_conditions",
+				// 	"block_state": {
+				// 		"title": "чек-лист для&nbsp;подключения </br> к&nbsp;программе",
+				// 		"desc": "Хотите подключить сообщество, но&nbsp;оно пока не&nbsp;подходит под условия? Мы&nbsp;поможем <span class='blue-text fw-600'>это&nbsp;изменить</span>",
+				// 		"list": [
+				// 			{
+				// 				"text": "Вы&nbsp;резидент&nbsp;РФ: самозанятый, ИП, физическое или юридическое лицо"
+				// 			},
+				// 			{
+				// 				"text": "Открытая страница&nbsp;&mdash; сообщество или профиль от&nbsp;100&nbsp;подписчиков. У&nbsp;профилей считаются и&nbsp;друзья"
+				// 			},
+				// 			{
+				// 				"text": "Хотя&nbsp;бы одна публикация за&nbsp;последние 30&nbsp;дней"
+				// 			},
+				// 			{
+				// 				"text": "Сообщество или профиль <br>соответствуют <a href='https://adblogger.vk.ru/documents/groups_moderation' target='_blank'>требованиям модерации</a> и&nbsp;<a href='https://adblogger.vk.ru/documents/offer_creator_products' target='_blank'>оферте</a> VK&nbsp;AdBlogger"
+				// 			}
+				// 		],
+				// 		"btn_right_link": "https://vk.ru/commerce-for-creators",
+				// 		"btn_right_text": "Узнать больше",
+				// 		"btn_link": "https://vk.ru/commerce-for-creators",
+				// 		"btn_text": "Подключиться",
+				// 	}
+				// },
 				// {
 				// 	"block_slug": "calculator",
 				// 	"block_state": {
@@ -1793,220 +1830,220 @@ const defaultState = {
 				// 		"date_start": "2025-10-15T00:00:00+03:00",
 				// 	}
 				// },
-				{
-					"block_slug": "advices",
-					"block_state": {
-						"title": "советы по&nbsp;созданию <br> продающего контента",
-						"items_list": [
-							{
-								"img": "./img/advices/img-1.png",
-								"name": "подсвечивайте плюсы товара",
-								"list": [
-									{
-										"text": "Снимайте видеообзоры и&nbsp;ролики в&nbsp;формате «до&nbsp;—&nbsp;после» "
-									},
-									{
-										"text": "Показывайте товар с&nbsp;разных ракурсов"
-									},
-									{
-										"text": "Делитесь личным опытом&nbsp;— это&nbsp;вызывает доверие"
-									},
-								],
-								"btn_link": "https://vk.ru/@adblogger-kak-snyat-prodauschii-klip-top-9-scenariev",
-								"btn_text": "Читать статью",
-							},
-							{
-								"img": "./img/advices/img-2.png",
-								"name": "применяйте сторителлинг",
-								"list": [
-									{
-										"text": "Начните с&nbsp;интриги, чтобы <br class='br-mobile'>захватить <br class='br-desktop'>внимание зрителя"
-									},
-									{
-										"text": "Определите боль, которую <br class='br-mobile'>закрывает товар, <br class='br-desktop'>и&nbsp;расскажите, <br class='br-mobile'>как&nbsp;он это&nbsp;делает "
-									},
-									{
-										"text": "Захватите внимание: <br class='br-mobile'>используйте <br class='br-desktop'>динамичную музыку <br class='br-mobile'>и&nbsp;смену кадров"
-									},
-								],
-								"btn_link": "https://vk.ru/@adblogger-kak-ispolzovat-storitelling-chtoby-povysit-prodazhi",
-								"btn_text": "Читать статью",
-							}
-						],
-						"bottom_text": "больше идей и&nbsp;лайфхаков",
-						"bottom_btn_link": "https://vk.com/vk_authors/shops/?utm_source=vkadblogger_shops&utm_medium=card",
-						"bottom_btn_text": "Узнать",
-					}
-				},
-				{
-					"block_slug": "review",
-					"block_state": {
-						"title": "это работает -- авторы проверяли",
-						"review_list": [
-							{
-								"photo": "./img/review/img-8.png",
-								"name": "У бабы Даши",
-								"tags": [
-									{
-										"text": "заработала на шопсах 2,3М ₽",
-										"color": "blue"
-									},
-									{
-										"text": "57К подписчиков",
-										"color": "black"
-									}
-								],
-								"text": "<p> Свой блог я называю женским журналом. Мой фундамент — честность: <span class='blue-text'>я рекомендую только то, что использую сама</span>. В шопсах пробовала и посты, и клипы — лучше всего сработал формат «между нами девочками». </p> <p> Плюс рассказываю о товаре ещё до публикации шопса: так аудитория понимает, что это реальный опыт, а не просто реклама. <span class='blue-text'>Советую тренировать насмотренность и действовать!</span> </p>",
-							},
-							{
-								"photo": "./img/review/img-11.png",
-								"name": "DEKORSADA",
-								"tags": [
-									{
-										"text": "заработал на шопсах 410К ₽",
-										"color": "blue"
-									},
-									{
-										"text": "107К подписчиков",
-										"color": "black"
-									}
-								],
-								"text": "<p> Мой подход прост: я создаю то, что мне интересно, и показываю это другим. Для шопсов выбираю только надёжные товары, которые нужны мне самому: <span class='blue-text'>не рекламирую то, что мне не&nbsp;по&nbsp;душе.</span> Лучше всего зашёл шопс с простым бытовым товаром для санузла. </p> <p> Снимаю ролики, как чувствую, и иногда могу предсказать, сколько примерно просмотров наберёт видео. <span class='blue-text'>Главное — двигаться вперёд и не обращать внимания на хейт.</span> </p>",
-							},
-							{
-								"photo": "./img/review/img-10.png",
-								"name": "TARNOVITA",
-								"tags": [
-									{
-										"text": "заработала на шопсах 160К ₽",
-										"color": "blue"
-									},
-									{
-										"text": "101К подписчиков",
-										"color": "black"
-									}
-								],
-								"text": "<p> Главное — доверие аудитории. Рекламирую только то, чем пользуюсь сама: говорю прямо и показываю товар в деле. Подход работает: пост с подтягивающей маской для лица набрал 2 млн просмотров и принёс почти 500 продаж. </p> <p> <span class='blue-text'>Шопсы — пространство для экспериментов и развития.</span> Тестируйте форматы, показывайте себя, общайтесь с подписчиками и прислушивайтесь к их запросам. </p>",
-							},
-							{
-								"photo": "./img/review/img-9.png",
-								"name": "KAHOME_DESIGN",
-								"tags": [
-									{
-										"text": "заработали на шопсах 160К ₽",
-										"color": "blue"
-									},
-									{
-										"text": "3,8К подписчиков",
-										"color": "black"
-									}
-								],
-								"text": "<p> В блоге мы делимся нашими находками для дома и интерьера. <span class='blue-text'>Проще показать эффект «до» и «после» в клипе.</span> Недорогие бытовые вещи, которые решают конкретную проблему, собирают миллионы просмотров. Наш рекорд — салфетки для уборки: почти 300 заказов. </p> <p> За месяц мы сняли 10 шопсов. <span class='blue-text'>Создавайте больше контента, пробуйте, ошибайтесь и делайте выводы — только так можно вырасти.</span> </p>",
-							},
-							{
-								"photo": "./img/review/img-7.png",
-								"name": "Раздетый стилист",
-								"tags": [
-									{
-										"text": "заработала на шопсах 194К ₽",
-										"color": "blue"
-									},
-									{
-										"text": "561К подписчиков",
-										"color": "black"
-									}
-								],
-								"text": "<p> Мой блог — для женщин 35+, которые хотят выглядеть классно с любым бюджетом. Для шопсов я&nbsp;выбираю вещи, которые рекомендовала бы своим подругам как стилист: лучше всего у меня зашла публикация с базовым универсальным пальто. </p> <p> С шопсами ты сам решаешь, когда и что рекламировать. Круто, что маркировка автоматическая и ссылка ведёт прямо на товар. Мой совет новичкам: просто попробуйте! </p>",
-							},
-							{
-								"photo": "./img/review/img-6.png",
-								"name": "Анастасия Крекова",
-								"tags": [
-									{
-										"text": "заработала 162К ₽",
-										"color": "blue"
-									},
-									{
-										"text": "115К подписчиков",
-										"color": "black"
-									}
-								],
-								"text": "<p>Я&nbsp;выбирала товары для своей женской аудитории: средства для дома, косметику. Анализировала реакцию и&nbsp;меняла подход к&nbsp;публикациям. Самыми успешными стали видео <span class='blue-text'>с&nbsp;юмором и&nbsp;примерами из&nbsp;жизни</span>, где я&nbsp;не&nbsp;упоминала товар первые 10&nbsp;секунд. </p> <p> Лучше всего по&nbsp;продажам сработал простой клип с&nbsp;витаминным средством для лица <span class='blue-text'>ценой около 300&nbsp;рублей</span>. </p>",
-							},
-							{
-								"photo": "./img/review/img-4.png",
-								"name": "СЕНЯ В ДЕЛЕ",
-								"tags": [
-									{
-										"text": "заработал 110К ₽",
-										"color": "blue"
-									},
-									{
-										"text": "526К подписчиков",
-										"color": "black"
-									}
-								],
-								"text": "<p>Я&nbsp;выбирал <span class='blue-text'>товары на&nbsp;кулинарную тематику</span> : чай, кофе, мини-принтер для заготовок, мёд, лимонад. Придерживался единой стратегии: <span class='blue-text'>интегрировал рекламу в&nbsp;видеорецепт</span>. Например, готовил кабачковую икру и&nbsp;показывал мини-принтер для заготовок в&nbsp;деле.</p><p>Ролики, которые набрали много просмотров, сгенерировали много продаж.</p>",
-							},
-							{
-								"photo": "./img/review/img-3.png",
-								"name": "Николай Трошин",
-								"tags": [
-									{
-										"text": "заработал 65К ₽",
-										"color": "blue"
-									},
-									{
-										"text": "4,8К подписчиков",
-										"color": "black"
-									}
-								],
-								"text": "<p>Большинство подписчиков младше&nbsp;30, поэтому брал близкие им&nbsp;товары. <br> Мой контент состоит из&nbsp;видео, поэтому <span class='blue-text'>рекламу делал в&nbsp;клипах</span>. </p> <p> Публикаций было много, <span class='blue-text'>менял подход и&nbsp;подводки</span>: для кружки&nbsp;&mdash; про чаепитие, для одежды&nbsp;&mdash; про&nbsp;то, как собрать лук. </p> <p> Самый удачный клип&nbsp;&mdash; с&nbsp;рекламой кофейных зёрен: показал своё утро, как готовлю кофе: <span class='blue-text'>личная история всегда цепляет</span>.</p>",
-							},
-							{
-								"photo": "./img/review/img-2.png",
-								"name": "Kiwihealthy",
-								"tags": [
-									{
-										"text": "заработала 60К ₽",
-										"color": "blue"
-									},
-									{
-										"text": "30К подписчиков",
-										"color": "black"
-									}
-								],
-								"text": "<p>Я&nbsp;веду сообщество о&nbsp;питании, поэтому брала товары по&nbsp;теме и&nbsp;пробовала другие. Лучше всего зашла реклама <span class='blue-text'>крабика для волос</span> : я&nbsp;выкупила его и&nbsp;сняла клип, где мы&nbsp;готовим с&nbsp;дочкой. Её&nbsp;волосы собрала крабиком и&nbsp;сделала на&nbsp;нём акцент. </p> <p> Дальше тоже старалась выкупать товары и&nbsp;внедрять в&nbsp;сюжет. Классно, что <span class='blue-text'>продажи идут спустя время после публикации</span>.</p>",
-							},
-							{
-								"photo": "./img/review/img-1.png",
-								"name": "Katya Klon",
-								"tags": [
-									{
-										"text": "заработала 60К ₽",
-										"color": "blue"
-									},
-									{
-										"text": "275К подписчиков",
-										"color": "black"
-									}
-								],
-								"text": "<p>Когда выбирала товары для рекламы, опиралась на&nbsp;их&nbsp;практичность и&nbsp;актуальность для моего блога. Аудитория хорошо приняла и&nbsp;посты, и&nbsp;клипы, но&nbsp;мне <span class='blue-text'>проще включать рекламу в&nbsp;скетчи</span>&nbsp;&mdash; короткие юмористические сценки на&nbsp;актуальные темы. </p> <p> Это самый популярный формат у&nbsp;подписчиков: именно клипы-скетчи набрали больше всего просмотров&nbsp;&mdash; <span class='blue-text'>и&nbsp;с&nbsp;них случились продажи.</span></p>",
-							},
-							// {
-							// 	"photo": "./img/review/img-5.png",
-							// 	"name": "Беречь речь",
-							// 	"tags": [
-							// 		{
-							// 			"text": "120К подписчиков",
-							// 			"color": "black"
-							// 		}
-							// 	],
-							// 	"text": "<p>Мой блог&nbsp;&mdash; о&nbsp;русском языке: думала, будет сложно интегрировать товары. </p> <p> Оказалось, женская аудитория готова воспринимать рекламу со&nbsp;знакомыми вещами: <span class='blue-text'>чаще всего покупали одежду</span>. Для выбора следующего продукта я&nbsp;анализировала отклик, репосты, переходы и&nbsp;покупки, а&nbsp;лучшая реакция была на&nbsp;<span class='blue-text'>клип с&nbsp;неожиданной концовкой</span>. </p>",
-							// },
-						]
-					}
-				},
+				// {
+				// 	"block_slug": "advices",
+				// 	"block_state": {
+				// 		"title": "советы по&nbsp;созданию <br> продающего контента",
+				// 		"items_list": [
+				// 			{
+				// 				"img": "./img/advices/img-1.png",
+				// 				"name": "подсвечивайте плюсы товара",
+				// 				"list": [
+				// 					{
+				// 						"text": "Снимайте видеообзоры и&nbsp;ролики в&nbsp;формате «до&nbsp;—&nbsp;после» "
+				// 					},
+				// 					{
+				// 						"text": "Показывайте товар с&nbsp;разных ракурсов"
+				// 					},
+				// 					{
+				// 						"text": "Делитесь личным опытом&nbsp;— это&nbsp;вызывает доверие"
+				// 					},
+				// 				],
+				// 				"btn_link": "https://vk.ru/@adblogger-kak-snyat-prodauschii-klip-top-9-scenariev",
+				// 				"btn_text": "Читать статью",
+				// 			},
+				// 			{
+				// 				"img": "./img/advices/img-2.png",
+				// 				"name": "применяйте сторителлинг",
+				// 				"list": [
+				// 					{
+				// 						"text": "Начните с&nbsp;интриги, чтобы <br class='br-mobile'>захватить <br class='br-desktop'>внимание зрителя"
+				// 					},
+				// 					{
+				// 						"text": "Определите боль, которую <br class='br-mobile'>закрывает товар, <br class='br-desktop'>и&nbsp;расскажите, <br class='br-mobile'>как&nbsp;он это&nbsp;делает "
+				// 					},
+				// 					{
+				// 						"text": "Захватите внимание: <br class='br-mobile'>используйте <br class='br-desktop'>динамичную музыку <br class='br-mobile'>и&nbsp;смену кадров"
+				// 					},
+				// 				],
+				// 				"btn_link": "https://vk.ru/@adblogger-kak-ispolzovat-storitelling-chtoby-povysit-prodazhi",
+				// 				"btn_text": "Читать статью",
+				// 			}
+				// 		],
+				// 		"bottom_text": "больше идей и&nbsp;лайфхаков",
+				// 		"bottom_btn_link": "https://vk.com/vk_authors/shops/?utm_source=vkadblogger_shops&utm_medium=card",
+				// 		"bottom_btn_text": "Узнать",
+				// 	}
+				// },
+				// {
+				// 	"block_slug": "review",
+				// 	"block_state": {
+				// 		"title": "это работает -- авторы проверяли",
+				// 		"review_list": [
+				// 			{
+				// 				"photo": "./img/review/img-8.png",
+				// 				"name": "У бабы Даши",
+				// 				"tags": [
+				// 					{
+				// 						"text": "заработала на шопсах 2,3М ₽",
+				// 						"color": "blue"
+				// 					},
+				// 					{
+				// 						"text": "57К подписчиков",
+				// 						"color": "black"
+				// 					}
+				// 				],
+				// 				"text": "<p> Свой блог я называю женским журналом. Мой фундамент — честность: <span class='blue-text'>я рекомендую только то, что использую сама</span>. В шопсах пробовала и посты, и клипы — лучше всего сработал формат «между нами девочками». </p> <p> Плюс рассказываю о товаре ещё до публикации шопса: так аудитория понимает, что это реальный опыт, а не просто реклама. <span class='blue-text'>Советую тренировать насмотренность и действовать!</span> </p>",
+				// 			},
+				// 			{
+				// 				"photo": "./img/review/img-11.png",
+				// 				"name": "DEKORSADA",
+				// 				"tags": [
+				// 					{
+				// 						"text": "заработал на шопсах 410К ₽",
+				// 						"color": "blue"
+				// 					},
+				// 					{
+				// 						"text": "107К подписчиков",
+				// 						"color": "black"
+				// 					}
+				// 				],
+				// 				"text": "<p> Мой подход прост: я создаю то, что мне интересно, и показываю это другим. Для шопсов выбираю только надёжные товары, которые нужны мне самому: <span class='blue-text'>не рекламирую то, что мне не&nbsp;по&nbsp;душе.</span> Лучше всего зашёл шопс с простым бытовым товаром для санузла. </p> <p> Снимаю ролики, как чувствую, и иногда могу предсказать, сколько примерно просмотров наберёт видео. <span class='blue-text'>Главное — двигаться вперёд и не обращать внимания на хейт.</span> </p>",
+				// 			},
+				// 			{
+				// 				"photo": "./img/review/img-10.png",
+				// 				"name": "TARNOVITA",
+				// 				"tags": [
+				// 					{
+				// 						"text": "заработала на шопсах 160К ₽",
+				// 						"color": "blue"
+				// 					},
+				// 					{
+				// 						"text": "101К подписчиков",
+				// 						"color": "black"
+				// 					}
+				// 				],
+				// 				"text": "<p> Главное — доверие аудитории. Рекламирую только то, чем пользуюсь сама: говорю прямо и показываю товар в деле. Подход работает: пост с подтягивающей маской для лица набрал 2 млн просмотров и принёс почти 500 продаж. </p> <p> <span class='blue-text'>Шопсы — пространство для экспериментов и развития.</span> Тестируйте форматы, показывайте себя, общайтесь с подписчиками и прислушивайтесь к их запросам. </p>",
+				// 			},
+				// 			{
+				// 				"photo": "./img/review/img-9.png",
+				// 				"name": "KAHOME_DESIGN",
+				// 				"tags": [
+				// 					{
+				// 						"text": "заработали на шопсах 160К ₽",
+				// 						"color": "blue"
+				// 					},
+				// 					{
+				// 						"text": "3,8К подписчиков",
+				// 						"color": "black"
+				// 					}
+				// 				],
+				// 				"text": "<p> В блоге мы делимся нашими находками для дома и интерьера. <span class='blue-text'>Проще показать эффект «до» и «после» в клипе.</span> Недорогие бытовые вещи, которые решают конкретную проблему, собирают миллионы просмотров. Наш рекорд — салфетки для уборки: почти 300 заказов. </p> <p> За месяц мы сняли 10 шопсов. <span class='blue-text'>Создавайте больше контента, пробуйте, ошибайтесь и делайте выводы — только так можно вырасти.</span> </p>",
+				// 			},
+				// 			{
+				// 				"photo": "./img/review/img-7.png",
+				// 				"name": "Раздетый стилист",
+				// 				"tags": [
+				// 					{
+				// 						"text": "заработала на шопсах 194К ₽",
+				// 						"color": "blue"
+				// 					},
+				// 					{
+				// 						"text": "561К подписчиков",
+				// 						"color": "black"
+				// 					}
+				// 				],
+				// 				"text": "<p> Мой блог — для женщин 35+, которые хотят выглядеть классно с любым бюджетом. Для шопсов я&nbsp;выбираю вещи, которые рекомендовала бы своим подругам как стилист: лучше всего у меня зашла публикация с базовым универсальным пальто. </p> <p> С шопсами ты сам решаешь, когда и что рекламировать. Круто, что маркировка автоматическая и ссылка ведёт прямо на товар. Мой совет новичкам: просто попробуйте! </p>",
+				// 			},
+				// 			{
+				// 				"photo": "./img/review/img-6.png",
+				// 				"name": "Анастасия Крекова",
+				// 				"tags": [
+				// 					{
+				// 						"text": "заработала 162К ₽",
+				// 						"color": "blue"
+				// 					},
+				// 					{
+				// 						"text": "115К подписчиков",
+				// 						"color": "black"
+				// 					}
+				// 				],
+				// 				"text": "<p>Я&nbsp;выбирала товары для своей женской аудитории: средства для дома, косметику. Анализировала реакцию и&nbsp;меняла подход к&nbsp;публикациям. Самыми успешными стали видео <span class='blue-text'>с&nbsp;юмором и&nbsp;примерами из&nbsp;жизни</span>, где я&nbsp;не&nbsp;упоминала товар первые 10&nbsp;секунд. </p> <p> Лучше всего по&nbsp;продажам сработал простой клип с&nbsp;витаминным средством для лица <span class='blue-text'>ценой около 300&nbsp;рублей</span>. </p>",
+				// 			},
+				// 			{
+				// 				"photo": "./img/review/img-4.png",
+				// 				"name": "СЕНЯ В ДЕЛЕ",
+				// 				"tags": [
+				// 					{
+				// 						"text": "заработал 110К ₽",
+				// 						"color": "blue"
+				// 					},
+				// 					{
+				// 						"text": "526К подписчиков",
+				// 						"color": "black"
+				// 					}
+				// 				],
+				// 				"text": "<p>Я&nbsp;выбирал <span class='blue-text'>товары на&nbsp;кулинарную тематику</span> : чай, кофе, мини-принтер для заготовок, мёд, лимонад. Придерживался единой стратегии: <span class='blue-text'>интегрировал рекламу в&nbsp;видеорецепт</span>. Например, готовил кабачковую икру и&nbsp;показывал мини-принтер для заготовок в&nbsp;деле.</p><p>Ролики, которые набрали много просмотров, сгенерировали много продаж.</p>",
+				// 			},
+				// 			{
+				// 				"photo": "./img/review/img-3.png",
+				// 				"name": "Николай Трошин",
+				// 				"tags": [
+				// 					{
+				// 						"text": "заработал 65К ₽",
+				// 						"color": "blue"
+				// 					},
+				// 					{
+				// 						"text": "4,8К подписчиков",
+				// 						"color": "black"
+				// 					}
+				// 				],
+				// 				"text": "<p>Большинство подписчиков младше&nbsp;30, поэтому брал близкие им&nbsp;товары. <br> Мой контент состоит из&nbsp;видео, поэтому <span class='blue-text'>рекламу делал в&nbsp;клипах</span>. </p> <p> Публикаций было много, <span class='blue-text'>менял подход и&nbsp;подводки</span>: для кружки&nbsp;&mdash; про чаепитие, для одежды&nbsp;&mdash; про&nbsp;то, как собрать лук. </p> <p> Самый удачный клип&nbsp;&mdash; с&nbsp;рекламой кофейных зёрен: показал своё утро, как готовлю кофе: <span class='blue-text'>личная история всегда цепляет</span>.</p>",
+				// 			},
+				// 			{
+				// 				"photo": "./img/review/img-2.png",
+				// 				"name": "Kiwihealthy",
+				// 				"tags": [
+				// 					{
+				// 						"text": "заработала 60К ₽",
+				// 						"color": "blue"
+				// 					},
+				// 					{
+				// 						"text": "30К подписчиков",
+				// 						"color": "black"
+				// 					}
+				// 				],
+				// 				"text": "<p>Я&nbsp;веду сообщество о&nbsp;питании, поэтому брала товары по&nbsp;теме и&nbsp;пробовала другие. Лучше всего зашла реклама <span class='blue-text'>крабика для волос</span> : я&nbsp;выкупила его и&nbsp;сняла клип, где мы&nbsp;готовим с&nbsp;дочкой. Её&nbsp;волосы собрала крабиком и&nbsp;сделала на&nbsp;нём акцент. </p> <p> Дальше тоже старалась выкупать товары и&nbsp;внедрять в&nbsp;сюжет. Классно, что <span class='blue-text'>продажи идут спустя время после публикации</span>.</p>",
+				// 			},
+				// 			{
+				// 				"photo": "./img/review/img-1.png",
+				// 				"name": "Katya Klon",
+				// 				"tags": [
+				// 					{
+				// 						"text": "заработала 60К ₽",
+				// 						"color": "blue"
+				// 					},
+				// 					{
+				// 						"text": "275К подписчиков",
+				// 						"color": "black"
+				// 					}
+				// 				],
+				// 				"text": "<p>Когда выбирала товары для рекламы, опиралась на&nbsp;их&nbsp;практичность и&nbsp;актуальность для моего блога. Аудитория хорошо приняла и&nbsp;посты, и&nbsp;клипы, но&nbsp;мне <span class='blue-text'>проще включать рекламу в&nbsp;скетчи</span>&nbsp;&mdash; короткие юмористические сценки на&nbsp;актуальные темы. </p> <p> Это самый популярный формат у&nbsp;подписчиков: именно клипы-скетчи набрали больше всего просмотров&nbsp;&mdash; <span class='blue-text'>и&nbsp;с&nbsp;них случились продажи.</span></p>",
+				// 			},
+				// 			// {
+				// 			// 	"photo": "./img/review/img-5.png",
+				// 			// 	"name": "Беречь речь",
+				// 			// 	"tags": [
+				// 			// 		{
+				// 			// 			"text": "120К подписчиков",
+				// 			// 			"color": "black"
+				// 			// 		}
+				// 			// 	],
+				// 			// 	"text": "<p>Мой блог&nbsp;&mdash; о&nbsp;русском языке: думала, будет сложно интегрировать товары. </p> <p> Оказалось, женская аудитория готова воспринимать рекламу со&nbsp;знакомыми вещами: <span class='blue-text'>чаще всего покупали одежду</span>. Для выбора следующего продукта я&nbsp;анализировала отклик, репосты, переходы и&nbsp;покупки, а&nbsp;лучшая реакция была на&nbsp;<span class='blue-text'>клип с&nbsp;неожиданной концовкой</span>. </p>",
+				// 			// },
+				// 		]
+				// 	}
+				// },
 				// {
 				// 	"block_slug": "case_preview",
 				// 	"block_state": {
@@ -2044,50 +2081,50 @@ const defaultState = {
 				// 		"btn_text": "Подробнее",
 				// 	}
 				// },
-				{
-					"block_slug": "cases_slider",
-					"block_state": {
-						"title": "взгляните на&nbsp;шопсы в&nbsp;деле",
-						"gallery": [
-							{
-								"video": "./video/clips/8.mp4",
-								"poster": "./img/cases-slider/img-8.png",
-							},
-							{
-								"video": "./video/clips/6.mp4",
-								"poster": "./img/cases-slider/img-6.png",
-							},
-							{
-								"video": "./video/clips/7.mp4",
-								"poster": "./img/cases-slider/img-7.png",
-							},
-							{
-								"video": "./video/clips/1.mp4",
-								"poster": "./img/cases-slider/img-1.png",
-							},
-							{
-								"video": "./video/clips/2.mp4",
-								"poster": "./img/cases-slider/img-2.png",
-							},
-							{
-								"video": "./video/clips/3.mp4",
-								"poster": "./img/cases-slider/img-3.png",
-							},
-							{
-								"video": "./video/clips/4.mp4",
-								"poster": "./img/cases-slider/img-4.png",
-							},
-							{
-								"video": "./video/clips/5.mp4",
-								"poster": "./img/cases-slider/img-5.png",
-							},
-							{
-								"video": "./video/clips/9.mp4",
-								"poster": "./img/cases-slider/img-9.png",
-							},
-						],
-					}
-				},
+				// {
+				// 	"block_slug": "cases_slider",
+				// 	"block_state": {
+				// 		"title": "взгляните на&nbsp;шопсы в&nbsp;деле",
+				// 		"gallery": [
+				// 			{
+				// 				"video": "./video/clips/8.mp4",
+				// 				"poster": "./img/cases-slider/img-8.png",
+				// 			},
+				// 			{
+				// 				"video": "./video/clips/6.mp4",
+				// 				"poster": "./img/cases-slider/img-6.png",
+				// 			},
+				// 			{
+				// 				"video": "./video/clips/7.mp4",
+				// 				"poster": "./img/cases-slider/img-7.png",
+				// 			},
+				// 			{
+				// 				"video": "./video/clips/1.mp4",
+				// 				"poster": "./img/cases-slider/img-1.png",
+				// 			},
+				// 			{
+				// 				"video": "./video/clips/2.mp4",
+				// 				"poster": "./img/cases-slider/img-2.png",
+				// 			},
+				// 			{
+				// 				"video": "./video/clips/3.mp4",
+				// 				"poster": "./img/cases-slider/img-3.png",
+				// 			},
+				// 			{
+				// 				"video": "./video/clips/4.mp4",
+				// 				"poster": "./img/cases-slider/img-4.png",
+				// 			},
+				// 			{
+				// 				"video": "./video/clips/5.mp4",
+				// 				"poster": "./img/cases-slider/img-5.png",
+				// 			},
+				// 			{
+				// 				"video": "./video/clips/9.mp4",
+				// 				"poster": "./img/cases-slider/img-9.png",
+				// 			},
+				// 		],
+				// 	}
+				// },
 
 				{
 					"block_slug": "money",

@@ -33,6 +33,7 @@ import Review from 'components/Review/Review';
 import Timer from 'components/Timer/Timer';
 import Iframe from 'components/Iframe/Iframe';
 import ShopsEntrance from 'components/ShopsEntrance/ShopsEntrance';
+import ShopsAdvantages from 'components/ShopsAdvantages/ShopsAdvantages';
 
 export default function AllBlocks({ pageState }) {
 	const dispatch = useDispatch();
@@ -112,6 +113,8 @@ export default function AllBlocks({ pageState }) {
 						return <Iframe key={i} block_state={block.block_state} />;
 					case 'shops_entrance':
 						return <ShopsEntrance key={i} block_state={block.block_state} />;
+					case 'shops_advantages':
+						return <ShopsAdvantages key={i} block_state={block.block_state} />;
 					default:
 						return null;
 				}

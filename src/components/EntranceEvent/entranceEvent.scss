@@ -1,4 +1,9 @@
 .entrance-event {
+	&__title {
+		font-size: 94px;
+		line-height: 110%;
+		font-weight: 600;
+	}
 	&__wrapper {
 		gap: 30px;
 		padding-top: 80px;
@@ -9,21 +14,21 @@
 		min-height: 550px;
 	}
 	&__desc {
-		margin-top: 44px;
+		margin-top: 110px;
 		width: 100%;
-		max-width: 500px;
+		// max-width: 500px;
 		margin-bottom: 30px;
 	}
 	&__body {
 		display: flex;
 		flex-direction: column;
 		height: 100%;
-		width: 610px;
-		max-width: 50%;
+		width: 100%;
+		max-width: 660px;
+		// max-width: 50%;
 	}
 	&__bottom {
-		margin-top: 180px;
-		margin-top: auto;
+		margin-top: 30px;
 	}
 	&__label {
 		margin-top: 32px;

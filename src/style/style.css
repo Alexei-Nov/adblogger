@@ -108,6 +108,11 @@ body {
   line-height: 110%;
 }
 
+.text-30 {
+  font-size: 30px;
+  line-height: 120%;
+}
+
 .text-28 {
   font-size: 28px;
   line-height: 120%;
