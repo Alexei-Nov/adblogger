@@ -71,8 +71,8 @@
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: left center;
-     object-position: left center;
+  -o-object-position: left top;
+     object-position: left top;
 }
 
 .entrance-event_video .entrance-event__media {

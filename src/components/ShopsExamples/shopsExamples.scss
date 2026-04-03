@@ -209,6 +209,18 @@
 	}
 }
 
+@media screen and (min-width: 1300px) {
+	.shops-examples {
+		&__wrapper {
+			transform-origin: top center;
+			transform: scale(0.8);
+		}
+		&__btn {
+			margin-top: -160px;
+		}
+	}
+}
+
 @media screen and (max-width: 1200px) {
 	.shops-examples {
 		&__btn {
