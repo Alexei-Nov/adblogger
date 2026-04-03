@@ -18,26 +18,47 @@ export default function EntranceEvent({ block_state }) {
 				scrub: false,
 				markers: false,
 				pin: false,
-			}
+			},
+			repeat: -1,
+			repeatDelay: 2,
 		});
 
 
 		tl.fromTo(itemsArr[0], {
 			opacity: 1,
+			duration: 0.3,
 			delay: 1,
 		}, {
 			opacity: 0,
+			duration: 0.3,
 			delay: 1,
 		}, 0);
 		tl.fromTo(itemsArr[1], {
 			opacity: 0,
 			xPercent: 50,
-			delay: 1.5,
+			delay: 1,
 		}, {
 			opacity: 1,
 			xPercent: 0,
-			delay: 1.5,
+			delay: 1,
 		}, 0);
+
+		tl.set(itemsArr[0], {
+			xPercent: 50,
+			delay: 1.5,
+			duration: 0,
+		}, 1);
+
+		tl.to(itemsArr[1], {
+			opacity: 0,
+			duration: 0.3,
+			delay: 2,
+		}, 2);
+		tl.to(itemsArr[0], {
+			opacity: 1,
+			xPercent: 0,
+			delay: 3,
+		}, 2);
 	})
 
 	return (
