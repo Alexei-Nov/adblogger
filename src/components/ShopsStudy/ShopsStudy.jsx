@@ -4,7 +4,7 @@ import './shopsStudy.css'
 export default function ShopsStudy({ block_state }) {
 	return (
 		<>
-			<section className="shops-study">
+			<section className="section shops-study" id="shops-study">
 				<div className="container">
 					<div className="shops-study__wrapper">
 						<div className="shops-study__title text-40 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>

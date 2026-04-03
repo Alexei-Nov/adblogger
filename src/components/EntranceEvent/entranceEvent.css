@@ -1,7 +1,9 @@
 .entrance-event__title {
+  font-family: "VK Sans Display Condensed";
   font-size: 94px;
   line-height: 110%;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .entrance-event__wrapper {
@@ -11,7 +13,7 @@
 }
 
 .entrance-event__desc {
-  margin-top: 110px;
+  margin-top: 60px;
   width: 100%;
 }
 
@@ -47,8 +49,10 @@
   display: flex;
   position: absolute;
   left: 50%;
-  width: 70%;
-  height: calc(100% + 110px);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: calc(100% + 80px);
   top: 0;
   z-index: -1;
 }

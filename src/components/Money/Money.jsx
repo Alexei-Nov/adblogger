@@ -33,7 +33,7 @@ export default function Money({ block_state }) {
 						<h2 className="money__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></h2>
 						<a
 							href={block_state.btn_link}
-							className={"money__btn btn btn_border " + (window.location.pathname == '/shops' ? 'btn_rounded' : '')}
+							className={"money__btn btn btn_border " + (window.location.pathname == '/shops' ? 'btn_rounded text-24' : '')}
 							onClick={() => {
 								handleTracking('registration_other')
 								handleTracking('registration_all')

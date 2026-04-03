@@ -139,3 +139,76 @@
 	font-weight: 700;
 	font-style: italic;
 }
+
+
+
+
+@font-face {
+	font-family: "VK Sans Display Condensed";
+	src: url("../fonts/VK Sans Display Condensed/VK\ Sans\ Display\ Condensed\ Light.ttf");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "VK Sans Display Condensed";
+	src: url("../fonts/VK Sans Display Condensed/VK\ Sans\ Display\ Condensed\ Light\ Italic.ttf");
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "VK Sans Display Condensed";
+	src: url("../fonts/VK Sans Display Condensed/VK\ Sans\ Display\ Condensed\ Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "VK Sans Display Condensed";
+	src: url("../fonts/VK Sans Display Condensed/VK\ Sans\ Display\ Condensed\ Italic.ttf");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "VK Sans Display Condensed";
+	src: url("../fonts/VK Sans Display Condensed/VK\ Sans\ Display\ Condensed\ Medium.ttf");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "VK Sans Display Condensed";
+	src: url("../fonts/VK Sans Display Condensed/VK\ Sans\ Display\ Condensed\ Medium\ Italic.ttf");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "VK Sans Display Condensed";
+	src: url("../fonts/VK Sans Display Condensed/VK\ Sans\ Display\ Condensed\ DemiBold.ttf");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "VK Sans Display Condensed";
+	src: url("../fonts/VK Sans Display Condensed/VK\ Sans\ Display\ Condensed\ DemiBold\ Italic.ttf");
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "VK Sans Display Condensed";
+	src: url("../fonts/VK Sans Display Condensed/VK\ Sans\ Display\ Condensed\ Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "VK Sans Display Condensed";
+	src: url("../fonts/VK Sans Display Condensed/VK\ Sans\ Display\ Condensed\ Bold\ Italic.ttf");
+	font-weight: 700;
+	font-style: italic;
+}

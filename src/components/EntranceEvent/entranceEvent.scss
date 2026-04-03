@@ -1,9 +1,10 @@
 .entrance-event {
 	&__title {
-		// font-family: "VK Sans Display Expanded";
+		font-family: "VK Sans Display Condensed";
 		font-size: 94px;
 		line-height: 110%;
 		font-weight: 600;
+		text-transform: uppercase;
 	}
 	&__wrapper {
 		gap: 30px;
@@ -11,7 +12,8 @@
 		z-index: 1;
 	}
 	&__desc {
-		margin-top: 110px;
+		// margin-top: 110px;
+		margin-top: 60px;
 		width: 100%;
 	}
 	&__body {
@@ -35,8 +37,9 @@
 		display: flex;
 		position: absolute;
 		left: 50%;
-		width: 70%;
-		height: calc(100% + 110px);
+		width: fit-content;
+		// height: calc(100% + 110px);
+		height: calc(100% + 80px);
 		top: 0;
 		// pointer-events: none;
 		z-index: -1;

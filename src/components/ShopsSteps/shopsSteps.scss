@@ -93,6 +93,10 @@
 	}
 	&__arrow {
 		display: none;
+
+		& svg {
+			transform: scaleY(-1);
+		}
 	}
 }
 
@@ -104,17 +108,35 @@
 		}
 		&__body {
 			max-width: none;
+
+			&_hide {
+				& .shops-steps {
+					&__body-panel {
+						max-height: 0;
+					}
+					&__arrow {
+						transform: rotate(180deg);
+					}
+				}
+			}
 		}
 		&__subtitle {
 			display: flex;
 			gap: 10px;
 			justify-content: space-between;
+			align-items: center;
 		}
 		&__arrow {
 			display: flex;
+			transition: all ease 0.5s;
 		}
 		&__list-title {
 			margin-top: 18px;
+		}
+		&__body-panel {
+			overflow: hidden;
+			transition: all ease 0.5s;
+			max-height: 240px;
 		}
 	}
 }

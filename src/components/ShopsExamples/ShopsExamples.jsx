@@ -109,7 +109,7 @@ export default function ShopsExamples({ block_state }) {
 							<img src="/img/shops-examples/bg.png" alt="img" />
 						</div>
 					</div>
-					<a href={block_state.btn_link} className="shops-examples__btn btn btn_border btn_rounded btn_big text-24 fw-500">{block_state.btn_text}</a>
+					<a href="#shops-study" className="shops-examples__btn btn btn_border btn_rounded btn_big text-24 fw-500">{block_state.btn_text}</a>
 				</div>
 			</section>
 		</>
