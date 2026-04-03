@@ -1371,7 +1371,7 @@ const defaultState = {
 				{
 					"block_slug": "entrance_event",
 					"block_state": {
-						"title": "<span>зарабатывайте</span> <span>на&nbsp;<span style='color:#00D3E6;'>публикациях</span></span> <div style='color:#00D3E6; text-align:center;'>с&nbsp;товарами</div>",
+						"title": "зарабатывайте <br> на",
 						"desc": "доступно профилям <br> и&nbsp;сообществам <span style='color:#00D3E6;'>от&nbsp;100&nbsp;подписчиков</span> ",
 						"btn_text": "Начать зарабатывать",
 						"btn_link": "/app",

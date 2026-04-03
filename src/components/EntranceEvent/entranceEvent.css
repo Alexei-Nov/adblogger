@@ -1,9 +1,71 @@
-.entrance-event__title {
+@-webkit-keyframes lineAnim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes lineAnim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.entrance-event__title-animated-text {
   font-family: "VK Sans Display Condensed";
   font-size: 94px;
   line-height: 110%;
   font-weight: 600;
   text-transform: uppercase;
+  position: relative;
+}
+
+.entrance-event__title-animated-text svg {
+  position: absolute;
+  top: calc(100% - 4px);
+  left: 0;
+}
+
+.entrance-event__title-animated-text svg path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: lineAnim 1s linear 2.3s forwards;
+          animation: lineAnim 1s linear 2.3s forwards;
+}
+
+.entrance-event__title-main {
+  font-family: "VK Sans Display Condensed";
+  font-size: 94px;
+  line-height: 110%;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.entrance-event__title-animated {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #00d3e6;
+  margin-left: 105px;
+  margin-top: -104px;
+  position: relative;
+  z-index: 1;
+}
+
+.entrance-event__title-animated-item:nth-child(2) {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+.entrance-event__title-animated-label {
+  margin-left: 110px;
+  max-width: 392px;
+  margin-top: 18px;
 }
 
 .entrance-event__wrapper {
@@ -132,10 +194,30 @@
 
 @media screen and (max-width: 768px) {
   .entrance-event__title {
-    font-size: 45px;
-    line-height: 110%;
     width: 100%;
     max-width: 360px;
+  }
+  .entrance-event__title-main {
+    font-size: 45px;
+    line-height: 110%;
+  }
+  .entrance-event__title-animated-text {
+    font-size: 45px;
+    line-height: 110%;
+  }
+  .entrance-event__title-animated-text svg {
+    width: 166px;
+    height: 12px;
+  }
+  .entrance-event__title-animated-label {
+    font-size: 12px;
+    line-height: 120%;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  .entrance-event__title-animated {
+    margin-top: -49px;
+    margin-left: 53px;
   }
 }
 

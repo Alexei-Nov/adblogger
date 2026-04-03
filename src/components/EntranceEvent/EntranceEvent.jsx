@@ -1,14 +1,73 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './entranceEvent.css'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { handleTracking } from 'utils/tracking'
 
 export default function EntranceEvent({ block_state }) {
+	let wrapper = useRef();
+
+	useEffect(() => {
+		let itemsArr = gsap.utils.selector(wrapper)('.entrance-event__title-animated-item')
+
+		let tl = gsap.timeline({
+			scrollTrigger: {
+				trigger: wrapper.current,
+				start: "top bottom",
+				end: "top top",
+				scrub: false,
+				markers: false,
+				pin: false,
+			}
+		});
+
+
+		tl.fromTo(itemsArr[0], {
+			opacity: 1,
+			delay: 1,
+		}, {
+			opacity: 0,
+			delay: 1,
+		}, 0);
+		tl.fromTo(itemsArr[1], {
+			opacity: 0,
+			xPercent: 50,
+			delay: 1.5,
+		}, {
+			opacity: 1,
+			xPercent: 0,
+			delay: 1.5,
+		}, 0);
+	})
+
 	return (
-		<section className='section entrance-event'>
+		<section className='section entrance-event' ref={wrapper}>
 			<div className="container">
 				<div className="entrance-event__wrapper">
 					<div className="entrance-event__body">
-						<div className="entrance-event__title" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+						<div className="entrance-event__title">
+							<div className="entrance-event__title-main" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+							<div className="entrance-event__title-animated">
+								<div className="entrance-event__title-animated-item">
+									<div className="entrance-event__title-animated-text">
+										публикациях <br />
+										с&nbsp;товарами
+									</div>
+								</div>
+								<div className="entrance-event__title-animated-item">
+									<div className="entrance-event__title-animated-text">
+										шопсах
+
+										<svg width="337" height="24" viewBox="0 0 337 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.275135 21.6066C95.5981 8.38952 263.842 3.02829 336.048 1.9998" stroke="#00D3E6" strokeWidth="4" />
+										</svg>
+									</div>
+									<div className="entrance-event__title-animated-label text-20 fw-500">
+										новый формат контента с товарами ВКонтакте, который приносит деньги
+									</div>
+								</div>
+							</div>
+						</div>
 
 						{/* <div className="entrance-event__media">
 							<video src={block_state.media} autoPlay muted playsInline loop></video>

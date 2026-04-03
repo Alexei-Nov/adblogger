@@ -1,10 +1,60 @@
+@keyframes lineAnim {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
 .entrance-event {
-	&__title {
+	&__title-animated-text {
 		font-family: "VK Sans Display Condensed";
 		font-size: 94px;
 		line-height: 110%;
 		font-weight: 600;
 		text-transform: uppercase;
+		position: relative;
+
+		& svg {
+			position: absolute;
+			top: calc(100% - 4px);
+			left: 0;
+
+			& path {
+				stroke-dasharray: 1000;
+				stroke-dashoffset: 1000;
+				animation: lineAnim 1s linear 2.3s forwards;
+			}
+		}
+	}
+	&__title-main {
+		font-family: "VK Sans Display Condensed";
+		font-size: 94px;
+		line-height: 110%;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	&__title-animated {
+		display: flex;
+		flex-direction: column;
+		color: #00d3e6;
+		margin-left: 105px;
+		margin-top: -104px;
+		position: relative;
+		z-index: 1;
+	}
+	&__title-animated-item {
+		// transition: all ease 0.5s;
+
+		&:nth-child(2) {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			opacity: 0;
+		}
+	}
+	&__title-animated-label {
+		margin-left: 110px;
+		max-width: 392px;
+		margin-top: 18px;
 	}
 	&__wrapper {
 		gap: 30px;
@@ -122,10 +172,31 @@
 @media screen and (max-width: 768px) {
 	.entrance-event {
 		&__title {
-			font-size: 45px;
-			line-height: 110%;
 			width: 100%;
 			max-width: 360px;
+		}
+		&__title-main {
+			font-size: 45px;
+			line-height: 110%;
+		}
+		&__title-animated-text {
+			font-size: 45px;
+			line-height: 110%;
+
+			& svg {
+				width: 166px;
+				height: 12px;
+			}
+		}
+		&__title-animated-label {
+			font-size: 12px;
+			line-height: 120%;
+			margin-left: 50px;
+			margin-top: 10px;
+		}
+		&__title-animated {
+			margin-top: -49px;
+			margin-left: 53px;
 		}
 	}
 }
