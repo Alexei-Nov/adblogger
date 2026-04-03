@@ -86,13 +86,15 @@
 	&__media {
 		display: flex;
 		position: absolute;
-		left: 50%;
+		left: 53%;
 		width: fit-content;
+		width: 100%;
 		// height: calc(100% + 110px);
 		height: calc(100% + 80px);
 		top: 0;
 		// pointer-events: none;
 		z-index: -1;
+		margin-right: -60px;
 
 		& video {
 			width: 100%;

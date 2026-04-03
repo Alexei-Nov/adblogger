@@ -46,7 +46,7 @@ export default function ShopsExamples({ block_state }) {
 								return (
 									<SwiperSlide key={i} className="shops-examples__slide">
 										<div className="shops-examples__video">
-											<video src={slide.video} controls playsInline preload="none" poster={slide.video_preview}></video>
+											<video src={slide.video} controls muted={true} playsInline preload="none" poster={slide.video_preview}></video>
 										</div>
 										<div className="shops-examples__author">
 											<div className="shops-examples__author-top">
