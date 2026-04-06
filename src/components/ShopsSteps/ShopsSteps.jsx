@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './shopsSteps.css'
+import { handleTracking } from 'utils/tracking'
 
 export default function ShopsSteps({ block_state }) {
 
@@ -59,7 +60,10 @@ export default function ShopsSteps({ block_state }) {
 							})}
 						</div>
 					</div>
-					<a href={block_state.btn_link} className="shops-steps__btn btn btn_big btn_rounded btn_border text-24 fw-500">{block_state.btn_text}</a>
+					<a href={block_state.btn_link}
+						className="shops-steps__btn btn btn_big btn_rounded btn_border text-24 fw-500"
+						onClick={() => handleTracking('registration_all')}
+					>{block_state.btn_text}</a>
 				</div>
 			</section>
 		</>

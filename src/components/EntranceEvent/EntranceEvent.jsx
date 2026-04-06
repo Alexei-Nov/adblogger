@@ -103,7 +103,7 @@ export default function EntranceEvent({ block_state }) {
 						<div className="entrance-event__bottom">
 							<a href={block_state.btn_link}
 								className="entrance-event__btn btn btn_big btn_rounded btn_border text-26 fw-500"
-								onClick={() => handleTracking('launch_advertising_black_friday_*')}
+								onClick={() => handleTracking('registration_all')}
 							>{block_state.btn_text}</a>
 							{/* <div className="entrance-event__label text-17" dangerouslySetInnerHTML={{ __html: block_state.label }}></div> */}
 						</div>
