@@ -44,6 +44,7 @@ export default function ShopsExamples({ block_state }) {
 
 								if (prevSlideVideo.currentTime > 0 && !prevSlideVideo.paused && !prevSlideVideo.ended) {
 									prevSlideVideo.pause()
+									prevSlideVideo.currentTime = 0
 								}
 								currentSlideVideo.play()
 							}}
@@ -52,7 +53,14 @@ export default function ShopsExamples({ block_state }) {
 								return (
 									<SwiperSlide key={i} className="shops-examples__slide">
 										<div className="shops-examples__video">
-											<video src={slide.video} controls muted={true} playsInline preload="none" poster={slide.video_preview}></video>
+											<video
+												src={slide.video}
+												controls muted={true}
+												playsInline
+												preload="none"
+												poster={slide.video_preview}
+												onEnded={() => { mainSlider.slideNext() }}
+											></video>
 										</div>
 									</SwiperSlide>
 								)
