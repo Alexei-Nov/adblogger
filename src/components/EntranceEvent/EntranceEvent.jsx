@@ -9,6 +9,7 @@ export default function EntranceEvent({ block_state }) {
 
 	useEffect(() => {
 		let itemsArr = gsap.utils.selector(wrapper)('.entrance-event__title-animated-item')
+		let line = gsap.utils.selector(wrapper)('.entrance-event__title-animated-line')
 
 		let tl = gsap.timeline({
 			scrollTrigger: {
@@ -20,7 +21,7 @@ export default function EntranceEvent({ block_state }) {
 				pin: false,
 			},
 			repeat: -1,
-			repeatDelay: 2,
+			repeatDelay: 2.8,
 		});
 
 
@@ -42,6 +43,14 @@ export default function EntranceEvent({ block_state }) {
 			xPercent: 0,
 			delay: 1,
 		}, 0);
+		tl.fromTo(line, {
+			width: 0,
+			delay: 1.3,
+		}, {
+			width: '100%',
+			duration: 0.5,
+			delay: 1.3,
+		}, 0);
 
 		tl.set(itemsArr[0], {
 			xPercent: 50,
@@ -57,7 +66,7 @@ export default function EntranceEvent({ block_state }) {
 		tl.to(itemsArr[0], {
 			opacity: 1,
 			xPercent: 0,
-			delay: 3,
+			delay: 2.3,
 		}, 2);
 	})
 
@@ -78,10 +87,11 @@ export default function EntranceEvent({ block_state }) {
 								<div className="entrance-event__title-animated-item">
 									<div className="entrance-event__title-animated-text">
 										шопсах
-
-										<svg width="337" height="24" viewBox="0 0 337 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M0.275135 21.6066C95.5981 8.38952 263.842 3.02829 336.048 1.9998" stroke="#00D3E6" strokeWidth="4" />
-										</svg>
+										<div className="entrance-event__title-animated-line">
+											<svg width="337" height="24" viewBox="0 0 337 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.275135 21.6066C95.5981 8.38952 263.842 3.02829 336.048 1.9998" stroke="#00D3E6" strokeWidth="4" />
+											</svg>
+										</div>
 									</div>
 									<div className="entrance-event__title-animated-label text-20 fw-500">
 										новый формат контента с товарами ВКонтакте, который приносит деньги
