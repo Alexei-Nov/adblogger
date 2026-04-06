@@ -23,7 +23,7 @@ export default function ShopsSteps({ block_state }) {
 							</div>
 							<div className="shops-steps__body-panel">
 								<div className="shops-steps__list-title text-24 fw-500" dangerouslySetInnerHTML={{ __html: block_state.list_title }}></div>
-								<div className="shops-steps__list text-18 fw-500">
+								<div className="shops-steps__list text-18">
 									{block_state.items_list.map((item, index) => {
 										return (
 											<div className="shops-steps__list-item" key={index} >
@@ -52,7 +52,7 @@ export default function ShopsSteps({ block_state }) {
 											<img src={card.img} alt="img" />
 										</picture>
 										<div className="shops-steps__card-body">
-											<div className="shops-steps__card-name text-24 fw-600" dangerouslySetInnerHTML={{ __html: card.name }}></div>
+											<div className="shops-steps__card-name text-24 fw-500" dangerouslySetInnerHTML={{ __html: card.name }}></div>
 											<div className="shops-steps__card-desc text-18" dangerouslySetInnerHTML={{ __html: card.desc }}></div>
 										</div>
 									</div>

@@ -2295,7 +2295,7 @@ const defaultState = {
 					"block_state": {
 						"title": "пора пробовать&nbsp;— <br>и&nbsp;получать деньги",
 						"has_border": "false",
-						"btn_text": "начать зарабатывать",
+						"btn_text": "Начать зарабатывать",
 						"btn_link": "/app"
 					}
 				},

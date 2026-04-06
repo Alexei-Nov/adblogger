@@ -109,6 +109,10 @@
 			object-position: left top;
 		}
 	}
+	&__btn {
+		width: 100%;
+		max-width: 350px;
+	}
 
 	&_video {
 		& .entrance-event {

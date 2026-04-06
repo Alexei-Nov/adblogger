@@ -99,7 +99,7 @@ export default function EntranceEvent({ block_state }) {
 							<img src={block_state.media} alt="img" />
 						</picture>
 
-						<div className="entrance-event__desc text-30 fw-500" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
+						<div className="entrance-event__desc text-30" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
 						<div className="entrance-event__bottom">
 							<a href={block_state.btn_link}
 								className="entrance-event__btn btn btn_big btn_rounded btn_border text-26 fw-500"

@@ -3,6 +3,11 @@
   font-family: "VK Sans Display Expanded";
 }
 
+.shops-examples__btn {
+  width: 100%;
+  max-width: 350px;
+}
+
 .shops-examples__video {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -13,7 +13,7 @@ export default function ShopsStudy({ block_state }) {
 								return (
 									<div className="shops-study__item" key={index}>
 										{item.tag &&
-											<div className="shops-study__item-tag text-20 fw-700">{item.tag}</div>
+											<div className="shops-study__item-tag text-20 fw-500">{item.tag}</div>
 										}
 										<div className="shops-study__item-name text-32 fw-600" dangerouslySetInnerHTML={{ __html: item.name }}></div>
 										<div className="shops-study__item-desc text-20" dangerouslySetInnerHTML={{ __html: item.desc }}></div>
