@@ -1398,7 +1398,7 @@ const defaultState = {
 								"icon": './img/shops-advantages/icon-3.svg',
 							},
 							{
-								"name": 'Доход до&nbsp;50% с&nbsp;продажи',
+								"name": 'Доход до&nbsp;50% <br> с&nbsp;продажи',
 								"icon": './img/shops-advantages/icon-2.svg',
 							},
 							{

@@ -272,18 +272,21 @@
     line-height: 110%;
   }
   .shops-steps__card-desc {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 120%;
     max-width: 135px;
   }
   .shops-steps__card-body {
     padding: 20px;
+    width: 100%;
+    min-width: 210px;
+    max-width: 210px;
+    gap: 10px;
   }
   .shops-steps__cards-list {
     gap: 10px;
   }
   .shops-steps__card-img {
-    max-width: 135px;
     margin-left: -20px;
     margin-bottom: 0px;
   }
@@ -291,15 +294,15 @@
     padding: 18px;
   }
   .shops-steps__subtitle {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 110%;
   }
   .shops-steps__list-title {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 120%;
   }
   .shops-steps__list {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 140%;
     gap: 12px;
   }
