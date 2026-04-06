@@ -17,7 +17,7 @@ export default function ShopsStudy({ block_state }) {
 										}
 										<div className="shops-study__item-name text-32 fw-600" dangerouslySetInnerHTML={{ __html: item.name }}></div>
 										<div className="shops-study__item-desc text-20" dangerouslySetInnerHTML={{ __html: item.desc }}></div>
-										<a href={item.btn_link} className="shops-study__item-btn btn btn_rounded btn_blue text-24 fw-500">{item.btn_text}</a>
+										<a href={item.btn_link} className="shops-study__item-btn btn btn_rounded btn_blue text-24 fw-500" target='_blank'>{item.btn_text}</a>
 										{item.img &&
 											<div className="shops-study__item-img">
 												<img src={item.img} alt="img" />

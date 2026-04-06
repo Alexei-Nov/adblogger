@@ -1544,9 +1544,9 @@ const defaultState = {
 						"items_list": [
 							{
 								"name": 'База знаний для&nbsp;авторов',
-								"desc": 'Подключите профиль или&nbsp;сообщество и укажите реквизиты',
+								"desc": '',
 								"btn_text": 'Перейти',
-								"btn_link": '/app',
+								"btn_link": 'https://vk.com/vk_authors/shops/?utm_source=vkadblogger_shops&utm_medium=card',
 								"tag": '',
 								"img": './img/shops-study/img.png',
 							},
