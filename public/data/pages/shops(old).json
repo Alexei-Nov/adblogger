@@ -1,0 +1,1121 @@
+{
+	"page_slug": "shops",
+	"page_title": "Шопсы",
+	"blocks": [
+		{
+			"block_slug": "preloader",
+			"block_state": {}
+		},
+		{
+			"block_slug": "entrance_event",
+			"block_state": {
+				"title": "зарабатывайте <br> на",
+				"desc": "доступно профилям <br> и&nbsp;сообществам <span style='color:#00D3E6;'>от&nbsp;100&nbsp;подписчиков</span> ",
+				"btn_text": "Начать зарабатывать",
+				"btn_link": "/app",
+				"label": "",
+				"media": "/img/entrance-event/img.png",
+				"media_mob": "/img/entrance-event/img_mob.png"
+			}
+		},
+		{
+			"block_slug": "shops_advantages",
+			"block_state": {
+				"items_list": [
+					{
+						"name": 'Простая <br> регистрация',
+						"icon": './img/shops-advantages/icon-1.svg',
+					},
+					{
+						"name": 'Бесплатные товары для&nbsp;обзоров',
+						"icon": './img/shops-advantages/icon-4.svg',
+					},
+					{
+						"name": 'Автоматическая <br> маркировка рекламы',
+						"icon": './img/shops-advantages/icon-3.svg',
+					},
+					{
+						"name": 'Доход до&nbsp;50% <br> с&nbsp;продажи',
+						"icon": './img/shops-advantages/icon-2.svg',
+					},
+					{
+						"name": 'Каталог товаров Ozon под&nbsp;любой блог',
+						"icon": './img/shops-advantages/icon-5.svg',
+					},
+				],
+			}
+		},
+		{
+			"block_slug": "shops_examples",
+			"block_state": {
+				"title": 'Смотрите примеры тех, <br class="br-desktop"> кто&nbsp;уже заработал на&nbsp;шопсах',
+				"btn_text": 'Хочу научиться так же',
+				"btn_link": '/app',
+				"cards_list": [
+					{
+						"name": 'У бабы Даши',
+						"subscribers": '68К подписчиков',
+						"label": 'заработала <br> на&nbsp;этом шопсе',
+						"money": '1&nbsp;500&nbsp;000&nbsp;₽',
+						"photo": './img/shops-examples/photo-1.png',
+						"video": './video/shops-examples/1.mp4',
+						"video_preview": './img/shops-examples/preview-1.png',
+						"product_name": 'Тушь для&nbsp;ресниц',
+						"product_price": '518&nbsp;₽',
+						"product_img": './img/shops-examples/product-1.png',
+						"product_link": '/app',
+					},
+					{
+						"name": 'ВГ | СуперБатя',
+						"subscribers": '29К подписчиков',
+						"label": 'заработал <br> на&nbsp;этом шопсе',
+						"money": '1&nbsp;500&nbsp;000&nbsp;₽',
+						"photo": './img/shops-examples/photo-2.png',
+						"video": './video/shops-examples/2.mp4',
+						"video_preview": './img/shops-examples/preview-2.png',
+						"product_name": 'Воздуходувка',
+						"product_price": '2&nbsp;292&nbsp;₽',
+						"product_img": './img/shops-examples/product-2.png',
+						"product_link": '/app',
+					},
+					{
+						"name": 'Лена Князева',
+						"subscribers": '36К подписчиков',
+						"label": 'заработала <br> на&nbsp;этом шопсе',
+						"money": '700&nbsp;000&nbsp;₽',
+						"photo": './img/shops-examples/photo-3.png',
+						"video": './video/shops-examples/3.mp4',
+						"video_preview": './img/shops-examples/preview-3.png',
+						"product_name": 'Расчёска для&nbsp;волос',
+						"product_price": '754&nbsp;₽',
+						"product_img": './img/shops-examples/product-3.png',
+						"product_link": '/app',
+					},
+					{
+						"name": 'KAHOME_DESIGN',
+						"subscribers": '7,
+						6К подписчиков',
+						"label": 'заработала <br> на&nbsp;этом шопсе',
+						"money": '85&nbsp;000&nbsp;₽',
+						"photo": './img/shops-examples/photo-4.png',
+						"video": './video/shops-examples/4.mp4',
+						"video_preview": './img/shops-examples/preview-4.png',
+						"product_name": 'Кофе в&nbsp;зёрнах',
+						"product_price": '1&nbsp;514&nbsp;₽',
+						"product_img": './img/shops-examples/product-4.png',
+						"product_link": '/app',
+					},
+					{
+						"name": 'Кирилл Мультитул',
+						"subscribers": '27К подписчиков',
+						"label": 'заработал <br> на&nbsp;этом шопсе',
+						"money": '450&nbsp;000&nbsp;₽',
+						"photo": './img/shops-examples/photo-5.png',
+						"video": './video/shops-examples/5.mp4',
+						"video_preview": './img/shops-examples/preview-5.png',
+						"product_name": 'Фонарь-мультитул',
+						"product_price": '910&nbsp;₽',
+						"product_img": './img/shops-examples/product-5.png',
+						"product_link": '/app',
+					},
+					{
+						"name": 'Елена Юлкина',
+						"subscribers": '200К подписчиков',
+						"label": 'заработала <br> на&nbsp;этом шопсе',
+						"money": '384&nbsp;000&nbsp;₽',
+						"photo": './img/shops-examples/photo-6.png',
+						"video": './video/shops-examples/6.mp4',
+						"video_preview": './img/shops-examples/preview-6.png',
+						"product_name": 'Крем сыворотка',
+						"product_price": '2&nbsp;519&nbsp;₽',
+						"product_img": './img/shops-examples/product-6.png',
+						"product_link": '/app',
+					},
+				],
+			}
+		},
+		{
+			"block_slug": "shops_steps",
+			"block_state": {
+				"title": "Сделайте первый шаг <br class='br-desktop'> к&nbsp;доходам — зарегистрируйтесь",
+				"subtitle": "Кто может получать доход от шопсов?",
+				"list_title": "Налоговые резиденты РФ, у которых:",
+				"btn_text": "Начать зарабатывать",
+				"btn_link": "/app",
+				"items_list": [
+					{
+						"text": 'открытая страница — профиль или&nbsp;сообщество',
+					},
+					{
+						"text": 'есть хотя&nbsp;бы одна публикация за&nbsp;30&nbsp;дней',
+					},
+					{
+						"text": 'больше 100&nbsp;подписчиков',
+					},
+				],
+				"cards_list": [
+					{
+						"img": './img/shops-steps/img-1.png',
+						"img_mob": './img/shops-steps/img-1_mob.png',
+						"name": 'Зарегистрируйтесь как&nbsp;автор',
+						"desc": 'Подключите профиль или&nbsp;сообщество и укажите реквизиты',
+					},
+					{
+						"img": './img/shops-steps/img-2.png',
+						"img_mob": './img/shops-steps/img-2_mob.png',
+						"name": 'Публикуйте <br> шопсы',
+						"desc": 'Выбирайте товары и&nbsp;делайте контент со&nbsp;ссылкой на&nbsp;них',
+					},
+					{
+						"img": './img/shops-steps/img-3.png',
+						"img_mob": './img/shops-steps/img-3_mob.png',
+						"name": 'Зарабатывайте',
+						"desc": 'Получайте выплаты с&nbsp;продаж — ваш доход ничем не ограничен',
+					},
+				],
+			}
+		},
+		{
+			"block_slug": "shops_study",
+			"block_state": {
+				"title": "Для успешного старта — <br class='br-desktop'> бесплатное обучение",
+				"items_list": [
+					{
+						"name": 'База знаний для&nbsp;авторов',
+						"desc": '',
+						"btn_text": 'Перейти',
+						"btn_link": 'https: //vk.com/vk_authors/shops/?utm_source=vkadblogger_shops&utm_medium=card',
+						"tag": '',
+						"img": './img/shops-study/img.png',
+					},
+					{
+						"name": 'Курс для начинающих авторов',
+						"desc": 'Для тех, кто только на старте, но уже хочет превращать посты и клипы на своей странице в заработок. Расскажем, как начать с нуля',
+						"btn_text": 'К урокам',
+						"btn_link": 'https: //vk.me/club236230264?ref=vkadblogger_courses&ref_source=landing_shops_vhod',
+						"tag": 'Вход в доход',
+						"img": '',
+					},
+					{
+						"name": 'Курс для продвинутых авторов',
+						"desc": 'Для тех, кто уже разбирается в монетизации, но хочет зарабатывать больше. Углубимся в шопсы и секреты создания эффективной рекламы',
+						"btn_text": 'К урокам',
+						"btn_link": 'https: //vk.me/club236230264?ref=vkadblogger_courses&ref_source=landing_shops_cash',
+						"tag": 'Шопсы — в кэш',
+						"img": '',
+					},
+				],
+			}
+		},
+		// {
+		// 	"block_slug": "shops_entrance",
+		// 	"block_state": {
+		// 		"title": "<span class='blue-text'>шопсы-шопсы!</span>",
+		// 		"desc": "новый формат контента ВКонтакте, на&nbsp;котором сообщества и&nbsp;профили могут <span class='blue-text'>зарабатывать</span>",
+		// 		"btn_link": "/app",
+		// 		"btn_text": "Подключиться",
+		// 		"items_list": [
+		// 			{
+		// 				"icon": "./img/cards-slider/icon-2.svg",
+		// 				"name": "<span style='color: #00D3E6;'>Заработок с продаж </br> до 50% </span> от стоимости товара",
+		// 				"dropdownn_text": "<p>На&nbsp;старте доход за&nbsp;рекламу товара с&nbsp;Ozon состоит из&nbsp;процента от&nbsp;его продажи. В&nbsp;будущем условия выплат могут измениться</p>",
+		// 			},
+		// 			{
+		// 				"icon": "./img/cards-slider/icon-1.svg",
+		// 				"name": "<span style='color: #00D3E6;'>Автоматическая</span> </br> маркировка рекламы",
+		// 				"dropdownn_text": "",
+		// 			},
+		// 			{
+		// 				"icon": "./img/cards-slider/icon-4.svg",
+		// 				"name": "<span style='color: #00D3E6;'>Быстрое размещение</span></br> без&nbsp;согласований",
+		// 				"dropdownn_text": "",
+		// 			},
+		// 			{
+		// 				"icon": "./img/cards-slider/icon-3.svg",
+		// 				"name": "<span style='color: #00D3E6;'>Большой каталог</span></br> товаров Ozon",
+		// 				"desc": "",
+		// 				"dropdownn_text": "",
+		// 			},
+		// 		],
+		// 	}
+		// },
+		// {
+		// 	"block_slug": "cards_slider",
+		// 	"block_state": {
+		// 		"title": "<span class='blue-text'>шопсы-шопсы-шопсы!</span><br> новый формат контента ВКонтакте, на котором можно <span class='blue-text'>зарабатывать</span>",
+		// 		"btn_link": "/app",
+		// 		"btn_text": "Подключиться",
+		// 		"gallery": [
+		// 			{
+		// 				"img": "./img/cards-slider/img-1.png"
+		// 			},
+		// 			{
+		// 				"img": "./img/cards-slider/img-2.png"
+		// 			},
+		// 			{
+		// 				"img": "./img/cards-slider/img-3.png"
+		// 			},
+		// 			{
+		// 				"img": "./img/cards-slider/img-4.png"
+		// 			},
+		// 			{
+		// 				"img": "./img/cards-slider/img-6.png"
+		// 			},
+		// 			{
+		// 				"img": "./img/cards-slider/img-7.png"
+		// 			},
+		// 			{
+		// 				"img": "./img/cards-slider/img-8.png"
+		// 			},
+		// 		],
+		// 		"items_list": [
+		// 			{
+		// 				"icon": "./img/cards-slider/icon-1.svg",
+		// 				"name": "<span style='color: #00D3E6;'>Автоматическая</span> </br> маркировка рекламы",
+		// 				"dropdownn_text": "",
+		// 			},
+		// 			{
+		// 				"icon": "./img/cards-slider/icon-2.svg",
+		// 				"name": "<span style='color: #00D3E6;'>Заработок с продаж </br> до 50% </span> от стоимости товара",
+		// 				"dropdownn_text": "<p>На&nbsp;старте доход за&nbsp;рекламу товара с&nbsp;Ozon состоит из&nbsp;процента от&nbsp;его продажи. В&nbsp;будущем условия выплат могут измениться</p>",
+		// 			},
+		// 			{
+		// 				"icon": "./img/cards-slider/icon-3.svg",
+		// 				"name": "<span style='color: #00D3E6;'>Большой каталог</span></br> товаров Ozon",
+		// 				"desc": "",
+		// 				"dropdownn_text": "",
+		// 			},
+		// 			{
+		// 				"icon": "./img/cards-slider/icon-4.svg",
+		// 				"name": "<span style='color: #00D3E6;'>Быстрое размещение</span></br> без&nbsp;согласований с&nbsp;рекламодателем",
+		// 				"dropdownn_text": "",
+		// 			}
+		// 		],
+		// 	}
+		// },
+		// {
+		// 	"block_slug": "tovary_about",
+		// 	"block_state": {
+		// 		"title": "Что такое <span style='color:#00D3E6;'>шопсы</span> ВКонтакте?",
+		// 		"desc": "<p><b style='color:#00D3E6;'>Шопсы</b>&nbsp;— это рекламные посты и&nbsp;клипы со&nbsp;ссылкой на&nbsp;товар, которые можно публиковать в&nbsp;сообществе или на&nbsp;личной странице ВКонтакте<br><br>Из&nbsp;шопса пользователи сразу переходят к&nbsp;заказу, а&nbsp;вы&nbsp;получаете проценты с&nbsp;каждой продажи</p>",
+		// 		"img": "./img/tovary-about/img.png",
+		// 		"img_mob": "./img/tovary-about/img_mob.png",
+		// 	}
+		// },
+		// {
+		// 	"block_slug": "steps_tovary",
+		// 	"block_state": {
+		// 		"title": "подключайтесь к&nbsp;VK&nbsp;AdBlogger и&nbsp;зарабатывайте ",
+		// 		"desc": "",
+		// 		"gallery": [
+		// 			{
+		// 				"img": "./img/steps-tovary/img-4.png"
+		// 			},
+		// 			{
+		// 				"img": "./img/steps-tovary/img-1.png"
+		// 			},
+		// 			{
+		// 				"img": "./img/steps-tovary/img-2.png"
+		// 			},
+		// 			{
+		// 				"img": "./img/steps-tovary/img-3.png"
+		// 			}
+		// 		],
+		// 		"steps": [
+		// 			{
+		// 				"text": "<b>Зарегистрируйтесь</b> <br class='br-mobile'>как автор и&nbsp;добавьте <br class='br-desktop'>свою страницу&nbsp;&mdash; сообщество или профиль. <br class='br-desktop'>Укажите реквизиты, чтобы выводить доход"
+		// 			},
+		// 			{
+		// 				"text": "Когда ваше сообщество или профиль одобрят, <br class='br-desktop'>сможете <b>выбирать товары</b> в&nbsp;каталоге и&nbsp;<b>создавать <br class='br-desktop'>шопсы</b> со&nbsp;ссылками на&nbsp;них"
+		// 			},
+		// 			{
+		// 				"text": "<b>Получайте выплаты</b> за&nbsp;продажи&nbsp;&mdash; чем больше <br class='br-desktop'>продаж из&nbsp;ваших публикаций, тем выше ваш доход"
+		// 			}
+		// 		],
+		// 		"btn_link": "/app",
+		// 		"btn_text": "Подключиться",
+		// 	}
+		// },
+		// {
+		// 	"block_slug": "connection_conditions",
+		// 	"block_state": {
+		// 		"title": "чек-лист для&nbsp;подключения </br> к&nbsp;программе",
+		// 		"desc": "Хотите подключить сообщество, но&nbsp;оно пока не&nbsp;подходит под условия? Мы&nbsp;поможем <span class='blue-text fw-600'>это&nbsp;изменить</span>",
+		// 		"list": [
+		// 			{
+		// 				"text": "Вы&nbsp;резидент&nbsp;РФ: самозанятый, ИП, физическое или юридическое лицо"
+		// 			},
+		// 			{
+		// 				"text": "Открытая страница&nbsp;&mdash; сообщество или профиль от&nbsp;100&nbsp;подписчиков. У&nbsp;профилей считаются и&nbsp;друзья"
+		// 			},
+		// 			{
+		// 				"text": "Хотя&nbsp;бы одна публикация за&nbsp;последние 30&nbsp;дней"
+		// 			},
+		// 			{
+		// 				"text": "Сообщество или профиль <br>соответствуют <a href='https://adblogger.vk.ru/documents/groups_moderation' target='_blank'>требованиям модерации</a> и&nbsp;<a href='https://adblogger.vk.ru/documents/offer_creator_products' target='_blank'>оферте</a> VK&nbsp;AdBlogger"
+		// 			}
+		// 		],
+		// 		"btn_right_link": "https://vk.ru/commerce-for-creators",
+		// 		"btn_right_text": "Узнать больше",
+		// 		"btn_link": "https://vk.ru/commerce-for-creators",
+		// 		"btn_text": "Подключиться",
+		// 	}
+		// },
+		// {
+		// 	"block_slug": "calculator",
+		// 	"block_state": {
+		// 		"title": "калькулятор вашего дохода",
+		// 		"desc": "Пара кликов — и вы увидите, сколько можно зарабатывать с VK AdBlogger",
+		// 		"calc_table": [
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 1,
+		// 				'viewCondition': '0-874',
+		// 				'totalIncome': 0
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 1,
+		// 				'viewCondition': '875-3499',
+		// 				'totalIncome': 200
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 1,
+		// 				'viewCondition': '3500-',
+		// 				'totalIncome': 700
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 2,
+		// 				'viewCondition': '0-2624',
+		// 				'totalIncome': 0
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 2,
+		// 				'viewCondition': '2625-10499',
+		// 				'totalIncome': 500
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 2,
+		// 				'viewCondition': '10500-',
+		// 				'totalIncome': 2100
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 3,
+		// 				'viewCondition': '0-4624',
+		// 				'totalIncome': 0
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 3,
+		// 				'viewCondition': '4625-18499',
+		// 				'totalIncome': 900
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 3,
+		// 				'viewCondition': '18500-',
+		// 				'totalIncome': 3700
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 4,
+		// 				'viewCondition': '0-8749',
+		// 				'totalIncome': 0
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 4,
+		// 				'viewCondition': '8750-34999',
+		// 				'totalIncome': 1800
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 4,
+		// 				'viewCondition': '35000-',
+		// 				'totalIncome': 7000
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 5,
+		// 				'viewCondition': '0-13749',
+		// 				'totalIncome': 0
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 5,
+		// 				'viewCondition': '13750-54999',
+		// 				'totalIncome': 2800
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 5,
+		// 				'viewCondition': '55000-',
+		// 				'totalIncome': 11000
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 6,
+		// 				'viewCondition': '0-23749',
+		// 				'totalIncome': 0
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 6,
+		// 				'viewCondition': '23750-94999',
+		// 				'totalIncome': 4800
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 6,
+		// 				'viewCondition': '95000-',
+		// 				'totalIncome': 19000
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 7,
+		// 				'viewCondition': '0-44999',
+		// 				'totalIncome': 0
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 7,
+		// 				'viewCondition': '45000-179999',
+		// 				'totalIncome': 9000
+		// 			},
+		// 			{
+		// 				'postType': 'post',
+		// 				'followersCountStep': 7,
+		// 				'viewCondition': '180000-',
+		// 				'totalIncome': 36000
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 1,
+		// 				'viewCondition': '0-499',
+		// 				'totalIncome': 0
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 1,
+		// 				'viewCondition': '500-1999',
+		// 				'totalIncome': 600
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 1,
+		// 				'viewCondition': '2000-',
+		// 				'totalIncome': 2500
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 2,
+		// 				'viewCondition': '0-1624',
+		// 				'totalIncome': 0
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 2,
+		// 				'viewCondition': '1625-6499',
+		// 				'totalIncome': 1600
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 2,
+		// 				'viewCondition': '6500-',
+		// 				'totalIncome': 6500
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 3,
+		// 				'viewCondition': '0-2624',
+		// 				'totalIncome': 0
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 3,
+		// 				'viewCondition': '2625-10499',
+		// 				'totalIncome': 2500
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 3,
+		// 				'viewCondition': '10500-',
+		// 				'totalIncome': 10000
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 4,
+		// 				'viewCondition': '0-4249',
+		// 				'totalIncome': 0
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 4,
+		// 				'viewCondition': '4250-16999',
+		// 				'totalIncome': 4500
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 4,
+		// 				'viewCondition': '17000-',
+		// 				'totalIncome': 18000
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 5,
+		// 				'viewCondition': '0-6749',
+		// 				'totalIncome': 0
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 5,
+		// 				'viewCondition': '6750-26999',
+		// 				'totalIncome': 5000
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 5,
+		// 				'viewCondition': '27000-',
+		// 				'totalIncome': 20000
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 6,
+		// 				'viewCondition': '0-9749',
+		// 				'totalIncome': 0
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 6,
+		// 				'viewCondition': '9750-38999',
+		// 				'totalIncome': 6800
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 6,
+		// 				'viewCondition': '39000-',
+		// 				'totalIncome': 27500
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 7,
+		// 				'viewCondition': '0-12499',
+		// 				'totalIncome': 0
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 7,
+		// 				'viewCondition': '12500-49999',
+		// 				'totalIncome': 12500
+		// 			},
+		// 			{
+		// 				'postType': 'clip',
+		// 				'followersCountStep': 7,
+		// 				'viewCondition': '50000-',
+		// 				'totalIncome': 50000
+		// 			},
+		// 		]
+		// 	}
+		// },
+		// {
+		// 	"block_slug": "timer",
+		// 	"block_state": {
+		// 		"title": "публикуйте шопсы&nbsp;— <br> <span class='blue-text'>выигрывайте деньги</span> ",
+		// 		"desc": "<p> Создавайте контент с товарами и продвигайтесь в <span class='blue-text'>шопс-чарте</span>: чем больше сумма продаж из ваших шопсов, тем крупнее приз </p> <p> Топ-500 авторов разделят призовой фонд — <span class='blue-text'>7 000 000 рублей</span> </p>",
+		// 		"img": "./img/timer/img.png",
+		// 		"date_start": "2025-10-15T00:00:00+03:00",
+		// 	}
+		// },
+		// {
+		// 	"block_slug": "advices",
+		// 	"block_state": {
+		// 		"title": "советы по&nbsp;созданию <br> продающего контента",
+		// 		"items_list": [
+		// 			{
+		// 				"img": "./img/advices/img-1.png",
+		// 				"name": "подсвечивайте плюсы товара",
+		// 				"list": [
+		// 					{
+		// 						"text": "Снимайте видеообзоры и&nbsp;ролики в&nbsp;формате «до&nbsp;—&nbsp;после» "
+		// 					},
+		// 					{
+		// 						"text": "Показывайте товар с&nbsp;разных ракурсов"
+		// 					},
+		// 					{
+		// 						"text": "Делитесь личным опытом&nbsp;— это&nbsp;вызывает доверие"
+		// 					},
+		// 				],
+		// 				"btn_link": "https://vk.ru/@adblogger-kak-snyat-prodauschii-klip-top-9-scenariev",
+		// 				"btn_text": "Читать статью",
+		// 			},
+		// 			{
+		// 				"img": "./img/advices/img-2.png",
+		// 				"name": "применяйте сторителлинг",
+		// 				"list": [
+		// 					{
+		// 						"text": "Начните с&nbsp;интриги, чтобы <br class='br-mobile'>захватить <br class='br-desktop'>внимание зрителя"
+		// 					},
+		// 					{
+		// 						"text": "Определите боль, которую <br class='br-mobile'>закрывает товар, <br class='br-desktop'>и&nbsp;расскажите, <br class='br-mobile'>как&nbsp;он это&nbsp;делает "
+		// 					},
+		// 					{
+		// 						"text": "Захватите внимание: <br class='br-mobile'>используйте <br class='br-desktop'>динамичную музыку <br class='br-mobile'>и&nbsp;смену кадров"
+		// 					},
+		// 				],
+		// 				"btn_link": "https://vk.ru/@adblogger-kak-ispolzovat-storitelling-chtoby-povysit-prodazhi",
+		// 				"btn_text": "Читать статью",
+		// 			}
+		// 		],
+		// 		"bottom_text": "больше идей и&nbsp;лайфхаков",
+		// 		"bottom_btn_link": "https://vk.com/vk_authors/shops/?utm_source=vkadblogger_shops&utm_medium=card",
+		// 		"bottom_btn_text": "Узнать",
+		// 	}
+		// },
+		// {
+		// 	"block_slug": "review",
+		// 	"block_state": {
+		// 		"title": "это работает -- авторы проверяли",
+		// 		"review_list": [
+		// 			{
+		// 				"photo": "./img/review/img-8.png",
+		// 				"name": "У бабы Даши",
+		// 				"tags": [
+		// 					{
+		// 						"text": "заработала на шопсах 2,3М ₽",
+		// 						"color": "blue"
+		// 					},
+		// 					{
+		// 						"text": "57К подписчиков",
+		// 						"color": "black"
+		// 					}
+		// 				],
+		// 				"text": "<p> Свой блог я называю женским журналом. Мой фундамент — честность: <span class='blue-text'>я рекомендую только то, что использую сама</span>. В шопсах пробовала и посты, и клипы — лучше всего сработал формат «между нами девочками». </p> <p> Плюс рассказываю о товаре ещё до публикации шопса: так аудитория понимает, что это реальный опыт, а не просто реклама. <span class='blue-text'>Советую тренировать насмотренность и действовать!</span> </p>",
+		// 			},
+		// 			{
+		// 				"photo": "./img/review/img-11.png",
+		// 				"name": "DEKORSADA",
+		// 				"tags": [
+		// 					{
+		// 						"text": "заработал на шопсах 410К ₽",
+		// 						"color": "blue"
+		// 					},
+		// 					{
+		// 						"text": "107К подписчиков",
+		// 						"color": "black"
+		// 					}
+		// 				],
+		// 				"text": "<p> Мой подход прост: я создаю то, что мне интересно, и показываю это другим. Для шопсов выбираю только надёжные товары, которые нужны мне самому: <span class='blue-text'>не рекламирую то, что мне не&nbsp;по&nbsp;душе.</span> Лучше всего зашёл шопс с простым бытовым товаром для санузла. </p> <p> Снимаю ролики, как чувствую, и иногда могу предсказать, сколько примерно просмотров наберёт видео. <span class='blue-text'>Главное — двигаться вперёд и не обращать внимания на хейт.</span> </p>",
+		// 			},
+		// 			{
+		// 				"photo": "./img/review/img-10.png",
+		// 				"name": "TARNOVITA",
+		// 				"tags": [
+		// 					{
+		// 						"text": "заработала на шопсах 160К ₽",
+		// 						"color": "blue"
+		// 					},
+		// 					{
+		// 						"text": "101К подписчиков",
+		// 						"color": "black"
+		// 					}
+		// 				],
+		// 				"text": "<p> Главное — доверие аудитории. Рекламирую только то, чем пользуюсь сама: говорю прямо и показываю товар в деле. Подход работает: пост с подтягивающей маской для лица набрал 2 млн просмотров и принёс почти 500 продаж. </p> <p> <span class='blue-text'>Шопсы — пространство для экспериментов и развития.</span> Тестируйте форматы, показывайте себя, общайтесь с подписчиками и прислушивайтесь к их запросам. </p>",
+		// 			},
+		// 			{
+		// 				"photo": "./img/review/img-9.png",
+		// 				"name": "KAHOME_DESIGN",
+		// 				"tags": [
+		// 					{
+		// 						"text": "заработали на шопсах 160К ₽",
+		// 						"color": "blue"
+		// 					},
+		// 					{
+		// 						"text": "3,8К подписчиков",
+		// 						"color": "black"
+		// 					}
+		// 				],
+		// 				"text": "<p> В блоге мы делимся нашими находками для дома и интерьера. <span class='blue-text'>Проще показать эффект «до» и «после» в клипе.</span> Недорогие бытовые вещи, которые решают конкретную проблему, собирают миллионы просмотров. Наш рекорд — салфетки для уборки: почти 300 заказов. </p> <p> За месяц мы сняли 10 шопсов. <span class='blue-text'>Создавайте больше контента, пробуйте, ошибайтесь и делайте выводы — только так можно вырасти.</span> </p>",
+		// 			},
+		// 			{
+		// 				"photo": "./img/review/img-7.png",
+		// 				"name": "Раздетый стилист",
+		// 				"tags": [
+		// 					{
+		// 						"text": "заработала на шопсах 194К ₽",
+		// 						"color": "blue"
+		// 					},
+		// 					{
+		// 						"text": "561К подписчиков",
+		// 						"color": "black"
+		// 					}
+		// 				],
+		// 				"text": "<p> Мой блог — для женщин 35+, которые хотят выглядеть классно с любым бюджетом. Для шопсов я&nbsp;выбираю вещи, которые рекомендовала бы своим подругам как стилист: лучше всего у меня зашла публикация с базовым универсальным пальто. </p> <p> С шопсами ты сам решаешь, когда и что рекламировать. Круто, что маркировка автоматическая и ссылка ведёт прямо на товар. Мой совет новичкам: просто попробуйте! </p>",
+		// 			},
+		// 			{
+		// 				"photo": "./img/review/img-6.png",
+		// 				"name": "Анастасия Крекова",
+		// 				"tags": [
+		// 					{
+		// 						"text": "заработала 162К ₽",
+		// 						"color": "blue"
+		// 					},
+		// 					{
+		// 						"text": "115К подписчиков",
+		// 						"color": "black"
+		// 					}
+		// 				],
+		// 				"text": "<p>Я&nbsp;выбирала товары для своей женской аудитории: средства для дома, косметику. Анализировала реакцию и&nbsp;меняла подход к&nbsp;публикациям. Самыми успешными стали видео <span class='blue-text'>с&nbsp;юмором и&nbsp;примерами из&nbsp;жизни</span>, где я&nbsp;не&nbsp;упоминала товар первые 10&nbsp;секунд. </p> <p> Лучше всего по&nbsp;продажам сработал простой клип с&nbsp;витаминным средством для лица <span class='blue-text'>ценой около 300&nbsp;рублей</span>. </p>",
+		// 			},
+		// 			{
+		// 				"photo": "./img/review/img-4.png",
+		// 				"name": "СЕНЯ В ДЕЛЕ",
+		// 				"tags": [
+		// 					{
+		// 						"text": "заработал 110К ₽",
+		// 						"color": "blue"
+		// 					},
+		// 					{
+		// 						"text": "526К подписчиков",
+		// 						"color": "black"
+		// 					}
+		// 				],
+		// 				"text": "<p>Я&nbsp;выбирал <span class='blue-text'>товары на&nbsp;кулинарную тематику</span> : чай, кофе, мини-принтер для заготовок, мёд, лимонад. Придерживался единой стратегии: <span class='blue-text'>интегрировал рекламу в&nbsp;видеорецепт</span>. Например, готовил кабачковую икру и&nbsp;показывал мини-принтер для заготовок в&nbsp;деле.</p><p>Ролики, которые набрали много просмотров, сгенерировали много продаж.</p>",
+		// 			},
+		// 			{
+		// 				"photo": "./img/review/img-3.png",
+		// 				"name": "Николай Трошин",
+		// 				"tags": [
+		// 					{
+		// 						"text": "заработал 65К ₽",
+		// 						"color": "blue"
+		// 					},
+		// 					{
+		// 						"text": "4,8К подписчиков",
+		// 						"color": "black"
+		// 					}
+		// 				],
+		// 				"text": "<p>Большинство подписчиков младше&nbsp;30, поэтому брал близкие им&nbsp;товары. <br> Мой контент состоит из&nbsp;видео, поэтому <span class='blue-text'>рекламу делал в&nbsp;клипах</span>. </p> <p> Публикаций было много, <span class='blue-text'>менял подход и&nbsp;подводки</span>: для кружки&nbsp;&mdash; про чаепитие, для одежды&nbsp;&mdash; про&nbsp;то, как собрать лук. </p> <p> Самый удачный клип&nbsp;&mdash; с&nbsp;рекламой кофейных зёрен: показал своё утро, как готовлю кофе: <span class='blue-text'>личная история всегда цепляет</span>.</p>",
+		// 			},
+		// 			{
+		// 				"photo": "./img/review/img-2.png",
+		// 				"name": "Kiwihealthy",
+		// 				"tags": [
+		// 					{
+		// 						"text": "заработала 60К ₽",
+		// 						"color": "blue"
+		// 					},
+		// 					{
+		// 						"text": "30К подписчиков",
+		// 						"color": "black"
+		// 					}
+		// 				],
+		// 				"text": "<p>Я&nbsp;веду сообщество о&nbsp;питании, поэтому брала товары по&nbsp;теме и&nbsp;пробовала другие. Лучше всего зашла реклама <span class='blue-text'>крабика для волос</span> : я&nbsp;выкупила его и&nbsp;сняла клип, где мы&nbsp;готовим с&nbsp;дочкой. Её&nbsp;волосы собрала крабиком и&nbsp;сделала на&nbsp;нём акцент. </p> <p> Дальше тоже старалась выкупать товары и&nbsp;внедрять в&nbsp;сюжет. Классно, что <span class='blue-text'>продажи идут спустя время после публикации</span>.</p>",
+		// 			},
+		// 			{
+		// 				"photo": "./img/review/img-1.png",
+		// 				"name": "Katya Klon",
+		// 				"tags": [
+		// 					{
+		// 						"text": "заработала 60К ₽",
+		// 						"color": "blue"
+		// 					},
+		// 					{
+		// 						"text": "275К подписчиков",
+		// 						"color": "black"
+		// 					}
+		// 				],
+		// 				"text": "<p>Когда выбирала товары для рекламы, опиралась на&nbsp;их&nbsp;практичность и&nbsp;актуальность для моего блога. Аудитория хорошо приняла и&nbsp;посты, и&nbsp;клипы, но&nbsp;мне <span class='blue-text'>проще включать рекламу в&nbsp;скетчи</span>&nbsp;&mdash; короткие юмористические сценки на&nbsp;актуальные темы. </p> <p> Это самый популярный формат у&nbsp;подписчиков: именно клипы-скетчи набрали больше всего просмотров&nbsp;&mdash; <span class='blue-text'>и&nbsp;с&nbsp;них случились продажи.</span></p>",
+		// 			},
+		// 			// {
+		// 			// 	"photo": "./img/review/img-5.png",
+		// 			// 	"name": "Беречь речь",
+		// 			// 	"tags": [
+		// 			// 		{
+		// 			// 			"text": "120К подписчиков",
+		// 			// 			"color": "black"
+		// 			// 		}
+		// 			// 	],
+		// 			// 	"text": "<p>Мой блог&nbsp;&mdash; о&nbsp;русском языке: думала, будет сложно интегрировать товары. </p> <p> Оказалось, женская аудитория готова воспринимать рекламу со&nbsp;знакомыми вещами: <span class='blue-text'>чаще всего покупали одежду</span>. Для выбора следующего продукта я&nbsp;анализировала отклик, репосты, переходы и&nbsp;покупки, а&nbsp;лучшая реакция была на&nbsp;<span class='blue-text'>клип с&nbsp;неожиданной концовкой</span>. </p>",
+		// 			// },
+		// 		]
+		// 	}
+		// },
+		// {
+		// 	"block_slug": "case_preview",
+		// 	"block_state": {
+		// 		"title": "это работает — мы проверяли",
+		// 		"subtitle": "Как авторы ВКонтакте за&nbsp;месяц увеличили заработок <br class='br-desktop'>на&nbsp;6,5&nbsp;млн&nbsp;₽ за&nbsp;счёт нативного контента",
+		// 		"name": "Ролик на миллион",
+		// 		"img": "./img/case-preview/img.png",
+		// 		"img_mob": "./img/case-preview/img_mob.png",
+		// 		"desc": "Как авторы ВКонтакте заработали больше 7&nbsp;млн на&nbsp;рекламе товаров Ozon",
+		// 		"number_list": [
+		// 			{
+		// 				"number": "1 568 авторов",
+		// 				"label": "разместили рекламу",
+		// 				"icon": "./img/case-preview/icon-1.svg",
+		// 			},
+		// 			{
+		// 				"number": "4,9 млн рублей",
+		// 				"label": "заработали на клипах",
+		// 				"icon": "./img/case-preview/icon-2.svg",
+		// 			},
+		// 			{
+		// 				"number": "1,6 млн рублей",
+		// 				"label": "заработали на постах",
+		// 				"icon": "./img/case-preview/icon-3.svg",
+		// 			},
+		// 			{
+		// 				"number": "12 млн просмотров",
+		// 				"label": "собрал контент",
+		// 				"icon": "./img/case-preview/icon-4.svg",
+		// 			},
+		// 		],
+		// 		"text": "Авторы выбирали товары Ozon для&nbsp;рекламы и&nbsp;создавали с&nbsp;ними публикации, прикрепляя ссылку на&nbsp;покупку. По&nbsp;результатам рекламной кампании мы выяснили, что&nbsp;пользователи кликают по&nbsp;нативной рекламе на&nbsp;188% чаще, чем по&nbsp;обычной. Подробности&nbsp;— в&nbsp;кейсе.",
+		// 		"btn_link": "/top-cases/case-for-authors",
+		// 		"btn_text": "Подробнее",
+		// 	}
+		// },
+		// {
+		// 	"block_slug": "cases_slider",
+		// 	"block_state": {
+		// 		"title": "взгляните на&nbsp;шопсы в&nbsp;деле",
+		// 		"gallery": [
+		// 			{
+		// 				"video": "./video/clips/8.mp4",
+		// 				"poster": "./img/cases-slider/img-8.png",
+		// 			},
+		// 			{
+		// 				"video": "./video/clips/6.mp4",
+		// 				"poster": "./img/cases-slider/img-6.png",
+		// 			},
+		// 			{
+		// 				"video": "./video/clips/7.mp4",
+		// 				"poster": "./img/cases-slider/img-7.png",
+		// 			},
+		// 			{
+		// 				"video": "./video/clips/1.mp4",
+		// 				"poster": "./img/cases-slider/img-1.png",
+		// 			},
+		// 			{
+		// 				"video": "./video/clips/2.mp4",
+		// 				"poster": "./img/cases-slider/img-2.png",
+		// 			},
+		// 			{
+		// 				"video": "./video/clips/3.mp4",
+		// 				"poster": "./img/cases-slider/img-3.png",
+		// 			},
+		// 			{
+		// 				"video": "./video/clips/4.mp4",
+		// 				"poster": "./img/cases-slider/img-4.png",
+		// 			},
+		// 			{
+		// 				"video": "./video/clips/5.mp4",
+		// 				"poster": "./img/cases-slider/img-5.png",
+		// 			},
+		// 			{
+		// 				"video": "./video/clips/9.mp4",
+		// 				"poster": "./img/cases-slider/img-9.png",
+		// 			},
+		// 		],
+		// 	}
+		// },
+		{
+			"block_slug": "money",
+			"block_state": {
+				"title": "пора пробовать&nbsp;— <br>и&nbsp;получать деньги",
+				"has_border": "false",
+				"btn_text": "Начать зарабатывать",
+				"btn_link": "/app"
+			}
+		},
+		{
+			"block_slug": "faq",
+			"block_state": {
+				"faqList": [
+					{
+						"question": "Что&nbsp;такое шопсы ВКонтакте?",
+						"answer": "Шопсы&nbsp;&mdash; это рекламные посты и&nbsp;клипы, в&nbsp;которых есть ссылка на&nbsp;товар. По&nbsp;ней пользователи могут сразу перейти к&nbsp;покупке."
+					},
+					{
+						"question": "Какие сообщества могут использовать инструмент?",
+						"answer": "<ul> <li>Сообщество подключено к&nbsp;<a href='https://adblogger.vk.com/for-authors?utm_source=vk&utm_medium=social&utm_campaign=soccom&utm_content=faq_ref' target='_blank'>VK&nbsp;AdBlogger</a></li> <li>В&nbsp;нём больше 100&nbsp;подписчиков</li> <li>Есть хотя&nbsp;бы одна публикация за&nbsp;последние 30&nbsp;дней</li> <li>Cоответствует <a href='https://adblogger.vk.com/documents/groups_moderation' target='_blank'>требованиям модерации</a> и <a href='https://adblogger.vk.ru/documents/offer_creator_products' target='_blank'>оферте</a> VK AdBlogger </li> <li>В сообществе публикуется качественный и&nbsp;оригинальный контент</li> <li>Автор, который будет выводить выплаты, является резидентом&nbsp;РФ: у&nbsp;него есть самозанятость, ИП, физлицо или юрлицо с&nbsp;российским ИНН</li> </ul>"
+					},
+					{
+						"question": "Можно&nbsp;ли использовать инструмент сразу в&nbsp;нескольких сообществах?",
+						"answer": 'Да, вы&nbsp;можете подключить к&nbsp;программе все сообщества, которые соответствуют условиям.'
+					},
+					{
+						"question": "Как начать рекламировать товары в&nbsp;шопсах?",
+						"answer": '<ol> <li> Создайте кабинет автора и пройдите модерацию в VK AdBlogger. Как это сделать — рассказали в <a href="https://vk.com/@-225265420-faq-po-platforme-vk-adblogger" target="_blank">статье</a> </li> <li> Когда сообщество одобрят, сможете выбирать товары в каталоге и создавать шопсы со ссылками на товары Ozon </li> <li> Зайдите в <a href="https://adblogger.vk.com/app/author-placements/ad-placement" target="_blank">личный кабинет</a> и найдите раздел «Товары» в левом меню </li> <li> В каталоге выберите товар для продвижения и нажмите «Взять в работу» </li> <li> Напишите пост о товаре или снимите клип. В описание добавьте ссылку на товар из заявки — платформа автоматически прикрепит товар к публикации </li> <li> Отправьте контент на модерацию — обычно она занимает не больше суток </li> <li> Когда контент пройдёт модерацию, запланируйте дату публикации </li> </ol> <p> Кампания по продвижению длится 30 дней — она начинается в тот момент, когда пост или клип будет опубликован. Вы получите проценты за продажи, которые произойдут по вашей ссылке в этот период. </p>'
+					},
+					{
+						"question": "Какие есть ограничения?",
+						"answer": '<p> Одновременно в статусе «В работе» может быть только 3 товара — как только запланируете публикацию с одним из них, сможете взять новую заявку.</p>'
+					},
+					{
+						"question": "Ограничения действуют во&nbsp;всех сообществах сразу?",
+						"answer": '<p> Лимиты распространяются на одно сообщество. Если у вас в работе одновременно 3 заявки в одном сообществе, то в нём брать новые заявки пока не получится. В других ваших сообществах это сделать можно — их лимит не расходуется</p>'
+					},
+					{
+						"question": "Нужно&nbsp;ли согласовывать креатив с&nbsp;рекламодателем?",
+						"answer": 'Нет. Посты или&nbsp;клипы с&nbsp;рекламой товаров согласовывать не&nbsp;нужно.'
+					},
+					{
+						"question": "Что&nbsp;делать с&nbsp;обязательной маркировкой рекламы?",
+						"answer": 'VK&nbsp;AdBlogger берёт на&nbsp;себя вопросы маркировки и&nbsp;автоматически регистрирует авторов в&nbsp;операторе рекламных данных. С&nbsp;вас&nbsp;&mdash; только качественный контент.'
+					},
+					{
+						"question": "Из&nbsp;чего будет складываться мой доход?",
+						"answer": '<p id="anchor-calculator">Доход за&nbsp;продвижение товара Ozon на&nbsp;старте программы складывается из&nbsp;процентов от&nbsp;продажи товара. </p> <ul> <li> Начисляется через 14&nbsp;дней после продажи&nbsp;&mdash; ровно сколько времени будет у&nbsp;покупателя, чтобы вернуть товар </li> <li> Если покупатель вернёт товар, процент начислен не&nbsp;будет </li> <li> Если товар купят после завершения рекламной кампании, то&nbsp;есть через 30&nbsp;дней после публикации, то&nbsp;проценты не&nbsp;начислятся </li> <li> Цены на&nbsp;один и&nbsp;тот&nbsp;же товар могут отличаться&nbsp;&mdash; на&nbsp;Ozon они зависят от&nbsp;города покупателя и&nbsp;других параметров. Поэтому и&nbsp;процент от&nbsp;продаж одного и&nbsp;того&nbsp;же товара может быть разным </li> </ul> <p> В&nbsp;будущем условия выплат могут измениться. </p>'
+					},
+					{
+						"question": "Как отслеживать продажи товара?",
+						"answer": 'Перейдите в&nbsp;личный кабинет автора VK&nbsp;AdBlogger и&nbsp;найдите нужную рекламную публикацию в&nbsp;разделе &laquo;Заявки&raquo;&nbsp;&mdash; здесь будет статистика по&nbsp;совершённым покупкам по&nbsp;вашей ссылке. Данные подгружаются в&nbsp;кабинет в&nbsp;течение 3&ndash;4 часов после оплаты.'
+					},
+					{
+						"question": "Как часто обновляется статистика публикаций?",
+						"answer": 'Статистика публикаций обновляется в&nbsp;течение 24&nbsp;часов. Если этого не&nbsp;происходит&nbsp;&mdash; напишите в&nbsp;<a href="https://vk.me/club225265420" target="_blank">Поддержку</a>.'
+					},
+					{
+						"question": "Как удалить рекламную публикацию?",
+						"answer": 'Самостоятельно удалить контент после публикации вы не сможете. Для этого обратитесь в <a href="https://vk.me/club225265420" target="_blank">Поддержку</a>. </li> </ol>'
+					},
+					{
+						"question": "Могу&nbsp;ли я&nbsp;использовать инструмент, если уже зарабатываю через другие программы монетизации?",
+						"answer": 'Да, вы&nbsp;можете рекламировать товары с&nbsp;Ozon через VK&nbsp;AdBlogger, даже если уже используете другие инструменты монетизации ВКонтакте.'
+					},
+					{
+						"question": "Как&nbsp;создавать качественный контент, набирающий охваты?",
+						"answer": '<ul> <li> Создавайте нативный контент: публикации с&nbsp;товарами должны гармонично вписываться в&nbsp;ваше сообщество. Чем креативнее интеграция, тем больше интереса она вызовет. </li> <li> Используйте сторителлинг и&nbsp;рассказывайте о&nbsp;личном опыте: чем&nbsp;вам понравился товар, какие проблемы решил и&nbsp;так далее. Истории вызывают эмоции&nbsp;&mdash; это поможет подписчикам увидеть реальную ценность продукта. </li> <li> Снимайте привлекательные фото и&nbsp;видео: так читатели подробнее изучат товар и&nbsp;быстрее решатся на&nbsp;покупку. Не&nbsp;забывайте показывать товар в&nbsp;действии и&nbsp;снимать его с&nbsp;разных ракурсов. </li> </ul> <p> Больше советов по&nbsp;созданию и&nbsp;продвижению контента можно найти в&nbsp;<a href="https://vk.ru/@adblogger-baza-znanii-soco" target="_blank">Базе знаний для авторов</a>. </p>'
+					},
+					{
+						"question": "Куда&nbsp;можно написать, если остались вопросы?",
+						"answer": '<p>По&nbsp;любым вопросам о&nbsp;VK AdBlogger можете обращаться в&nbsp;<a href="https://vk.me/club225265420" target="_blank">Поддержку</a>.</p>'
+					},
+					{
+						"question": "Можно&nbsp;ли монетизировать в&nbsp;VK&nbsp;AdBlogger свой профиль ВКонтакте?",
+						"answer": 'Профили тоже могут зарабатывать на&nbsp;шопсах&nbsp;&mdash; через раздел &laquo;Товары&raquo;. Для этого страница должна подходить под критерии: открытый профиль, не&nbsp;менее 100 подписчиков и&nbsp;друзей суммарно, не&nbsp;менее 1&nbsp;поста или клипа за&nbsp;последние 30&nbsp;дней. И&nbsp;у&nbsp;вас должен быть статус самозанятого, ИП, статус физлица или юридического лица с&nbsp;российским ИНН.'
+					},
+					{
+						"question": "Какие профили могут зарабатывать на шопсах?",
+						"answer": '<p>Критерии для профилей: </p> <ul> <li>открытая страница</li> <li>не&nbsp;менее 100 друзей и&nbsp;подписчиков суммарно</li> <li>опубликован хотя&nbsp;бы 1 пост или клип за&nbsp;последние 30&nbsp;дней</li> </ul>'
+					},
+					{
+						"question": "Мой профиль не прошёл проверку. Можно подать заявку снова?",
+						"answer": '<p> Если профиль не прошёл проверку, значит, сейчас он не соответствует критериям участия. Когда требования будут выполнены, напишите нам — проверим повторно: <a href="vk.me/adblogger" target="_blank">vk.me/adblogger</a> </p>'
+					},
+					{
+						"question": "Можно ли монетизировать сразу и сообщество, и профиль?",
+						"answer": '<p> Да, в VK AdBlogger нет ограничения на количество страниц, с которых вы зарабатываете. Это может быть и профиль, и сообщество, и даже несколько сообществ.</p>'
+					},
+					{
+						"question": "Сколько профилей можно добавить к кабинету автора?",
+						"answer": '<p>В рамках тестирования к монетизации можно подключить только один профиль — тот, который привязан к вашему VK ID. Другие личные страницы добавить не получится.</p>'
+					},
+					{
+						"question": "Можно&nbsp;ли вернуть деньги за&nbsp;покупку товара для шопса?",
+						"answer": '<p>В&nbsp;разделе &laquo;Товары&raquo; в&nbsp;VK&nbsp;AdBlogger есть заявки с&nbsp;отметкой &laquo;Вернём траты&raquo;. Если берёте такие, то&nbsp;за&nbsp;покупку товаров вернутся деньги, если выполните несколько условий:</p><p></p><ol><li>Возьмите в&nbsp;работу заявку с&nbsp;отметкой &laquo;Вернём траты&raquo; и&nbsp;получите в&nbsp;ней промокод: он&nbsp;не&nbsp;даст скидку, но&nbsp;поможет отследить заказ, по&nbsp;которому будет возврат средств. Промокод действует 72&nbsp;часа&nbsp;&mdash; если не&nbsp;успеете активировать его за&nbsp;это время, вернуть траты не&nbsp;получится</li><li>Введите промокод при оформлении заказа на&nbsp;Ozon&nbsp;&mdash; применять с&nbsp;ним другие промокоды нельзя. В&nbsp;заказе должен быть только 1&nbsp;товар. Исключение&nbsp;&mdash; товары из&nbsp;категорий &laquo;Одежда&raquo; и&nbsp;&laquo;Обувь&raquo;: можно взять несколько размеров для примерки, но&nbsp;при получении оставить только одну вещь</li><li>Создайте оригинальный шопс с&nbsp;товаром. Его проверит модерация&nbsp;&mdash; результат проверки покажем в&nbsp;заявке. Если контент не&nbsp;оригинальный, траты на&nbsp;товар не&nbsp;вернутся</li><li>Опубликуйте контент и&nbsp;не&nbsp;удаляйте его, пока не&nbsp;закончится рекламная кампания. Если оформите возврат товара или уберёте шопс с&nbsp;публикации, вернуть траты не&nbsp;получится.</li></ol>'
+					},
+					{
+						"question": "Когда вернутся траты на&nbsp;покупку товара?",
+						"answer": '<p>Средства вернутся, когда закончится срок размещения шопса&nbsp;&mdash; спустя 30&nbsp;дней после публикации. Если удалить контент раньше этого момента, то&nbsp;траты не&nbsp;вернутся.</p>'
+					},
+					{
+						"question": "Куда поступят средства за&nbsp;покупку товара?",
+						"answer": '<p>Если все условия будут соблюдены, деньги появятся на&nbsp;балансе кабинета автора в&nbsp;VK&nbsp;AdBlogger.</p>'
+					},
+					{
+						"question": "Можно&nbsp;ли купить несколько товаров по&nbsp;одному промокоду?",
+						"answer": '<p>В&nbsp;заказе должен быть только 1&nbsp;товар&nbsp;&mdash; из&nbsp;заявки на&nbsp;VK&nbsp;AdBlogger. Можно взять для примерки несколько размеров, но&nbsp;только из&nbsp;категорий &laquo;Одежда&raquo; и&nbsp;&laquo;Обувь&raquo;, а&nbsp;при получении оставить только одну вещь. Заказывать несколько товаров из&nbsp;разных карточек по&nbsp;одному промокоду нельзя.</p>'
+					},
+					{
+						"question": "Какие критерии оригинальности у&nbsp;шопса?",
+						"answer": '<ul><li>Убедитесь, что на&nbsp;фото или видео видно или слышно вас&nbsp;&mdash; автора, с&nbsp;которым ассоциируется сообщество или профиль </li> <li>Вместо вас в&nbsp;шопсе могут сняться члены семьи или питомцы. Например, ребёнок, если вы&nbsp;рекламируете детскую игрушку</li> <li>Товар должно быть хорошо видно в&nbsp;кадре </li> <li>Покажите и&nbsp;расскажите, как и&nbsp;зачем его используете, какие чувства он&nbsp;у&nbsp;вас вызывает, кому&nbsp;бы вы&nbsp;его посоветовали. Просто перечислить характеристики недостаточно</li> <li>Подготовьте свой текст и&nbsp;визуал: контент из&nbsp;карточки товара на&nbsp;Ozon, отзывов и&nbsp;постов других блогеров не&nbsp;подойдёт</li> <li>Не&nbsp;создавайте контент целиком в&nbsp;нейросети: нейросеть не&nbsp;должна заменять вас и&nbsp;товар в&nbsp;кадре</li></ul> <p>Если шопс признан неоригинальным, деньги за&nbsp;товар не&nbsp;вернутся. Но&nbsp;вы&nbsp;всё равно можете опубликовать пост или клип и&nbsp;получить процент с&nbsp;продаж из&nbsp;вашего шопса.</p>'
+					},
+					{
+						"question": "Кто решает, оригинальный контент или нет?",
+						"answer": '<p>Все шопсы на&nbsp;оригинальность проверяет модерация VK&nbsp;AdBlogger. Критерии подробно описаны в&nbsp;оферте: <a href="https://adblogger.vk.ru/documents/offer_creator_products" target="_blank">adblogger.vk.ru/documents/offer_creator_products</a></p>'
+					},
+					{
+						"question": "Вернутся&nbsp;ли средства, если шопс будет неоригинальным?",
+						"answer": '<p>Нет, в&nbsp;этом случае средства не&nbsp;вернутся. Траты возвращаются только за&nbsp;те&nbsp;товары, с&nbsp;которыми снят оригинальный контент.</p>'
+					},
+					{
+						"question": "Если я&nbsp;оплатил товар бонусами, вернутся&nbsp;ли средства?",
+						"answer": '<p>Если вы&nbsp;оплатили товар и&nbsp;рублями, и&nbsp;бонусами Ozon, то&nbsp;вернётся только та&nbsp;часть, которую вы&nbsp;оплатили рублями. Если заказ полностью за&nbsp;баллы, то&nbsp;вернуть траты не&nbsp;получится.</p>'
+					},
+					{
+						"question": "Что будет, если я&nbsp;не&nbsp;успеваю снять шопс не&nbsp;по&nbsp;своей вине? Например, товар пришёл с&nbsp;браком или доставка задерживается.",
+						"answer": '<p>Чтобы вернуть траты, вам нужно получить товар, создать креатив, пройти модерацию и&nbsp;опубликовать шопс за&nbsp;20&nbsp;дней&nbsp;&mdash; с&nbsp;момента, как вы&nbsp;взяли заявку в&nbsp;работу.</p><ul><li>Если доставка товара сильно задерживается, можете отменить его </li> <li>Если товар пришёл с&nbsp;браком, откажитесь от&nbsp;него сразу при получении и&nbsp;закажите снова. Если сделаете это в&nbsp;течение 72&nbsp;часов и&nbsp;учтёте все условия, то&nbsp;траты вернутся</li> <li>Если заберёте товар и&nbsp;только потом вернёте его, использовать промокод снова не&nbsp;получится</li></ul>'
+					},
+					{
+						"question": "Почему я&nbsp;не&nbsp;вижу заявки с&nbsp;отметкой &laquo;Вернём траты&raquo;?",
+						"answer": '<p>Такое может быть, если в&nbsp;каталоге сейчас нет товаров, по&nbsp;которым можно вернуть траты. </p> <p>Если вы&nbsp;участник Фонда оригинальных авторов&nbsp;VK, для вас действуют особые условия. За&nbsp;подробностями обращайтесь в&nbsp;поддержку Фонда.</p>'
+					},
+					{
+						"question": "Все условия соблюдены, но&nbsp;траты на&nbsp;товар не&nbsp;вернулись. Что делать?",
+						"answer": '<p>Если 30&nbsp;дней с&nbsp;публикации шопса прошло, а&nbsp;средства так и&nbsp;не&nbsp;поступили, проверьте, что соблюдены все условия возврата средств. Если останутся вопросы, пишите нам в&nbsp;поддержку: <a href="https://vk.me/adblogger">vk.me/adblogger</a></p>'
+					},
+					{
+						"question": "Почему мой шопс не&nbsp;засчитали как оригинальный?",
+						"answer": '<p>Если вы&nbsp;уверены, что шопс подходит под критерии оригинальности, но&nbsp;его не&nbsp;засчитали&nbsp;&mdash; напишите нам в&nbsp;поддержку: <a href="https://vk.me/adblogger">vk.me/adblogger</a></p>'
+					},
+					// {
+					// 	"question": "Как&nbsp;начать продвигать контент с&nbsp;товарами Ozon?",
+					// 	"answer": '<p>Начать работу можно в&nbsp;личном кабинете VK&nbsp;AdBlogger. Как&nbsp;его создать&nbsp;— рассказали в&nbsp;<a href="https://vk.ru/@-225265420-faq-po-platforme-vk-adblogger" target="_blank">статье</a>.</p> <ol> <li>Авторизуйтесь на&nbsp;<a href="https://adblogger.vk.ru/for-authors" target="_blank">adblogger.vk.ru</a> и&nbsp;найдите раздел «Товары» в&nbsp;левом меню</li> <li>В&nbsp;каталоге выберите товар для&nbsp;продвижения и&nbsp;нажмите «Взять в&nbsp;работу» </li> <li>Напишите пост о&nbsp;товаре или&nbsp;загрузите клип. В&nbsp;описание добавьте ссылку на&nbsp;товар из&nbsp;заявки&nbsp;— платформа автоматически прикрепит товар к&nbsp;публикации </li> <li>Отправьте контент на&nbsp;модерацию&nbsp;— обычно она занимает не&nbsp;больше суток </li> <li>Когда&nbsp;контент пройдёт модерацию, запланируйте дату публикации </li> </ol> <p>Кампания по&nbsp;продвижению длится 30&nbsp;дней&nbsp;— она начинается в&nbsp;тот момент, когда пост или&nbsp;клип будет опубликован. Вы получите проценты за&nbsp;продажи, которые произойдут по&nbsp;вашей ссылке в&nbsp;этот период </p>'
+					// },
+					// {
+					// 	"question": "В&nbsp;каких форматах можно разместить рекламу? ",
+					// 	"answer": "В&nbsp;разделе «Посевы» рекламодатель создаёт креатив в&nbsp;формате поста с&nbsp;картинкой или&nbsp;видео, автор размещает его в&nbsp;своём сообществе.<br><br> В&nbsp;разделе «Заказ контента» рекламодатель создаёт бриф на&nbsp;пост или&nbsp;клип, а&nbsp;автор создаёт контент по&nbsp;ТЗ рекламодателя и&nbsp;размещает в&nbsp;своём сообществе."
+					// },
+					// {
+					// 	"question": "Что&nbsp;будет, если опубликовать контент со&nbsp;сторонней ссылкой?",
+					// 	"answer": '<p >Опубликовать контент со&nbsp;сторонней ссылкой не&nbsp;получится. В&nbsp;тексте поста и&nbsp;описании клипа может быть только ссылка на&nbsp;товар Ozon, которая прикреплена к&nbsp;заявке в&nbsp;VK&nbsp;AdBlogger. Это&nbsp;нужно, чтобы&nbsp;посчитать количество продаж именно из&nbsp;вашей публикации.</p>'
+					// },
+					// {
+					// 	"question": "Какую выплату я получу, если публикация не&nbsp;наберёт просмотры?",
+					// 	"answer": '<p> Вы получите минимальную выплату за&nbsp;первые 3&nbsp;публикации в&nbsp;сообществе, если контент набрал хотя&nbsp;бы 25% от&nbsp;целевых просмотров. Размер зависит от&nbsp;формата контента (пост или&nbsp;клип) и&nbsp;числа подписчиков в&nbsp;сообществе. </p> <img src="/img/faq/img-3.jpg" alt="img" width="100%"> <img src="/img/faq/img-4.jpg" alt="img" width="100%"> <p> Пример. Вы опубликовали в&nbsp;сообществе на&nbsp;64&nbsp;тысячи подписчиков 2&nbsp;рекламных поста и&nbsp;клип, но&nbsp;не&nbsp;набрали нужное число просмотров, чтобы&nbsp;получить фиксированные выплаты. </p> <p> При&nbsp;этом публикации набрали 25% от&nbsp;целевых просмотров, поэтому вам доступна минимальная выплата&nbsp;— она составит 900 + 900 + 2&nbsp;500 = 4&nbsp;300&nbsp;₽. Если&nbsp;у&nbsp;вас несколько сообществ, сможете получить минимальные выплаты за&nbsp;первые 3&nbsp;публикации в&nbsp;каждом из&nbsp;них&nbsp;— при&nbsp;условии, что&nbsp;контент набрал хотя&nbsp;бы 25% от&nbsp;порога просмотров. </p>'
+					// },
+					// {
+					// 	"question": "Зачем заполнять реквизиты?",
+					// 	"answer": "После регистрации личного кабинета или авторизации и перед тем, как пополнить баланс рекламного кабинета и создать посев, рекламодателю нужно указать свои юридические реквизиты.<br><br>Все рекламодатели без исключения должны заполнить реквизиты. Набор полей здесь отличается в зависимости от типа аккаунта: ООО, ИП.<br><br>Заполнение реквизитов необходимо для:  <ul><li>получения закрывающих документов;</li> <li>пополнения баланса рекламного кабинета;</li> <li>автоматической маркировки рекламы</li></ul>"
+					// },
+					// {
+					// 	"question": "Как работает маркировка рекламы? ",
+					// 	"answer": "В VK AdBlogger процесс маркировки креатива и получения токена (erid) полностью автоматизирован. Рекламодателям не нужно ежемесячно отчитываться в ОРД, акты и статистика по ним отправляются автоматически."
+					// },
+					// {
+					// 	"question": "Как изменить реквизиты?",
+					// 	"answer": "Чтобы внести изменения в реквизиты, нужно обратиться в техподдержку: <a href='https://vk.me/club225265420'>vk.cc/cyEF76</a>. Самостоятельно изменить их в личном кабинете нельзя."
+					// },
+					// {
+					// 	"question": "Как пополнить баланс?",
+					// 	"answer": "Если кабинет рекламодателя зарегистрирован на ООО или ИП, то пополнить бюджет можно, выставив счёт. Для этого нужно перейти на страницу «Бюджет», нажать на кнопку «Выставить счёт».<br><br>После этого будет сформирован счёт на оплату. Счёт можно скачать на устройство или отправить на email («Отправить счёт на почту»). Чтобы скопировать только номер счёта, нужно нажать «Копировать».<br><br>Минимальная сумма, которую может внести рекламодатель: 600 рублей. На счёт поступит сумма после вычета НДС (20%)."
+					// },
+					// {
+					// 	"question": "Что такое заказ контента?",
+					// 	"answer": "В разделе «Контент на заказ» рекламодатель может создать бриф (задание) на заказ у автора нативной рекламы. Он описывает задачу, уточняет пожелания по содержанию рекламного поста, сроки выхода.<br><br>Если автор принимает заявку на пост, он создаёт контент и согласует его с рекламодателем. Когда пост согласован, он отправляется на модерацию, а после — его можно запланировать на нужную дату или опубликовать сразу."
+					// },
+					// {
+					// 	"question": "Как автор и рекламодатель общаются в разделе «Заказ контента»? ",
+					// 	"answer": "Рекламодатель указывает в брифе контакты, по которым автор может обратиться к нему и уточнить всю нужную информацию по будущему рекламному посту. "
+					// },
+					// {
+					// 	"question": "Можно ли отменить рекламную заявку? ",
+					// 	"answer": "Отменить заявку на размещение креатива и рекламодатель, и автор могут не позже, чем за 1 час до публикации.<br><br>Если автор не отвечает на заявку, она автоматически отменяется за час до конца указанных сроков выхода поста. "
+					// },
+					// {
+					// 	"question": "Могу ли я получить за одну публикацию и минимальную, и фиксированную выплаты?",
+					// 	"answer": 'Нет. Если ваша публикация набрала порог просмотров, вы получите только фиксированную выплату. Минимальные выплаты начисляются за первые 3 публикации — и только если пост или клип не набрал нужное число просмотров, но получил 25% от установленного порога.'
+					// },
+				]
+			}
+		}
+	]
+}

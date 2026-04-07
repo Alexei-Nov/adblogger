@@ -9,20 +9,19 @@ import { HelmetProvider } from "react-helmet-async";
 
 
 function App() {
-	const footerState = useSelector(state => state.toolkit.footer)
-	const dispatch = useDispatch()
+	// const dispatch = useDispatch()
 
-	useEffect(() => {
-		// fetch('https://api.blogger.ra-studio.ru/api/top-cases/')
-		// 	.then((res) => res.json())
-		// 	.then((data) => {
-		// 		dispatch(setCases(data.data))
-		// 	})
-		// 	.catch((err) => {
-		// 		console.log(err.message);
-		// 	});
+	// useEffect(() => {
+	// fetch('https://api.blogger.ra-studio.ru/api/top-cases/')
+	// 	.then((res) => res.json())
+	// 	.then((data) => {
+	// 		dispatch(setCases(data.data))
+	// 	})
+	// 	.catch((err) => {
+	// 		console.log(err.message);
+	// 	});
 
-	}, [dispatch])
+	// }, [dispatch])
 
 
 	return (
@@ -33,7 +32,7 @@ function App() {
 						{/* <Preloader /> */}
 						<Header />
 						<Main />
-						<Footer footer={footerState} />
+						<Footer />
 					</Router>
 				</HelmetProvider>
 			</div>

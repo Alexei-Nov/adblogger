@@ -1,50 +1,35 @@
-import { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
+import { Fragment, useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import './footer.css';
 import { NavLink, useLocation } from 'react-router-dom';
 import { handleTracking } from 'utils/tracking';
 import { NavItem } from './NavItem';
+import { setFooterNav } from 'toolkitRedux/toolkitSlice';
 
-export default function Footer({ footer }) {
-	const [footerState, setFooterState] = useState(footer)
+export default function Footer() {
+
+	const dispatch = useDispatch()
+	useEffect(() => {
+		fetch('/data/footer/nav.json')
+			.then((res) => res.json())
+			.then((data) => {
+				dispatch(setFooterNav(data))
+			})
+			.catch((err) => {
+				console.log(err.message);
+			});
+	}, [dispatch])
+
+	const footerState = useSelector(state => state.toolkit.footer)
 	const btnState = useSelector(state => state.toolkit.registrationBtn)
 	const location = useLocation()
 
-	const caseItems = [
-		{ text: 'Посевы и треккинг', link: 'top-cases/case-1' },
-		{ text: 'Простор для контента', link: 'top-cases/case-3' },
-		{ text: 'Космически нативно', link: 'top-cases/case-2' },
-		{ text: 'Все кейсы', link: 'top-cases' }
-	];
-
-	const documentItemsForAuthors = [
-		{ text: 'Пользовательское соглашение', link: 'https://adblogger.vk.ru/documents/terms', target: "_blank" },
-		{ text: 'Политика конфиденциальности', link: 'https://adblogger.vk.ru/documents/privacy', target: "_blank" },
-		{ text: 'Правила конкурса “шопс-чарт” 16/11&#8209;15/12', link: 'https://adblogger.vk.ru/documents/shops-chart-16-11', target: "_blank" },
-		{ text: 'Правила конкурса "шопс-чарт" 15/02&#8209;14/03', link: 'https://adblogger.vk.ru/documents/shops-chart-15-02', target: "_blank" },
-		{ text: 'Правила конкурса "шопс-чарт" 15/03&#8209;14/04', link: 'https://adblogger.vk.ru/documents/shops-chart', target: "_blank" },
-		{ text: 'Оферта для авторов', link: 'https://adblogger.vk.ru/documents/offer_creator', target: "_blank" },
-		{ text: 'Дополнительная оферта для авторов', link: 'https://adblogger.vk.ru/documents/offer_creator_products', target: "_blank" },
-		{ text: 'Условия для авторов', link: 'https://adblogger.vk.ru/documents/terms_creator', target: "_blank" },
-		{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.ru/documents/moderation', target: "_blank" },
-		{ text: 'Правила модерации сообществ', link: 'https://adblogger.vk.ru/documents/groups_moderation', target: "_blank" },
-	];
-
-	const documentItemsForAdvertisers = [
-		{ text: 'Пользовательское соглашение', link: 'https://adblogger.vk.ru/documents/terms', target: "_blank" },
-		{ text: 'Политика конфиденциальности', link: 'https://adblogger.vk.ru/documents/privacy', target: "_blank" },
-		{ text: 'Оферта для рекламодателей', link: 'https://adblogger.vk.ru/documents/offer_adv', target: "_blank" },
-		{ text: 'Правила оказания рекламных услуг', link: 'https://adblogger.vk.ru/documents/rules_adv', target: "_blank" },
-		{ text: 'Правила размещения рекламы', link: 'https://adblogger.vk.ru/documents/moderation', target: "_blank" }
-	];
-
-	const helpItems = [
-		{ text: 'FAQ для авторов', link: 'https://vk.ru/@-225265420-faq-po-platforme-vk-adblogger', target: "_blank" },
-		{ text: 'FAQ по шопсам', link: 'https://vk.ru/@adblogger-for-authors-socom', target: "_blank" },
-		{ text: 'FAQ для рекламодателей', link: 'https://adblogger.vk.ru/documents/faq_advertiser', target: "_blank" },
-		{ text: 'Написать в Поддержку', link: 'https://vk.cc/cyEF76', target: "_blank" }
-	];
-
+	// const caseItems = [
+	// 	{ text: 'Посевы и треккинг', link: 'top-cases/case-1' },
+	// 	{ text: 'Простор для контента', link: 'top-cases/case-3' },
+	// 	{ text: 'Космически нативно', link: 'top-cases/case-2' },
+	// 	{ text: 'Все кейсы', link: 'top-cases' }
+	// ];
 
 	return (
 		<>
@@ -73,11 +58,20 @@ export default function Footer({ footer }) {
 							</div>
 							<nav className="footer__nav nav">
 								<ul className='nav__list'>
-									<NavLink to='/top-cases/' className='nav__link nav__link_lvl1 text-20'>Кейсы</NavLink>
-									{/* <NavItem title={"Кейсы"} submenu={caseItems} /> */}
-									<NavItem title={"Документы для авторов"} submenu={documentItemsForAuthors} />
-									<NavItem title={"Помощь"} submenu={helpItems} />
-									<NavItem title={"Документы для рекламодателей"} submenu={documentItemsForAdvertisers} />
+									{footerState.nav.map(((navItem, index) => {
+										return (
+											<Fragment key={index}>
+												{
+													navItem.submenu && navItem.submenu.length > 0 &&
+													<NavItem title={navItem.title} submenu={navItem.submenu} />
+												}
+												{
+													navItem.link &&
+													<NavLink to={navItem.link} className='nav__link nav__link_lvl1 text-20'>{navItem.title}</NavLink>
+												}
+											</Fragment>
+										)
+									}))}
 								</ul>
 							</nav>
 						</div>

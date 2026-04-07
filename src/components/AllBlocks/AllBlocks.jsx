@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Entrance from '../Entrance/Entrance';
 import Advantages from '../Advantages/Advantages';
 import Tile from '../Tile/Tile';
@@ -8,8 +8,8 @@ import Steps from '../Steps/Steps';
 import Case from '../Case/Case';
 import Money from '../Money/Money';
 import Faq from '../Faq/Faq';
-import { useDispatch } from 'react-redux';
-import { setPreloaderInit } from '../../toolkitRedux/toolkitSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { setPages, setPreloaderInit } from '../../toolkitRedux/toolkitSlice';
 import EntranceEvent from 'components/EntranceEvent/EntranceEvent';
 import BannerSellers from 'components/BannersSellers/BannerSellers';
 import Connect from 'components/Connect/Connect';
@@ -37,20 +37,35 @@ import ShopsAdvantages from 'components/ShopsAdvantages/ShopsAdvantages';
 import ShopsSteps from 'components/ShopsSteps/ShopsSteps';
 import ShopsStudy from 'components/ShopsStudy/ShopsStudy';
 import ShopsExamples from 'components/ShopsExamples/ShopsExamples';
+import { useLocation } from 'react-router-dom';
 
-export default function AllBlocks({ pageState }) {
+export default function AllBlocks() {
+	const location = useLocation()
+	const pageSlug = location.pathname.replaceAll('/', '')
+	const pageState = useSelector(state => state.toolkit.pages).filter((item) => item.page_slug === pageSlug)[0]
+
 	const dispatch = useDispatch();
-
 	useEffect(() => {
-		const hasPreloader = pageState.blocks.some(block => block.block_slug === 'preloader');
-		if (hasPreloader) {
-			dispatch(setPreloaderInit(true));
+		// const hasPreloader = pageState.blocks.some(block => block.block_slug === 'preloader');
+		// if (hasPreloader) {
+		// 	dispatch(setPreloaderInit(true));
+		// }
+
+		if (!pageState) {
+			fetch("/data/pages/" + pageSlug + ".json")
+				.then((res) => res.json())
+				.then((data) => {
+					dispatch(setPages(data))
+				})
+				.catch((err) => {
+					console.log(err.message);
+				});
 		}
-	}, [pageState.blocks, dispatch]);
+	}, []);
 
 	return (
 		<>
-			{pageState.blocks.map((block, i) => {
+			{pageState && pageState.blocks.map((block, i) => {
 				switch (block.block_slug) {
 					case 'entrance_event':
 						return <EntranceEvent key={i} block_state={block.block_state} />;
