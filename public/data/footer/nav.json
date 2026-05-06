@@ -9,6 +9,11 @@
 		"link": "",
 		"submenu": [
 			{
+				"text": "Что такое шопсы?",
+				"link": "https://adblogger.vk.ru/documents/onboarding_authors",
+				"target": "_blank"
+			},
+			{
 				"text": "Пользовательское соглашение",
 				"link": "https://adblogger.vk.ru/documents/terms",
 				"target": "_blank"
