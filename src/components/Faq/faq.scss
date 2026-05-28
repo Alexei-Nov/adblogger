@@ -13,6 +13,13 @@
 				color: var(--blue-1);
 				text-decoration: underline;
 			}
+
+			& .accordion {
+				&__btn {
+					font-size: 26px;
+					line-height: 120%;
+				}
+			}
 		}
 	}
 }
@@ -27,6 +34,13 @@
 			&__body {
 				font-size: 17px;
 				line-height: 140%;
+
+				& .accordion {
+					&__btn {
+						font-size: 20px;
+						line-height: 120%;
+					}
+				}
 			}
 		}
 	}
