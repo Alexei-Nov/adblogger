@@ -21,8 +21,8 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: center bottom;
+     object-position: center bottom;
 }
 
 .shops-examples__slider {
