@@ -18,6 +18,23 @@
 				}
 			}
 		}
+		&_without-text {
+			& .accordion {
+				&__caret {
+					display: none;
+				}
+				&__body {
+					display: none;
+				}
+				&__btn {
+					cursor: auto;
+					font-size: 26px;
+					& a {
+						color: var(--blue-1);
+					}
+				}
+			}
+		}
 	}
 	&__body {
 		margin-left: 36px;

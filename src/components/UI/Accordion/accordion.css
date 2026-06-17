@@ -15,6 +15,23 @@
           transform: translate(-50%, -50%);
 }
 
+.accordion__item_without-text .accordion__caret {
+  display: none;
+}
+
+.accordion__item_without-text .accordion__body {
+  display: none;
+}
+
+.accordion__item_without-text .accordion__btn {
+  cursor: auto;
+  font-size: 26px;
+}
+
+.accordion__item_without-text .accordion__btn a {
+  color: var(--blue-1);
+}
+
 .accordion__body {
   margin-left: 36px;
   position: relative;

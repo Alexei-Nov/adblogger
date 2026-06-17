@@ -17,7 +17,8 @@ function AccordionList({ data }) {
 			{data.map((item, i) => {
 				return (
 					<AccordionItem key={i} title={item.question}>
-						{item.subList ? <AccordionList data={item.subList} /> : <span dangerouslySetInnerHTML={{ __html: item.answer }}></span>}
+						{item.subList && <AccordionList data={item.subList} />}
+						{item.answer && <span dangerouslySetInnerHTML={{ __html: item.answer }}></span>}
 					</AccordionItem>
 				)
 			})}
@@ -42,8 +43,8 @@ function AccordionItem({ title, children }) {
 
 
 	return (
-		<div className={"accordion__item" + (currentOpen ? ' accordion__item_open' : '')} itemScope itemType="https://schema.org/Question" >
-			<div className="accordion__btn text-32 fw-500" itemProp="name" onClick={handleToggle}>
+		<div className={"accordion__item" + (currentOpen ? ' accordion__item_open' : '') + ((!children[0] && !children[1]) ? ' accordion__item_without-text' : '')} itemScope itemType="https://schema.org/Question" >
+			<div className="accordion__btn text-32 fw-500 " itemProp="name" onClick={handleToggle}>
 				<div className="accordion__caret"></div>
 				<div className="accordion__btn-text" dangerouslySetInnerHTML={{ __html: title }}></div>
 			</div>
