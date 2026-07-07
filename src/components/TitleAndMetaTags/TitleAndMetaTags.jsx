@@ -16,6 +16,10 @@ export default function TitleAndMetaTags({ title = defaultTitle, description = d
                 property="og:description"
                 content={description}
             />
+            <meta
+                property="description"
+                content={description}
+            />
         </Helmet>
     )
 }
