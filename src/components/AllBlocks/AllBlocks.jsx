@@ -38,6 +38,7 @@ import ShopsSteps from 'components/ShopsSteps/ShopsSteps';
 import ShopsStudy from 'components/ShopsStudy/ShopsStudy';
 import ShopsExamples from 'components/ShopsExamples/ShopsExamples';
 import { useLocation } from 'react-router-dom';
+import EntranceVideo from 'components/EntranceVideo/EntranceVideo';
 
 export default function AllBlocks() {
 	const location = useLocation()
@@ -139,6 +140,8 @@ export default function AllBlocks() {
 						return <ShopsStudy key={i} block_state={block.block_state} />;
 					case 'shops_examples':
 						return <ShopsExamples key={i} block_state={block.block_state} />;
+					case 'entrance_video':
+						return <EntranceVideo key={i} block_state={block.block_state} />;
 					default:
 						return null;
 				}

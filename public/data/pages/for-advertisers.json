@@ -7,10 +7,14 @@
 			"block_state": {}
 		},
 		{
-			"block_slug": "entrance",
+			"block_slug": "entrance_video",
 			"block_state": {
-				"title": "продажи ждут&nbsp;— в&nbsp;рекламе у&nbsp;блогеров",
-				"videoPath": "/video/video-2.mp4"
+				"title": "<span class='blue-text'>Удвоим бюджет</span> <br> на&nbsp;первую рекламу",
+				"desc": "Просто создайте кабинет и&nbsp;пополните баланс",
+				"btn_text": "Получить бонус",
+				"btn_link": "/app",
+				"media": "/video/video-4.mp4",
+				"media_mob": "/video/video-4_mob.mp4"
 			}
 		},
 		{
