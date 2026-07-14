@@ -7,7 +7,7 @@
 }
 
 .entrance-video__wrapper {
-  padding: 85px 0;
+  padding: 82px 0;
   position: relative;
   z-index: 1;
 }
@@ -41,7 +41,7 @@
   display: flex;
   position: absolute;
   width: auto;
-  height: calc(100% + 120px);
+  height: calc(100% + 200px);
   top: -140px;
   right: calc((100vw - 1440px + 120px) / -2);
   z-index: -1;
