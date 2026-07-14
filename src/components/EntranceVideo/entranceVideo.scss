@@ -96,6 +96,8 @@
 
 @media screen and (max-width: 570px) {
 	.entrance-video {
+		overflow: hidden;
+		padding: 25px 0;
 		&__title {
 			font-size: 40px;
 			line-height: 110%;
@@ -104,6 +106,7 @@
 			font-size: 16px;
 			line-height: 120%;
 			max-width: 203px;
+			margin-top: 8px;
 		}
 		&__btn {
 			width: 100%;
