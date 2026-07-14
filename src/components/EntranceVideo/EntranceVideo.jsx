@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './entranceVideo.css'
 import { handleTracking } from 'utils/tracking'
 
 export default function EntranceVideo({ block_state }) {
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+	useEffect(() => {
+		const handleResize = () => {
+			setWindowWidth(window.innerWidth);
+		};
+		window.addEventListener('resize', handleResize);
 
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+
+	}, []);
 	return (
 		<section className='section entrance-video'>
 			<div className="container">

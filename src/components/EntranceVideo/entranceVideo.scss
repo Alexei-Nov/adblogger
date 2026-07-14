@@ -30,17 +30,17 @@
 	&__media {
 		display: flex;
 		position: absolute;
-		width: calc(100% + 120px);
+		width: auto;
 		height: calc(100% + 120px);
-		top: -60px;
+		top: -140px;
 		right: calc((100vw - 1440px + 120px) / -2);
 		z-index: -1;
 
 		& video {
-			width: 100%;
+			width: auto;
 			height: 100%;
-			object-fit: cover;
-			object-position: center right;
+			object-fit: contain;
+			object-position: right;
 		}
 	}
 	&__btn {
@@ -76,6 +76,8 @@
 			height: auto;
 
 			& video {
+				width: 100%;
+				object-fit: cover;
 				object-position: center bottom;
 			}
 		}
@@ -90,6 +92,9 @@
 		}
 		&__bottom {
 			margin: 0;
+		}
+		&__btn {
+			background: #12121291;
 		}
 	}
 }
