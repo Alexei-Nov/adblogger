@@ -31,8 +31,8 @@
 		display: flex;
 		position: absolute;
 		width: auto;
-		height: calc(100% + 200px);
-		top: -140px;
+		height: calc(100% + 220px);
+		top: -160px;
 		right: calc((100vw - 1440px + 120px) / -2);
 		z-index: -1;
 
@@ -129,7 +129,7 @@
 			max-width: none;
 		}
 		&__media {
-			margin: -71% -24px -90px;
+			margin: -80% -24px -70px;
 			width: auto;
 		}
 		&__label {
