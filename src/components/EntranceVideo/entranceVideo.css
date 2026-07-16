@@ -15,7 +15,7 @@
 .entrance-video__desc {
   margin-top: 20px;
   width: 100%;
-  max-width: 385px;
+  max-width: 470px;
 }
 
 .entrance-video__body {
@@ -61,6 +61,15 @@
   max-width: 350px;
 }
 
+.entrance-video__label {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 16px;
+  line-height: 120%;
+  color: #a0a0a0;
+}
+
 @media screen and (max-width: 1440px) {
   .entrance-video__media {
     right: -60px;
@@ -104,6 +113,10 @@
   .entrance-video__btn {
     background: #12121291;
   }
+  .entrance-video__label {
+    position: static;
+    margin-top: 16px;
+  }
 }
 
 @media screen and (max-width: 570px) {
@@ -118,7 +131,6 @@
   .entrance-video__desc {
     font-size: 16px;
     line-height: 120%;
-    max-width: 203px;
     margin-top: 8px;
   }
   .entrance-video__btn {
@@ -128,5 +140,9 @@
   .entrance-video__media {
     margin: -71% -24px -90px;
     width: auto;
+  }
+  .entrance-video__label {
+    font-size: 10px;
+    line-height: 120%;
   }
 }

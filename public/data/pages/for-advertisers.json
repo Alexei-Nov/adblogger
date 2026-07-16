@@ -9,8 +9,9 @@
 		{
 			"block_slug": "entrance_video",
 			"block_state": {
-				"title": "<span class='blue-text'>Удвоим бюджет</span> <br> на&nbsp;первую рекламу",
-				"desc": "Просто создайте кабинет и&nbsp;пополните баланс",
+				"title": "<span class='blue-text'>получите бонусы</span> <br> на&nbsp;первую рекламу",
+				"desc": "При пополнении от&nbsp;7 000 ₽* <br> Акция действует до&nbsp;15&nbsp;сентября",
+				"label": "*без учёта НДС",
 				"btn_text": "Получить бонус",
 				"btn_link": "/app",
 				"media": "/video/video-4.mp4",
