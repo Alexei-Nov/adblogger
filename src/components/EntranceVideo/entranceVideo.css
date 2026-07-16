@@ -41,8 +41,8 @@
   display: flex;
   position: absolute;
   width: auto;
-  height: calc(100% + 220px);
-  top: -160px;
+  height: calc(100% + 120px);
+  top: -60px;
   right: calc((100vw - 1440px + 120px) / -2);
   z-index: -1;
 }
