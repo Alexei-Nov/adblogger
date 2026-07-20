@@ -54,6 +54,10 @@
 		font-size: 16px;
 		line-height: 120%;
 		color: #a0a0a0;
+
+		& a {
+			text-decoration: underline;
+		}
 	}
 }
 
