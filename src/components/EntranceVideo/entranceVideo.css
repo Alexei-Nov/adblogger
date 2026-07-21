@@ -149,4 +149,7 @@
     font-size: 10px;
     line-height: 120%;
   }
+  .entrance-video__label .desktop-only {
+    display: none;
+  }
 }
