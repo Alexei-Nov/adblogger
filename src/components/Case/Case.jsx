@@ -11,7 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Case({ block_state }) {
 	let wrapper = useRef();
-	// const [cases, setCases] = useState([])
 	const cases = useSelector(state => state.toolkit.cases)
 
 	useEffect(() => {
@@ -26,28 +25,8 @@ export default function Case({ block_state }) {
 					pin: false,
 				}
 			});
-
-			// tl.fromTo(wrapper.current, {
-			// 	y: 300,
-			// }, {
-			// 	y: 0,
-			// 	duration: 2,
-			// 	ease: "elastic.out(0.4,0.6)",
-			// });
 		}
-
-		// fetch("./casesState.json")
-		// 	.then(res => res.json())
-		// 	.then(
-		// 		(result) => {
-		// 			setCases(result.cases)
-		// 		},
-		// 		(error) => {
-		// 			console.log(error);
-		// 		}
-		// 	)
-		// 	.catch(err => console.error(err))
-	})
+	}, [])
 
 	return (
 		<>

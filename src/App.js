@@ -9,19 +9,20 @@ import { HelmetProvider } from "react-helmet-async";
 
 
 function App() {
-	// const dispatch = useDispatch()
+	const dispatch = useDispatch()
 
-	// useEffect(() => {
-	// fetch('https://api.blogger.ra-studio.ru/api/top-cases/')
-	// 	.then((res) => res.json())
-	// 	.then((data) => {
-	// 		dispatch(setCases(data.data))
-	// 	})
-	// 	.catch((err) => {
-	// 		console.log(err.message);
-	// 	});
-
-	// }, [dispatch])
+	useEffect(() => {
+		fetch('/data/cases/index.json')
+			.then(res => res.json())
+			.then(files =>
+				Promise.all(
+					files.map(file => fetch(`/data/cases/${file}`).then(r => r.json()))
+				)
+			)
+			.then(cases => {
+				dispatch(setCases(cases))
+			});
+	}, [])
 
 
 	return (
