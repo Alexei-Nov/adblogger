@@ -1,5 +1,9 @@
 .entrance-video {
   overflow: hidden;
+  background-image: url("/public/img/entrance-video/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
 }
 
 .entrance-video__title {

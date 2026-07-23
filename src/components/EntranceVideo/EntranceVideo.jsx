@@ -26,7 +26,7 @@ export default function EntranceVideo({ block_state }) {
 
 						<div className="entrance-video__media">
 							<video src={(window.innerWidth > 1024 ? block_state.media : block_state.media_mob)} autoPlay muted playsInline></video>
-							<div className="entrance-video__media-gradient">
+							{/* <div className="entrance-video__media-gradient">
 								<svg width="1611" height="1721" viewBox="0 0 1611 1721" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<g filter="url(#filter0_f_230_1272)">
 										<ellipse cx="805.325" cy="860.194" rx="422.594" ry="488.056" transform="rotate(-16.49 805.325 860.194)" fill="#00E8FF" />
@@ -39,7 +39,7 @@ export default function EntranceVideo({ block_state }) {
 										</filter>
 									</defs>
 								</svg>
-							</div>
+							</div> */}
 						</div>
 
 						<div className="entrance-video__bottom">

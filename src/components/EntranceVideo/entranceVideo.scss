@@ -1,5 +1,10 @@
 .entrance-video {
 	overflow: hidden;
+	background-image: url("/public/img/entrance-video/bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 100%;
+
 	&__title {
 		font-family: "VK Sans Display Condensed";
 		font-size: 80px;
