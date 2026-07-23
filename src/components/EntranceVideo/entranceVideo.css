@@ -1,3 +1,7 @@
+.entrance-video {
+  overflow: hidden;
+}
+
 .entrance-video__title {
   font-family: "VK Sans Display Condensed";
   font-size: 80px;
@@ -43,7 +47,7 @@
   width: auto;
   height: calc(100% + 120px);
   top: -60px;
-  right: calc((100vw - 1440px + 120px) / -2);
+  right: -60px;
   z-index: -1;
 }
 
@@ -52,8 +56,27 @@
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: right;
-     object-position: right;
+  -o-object-position: right -3px top 0;
+     object-position: right -3px top 0;
+}
+
+.entrance-video__media-gradient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  bottom: -17%;
+  right: 0;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  width: auto;
+  height: 200%;
+}
+
+.entrance-video__media-gradient svg {
+  width: 100%;
+  height: 100%;
 }
 
 .entrance-video__btn {
@@ -77,6 +100,9 @@
 @media screen and (max-width: 1440px) {
   .entrance-video__media {
     right: -60px;
+  }
+  .entrance-video__media-gradient {
+    display: none;
   }
 }
 
