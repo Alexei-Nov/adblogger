@@ -1,10 +1,4 @@
 .entrance-video {
-	overflow: hidden;
-	background-image: url("/public/img/entrance-video/bg.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: auto 100%;
-
 	&__title {
 		font-family: "VK Sans Display Condensed";
 		font-size: 80px;
@@ -14,9 +8,13 @@
 	}
 
 	&__wrapper {
-		padding: 92px 0;
+		padding: calc(90px + 60px) 60px;
 		position: relative;
 		z-index: 1;
+		border: 1px solid #363738;
+		border-radius: 25px;
+		overflow: hidden;
+		margin: 0 -60px;
 	}
 	&__desc {
 		margin-top: 20px;
@@ -37,9 +35,9 @@
 		display: flex;
 		position: absolute;
 		width: auto;
-		height: calc(100% + 120px);
-		top: -60px;
-		right: -60px;
+		height: 100%;
+		top: 0px;
+		right: 0px;
 		z-index: -1;
 
 		& video {
@@ -70,8 +68,8 @@
 	}
 	&__label {
 		position: absolute;
-		bottom: 10px;
-		left: 0;
+		bottom: 70px;
+		left: 60px;
 		font-size: 16px;
 		line-height: 120%;
 		color: #a0a0a0;
@@ -85,7 +83,7 @@
 @media screen and (max-width: 1440px) {
 	.entrance-video {
 		&__media {
-			right: -60px;
+			right: 0px;
 		}
 		&__media-gradient {
 			display: none;
@@ -124,7 +122,8 @@
 			margin-top: 19px;
 		}
 		&__wrapper {
-			padding: 0;
+			padding: 32px 24px 24px;
+			margin: 0 -24px;
 		}
 		&__bottom {
 			margin: 0;
@@ -142,7 +141,7 @@
 @media screen and (max-width: 570px) {
 	.entrance-video {
 		overflow: hidden;
-		padding: 25px 0;
+		// padding: 25px 0;
 		&__title {
 			font-size: 40px;
 			line-height: 110%;
@@ -157,7 +156,7 @@
 			max-width: none;
 		}
 		&__media {
-			margin: -80% -24px -70px;
+			margin: -80% -24px -80px;
 			width: auto;
 		}
 		&__label {
