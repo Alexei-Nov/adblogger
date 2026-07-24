@@ -89,8 +89,8 @@
 			min-height: 320px;
 		}
 		&__img {
+			top: 15px;
 			& img {
-				top: 15px;
 				width: calc(100% + 50px);
 				height: calc(100% + 50px);
 			}

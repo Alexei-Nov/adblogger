@@ -88,8 +88,10 @@
     gap: 56px;
     min-height: 320px;
   }
-  .money__img img {
+  .money__img {
     top: 15px;
+  }
+  .money__img img {
     width: calc(100% + 50px);
     height: calc(100% + 50px);
   }
