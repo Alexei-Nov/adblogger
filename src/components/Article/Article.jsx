@@ -19,9 +19,12 @@ export default function Article({ article }) {
 										<div className="article__brand-name text-21" dangerouslySetInnerHTML={{ __html: article.brand_name }}></div>
 									</div>
 								}
-								<div className="article__preview">
+								<picture className="article__preview">
+									{article.preview_img_mob &&
+										<source media="(max-width: 570px)" srcSet={article.preview_img_mob} />
+									}
 									<img src={article.preview_img} alt={article.brand_name} />
-								</div>
+								</picture>
 							</div>
 
 							<div className="article__content content">
@@ -53,6 +56,9 @@ export default function Article({ article }) {
 											if (block.autor_name || block.autor_photo_path) {
 												return (
 													<div key={i} className='article__block article__citation'>
+														{block.title &&
+															<div className='article__citation-title text-32' dangerouslySetInnerHTML={{ __html: block.title }}></div>
+														}
 														<div className='article__citation-text text-21' dangerouslySetInnerHTML={{ __html: block.text }}></div>
 														<div className="article__citation-author">
 															<div className="article__citation-photo">

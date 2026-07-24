@@ -29,8 +29,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-height: 370px;
-  height: 500px;
+  height: auto;
   border-radius: 28px;
   overflow: hidden;
 }
@@ -74,6 +73,10 @@
           align-items: center;
   gap: 12px;
   margin-top: 36px;
+}
+
+.article__citation-title {
+  margin-bottom: 36px;
 }
 
 .article__citation-photo {

@@ -48,10 +48,10 @@ export default function Money({ block_state }) {
 									<picture>
 										<source media="(max-width: 570px)" srcSet="/img/money/img-1_mob.png" sizes="img" />
 										<source media="(max-width: 1024px)" srcSet="/img/money/img-1_tablet.png" sizes="img" />
-										<img src="/img/money/img-1.png" alt="img" />
+										<img src="/img/money/img-1_2.png" alt="img" />
 									</picture>
-									<img src="/img/money/img-2.png" alt="img" />
-									<img src="/img/money/img-3.png" alt="img" />
+									<img src="/img/money/img-2_2.png" alt="img" />
+									<img src="/img/money/img-3_2.png" alt="img" />
 								</>
 							}
 							{block_state.has_border == 'false' &&
