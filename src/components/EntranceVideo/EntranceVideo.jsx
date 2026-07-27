@@ -31,7 +31,7 @@ export default function EntranceVideo({ block_state }) {
 						<div className="entrance-video__bottom">
 							<a href={block_state.btn_link}
 								className="entrance-video__btn btn btn_big btn_rounded btn_border text-26 fw-500"
-								onClick={() => handleTracking('registration_all')}
+								onClick={() => handleTracking('get_bonus_3k')}
 							>{block_state.btn_text}</a>
 						</div>
 					</div>

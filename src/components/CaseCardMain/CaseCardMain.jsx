@@ -9,9 +9,9 @@ export default function CaseCardMain({ post }) {
 					<h1 className="case-card-main__title page-title">топ-кейсы</h1>
 					{post &&
 						<a href={'/top-cases/' + post.slug} className="case-card-main__wrapper">
-							<div className="case-card-main__logo">
+							{/* <div className="case-card-main__logo">
 								<img src={post.logo} alt="img" />
-							</div>
+							</div> */}
 							<div className="case-card-main__text text-32 fw-500" dangerouslySetInnerHTML={{ __html: post.title }}></div>
 							<div className="case-card-main__img">
 								<picture>
