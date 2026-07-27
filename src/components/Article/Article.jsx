@@ -87,6 +87,17 @@ export default function Article({ article }) {
 													})}
 												</div>
 											)
+										case 'img':
+											return (
+												<div key={i} className={'article__block article__gallery'}>
+													<picture className="article__gallery-img">
+														{block.img_mob &&
+															<source media="(max-width: 570px)" srcSet={block.img_mob} />
+														}
+														<img src={block.img_desktop} alt="img" />
+													</picture>
+												</div>
+											)
 										case 'tile':
 											return (
 												<div key={i} className='article__block article__tile'>
