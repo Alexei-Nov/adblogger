@@ -39,6 +39,7 @@ import ShopsStudy from 'components/ShopsStudy/ShopsStudy';
 import ShopsExamples from 'components/ShopsExamples/ShopsExamples';
 import { useLocation } from 'react-router-dom';
 import EntranceVideo from 'components/EntranceVideo/EntranceVideo';
+import BackpackLink from 'components/BackpackLink/BackpackLink';
 
 export default function AllBlocks() {
 	const location = useLocation()
@@ -142,6 +143,8 @@ export default function AllBlocks() {
 						return <ShopsExamples key={i} block_state={block.block_state} />;
 					case 'entrance_video':
 						return <EntranceVideo key={i} block_state={block.block_state} />;
+					case 'backpack_link':
+						return <BackpackLink key={i} block_state={block.block_state} />;
 					default:
 						return null;
 				}

@@ -7,6 +7,13 @@
 			"block_state": {}
 		},
 		{
+			"block_slug": "backpack_link",
+			"block_state": {
+				"title": "заработайте <br> больше",
+				"link": "/app"
+			}
+		},
+		{
 			"block_slug": "entrance_event",
 			"block_state": {
 				"title": "зарабатывайте <br> на",
