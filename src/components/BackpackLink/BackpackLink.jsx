@@ -40,7 +40,7 @@ export default function BackpackLink({ block_state }) {
 					<div className="backpack-link__img" ref={backpack}>
 						<img src="/img/backpack-link/img.png" alt="img" />
 					</div>
-					<a href="" className="backpack-link__panel" target='_blank' ref={panel}>
+					<a href={block_state.link} className="backpack-link__panel" target='_blank' ref={panel}>
 						<div className="backpack-link__title" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
 						<div className="backpack-link__currency">
 							<div className="backpack-link__currency-text">₽</div>
