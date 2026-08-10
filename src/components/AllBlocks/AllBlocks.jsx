@@ -40,6 +40,7 @@ import ShopsExamples from 'components/ShopsExamples/ShopsExamples';
 import { useLocation } from 'react-router-dom';
 import EntranceVideo from 'components/EntranceVideo/EntranceVideo';
 import BackpackLink from 'components/BackpackLink/BackpackLink';
+import BlogCatalog from 'components/BlogCatalog/BlogCatalog';
 
 export default function AllBlocks() {
 	const location = useLocation()
@@ -145,6 +146,8 @@ export default function AllBlocks() {
 						return <EntranceVideo key={i} block_state={block.block_state} />;
 					case 'backpack_link':
 						return <BackpackLink key={i} block_state={block.block_state} />;
+					case 'blog_catalog':
+						return <BlogCatalog key={i} block_state={block.block_state} />;
 					default:
 						return null;
 				}

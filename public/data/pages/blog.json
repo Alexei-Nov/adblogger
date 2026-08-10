@@ -7,6 +7,13 @@
 			"block_state": {}
 		},
 		{
+			"block_slug": "blog_catalog",
+			"block_state": {
+				"title": "Полезные материалы",
+				"description": "Описание описание описание описание описание описание"
+			}
+		},
+		{
 			"block_slug": "faq",
 			"block_state": {
 				"faqList": [
