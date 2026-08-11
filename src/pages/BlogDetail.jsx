@@ -40,7 +40,7 @@ export default function BlogDetail() {
 		},
 		{
 			title: 'Полезные материалы',
-			link: "/for-advertisers"
+			link: "/blog"
 		},
 		{
 			title: articleState && articleState?.title,

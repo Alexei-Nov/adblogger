@@ -21,22 +21,28 @@
 	],
 	"related_articles": [
 		{
-			"slug": "article-2"
+			"link": "/blog/article-2",
+			"title": "Статьи VK AdBlogger",
+			"desc": "Практические разборы и&nbsp;кейсы",
+			"img": "/img/case/img-1.png"
 		},
 		{
-			"slug": "article-3"
+			"link": "/blog/article-3",
+			"title": "Подкасты",
+			"desc": "Интервью с авторами и&nbsp;разборы реальных размещений",
+			"img": "/img/case/img-2.png"
 		}
 	],
 	"contents_nav": [
 		{
 			"title": "Объект продвижения – сайт",
 			"link": "#anhcor-1",
-			"submenu": []
+			"submenu": null
 		},
 		{
 			"title": "Объект продвижения – лид-формы",
 			"link": "#anhcor-2",
-			"submenu": []
+			"submenu": null
 		},
 		{
 			"title": "Объект продвижения – сообщество ВКонтакте",
@@ -55,9 +61,15 @@
 		{
 			"title": "Подводим итоги",
 			"link": "#anhcor-4",
-			"submenu": []
+			"submenu": null
 		}
 	],
+	"subscribe": {
+		"btn_text": "Подписаться на канал",
+		"link": "/#link",
+		"img": "/img/blog-detail/subscribe.png",
+		"img_mob": "/img/blog-detail/subscribe_mob.png"
+	},
 	"blocks": [
 		{
 			"block_type": "text",
