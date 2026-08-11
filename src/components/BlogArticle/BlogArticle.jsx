@@ -1,0 +1,142 @@
+
+import React, { useState } from 'react'
+import './blogArticle.css'
+import Accordion from 'components/UI/Accordion/Accordion';
+
+export default function BlogArticle({ article }) {
+	const [contentsClosed, setContentsClosed] = useState(true)
+	const [submenuClosed, setSubmenuClosed] = useState([])
+	const datePublished = article && article.date_published && new Date(article.date_published);
+
+	function getMinutesLabel(minutes) {
+		if (minutes % 10 === 1 && minutes % 100 !== 11) {
+			return 'минута';
+		}
+
+		if (
+			[2, 3, 4].includes(minutes % 10) &&
+			![12, 13, 14].includes(minutes % 100)
+		) {
+			return 'минуты';
+		}
+
+		return 'минут';
+	}
+
+	function handleLinkClick(index) {
+		if (submenuClosed.includes(index)) {
+			const filteredArr = submenuClosed.filter(item => item !== index);
+			setSubmenuClosed(filteredArr)
+		} else {
+			setSubmenuClosed([index, ...submenuClosed])
+		}
+	}
+
+	return (
+		<>
+			{article &&
+				<section className='section blog-article'>
+					<div className="container">
+						<div className="blog-article__wrapper">
+							<div className="blog-article__heading">
+								<h1 className="blog-article__title text-40" dangerouslySetInnerHTML={{ __html: article.title }}></h1>
+								<picture className="blog-article__preview">
+									{article.preview_img_mob &&
+										<source media="(max-width: 570px)" srcSet={article.preview_img_mob} />
+									}
+									<img src={article.preview_img} alt={article.brand_name} />
+
+									<div className="blog-article__preview-top text-22">
+										<div className="blog-article__preview-tag blog-article__preview-date">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fillRule="evenodd" clipRule="evenodd" d="M7.99998 1.5C8.49703 1.5 8.89998 1.90294 8.89998 2.4V3.00043C9.07971 3 9.26681 3 9.4616 3H14.5384C14.7332 3 14.9203 3 15.1 3.00043V2.4C15.1 1.90294 15.5029 1.5 16 1.5C16.497 1.5 16.9 1.90294 16.9 2.4V3.05299C17.5278 3.10616 18.0828 3.21729 18.5976 3.47957C19.4255 3.90141 20.0986 4.57453 20.5204 5.40244C20.7866 5.92481 20.8971 6.48863 20.9493 7.12792C21 7.74834 21 8.51409 21 9.46159V14.5384C21 15.4859 21 16.2517 20.9493 16.8721C20.8971 17.5114 20.7866 18.0752 20.5204 18.5976C20.0986 19.4255 19.4255 20.0986 18.5976 20.5204C18.0752 20.7866 17.5114 20.8971 16.8721 20.9493C16.2517 21 15.4859 21 14.5384 21H9.46159C8.51409 21 7.74834 21 7.12792 20.9493C6.48863 20.8971 5.92481 20.7866 5.40244 20.5204C4.57453 20.0986 3.90142 19.4255 3.47957 18.5976C3.21341 18.0752 3.10291 17.5114 3.05067 16.8721C2.99998 16.2517 2.99999 15.4859 3 14.5384V9.46159C2.99999 8.51409 2.99998 7.74834 3.05067 7.12792C3.10291 6.48863 3.21341 5.92481 3.47957 5.40244C3.90142 4.57453 4.57453 3.90141 5.40244 3.47957C5.91719 3.2173 6.47218 3.10616 7.09998 3.053V2.4C7.09998 1.90294 7.50292 1.5 7.99998 1.5ZM7.09998 4.86117C6.6779 4.90689 6.41974 4.98142 6.21963 5.08338C5.7304 5.33265 5.33265 5.7304 5.08338 6.21962C4.96807 6.44595 4.88783 6.74652 4.8447 7.2745C4.80848 7.7178 4.8016 8.26521 4.8003 9H19.1997C19.1984 8.26521 19.1915 7.7178 19.1553 7.2745C19.1122 6.74652 19.0319 6.44595 18.9166 6.21962C18.6673 5.7304 18.2696 5.33265 17.7804 5.08338C17.5803 4.98142 17.3221 4.90688 16.9 4.86117V5.6C16.9 6.09706 16.497 6.5 16 6.5C15.5029 6.5 15.1 6.09706 15.1 5.6V4.80052C14.9129 4.80003 14.7134 4.8 14.5 4.8H9.5C9.28655 4.8 9.08703 4.80003 8.89998 4.80052V5.6C8.89998 6.09706 8.49703 6.5 7.99998 6.5C7.50292 6.5 7.09998 6.09706 7.09998 5.6V4.86117ZM19.2 10.8H4.8V14.5C4.8 15.4949 4.8007 16.187 4.8447 16.7255C4.88783 17.2535 4.96807 17.5541 5.08338 17.7804C5.33265 18.2696 5.7304 18.6673 6.21963 18.9166C6.44595 19.0319 6.74652 19.1122 7.2745 19.1553C7.81298 19.1993 8.50506 19.2 9.5 19.2H14.5C15.4949 19.2 16.187 19.1993 16.7255 19.1553C17.2535 19.1122 17.5541 19.0319 17.7804 18.9166C18.2696 18.6673 18.6673 18.2696 18.9166 17.7804C19.0319 17.5541 19.1122 17.2535 19.1553 16.7255C19.1993 16.187 19.2 15.4949 19.2 14.5V10.8Z" fill="#909090" />
+											</svg>
+											{datePublished.toLocaleDateString()}
+										</div>
+										<div className="blog-article__preview-tag blog-article__preview-time">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12.3996 7.99998C12.3996 7.50292 11.9967 7.09998 11.4996 7.09998C11.0026 7.09998 10.5996 7.50292 10.5996 7.99998V12.5C10.5996 12.8751 10.8323 13.2109 11.1836 13.3427L15.1836 14.8427C15.649 15.0172 16.1678 14.7814 16.3423 14.316C16.5168 13.8506 16.281 13.3318 15.8156 13.1573L12.3996 11.8763V7.99998Z" fill="#909090" />
+												<path fillRule="evenodd" clipRule="evenodd" d="M11.9996 2.09998C6.53199 2.09998 2.09961 6.53236 2.09961 12C2.09961 17.4676 6.53199 21.9 11.9996 21.9C17.4672 21.9 21.8996 17.4676 21.8996 12C21.8996 6.53236 17.4672 2.09998 11.9996 2.09998ZM3.89961 12C3.89961 7.52647 7.5261 3.89998 11.9996 3.89998C16.4731 3.89998 20.0996 7.52647 20.0996 12C20.0996 16.4735 16.4731 20.1 11.9996 20.1C7.5261 20.1 3.89961 16.4735 3.89961 12Z" fill="#909090" />
+											</svg>
+											Читать {article.reading_time_minutes} {getMinutesLabel(article.reading_time_minutes)}
+										</div>
+									</div>
+								</picture>
+							</div>
+
+							<div className="blog-article__body">
+								<div className="blog-article__content ">
+									{article.blocks.map((block, i) => {
+										switch (block.block_type) {
+											case 'text':
+												<div key={i} className='article__block content'>
+													<div className='article__block-title text-32 fw-500'>{block.title}</div>
+													<div className='text-21' dangerouslySetInnerHTML={{ __html: block.text }}></div>
+												</div>
+												break;
+										}
+									})}
+								</div>
+								<div className="blog-article__side">
+									<div className={"blog-article__contents" + (contentsClosed ? " blog-article__contents_closed" : "")}>
+										<div className="blog-article__contents-title text-20 fw-500" onClick={() => { setContentsClosed(!contentsClosed) }}>
+											<div className="blog-article__contents-title-text">Оглавление</div>
+											<div className="blog-article__contents-title-icon">
+												<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect width="20" height="20" rx="6" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 20 1.74846e-06)" fill="#00D3E6" />
+													<path fillRule="evenodd" clipRule="evenodd" d="M15.8329 8.27813C15.5723 7.95618 15.1 7.90647 14.7781 8.16709L9.99998 12.0351L5.22188 8.16709C4.89993 7.90647 4.42767 7.95618 4.16704 8.27813C3.90642 8.60007 3.95613 9.07234 4.27808 9.33296L9.52808 13.583C9.80325 13.8057 10.1967 13.8057 10.4719 13.583L15.7219 9.33296C16.0438 9.07234 16.0935 8.60007 15.8329 8.27813Z" fill="black" />
+												</svg>
+											</div>
+										</div>
+										<nav className="blog-article__contents-panel text-18">
+											<ul className="blog-article__contents-list">
+												{article.contents_nav.map((item, i) => {
+													return (
+														<li key={i} className={'blog-article__contents-list-item' + (!submenuClosed.includes(i) ? ' blog-article__contents-list-item_closed' : "")}>
+															<a href={item.link} className='blog-article__contents-list-link'>
+																<div className="blog-article__contents-list-link-icon">
+																	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M15.3435 8.48495L19.773 8.90993C21.3143 9.0578 21.787 10.5634 20.5968 11.5525L17.129 14.4347L18.4164 19.13C18.8391 20.6719 17.5275 21.6053 16.2137 20.6773L12 17.701L7.78631 20.6773C6.47785 21.6016 5.16081 20.6721 5.58365 19.13L6.87104 14.4347L3.40318 11.5525C2.20801 10.5592 2.67885 9.05846 4.22675 8.90993L8.65551 8.48495L10.6067 3.98631C11.2177 2.57751 12.7826 2.57822 13.3932 3.98645L15.3435 8.48495Z" fill="currentColor" />
+																	</svg>
+																</div>
+
+																{item.title}
+
+																{item.submenu && item.submenu.length > 0 &&
+																	<div className='blog-article__contents-list-link-arrow' onClick={() => { handleLinkClick(i) }}>
+																		<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path fillRule="evenodd" clipRule="evenodd" d="M15.8329 8.27813C15.5723 7.95618 15.1 7.90647 14.7781 8.16709L9.99998 12.0351L5.22188 8.16709C4.89993 7.90647 4.42767 7.95618 4.16704 8.27813C3.90642 8.60007 3.95613 9.07234 4.27808 9.33296L9.52808 13.583C9.80325 13.8057 10.1967 13.8057 10.4719 13.583L15.7219 9.33296C16.0438 9.07234 16.0935 8.60007 15.8329 8.27813Z" fill="white" />
+																		</svg>
+																	</div>
+																}
+															</a>
+
+															{
+																item.submenu && item.submenu.length > 0 &&
+																<ul className='blog-article__contents-sublist'>
+																	{item.submenu.map((subItem, j) => {
+																		return (
+																			<li key={i + '-' + j} className='blog-article__contents-list-item'>
+																				<a href={subItem.link} className='blog-article__contents-list-link'>{subItem.title}</a>
+																			</li>
+																		)
+																	})}
+																</ul>
+															}
+														</li>
+													)
+												})}
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section >
+			}
+		</>
+	)
+}
+

@@ -149,7 +149,8 @@ const defaultState = {
 		// 		},
 		// 	]
 		// },
-	]
+	],
+	blog: []
 }
 
 
@@ -172,8 +173,11 @@ const toolkitSlice = createSlice({
 		setFooterNav(state, action) {
 			state.footer.nav = action.payload
 		},
+		setBlogArticles(state, action) {
+			state.blog = action.payload
+		},
 	}
 })
 
 export default toolkitSlice.reducer
-export const { setPreloaderInit, setPages, setCase, setCases, setFooterNav } = toolkitSlice.actions
+export const { setPreloaderInit, setPages, setCase, setCases, setFooterNav, setBlogArticles } = toolkitSlice.actions

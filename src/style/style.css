@@ -32,7 +32,6 @@ body {
 
 .body-wrapper {
   position: relative;
-  overflow: hidden;
 }
 
 .container {
@@ -44,6 +43,7 @@ body {
 
 .section {
   padding: 60px 0;
+  overflow: hidden;
 }
 
 .h1 {

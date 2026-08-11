@@ -10,6 +10,7 @@ import NotFound from 'components/NotFound/NotFound';
 import TovaryPage from 'pages/TovaryPage';
 import ShopsChart from 'pages/ShopsChart';
 import Blog from 'pages/Blog';
+import BlogDetail from 'pages/BlogDetail';
 
 export default function Main() {
 
@@ -34,6 +35,7 @@ export default function Main() {
 					<Route exact path="/shops" element={<TovaryPage />} />
 					<Route exact path="/shops-chart" element={<ShopsChart />} />
 					<Route exact path="/blog" element={<Blog />} />
+					<Route exact path="/blog/:slug" element={<BlogDetail />} />
 					<Route exact path="*" element={<NotFound />} />
 				</Routes>
 			</main>
