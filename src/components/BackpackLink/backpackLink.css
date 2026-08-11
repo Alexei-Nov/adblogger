@@ -303,7 +303,8 @@
 
 @media screen and (max-width: 570px) {
   .backpack-link {
-    bottom: 30px;
+    bottom: unset;
+    top: calc(100svh - 66px - 30px);
   }
   .backpack-link__wrapper {
     padding-right: 2px;
@@ -340,5 +341,11 @@
   .backpack-link__panel-blur svg path {
     -webkit-transform: scale(0.655);
             transform: scale(0.655);
+  }
+  .backpack-link_hide .backpack-link__panel {
+    -webkit-transform: translateY(calc(100% + 275px));
+            transform: translateY(calc(100% + 275px));
+    -webkit-transition-delay: 0.8s;
+            transition-delay: 0.8s;
   }
 }

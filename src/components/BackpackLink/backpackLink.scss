@@ -222,7 +222,9 @@
 
 @media screen and (max-width: 570px) {
 	.backpack-link {
-		bottom: 30px;
+		// bottom: 30px;
+		bottom: unset;
+		top: calc(100svh - 66px - 30px);
 		&__wrapper {
 			padding-right: 2px;
 		}
@@ -259,6 +261,14 @@
 		&__panel-blur {
 			& svg path {
 				transform: scale(0.655);
+			}
+		}
+		&_hide {
+			& .backpack-link {
+				&__panel {
+					transform: translateY(calc(100% + 275px));
+					transition-delay: 0.8s;
+				}
 			}
 		}
 	}

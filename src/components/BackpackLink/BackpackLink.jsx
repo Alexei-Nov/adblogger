@@ -22,15 +22,15 @@ export default function BackpackLink({ block_state }) {
 			block.current.addEventListener('mouseleave', (e) => {
 				timeout = setTimeout(() => {
 					block.current.classList.add('backpack-link_hide')
-				}, 2000);
+				}, 500);
 			})
 		} else {
 			backpack.current.addEventListener('click', (e) => {
 				clearTimeout(timeout)
 				block.current.classList.remove('backpack-link_hide')
-				// timeout = setTimeout(() => {
-				// 	block.current.classList.add('backpack-link_hide')
-				// }, 2000);
+				timeout = setTimeout(() => {
+					block.current.classList.add('backpack-link_hide')
+				}, 2000);
 			})
 		}
 
