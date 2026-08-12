@@ -1,8 +1,9 @@
 
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import './blogArticle.css'
 
 export default function BlogArticle({ article }) {
+	const articleBlock = useRef()
 	const [contentsClosed, setContentsClosed] = useState(true)
 	const [submenuClosed, setSubmenuClosed] = useState([])
 	const datePublished = article && article.date_published && new Date(article.date_published);
@@ -31,10 +32,20 @@ export default function BlogArticle({ article }) {
 		}
 	}
 
+	function handleAnchor(id) {
+		const element = document.querySelector(id);
+		if (!element) return;
+
+		window.scroll({
+			top: element.getBoundingClientRect().top + window.scrollY - 102,
+			behavior: 'smooth'
+		});
+	}
+
 	return (
 		<>
 			{article &&
-				<section className='section blog-article'>
+				<section className='section blog-article' ref={articleBlock}>
 					<div className="container">
 						<div className="blog-article__wrapper">
 							<div className="blog-article__heading">
@@ -62,17 +73,88 @@ export default function BlogArticle({ article }) {
 									</div>
 								</picture>
 							</div>
-
 							<div className="blog-article__body">
 								<div className="blog-article__content ">
-									{article.blocks.map((block, i) => {
+									{article.blocks && article.blocks.map((block, i) => {
 										switch (block.block_type) {
+											case 'text-with-border':
+												return (
+													<div key={i} id={block.id} className='blog-article__block blog-article__block_with-border content' >
+														<div className='text-18' dangerouslySetInnerHTML={{ __html: block.text }}></div>
+													</div>
+												)
 											case 'text':
-												<div key={i} className='article__block content'>
-													<div className='article__block-title text-32 fw-500'>{block.title}</div>
-													<div className='text-21' dangerouslySetInnerHTML={{ __html: block.text }}></div>
-												</div>
-												break;
+												return (
+													<div key={i} id={block.id} className='blog-article__block content' >
+														<div className='text-18' dangerouslySetInnerHTML={{ __html: block.text }}></div>
+													</div>
+												)
+											case 'example':
+												return (
+													<div key={i} id={block.id} className='blog-article__block blog-article__block-example text-18 content' >
+														<div className="blog-article__block-example-title">{block.title}</div>
+														<div className="blog-article__block-example-desc" dangerouslySetInnerHTML={{ __html: block.text }}></div>
+													</div>
+												)
+											case 'pinned-text':
+												return (
+													<div key={i} id={block.id} className='blog-article__block blog-article__block-pinned text-18 content' >
+														<div className="blog-article__block-pinned-title">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M14.7033 3.19502C14.9766 2.92165 15.4199 2.92165 15.6932 3.19502L20.8033 8.30507C20.9345 8.43634 21.0083 8.61439 21.0083 8.80004C21.0083 9.18664 20.6949 9.50004 20.3083 9.50004H18.4982L15.4982 12.5V18.7618C15.4982 18.9528 15.4224 19.1359 15.2874 19.2709C15.0062 19.5521 14.5503 19.5521 14.2691 19.2709L10.382 15.383L5.63388 20.1324C5.14573 20.6206 4.35427 20.6206 3.86612 20.1324C3.37796 19.6443 3.37796 18.8528 3.86612 18.3647L8.614 13.615L4.72736 9.72916C4.61934 9.62114 4.54919 9.48233 4.52545 9.33335L4.51648 9.22004C4.51648 8.8224 4.83883 8.50004 5.23648 8.50004H11.4982L14.4982 5.50004V3.68999C14.4982 3.50434 14.572 3.32629 14.7033 3.19502Z" fill="#00D3E6" />
+															</svg>
+
+															{block.title}
+														</div>
+														<div className="blog-article__block-pinned-desc" dangerouslySetInnerHTML={{ __html: block.text }}></div>
+													</div>
+												)
+											case 'button':
+												return (
+													<div key={i} id={block.id} className='blog-article__block ' >
+														<a href={block.link} className="btn btn_rounded btn_border">{block.text}</a>
+													</div>
+												)
+											case 'important':
+												return (
+													<div key={i} id={block.id} className='blog-article__block blog-article__block-important text-18 content' >
+														<div className="blog-article__block-important-title">
+															<svg width="135" height="50" viewBox="0 0 136 50" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M77.18 2.11237C12.3355 -4.56602 -49.044 45.5208 65.7951 48.3828C176.143 51.1329 135.59 4.49719 57.8753 10.6983" stroke="#00D3E6" strokeWidth="3" />
+															</svg>
+
+															{block.title}
+														</div>
+														<div className="blog-article__block-important-desc" dangerouslySetInnerHTML={{ __html: block.text }}></div>
+													</div>
+												)
+											case 'special-list':
+												return (
+													<div key={i} id={block.id} className={'blog-article__block blog-article__block-special-list text-18' + (block.icon_size == 'big' ? ' blog-article__block-special-list_big' : '')} >
+														{block.title &&
+															<div className="blog-article__block-special-list-title" dangerouslySetInnerHTML={{ __html: block.title }}></div>
+														}
+														<ul className="blog-article__block-special-list-ul">
+															{block.list.map((item, j) => {
+																return (
+																	<li className="blog-article__block-special-list-item" key={i + '-' + j}>
+																		<div className="blog-article__block-special-list-icon">
+																			<img src={item.icon} alt="icon" />
+																		</div>
+																		<div className="blog-article__block-special-list-item-body">
+																			{item.title &&
+																				<div className="blog-article__block-special-list-item-title text-22 fw-600" dangerouslySetInnerHTML={{ __html: item.title }}></div>
+																			}
+																			{item.text &&
+																				<div className="blog-article__block-special-list-item-text" dangerouslySetInnerHTML={{ __html: item.text }}></div>
+																			}
+																		</div>
+																	</li>
+																)
+															})}
+														</ul>
+													</div>
+												)
 										}
 									})}
 								</div>
@@ -93,7 +175,11 @@ export default function BlogArticle({ article }) {
 													{article.contents_nav.map((item, i) => {
 														return (
 															<li key={i} className={'blog-article__contents-list-item' + (!submenuClosed.includes(i) ? ' blog-article__contents-list-item_closed' : "")}>
-																<a href={item.link} className='blog-article__contents-list-link'>
+																<a href={item.link} className='blog-article__contents-list-link'
+																	onClick={(e) => {
+																		e.preventDefault()
+																		handleAnchor(item.link)
+																	}}>
 																	<div className="blog-article__contents-list-link-icon">
 																		<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 																			<path d="M15.3435 8.48495L19.773 8.90993C21.3143 9.0578 21.787 10.5634 20.5968 11.5525L17.129 14.4347L18.4164 19.13C18.8391 20.6719 17.5275 21.6053 16.2137 20.6773L12 17.701L7.78631 20.6773C6.47785 21.6016 5.16081 20.6721 5.58365 19.13L6.87104 14.4347L3.40318 11.5525C2.20801 10.5592 2.67885 9.05846 4.22675 8.90993L8.65551 8.48495L10.6067 3.98631C11.2177 2.57751 12.7826 2.57822 13.3932 3.98645L15.3435 8.48495Z" fill="currentColor" />
@@ -121,7 +207,11 @@ export default function BlogArticle({ article }) {
 																		{item.submenu.map((subItem, j) => {
 																			return (
 																				<li key={i + '-' + j} className='blog-article__contents-list-item'>
-																					<a href={subItem.link} className='blog-article__contents-list-link'>{subItem.title}</a>
+																					<a href={subItem.link} className='blog-article__contents-list-link'
+																						onClick={(e) => {
+																							e.preventDefault()
+																							handleAnchor(subItem.link)
+																						}}>{subItem.title}</a>
 																				</li>
 																			)
 																		})}
@@ -134,11 +224,31 @@ export default function BlogArticle({ article }) {
 											</nav>
 										</div>
 									}
+									{article.related_articles &&
+										<div className="blog-article__related">
+											<div className="blog-article__related-title text-20">Вам может быть интересно</div>
+											<div className="blog-article__related-list">
+												{article.related_articles.map((card, i) => {
+													return (
+														<a href={card.link} className='blog-article__related-card' key={i} target='_blank'>
+															<div className="blog-article__related-card-img">
+																<img src={card.img} alt="img" />
+															</div>
+															<div className="blog-article__related-card-info">
+																<div className="blog-article__related-card-title text-16 fw-600 blue-text" dangerouslySetInnerHTML={{ __html: card.title }}></div>
+																<div className="blog-article__related-card-desc text-14" dangerouslySetInnerHTML={{ __html: card.desc }}></div>
+															</div>
+														</a>
+													)
+												})}
+											</div>
+										</div>
+									}
 									{article.subscribe &&
 										<div className="blog-article__subscribe">
 											<picture className="blog-article__subscribe-img">
 												{article.subscribe.img_mob &&
-													<source media="(max-width: 768px)" srcSet={article.subscribe.img_mob} />
+													<source media="(max-width: 570px)" srcSet={article.subscribe.img_mob} />
 												}
 												<img src={article.subscribe.img} alt="img" />
 											</picture>
@@ -147,7 +257,6 @@ export default function BlogArticle({ article }) {
 									}
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</section >

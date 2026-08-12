@@ -333,6 +333,7 @@ body {
 	cursor: pointer;
 	user-select: none;
 	gap: 10px;
+	text-decoration: none !important;
 
 	&:active {
 		border-radius: 50px;
