@@ -3,7 +3,7 @@
 	bottom: 75px;
 	left: 0;
 	width: 100%;
-	z-index: 10;
+	z-index: 9;
 	pointer-events: none;
 
 	&__wrapper {
@@ -104,7 +104,7 @@
 		transform: translate(-50%, -50%);
 		z-index: -1;
 		transition: all ease-in-out 0.4s;
-		transition-delay: 0.8s;
+		// transition-delay: 0.8s;
 	}
 	&__img {
 		display: flex;
@@ -142,7 +142,7 @@
 		& .backpack-link {
 			&__currency-text {
 				opacity: 0;
-				zoom: 0.5;
+				// zoom: 0.5;
 				transition-delay: 0.3s;
 			}
 			&__currency {

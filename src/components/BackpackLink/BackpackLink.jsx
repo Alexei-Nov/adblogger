@@ -13,7 +13,7 @@ export default function BackpackLink({ block_state }) {
 			block.current.classList.remove('backpack-link_static')
 		}, 2000);
 
-		if (window.innerWidth > 570) {
+		if (window.innerWidth > 768) {
 			backpack.current.addEventListener('mouseenter', (e) => {
 				clearTimeout(timeout)
 				block.current.classList.remove('backpack-link_hide')
