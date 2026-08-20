@@ -2,8 +2,8 @@ import React from 'react'
 import AllBlocks from '../components/AllBlocks/AllBlocks'
 import TitleAndMetaTags from 'components/TitleAndMetaTags/TitleAndMetaTags'
 
-const title = "Станьте автором в VK AdBlogger и зарабатывайте на рекламе ВКонтакте"
-const description = "Поможем блогерам и сообществам с аудиторией от 1000 подписчиков размещать рекламу ВКонтакте. Маркет-платформа VK AdBlogger позволяет зарабатывать авторам контента ВКонтакте. Автоматический документооборот и выплаты. Маркировка рекламы."
+const title = "Монетизируйте свой контент во ВКонтакте и зарабатывайте вместе с VK AdBlogger"
+const description = "Подключайте монетизацию ВК и зарабатывайте на контенте: получайте заказы на рекламу от бизнеса через платформу VK AdBlogger"
 
 export default function ForAuthors() {
 	return (

@@ -2,8 +2,8 @@ import React from 'react'
 import AllBlocks from '../components/AllBlocks/AllBlocks'
 import TitleAndMetaTags from 'components/TitleAndMetaTags/TitleAndMetaTags'
 
-const title = "Запускайте рекламу у блогеров ВКонтакте с VK AdBlogger"
-const description = "Запускайте рекламу у авторов и в сообществах ВКонтакте. Подбирайте нишевые площадки из огромного каталога биржи блогеров ВК. Отслеживайте эффективность каждого размещения с VK AdBlogger."
+const title = "Реклама у блогеров ВКонтакте, заказать в VK AdBlogger"
+const description = "В VK AdBlogger можно купить рекламу у блогеров во Вконтакте, закупка и размещение рекламных интеграций. Поможем заказать продвижение в VK через блогеров с учётом вашей аудитории."
 
 export default function ForAdvertisers() {
 	return (

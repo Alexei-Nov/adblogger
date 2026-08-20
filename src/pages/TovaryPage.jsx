@@ -3,8 +3,8 @@ import { useSelector } from 'react-redux'
 import AllBlocks from '../components/AllBlocks/AllBlocks'
 import TitleAndMetaTags from 'components/TitleAndMetaTags/TitleAndMetaTags'
 
-const title = "Станьте автором в VK AdBlogger и зарабатывайте на рекламе ВКонтакте"
-const description = "Поможем блогерам и сообществам с аудиторией от 1000 подписчиков размещать рекламу ВКонтакте. Маркет-платформа VK AdBlogger позволяет зарабатывать авторам контента ВКонтакте. Автоматический документооборот и выплаты. Маркировка рекламы."
+const title = "Шопсы ВКонтакте --рассказывайте о товарах и зарабатывайте с VK AdBlogger"
+const description = "Создавайте шопсы в VK AdBlogger, публикуйте контент о товарах и зарабатывайте на рекламе ВКонтакте. Подключайте шопсы и развивайтесь в шопс-чарте."
 
 export default function TovaryPage() {
 	const pageState = useSelector(state => state.toolkit.pages).filter((item) => item.page_slug === 'shops')[0]
