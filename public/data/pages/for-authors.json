@@ -16,7 +16,7 @@
 		{
 			"block_slug": "tabs_block",
 			"block_state": {
-				"title": "зарабатывайте <br> на своём контенте",
+				"title": "Монетизируйте контент и&nbsp;зарабатывайте во&nbsp;ВКонтакте",
 				"tabs": [
 					{
 						"tab_name": "Шопсы",
@@ -51,7 +51,7 @@
 		{
 			"block_slug": "tile",
 			"block_state": {
-				"title": "зарабатывайте с&nbsp;VK&nbsp;AdBlogger",
+				"title": "Зарабатывайте с&nbsp;VK&nbsp;AdBlogger",
 				"btn_text": "Начать зарабатывать",
 				"btn_link": "/app",
 				"items": [
@@ -98,7 +98,7 @@
 		{
 			"block_slug": "steps",
 			"block_state": {
-				"title": "3 шага до первой прибыли",
+				"title": "Как&nbsp;начать зарабатывать во&nbsp;ВКонтакте: 3&nbsp;шага",
 				"stepsList": [
 					{
 						"title": "Зарегистрируйтесь как&nbsp;автор",
@@ -199,7 +199,7 @@
 		{
 			"block_slug": "case",
 			"block_state": {
-				"title": "большой бизнес тоже делает это",
+				"title": "Как бизнес работает с&nbsp;авторами ВКонтакте",
 				"desc": "Узнайте, как крупные рекламодатели работают с&nbsp;авторами "
 			}
 		},

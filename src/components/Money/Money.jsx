@@ -30,7 +30,7 @@ export default function Money({ block_state }) {
 			<section className={'section money ' + (block_state.has_border == 'false' ? 'money_without-border' : '')}>
 				<div className="container">
 					<div className="money__wrapper" >
-						<h2 className="money__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></h2>
+						<div className="money__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
 						<a
 							href={block_state.btn_link}
 							className={"money__btn btn btn_border " + (window.location.pathname == '/shops' ? 'btn_rounded text-24' : '')}

@@ -20,7 +20,7 @@ export default function EntranceVideo({ block_state }) {
 			<div className="container">
 				<div className="entrance-video__wrapper">
 					<div className="entrance-video__body">
-						<div className="entrance-video__title" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+						<h1 className="entrance-video__title" dangerouslySetInnerHTML={{ __html: block_state.title }}></h1>
 						<div className="entrance-video__desc text-30" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
 						<div className="entrance-video__label" dangerouslySetInnerHTML={{ __html: block_state.label }}></div>
 

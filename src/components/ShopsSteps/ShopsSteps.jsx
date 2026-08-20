@@ -10,7 +10,7 @@ export default function ShopsSteps({ block_state }) {
 		<>
 			<section className="section shops-steps">
 				<div className="container">
-					<div className="shops-steps__title text-40 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+					<h2 className="shops-steps__title text-40 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></h2>
 					<div className="shops-steps__wrapper">
 						<div className={"shops-steps__body" + (readMoreStatus ? '' : ' shops-steps__body_hide')}>
 							<div className="shops-steps__subtitle text-32 fw-500" >

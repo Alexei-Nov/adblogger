@@ -21,7 +21,7 @@
 		{
 			"block_slug": "channels",
 			"block_state": {
-				"title": "<span class='tt-lc'>найдите</span> авторов под любые задачи",
+				"title": "Найдите блогеров для&nbsp;рекламы под&nbsp;любые задачи",
 				"tags": [
 					"Лайфстайл",
 					"Юмор",
@@ -516,7 +516,7 @@
 		{
 			"block_slug": "steps",
 			"block_state": {
-				"title": "",
+				"title": "Как разместить рекламу у&nbsp;блогеров ВКонтакте",
 				"stepsList": [
 					{
 						"title": "Создайте кабинет",
@@ -545,7 +545,7 @@
 		{
 			"block_slug": "partners",
 			"block_state": {
-				"title": "<span class='tt-lc'>С нами уже работают</span>",
+				"title": "С нами уже работают",
 				"rowsCount": 4,
 				"imgList": [
 					"/img/partners/img-1.png",
@@ -566,7 +566,7 @@
 		{
 			"block_slug": "case",
 			"block_state": {
-				"title": "<span class='tt-lc'>большой бизнес <br> уже делает это</span>",
+				"title": "Большой бизнес <br> уже делает это",
 				"desc": "Узнайте, как крупные рекламодатели работают с&nbsp;авторами "
 			}
 		},

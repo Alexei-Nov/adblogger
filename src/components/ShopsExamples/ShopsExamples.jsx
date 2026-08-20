@@ -15,7 +15,7 @@ export default function ShopsExamples({ block_state }) {
 		<>
 			<section className="section shops-examples">
 				<div className="container">
-					<div className="shops-examples__title text-40 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+					<h2 className="shops-examples__title text-40 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></h2>
 					<div className="shops-examples__wrapper">
 						<Swiper
 							className="shops-examples__slider"

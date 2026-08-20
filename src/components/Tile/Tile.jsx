@@ -44,7 +44,7 @@ export default function Tile({ block_state }) {
 			<section className='section tile' ref={wrapper}>
 				<div className="container">
 					{block_state.title &&
-						<div className="tile__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+						<h2 className="tile__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></h2>
 					}
 					<Swiper className='tile__slider'
 						modules={[Pagination]}
