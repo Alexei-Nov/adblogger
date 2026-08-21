@@ -1,0 +1,55 @@
+.breadcrumbs {
+	margin-top: 30px;
+	margin-bottom: 80px;
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	&__link {
+		display: flex;
+		width: fit-content;
+		align-items: center;
+		gap: 10px;
+		color: #7a7a7a;
+
+		& a:hover {
+			color: #fff;
+		}
+		& span {
+			color: inherit;
+		}
+		& br {
+			display: none;
+		}
+	}
+	&__arrow {
+		display: flex;
+	}
+
+	& + .blog-article {
+		padding-top: 0px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.breadcrumbs {
+		font-size: 14px;
+		line-height: 120%;
+		margin: 15px 0 30px;
+
+		&__wrapper {
+			gap: 4px;
+			row-gap: 0;
+		}
+		&__link {
+			gap: 4px;
+		}
+		&__arrow {
+			& svg {
+				width: 14px;
+				height: 14px;
+			}
+		}
+	}
+}

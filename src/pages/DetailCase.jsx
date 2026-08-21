@@ -5,6 +5,7 @@ import Article from '../components/Article/Article';
 import { useDispatch, useSelector } from 'react-redux';
 import TitleAndMetaTags from '../components/TitleAndMetaTags/TitleAndMetaTags';
 import { setCase } from 'toolkitRedux/toolkitSlice';
+import Breadcrumbs from 'components/Breadcrumbs/Breadcrumbs';
 
 export default function DetailCase() {
 	const { slug } = useParams();
@@ -37,12 +38,28 @@ export default function DetailCase() {
 		moneyState.title = 'Зарабатывайте <br> на&nbsp;своём контенте'
 	}
 
+	const breadcrumbsState = [
+		{
+			title: 'Главная',
+			link: "/"
+		},
+		{
+			title: 'Топ-кейсы',
+			link: "/top-cases"
+		},
+		{
+			title: articleState && articleState?.title,
+			link: "/" + articleState && articleState?.slug
+		},
+	]
+
 	return (
 		<>
 			<TitleAndMetaTags
 				{...(articleState && articleState.seo_title ? { title: articleState.seo_title } : {})}
 				{...(articleState && articleState.seo_desc ? { description: articleState.seo_desc } : {})}
 			/>
+			<Breadcrumbs breadcrumbsState={breadcrumbsState} />
 			<Article article={articleState} />
 			<Money block_state={moneyState} />
 		</>

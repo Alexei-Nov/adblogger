@@ -176,6 +176,10 @@
   margin-top: auto;
 }
 
+.article__contents {
+  margin-top: 30px;
+}
+
 .article .row {
   display: -webkit-box;
   display: -ms-flexbox;
