@@ -6,11 +6,25 @@ export default function Article({ article }) {
 	return (
 		<>
 			{article &&
-				<section className='section article'>
+				<section
+					className='section article'
+					itemScope
+					itemType="https://schema.org/Article"
+				>
+					{article.date_published &&
+						<meta itemProp="datePublished" content={article.date_published} />
+					}
+					{
+						article.date_modified &&
+						<meta itemProp="dateModified" content={article.date_modified} />
+					}
 					<div className="container">
 						<div className="article__wrapper">
 							<div className="article__heading">
-								<h1 className="article__title h2" dangerouslySetInnerHTML={{ __html: article.title }}></h1>
+								<h1 className="article__title h2" itemProp="headline" dangerouslySetInnerHTML={{ __html: article.title }}></h1>
+								{article.desc &&
+									<meta itemProp="description" content={article.desc} />
+								}
 								{article.logo &&
 									<div className="article__brand">
 										<div className="article__logo">
@@ -19,7 +33,7 @@ export default function Article({ article }) {
 										<div className="article__brand-name text-21" dangerouslySetInnerHTML={{ __html: article.brand_name }}></div>
 									</div>
 								}
-								<picture className="article__preview">
+								<picture className="article__preview" itemProp="image">
 									{article.preview_img_mob &&
 										<source media="(max-width: 570px)" srcSet={article.preview_img_mob} />
 									}
@@ -27,7 +41,7 @@ export default function Article({ article }) {
 								</picture>
 							</div>
 
-							<div className="article__content content">
+							<div className="article__content content" itemProp="articleBody">
 								{article.blocks.map((block, i) => {
 									switch (block.block_type) {
 										case 'text':
@@ -60,11 +74,16 @@ export default function Article({ article }) {
 															<div className='article__citation-title text-32' dangerouslySetInnerHTML={{ __html: block.title }}></div>
 														}
 														<div className='article__citation-text text-21' dangerouslySetInnerHTML={{ __html: block.text }}></div>
-														<div className="article__citation-author">
+														<div
+															className="article__citation-author"
+															itemProp="author"
+															itemScope
+															itemType="https://schema.org/Person"
+														>
 															<div className="article__citation-photo">
 																<img src={block.autor_photo_path} alt="author" />
 															</div>
-															<div className="article__citation-name" dangerouslySetInnerHTML={{ __html: block.autor_name }}></div>
+															<div className="article__citation-name" itemProp="name" dangerouslySetInnerHTML={{ __html: block.autor_name }}></div>
 														</div>
 													</div>
 												)
@@ -127,6 +146,14 @@ export default function Article({ article }) {
 											)
 									}
 								})}
+							</div>
+
+							<div style={{ display: 'none' }}>
+								<div itemProp="publisher" itemScope itemType="https://schema.org/Organization" >
+									<meta itemProp="name" content="ООО «ВК»" />
+									<link itemProp="url" href="https://adblogger.vk.ru" />
+								</div>
+								<link itemProp="mainEntityOfPage" href={window.location.href} />
 							</div>
 						</div>
 					</div>

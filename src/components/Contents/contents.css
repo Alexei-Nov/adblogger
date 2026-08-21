@@ -1,0 +1,133 @@
+.contents {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  border: 2px solid #363738;
+  background-color: var(--black);
+  border-radius: 20px;
+}
+
+.contents_closed .contents__panel {
+  max-height: 0;
+}
+
+.contents_closed .contents__title-icon {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.contents__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.contents__title-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.contents__panel {
+  padding: 0 20px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.contents__panel::before {
+  display: block;
+  content: "";
+  height: 8px;
+}
+
+.contents__panel::after {
+  display: block;
+  content: "";
+  height: 20px;
+}
+
+.contents__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+  color: #c0c0c0;
+}
+
+.contents__list-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contents__list-link:hover {
+  color: #fff;
+}
+
+.contents__list-link-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 24px;
+}
+
+.contents__list-link-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 20px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.contents__sublist {
+  padding-left: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.contents__sublist::before {
+  display: block;
+  content: "";
+  height: 0px;
+}
+
+.contents__list-item_closed .contents__sublist {
+  max-height: 0;
+}
+
+.contents__list-item_closed .contents__list-link-arrow {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
