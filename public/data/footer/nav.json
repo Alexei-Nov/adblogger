@@ -119,6 +119,11 @@
 				"text": "Правила размещения рекламы",
 				"link": "https://adblogger.vk.ru/documents/moderation",
 				"target": "_blank"
+			},
+			{
+				"text": "Правила акции «Приветственный бонус»",
+				"link": "https://adblogger.vk.ru/documents/pravila_welcome_bonus",
+				"target": "_blank"
 			}
 		]
 	}

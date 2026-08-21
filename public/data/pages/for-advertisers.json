@@ -456,7 +456,7 @@
 				"items": [
 					{
 						"id": 5,
-						"title": "Выбирайте среди 90&nbsp;тысяч авторов",
+						"title": "Выбирайте среди 100&nbsp;тысяч авторов",
 						"desc": "Подбирайте сообщества по&nbsp;тематике, качеству аудитории и&nbsp;параметрам, которые важны для&nbsp;вас",
 						"imgList": [
 							{
@@ -578,7 +578,7 @@
 						"title": "Пройдите сертификацию от&nbsp;VK AdBlogger",
 						"desc": "Подтвердите свою экспертизу и&nbsp;получите&nbsp;сертификат",
 						"btn_text": "Узнать больше",
-						"btn_link": "https://vk.cc/cNhTjJ",
+						"btn_link": "https://expert.vk.ru/certification/landing/sertifikatsiia-po-vk-adblogger/?utm_source=adblogger_site&utm_medium=banner&utm_campaign=vkadblogger_certification",
 						"img": "./img/banner-kurs/img2.png",
 						"img_tablet": "./img/banner-kurs/img2_tablet.png",
 						"modificator": "type-2"
@@ -608,7 +608,7 @@
 					},
 					{
 						"question": "Как изменить реквизиты?",
-						"answer": "Чтобы внести изменения в реквизиты, нужно обратиться в техподдержку: <a href='https://vk.me/club225265420'>vk.cc/cyEF76</a>. Самостоятельно изменить их в личном кабинете нельзя."
+						"answer": "Чтобы внести изменения в реквизиты, нужно обратиться в техподдержку: <a href='https://vk.ru/write-225265420'>https://vk.ru/write-225265420</a>. Самостоятельно изменить их в личном кабинете нельзя."
 					},
 					{
 						"question": "Как пополнить баланс?",
