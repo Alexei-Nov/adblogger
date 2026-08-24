@@ -73,7 +73,7 @@ export default function EntranceEvent({ block_state }) {
 	return (
 		<section className='section entrance-event' ref={wrapper}>
 			<div className="container">
-				<h1 style={{ width: "0px", height: "0px", overflow: 'hidden' }}>Создавайте шопсы во ВКонтакте и зарабатывайте на продажах</h1>
+				<h1 style={{ width: "0px", height: "0px", overflow: 'hidden' }}>Зарабатывайте на шопсах</h1>
 				<div className="entrance-event__wrapper">
 					<div className="entrance-event__body">
 						<div className="entrance-event__title">

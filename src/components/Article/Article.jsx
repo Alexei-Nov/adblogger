@@ -12,6 +12,11 @@ export default function Article({ article }) {
 					itemScope
 					itemType="https://schema.org/Article"
 				>
+
+					<meta itemProp="image" content={article.preview_img} /> {/* 16x9 */}
+					<meta itemProp="image" content={article.preview_img_small} /> {/* 4x93 */}
+					<meta itemProp="image" content={article.preview_img_small} /> {/* 1x1 */}
+
 					{article.date_published &&
 						<meta itemProp="datePublished" content={article.date_published} />
 					}
