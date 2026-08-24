@@ -5,6 +5,12 @@ Disallow: /app/*
 
 User-Agent: Yandex
 
+Disallow: /app
+Disallow: /app/*
+
+Clean-param: utm_source&mt_link_id&mt_click_id&mt_sub5&scheme&logid&mt_network&utm_mid&utm_mcp_vid&erid&ref&utm_campaig..&utm_contentmoneta&utm_medium&utm_notification_id&utm_notification_project&utm_notification_type&utm_order_number&utm_referrer&utm_source&utm_sup_project&utm_sup_source&utm_sup_type
+Clean-param: productId&mt_sub3&mt_sub2&mt_sub4&mt_sub1&mt_adset&click_id&mt_campaign&etext&recommendationId&t_usr&userid&ybaip&mt_creative&perehod&timestamp&mt_sub5&mt_link_id&mt_click_id&mt_medium&track_code&q&is_channel&peer_id&amp&spm&brid&hl&cb&__pro__proto__to__.b3enyh6j&__proto__.8f4sbsev&_gopronin&adv_id&app_id&constructor.prototype.7buen6pa&disableGlobalInfoCollect&id&uid&usr_latitude&usr_longitude&vk_qr_data&x.__proto__.vulnerableprop&yprqee&act&aid&oauth&uiFailRoute
+Clean-param: uiSuccessRoute&internal_entry_point&advert_id&ccc&cabinet_id&clckid&EXPR&mt_android_id&mt_gaid&mt_js&mt_pb_install_ids&rb_click_id&ref_source&to&u&__pro__proto__to__.z05vkzk8&__proto__&__proto__.x6x2vpfq&_payload&_ym_debug&cabinetId&category&constructor.prototype.wb8pmcfa&ctime&exp_boxes&inputL&loader_name&m-message-click-id&m-message-key-id&mode&mssu4sgbaj&mt_ads&mt_sha1_oaid&need_sec_link&push_id&sec_link_scene&tab&target&theme&type&u9v41lwzio&url&use_xbridge3&ut&v8lt7wgtig
 Clean-param: utm_source&mt_link_id&mt_click_id&mt_sub5&scheme&logid&mt_network
 
 Sitemap: https://adblogger.vk.ru/sitemap.xml
