@@ -3,7 +3,7 @@ import AllBlocks from '../components/AllBlocks/AllBlocks'
 import TitleAndMetaTags from 'components/TitleAndMetaTags/TitleAndMetaTags'
 
 const title = "Полезные материалы"
-const description = "Описание описание описание описание описание описание"
+const description = "Всё об аналитике рекламных кампаний, работе с блогерами и продвижении бизнеса"
 
 export default function Blog() {
 	return (

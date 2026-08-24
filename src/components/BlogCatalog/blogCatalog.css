@@ -224,6 +224,15 @@
 
 .blog-card__title {
   margin-top: 14px;
+  color: var(--white);
+}
+
+.blog-card__title span {
+  color: inherit !important;
+}
+
+.blog-card__title br {
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {

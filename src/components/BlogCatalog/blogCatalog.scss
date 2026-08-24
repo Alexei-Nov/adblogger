@@ -155,6 +155,13 @@
 	}
 	&__title {
 		margin-top: 14px;
+		color: var(--white);
+		& span {
+			color: inherit !important;
+		}
+		& br {
+			display: none;
+		}
 	}
 }
 
