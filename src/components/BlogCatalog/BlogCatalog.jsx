@@ -136,7 +136,7 @@ function BlogCard({ cardData }) {
 	const datePublished = cardData && cardData.date_published && new Date(cardData.date_published);
 
 	return (
-		<NavLink to='/blog/article-1' className="blog-card" >
+		<NavLink to={'/blog/' + cardData.slug} className="blog-card" >
 			<div className="blog-card__date text-20">{datePublished.toLocaleDateString()}</div>
 			<div className="blog-card__img">
 				<img src={cardData.preview_img} alt="img" />
