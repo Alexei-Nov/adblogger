@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import TitleAndMetaTags from '../components/TitleAndMetaTags/TitleAndMetaTags';
 import Breadcrumbs from 'components/Breadcrumbs/Breadcrumbs';
 import BlogArticle from 'components/BlogArticle/BlogArticle';
+import Faq from 'components/Faq/Faq';
 
 export default function BlogDetail() {
 	const { slug } = useParams();
@@ -48,6 +49,27 @@ export default function BlogDetail() {
 		},
 	]
 
+	const faq_state = {
+		"faqList": [
+			{
+				"question": "Нужно&nbsp;ли маркировать рекламу у&nbsp;блогеров?",
+				"answer": "Да. Нужно. Ответственность за&nbsp;отсутствие маркировки несут и&nbsp;рекламодатель, и&nbsp;автор. При размещении через VK&nbsp;AdBlogger реклама маркируется автоматически."
+			},
+			{
+				"question": "Как юридически оформить сотрудничество с&nbsp;блогером?",
+				"answer": "Письменно&nbsp;&mdash; договором оказания услуг или через оферту платформы. В&nbsp;документах фиксируют формат, сроки, стоимость и&nbsp;требования к&nbsp;публикации. При работе через платформу документы оформляются в&nbsp;одном окне."
+			},
+			{
+				"question": "Какие товары нельзя рекламировать у&nbsp;блогеров?",
+				"answer": "Действуют те&nbsp;же ограничения, что и&nbsp;для любой другой рекламы: категории, запрещённые или ограниченные законом &laquo;О&nbsp;рекламе&raquo;. Дополнительные требования к&nbsp;рекламному контенту устанавливают правила площадки&nbsp;&mdash; перед запуском проверьте, не&nbsp;попадает&nbsp;ли продукт под ограничения."
+			},
+			{
+				"question": "Что делать, если блогер сорвал сроки или изменил формат?",
+				"answer": "Опираться на&nbsp;зафиксированные договорённости: чем конкретнее прописаны даты, формат и&nbsp;критерии выполненного размещения, тем проще требовать доработки или возврата. При работе через платформу параметры сделки сохраняются в&nbsp;сервисе&nbsp;&mdash; к&nbsp;ним можно апеллировать в&nbsp;спорной ситуации."
+			}
+		]
+	}
+
 	return (
 		<>
 			<TitleAndMetaTags
@@ -57,6 +79,7 @@ export default function BlogDetail() {
 			<Breadcrumbs breadcrumbsState={breadcrumbsState} />
 			<BlogArticle article={articleState} />
 			<Money block_state={moneyState} />
+			<Faq block_state={faq_state} />
 		</>
 	)
 }
