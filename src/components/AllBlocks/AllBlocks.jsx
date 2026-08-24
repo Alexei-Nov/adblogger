@@ -54,16 +54,16 @@ export default function AllBlocks() {
 		// 	dispatch(setPreloaderInit(true));
 		// }
 
-		if (!pageState) {
-			fetch("/data/pages/" + pageSlug + ".json")
-				.then((res) => res.json())
-				.then((data) => {
-					dispatch(setPages(data))
-				})
-				.catch((err) => {
-					console.log(err.message);
-				});
-		}
+		// if (!pageState) {
+		// }
+		fetch("/data/pages/" + pageSlug + ".json")
+			.then((res) => res.json())
+			.then((data) => {
+				dispatch(setPages(data))
+			})
+			.catch((err) => {
+				console.log(err.message);
+			});
 	}, []);
 
 	return (
