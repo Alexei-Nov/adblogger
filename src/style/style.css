@@ -32,7 +32,6 @@ body {
 
 .body-wrapper {
   position: relative;
-  overflow: hidden;
 }
 
 .container {
@@ -44,6 +43,7 @@ body {
 
 .section {
   padding: 60px 0;
+  overflow: hidden;
 }
 
 .h1 {
@@ -146,7 +146,7 @@ body {
 
 .text-18 {
   font-size: 18px;
-  line-height: 120%;
+  line-height: 130%;
 }
 
 .text-17 {
@@ -350,6 +350,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   gap: 10px;
+  text-decoration: none !important;
 }
 
 .btn:active {

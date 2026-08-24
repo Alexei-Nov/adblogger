@@ -13,6 +13,9 @@
   display: -ms-flexbox;
   display: flex;
   height: 44px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .header__logo img {

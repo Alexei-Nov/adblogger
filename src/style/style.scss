@@ -32,7 +32,7 @@ body {
 
 .body-wrapper {
 	position: relative;
-	overflow: hidden;
+	// overflow: hidden;
 }
 
 .container {
@@ -44,6 +44,7 @@ body {
 
 .section {
 	padding: 60px 0;
+	overflow: hidden;
 }
 
 .h1 {
@@ -146,7 +147,7 @@ body {
 
 .text-18 {
 	font-size: 18px;
-	line-height: 120%;
+	line-height: 130%;
 }
 
 .text-17 {
@@ -332,6 +333,7 @@ body {
 	cursor: pointer;
 	user-select: none;
 	gap: 10px;
+	text-decoration: none !important;
 
 	&:active {
 		border-radius: 50px;

@@ -81,15 +81,6 @@ export default function Header() {
 									>Шопс-чарт</NavLink>
 								</li>
 
-								{/* <li className='nav__item'>
-									<NavLink
-										to='/for-sellers'
-										className={({ isActive }) => (isActive ? 'nav__link nav__link_active' : 'nav__link')}
-										onClick={removeMenuClass}
-										end
-									>Селлерам</NavLink>
-								</li> */}
-
 								<a
 									href={btnState.link}
 									className="header__nav-btn btn text-18 fw-500 "

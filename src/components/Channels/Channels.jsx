@@ -125,8 +125,7 @@ export default function Channels({ block_state }) {
 									</div>
 								</SwiperSlide>
 							)
-						})
-						)}
+						}))}
 
 						<div className="channels__pagination slider-pagination swiper-pagination"></div>
 						<div className="channels__navigation slider-navigation">
