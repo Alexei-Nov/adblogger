@@ -28,16 +28,45 @@ export default function CasesCatalog({ posts }) {
 					<div className="cases-catalog__wrapper">
 						{resultCardsArr.map((card, i) => {
 							return (
-								<Link to={'/top-cases/' + card.slug} className="cases-catalog__card" key={i}>
-									<div className="cases-catalog__img">
+								<Link
+									to={'/top-cases/' + card.slug}
+									className="cases-catalog__card"
+									key={i}
+									itemScope
+									itemType="https://schema.org/Article"
+								>
+									{card.date_published &&
+										<meta itemProp="datePublished" content={card.date_published} />
+									}
+									{card.date_modified &&
+										<meta itemProp="dateModified" content={card.date_modified} />
+									}
+									{card.desc &&
+										<div itemProp="description" dangerouslySetInnerHTML={{ __html: card.desc }} ></div>
+									}
+
+									<div className="cases-catalog__img" itemProp="image">
 										<img src={card.preview_img_small} alt="img" />
 										<div className="cases-catalog__img-text text-21">
 											читать кейс
 										</div>
 									</div>
-									<div className="cases-catalog__name text-21" dangerouslySetInnerHTML={{ __html: card.title }}></div>
-									<div className="cases-catalog__label">
-										{card.card_label}
+									<div className="cases-catalog__name text-21" itemProp="headline" dangerouslySetInnerHTML={{ __html: card.title }}></div>
+									<div
+										className="cases-catalog__label"
+										itemProp="about"
+										itemScope
+										itemType="https://schema.org/Brand"
+									>
+										<span itemProp="name">{card.card_label}</span>
+									</div>
+
+									<div style={{ display: 'none' }}>
+										<div itemProp="publisher" itemScope itemType="https://schema.org/Organization" >
+											<meta itemProp="name" content="ООО «ВК»" />
+											<link itemProp="url" href="https://adblogger.vk.ru" />
+										</div>
+										<link itemProp="mainEntityOfPage" href={window.location.href} />
 									</div>
 								</Link>
 							)
