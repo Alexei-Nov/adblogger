@@ -4,7 +4,7 @@ import './caseCardMain.css'
 export default function CaseCardMain({ post }) {
 	return (
 		<>
-			<section className='section case-card-main'>
+			<section className=' case-card-main'>
 				<div className="container">
 					<h1 className="case-card-main__title page-title">топ-кейсы</h1>
 					{post &&
