@@ -13,9 +13,9 @@ export default function Article({ article }) {
 					itemType="https://schema.org/Article"
 				>
 
-					<meta itemProp="image" content={article.preview_img} /> {/* 16x9 */}
-					<meta itemProp="image" content={article.preview_img_small} /> {/* 4x3 */}
-					<meta itemProp="image" content={article.preview_img_1x1} /> {/* 1x1 */}
+					<meta itemProp="image" content={article.preview_img} />
+					<meta itemProp="image" content={article.preview_img_small} />
+					<meta itemProp="image" content={article.preview_img_1x1} />
 
 					{article.date_published &&
 						<meta itemProp="datePublished" content={article.date_published} />
@@ -28,8 +28,8 @@ export default function Article({ article }) {
 						<div className="article__wrapper">
 							<div className="article__heading">
 								<h1 className="article__title h2" itemProp="headline" dangerouslySetInnerHTML={{ __html: article.title }}></h1>
-								{article.desc &&
-									<meta itemProp="description" content={article.desc} />
+								{article.seo_desc &&
+									<meta itemProp="description" content={article.seo_desc} />
 								}
 								{article.logo &&
 									<div className="article__brand">

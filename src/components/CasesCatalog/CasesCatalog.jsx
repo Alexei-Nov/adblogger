@@ -41,8 +41,8 @@ export default function CasesCatalog({ posts }) {
 									{card.date_modified &&
 										<meta itemProp="dateModified" content={card.date_modified} />
 									}
-									{card.desc &&
-										<div itemProp="description" dangerouslySetInnerHTML={{ __html: card.desc }} ></div>
+									{card.seo_desc &&
+										<meta itemProp="description" content={card.seo_desc} />
 									}
 
 									<div className="cases-catalog__img" itemProp="image">
