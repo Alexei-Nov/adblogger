@@ -14,7 +14,7 @@ export default function Article({ article }) {
 				>
 
 					<meta itemProp="image" content={article.preview_img} />
-					<meta itemProp="image" content={article.preview_img_small} />
+					<meta itemProp="image" content={article.preview_img_4x3} />
 					<meta itemProp="image" content={article.preview_img_1x1} />
 
 					{article.date_published &&
@@ -39,11 +39,11 @@ export default function Article({ article }) {
 										<div className="article__brand-name text-21" dangerouslySetInnerHTML={{ __html: article.brand_name }}></div>
 									</div>
 								}
-								<picture className="article__preview" itemProp="image">
+								<picture className="article__preview" >
 									{article.preview_img_mob &&
 										<source media="(max-width: 570px)" srcSet={article.preview_img_mob} />
 									}
-									<img src={article.preview_img} alt={article.brand_name} />
+									<img src={article.preview_img} alt={article.brand_name} itemProp="image" />
 								</picture>
 							</div>
 
