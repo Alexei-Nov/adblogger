@@ -139,7 +139,7 @@ function BlogCard({ cardData }) {
 		<NavLink to={'/blog/' + cardData.slug} className="blog-card" >
 			<div className="blog-card__date text-20">{datePublished.toLocaleDateString()}</div>
 			<div className="blog-card__img">
-				<img src={cardData.preview_img} alt="img" />
+				<img src={cardData.preview_img_card} alt="img" />
 			</div>
 			<div className="blog-card__title text-28 fw-500" dangerouslySetInnerHTML={{ __html: cardData.title }}></div>
 		</NavLink>
