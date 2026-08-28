@@ -45,8 +45,8 @@ export default function CasesCatalog({ posts }) {
 										<meta itemProp="description" content={card.seo_desc} />
 									}
 
-									<div className="cases-catalog__img" itemProp="image">
-										<img src={card.preview_img_small} alt="img" />
+									<div className="cases-catalog__img" >
+										<img src={card.preview_img_small} alt="img" itemProp="image" />
 										<div className="cases-catalog__img-text text-21">
 											читать кейс
 										</div>
