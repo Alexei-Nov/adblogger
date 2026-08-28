@@ -6,7 +6,7 @@
 	"desc": "Описание",
 	"preview_img": "/img/blog/article-1/img-1.png",
 	"preview_img_mob": "/img/blog/article-1/img-1.png",
-	"preview_img_card": "/img/blog/article-1/img-1.png",
+	"preview_img_card": "/img/blog/article-1/img-1_card.png",
 	"date_published": "2026-01-01T01:58:12.000000Z",
 	"reading_time_minutes": "5",
 	"tags": [
@@ -21,15 +21,15 @@
 	],
 	"related_articles": [
 		{
-			"link": "/blog/article-2",
+			"link": "/blog/",
 			"title": "Статьи VK AdBlogger",
 			"desc": "Практические разборы и&nbsp;кейсы",
 			"img": "/img/case/img-1.png"
 		},
 		{
-			"link": "/blog/article-3",
-			"title": "Подкасты",
-			"desc": "Интервью с авторами и&nbsp;разборы реальных размещений",
+			"link": "/top-cases/",
+			"title": "Кейсы",
+			"desc": "Примеры успешных рекламных кампаний",
 			"img": "/img/case/img-2.png"
 		}
 	],
@@ -116,7 +116,7 @@
 	],
 	"subscribe": {
 		"btn_text": "Подписаться на канал",
-		"link": "/#link",
+		"link": "https://max.ru/adblogger?utm_source=vk&utm_medium=blog&utm_campaign=sitebar",
 		"img": "/img/blog-detail/subscribe.png",
 		"img_mob": "/img/blog-detail/subscribe_mob.png"
 	},
