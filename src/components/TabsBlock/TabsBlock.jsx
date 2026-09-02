@@ -8,7 +8,9 @@ export default function TabsBlock({ block_state }) {
 		<>
 			<section className='section tabs-block'>
 				<div className="container">
-					<h1 className="tabs-block__title title h1" dangerouslySetInnerHTML={{ __html: block_state.title }}></h1>
+					{block_state.title &&
+						<h1 className="tabs-block__title title h1" dangerouslySetInnerHTML={{ __html: block_state.title }}></h1>
+					}
 					<div className="tabs-block__wrapper">
 						<div className="tabs-block__navigation">
 							<div className="tabs-block__navigation-btn tabs-block__prev" onClick={() => activeTab > 0 ? setActiveTab(activeTab - 1) : ''}>
