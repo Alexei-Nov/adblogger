@@ -9,7 +9,7 @@
 		{
 			"block_slug": "entrance_video",
 			"block_state": {
-				"title": "<span class='blue-text'>Размещайте рекламу </span> у&nbsp;блогеров ВКонтакте",
+				"title": "<span class='blue-text'>получите бонусы</span> <br> на&nbsp;первую рекламу",
 				"desc": "При пополнении от&nbsp;7 000 ₽* <br> Акция действует до&nbsp;15&nbsp;сентября",
 				"label": "*без учёта НДС<span class='desktop-only'>.</span> <br class='br-mobile'> <a href='https://adblogger.vk.ru/documents/pravila_welcome_bonus' target='_blank'>Полные правила акции</a>",
 				"btn_text": "Получить бонус",
@@ -21,7 +21,7 @@
 		{
 			"block_slug": "channels",
 			"block_state": {
-				"title": "Найдите блогеров для&nbsp;рекламы под&nbsp;любые задачи",
+				"title": "<span class='tt-lc'>найдите</span> авторов под любые задачи",
 				"tags": [
 					"Лайфстайл",
 					"Юмор",
@@ -516,7 +516,7 @@
 		{
 			"block_slug": "steps",
 			"block_state": {
-				"title": "Как разместить рекламу у&nbsp;блогеров ВКонтакте",
+				"title": "",
 				"stepsList": [
 					{
 						"title": "Создайте кабинет",
@@ -545,7 +545,7 @@
 		{
 			"block_slug": "partners",
 			"block_state": {
-				"title": "С нами уже работают",
+				"title": "<span class='tt-lc'>С нами уже работают</span>",
 				"rowsCount": 4,
 				"imgList": [
 					"/img/partners/img-1.png",
@@ -566,7 +566,7 @@
 		{
 			"block_slug": "case",
 			"block_state": {
-				"title": "Большой бизнес <br> уже делает это",
+				"title": "<span class='tt-lc'>большой бизнес <br> уже делает это</span>",
 				"desc": "Узнайте, как крупные рекламодатели работают с&nbsp;авторами "
 			}
 		},

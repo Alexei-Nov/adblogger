@@ -13,7 +13,7 @@
 		margin-left: auto;
 		position: relative;
 		z-index: 1;
-		pointer-events: all;
+		pointer-events: none;
 		margin-right: 20px;
 	}
 	&__panel {
@@ -36,6 +36,7 @@
 		cursor: pointer;
 		position: relative;
 		z-index: 1;
+		pointer-events: all;
 
 		background-image: url("/public/img/backpack-link/bg.svg");
 		background-size: 100% 100%;
@@ -118,6 +119,7 @@
 		transform: rotate(18deg);
 		transition: all ease-in-out 0.5s;
 		zoom: 1;
+		pointer-events: all;
 
 		& img {
 			width: 100%;
@@ -164,6 +166,7 @@
 			&__panel {
 				transform: translateY(calc(100% + 75px));
 				transition-delay: 0.8s;
+				pointer-events: none;
 			}
 			&__img {
 				zoom: 1.3;
@@ -268,6 +271,7 @@
 				&__panel {
 					transform: translateY(calc(100% + 275px));
 					transition-delay: 0.8s;
+					pointer-events: none;
 				}
 			}
 		}

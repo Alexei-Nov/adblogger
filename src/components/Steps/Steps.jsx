@@ -18,7 +18,9 @@ export default function Steps({ block_state }) {
 	let title = useRef();
 
 	useEffect(() => {
-		if (window.innerWidth > 1200) {
+		const mm = gsap.matchMedia();
+
+		mm.add("(min-width: 1201px)", () => {
 			// let tlTitle = gsap.timeline({
 			// 	scrollTrigger: {
 			// 		trigger: wrapper.current,
@@ -89,8 +91,18 @@ export default function Steps({ block_state }) {
 			tlCard.to(wrapper.current.closest('.pin-spacer'), {
 				// marginBottom: '-340px'
 			})
-		}
-	})
+		});
+
+		const refresh = () => ScrollTrigger.refresh();
+		const raf = requestAnimationFrame(refresh);
+		window.addEventListener('load', refresh);
+
+		return () => {
+			cancelAnimationFrame(raf);
+			window.removeEventListener('load', refresh);
+			mm.revert();
+		};
+	}, [])
 
 	return (
 		<>
