@@ -60,7 +60,9 @@ export default function BlogDetail() {
 			<Breadcrumbs breadcrumbsState={breadcrumbsState} />
 			<BlogArticle article={articleState} />
 			<Money block_state={moneyState} />
-			<Faq block_state={faq_state} />
+			{faq_state &&
+				<Faq block_state={faq_state} />
+			}
 		</>
 	)
 }
