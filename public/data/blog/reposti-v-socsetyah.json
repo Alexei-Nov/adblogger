@@ -4,9 +4,9 @@
 	"seo_title": "Репосты в соцсетях: что это, как сделать и зачем они бизнесу",
 	"seo_desc": "В статье расскажем, что такое репост, зачем нужны репосты бизнесу и как создать контент, которым хочется поделиться.",
 	"desc": "Описание",
-	"preview_img": " /img/blog/article-2/img-1.png",
-	"preview_img_mob": " /img/blog/article-2/img-1.png",
-	"preview_img_card": " /img/blog/article-2/img-1.png",
+	"preview_img": "/img/blog/article-2/img-1.png",
+	"preview_img_mob": "/img/blog/article-2/img-1.png",
+	"preview_img_card": "/img/blog/article-2/img-1.png",
 	"date_published": "2026-01-01T01:58:12.000000Z",
 	"reading_time_minutes": "4",
 	"tags": [
@@ -89,22 +89,22 @@
 			"title": "",
 			"list": [
 				{
-					"icon": " /img/blog/article-2/special-list-icon-1.svg",
+					"icon": "/img/blog/article-2/special-list-icon-1.svg",
 					"title": "На стену",
 					"text": "Запись появляется в&nbsp;ленте подписчиков. Это классический репост, который даёт максимальный охват: публикацию видят все, кто подписан на&nbsp;профиль или сообщество. Такие репосты ценнее всего для продвижения бизнеса"
 				},
 				{
-					"icon": " /img/blog/article-2/special-list-icon-1.svg",
+					"icon": "/img/blog/article-2/special-list-icon-1.svg",
 					"title": "В историю",
 					"text": "Публикация отображается 24&nbsp;часа и&nbsp;исчезает. Подходит для ситуативного контента: акции, анонсы, срочные новости. Охват меньше, но&nbsp;внимание выше: истории смотрят целенаправленно"
 				},
 				{
-					"icon": " /img/blog/article-2/special-list-icon-1.svg",
+					"icon": "/img/blog/article-2/special-list-icon-1.svg",
 					"title": "В личное сообщение",
 					"text": "Аналог пересылки. Пользователь отправляет запись конкретному человеку. Охвата нет, но&nbsp;есть точечное попадание: &laquo;Смотри, тебе будет интересно&raquo;. Пересылки в&nbsp;личных сообщениях приводят самую тёплую аудиторию"
 				},
 				{
-					"icon": " /img/blog/article-2/special-list-icon-1.svg",
+					"icon": "/img/blog/article-2/special-list-icon-1.svg",
 					"title": "Кросс-платформенный",
 					"text": "Ссылка на&nbsp;публикацию размещается в&nbsp;другой соцсети или мессенджере. Работает как мост между площадками, но&nbsp;сама запись не&nbsp;дублируется: пользователь переходит по&nbsp;ссылке на&nbsp;оригинал. Это полезно, когда бизнес присутствует на&nbsp;нескольких площадках"
 				}
@@ -144,17 +144,17 @@
 			"title": "Контент репостят, когда он попадает в одну из трёх зон: польза, эмоция или идентичность. Вот что увеличивает количество репостов:",
 			"list": [
 				{
-					"icon": " /img/blog/article-2/special-list-icon-2.svg",
+					"icon": "/img/blog/article-2/special-list-icon-2.svg",
 					"title": "Польза",
 					"text": "Подборки, чек-листы, пошаговые инструкции, шаблоны. Пользователь репостит, чтобы сохранить или переслать тому, кому пригодится. Полезный контент&nbsp;&mdash; самый предсказуемый драйвер репостов"
 				},
 				{
-					"icon": " /img/blog/article-2/special-list-icon-3.svg",
+					"icon": "/img/blog/article-2/special-list-icon-3.svg",
 					"title": "Эмоция",
 					"text": "Юмор, удивление, узнавание. Смешное видео, неожиданный факт, точное наблюдение&nbsp;&mdash; всё, что вызывает реакцию &laquo;надо шерить&raquo;. Эмоциональный контент даёт вирусный охват, но&nbsp;быстро затухает"
 				},
 				{
-					"icon": " /img/blog/article-2/special-list-icon-4.svg",
+					"icon": "/img/blog/article-2/special-list-icon-4.svg",
 					"title": "Идентичность",
 					"text": "Человек репостит&nbsp;то, что отражает его ценности и&nbsp;позицию. &laquo;Это про меня&raquo;&nbsp;&mdash; мощный триггер, который работает в&nbsp;любой нише: от&nbsp;профессионального юмора до&nbsp;социальных тем"
 				}
