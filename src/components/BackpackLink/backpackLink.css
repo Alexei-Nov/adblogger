@@ -48,10 +48,10 @@
   cursor: pointer;
   position: relative;
   z-index: 1;
+  pointer-events: all;
   background-image: url("/public/img/backpack-link/bg.svg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  pointer-events: all;
 }
 
 .backpack-link__panel-bg {
