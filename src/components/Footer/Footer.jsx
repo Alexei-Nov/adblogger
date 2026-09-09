@@ -79,7 +79,7 @@ export default function Footer() {
 						<div className="footer__bottom text-16">
 							<div className="footer__bottom-row">
 								<div className="footer__bottom-links ">
-									<span>© VK, 2025.  Все права защищены.</span>
+									<span>© VK, 2026.  Все права защищены.</span>
 									<a href='https://adblogger.vk.ru/documents/privacy' target='_blank' rel="noreferrer">Политика конфиденциальности</a>
 									<span>125167, г. Москва, Ленинградский проспект, д. 39, стр. 79</span>
 								</div>
