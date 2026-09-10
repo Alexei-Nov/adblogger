@@ -55,6 +55,10 @@
   gap: 72px;
 }
 
+.article__content img {
+  width: 100%;
+}
+
 .article__block-title {
   margin-bottom: 36px;
 }
@@ -197,10 +201,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.article img {
-  width: 100%;
 }
 
 @media screen and (max-width: 768px) {

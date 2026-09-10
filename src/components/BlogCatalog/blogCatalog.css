@@ -200,6 +200,9 @@
   top: 20px;
   right: 20px;
   z-index: 2;
+  border: 1px solid #363738;
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
 }
 
 .blog-card__img {
@@ -211,6 +214,7 @@
   aspect-ratio: 1.67;
   border-radius: 32px;
   overflow: hidden;
+  border: 2px solid #363738;
 }
 
 .blog-card__img img {
