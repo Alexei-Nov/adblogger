@@ -9,20 +9,20 @@ export default function Money({ block_state }) {
 
 	let imgWrapper = useRef()
 
-	useEffect(() => {
-		if (window.innerWidth > 1024 && window.location.pathname != '/tovary') {
-			window.addEventListener('mousemove', function (e) {
-				let x = e.clientX / window.innerWidth - 0.5;
-				let y = e.clientY / window.innerHeight - 0.5;
+	// useEffect(() => {
+	// 	if (window.innerWidth > 1024 && window.location.pathname != '/tovary') {
+	// 		window.addEventListener('mousemove', function (e) {
+	// 			let x = e.clientX / window.innerWidth - 0.5;
+	// 			let y = e.clientY / window.innerHeight - 0.5;
 
-				if (imgWrapper.current) {
-					imgWrapper.current.querySelectorAll('.money__img img').forEach((img, index) => {
-						img.style.transform = 'translate(calc(-50% + ' + x * 30 * (index + 1) + 'px), calc(-50% + ' + y * 30 * (index + 1) + 'px))';
-					});
-				}
-			});
-		}
-	})
+	// 			if (imgWrapper.current) {
+	// 				imgWrapper.current.querySelectorAll('.money__img img').forEach((img, index) => {
+	// 					img.style.transform = 'translate(calc(-50% + ' + x * 30 * (index + 1) + 'px), calc(-50% + ' + y * 30 * (index + 1) + 'px))';
+	// 				});
+	// 			}
+	// 		});
+	// 	}
+	// },[])
 
 
 	return (
@@ -45,13 +45,17 @@ export default function Money({ block_state }) {
 						<div className="money__img" ref={imgWrapper}>
 							{block_state.has_border == 'true' &&
 								<>
-									<picture>
+									{/* <picture>
 										<source media="(max-width: 570px)" srcSet="/img/money/img-1_mob.png" sizes="img" />
 										<source media="(max-width: 1024px)" srcSet="/img/money/img-1_tablet.png" sizes="img" />
 										<img src="/img/money/img-1-2.png" alt="img" />
 									</picture>
 									<img src="/img/money/img-2-2.png" alt="img" />
-									<img src="/img/money/img-3-2.png" alt="img" />
+									<img src="/img/money/img-3-2.png" alt="img" /> */}
+									<picture>
+										<source media="(max-width: 570px)" srcSet="/img/money/img-static_mob.png" sizes="img" />
+										<img src="/img/money/img-static.png" alt="img" />
+									</picture>
 								</>
 							}
 							{block_state.has_border == 'false' &&

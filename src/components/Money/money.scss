@@ -27,8 +27,10 @@
 		pointer-events: none;
 
 		& img {
-			width: calc(100% + 200px);
-			height: calc(100% + 200px);
+			// width: calc(100% + 200px);
+			// height: calc(100% + 200px);
+			width: 100%;
+			height: 100%;
 			object-fit: cover;
 			object-position: center;
 
@@ -63,8 +65,8 @@
 	.money {
 		&__img {
 			& img {
-				width: calc(100% + 100px);
-				height: calc(100% + 100px);
+				// width: calc(100% + 100px);
+				// height: calc(100% + 100px);
 			}
 			& > img {
 				display: none;
@@ -91,8 +93,8 @@
 		&__img {
 			top: 15px;
 			& img {
-				width: calc(100% + 50px);
-				height: calc(100% + 50px);
+				// width: calc(100% + 50px);
+				// height: calc(100% + 50px);
 			}
 		}
 		&_without-border {

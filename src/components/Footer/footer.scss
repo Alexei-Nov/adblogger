@@ -32,6 +32,8 @@
 		display: flex;
 		align-items: center;
 		gap: 8px;
+		max-width: 310px;
+		width: 100%;
 	}
 	&__bottom-links {
 		display: flex;
