@@ -141,6 +141,14 @@
 
 @media screen and (max-width: 1400px) {
   .footer__bottom-row {
+    display: contents;
+  }
+  .footer__bottom-item {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .footer__bottom-links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -148,11 +156,6 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-  }
-  .footer__bottom-item {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
   }
 }
 

@@ -79,7 +79,8 @@ export default function Footer() {
 						<div className="footer__bottom text-16">
 							<div className="footer__bottom-row">
 								<div className="footer__bottom-links ">
-									<span>© VK, 2026.  Все права защищены.</span>
+									<span>125167, г. Москва, Ленинградский проспект, д. 39, стр. 79</span>
+
 									<a href='https://adblogger.vk.ru/documents/privacy' target='_blank' rel="noreferrer">Политика конфиденциальности</a>
 								</div>
 
@@ -93,7 +94,7 @@ export default function Footer() {
 							</div>
 							<div className="footer__bottom-row">
 								<div className="footer__bottom-links ">
-									<span>125167, г. Москва, Ленинградский проспект, д. 39, стр. 79</span>
+									<span>© VK, 2026.  Все права защищены.</span>
 								</div>
 
 								<a href='https://max.ru/adblogger' className="footer__bottom-item" target='_blank' rel="noreferrer">

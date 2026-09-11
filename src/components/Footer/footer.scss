@@ -97,11 +97,16 @@
 @media screen and (max-width: 1400px) {
 	.footer {
 		&__bottom-row {
-			flex-direction: column;
-			align-items: flex-start;
+			// flex-direction: column;
+			// align-items: flex-start;
+			display: contents;
 		}
 		&__bottom-item {
 			order: -1;
+		}
+		&__bottom-links {
+			flex-direction: column;
+			align-items: flex-start;
 		}
 	}
 }
