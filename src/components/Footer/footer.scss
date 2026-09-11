@@ -45,7 +45,7 @@
 	&__bottom {
 		display: flex;
 		flex-direction: column;
-		gap: 40px;
+		gap: 32px;
 		padding-top: 32px;
 		border-top: 1px solid var(--black-2);
 	}
@@ -117,6 +117,10 @@
 			display: flex;
 			flex-direction: column;
 		}
+		&__bottom {
+			gap: 24px;
+		}
+
 		& .nav {
 			&__list {
 				grid-template-columns: 1fr 1fr 1fr;
