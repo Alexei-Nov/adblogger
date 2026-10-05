@@ -1,74 +1,88 @@
 import React, { useEffect, useRef } from 'react'
 import './numberSeller.css'
 import { gsap } from 'gsap'
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 export default function NumberSeller({ block_state }) {
-	let wrapper = useRef();
+  const wrapper = useRef()
+  const isDesktop = typeof window !== 'undefined' && window.innerWidth > 570
 
-	useEffect(() => {
-		let imgArr = gsap.utils.selector(wrapper)('.number-seller__img')
-		let tl = gsap.timeline({
-			scrollTrigger: {
-				trigger: wrapper.current,
-				start: "top 30%",
-				end: "bottom top",
-				scrub: false,
-				markers: false,
-				pin: false,
-			}
-		});
+  useEffect(() => {
+    const imgArr = gsap.utils.selector(wrapper)('.number-seller__img')
 
-		imgArr.forEach((img, index) => {
-			tl.fromTo(img, {
-				scale: 0,
-			}, {
-				delay: Math.random(),
-				scale: 1,
-			}, 0);
-		})
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: wrapper.current,
+        start: 'top 30%',
+        end: 'bottom top',
+        scrub: false,
+        markers: false,
+        pin: false,
+      }
+    })
 
-		let number = gsap.utils.selector(wrapper)('.number-seller__number')
+    imgArr.forEach((img) => {
+      tl.fromTo(img, {
+        scale: 0,
+      }, {
+        delay: Math.random(),
+        scale: 1,
+      }, 0)
+    })
 
-		tl.from(number, {
-			textContent: window.innerWidth > 570 ? 48000 : 10,
-			duration: 1.5,
-			ease: "power1.in",
-			snap: { textContent: window.innerWidth > 570 ? 10 : 1 },
-			stagger: {
-				each: 1.0,
-				onUpdate: function () {
-					this.targets()[0].innerHTML = (+this.targets()[0].textContent).toLocaleString("ru-RU") + (window.innerWidth > 570 ? '' : 'k');
-				},
-			}
-		}, 0);
-	})
+    const number = gsap.utils.selector(wrapper)('.number-seller__number')
 
-	return (
-		<>
-			<section className='section number-seller' ref={wrapper}>
-				<div className="container">
-					<div className="number-seller__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
-					<div className="number-seller__wrapper">
-						<div className="number-seller__body">
-							<div className="number-seller__number">{window.innerWidth > 570 ? block_state.number : block_state.number / 1000}</div>
-							<div className="number-seller__number-after">{block_state.number_after}</div>
-						</div>
-						<div className="number-seller__label h2" dangerouslySetInnerHTML={{ __html: block_state.label }}></div>
+    tl.from(number, {
+      textContent: isDesktop ? 48000 : 10,
+      duration: 1.5,
+      ease: 'power1.in',
+      snap: { textContent: isDesktop ? 10 : 1 },
+      stagger: {
+        each: 1.0,
+        onUpdate: function () {
+          this.targets()[0].innerHTML =
+            (+this.targets()[0].textContent).toLocaleString('ru-RU') +
+            (isDesktop ? '' : 'k')
+        },
+      }
+    }, 0)
+  }, [isDesktop])
 
-						<div className="number-seller__authors">
-							{block_state.img_list.map((img, i) => {
-								return (
-									<div key={i} className="number-seller__img">
-										<img src={img.img} alt="img" />
-									</div>
-								)
-							})}
-						</div>
-					</div>
-				</div>
-			</section>
-		</>
-	)
+  return (
+    <section className='section number-seller' ref={wrapper}>
+      <div className="container">
+        <div
+          className="number-seller__title title h2"
+          dangerouslySetInnerHTML={{ __html: block_state.title }}
+        />
+
+        <div className="number-seller__wrapper">
+          <div className="number-seller__body">
+            <div className="number-seller__number">
+              {isDesktop ? block_state.number : block_state.number / 1000}
+            </div>
+
+            <div className="number-seller__number-after">
+              {block_state.number_after}
+            </div>
+          </div>
+
+          <div
+            className="number-seller__label h2"
+            dangerouslySetInnerHTML={{ __html: block_state.label }}
+          />
+
+          <div className="number-seller__authors">
+            {block_state.img_list.map((img, i) => (
+              <div key={i} className="number-seller__img">
+                <img src={img.img} alt="img" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }

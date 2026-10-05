@@ -1,75 +1,65 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import { useSelector } from 'react-redux'
+import { usePageContext } from 'vike-react/usePageContext'
 import { handleTracking } from 'utils/tracking'
 
 import './money.css'
 
 export default function Money({ block_state }) {
-	const btnState = useSelector(state => state.toolkit.registrationBtn)
+  const btnState = useSelector(state => state.toolkit.registrationBtn)
+  const pageContext = usePageContext()
+  const imgWrapper = useRef()
 
-	let imgWrapper = useRef()
+  const isShops = pageContext.urlPathname === '/shops'
 
-	// useEffect(() => {
-	// 	if (window.innerWidth > 1024 && window.location.pathname != '/tovary') {
-	// 		window.addEventListener('mousemove', function (e) {
-	// 			let x = e.clientX / window.innerWidth - 0.5;
-	// 			let y = e.clientY / window.innerHeight - 0.5;
+  return (
+    <section className={'section money ' + (block_state.has_border == 'false' ? 'money_without-border' : '')}>
+      <div className="container">
+        <div className="money__wrapper">
+          <h2
+            className="money__title title h2"
+            dangerouslySetInnerHTML={{ __html: block_state.title }}
+          />
 
-	// 			if (imgWrapper.current) {
-	// 				imgWrapper.current.querySelectorAll('.money__img img').forEach((img, index) => {
-	// 					img.style.transform = 'translate(calc(-50% + ' + x * 30 * (index + 1) + 'px), calc(-50% + ' + y * 30 * (index + 1) + 'px))';
-	// 				});
-	// 			}
-	// 		});
-	// 	}
-	// },[])
+          <a
+            href={block_state.btn_link}
+            className={
+              "money__btn btn btn_border " +
+              (isShops ? 'btn_rounded text-24' : '')
+            }
+            onClick={() => {
+              handleTracking('registration_other')
+              handleTracking('registration_all')
+            }}
+          >
+            {block_state.btn_text}
+          </a>
 
+          <div className="money__img" ref={imgWrapper}>
+            {block_state.has_border == 'true' &&
+              <picture>
+                <source
+                  media="(max-width: 570px)"
+                  srcSet="/img/money/img-static_mob.png"
+                  sizes="img"
+                />
+                <img src="/img/money/img-static.png" alt="img" />
+              </picture>
+            }
 
-	return (
-		<>
-			<section className={'section money ' + (block_state.has_border == 'false' ? 'money_without-border' : '')}>
-				<div className="container">
-					<div className="money__wrapper" >
-						<h2 className="money__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></h2>
-						<a
-							href={block_state.btn_link}
-							className={"money__btn btn btn_border " + (window.location.pathname == '/shops' ? 'btn_rounded text-24' : '')}
-							onClick={() => {
-								handleTracking('registration_other')
-								handleTracking('registration_all')
-							}}
-						>
-							{block_state.btn_text}
-						</a>
-
-						<div className="money__img" ref={imgWrapper}>
-							{block_state.has_border == 'true' &&
-								<>
-									{/* <picture>
-										<source media="(max-width: 570px)" srcSet="/img/money/img-1_mob.png" sizes="img" />
-										<source media="(max-width: 1024px)" srcSet="/img/money/img-1_tablet.png" sizes="img" />
-										<img src="/img/money/img-1-2.png" alt="img" />
-									</picture>
-									<img src="/img/money/img-2-2.png" alt="img" />
-									<img src="/img/money/img-3-2.png" alt="img" /> */}
-									<picture>
-										<source media="(max-width: 570px)" srcSet="/img/money/img-static_mob.png" sizes="img" />
-										<img src="/img/money/img-static.png" alt="img" />
-									</picture>
-								</>
-							}
-							{block_state.has_border == 'false' &&
-								<>
-									<picture>
-										<source media="(max-width: 570px)" srcSet="/img/money/img_v2_mob.png" sizes="img" />
-										<img src="/img/money/img_v2.png" alt="img" />
-									</picture>
-								</>
-							}
-						</div>
-					</div>
-				</div>
-			</section>
-		</>
-	)
+            {block_state.has_border == 'false' &&
+              <picture>
+                <source
+                  media="(max-width: 570px)"
+                  srcSet="/img/money/img_v2_mob.png"
+                  sizes="img"
+                />
+                <img src="/img/money/img_v2.png" alt="img" />
+              </picture>
+            }
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }

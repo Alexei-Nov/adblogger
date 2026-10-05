@@ -1,57 +1,48 @@
 import React, { useState } from 'react'
-import 'swiper/css';
+import 'swiper/css'
 import './blogCatalog.css'
-import { NavLink } from 'react-router-dom'
 import { Mousewheel, Navigation } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { useSelector } from 'react-redux';
-
-
-
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { useData } from 'vike-react/useData'
 
 export default function BlogCatalog({ block_state }) {
-	const tagsList = [
-		{
-			id: 1,
-			name: 'Все',
-		},
-		{
-			id: 2,
-			name: 'Новости',
-		},
-		{
-			id: 3,
-			name: 'Трафик',
-		},
-		{
-			id: 4,
-			name: 'Посевы',
-		},
-		{
-			id: 5,
-			name: 'Аудитория',
-		}
-	]
-	const articles = useSelector(state => state.toolkit.blog)
+  const { blog: articles = [] } = useData()
 
-	const [activeTag, setActiveTag] = useState(1)
+  const tagsList = [
+    { id: 1, name: 'Все' },
+    { id: 2, name: 'Новости' },
+    { id: 3, name: 'Трафик' },
+    { id: 4, name: 'Посевы' },
+    { id: 5, name: 'Аудитория' },
+  ]
 
-	return (
-		<>
-			<section className='blog-catalog'>
-				<div className="container">
-					<div className="blog-catalog__entrance">
-						<div className="blog-catalog__heading">
-							<div className="blog-catalog__title text-50 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
-							<div className="blog-catalog__desc text-30 fw-500" dangerouslySetInnerHTML={{ __html: block_state.description }}></div>
-						</div>
-						<picture className="blog-catalog__img">
-							<source media="(max-width: 1024px)" srcSet="/img/blog-catalog/img_mob.png" />
-							<img src="/img/blog-catalog/img.png" alt="img" />
-						</picture>
-					</div>
+  const [activeTag, setActiveTag] = useState(1)
 
-					{/* <div className="blog-catalog__filter">
+  return (
+    <section className='blog-catalog'>
+      <div className="container">
+        <div className="blog-catalog__entrance">
+          <div className="blog-catalog__heading">
+            <div
+              className="blog-catalog__title text-50 fw-600"
+              dangerouslySetInnerHTML={{ __html: block_state.title }}
+            />
+            <div
+              className="blog-catalog__desc text-30 fw-500"
+              dangerouslySetInnerHTML={{ __html: block_state.description }}
+            />
+          </div>
+
+          <picture className="blog-catalog__img">
+            <source
+              media="(max-width: 1024px)"
+              srcSet="/img/blog-catalog/img_mob.png"
+            />
+            <img src="/img/blog-catalog/img.png" alt="img" />
+          </picture>
+        </div>
+
+        {/* <div className="blog-catalog__filter">
 						<div className="blog-catalog__filter-btn blog-catalog__filter-prev">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fillRule="evenodd" clipRule="evenodd" d="M13.4625 17.7772C13.8917 17.4297 13.958 16.8 13.6105 16.3708L8.45323 10L13.6105 3.62923C13.958 3.19997 13.8917 2.57028 13.4625 2.22279C13.0332 1.87529 12.4035 1.94158 12.056 2.37084L6.3894 9.37081C6.09239 9.73769 6.09239 10.2623 6.3894 10.6292L12.056 17.6292C12.4035 18.0584 13.0332 18.1247 13.4625 17.7772Z" fill="#00D3E6" />
@@ -97,14 +88,13 @@ export default function BlogCatalog({ block_state }) {
 					</div>
 					<div className="blog-catalog__search"></div> */}
 
-					<div className="blog-catalog__list">
-						{articles.map((card, index) => {
-							return (
-								<BlogCard key={index} cardData={card} />
-							)
-						})}
-					</div>
-					{/* <div className="blog-catalog__pagination">
+        <div className="blog-catalog__list">
+          {articles.map((card, index) => (
+            <BlogCard key={index} cardData={card} />
+          ))}
+        </div>
+
+        {/* <div className="blog-catalog__pagination">
 						<div className="blog-catalog__pagination-arrow blog-catalog__pagination-prev">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fillRule="evenodd" clipRule="evenodd" d="M13.4625 17.7772C13.8917 17.4297 13.958 16.8 13.6105 16.3708L8.45323 10L13.6105 3.62923C13.958 3.19997 13.8917 2.57028 13.4625 2.22279C13.0332 1.87529 12.4035 1.94158 12.056 2.37084L6.3894 9.37081C6.09239 9.73769 6.09239 10.2623 6.3894 10.6292L12.056 17.6292C12.4035 18.0584 13.0332 18.1247 13.4625 17.7772Z" fill="#00D3E6" />
@@ -125,23 +115,35 @@ export default function BlogCatalog({ block_state }) {
 							</svg>
 						</div>
 					</div> */}
-				</div>
-			</section>
-		</>
-	)
+      </div>
+    </section>
+  )
 }
 
-
 function BlogCard({ cardData }) {
-	const datePublished = cardData && cardData.date_published && new Date(cardData.date_published);
+  const datePublished = cardData?.date_published
+    ? new Date(cardData.date_published)
+    : null
 
-	return (
-		<NavLink to={'/blog/' + cardData.slug} className="blog-card" >
-			<div className="blog-card__date text-20">{datePublished.toLocaleDateString()}</div>
-			<div className="blog-card__img">
-				<img src={cardData.preview_img_card} alt="img" />
-			</div>
-			<div className="blog-card__title text-28 fw-500" dangerouslySetInnerHTML={{ __html: cardData.title }}></div>
-		</NavLink>
-	)
+  return (
+    <a
+      href={'/blog/' + cardData.slug}
+      className="blog-card"
+    >
+      {datePublished && (
+        <div className="blog-card__date text-20">
+          {datePublished.toLocaleDateString('ru-RU')}
+        </div>
+      )}
+
+      <div className="blog-card__img">
+        <img src={cardData.preview_img_card} alt="img" />
+      </div>
+
+      <div
+        className="blog-card__title text-28 fw-500"
+        dangerouslySetInnerHTML={{ __html: cardData.title }}
+      />
+    </a>
+  )
 }

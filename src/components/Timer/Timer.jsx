@@ -1,77 +1,77 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './timer.css'
-import { NavLink } from 'react-router-dom'
+
 
 export default function Timer({ block_state }) {
-	const [distance, setDistance] = useState(1)
-	const [days, setDays] = useState('01')
-	const [hours, setHours] = useState('01')
+  const [distance, setDistance] = useState(1)
+  const [days, setDays] = useState('01')
+  const [hours, setHours] = useState('01')
 
-	let prevDays = usePrevious(days)
-	let prevHours = usePrevious(hours)
+  let prevDays = usePrevious(days)
+  let prevHours = usePrevious(hours)
 
-	function addZeroToNumber(number) {
-		if (number < 10) {
-			return '0' + number.toString()
-		}
-		return number.toString()
-	}
+  function addZeroToNumber(number) {
+    if (number < 10) {
+      return '0' + number.toString()
+    }
+    return number.toString()
+  }
 
-	function getDeclension(number, words) {
-		number = Math.abs(number) % 100;
-		if (number > 10 && number < 20) return words[2];
-		if (number % 10 > 1 && number % 10 < 5) return words[1];
-		if (number % 10 == 1) return words[0];
-		return words[2];
-	}
+  function getDeclension(number, words) {
+    number = Math.abs(number) % 100;
+    if (number > 10 && number < 20) return words[2];
+    if (number % 10 > 1 && number % 10 < 5) return words[1];
+    if (number % 10 == 1) return words[0];
+    return words[2];
+  }
 
-	function usePrevious(value) {
-		const ref = useRef();
-		useEffect(() => {
-			ref.current = value;
-		}, [value]);
-		return ref.current;
-	}
+  function usePrevious(value) {
+    const ref = useRef();
+    useEffect(() => {
+      ref.current = value;
+    }, [value]);
+    return ref.current;
+  }
 
-	useEffect(() => {
-		const timerInterval = setInterval(() => {
-			const currentTime = new Date().getTime();
-			const countDownDate = new Date(block_state.date_start).getTime();
+  useEffect(() => {
+    const timerInterval = setInterval(() => {
+      const currentTime = new Date().getTime();
+      const countDownDate = new Date(block_state.date_start).getTime();
 
-			if (distance <= 0) {
-				clearInterval(timerInterval);
-				setDistance(0);
-			} else {
-				setDistance(countDownDate - currentTime);
-			}
+      if (distance <= 0) {
+        clearInterval(timerInterval);
+        setDistance(0);
+      } else {
+        setDistance(countDownDate - currentTime);
+      }
 
-		}, 1000);
-	}, [])
+    }, 1000);
+  }, [])
 
-	useEffect(() => {
-		setDays(addZeroToNumber(Math.floor(distance / (1000 * 60 * 60 * 24))));
-		setHours(addZeroToNumber(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))));
-	}, [distance])
+  useEffect(() => {
+    setDays(addZeroToNumber(Math.floor(distance / (1000 * 60 * 60 * 24))));
+    setHours(addZeroToNumber(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))));
+  }, [distance])
 
 
-	return (
-		<>
-			<section className='section timer'>
-				<div className="container">
-					<div className="timer__wrapper">
-						<div className="timer__body">
-							<div className="timer__info">
-								<div className="timer__title text-35 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
-								<div className="timer__desc content text-22" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
-								<NavLink to='/shops-chart' className="timer__btn btn btn_rounded text-20 fw-500">
-									Залететь в чарт
-								</NavLink>
-							</div>
-							<div className="timer__img">
-								<img src={block_state.img} alt="img" />
-							</div>
-						</div>
-						{/* <div className="timer__bottom">
+  return (
+    <>
+      <section className='section timer'>
+        <div className="container">
+          <div className="timer__wrapper">
+            <div className="timer__body">
+              <div className="timer__info">
+                <div className="timer__title text-35 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+                <div className="timer__desc content text-22" dangerouslySetInnerHTML={{ __html: block_state.desc }}></div>
+                <a href='/shops-chart' className="timer__btn btn btn_rounded text-20 fw-500">
+                  Залететь в чарт
+                </a>
+              </div>
+              <div className="timer__img">
+                <img src={block_state.img} alt="img" />
+              </div>
+            </div>
+            {/* <div className="timer__bottom">
 							<div className="timer__bottom-title text-40 fw-600">До старта: </div>
 							<div className="timer__list">
 								<div className="timer__item">
@@ -128,9 +128,9 @@ export default function Timer({ block_state }) {
 								</div>
 							</div>
 						</div> */}
-					</div>
-				</div>
-			</section>
-		</>
-	)
+          </div>
+        </div>
+      </section>
+    </>
+  )
 }
