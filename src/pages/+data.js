@@ -14,6 +14,11 @@ export default function data(pageContext) {
     page: null,
     blog: [],
     cases: [],
+    footer: null,
+    registrationBtn: {
+      text: 'Перейти в кабинет',
+      link: '/app'
+    }
   }
 
   if (fs.existsSync(pagesPath)) {
@@ -53,6 +58,17 @@ export default function data(pageContext) {
           'utf-8'
         )
       )
+    )
+  }
+
+  const footerPath = path.resolve(
+    process.cwd(),
+    'public/data/footer/nav.json'
+  )
+
+  if (fs.existsSync(footerPath)) {
+    data.footer = JSON.parse(
+      fs.readFileSync(footerPath, 'utf-8')
     )
   }
 

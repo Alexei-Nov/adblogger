@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Money from '../components/Money/Money'
-import { useDispatch, useSelector } from 'react-redux'
+import { useData } from 'vike-react/useData'
 import { usePageContext } from 'vike-react/usePageContext'
 import TitleAndMetaTags from '../components/TitleAndMetaTags/TitleAndMetaTags'
 import Breadcrumbs from 'components/Breadcrumbs/Breadcrumbs'
@@ -8,28 +8,10 @@ import BlogArticle from 'components/BlogArticle/BlogArticle'
 import Faq from 'components/Faq/Faq'
 
 export default function BlogDetail() {
-  const pageContext = usePageContext()
-  const slug = pageContext.routeParams.slug
+  const { blog = [] } = useData()
+  const { slug } = usePageContext().routeParams
 
-  const articleState = useSelector(state =>
-    state.toolkit.blog.find(blogItem => blogItem.slug == slug)
-  )
-
-  const dispatch = useDispatch()
-
-  useEffect(() => {
-    if (!articleState) {
-      fetch("/data/blog/" + slug + ".json")
-        .then(res => res.json())
-        .then(data => {
-          // dispatch(...)
-        })
-        .catch(err => {
-          console.log(err.message)
-          window.location.href = '/404'
-        })
-    }
-  }, [slug, articleState, dispatch])
+  const articleState = blog.find(blogItem => blogItem.slug === slug)
 
   const moneyState = {
     title: 'пора пробовать — и&nbsp;получать деньги',
@@ -49,7 +31,7 @@ export default function BlogDetail() {
     },
     {
       title: articleState?.title,
-      link: '/' + articleState?.slug
+      link: '/blog/' + articleState?.slug
     },
   ]
 

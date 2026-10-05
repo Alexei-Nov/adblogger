@@ -5,12 +5,14 @@ import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useSelector } from 'react-redux';
+import { usePageContext } from 'vike-react/usePageContext';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Case({ block_state }) {
   let wrapper = useRef();
-  const cases = useSelector(state => state.toolkit.cases)
+
+  const { data } = usePageContext();
+  const cases = data.cases || [];
 
   useEffect(() => {
     if (window.innerWidth > 1200) {
